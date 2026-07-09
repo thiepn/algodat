@@ -1,4 +1,4 @@
-import { useEffect, useState, useSyncExternalStore } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { content } from '../../content/loaders/content';
 import { computeRemainingTime, exactFromContent, exactToLabel } from '../../domain/exam-simulator';
@@ -286,6 +286,9 @@ export function ExamSessionPage() {
   const navigate = useNavigate();
   const [session, setSession] = useState<ExamSession | undefined>();
   const [answerText, setAnswerText] = useState('');
+  const [saveStatus, setSaveStatus] = useState('');
+  const [saving, setSaving] = useState(false);
+  const pendingReviewSave = useRef<Promise<ExamSession> | null>(null);
   const now = useSyncExternalStore(subscribeClock, getClockSnapshot, () => 0);
   useEffect(() => {
     if (!sessionId) return;
@@ -294,6 +297,7 @@ export function ExamSessionPage() {
       const currentSlot = taskSlotId ?? loaded?.currentTaskSlotId;
       const answer = currentSlot ? loaded?.taskStates[currentSlot]?.answer : null;
       setAnswerText(answer ? JSON.stringify(answer, null, 2) : '');
+      setSaveStatus('');
     });
   }, [sessionId, taskSlotId]);
   if (!session) return <Missing title="Sitzung nicht gefunden" to="/simulator" />;
@@ -303,15 +307,40 @@ export function ExamSessionPage() {
   if (!task)
     return <Missing title="Aufgabe nicht gefunden" to={`/simulator/sitzung/${session.id}`} />;
   const remainingMs = computeRemainingTime(session.deadlineAt, now);
-  const save = async () =>
-    setSession(await saveTaskAnswer({ session, taskSlotId: task.taskSlotId, answerText }));
+  const sessionAfterPendingReviewSave = async () => {
+    if (pendingReviewSave.current) await pendingReviewSave.current;
+    return (await getSimulatorSession(session.id)) ?? session;
+  };
+  const save = async () => {
+    setSaving(true);
+    setSaveStatus('Autosave läuft.');
+    try {
+      const latestSession = await sessionAfterPendingReviewSave();
+      setSession(
+        await saveTaskAnswer({ session: latestSession, taskSlotId: task.taskSlotId, answerText }),
+      );
+      setSaveStatus('Antwort lokal gespeichert.');
+    } finally {
+      setSaving(false);
+    }
+  };
   const go = async (nextSlotId: string) => {
-    const saved = await saveTaskAnswer({ session, taskSlotId: task.taskSlotId, answerText });
+    const latestSession = await sessionAfterPendingReviewSave();
+    const saved = await saveTaskAnswer({
+      session: latestSession,
+      taskSlotId: task.taskSlotId,
+      answerText,
+    });
     const next = await navigateSimulatorTask(saved, nextSlotId);
     await navigate(`/simulator/sitzung/${next.id}/aufgabe/${nextSlotId}`);
   };
   const submit = async () => {
-    const saved = await saveTaskAnswer({ session, taskSlotId: task.taskSlotId, answerText });
+    const latestSession = await sessionAfterPendingReviewSave();
+    const saved = await saveTaskAnswer({
+      session: latestSession,
+      taskSlotId: task.taskSlotId,
+      answerText,
+    });
     const { session: graded } = await submitSimulatorSession(saved);
     await navigate(`/simulator/sitzung/${graded.id}/ergebnis`);
   };
@@ -350,19 +379,39 @@ export function ExamSessionPage() {
             checked={session.reviewFlags[task.taskSlotId] ?? false}
             onChange={(event) => {
               const marked = event.currentTarget.checked;
-              setSession({
+              const optimisticSession = {
                 ...session,
                 reviewFlags: { ...session.reviewFlags, [task.taskSlotId]: marked },
-              });
-              void setSimulatorReviewFlag(session, task.taskSlotId, marked).then(setSession);
+              };
+              setSession(optimisticSession);
+              const persistence = setSimulatorReviewFlag(session, task.taskSlotId, marked);
+              pendingReviewSave.current = persistence;
+              void persistence
+                .then((stored) => {
+                  setSession((current) =>
+                    current?.id === stored.id
+                      ? {
+                          ...stored,
+                          currentTaskSlotId: current.currentTaskSlotId,
+                          taskStates: current.taskStates,
+                        }
+                      : stored,
+                  );
+                })
+                .finally(() => {
+                  if (pendingReviewSave.current === persistence) pendingReviewSave.current = null;
+                });
             }}
           />
           Zur Kontrolle markieren
         </label>
       </section>
+      <p className="sr-status" aria-live="polite">
+        {saveStatus}
+      </p>
       <div className="button-row">
-        <button type="button" onClick={() => void save()}>
-          Autosave jetzt ausführen
+        <button type="button" disabled={saving} onClick={() => void save()}>
+          {saving ? 'Autosave läuft …' : 'Autosave jetzt ausführen'}
         </button>
         <Link className="button-link" to={`/simulator/sitzung/${session.id}/uebersicht`}>
           Übersicht

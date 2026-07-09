@@ -36,6 +36,7 @@ test('Klausursimulator zeigt Coverage und bewertet die Kernkompetenz-Probeklausu
   await page.getByLabel(/Antwort für Rucksack/u).fill('Teilantwort ohne JSON');
   await page.getByLabel('Zur Kontrolle markieren').check();
   await page.getByRole('button', { name: 'Autosave jetzt ausführen' }).click();
+  await expect(page.getByText('Antwort lokal gespeichert.')).toBeAttached();
   await page.reload();
   await expect(page.getByLabel(/Antwort für Rucksack/u)).toHaveValue(/invalidJson/u);
 
