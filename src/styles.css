@@ -1150,6 +1150,22 @@ th {
   .attempt-header {
     flex-direction: column;
   }
+  .attempt-actions,
+  .hint-panel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .attempt-actions button,
+  .hint-panel button,
+  .status-badge {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .attempt-actions button,
+  .hint-panel button {
+    width: 100%;
+  }
   .preflight-grid,
   .mode-selector,
   .mastery-grid,
