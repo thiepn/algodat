@@ -1,0 +1,233 @@
+{
+  "id": "trainer-greedy-entwurf-fitnesspunkte-v1",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase8-source",
+  "topicIds": ["topic-3e0e72f97f6e"],
+  "taskType": "greedy_design",
+  "sourceRefs": [
+    {
+      "sourceId": "src-97414623dd81",
+      "page": 8,
+      "label": "Klausur 2020-2 Aufgabe 7: Fitnesspunkte"
+    },
+    {
+      "sourceId": "src-8a588d5ddc35",
+      "page": 8,
+      "label": "Lösungsskizze Klausur 2020-2 Aufgabe 7"
+    }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-08",
+  "duplicateGroupId": null,
+  "publicDistributionStatus": "public_safe",
+  "solutionValidationStatus": "verified_against_official_solution",
+  "trainerKind": "design",
+  "designFamily": "greedy",
+  "title": "Greedy-Entwurfstrainer: Fitnesspunkte",
+  "shortTitle": "Greedy Fitnesspunkte",
+  "description": "Entwirf, analysiere und beweise den Greedy-Algorithmus für maximale Fitnesspunkte.",
+  "examTaskNumbers": [7],
+  "prerequisiteTopicIds": ["topic-3e0e72f97f6e"],
+  "relatedTrainerIds": ["trainer-dp-entwurf-mine-v1", "trainer-rekurrenz-master-fall1-v1"],
+  "learningObjectives": [
+    "Greedy-Kriterium aus einer Optimierungsaufgabe ableiten",
+    "absteigende Sortierung als kanonische Regel formulieren",
+    "Pseudocode mit Summenakkumulator angeben",
+    "Austausch-/Widerspruchsbeweis mit benachbartem Fehlpaar führen",
+    "Sortier- und Schleifenlaufzeit getrennt analysieren"
+  ],
+  "supportedModes": ["learn", "practice", "exam", "review"],
+  "estimatedDurationMinutes": 28,
+  "difficultyLevels": ["mittel", "klausurnah"],
+  "engineVersion": "greedy-design-fitnesspunkte-v1",
+  "canonicalSolutionVersion": "canonical-greedy-fitnesspunkte-v1",
+  "scoringModelVersion": "greedy-design-scoring-v1",
+  "masteryModelVersion": "mastery-v7",
+  "answerPayloadSchemaVersion": "greedy-design-answer-v1",
+  "rendererType": "greedy_design_fitnesspunkte",
+  "lazyLoader": "../features/trainer/GreedyDesignTrainerPage",
+  "availabilityStatus": "available",
+  "problem": {
+    "id": "problem-greedy-fitnesspunkte-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase8-source",
+    "topicIds": ["topic-3e0e72f97f6e"],
+    "taskType": "greedy_design",
+    "sourceRefs": [
+      { "sourceId": "src-97414623dd81", "page": 8, "label": "Aufgabenstellung Fitnesspunkte" },
+      { "sourceId": "src-8a588d5ddc35", "page": 8, "label": "Lösungsskizze Fitnesspunkte" }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08",
+    "duplicateGroupId": null,
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "verified_against_official_solution",
+    "algorithm": "fitnesspunkte_sort_descending",
+    "contentOrigin": "official_exam_solution",
+    "historicalExamTextIncluded": false,
+    "inputDescription": "Array S[1..n] mit Schwierigkeitsgraden der Übungen.",
+    "objective": "Maximiere die Summe S[i] · (n - i + 1) über die Reihenfolge der Übungen.",
+    "greedyRule": "Ordne die Schwierigkeitsgrade absteigend und absolviere größere Werte früher.",
+    "exchangeProof": "Ein benachbartes Fehlpaar Opt[i] < Opt[i+1] kann getauscht werden; dadurch steigt der Wert.",
+    "runtime": "O(n log n), dominiert durch Sortieren.",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-greedy-fitnesspunkte-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "inputObjects": "Array S[1..n] mit n Schwierigkeitsgraden",
+          "objective": "maximiere die Summe S[i] * (n - i + 1) über eine Permutation von S",
+          "constraints": "genau eine Übung pro Tag; jede Übung wird genau einmal verwendet",
+          "output": "maximal erreichbare Anzahl an Fitnesspunkten"
+        },
+        "greedyRule": {
+          "sortingOrder": "S wird absteigend sortiert",
+          "tieBreaker": "gleiche Schwierigkeitsgrade dürfen in beliebiger Reihenfolge stehen",
+          "decision": "größere Schwierigkeitsgrade werden früher angesetzt",
+          "objectiveReason": "frühere Tage haben den größeren Faktor n - i + 1"
+        },
+        "algorithm": {
+          "preprocessing": "Mergesort(S) in absteigender Reihenfolge",
+          "accumulator": "sum = 0",
+          "loop": "für i = 1 bis n: sum = sum + S[i] * (n - i + 1)",
+          "returnStatement": "return sum"
+        },
+        "proof": {
+          "claim": "Der Wert ist maximal, wenn S absteigend sortiert ist",
+          "contradictionAssumption": "Angenommen, keine optimale Lösung ist absteigend sortiert",
+          "exchangeStep": "Dann gibt es in einer optimalen Lösung Opt ein i mit Opt[i] < Opt[i+1]; tausche diese beiden Werte",
+          "difference": "Wert(Opt) - Wert(Getauscht) = Opt[i] - Opt[i+1] < 0",
+          "conclusion": "Die getauschte Lösung ist besser; Widerspruch zur Optimalität von Opt"
+        },
+        "complexity": {
+          "sorting": "Mergesort benötigt O(n log n)",
+          "loop": "die Schleife benötigt O(n)",
+          "total": "insgesamt O(n log n)",
+          "memory": "zusätzlicher Speicher hängt von der Sortierimplementierung ab"
+        }
+      },
+      "sampleInput": [4, 9, 2, 7],
+      "sortedOrder": [9, 7, 4, 2],
+      "optimalValue": 67,
+      "oracleValidationStatus": "brute_force_matches_greedy"
+    },
+    "variants": [
+      {
+        "id": "variant-greedy-fitnesspunkte-guided",
+        "contentVersion": "phase8-source",
+        "sourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 8 }],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Geführte Einstiegsinstanz",
+        "mode": "learn",
+        "difficulties": [3, 1, 8],
+        "focus": "Sortierregel und Wertfaktoren erkennen",
+        "canonicalSolution": {
+          "canonicalSolutionVersion": "canonical-greedy-fitnesspunkte-v1",
+          "structuredAnswer": {
+            "interpretation": { "inputObjects": "siehe Hauptlösung", "objective": "siehe Hauptlösung", "constraints": "siehe Hauptlösung", "output": "siehe Hauptlösung" },
+            "greedyRule": { "sortingOrder": "siehe Hauptlösung", "tieBreaker": "siehe Hauptlösung", "decision": "siehe Hauptlösung", "objectiveReason": "siehe Hauptlösung" },
+            "algorithm": { "preprocessing": "siehe Hauptlösung", "accumulator": "siehe Hauptlösung", "loop": "siehe Hauptlösung", "returnStatement": "siehe Hauptlösung" },
+            "proof": { "claim": "siehe Hauptlösung", "contradictionAssumption": "siehe Hauptlösung", "exchangeStep": "siehe Hauptlösung", "difference": "siehe Hauptlösung", "conclusion": "siehe Hauptlösung" },
+            "complexity": { "sorting": "siehe Hauptlösung", "loop": "siehe Hauptlösung", "total": "siehe Hauptlösung", "memory": "siehe Hauptlösung" }
+          },
+          "sampleInput": [3, 1, 8],
+          "sortedOrder": [8, 3, 1],
+          "optimalValue": 31,
+          "oracleValidationStatus": "brute_force_matches_greedy"
+        }
+      },
+      {
+        "id": "variant-greedy-fitnesspunkte-practice",
+        "contentVersion": "phase8-source",
+        "sourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 8 }],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Standard-Übungsinstanz",
+        "mode": "practice",
+        "difficulties": [6, 2, 10, 4],
+        "focus": "Pseudocode und Summe berechnen",
+        "canonicalSolution": {
+          "canonicalSolutionVersion": "canonical-greedy-fitnesspunkte-v1",
+          "structuredAnswer": {
+            "interpretation": { "inputObjects": "siehe Hauptlösung", "objective": "siehe Hauptlösung", "constraints": "siehe Hauptlösung", "output": "siehe Hauptlösung" },
+            "greedyRule": { "sortingOrder": "siehe Hauptlösung", "tieBreaker": "siehe Hauptlösung", "decision": "siehe Hauptlösung", "objectiveReason": "siehe Hauptlösung" },
+            "algorithm": { "preprocessing": "siehe Hauptlösung", "accumulator": "siehe Hauptlösung", "loop": "siehe Hauptlösung", "returnStatement": "siehe Hauptlösung" },
+            "proof": { "claim": "siehe Hauptlösung", "contradictionAssumption": "siehe Hauptlösung", "exchangeStep": "siehe Hauptlösung", "difference": "siehe Hauptlösung", "conclusion": "siehe Hauptlösung" },
+            "complexity": { "sorting": "siehe Hauptlösung", "loop": "siehe Hauptlösung", "total": "siehe Hauptlösung", "memory": "siehe Hauptlösung" }
+          },
+          "sampleInput": [6, 2, 10, 4],
+          "sortedOrder": [10, 6, 4, 2],
+          "optimalValue": 68,
+          "oracleValidationStatus": "brute_force_matches_greedy"
+        }
+      },
+      {
+        "id": "variant-greedy-fitnesspunkte-exam",
+        "contentVersion": "phase8-source",
+        "sourceRefs": [{ "sourceId": "src-97414623dd81", "page": 8 }],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Prüfungsinstanz",
+        "mode": "exam",
+        "difficulties": [5, 11, 1, 8, 3],
+        "focus": "ohne Hinweise vollständig entwerfen",
+        "canonicalSolution": {
+          "canonicalSolutionVersion": "canonical-greedy-fitnesspunkte-v1",
+          "structuredAnswer": {
+            "interpretation": { "inputObjects": "siehe Hauptlösung", "objective": "siehe Hauptlösung", "constraints": "siehe Hauptlösung", "output": "siehe Hauptlösung" },
+            "greedyRule": { "sortingOrder": "siehe Hauptlösung", "tieBreaker": "siehe Hauptlösung", "decision": "siehe Hauptlösung", "objectiveReason": "siehe Hauptlösung" },
+            "algorithm": { "preprocessing": "siehe Hauptlösung", "accumulator": "siehe Hauptlösung", "loop": "siehe Hauptlösung", "returnStatement": "siehe Hauptlösung" },
+            "proof": { "claim": "siehe Hauptlösung", "contradictionAssumption": "siehe Hauptlösung", "exchangeStep": "siehe Hauptlösung", "difference": "siehe Hauptlösung", "conclusion": "siehe Hauptlösung" },
+            "complexity": { "sorting": "siehe Hauptlösung", "loop": "siehe Hauptlösung", "total": "siehe Hauptlösung", "memory": "siehe Hauptlösung" }
+          },
+          "sampleInput": [5, 11, 1, 8, 3],
+          "sortedOrder": [11, 8, 5, 3, 1],
+          "optimalValue": 109,
+          "oracleValidationStatus": "brute_force_matches_greedy"
+        }
+      },
+      {
+        "id": "variant-greedy-fitnesspunkte-review",
+        "contentVersion": "phase8-source",
+        "sourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 8 }],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Wiederholung Austauschbeweis",
+        "mode": "review",
+        "difficulties": [2, 9],
+        "focus": "ein Fehlpaar argumentativ tauschen",
+        "canonicalSolution": {
+          "canonicalSolutionVersion": "canonical-greedy-fitnesspunkte-v1",
+          "structuredAnswer": {
+            "interpretation": { "inputObjects": "siehe Hauptlösung", "objective": "siehe Hauptlösung", "constraints": "siehe Hauptlösung", "output": "siehe Hauptlösung" },
+            "greedyRule": { "sortingOrder": "siehe Hauptlösung", "tieBreaker": "siehe Hauptlösung", "decision": "siehe Hauptlösung", "objectiveReason": "siehe Hauptlösung" },
+            "algorithm": { "preprocessing": "siehe Hauptlösung", "accumulator": "siehe Hauptlösung", "loop": "siehe Hauptlösung", "returnStatement": "siehe Hauptlösung" },
+            "proof": { "claim": "siehe Hauptlösung", "contradictionAssumption": "siehe Hauptlösung", "exchangeStep": "siehe Hauptlösung", "difference": "siehe Hauptlösung", "conclusion": "siehe Hauptlösung" },
+            "complexity": { "sorting": "siehe Hauptlösung", "loop": "siehe Hauptlösung", "total": "siehe Hauptlösung", "memory": "siehe Hauptlösung" }
+          },
+          "sampleInput": [2, 9],
+          "sortedOrder": [9, 2],
+          "optimalValue": 20,
+          "oracleValidationStatus": "brute_force_matches_greedy"
+        }
+      }
+    ]
+  },
+  "hints": [
+    {
+      "id": "hint-greedy-factor",
+      "level": 1,
+      "text": "Der Faktor n - i + 1 ist am Anfang am größten."
+    },
+    {
+      "id": "hint-greedy-exchange",
+      "level": 2,
+      "text": "Suche im Beweis ein benachbartes Paar, bei dem der kleinere Wert vor dem größeren steht."
+    },
+    {
+      "id": "hint-greedy-runtime",
+      "level": 3,
+      "text": "Die lineare Summenschleife dominiert nicht; das Sortieren bestimmt die asymptotische Laufzeit."
+    }
+  ]
+}

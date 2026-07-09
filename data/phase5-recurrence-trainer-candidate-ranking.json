@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": 5,
+  "selectionDate": "2026-07-07",
+  "selectedTrainerId": "trainer-rekurrenz-master-fall1-v1",
+  "selectedProblemId": "problem-rekurrenz-acht-halb-kubisch-v1",
+  "scoringScale": {
+    "0": "nicht erfüllt",
+    "1": "teilweise erfüllt",
+    "2": "vollständig erfüllt"
+  },
+  "mandatoryCriteria": [
+    "offizielle Primärquelle",
+    "verifizierte Lösung",
+    "sichere Aufgaben-/Lösungsverknüpfung",
+    "eindeutige kanonische Lösung",
+    "keine ungelösten fachlichen Konflikte",
+    "deterministisch bewertbarer Lösungsweg"
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "name": "Kubischer Gleichgewichtsfall",
+      "recurrence": "T(n)=8T(n/2)+n^3, T(1)=1",
+      "status": "selected",
+      "sourceRefs": [
+        { "sourceId": "src-25d6340b518c", "page": 17, "role": "Aufgabe" },
+        { "sourceId": "src-25d6340b518c", "page": 18, "role": "geschlossene Form und Induktionsbeweis" },
+        { "sourceId": "src-25d6340b518c", "page": 25, "role": "Master-Theorem-Aufgabe" },
+        { "sourceId": "src-25d6340b518c", "page": 26, "role": "Master-Theorem-Fall 1" },
+        { "sourceId": "src-baa07f0a207a", "page": 209, "role": "Rekursionsbaum MergeSort" },
+        { "sourceId": "src-baa07f0a207a", "page": 213, "role": "Form T(n)=aT(n/b)+f(n)" }
+      ],
+      "masterParameters": { "a": 8, "b": 2, "f": "n^3", "criticalExponent": "3" },
+      "masterCase": "Fall 1: f(n)=a*f(n/b), Ergebnis O(f(n) log n)",
+      "asymptoticResult": "O(n^3 log n)",
+      "closedForm": "(log_2(n)+1)*n^3",
+      "domain": "n ist Zweierpotenz",
+      "scores": {
+        "officialTaskSource": 2,
+        "officialSolution": 2,
+        "linkedTaskAndSolution": 2,
+        "readableRecurrence": 2,
+        "baseCase": 2,
+        "domain": 2,
+        "masterApplicable": 2,
+        "masterCaseClear": 2,
+        "asymptoticResultClear": 2,
+        "concreteInductionTarget": 2,
+        "inductionStepReconstructable": 2,
+        "constantHandling": 2,
+        "noOpenConflict": 2,
+        "objectiveScoringPossible": 2,
+        "examRelevance": 2,
+        "didacticFit": 2
+      },
+      "risks": ["Master-Theorem und Induktionsbeweis stehen in unterschiedlichen, aber offiziellen Abschnitten."]
+    },
+    {
+      "rank": 2,
+      "name": "Probeklausur Fall 2",
+      "recurrence": "T(n)=16T(n/4)+n^3, T(1)=1",
+      "status": "deferred",
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "page": 8, "role": "Probeklausuraufgabe" },
+        { "sourceId": "src-35405e721f05", "page": 8, "role": "Beispiellösung" }
+      ],
+      "masterParameters": { "a": 16, "b": 4, "f": "n^3", "criticalExponent": "2" },
+      "masterCase": "Fall 2",
+      "asymptoticResult": "O(n^3)",
+      "scores": {
+        "officialTaskSource": 2,
+        "officialSolution": 1,
+        "linkedTaskAndSolution": 2,
+        "readableRecurrence": 2,
+        "concreteInductionTarget": 1,
+        "didacticFit": 2
+      },
+      "risks": ["Die Lösung ist offiziell, aber die lokale Textextraktion des Induktionsbeweises ist zu unsauber für Golden-Truth-Automatisierung."]
+    },
+    {
+      "rank": 3,
+      "name": "Lineare geometrische Summe",
+      "recurrence": "T(n)=T(n/4)+4n, T(1)=1",
+      "status": "deferred",
+      "sourceRefs": [
+        { "sourceId": "src-25d6340b518c", "page": 18 },
+        { "sourceId": "src-25d6340b518c", "page": 19 }
+      ],
+      "masterParameters": { "a": 1, "b": 4, "f": "4n", "criticalExponent": "0" },
+      "asymptoticResult": "O(n)",
+      "scores": {
+        "officialTaskSource": 2,
+        "officialSolution": 2,
+        "linkedTaskAndSolution": 2,
+        "didacticFit": 1
+      },
+      "risks": ["Für den ersten Trainer weniger geeignet, weil der Master-Fall nicht den zentralen Gleichgewichtsfall übt."]
+    },
+    {
+      "rank": 4,
+      "name": "Zweidrittel-Exponent",
+      "recurrence": "T(n)=4T(n/8)+2, T(1)=1",
+      "status": "deferred",
+      "sourceRefs": [
+        { "sourceId": "src-25d6340b518c", "page": 20 },
+        { "sourceId": "src-25d6340b518c", "page": 21 }
+      ],
+      "masterParameters": { "a": 4, "b": 8, "f": "2", "criticalExponent": "2/3" },
+      "asymptoticResult": "O(n^(2/3))",
+      "scores": {
+        "officialTaskSource": 2,
+        "officialSolution": 2,
+        "linkedTaskAndSolution": 2,
+        "didacticFit": 1
+      },
+      "risks": ["Rationaler Exponent erhöht Parser- und UI-Komplexität für den ersten Rekurrenztrainer."]
+    },
+    {
+      "rank": 5,
+      "name": "Angefragte Liste ohne vollständige lokale Golden Truth",
+      "recurrence": "2T(n/2)+n, 2T(n/4)+n, 4T(n/2)+n, T(n/2)+n, 8T(n/2)+n^2",
+      "status": "rejected_for_phase5",
+      "sourceRefs": [],
+      "scores": {
+        "officialTaskSource": 1,
+        "officialSolution": 0,
+        "linkedTaskAndSolution": 0,
+        "deterministicPath": 0
+      },
+      "risks": ["Im lokalen Korpus nicht mit gleicher Aufgaben-/Lösungs- und Induktionsvollständigkeit nachgewiesen."]
+    }
+  ]
+}

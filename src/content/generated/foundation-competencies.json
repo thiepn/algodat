@@ -1,0 +1,504 @@
+[
+  {
+    "competencyId": "foundation-asymptotics",
+    "title": "Asymptotik und Landau-Notation",
+    "group": "asymptotics",
+    "topicIds": [
+      "topic-916a9f1645f2",
+      "topic-05cbaf0c71b3"
+    ],
+    "examTaskNumbers": [
+      1,
+      6
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "authorityLevel": 1,
+    "canonicalFacts": [
+      "Landau-Notation beschreibt asymptotische Schranken.",
+      "Worst-Case-Analyse betrachtet den ungünstigsten zulässigen Eingabefall.",
+      "Konstante Faktoren ändern die asymptotische Klasse nicht.",
+      "Polynomielle Laufzeiten wachsen asymptotisch langsamer als exponentielle Laufzeiten."
+    ],
+    "commonMisconceptions": [
+      {
+        "misconceptionId": "mixup-big-o-theta",
+        "category": "complexity_mixup",
+        "description": "O wird als exakte Schranke statt als obere Schranke gelesen.",
+        "remediationTarget": "Landau-Notation wiederholen"
+      },
+      {
+        "misconceptionId": "best-worst-confusion",
+        "category": "best_vs_worst_case",
+        "description": "Best Case und Worst Case werden vertauscht.",
+        "remediationTarget": "Worst-Case-Begriff klären"
+      }
+    ],
+    "supportedItemTypes": [
+      "single_choice",
+      "multiple_choice",
+      "true_false_reason",
+      "matching",
+      "ordering",
+      "numeric_short_answer",
+      "algorithm_selection",
+      "complexity_classification"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe"
+  },
+  {
+    "competencyId": "foundation-recurrences",
+    "title": "Rekurrenzen, Rekursionsbäume und Master-Theorem",
+    "group": "recurrences",
+    "topicIds": [
+      "topic-e48203925235",
+      "topic-64b84f2856b9",
+      "topic-00cf6dec50ed"
+    ],
+    "examTaskNumbers": [
+      6
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 17
+      },
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 25
+      }
+    ],
+    "authorityLevel": 1,
+    "canonicalFacts": [
+      "Eine Rekurrenz beschreibt eine Laufzeit über kleinere Teilproblemgrößen.",
+      "Rekursionsbäume strukturieren Kosten nach Rekursionsebenen.",
+      "Das Master-Theorem vergleicht Teilproblemterm und Nichtrekursionsterm.",
+      "Die Fallnummerierung muss zur kursinternen Rekurrenzform passen."
+    ],
+    "commonMisconceptions": [
+      {
+        "misconceptionId": "master-case-mixup",
+        "category": "complexity_mixup",
+        "description": "Master-Theorem-Fälle werden ohne Vergleich der Terme gewählt.",
+        "remediationTarget": "Master-Theorem-Fallanalyse"
+      },
+      {
+        "misconceptionId": "recurrence-shape-error",
+        "category": "notation_confusion",
+        "description": "Die Anzahl rekursiver Aufrufe oder die Teilproblemgröße wird falsch gelesen.",
+        "remediationTarget": "Rekurrenzparameter a und b"
+      }
+    ],
+    "supportedItemTypes": [
+      "single_choice",
+      "multiple_choice",
+      "true_false_reason",
+      "matching",
+      "ordering",
+      "numeric_short_answer",
+      "algorithm_selection",
+      "complexity_classification"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe"
+  },
+  {
+    "competencyId": "foundation-sorting-search",
+    "title": "Suchen und Sortieren",
+    "group": "sorting_search",
+    "topicIds": [
+      "topic-cd03b101b7ca",
+      "topic-aa4a4148523b",
+      "topic-869c6f5b2efa"
+    ],
+    "examTaskNumbers": [
+      1,
+      4
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ],
+    "authorityLevel": 1,
+    "canonicalFacts": [
+      "Binäre Suche setzt eine sortierte Suchmenge voraus.",
+      "MergeSort ist ein Divide-and-Conquer-Sortierverfahren.",
+      "InsertionSort verarbeitet Elemente schrittweise in eine bereits sortierte Teilfolge.",
+      "Sortierverfahren können nach Laufzeit, Stabilität und Speicherverhalten klassifiziert werden."
+    ],
+    "commonMisconceptions": [
+      {
+        "misconceptionId": "binary-search-unsorted",
+        "category": "prerequisite_confusion",
+        "description": "Binäre Suche wird auf unsortierte Daten angewendet.",
+        "remediationTarget": "Suchvoraussetzung sortierte Folge"
+      },
+      {
+        "misconceptionId": "stable-inplace-mixup",
+        "category": "stable_vs_in_place",
+        "description": "Stabilität und In-place-Eigenschaft werden verwechselt.",
+        "remediationTarget": "Sortierklassifikation"
+      }
+    ],
+    "supportedItemTypes": [
+      "single_choice",
+      "multiple_choice",
+      "true_false_reason",
+      "matching",
+      "ordering",
+      "numeric_short_answer",
+      "algorithm_selection",
+      "complexity_classification"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe"
+  },
+  {
+    "competencyId": "foundation-data-structures",
+    "title": "Datenstrukturen und Operationen",
+    "group": "data_structures",
+    "topicIds": [
+      "topic-249f056b552d",
+      "topic-83dbc3204045",
+      "topic-3c7ef81af7cd",
+      "topic-fba6d5e717ea",
+      "topic-d054e6909a32",
+      "topic-0ba342914656"
+    ],
+    "examTaskNumbers": [
+      2,
+      3,
+      4,
+      9
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ],
+    "authorityLevel": 1,
+    "canonicalFacts": [
+      "Stacks arbeiten nach dem LIFO-Prinzip.",
+      "Queues arbeiten nach dem FIFO-Prinzip.",
+      "Heaps unterstützen Prioritätsoperationen über eine Heap-Ordnung.",
+      "Union-Find verwaltet disjunkte Mengen über Make-Set, Find und Union."
+    ],
+    "commonMisconceptions": [
+      {
+        "misconceptionId": "stack-queue-mixup",
+        "category": "data_structure_operation_error",
+        "description": "LIFO und FIFO werden vertauscht.",
+        "remediationTarget": "Stack- und Queue-Operationen"
+      },
+      {
+        "misconceptionId": "bst-heap-mixup",
+        "category": "bst_vs_heap_confusion",
+        "description": "Suchbaumordnung und Heap-Ordnung werden verwechselt.",
+        "remediationTarget": "Baum- und Heap-Invarianten"
+      }
+    ],
+    "supportedItemTypes": [
+      "single_choice",
+      "multiple_choice",
+      "true_false_reason",
+      "matching",
+      "ordering",
+      "numeric_short_answer",
+      "algorithm_selection",
+      "complexity_classification"
+    ],
+    "relatedTrainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1"
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe"
+  },
+  {
+    "competencyId": "foundation-graph-basics",
+    "title": "Graphgrundlagen",
+    "group": "graph_basics",
+    "topicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ],
+    "authorityLevel": 1,
+    "canonicalFacts": [
+      "Graphaufgaben unterscheiden gerichtete und ungerichtete Graphen.",
+      "Graphaufgaben unterscheiden gewichtete und ungewichtete Graphen.",
+      "Ein Spannbaum verbindet alle Knoten eines zusammenhängenden ungerichteten Graphen ohne Kreis.",
+      "Negative Kanten und negative Kreise sind für kürzeste-Wege-Fragen fachlich getrennt zu prüfen."
+    ],
+    "commonMisconceptions": [
+      {
+        "misconceptionId": "directed-undirected-mixup",
+        "category": "directed_vs_undirected",
+        "description": "Gerichtete und ungerichtete Kanten werden gleich behandelt.",
+        "remediationTarget": "Graphmodell lesen"
+      },
+      {
+        "misconceptionId": "negative-edge-cycle-mixup",
+        "category": "necessary_vs_sufficient",
+        "description": "Negative Kante und negativer Kreis werden verwechselt.",
+        "remediationTarget": "Voraussetzungen kürzester Wege"
+      }
+    ],
+    "supportedItemTypes": [
+      "single_choice",
+      "multiple_choice",
+      "true_false_reason",
+      "matching",
+      "ordering",
+      "numeric_short_answer",
+      "algorithm_selection",
+      "complexity_classification"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe"
+  },
+  {
+    "competencyId": "foundation-graph-algorithms",
+    "title": "Graphalgorithmen auswählen",
+    "group": "graph_algorithms",
+    "topicIds": [
+      "topic-b9243ead8bde",
+      "topic-c43206934ba2",
+      "topic-e8b80c23286d",
+      "topic-646279964c76",
+      "topic-1fa208a0ed89",
+      "topic-0780ff989087",
+      "topic-c4a698fc939e"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ],
+    "authorityLevel": 1,
+    "canonicalFacts": [
+      "Dijkstra berechnet kürzeste Wege unter passenden Nichtnegativitätsvoraussetzungen.",
+      "Bellman-Ford ist für kürzeste Wege mit negativen Kanten relevant.",
+      "Floyd-Warshall berechnet paarweise kürzeste Wege als Matrixverfahren.",
+      "Prim und Kruskal lösen MST-Probleme, nicht allgemeine kürzeste-Wege-Probleme."
+    ],
+    "commonMisconceptions": [
+      {
+        "misconceptionId": "shortest-path-mst-mixup",
+        "category": "mst_shortest_path_confusion",
+        "description": "MST- und kürzeste-Wege-Problem werden vertauscht.",
+        "remediationTarget": "Graphproblem zuerst klassifizieren"
+      },
+      {
+        "misconceptionId": "dijkstra-negative-edge",
+        "category": "shortest_path_precondition_error",
+        "description": "Dijkstra wird trotz negativer Kanten gewählt.",
+        "remediationTarget": "Dijkstra-Voraussetzungen"
+      }
+    ],
+    "supportedItemTypes": [
+      "single_choice",
+      "multiple_choice",
+      "true_false_reason",
+      "matching",
+      "ordering",
+      "numeric_short_answer",
+      "algorithm_selection",
+      "complexity_classification"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe"
+  },
+  {
+    "competencyId": "foundation-paradigms",
+    "title": "Entwurfsparadigmen unterscheiden",
+    "group": "paradigms",
+    "topicIds": [
+      "topic-c0af8532bb72",
+      "topic-3e0e72f97f6e",
+      "topic-aa4a4148523b"
+    ],
+    "examTaskNumbers": [
+      7,
+      8,
+      9
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "authorityLevel": 1,
+    "canonicalFacts": [
+      "Dynamische Programmierung nutzt überlappende Teilprobleme und gespeicherte Zustände.",
+      "Divide-and-Conquer zerlegt in Teilprobleme und kombiniert deren Ergebnisse.",
+      "Greedy-Algorithmen treffen lokale Entscheidungen und benötigen eine passende Korrektheitsbegründung.",
+      "Entwurfsaufgaben verlangen Idee, Algorithmus, Laufzeit und Korrektheit."
+    ],
+    "commonMisconceptions": [
+      {
+        "misconceptionId": "dp-dnc-mixup",
+        "category": "algorithm_mixup",
+        "description": "DP und Divide-and-Conquer werden nur wegen Rekursion gleichgesetzt.",
+        "remediationTarget": "Überlappung und Zustandsspeicherung prüfen"
+      },
+      {
+        "misconceptionId": "greedy-proof-missing",
+        "category": "result_vs_proof",
+        "description": "Eine lokale Greedy-Regel wird ohne Korrektheitsargument akzeptiert.",
+        "remediationTarget": "Greedy-Beweisform wiederholen"
+      }
+    ],
+    "supportedItemTypes": [
+      "single_choice",
+      "multiple_choice",
+      "true_false_reason",
+      "matching",
+      "ordering",
+      "numeric_short_answer",
+      "algorithm_selection",
+      "complexity_classification"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dp-entwurf-mine-v1",
+      "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe"
+  },
+  {
+    "competencyId": "foundation-proofs",
+    "title": "Korrektheit und Beweismethoden",
+    "group": "proofs",
+    "topicIds": [
+      "topic-1e43393edfb4",
+      "topic-e05ae3743b24",
+      "topic-2b335556483f",
+      "topic-414399750c67"
+    ],
+    "examTaskNumbers": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 11
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 12
+      }
+    ],
+    "authorityLevel": 1,
+    "canonicalFacts": [
+      "Schleifeninvarianten benötigen Initialisierung, Erhaltung und Nutzung nach Terminierung.",
+      "Induktion benötigt Basis, Induktionsvoraussetzung und Induktionsschritt.",
+      "Korrektheitsbeweis und Laufzeitanalyse beantworten unterschiedliche Fragen.",
+      "Fallunterscheidungen müssen alle zulässigen Fälle abdecken."
+    ],
+    "commonMisconceptions": [
+      {
+        "misconceptionId": "correctness-runtime-mixup",
+        "category": "result_vs_proof",
+        "description": "Aus einer Laufzeitangabe wird fälschlich Korrektheit abgeleitet.",
+        "remediationTarget": "Korrektheit und Laufzeit trennen"
+      },
+      {
+        "misconceptionId": "invariant-step-missing",
+        "category": "necessary_vs_sufficient",
+        "description": "Ein Invariantenbeweis lässt Initialisierung oder Erhaltung aus.",
+        "remediationTarget": "Invariantenstruktur IA/IV/IS"
+      }
+    ],
+    "supportedItemTypes": [
+      "single_choice",
+      "multiple_choice",
+      "true_false_reason",
+      "matching",
+      "ordering",
+      "numeric_short_answer",
+      "algorithm_selection",
+      "complexity_classification"
+    ],
+    "relatedTrainerIds": [
+      "trainer-schleifeninvariante-summe-v1",
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe"
+  }
+]

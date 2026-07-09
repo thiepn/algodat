@@ -1,0 +1,46 @@
+[
+  {
+    "id": "diagnostic-template-schnellcheck-v1",
+    "title": "Schnellcheck Grundlagen",
+    "mode": "diagnosis",
+    "itemCount": 16,
+    "timeLimitMinutes": 20,
+    "competencyTargets": [
+      "foundation-asymptotics",
+      "foundation-recurrences",
+      "foundation-sorting-search",
+      "foundation-data-structures",
+      "foundation-graph-basics",
+      "foundation-graph-algorithms",
+      "foundation-paradigms",
+      "foundation-proofs"
+    ]
+  },
+  {
+    "id": "diagnostic-template-standard-v1",
+    "title": "Standarddiagnose Grundlagen",
+    "mode": "diagnosis",
+    "itemCount": 32,
+    "timeLimitMinutes": 35,
+    "competencyTargets": [
+      "foundation-asymptotics",
+      "foundation-recurrences",
+      "foundation-sorting-search",
+      "foundation-data-structures",
+      "foundation-graph-basics",
+      "foundation-graph-algorithms",
+      "foundation-paradigms",
+      "foundation-proofs"
+    ]
+  },
+  {
+    "id": "diagnostic-template-thema-v1",
+    "title": "Themendiagnose",
+    "mode": "practice",
+    "itemCount": 8,
+    "timeLimitMinutes": null,
+    "competencyTargets": [
+      "foundation-asymptotics"
+    ]
+  }
+]

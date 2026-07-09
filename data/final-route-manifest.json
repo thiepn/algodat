@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0.0",
+  "releaseCandidate": "1.0.0-rc.2",
+  "auditedAt": "2026-07-09",
+  "basePath": "/algodat/",
+  "routes": [
+    {
+      "routeId": "dashboard",
+      "path": "/",
+      "feature": "Dashboard",
+      "lazyChunk": false,
+      "requiresStoredEntity": false,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/",
+      "breadcrumb": "Übersicht",
+      "title": "Übersicht",
+      "publicSafe": true
+    },
+    {
+      "routeId": "topics",
+      "path": "/themen",
+      "feature": "Themen",
+      "lazyChunk": true,
+      "requiresStoredEntity": false,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/",
+      "breadcrumb": "Themen",
+      "title": "Themen",
+      "publicSafe": true
+    },
+    {
+      "routeId": "sources",
+      "path": "/quellen",
+      "feature": "Quellenmetadaten",
+      "lazyChunk": true,
+      "requiresStoredEntity": false,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/",
+      "breadcrumb": "Quellen",
+      "title": "Quellen",
+      "publicSafe": true
+    },
+    {
+      "routeId": "diagnose",
+      "path": "/diagnose",
+      "feature": "Grundlagen-Diagnose",
+      "lazyChunk": true,
+      "requiresStoredEntity": false,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/diagnose",
+      "breadcrumb": "Diagnose",
+      "title": "Diagnose",
+      "publicSafe": true
+    },
+    {
+      "routeId": "lernplan",
+      "path": "/lernplan",
+      "feature": "Lernorchestrator",
+      "lazyChunk": true,
+      "requiresStoredEntity": false,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/lernplan",
+      "breadcrumb": "Lernplan",
+      "title": "Lernplan",
+      "publicSafe": true
+    },
+    {
+      "routeId": "spickzettel",
+      "path": "/spickzettel",
+      "feature": "A4-Spickzettel",
+      "lazyChunk": true,
+      "requiresStoredEntity": false,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/spickzettel",
+      "breadcrumb": "Spickzettel",
+      "title": "A4-Spickzettel",
+      "publicSafe": true
+    },
+    {
+      "routeId": "spickzettel-detail",
+      "path": "/spickzettel/:sheetId",
+      "feature": "A4-Spickzettel",
+      "lazyChunk": true,
+      "requiresStoredEntity": true,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/spickzettel",
+      "breadcrumb": "Spickzettel / Bearbeiten",
+      "title": "Spickzettel bearbeiten",
+      "publicSafe": true
+    },
+    {
+      "routeId": "trainer",
+      "path": "/trainer",
+      "feature": "Trainer",
+      "lazyChunk": true,
+      "requiresStoredEntity": false,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/trainer",
+      "breadcrumb": "Trainer",
+      "title": "Trainer",
+      "publicSafe": true
+    },
+    {
+      "routeId": "trainer-attempt",
+      "path": "/trainer/*/:trainerId/versuch/:attemptId",
+      "feature": "Trainer-Versuch",
+      "lazyChunk": true,
+      "requiresStoredEntity": true,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/trainer",
+      "breadcrumb": "Trainer / Versuch",
+      "title": "Versuch",
+      "publicSafe": true
+    },
+    {
+      "routeId": "simulator",
+      "path": "/simulator",
+      "feature": "Klausursimulator",
+      "lazyChunk": true,
+      "requiresStoredEntity": false,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/simulator",
+      "breadcrumb": "Simulator",
+      "title": "Klausursimulator",
+      "publicSafe": true
+    },
+    {
+      "routeId": "simulator-session",
+      "path": "/simulator/sitzung/:sessionId",
+      "feature": "Prüfungssitzung",
+      "lazyChunk": true,
+      "requiresStoredEntity": true,
+      "offlineSupport": "warm_offline_supported",
+      "fallbackRoute": "/simulator",
+      "breadcrumb": "Simulator / Sitzung",
+      "title": "Prüfungssitzung",
+      "publicSafe": true
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "phase": 3,
+  "decisionDate": "2026-07-07",
+  "selectedTrainerId": "trainer-union-find-listen-v1",
+  "selectionRule": "Ein Kandidat wird nur produktiv, wenn Aufgabenstellung, Musterlösung und Vorlesungsregel aus offiziellen Quellen belegbar sind und die öffentliche Trainingsaufgabe ohne private Originalwerte formuliert werden kann.",
+  "candidates": [
+    {
+      "rank": 1,
+      "name": "Union-Find mit verketteten Listen",
+      "decision": "selected",
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "pages": [6] },
+        { "sourceId": "src-35405e721f05", "pages": [6] },
+        { "sourceId": "src-baa07f0a207a", "pages": [943, 946, 948, 949, 950, 951] }
+      ],
+      "reasons": [
+        "Offizielle Probeklausur enthält eine Union-Find-Listenaufgabe mit Weighted Union und lexikografischem Tie-Breaker.",
+        "Vorlesung belegt Repräsentant, Listenrepräsentation, Make-Set, Find, Union und Laufzeitregel.",
+        "Der Trainer ergänzt Phase 2 um eine andere Fehlerfamilie: Repräsentantenzeiger, Listenreihenfolge und gewichtete Union."
+      ],
+      "risks": [
+        "Die öffentliche Trainingsinstanz darf keine Originalelemente und keine private Aufgabenfolge kopieren.",
+        "Baumdarstellung, Union by Rank und Pfadkompression müssen ausdrücklich ausgeschlossen werden."
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "MergeSort-Tracing",
+      "decision": "fallback_not_selected",
+      "sourceRefs": [],
+      "reasons": [
+        "Als Fallback grundsätzlich geeignet, weil Tracing und Rekursion didaktisch gut strukturierbar sind.",
+        "Nicht ausgewählt, weil Union-Find bereits alle Phase-3-Gates erfüllte und stärker von Rucksack-DP abweicht."
+      ],
+      "risks": [
+        "Vor einer Produktivsetzung müssten offizielle Aufgaben- und Lösungsseiten erneut seitenbezogen verifiziert werden."
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Dijkstra-Tracing",
+      "decision": "blocked",
+      "sourceRefs": [],
+      "reasons": [
+        "Hohe Klausurrelevanz, aber bereits in früherer Analyse nicht sauber genug als öffentlicher Trainer belegbar.",
+        "Nicht implementiert, weil keine neue Phase ohne eindeutige Validierung starten soll."
+      ],
+      "risks": [
+        "Graphreihenfolge, Tie-Breaker und Musterlösung sind ohne offizielle Seitenbindung zu fehleranfällig."
+      ]
+    }
+  ]
+}

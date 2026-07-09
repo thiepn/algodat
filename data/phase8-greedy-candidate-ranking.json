@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": 8,
+  "createdAt": "2026-07-08",
+  "selectionPolicy": "Produktiv umgesetzt wird genau ein Greedy-Entwurfskandidat, wenn Aufgabenstellung, kanonische Greedy-Regel, Laufzeit und Korrektheitsbeweis durch offizielle Quellen oder Lösungsskizzen belegt sind.",
+  "selectedCandidateId": "phase8-candidate-fitnesspunkte-2020-a7",
+  "candidates": [
+    {
+      "id": "phase8-candidate-fitnesspunkte-2020-a7",
+      "title": "Fitnesspunkte",
+      "eventId": "exam-2020-2",
+      "examTaskNumber": 7,
+      "evidenceType": "real_exam",
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 8,
+          "label": "Aufgabe 7: Fitnesspunkte"
+        },
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 8,
+          "label": "Lösungsskizze Aufgabe 7: Fitnesspunkte"
+        }
+      ],
+      "officialSolutionAvailable": true,
+      "mandatoryGate": "passed",
+      "score": 96,
+      "strengths": [
+        "Echte Klausuraufgabe mit 8 Punkten.",
+        "Offizielle Lösungsskizze enthält Greedy-Regel, Pseudocode, Laufzeit und Widerspruchsbeweis.",
+        "Deterministische Oracle-Prüfung ist über vollständige Permutationssuche für kleine Instanzen möglich.",
+        "Varianten können strukturell erzeugt werden, ohne neue fachliche Behauptungen zu erfinden."
+      ],
+      "risks": [
+        "Die Kandidatenklassifikation im älteren Inventar enthält teilweise unpassende Topic-Tags; die Auswahl stützt sich deshalb auf Aufgaben- und Lösungsseite."
+      ],
+      "decision": "selected_for_phase8"
+    },
+    {
+      "id": "phase8-candidate-workout-2022-a7",
+      "title": "Workout",
+      "eventId": "exam-2022-1",
+      "examTaskNumber": 7,
+      "evidenceType": "real_exam",
+      "sourceRefs": [
+        {
+          "sourceId": "src-c4dde22523d3",
+          "page": 11,
+          "label": "Aufgabe 7: Workout"
+        }
+      ],
+      "officialSolutionAvailable": false,
+      "mandatoryGate": "failed",
+      "score": 61,
+      "strengths": [
+        "Echte Klausuraufgabe mit Greedy-Entwurf und Laufzeitforderung."
+      ],
+      "risks": [
+        "Keine offizielle Lösungsskizze im validierten Korpus.",
+        "Kanonische Greedy-Regel und Beweis dürften ohne Zusatzannahmen nicht produktiv bewertet werden."
+      ],
+      "decision": "deferred_until_solution_evidence"
+    },
+    {
+      "id": "phase8-candidate-entsorgungsstationen-2024-a7",
+      "title": "Entsorgungsstationen",
+      "eventId": "exam-2024-1",
+      "examTaskNumber": 7,
+      "evidenceType": "real_exam",
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 7,
+          "label": "Aufgabe 7: Entsorgungsstationen"
+        }
+      ],
+      "officialSolutionAvailable": false,
+      "mandatoryGate": "failed",
+      "score": 54,
+      "strengths": [
+        "Echte Klausuraufgabe; visuelle Prüfung bestätigt Greedy-Entwurf."
+      ],
+      "risks": [
+        "OCR/Textauszug ist unvollständig.",
+        "Keine offizielle Lösungsskizze und keine belastbare kanonische Bewertungsgrundlage."
+      ],
+      "decision": "deferred_until_text_and_solution_evidence"
+    },
+    {
+      "id": "phase8-candidate-laternen-2023-mock-a7",
+      "title": "Laternen",
+      "eventId": "mock-2023",
+      "examTaskNumber": 7,
+      "evidenceType": "mock_exam",
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 9,
+          "label": "Probeklausur Aufgabe 7: Laternen"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 9,
+          "label": "Beispiellösung Aufgabe 7: Algorithmus"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 10,
+          "label": "Beispiellösung Aufgabe 7: Beweis"
+        }
+      ],
+      "officialSolutionAvailable": true,
+      "mandatoryGate": "passed_as_mock_only",
+      "score": 82,
+      "strengths": [
+        "Probeklausur mit Lösungsskizze, Laufzeit und Beweis.",
+        "Gute Alternativbasis für Übungsvarianten."
+      ],
+      "risks": [
+        "Nicht als echte Klausurfrequenz zählbar.",
+        "Für Phase 8 ist der echte Klausurkandidat Fitnesspunkte stärker."
+      ],
+      "decision": "kept_as_reference_not_productive"
+    },
+    {
+      "id": "phase8-breadth-divide-and-conquer",
+      "title": "Divide-and-Conquer-Aufgabe-7-Breite",
+      "eventId": "multiple",
+      "examTaskNumber": 7,
+      "evidenceType": "real_exam",
+      "sourceRefs": [],
+      "officialSolutionAvailable": false,
+      "mandatoryGate": "not_applicable",
+      "score": 20,
+      "strengths": [
+        "Zeigt, dass Aufgabe 7 historisch nicht ausschließlich Greedy ist."
+      ],
+      "risks": [
+        "Nicht Greedy; deshalb nicht als Phase-8-Produktionskandidat zulässig."
+      ],
+      "decision": "breadth_only"
+    }
+  ]
+}

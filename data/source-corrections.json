@@ -1,0 +1,882 @@
+{
+  "schemaVersion": "1.0.0",
+  "correctionCount": 42,
+  "corrections": [
+    {
+      "id": "corr-9efcb20b002d",
+      "recordType": "SourceDocument",
+      "recordId": "src-35405e721f05",
+      "field": "document_category",
+      "previousValue": "Prüfungslösung",
+      "correctedValue": "Probeklausurlösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-35405e721f05",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-23f5a1542e3f",
+      "recordType": "SourceDocument",
+      "recordId": "src-a969dc88f8e9",
+      "field": "document_category",
+      "previousValue": "Prüfungslösung",
+      "correctedValue": "Probeklausurlösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-a969dc88f8e9",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-0dbfbd053960",
+      "recordType": "SourceDocument",
+      "recordId": "src-f2148ca799c1",
+      "field": "document_category",
+      "previousValue": "Prüfungslösung",
+      "correctedValue": "Probeklausurlösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-f2148ca799c1",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-10f7157e5a45",
+      "recordType": "SourceDocument",
+      "recordId": "src-cc8a7a37cf43",
+      "field": "document_category",
+      "previousValue": "Probeklausur",
+      "correctedValue": "Probeklausurlösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-cc8a7a37cf43",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-ef27f1812cac",
+      "recordType": "SourceDocument",
+      "recordId": "src-a66dd4b4981a",
+      "field": "document_category",
+      "previousValue": "Prüfung",
+      "correctedValue": "Probeklausurlösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-a66dd4b4981a",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-aedcd1816ede",
+      "recordType": "SourceDocument",
+      "recordId": "src-b6c99693279c",
+      "field": "document_category",
+      "previousValue": "Prüfungslösung",
+      "correctedValue": "Probeklausurlösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-b6c99693279c",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-2824d9749497",
+      "recordType": "SourceDocument",
+      "recordId": "src-9a15c067adc0",
+      "field": "document_category",
+      "previousValue": "Prüfung",
+      "correctedValue": "Probeklausurlösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-9a15c067adc0",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-f81021f9a976",
+      "recordType": "SourceDocument",
+      "recordId": "src-cfa0492edc16",
+      "field": "document_category",
+      "previousValue": "Prüfung",
+      "correctedValue": "Probeklausurlösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-cfa0492edc16",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-0a1d5a6779ee",
+      "recordType": "SourceDocument",
+      "recordId": "src-fbf39f80037d",
+      "field": "document_category",
+      "previousValue": "Prüfungslösung",
+      "correctedValue": "Probeklausurlösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-fbf39f80037d",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-dc06647fcdd9",
+      "recordType": "SourceDocument",
+      "recordId": "src-fd725d118ee1",
+      "field": "document_category",
+      "previousValue": "Prüfungslösung",
+      "correctedValue": "Probeklausurlösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-fd725d118ee1",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-a4e041d34b97",
+      "recordType": "SourceDocument",
+      "recordId": "src-f4eb1fb11ce8",
+      "field": "document_category",
+      "previousValue": "Prüfungslösung",
+      "correctedValue": "Übungslösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-f4eb1fb11ce8",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-374a9d3f68b4",
+      "recordType": "SourceDocument",
+      "recordId": "src-2f4e03bd738e",
+      "field": "document_category",
+      "previousValue": "Prüfungslösung",
+      "correctedValue": "Übungslösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-2f4e03bd738e",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-436f49b89a92",
+      "recordType": "SourceDocument",
+      "recordId": "src-d70259daf0aa",
+      "field": "document_category",
+      "previousValue": "Prüfungslösung",
+      "correctedValue": "Übungslösung",
+      "reason": "Dateiname und visueller/inhaltlicher Befund belegen Probe- bzw. Übungskontext; keine reale Klausur.",
+      "supportingSource": {
+        "sourceId": "src-d70259daf0aa",
+        "page": 1
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-0f33c7fc9e40",
+      "recordType": "Topic",
+      "recordId": "topic-0f08406835d1",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2020-2/A1",
+        "exam-2020-2/A2",
+        "exam-2020-2/A4",
+        "exam-2020-2/A7",
+        "exam-2020-2/A8",
+        "exam-2020-2/A9",
+        "exam-2021-1/A1",
+        "exam-2021-1/A2",
+        "exam-2021-1/A3",
+        "exam-2021-1/A5",
+        "exam-2021-1/A6",
+        "exam-2022-1/A1",
+        "exam-2022-1/A3",
+        "exam-2022-1/A4",
+        "exam-2022-1/A5",
+        "exam-2022-1/A7",
+        "exam-2022-1/A8",
+        "exam-2022-1/A9",
+        "exam-2022-2/A1",
+        "exam-2022-2/A3",
+        "exam-2022-2/A4",
+        "exam-2022-2/A5",
+        "exam-2022-2/A7",
+        "exam-2022-2/A8",
+        "exam-2022-2/A9"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-59ea56e881b5",
+      "recordType": "Topic",
+      "recordId": "topic-99af8a8bfb20",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2020-2/A6",
+        "exam-2020-2/A7",
+        "exam-2020-2/A8",
+        "exam-2020-2/A9",
+        "exam-2021-1/A1",
+        "exam-2021-1/A5",
+        "exam-2021-1/A6",
+        "exam-2022-1/A6",
+        "exam-2022-1/A7",
+        "exam-2022-1/A8",
+        "exam-2022-1/A9",
+        "exam-2022-2/A6",
+        "exam-2022-2/A7",
+        "exam-2022-2/A8",
+        "exam-2022-2/A9"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-bc88c376fa20",
+      "recordType": "Topic",
+      "recordId": "topic-916a9f1645f2",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2020-2/A6",
+        "exam-2020-2/A7",
+        "exam-2020-2/A8",
+        "exam-2020-2/A9",
+        "exam-2021-1/A1",
+        "exam-2021-1/A5",
+        "exam-2021-1/A6",
+        "exam-2022-1/A6",
+        "exam-2022-1/A7",
+        "exam-2022-1/A8",
+        "exam-2022-1/A9",
+        "exam-2022-2/A6",
+        "exam-2022-2/A7",
+        "exam-2022-2/A8",
+        "exam-2022-2/A9"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-f169d8c472c3",
+      "recordType": "Topic",
+      "recordId": "topic-38db7102a0b1",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2024-1/A5"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-8672d0ac871e",
+      "recordType": "Topic",
+      "recordId": "topic-2b335556483f",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2020-2/A5",
+        "exam-2020-2/A6",
+        "exam-2020-2/A7",
+        "exam-2020-2/A8",
+        "exam-2021-1/A4",
+        "exam-2021-1/A5",
+        "exam-2021-1/A6",
+        "exam-2022-1/A5",
+        "exam-2022-1/A6",
+        "exam-2022-1/A8",
+        "exam-2022-1/A9",
+        "exam-2022-2/A5",
+        "exam-2022-2/A6",
+        "exam-2022-2/A7",
+        "exam-2022-2/A8",
+        "exam-2024-1/A5",
+        "exam-2024-1/A6"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-fd6cc8a852b9",
+      "recordType": "Topic",
+      "recordId": "topic-1e43393edfb4",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2024-1/A5"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-55a22d55bd61",
+      "recordType": "Topic",
+      "recordId": "topic-e05ae3743b24",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2020-2/A5",
+        "exam-2020-2/A6",
+        "exam-2020-2/A7",
+        "exam-2020-2/A8",
+        "exam-2021-1/A4",
+        "exam-2021-1/A5",
+        "exam-2021-1/A6",
+        "exam-2022-1/A5",
+        "exam-2022-1/A6",
+        "exam-2022-1/A8",
+        "exam-2022-1/A9",
+        "exam-2022-2/A5",
+        "exam-2022-2/A6",
+        "exam-2022-2/A7",
+        "exam-2022-2/A8",
+        "exam-2024-1/A7",
+        "exam-2024-1/A8"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-ed986f38a300",
+      "recordType": "Topic",
+      "recordId": "topic-869c6f5b2efa",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2026/A4",
+        "?/A1",
+        "?/A5",
+        "?/A6",
+        "?/A7",
+        "?/A8",
+        "?/A9"
+      ],
+      "correctedValue": [],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-0691be9cab0f",
+      "recordType": "Topic",
+      "recordId": "topic-aa4a4148523b",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2020/A1",
+        "2020/A7",
+        "2021/A1",
+        "2021/A6",
+        "2021/A7",
+        "2022/A8",
+        "2023/A7",
+        "2024/A1",
+        "2024/A4",
+        "2024/A7",
+        "2025/A2",
+        "2026/A3",
+        "?/A1",
+        "?/A2",
+        "?/A5",
+        "?/A6",
+        "?/A7",
+        "?/A8",
+        "?/A9"
+      ],
+      "correctedValue": [
+        "exam-2020-2/A7",
+        "exam-2024-1/A4"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-ea37ec7222a3",
+      "recordType": "Topic",
+      "recordId": "topic-ea8f0d02371e",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2020-2/A7",
+        "exam-2024-1/A4"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-a789ac4fb196",
+      "recordType": "Topic",
+      "recordId": "topic-a4e51634db8b",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2022-2/A9"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-6fcb3deafbdd",
+      "recordType": "Topic",
+      "recordId": "topic-ba664dc08e97",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2022-2/A9"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-b10fe7f47085",
+      "recordType": "Topic",
+      "recordId": "topic-e48203925235",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2020-2/A6",
+        "exam-2021-1/A1",
+        "exam-2024-1/A6"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-c8233f85f64b",
+      "recordType": "Topic",
+      "recordId": "topic-c0af8532bb72",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2021/A1",
+        "2021/A2",
+        "2021/A3",
+        "2021/A4",
+        "2026/A1",
+        "2026/A2",
+        "2026/A3",
+        "?/A1",
+        "?/A5",
+        "?/A7",
+        "?/A8",
+        "?/A9"
+      ],
+      "correctedValue": [
+        "exam-2024-1/A2",
+        "exam-2024-1/A8"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-585a99b98e2f",
+      "recordType": "Topic",
+      "recordId": "topic-f5b57f47447c",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2021/A2",
+        "2022/A2",
+        "2022/A4",
+        "2026/A1",
+        "?/A1",
+        "?/A5",
+        "?/A6",
+        "?/A7",
+        "?/A8",
+        "?/A9"
+      ],
+      "correctedValue": [
+        "exam-2022-2/A4",
+        "exam-2024-1/A2"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-1140ab9cf4e3",
+      "recordType": "Topic",
+      "recordId": "topic-4ddb19c67c58",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2024/A1",
+        "?/A1",
+        "?/A5",
+        "?/A6",
+        "?/A7",
+        "?/A8",
+        "?/A9"
+      ],
+      "correctedValue": [],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-a66f9125df23",
+      "recordType": "Topic",
+      "recordId": "topic-249f056b552d",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2022-2/A2"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-53cfe13a6f36",
+      "recordType": "Topic",
+      "recordId": "topic-83dbc3204045",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2022-2/A2"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-f0ef3d0e219a",
+      "recordType": "Topic",
+      "recordId": "topic-7ae0552985f1",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2024/A3"
+      ],
+      "correctedValue": [
+        "exam-2020-2/A3",
+        "exam-2022-1/A2",
+        "exam-2024-1/A3"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-63db7129a3ec",
+      "recordType": "Topic",
+      "recordId": "topic-0ba342914656",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2020/A4",
+        "2021/A4",
+        "2022/A2",
+        "2023/A4",
+        "2024/A4",
+        "?/A1",
+        "?/A4",
+        "?/A5",
+        "?/A7",
+        "?/A8",
+        "?/A9"
+      ],
+      "correctedValue": [
+        "exam-2022-2/A2"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-7d3406ad0aad",
+      "recordType": "Topic",
+      "recordId": "topic-f5f6e171c082",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2022-1/A9",
+        "exam-2024-1/A9"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-740866c9a949",
+      "recordType": "Topic",
+      "recordId": "topic-b9243ead8bde",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2024/A1",
+        "?/A1",
+        "?/A5",
+        "?/A6",
+        "?/A7",
+        "?/A8",
+        "?/A9"
+      ],
+      "correctedValue": [],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-b1af7139f99e",
+      "recordType": "Topic",
+      "recordId": "topic-c43206934ba2",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2024/A1"
+      ],
+      "correctedValue": [
+        "exam-2020-2/A2",
+        "exam-2024-1/A1"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-adc4284ea410",
+      "recordType": "Topic",
+      "recordId": "topic-475b9533acbe",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2024-1/A1"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-2800d7fb6a03",
+      "recordType": "Topic",
+      "recordId": "topic-082ebf8500a4",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2020-2/A2"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-e70f906d3765",
+      "recordType": "Topic",
+      "recordId": "topic-e8b80c23286d",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2021/A3",
+        "2022/A3",
+        "2024/A2",
+        "?/A1",
+        "?/A5",
+        "?/A6",
+        "?/A7",
+        "?/A8",
+        "?/A9"
+      ],
+      "correctedValue": [
+        "exam-2022-2/A3"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-d0191cbe0e98",
+      "recordType": "Topic",
+      "recordId": "topic-646279964c76",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2020/A3",
+        "2021/A3",
+        "2022/A3",
+        "2024/A1",
+        "2024/A3",
+        "?/A1",
+        "?/A5",
+        "?/A6",
+        "?/A7",
+        "?/A8",
+        "?/A9"
+      ],
+      "correctedValue": [
+        "exam-2021-1/A3",
+        "exam-2024-1/A9"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-6b3a094b8ec8",
+      "recordType": "Topic",
+      "recordId": "topic-51f038cebfcd",
+      "field": "exam_appearances",
+      "previousValue": [],
+      "correctedValue": [
+        "exam-2024-1/A9"
+      ],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    },
+    {
+      "id": "corr-26e5ed0047e9",
+      "recordType": "Topic",
+      "recordId": "topic-1fa208a0ed89",
+      "field": "exam_appearances",
+      "previousValue": [
+        "2024/A3",
+        "?/A1",
+        "?/A5",
+        "?/A6",
+        "?/A7",
+        "?/A8",
+        "?/A9"
+      ],
+      "correctedValue": [],
+      "reason": "Historische Häufigkeit verwendet ausschließlich kanonische reale Prüfungsereignisse; Übungen, Probeklausuren, erzeugte Beispiele und Duplikate sind getrennt.",
+      "supportingSource": {
+        "sourceId": null,
+        "page": null,
+        "rule": "Phase-0A-Evidenznormalisierung"
+      },
+      "correctedAt": "2026-07-06"
+    }
+  ]
+}

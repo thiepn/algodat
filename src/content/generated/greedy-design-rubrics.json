@@ -1,0 +1,63 @@
+[
+  {
+    "id": "rubric-greedy-entwurf-fitnesspunkte-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-3e0e72f97f6e"
+    ],
+    "taskType": "greedy_design",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8a588d5ddc35",
+        "page": 8,
+        "label": "Lösungsskizze Fitnesspunkte"
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "verified_against_official_solution",
+    "trainerKind": "design",
+    "trainerId": "trainer-greedy-entwurf-fitnesspunkte-v1",
+    "maxPoints": 40,
+    "examPoints": 8,
+    "criteria": [
+      {
+        "id": "interpretation",
+        "label": "Problem und Ziel korrekt gedeutet",
+        "maxPoints": 5
+      },
+      {
+        "id": "greedy_rule",
+        "label": "Greedy-Regel und Priorität",
+        "maxPoints": 8
+      },
+      {
+        "id": "algorithm",
+        "label": "Pseudocode mit Akkumulator",
+        "maxPoints": 8
+      },
+      {
+        "id": "proof",
+        "label": "Austausch-/Widerspruchsbeweis",
+        "maxPoints": 12
+      },
+      {
+        "id": "runtime",
+        "label": "Laufzeitanalyse",
+        "maxPoints": 5
+      },
+      {
+        "id": "memory",
+        "label": "Speicherhinweis",
+        "maxPoints": 2
+      }
+    ],
+    "followUpErrorPolicy": "Regelfehler, Algorithmusfehler, Beweisfehler und Laufzeitfehler werden getrennt diagnostiziert; Lösungseinblendung und Hilfen kappen die Gesamtpunkte.",
+    "caps": {
+      "solutionRevealedMaximumPoints": 12,
+      "hintsUsedMaximumPoints": 26
+    }
+  }
+]

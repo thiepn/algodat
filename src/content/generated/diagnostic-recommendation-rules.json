@@ -1,0 +1,58 @@
+[
+  {
+    "id": "rule-foundation-asymptotics",
+    "errorCode": "asymptotic_notation_error",
+    "targetType": "trainer",
+    "targetId": "trainer-rekurrenz-master-fall1-v1",
+    "label": "Asymptotik und Landau-Notation mit tiefem Trainer stabilisieren"
+  },
+  {
+    "id": "rule-foundation-recurrences",
+    "errorCode": "master_theorem_case_error",
+    "targetType": "trainer",
+    "targetId": "trainer-rekurrenz-master-fall1-v1",
+    "label": "Rekurrenzen, Rekursionsbäume und Master-Theorem mit tiefem Trainer stabilisieren"
+  },
+  {
+    "id": "rule-foundation-sorting-search",
+    "errorCode": "search_precondition_error",
+    "targetType": "trainer",
+    "targetId": "trainer-dc-entwurf-maxwertdifferenz-v1",
+    "label": "Suchen und Sortieren mit tiefem Trainer stabilisieren"
+  },
+  {
+    "id": "rule-foundation-data-structures",
+    "errorCode": "data_structure_operation_error",
+    "targetType": "trainer",
+    "targetId": "trainer-union-find-listen-v1",
+    "label": "Datenstrukturen und Operationen mit tiefem Trainer stabilisieren"
+  },
+  {
+    "id": "rule-foundation-graph-basics",
+    "errorCode": "graph_type_error",
+    "targetType": "trainer",
+    "targetId": "trainer-graph-floyd-warshall-v1",
+    "label": "Graphgrundlagen mit tiefem Trainer stabilisieren"
+  },
+  {
+    "id": "rule-foundation-graph-algorithms",
+    "errorCode": "mst_shortest_path_confusion",
+    "targetType": "trainer",
+    "targetId": "trainer-graph-floyd-warshall-v1",
+    "label": "Graphalgorithmen auswählen mit tiefem Trainer stabilisieren"
+  },
+  {
+    "id": "rule-foundation-paradigms",
+    "errorCode": "dp_dnc_confusion",
+    "targetType": "trainer",
+    "targetId": "trainer-dp-entwurf-mine-v1",
+    "label": "Entwurfsparadigmen unterscheiden mit tiefem Trainer stabilisieren"
+  },
+  {
+    "id": "rule-foundation-proofs",
+    "errorCode": "correctness_runtime_confusion",
+    "targetType": "trainer",
+    "targetId": "trainer-schleifeninvariante-summe-v1",
+    "label": "Korrektheit und Beweismethoden mit tiefem Trainer stabilisieren"
+  }
+]

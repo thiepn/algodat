@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": 4,
+  "selectedTrainerId": "trainer-schleifeninvariante-summe-v1",
+  "selectedProblemId": "problem-schleifeninvariante-gewichtete-summe-v1",
+  "selectionDate": "2026-07-07",
+  "decisionPolicy": "Offizielle, lokal belegte Quellen mit vollständiger Aufgabenstellung und Lösung haben Vorrang. Der erste vertikale Beweistrainer muss eine sichere, kleine Grammatik und einen vollständigen IA/IV/IS-/Terminierungsbeleg besitzen.",
+  "candidates": [
+    {
+      "rank": 1,
+      "name": "Gewichtete Array-Summe",
+      "status": "selected",
+      "sourceRefs": [
+        { "sourceId": "src-25d6340b518c", "page": 11 },
+        { "sourceId": "src-25d6340b518c", "page": 12 },
+        { "sourceId": "src-baa07f0a207a", "page": 132 },
+        { "sourceId": "src-baa07f0a207a", "page": 133 },
+        { "sourceId": "src-baa07f0a207a", "page": 135 },
+        { "sourceId": "src-baa07f0a207a", "page": 140 }
+      ],
+      "reason": "Vollständige offizielle Übungsaufgabe mit Beweisstruktur und passender Vorlesungsmethodik; geringe Parserkomplexität durch lineare Summe."
+    },
+    {
+      "rank": 2,
+      "name": "Produkt/geometrisches Mittel",
+      "status": "deferred",
+      "sourceRefs": [{ "sourceId": "src-d84d48bf72d8", "page": 1 }],
+      "reason": "Offiziell belegt, aber als erster Trainer wegen Produktnotation und n-ter Wurzel formaler aufwendiger."
+    },
+    {
+      "rank": 3,
+      "name": "Maximumsuche",
+      "status": "deferred",
+      "sourceRefs": [{ "sourceId": "src-baa07f0a207a", "page": 345 }],
+      "reason": "Vorlesungsbeweis vorhanden; für Phase 4 fehlte gegenüber der Summenaufgabe ein gleich kompaktes Aufgaben-und-Lösungs-Paket."
+    },
+    {
+      "rank": 4,
+      "name": "Zählalgorithmus oder weitere Aufgabe-5-Varianten",
+      "status": "rejected_for_phase4",
+      "sourceRefs": [],
+      "reason": "Nicht mit derselben Vollständigkeit aus lokaler offizieller Quelle belegt; Unsicherheit bleibt dokumentiert."
+    }
+  ]
+}

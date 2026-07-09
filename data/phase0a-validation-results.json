@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "validatedAt": "2026-07-06T10:56:36.190509+00:00",
+  "passed": true,
+  "checkCount": 22,
+  "passedCount": 22,
+  "failedCount": 0,
+  "checks": [
+    {
+      "name": "Alle neun textarmen PDFs erfasst",
+      "passed": true,
+      "detail": "PDFs=9"
+    },
+    {
+      "name": "Alle textarmen Seiten geprüft",
+      "passed": true,
+      "detail": "erwartet=103, geprüft=103"
+    },
+    {
+      "name": "Jede Sichtprüfung mit Quelle, Seite und Bild",
+      "passed": true,
+      "detail": "ungültig=[]"
+    },
+    {
+      "name": "Jede Review-Seite mit Ergebnis",
+      "passed": true,
+      "detail": "ohne Status=0"
+    },
+    {
+      "name": "Jede Korrektur begründet und datiert",
+      "passed": true,
+      "detail": "ungültig=[]"
+    },
+    {
+      "name": "Quellenevidenz normalisiert",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Nur reale Klausuren sind historisch frequenzfähig",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Probeklausuren zählen nicht als reale Klausuren",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Übungen zählen nicht als reale Klausuren",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Generierte Dokumente erzeugen keine Klausurtreffer",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "2026-Übungen sind keine realen Klausuraufgaben",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Themenfrequenz nutzt nur reale Corpus-Events",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Exakte Duplikate zählen höchstens einmal",
+      "passed": true,
+      "detail": "ungültig=[]"
+    },
+    {
+      "name": "Kein unbekannter Prüfer unbelegt zu Sohler geändert",
+      "passed": true,
+      "detail": "ungültig=[]"
+    },
+    {
+      "name": "Kein unbekanntes Jahr unbelegt konkretisiert",
+      "passed": true,
+      "detail": "ungültig=[]"
+    },
+    {
+      "name": "2024-Metadaten bleiben unbekannt",
+      "passed": true,
+      "detail": "Prüfer/Dauer/Datum müssen null sein"
+    },
+    {
+      "name": "Visual-Review-Pflicht gelöst oder explizit beibehalten",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Offizielle Lösungen mit existierenden Fragen verknüpft",
+      "passed": true,
+      "detail": "ungültig=[]"
+    },
+    {
+      "name": "Jedes Prüfungsset mit Profil, Evidenz und Sicherheit",
+      "passed": true,
+      "detail": "ungültig=[]"
+    },
+    {
+      "name": "Standard- und 2021-Profil getrennt",
+      "passed": true,
+      "detail": "Profile=2"
+    },
+    {
+      "name": "Keine Quelldatei verändert",
+      "passed": true,
+      "detail": "verändert=[]"
+    },
+    {
+      "name": "Keine privaten Quellbinärdateien gestaged",
+      "passed": true,
+      "detail": "gestaged=[]"
+    }
+  ],
+  "errors": []
+}

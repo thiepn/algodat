@@ -1,0 +1,224 @@
+[
+  {
+    "id": "rubric-trainer-graph-floyd-warshall-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-1fa208a0ed89",
+      "topic-f5f6e171c082"
+    ],
+    "taskType": "graph_algorithm_tracing",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 4
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 5
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08T00:00:00.000Z",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "engine_matches_official_method",
+    "trainerKind": "tracing",
+    "trainerId": "trainer-graph-floyd-warshall-v1",
+    "maxPoints": 40,
+    "examPoints": 4,
+    "criteria": [
+      {
+        "id": "vertex-order",
+        "label": "Knotenreihenfolge",
+        "maxPoints": 4
+      },
+      {
+        "id": "initial-matrix",
+        "label": "Initialmatrix D(0)",
+        "maxPoints": 6
+      },
+      {
+        "id": "iteration-d1",
+        "label": "Iteration D(1)",
+        "maxPoints": 5
+      },
+      {
+        "id": "iteration-d2",
+        "label": "Iteration D(2)",
+        "maxPoints": 5
+      },
+      {
+        "id": "iteration-d3",
+        "label": "Iteration D(3)",
+        "maxPoints": 5
+      },
+      {
+        "id": "iteration-d4",
+        "label": "Iteration D(4)",
+        "maxPoints": 5
+      },
+      {
+        "id": "recurrence",
+        "label": "Rekurrenznotation",
+        "maxPoints": 5
+      },
+      {
+        "id": "runtime",
+        "label": "Laufzeit und Begründung",
+        "maxPoints": 5
+      }
+    ],
+    "followUpErrorPolicy": "Matrixfehler werden pro Iteration isoliert; Folgefehler werden markiert, aber nicht als erfundene alternative Wahrheit akzeptiert.",
+    "caps": {
+      "solutionRevealedMaximumPoints": 24,
+      "hintsUsedMaximumPoints": 34
+    }
+  },
+  {
+    "id": "rubric-trainer-graph-dijkstra-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-e8b80c23286d",
+      "topic-f5f6e171c082"
+    ],
+    "taskType": "graph_algorithm_tracing",
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-1ea0642ec775",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08T00:00:00.000Z",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "engine_matches_official_method",
+    "trainerKind": "tracing",
+    "trainerId": "trainer-graph-dijkstra-v1",
+    "maxPoints": 40,
+    "examPoints": 5,
+    "criteria": [
+      {
+        "id": "start-vertex",
+        "label": "Startknoten und Initialisierung",
+        "maxPoints": 4
+      },
+      {
+        "id": "marked-order",
+        "label": "ExtractMin- und Markierungsreihenfolge",
+        "maxPoints": 8
+      },
+      {
+        "id": "distance-table",
+        "label": "Distanztabelle",
+        "maxPoints": 10
+      },
+      {
+        "id": "predecessor-table",
+        "label": "Vorgängertabelle",
+        "maxPoints": 8
+      },
+      {
+        "id": "relaxations",
+        "label": "Verbessernde Relaxationen",
+        "maxPoints": 5
+      },
+      {
+        "id": "runtime",
+        "label": "Laufzeit und Begründung",
+        "maxPoints": 5
+      }
+    ],
+    "followUpErrorPolicy": "Distanz- und Vorgängerfehler werden getrennt bewertet; Folgefehler werden markiert, aber nicht als alternative kanonische Spur akzeptiert.",
+    "caps": {
+      "solutionRevealedMaximumPoints": 24,
+      "hintsUsedMaximumPoints": 34
+    }
+  },
+  {
+    "id": "rubric-trainer-graph-prim-mst-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-6a47a10f37e0",
+      "topic-c4a698fc939e"
+    ],
+    "taskType": "graph_algorithm_tracing",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 3,
+        "label": "Prim-Aufgabenformat"
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3,
+        "label": "Prim-Lösung"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 958,
+        "label": "key-/parent-Konvention"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 965,
+        "label": "Laufzeit"
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "trainerKind": "tracing",
+    "trainerId": "trainer-graph-prim-mst-v1",
+    "maxPoints": 40,
+    "examPoints": 4,
+    "criteria": [
+      {
+        "id": "prim-start",
+        "label": "Startknoten",
+        "maxPoints": 4
+      },
+      {
+        "id": "prim-vertex-order",
+        "label": "Aufnahmereihenfolge der Knoten",
+        "maxPoints": 6
+      },
+      {
+        "id": "prim-edge-order",
+        "label": "Kantenreihenfolge und Endbaum",
+        "maxPoints": 8
+      },
+      {
+        "id": "prim-key-table",
+        "label": "key-Tabelle",
+        "maxPoints": 7
+      },
+      {
+        "id": "prim-parent-table",
+        "label": "parent-Tabelle",
+        "maxPoints": 6
+      },
+      {
+        "id": "prim-total-weight",
+        "label": "Gesamtgewicht",
+        "maxPoints": 4
+      },
+      {
+        "id": "prim-safe-edge-runtime",
+        "label": "Sichere Kante und Laufzeit",
+        "maxPoints": 5
+      }
+    ],
+    "followUpErrorPolicy": "Ein früher falscher Prim-Schritt wird nicht doppelt bestraft: Ein semantisch gültiger minimaler Endbaum erhält Teilpunkte, auch wenn die strict-kanonische Reihenfolge abweicht.",
+    "caps": {
+      "solutionRevealedMaximumPoints": 24,
+      "hintsUsedMaximumPoints": 34
+    }
+  }
+]

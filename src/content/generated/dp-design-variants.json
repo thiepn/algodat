@@ -1,0 +1,695 @@
+[
+  {
+    "id": "variant-mine-guided-entry",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Geführte Einstiegsinstanz",
+    "mode": "learn",
+    "matrix": [
+      [
+        4,
+        7,
+        2
+      ],
+      [
+        8,
+        1,
+        5
+      ],
+      [
+        3,
+        9,
+        6
+      ]
+    ],
+    "focus": "Zustand und Vorgänger verstehen",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-dp-mine-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "x": "siehe Hauptlösung"
+        },
+        "state": {
+          "x": "siehe Hauptlösung"
+        },
+        "recurrence": {
+          "x": "siehe Hauptlösung"
+        },
+        "evaluation": {
+          "x": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "x": "siehe Hauptlösung"
+        },
+        "proof": {
+          "x": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "x": "siehe Hauptlösung"
+        }
+      },
+      "dpTable": [
+        [
+          4,
+          7,
+          2
+        ],
+        [
+          15,
+          8,
+          12
+        ],
+        [
+          18,
+          24,
+          18
+        ]
+      ],
+      "optimalValue": 24,
+      "oracleValidationStatus": "brute_force_matches_dp"
+    }
+  },
+  {
+    "id": "variant-mine-standard-practice",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Standard-Übungsinstanz",
+    "mode": "practice",
+    "matrix": [
+      [
+        5,
+        6,
+        12,
+        9,
+        43
+      ],
+      [
+        44,
+        16,
+        55,
+        8,
+        1
+      ],
+      [
+        101,
+        12,
+        106,
+        18,
+        2
+      ],
+      [
+        17,
+        19,
+        22,
+        41,
+        6
+      ]
+    ],
+    "focus": "vollständiger Entwurf",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-dp-mine-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "x": "siehe Hauptlösung"
+        },
+        "state": {
+          "x": "siehe Hauptlösung"
+        },
+        "recurrence": {
+          "x": "siehe Hauptlösung"
+        },
+        "evaluation": {
+          "x": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "x": "siehe Hauptlösung"
+        },
+        "proof": {
+          "x": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "x": "siehe Hauptlösung"
+        }
+      },
+      "dpTable": [
+        [
+          5,
+          6,
+          12,
+          9,
+          43
+        ],
+        [
+          50,
+          28,
+          67,
+          51,
+          44
+        ],
+        [
+          151,
+          79,
+          173,
+          85,
+          53
+        ],
+        [
+          168,
+          192,
+          195,
+          214,
+          91
+        ]
+      ],
+      "optimalValue": 214,
+      "oracleValidationStatus": "brute_force_matches_dp"
+    }
+  },
+  {
+    "id": "variant-mine-exam",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Prüfungsinstanz",
+    "mode": "exam",
+    "matrix": [
+      [
+        3,
+        10,
+        2,
+        5
+      ],
+      [
+        8,
+        4,
+        9,
+        1
+      ],
+      [
+        6,
+        7,
+        2,
+        11
+      ],
+      [
+        1,
+        5,
+        13,
+        4
+      ]
+    ],
+    "focus": "ohne Hinweise entwerfen",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-dp-mine-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "x": "siehe Hauptlösung"
+        },
+        "state": {
+          "x": "siehe Hauptlösung"
+        },
+        "recurrence": {
+          "x": "siehe Hauptlösung"
+        },
+        "evaluation": {
+          "x": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "x": "siehe Hauptlösung"
+        },
+        "proof": {
+          "x": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "x": "siehe Hauptlösung"
+        }
+      },
+      "dpTable": [
+        [
+          3,
+          10,
+          2,
+          5
+        ],
+        [
+          18,
+          14,
+          19,
+          6
+        ],
+        [
+          24,
+          26,
+          21,
+          30
+        ],
+        [
+          27,
+          31,
+          43,
+          34
+        ]
+      ],
+      "optimalValue": 43,
+      "oracleValidationStatus": "brute_force_matches_dp"
+    }
+  },
+  {
+    "id": "variant-mine-review-state",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Wiederholung Zustandsdefinition",
+    "mode": "review",
+    "matrix": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "focus": "Zustandsbedeutung",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-dp-mine-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "x": "siehe Hauptlösung"
+        },
+        "state": {
+          "x": "siehe Hauptlösung"
+        },
+        "recurrence": {
+          "x": "siehe Hauptlösung"
+        },
+        "evaluation": {
+          "x": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "x": "siehe Hauptlösung"
+        },
+        "proof": {
+          "x": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "x": "siehe Hauptlösung"
+        }
+      },
+      "dpTable": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "optimalValue": 6,
+      "oracleValidationStatus": "brute_force_matches_dp"
+    }
+  },
+  {
+    "id": "variant-mine-review-recurrence",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Wiederholung Rekurrenz",
+    "mode": "review",
+    "matrix": [
+      [
+        9,
+        1,
+        8
+      ],
+      [
+        2,
+        10,
+        3
+      ],
+      [
+        4,
+        5,
+        6
+      ]
+    ],
+    "focus": "Rand- und Innenfälle",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-dp-mine-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "x": "siehe Hauptlösung"
+        },
+        "state": {
+          "x": "siehe Hauptlösung"
+        },
+        "recurrence": {
+          "x": "siehe Hauptlösung"
+        },
+        "evaluation": {
+          "x": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "x": "siehe Hauptlösung"
+        },
+        "proof": {
+          "x": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "x": "siehe Hauptlösung"
+        }
+      },
+      "dpTable": [
+        [
+          9,
+          1,
+          8
+        ],
+        [
+          11,
+          19,
+          11
+        ],
+        [
+          23,
+          24,
+          25
+        ]
+      ],
+      "optimalValue": 25,
+      "oracleValidationStatus": "brute_force_matches_dp"
+    }
+  },
+  {
+    "id": "variant-mine-state-part",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Teilübung Zustandsdefinition",
+    "mode": "practice",
+    "matrix": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "focus": "nur Zustand",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-dp-mine-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "x": "siehe Hauptlösung"
+        },
+        "state": {
+          "x": "siehe Hauptlösung"
+        },
+        "recurrence": {
+          "x": "siehe Hauptlösung"
+        },
+        "evaluation": {
+          "x": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "x": "siehe Hauptlösung"
+        },
+        "proof": {
+          "x": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "x": "siehe Hauptlösung"
+        }
+      },
+      "dpTable": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "optimalValue": 6,
+      "oracleValidationStatus": "brute_force_matches_dp"
+    }
+  },
+  {
+    "id": "variant-mine-recurrence-part",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Teilübung Rekurrenz",
+    "mode": "practice",
+    "matrix": [
+      [
+        2,
+        5,
+        1
+      ],
+      [
+        4,
+        3,
+        6
+      ]
+    ],
+    "focus": "nur Rekurrenz",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-dp-mine-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "x": "siehe Hauptlösung"
+        },
+        "state": {
+          "x": "siehe Hauptlösung"
+        },
+        "recurrence": {
+          "x": "siehe Hauptlösung"
+        },
+        "evaluation": {
+          "x": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "x": "siehe Hauptlösung"
+        },
+        "proof": {
+          "x": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "x": "siehe Hauptlösung"
+        }
+      },
+      "dpTable": [
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          9,
+          8,
+          11
+        ]
+      ],
+      "optimalValue": 11,
+      "oracleValidationStatus": "brute_force_matches_dp"
+    }
+  },
+  {
+    "id": "variant-mine-order-part",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 12
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Teilübung Bottom-up-Reihenfolge",
+    "mode": "practice",
+    "matrix": [
+      [
+        7,
+        3
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "focus": "Abhängigkeiten",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-dp-mine-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "x": "siehe Hauptlösung"
+        },
+        "state": {
+          "x": "siehe Hauptlösung"
+        },
+        "recurrence": {
+          "x": "siehe Hauptlösung"
+        },
+        "evaluation": {
+          "x": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "x": "siehe Hauptlösung"
+        },
+        "proof": {
+          "x": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "x": "siehe Hauptlösung"
+        }
+      },
+      "dpTable": [
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          17,
+          19
+        ]
+      ],
+      "optimalValue": 19,
+      "oracleValidationStatus": "brute_force_matches_dp"
+    }
+  },
+  {
+    "id": "variant-mine-error-correction",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 12
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Fehlerkorrektur-Teilübung",
+    "mode": "review",
+    "matrix": [
+      [
+        6,
+        2,
+        9
+      ],
+      [
+        1,
+        7,
+        3
+      ],
+      [
+        8,
+        4,
+        5
+      ]
+    ],
+    "focus": "falsche Vorgänger korrigieren",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-dp-mine-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "x": "siehe Hauptlösung"
+        },
+        "state": {
+          "x": "siehe Hauptlösung"
+        },
+        "recurrence": {
+          "x": "siehe Hauptlösung"
+        },
+        "evaluation": {
+          "x": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "x": "siehe Hauptlösung"
+        },
+        "proof": {
+          "x": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "x": "siehe Hauptlösung"
+        }
+      },
+      "dpTable": [
+        [
+          6,
+          2,
+          9
+        ],
+        [
+          7,
+          16,
+          12
+        ],
+        [
+          24,
+          20,
+          21
+        ]
+      ],
+      "optimalValue": 24,
+      "oracleValidationStatus": "brute_force_matches_dp"
+    }
+  }
+]

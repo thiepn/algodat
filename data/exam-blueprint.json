@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.0.0",
+  "verdict": "Das Modell 1-9 ist für die Präsenzklausuren 2020/2022 und die bildlich geprüfte Klausur 2024 stark gestützt, aber nicht universell.",
+  "exception": "Die reale Klausur 2021 hatte 6 Aufgaben, 60 Punkte und 120 Minuten.",
+  "nine_task_real_exam_sample_size": 5,
+  "tasks": [
+    {
+      "task_number": 1,
+      "likely_formats": [
+        "Tracing"
+      ],
+      "historical_topics": [
+        "MergeSort-Tracing",
+        "IntervalScheduling",
+        "GreedyLoadBalancing",
+        "LatenessScheduling",
+        "DFS"
+      ],
+      "frequency_in_nine_task_real_exams": 5,
+      "sample_size": 5,
+      "typical_points": 4,
+      "required_answer_components": "Zwischenzustände und Endergebnis",
+      "common_mistakes": [
+        "Tie-Breaker übersehen"
+      ],
+      "suitable_training_modes": [
+        "Tracing-Trainer"
+      ],
+      "priority": "hoch",
+      "confidence": "strongly supported",
+      "scope_note": "Gilt für das bestätigte Neun-Aufgaben-Regime; 2021 ist eine dokumentierte Ausnahme."
+    },
+    {
+      "task_number": 2,
+      "likely_formats": [
+        "Tracing"
+      ],
+      "historical_topics": [
+        "Hashing mit Verkettung",
+        "DFS",
+        "Rot-Schwarz-Bäume",
+        "Union-Find",
+        "Rucksack-DP-Tabelle"
+      ],
+      "frequency_in_nine_task_real_exams": 5,
+      "sample_size": 5,
+      "typical_points": 4,
+      "required_answer_components": "alle Zustände in geforderter Reihenfolge",
+      "common_mistakes": [
+        "Darstellungsinvariante verletzen"
+      ],
+      "suitable_training_modes": [
+        "Struktur-Trainer"
+      ],
+      "priority": "hoch",
+      "confidence": "strongly supported",
+      "scope_note": "Gilt für das bestätigte Neun-Aufgaben-Regime; 2021 ist eine dokumentierte Ausnahme."
+    },
+    {
+      "task_number": 3,
+      "likely_formats": [
+        "Tracing"
+      ],
+      "historical_topics": [
+        "Bellman-Ford und negative Kreise",
+        "Rot-Schwarz-Bäume",
+        "Floyd-Warshall",
+        "Dijkstra",
+        "Rot-Schwarz-Bäume"
+      ],
+      "frequency_in_nine_task_real_exams": 5,
+      "sample_size": 5,
+      "typical_points": 4,
+      "required_answer_components": "Tabelle/Graph nach jeder Iteration",
+      "common_mistakes": [
+        "Knotenreihenfolge ignorieren"
+      ],
+      "suitable_training_modes": [
+        "Graph-/Baum-Trainer"
+      ],
+      "priority": "hoch",
+      "confidence": "strongly supported",
+      "scope_note": "Gilt für das bestätigte Neun-Aufgaben-Regime; 2021 ist eine dokumentierte Ausnahme."
+    },
+    {
+      "task_number": 4,
+      "likely_formats": [
+        "Tracing"
+      ],
+      "historical_topics": [
+        "Union-Find mit Listen",
+        "Prim",
+        "Prim",
+        "Rucksack-DP-Tabelle",
+        "MergeSort"
+      ],
+      "frequency_in_nine_task_real_exams": 5,
+      "sample_size": 5,
+      "typical_points": 4,
+      "required_answer_components": "vollständige Zustandsfolge",
+      "common_mistakes": [
+        "Tie-Breaker oder Indexgrenzen"
+      ],
+      "suitable_training_modes": [
+        "Tracing-Trainer"
+      ],
+      "priority": "hoch",
+      "confidence": "strongly supported",
+      "scope_note": "Gilt für das bestätigte Neun-Aufgaben-Regime; 2021 ist eine dokumentierte Ausnahme."
+    },
+    {
+      "task_number": 5,
+      "likely_formats": [
+        "Programmverständnis und Beweis"
+      ],
+      "historical_topics": [
+        "Schleifeninvariante",
+        "Schleifeninvariante",
+        "Schleifeninvariante",
+        "Schleifeninvariante",
+        "Schleifeninvariante"
+      ],
+      "frequency_in_nine_task_real_exams": 5,
+      "sample_size": 5,
+      "typical_points": 5,
+      "required_answer_components": "Behauptung, Invariante, IA/IV/IS, Schluss",
+      "common_mistakes": [
+        "Invariante am falschen Programmpunkt"
+      ],
+      "suitable_training_modes": [
+        "Beweistrainer"
+      ],
+      "priority": "sehr hoch",
+      "confidence": "strongly supported",
+      "scope_note": "Gilt für das bestätigte Neun-Aufgaben-Regime; 2021 ist eine dokumentierte Ausnahme."
+    },
+    {
+      "task_number": 6,
+      "likely_formats": [
+        "Rekurrenzbeweis"
+      ],
+      "historical_topics": [
+        "Rekurrenz, Master-Theorem und Induktion",
+        "Rekurrenz, Master-Theorem und Induktion",
+        "Rekurrenz und Induktion",
+        "Rekurrenz und Induktion",
+        "Rekurrenz und Induktion"
+      ],
+      "frequency_in_nine_task_real_exams": 5,
+      "sample_size": 5,
+      "typical_points": 5,
+      "required_answer_components": "Schranke plus formal geschlossener Induktionsschritt",
+      "common_mistakes": [
+        "nur Master-Theorem nennen"
+      ],
+      "suitable_training_modes": [
+        "Rekurrenztrainer"
+      ],
+      "priority": "sehr hoch",
+      "confidence": "strongly supported",
+      "scope_note": "Gilt für das bestätigte Neun-Aufgaben-Regime; 2021 ist eine dokumentierte Ausnahme."
+    },
+    {
+      "task_number": 7,
+      "likely_formats": [
+        "Algorithmusentwurf"
+      ],
+      "historical_topics": [
+        "Divide and Conquer: maximale Wertdifferenz",
+        "Greedy: Fitnesspunkte",
+        "Greedy: Workout",
+        "Divide and Conquer: fehlerhaftes Array",
+        "Greedy: Entsorgungsstationen"
+      ],
+      "frequency_in_nine_task_real_exams": 5,
+      "sample_size": 5,
+      "typical_points": 8,
+      "required_answer_components": "Idee, Pseudocode, Laufzeit, Korrektheit",
+      "common_mistakes": [
+        "Optimierungsziel nicht bewiesen"
+      ],
+      "suitable_training_modes": [
+        "Entwurfstrainer"
+      ],
+      "priority": "hoch",
+      "confidence": "strongly supported",
+      "scope_note": "Gilt für das bestätigte Neun-Aufgaben-Regime; 2021 ist eine dokumentierte Ausnahme."
+    },
+    {
+      "task_number": 8,
+      "likely_formats": [
+        "Dynamische Programmierung"
+      ],
+      "historical_topics": [
+        "Dynamische Programmierung: Pausentage",
+        "Dynamische Programmierung: Rechnerbudget",
+        "Dynamische Programmierung: Frosch-Distanz",
+        "Dynamische Programmierung: Windpark",
+        "Dynamische Programmierung: Messreihen"
+      ],
+      "frequency_in_nine_task_real_exams": 5,
+      "sample_size": 5,
+      "typical_points": 8,
+      "required_answer_components": "Definition, Beweis, Bottom-up, Laufzeit",
+      "common_mistakes": [
+        "Zustand unvollständig definiert"
+      ],
+      "suitable_training_modes": [
+        "DP-Trainer"
+      ],
+      "priority": "sehr hoch",
+      "confidence": "strongly supported",
+      "scope_note": "Gilt für das bestätigte Neun-Aufgaben-Regime; 2021 ist eine dokumentierte Ausnahme."
+    },
+    {
+      "task_number": 9,
+      "likely_formats": [
+        "Transfer/Datendstruktur"
+      ],
+      "historical_topics": [
+        "Greedy: Graphfärbung",
+        "Datenstruktur: Multimenge",
+        "Graphtransfer: Zusammenhang durch eine Kante",
+        "Graphtransfer: kostenbeschränkter Spannbaum",
+        "Graphtransfer: negativer Kreis"
+      ],
+      "frequency_in_nine_task_real_exams": 5,
+      "sample_size": 5,
+      "typical_points": 8,
+      "required_answer_components": "Idee, Pseudocode/Operationen, Laufzeit, Beweis",
+      "common_mistakes": [
+        "geforderte Schranke verfehlt"
+      ],
+      "suitable_training_modes": [
+        "Transfertrainer"
+      ],
+      "priority": "hoch",
+      "confidence": "strongly supported",
+      "scope_note": "Gilt für das bestätigte Neun-Aufgaben-Regime; 2021 ist eine dokumentierte Ausnahme."
+    }
+  ],
+  "evidenceType": "real_exam",
+  "frequencyPolicy": "Nur kanonische reale Prüfungsereignisse; Probeklausuren, Übungen, erzeugte Beispiele und Dateiduplikate sind ausgeschlossen.",
+  "examProfiles": [
+    {
+      "id": "standard-praesenz",
+      "title": "Standard-Präsenzprofil",
+      "tasks": 9,
+      "points": 50,
+      "durationMinutes": 180,
+      "durationEvidence": "direkt für 2020-2 und 2022-1/2; nicht auf 2024 übertragen",
+      "confidence": "strongly_supported",
+      "supportingExamIds": [
+        "exam-2020-2",
+        "exam-2022-1",
+        "exam-2022-2",
+        "exam-2024-1"
+      ]
+    },
+    {
+      "id": "klausur-2021",
+      "title": "Klausurprofil 2021",
+      "tasks": 6,
+      "points": 60,
+      "durationMinutes": 120,
+      "durationEvidence": "Deckblatt der Klausur 2021, Seite 1",
+      "confidence": "confirmed",
+      "supportingExamIds": [
+        "exam-2021-1"
+      ]
+    }
+  ]
+}

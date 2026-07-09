@@ -1,0 +1,1924 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewedDocumentCount": 9,
+  "reviewedPageCount": 103,
+  "reviewer": "Codex, manuelle Bildprüfung",
+  "ocrUsed": false,
+  "pages": [
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 1,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-001.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Rekurrenzanalyse eines Divide-and-Conquer-Algorithmus",
+      "linkedQuestionId": "q-4c014d40be79",
+      "linkedSolutionId": "sol-visual-mock2021-a1",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 2,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-002.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Rucksack-DP-Tabelle",
+      "linkedQuestionId": "q-9250aecc36e0",
+      "linkedSolutionId": "sol-visual-mock2021-a2",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 3,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-003.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Minimaler Spannbaum mit Kruskal",
+      "linkedQuestionId": "q-ad6356ba6d66",
+      "linkedSolutionId": "sol-visual-mock2021-a3",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 4,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-004.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Schleifeninvariante: ungerade Ausgabe",
+      "linkedQuestionId": "q-acdf109cd284",
+      "linkedSolutionId": "sol-visual-mock2021-a4",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 5,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-005.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "linkedQuestionId": "q-90ceb998ba18",
+      "linkedSolutionId": "sol-visual-mock2021-a5",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 6,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-006.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "linkedQuestionId": "q-90ceb998ba18",
+      "linkedSolutionId": "sol-visual-mock2021-a5",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 7,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-007.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "linkedQuestionId": "q-90ceb998ba18",
+      "linkedSolutionId": "sol-visual-mock2021-a5",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 8,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-008.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "linkedQuestionId": "q-90ceb998ba18",
+      "linkedSolutionId": "sol-visual-mock2021-a5",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 9,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-009.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "linkedQuestionId": "q-90ceb998ba18",
+      "linkedSolutionId": "sol-visual-mock2021-a5",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 10,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-010.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Kreiserkennung mit Tiefensuche",
+      "linkedQuestionId": "q-2c5b8874d992",
+      "linkedSolutionId": "sol-visual-mock2021-a6",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-a969dc88f8e9",
+      "page": 11,
+      "renderedImagePath": "tmp/visual-review/src-a969dc88f8e9/page-011.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Kreiserkennung mit Tiefensuche",
+      "linkedQuestionId": "q-2c5b8874d992",
+      "linkedSolutionId": "sol-visual-mock2021-a6",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-7a4064a0710d",
+      "page": 1,
+      "renderedImagePath": "tmp/visual-review/src-7a4064a0710d/page-001.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Merge-Operation, Pseudocode und O(n)",
+      "linkedQuestionId": "q-bc4fa5c69121",
+      "linkedSolutionId": "sol-visual-7a4064a0710d-a1",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-7a4064a0710d",
+      "page": 2,
+      "renderedImagePath": "tmp/visual-review/src-7a4064a0710d/page-002.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Induktionsbeweis für Zweierpotenz",
+      "linkedQuestionId": "q-b84d6c4b1cd4",
+      "linkedSolutionId": "sol-visual-7a4064a0710d-a2",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-7a4064a0710d",
+      "page": 3,
+      "renderedImagePath": "tmp/visual-review/src-7a4064a0710d/page-003.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Schleifeninvariante für Feldprodukt",
+      "linkedQuestionId": "q-c76295096005",
+      "linkedSolutionId": "sol-visual-7a4064a0710d-a3",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-7a4064a0710d",
+      "page": 4,
+      "renderedImagePath": "tmp/visual-review/src-7a4064a0710d/page-004.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Divide and Conquer: nächster Wert",
+      "linkedQuestionId": null,
+      "linkedSolutionId": "sol-visual-7a4064a0710d-a4",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-7a4064a0710d",
+      "page": 5,
+      "renderedImagePath": "tmp/visual-review/src-7a4064a0710d/page-005.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Laufzeit und Korrektheit der Nächster-Wert-Suche",
+      "linkedQuestionId": null,
+      "linkedSolutionId": "sol-visual-7a4064a0710d-a4",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-c9cd3fa0f544",
+      "page": 1,
+      "renderedImagePath": "tmp/visual-review/src-c9cd3fa0f544/page-001.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Rekursive Summe und Suche nach nächstem Wert; Seite enthält Aufgaben 1 und 2",
+      "linkedQuestionId": "q-7f24bbcd0aac",
+      "linkedSolutionId": "sol-visual-c9cd3fa0f544-a1",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-c9cd3fa0f544",
+      "page": 2,
+      "renderedImagePath": "tmp/visual-review/src-c9cd3fa0f544/page-002.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Fehlerkorrektur rekursiver Algorithmen: Potenz, Fakultät, Quersumme",
+      "linkedQuestionId": "q-96dc52fba38b",
+      "linkedSolutionId": "sol-visual-c9cd3fa0f544-a3",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-c7ef1f699742",
+      "page": 1,
+      "renderedImagePath": "tmp/visual-review/src-c7ef1f699742/page-001.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Rot-Schwarz-Baum: Löschfolge 6, 9, 1, 4, 5",
+      "linkedQuestionId": null,
+      "linkedSolutionId": "sol-visual-c7ef1f699742-a1",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-c7ef1f699742",
+      "page": 2,
+      "renderedImagePath": "tmp/visual-review/src-c7ef1f699742/page-002.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Rot-Schwarz-Baum: Fortsetzung der Löschfälle",
+      "linkedQuestionId": null,
+      "linkedSolutionId": "sol-visual-c7ef1f699742-a1",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-c7ef1f699742",
+      "page": 3,
+      "renderedImagePath": "tmp/visual-review/src-c7ef1f699742/page-003.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Hashtabelle mit offener Adressierung und linearem Sondieren",
+      "linkedQuestionId": null,
+      "linkedSolutionId": "sol-visual-c7ef1f699742-a2",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-c7ef1f699742",
+      "page": 4,
+      "renderedImagePath": "tmp/visual-review/src-c7ef1f699742/page-004.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Datenstruktur für Multimengen mit direkter Adressierung",
+      "linkedQuestionId": null,
+      "linkedSolutionId": "sol-visual-c7ef1f699742-a3",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-d2005423b398",
+      "page": 1,
+      "renderedImagePath": "tmp/visual-review/src-d2005423b398/page-001.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Stirlingzahlen mit dynamischer Programmierung",
+      "linkedQuestionId": "q-42e8ca05c74a",
+      "linkedSolutionId": "sol-visual-d2005423b398-a1",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-d2005423b398",
+      "page": 2,
+      "renderedImagePath": "tmp/visual-review/src-d2005423b398/page-002.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Längste absteigende Teilfolge: Rekurrenz und Algorithmus",
+      "linkedQuestionId": "q-d6e2a447cec1",
+      "linkedSolutionId": "sol-visual-d2005423b398-a2",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-d2005423b398",
+      "page": 3,
+      "renderedImagePath": "tmp/visual-review/src-d2005423b398/page-003.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Längste absteigende Teilfolge: Laufzeit und Schleifeninvariante",
+      "linkedQuestionId": "q-d6e2a447cec1",
+      "linkedSolutionId": "sol-visual-d2005423b398-a2",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-d2005423b398",
+      "page": 4,
+      "renderedImagePath": "tmp/visual-review/src-d2005423b398/page-004.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Längste absteigende Teilfolge: Korrektheitsbeweis",
+      "linkedQuestionId": "q-d6e2a447cec1",
+      "linkedSolutionId": "sol-visual-d2005423b398-a2",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-d2005423b398",
+      "page": 5,
+      "renderedImagePath": "tmp/visual-review/src-d2005423b398/page-005.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Editierdistanz: Rekurrenz und Induktionsbeweis",
+      "linkedQuestionId": "q-f9ffd9863b61",
+      "linkedSolutionId": "sol-visual-d2005423b398-a3",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-d2005423b398",
+      "page": 6,
+      "renderedImagePath": "tmp/visual-review/src-d2005423b398/page-006.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Editierdistanz: Fortsetzung des Induktionsbeweises",
+      "linkedQuestionId": "q-f9ffd9863b61",
+      "linkedSolutionId": "sol-visual-d2005423b398-a3",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-d2005423b398",
+      "page": 7,
+      "renderedImagePath": "tmp/visual-review/src-d2005423b398/page-007.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Editierdistanz: Bottom-up-Algorithmus O(mn)",
+      "linkedQuestionId": "q-f9ffd9863b61",
+      "linkedSolutionId": "sol-visual-d2005423b398-a3",
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Aufgabenblatt ist kursattribuiert; handschriftliche Antwortautorenschaft ist nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 1,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-001.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Rekurrenzanalyse eines Divide-and-Conquer-Algorithmus",
+      "linkedQuestionId": "q-4c014d40be79",
+      "linkedSolutionId": "sol-visual-mock2021-a1",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 2,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-002.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Rucksack-DP-Tabelle",
+      "linkedQuestionId": "q-9250aecc36e0",
+      "linkedSolutionId": "sol-visual-mock2021-a2",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 3,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-003.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Minimaler Spannbaum mit Kruskal",
+      "linkedQuestionId": "q-ad6356ba6d66",
+      "linkedSolutionId": "sol-visual-mock2021-a3",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 4,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-004.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Schleifeninvariante: ungerade Ausgabe",
+      "linkedQuestionId": "q-acdf109cd284",
+      "linkedSolutionId": "sol-visual-mock2021-a4",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 5,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-005.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "linkedQuestionId": "q-90ceb998ba18",
+      "linkedSolutionId": "sol-visual-mock2021-a5",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 6,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-006.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "linkedQuestionId": "q-90ceb998ba18",
+      "linkedSolutionId": "sol-visual-mock2021-a5",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 7,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-007.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "linkedQuestionId": "q-90ceb998ba18",
+      "linkedSolutionId": "sol-visual-mock2021-a5",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 8,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-008.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "linkedQuestionId": "q-90ceb998ba18",
+      "linkedSolutionId": "sol-visual-mock2021-a5",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 9,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-009.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "linkedQuestionId": "q-90ceb998ba18",
+      "linkedSolutionId": "sol-visual-mock2021-a5",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 10,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-010.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Kreiserkennung mit Tiefensuche",
+      "linkedQuestionId": "q-2c5b8874d992",
+      "linkedSolutionId": "sol-visual-mock2021-a6",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-fbf39f80037d",
+      "page": 11,
+      "renderedImagePath": "tmp/visual-review/src-fbf39f80037d/page-011.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Kreiserkennung mit Tiefensuche",
+      "linkedQuestionId": "q-2c5b8874d992",
+      "linkedSolutionId": "sol-visual-mock2021-a6",
+      "confidence": "strongly_supported",
+      "unresolvedIssues": [
+        "Handschriftliche Lösung; Autorenschaft und offizieller Lösungsstatus nicht direkt belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-ce97639c1821",
+      "page": 1,
+      "renderedImagePath": "tmp/visual-review/src-ce97639c1821/page-001.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "DFS mit alphabetischer Tie-Break-Regel",
+      "linkedQuestionId": "q-325bc000d3da",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-ce97639c1821",
+      "page": 2,
+      "renderedImagePath": "tmp/visual-review/src-ce97639c1821/page-002.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Rucksack-DP-Tabelle",
+      "linkedQuestionId": "q-113716b2961d",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-ce97639c1821",
+      "page": 3,
+      "renderedImagePath": "tmp/visual-review/src-ce97639c1821/page-003.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Rot-Schwarz-Baum: Einfügen und Löschen",
+      "linkedQuestionId": "q-2d4c434cc9f4",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-ce97639c1821",
+      "page": 4,
+      "renderedImagePath": "tmp/visual-review/src-ce97639c1821/page-004.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "MergeSort-Tracing",
+      "linkedQuestionId": "q-3737ba8fb64c",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-ce97639c1821",
+      "page": 5,
+      "renderedImagePath": "tmp/visual-review/src-ce97639c1821/page-005.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Schleifeninvariante für alternierende Summe",
+      "linkedQuestionId": "q-87db01b3a470",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-ce97639c1821",
+      "page": 6,
+      "renderedImagePath": "tmp/visual-review/src-ce97639c1821/page-006.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Rekurrenzschranke und Induktionsbeweis",
+      "linkedQuestionId": "q-58dbe7725f08",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-ce97639c1821",
+      "page": 7,
+      "renderedImagePath": "tmp/visual-review/src-ce97639c1821/page-007.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Greedy-Entwurf für Entsorgungsstationen",
+      "linkedQuestionId": "q-6549208674b4",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-ce97639c1821",
+      "page": 8,
+      "renderedImagePath": "tmp/visual-review/src-ce97639c1821/page-008.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Dynamische Programmierung für Messreihenähnlichkeit",
+      "linkedQuestionId": "q-68147d5b33e4",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-ce97639c1821",
+      "page": 9,
+      "renderedImagePath": "tmp/visual-review/src-ce97639c1821/page-009.png",
+      "visualReviewStatus": "resolved_via_exact_duplicate",
+      "reviewerMethod": "Übernahme über bestätigte SHA-256-Identität",
+      "extractedMeaning": "Graphtransfer: negativen Kreis ausgeben",
+      "linkedQuestionId": "q-00019e2ecf83",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-6df30a9ff1ae",
+      "page": 1,
+      "renderedImagePath": "tmp/visual-review/src-6df30a9ff1ae/page-001.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "DFS mit alphabetischer Tie-Break-Regel",
+      "linkedQuestionId": "q-325bc000d3da",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-6df30a9ff1ae",
+      "page": 2,
+      "renderedImagePath": "tmp/visual-review/src-6df30a9ff1ae/page-002.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Rucksack-DP-Tabelle",
+      "linkedQuestionId": "q-113716b2961d",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-6df30a9ff1ae",
+      "page": 3,
+      "renderedImagePath": "tmp/visual-review/src-6df30a9ff1ae/page-003.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Rot-Schwarz-Baum: Einfügen und Löschen",
+      "linkedQuestionId": "q-2d4c434cc9f4",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-6df30a9ff1ae",
+      "page": 4,
+      "renderedImagePath": "tmp/visual-review/src-6df30a9ff1ae/page-004.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "MergeSort-Tracing",
+      "linkedQuestionId": "q-3737ba8fb64c",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-6df30a9ff1ae",
+      "page": 5,
+      "renderedImagePath": "tmp/visual-review/src-6df30a9ff1ae/page-005.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Schleifeninvariante für alternierende Summe",
+      "linkedQuestionId": "q-87db01b3a470",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-6df30a9ff1ae",
+      "page": 6,
+      "renderedImagePath": "tmp/visual-review/src-6df30a9ff1ae/page-006.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Rekurrenzschranke und Induktionsbeweis",
+      "linkedQuestionId": "q-58dbe7725f08",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-6df30a9ff1ae",
+      "page": 7,
+      "renderedImagePath": "tmp/visual-review/src-6df30a9ff1ae/page-007.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Greedy-Entwurf für Entsorgungsstationen",
+      "linkedQuestionId": "q-6549208674b4",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-6df30a9ff1ae",
+      "page": 8,
+      "renderedImagePath": "tmp/visual-review/src-6df30a9ff1ae/page-008.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Dynamische Programmierung für Messreihenähnlichkeit",
+      "linkedQuestionId": "q-68147d5b33e4",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-6df30a9ff1ae",
+      "page": 9,
+      "renderedImagePath": "tmp/visual-review/src-6df30a9ff1ae/page-009.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Graphtransfer: negativen Kreis ausgeben",
+      "linkedQuestionId": "q-00019e2ecf83",
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Deckblatt fehlt; Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 1,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-001.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Grundlagen, Speicher und Datentypen",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 2,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-002.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Grundlagen, Speicher und Datentypen",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 3,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-003.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Grundlagen, Speicher und Datentypen",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 4,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-004.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Grundlagen, Speicher und Datentypen",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 5,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-005.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Grundlagen, Speicher und Datentypen",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 6,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-006.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Laufzeitanalyse und Landau-Notation",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 7,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-007.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Laufzeitanalyse und Landau-Notation",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 8,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-008.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Laufzeitanalyse und Landau-Notation",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 9,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-009.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Laufzeitanalyse und Landau-Notation",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 10,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-010.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Laufzeitanalyse und Landau-Notation",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 11,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-011.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Laufzeitanalyse und Landau-Notation",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 12,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-012.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Laufzeitanalyse und Landau-Notation",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 13,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-013.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Laufzeitanalyse und Landau-Notation",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 14,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-014.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Laufzeitanalyse und Landau-Notation",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 15,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-015.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Korrektheitsbeweise und Induktion",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 16,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-016.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Korrektheitsbeweise und Induktion",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 17,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-017.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Korrektheitsbeweise und Induktion",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 18,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-018.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Korrektheitsbeweise und Induktion",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 19,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-019.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Korrektheitsbeweise und Induktion",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 20,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-020.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Korrektheitsbeweise und Induktion",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 21,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-021.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Rekursion, Divide and Conquer und Master-Theorem",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 22,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-022.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Rekursion, Divide and Conquer und Master-Theorem",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 23,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-023.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Rekursion, Divide and Conquer und Master-Theorem",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 24,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-024.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Rekursion, Divide and Conquer und Master-Theorem",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 25,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-025.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Rekursion, Divide and Conquer und Master-Theorem",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 26,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-026.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Rekursion, Divide and Conquer und Master-Theorem",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 27,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-027.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Rekursion, Divide and Conquer und Master-Theorem",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 28,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-028.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Rekursion, Divide and Conquer und Master-Theorem",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 29,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-029.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: dynamische Programmierung",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 30,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-030.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: dynamische Programmierung",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 31,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-031.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: dynamische Programmierung",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 32,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-032.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: dynamische Programmierung",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 33,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-033.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Greedy und Scheduling",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 34,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-034.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Greedy und Scheduling",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 35,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-035.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Suchbäume und Rot-Schwarz-Bäume",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 36,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-036.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Suchbäume und Rot-Schwarz-Bäume",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 37,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-037.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Suchbäume und Rot-Schwarz-Bäume",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 38,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-038.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Suchbäume und Rot-Schwarz-Bäume",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 39,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-039.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Suchbäume und Rot-Schwarz-Bäume",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 40,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-040.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Suchbäume und Rot-Schwarz-Bäume",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 41,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-041.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Suchbäume und Rot-Schwarz-Bäume",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 42,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-042.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Graphalgorithmen",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 43,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-043.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Graphalgorithmen",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 44,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-044.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Graphalgorithmen",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    },
+    {
+      "sourceId": "src-f4acc332df89",
+      "page": 45,
+      "renderedImagePath": "tmp/visual-review/src-f4acc332df89/page-045.png",
+      "visualReviewStatus": "resolved",
+      "reviewerMethod": "manuelle Sichtprüfung",
+      "extractedMeaning": "Studentische Zusammenfassung: Graphalgorithmen",
+      "linkedQuestionId": null,
+      "linkedSolutionId": null,
+      "confidence": "confirmed",
+      "unresolvedIssues": [
+        "Studentische Sekundärquelle; fachliche Aussagen sind nicht gegen jede Primärfolie verifiziert."
+      ],
+      "reviewedAt": "2026-07-06T10:54:12.806583+00:00"
+    }
+  ],
+  "solutions": [
+    {
+      "id": "sol-visual-mock2021-a1",
+      "questionId": "q-4c014d40be79",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 1,
+      "description": "Rekurrenzanalyse eines Divide-and-Conquer-Algorithmus",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a2",
+      "questionId": "q-9250aecc36e0",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 2,
+      "description": "Rucksack-DP-Tabelle",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a3",
+      "questionId": "q-ad6356ba6d66",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 3,
+      "description": "Minimaler Spannbaum mit Kruskal",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a4",
+      "questionId": "q-acdf109cd284",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 4,
+      "description": "Schleifeninvariante: ungerade Ausgabe",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a5",
+      "questionId": "q-90ceb998ba18",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 5,
+      "description": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a6",
+      "questionId": "q-2c5b8874d992",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 6,
+      "description": "Kreiserkennung mit Tiefensuche",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a1",
+      "questionId": "q-4c014d40be79",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 1,
+      "description": "Rekurrenzanalyse eines Divide-and-Conquer-Algorithmus",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a2",
+      "questionId": "q-9250aecc36e0",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 2,
+      "description": "Rucksack-DP-Tabelle",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a3",
+      "questionId": "q-ad6356ba6d66",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 3,
+      "description": "Minimaler Spannbaum mit Kruskal",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a4",
+      "questionId": "q-acdf109cd284",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 4,
+      "description": "Schleifeninvariante: ungerade Ausgabe",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a5",
+      "questionId": "q-90ceb998ba18",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 5,
+      "description": "DP zur Anzahl von Teilmengen mit vorgegebener Summe",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-mock2021-a6",
+      "questionId": "q-2c5b8874d992",
+      "sourceIds": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "taskNumber": 6,
+      "description": "Kreiserkennung mit Tiefensuche",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-7a4064a0710d-a1",
+      "questionId": "q-bc4fa5c69121",
+      "sourceIds": [
+        "src-7a4064a0710d"
+      ],
+      "taskNumber": 1,
+      "description": "Merge-Operation, Pseudocode und O(n)",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-7a4064a0710d-a2",
+      "questionId": "q-b84d6c4b1cd4",
+      "sourceIds": [
+        "src-7a4064a0710d"
+      ],
+      "taskNumber": 2,
+      "description": "Induktionsbeweis für Zweierpotenz",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-7a4064a0710d-a3",
+      "questionId": "q-c76295096005",
+      "sourceIds": [
+        "src-7a4064a0710d"
+      ],
+      "taskNumber": 3,
+      "description": "Schleifeninvariante für Feldprodukt",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-7a4064a0710d-a4",
+      "questionId": null,
+      "sourceIds": [
+        "src-7a4064a0710d"
+      ],
+      "taskNumber": 4,
+      "description": "Divide and Conquer: nächster Wert",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-c9cd3fa0f544-a1",
+      "questionId": "q-7f24bbcd0aac",
+      "sourceIds": [
+        "src-c9cd3fa0f544"
+      ],
+      "taskNumber": 1,
+      "description": "Rekursive Summe und Suche nach nächstem Wert; Seite enthält Aufgaben 1 und 2",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-c9cd3fa0f544-a3",
+      "questionId": "q-96dc52fba38b",
+      "sourceIds": [
+        "src-c9cd3fa0f544"
+      ],
+      "taskNumber": 3,
+      "description": "Fehlerkorrektur rekursiver Algorithmen: Potenz, Fakultät, Quersumme",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-d2005423b398-a1",
+      "questionId": "q-42e8ca05c74a",
+      "sourceIds": [
+        "src-d2005423b398"
+      ],
+      "taskNumber": 1,
+      "description": "Stirlingzahlen mit dynamischer Programmierung",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-d2005423b398-a2",
+      "questionId": "q-d6e2a447cec1",
+      "sourceIds": [
+        "src-d2005423b398"
+      ],
+      "taskNumber": 2,
+      "description": "Längste absteigende Teilfolge: Rekurrenz und Algorithmus",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-d2005423b398-a3",
+      "questionId": "q-f9ffd9863b61",
+      "sourceIds": [
+        "src-d2005423b398"
+      ],
+      "taskNumber": 3,
+      "description": "Editierdistanz: Rekurrenz und Induktionsbeweis",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-c7ef1f699742-a1",
+      "questionId": null,
+      "sourceIds": [
+        "src-c7ef1f699742"
+      ],
+      "taskNumber": 1,
+      "description": "Rot-Schwarz-Baum: Löschfolge 6, 9, 1, 4, 5",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-c7ef1f699742-a2",
+      "questionId": null,
+      "sourceIds": [
+        "src-c7ef1f699742"
+      ],
+      "taskNumber": 2,
+      "description": "Hashtabelle mit offener Adressierung und linearem Sondieren",
+      "verificationStatus": "unofficial_solution_only"
+    },
+    {
+      "id": "sol-visual-c7ef1f699742-a3",
+      "questionId": null,
+      "sourceIds": [
+        "src-c7ef1f699742"
+      ],
+      "taskNumber": 3,
+      "description": "Datenstruktur für Multimengen mit direkter Adressierung",
+      "verificationStatus": "unofficial_solution_only"
+    }
+  ],
+  "retainedVisualRecords": [
+    {
+      "sourceId": "src-28ccd3fc19df",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-20a1f0837025",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-4b6a35e42cd8",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-7a161b7ad101",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-7cf15c279b98",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-99ddb2d62983",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-147d1c7eab5a",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-9835660fab6e",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-f5806923681e",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-3949f4396338",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-22375a7589e7",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-1ed79aeda531",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-6ab836d3b726",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-035b9efe8241",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-0d4b0731e1a5",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-fb334669ebf8",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-748370c47b9a",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-acdc203042cd",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    },
+    {
+      "sourceId": "src-d5794c78829b",
+      "page": 1,
+      "visualReviewStatus": "retained_unresolved",
+      "reason": "Eigenständige Smartphone-Aufnahme; Zuordnung ist nicht für das Phase-0A-PDF-Gate erforderlich und wird nicht als historische Evidenz verwendet."
+    }
+  ]
+}

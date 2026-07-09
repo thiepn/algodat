@@ -1,0 +1,76 @@
+{
+  "id": "trainer-rucksack-dp-v1",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase2-source",
+  "topicIds": ["topic-f5b57f47447c", "topic-c0af8532bb72"],
+  "taskType": "dp_table_tracing",
+  "sourceRefs": [
+    { "sourceId": "src-25d6340b518c", "page": 33, "label": "Offizielle Übung und Rekurrenz" },
+    { "sourceId": "src-25d6340b518c", "page": 34, "label": "Offizielle Lösungstabelle" },
+    { "sourceId": "src-baa07f0a207a", "page": 390, "label": "Vorlesungsgrundlage" }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-06",
+  "publicDistributionStatus": "public_safe",
+  "solutionValidationStatus": "engine_matches_official_method",
+  "title": "Rucksack-DP Schritt für Schritt",
+  "algorithmName": "Rucksack(n, g, v, W)",
+  "problemClass": "0/1-Rucksackproblem mit dynamischer Programmierung",
+  "typicalExamTask": "Eine vollständige Opt-Tabelle ausfüllen und den Ausgabewert markieren.",
+  "inputDescription": "Objektgewichte, Objektwerte und eine ganzzahlige Kapazität.",
+  "outputDescription": "Opt[i,w]: maximaler Wert mit den ersten i Objekten und Kapazität w.",
+  "prerequisites": ["Dynamische Programmierung", "Tabellenindexierung ab 0", "Maximum zweier ganzzahliger Werte"],
+  "runtime": "O(n · W)",
+  "dataStructures": ["zweidimensionales Feld Opt"],
+  "centralInvariant": "Nach Zeile i enthält Opt[i,w] den optimalen Wert für die ersten i Objekte und Kapazität w.",
+  "commonMistakes": [
+    "In derselben Zeile statt in der vorherigen Zeile nachschlagen",
+    "Bei g[i] > w trotzdem den Include-Fall berechnen",
+    "Zeile 0 oder Spalte 0 nicht mit 0 initialisieren",
+    "Den Endwert nicht aus Opt[n,W] ablesen"
+  ],
+  "historicalRelevance": "Das Rucksackproblem erschien als Tabellen-Tracing in realen Klausuren 2022 und 2024 sowie in einer Probeklausur.",
+  "intuition": "Für jedes Objekt und jede Kapazität vergleichen wir: Objekt weglassen oder – falls es passt – aufnehmen. Wir speichern nur den besseren erreichbaren Wert.",
+  "correctnessIdea": "Die letzte Entscheidung einer optimalen Lösung lässt Objekt i entweder weg oder nimmt es auf. Beide Fälle reduzieren sich auf bereits gelöste Teilprobleme der Zeile i-1.",
+  "failureConditions": "Das Modell gilt für nichtnegative ganzzahlige Kapazitäten und 0/1-Objekte. Mehrfachauswahl erfordert eine andere Rekurrenz.",
+  "steps": [
+    "Initialisiere Opt[0,w] = 0 für alle Kapazitäten.",
+    "Betrachte die Objekte in der vorgegebenen Reihenfolge.",
+    "Falls g[i] > w, übernimm Opt[i-1,w].",
+    "Sonst vergleiche Opt[i-1,w] mit Opt[i-1,w-g[i]] + v[i].",
+    "Trage das Maximum ein; bei Gleichstand gilt die explizite Regel der Instanz.",
+    "Lies das Ergebnis in Opt[n,W] ab."
+  ],
+  "problem": {
+    "id": "problem-rucksack-dp-public-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase2-source",
+    "topicIds": ["topic-f5b57f47447c", "topic-c0af8532bb72"],
+    "taskType": "dp_table_tracing",
+    "algorithm": "knapsack_01",
+    "sourceRefs": [
+      { "sourceId": "src-25d6340b518c", "page": 33 },
+      { "sourceId": "src-25d6340b518c", "page": 34 }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "engine_matches_official_method",
+    "contentOrigin": "source_aligned_generated_exercise",
+    "capacity": 8,
+    "items": [
+      { "id": "A", "weight": 2, "value": 3 },
+      { "id": "B", "weight": 3, "value": 4 },
+      { "id": "C", "weight": 4, "value": 7 },
+      { "id": "D", "weight": 5, "value": 8 }
+    ],
+    "tieBreaker": "exclude_on_equal",
+    "requiredOutput": "complete_table_and_optimum",
+    "indexing": "rows_and_capacities_start_at_zero"
+  },
+  "hints": [
+    { "id": "hint-initialization", "level": 1, "text": "Beginne mit einer Nullzeile für i = 0." },
+    { "id": "hint-previous-row", "level": 2, "text": "Beide Vergleichswerte stammen aus Zeile i-1." },
+    { "id": "hint-recurrence", "level": 3, "text": "Vergleiche Weglassen mit Opt[i-1,w-g[i]] + v[i]." }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": 7,
+  "auditedAt": "2026-07-08",
+  "summary": {
+    "productiveTrainerCount": 5,
+    "simulatorSuitableCount": 5,
+    "historicalFullExamSupported": false,
+    "pilotPackageRecommendation": "exam-package-kernkompetenz-v1"
+  },
+  "trainers": [
+    {
+      "trainerId": "trainer-rucksack-dp-v1",
+      "trainerFamily": "tracing",
+      "historicalTaskNumbers": [8],
+      "verifiedTaskInstances": ["problem-rucksack-dp-v1"],
+      "publicSafeExamInstanceAvailable": true,
+      "examModeAvailable": true,
+      "deterministicScoring": true,
+      "completeRubric": true,
+      "offlineResume": true,
+      "masteryIntegration": "mastery-v2",
+      "e2eCoverage": true,
+      "suitableForSimulator": true,
+      "openRisks": ["Die Instanz ist eine neu formulierte Trainingsinstanz, keine historische Originalaufgabe."]
+    },
+    {
+      "trainerId": "trainer-union-find-listen-v1",
+      "trainerFamily": "tracing",
+      "historicalTaskNumbers": [6],
+      "verifiedTaskInstances": ["problem-union-find-listen-v1"],
+      "publicSafeExamInstanceAvailable": true,
+      "examModeAvailable": true,
+      "deterministicScoring": true,
+      "completeRubric": true,
+      "offlineResume": true,
+      "masteryIntegration": "mastery-v2",
+      "e2eCoverage": true,
+      "suitableForSimulator": true,
+      "openRisks": ["Die Aufgabe deckt eine Datenstrukturfamilie ab, aber kein vollständiges historisches Profil."]
+    },
+    {
+      "trainerId": "trainer-schleifeninvariante-summe-v1",
+      "trainerFamily": "proof",
+      "historicalTaskNumbers": [4],
+      "verifiedTaskInstances": ["problem-schleifeninvariante-summe-v1"],
+      "publicSafeExamInstanceAvailable": true,
+      "examModeAvailable": true,
+      "deterministicScoring": true,
+      "completeRubric": true,
+      "offlineResume": true,
+      "masteryIntegration": "mastery-v3",
+      "e2eCoverage": true,
+      "suitableForSimulator": true,
+      "openRisks": ["Vorlesungsnaher Beweisbaustein; keine Behauptung vollständiger historischer Slotabdeckung."]
+    },
+    {
+      "trainerId": "trainer-rekurrenz-master-fall1-v1",
+      "trainerFamily": "proof",
+      "historicalTaskNumbers": [1, 2],
+      "verifiedTaskInstances": ["problem-rekurrenz-master-fall1-v1"],
+      "publicSafeExamInstanceAvailable": true,
+      "examModeAvailable": true,
+      "deterministicScoring": true,
+      "completeRubric": true,
+      "offlineResume": true,
+      "masteryIntegration": "mastery-v4",
+      "e2eCoverage": true,
+      "suitableForSimulator": true,
+      "openRisks": ["Nur der belegte Master-Fall-1-Trainingsfall ist produktiv freigegeben."]
+    },
+    {
+      "trainerId": "trainer-dp-entwurf-mine-v1",
+      "trainerFamily": "design",
+      "historicalTaskNumbers": [8],
+      "verifiedTaskInstances": ["problem-dp-entwurf-mine-v1"],
+      "publicSafeExamInstanceAvailable": true,
+      "examModeAvailable": true,
+      "deterministicScoring": true,
+      "completeRubric": true,
+      "offlineResume": true,
+      "masteryIntegration": "mastery-v5",
+      "e2eCoverage": true,
+      "suitableForSimulator": true,
+      "openRisks": ["Quelle ist eine Probeklausur; keine historische Frequenzzählung."]
+    }
+  ]
+}
+

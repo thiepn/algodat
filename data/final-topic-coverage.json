@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0.0",
+  "releaseCandidate": "1.0.0-rc.2",
+  "auditedAt": "2026-07-09",
+  "auditedTopicCount": 76,
+  "coverageLevels": [
+    "exact_historical_instance_supported",
+    "same_problem_family_supported",
+    "same_task_format_supported",
+    "diagnostic_only",
+    "unsupported"
+  ],
+  "topics": [
+    {
+      "topicId": "topic-916a9f1645f2",
+      "title": "Asymptotik",
+      "level": "diagnostic_only",
+      "diagnosticCompetencies": ["foundation-asymptotics"],
+      "deepTrainers": ["trainer-rekurrenz-master-fall1-v1"],
+      "remainingGap": "Kurze Landau-/Worst-Case-Fragen sind diagnostisch abgedeckt; kein eigener tiefer Asymptotiktrainer."
+    },
+    {
+      "topicId": "topic-e48203925235",
+      "title": "Master-Theorem",
+      "level": "same_problem_family_supported",
+      "diagnosticCompetencies": ["foundation-recurrences"],
+      "deepTrainers": ["trainer-rekurrenz-master-fall1-v1"],
+      "remainingGap": "Ein produktiver Fall-1-Lernpfad; andere Rekurrenzformen bleiben diagnostisch oder als Lücke markiert."
+    },
+    {
+      "topicId": "topic-1e43393edfb4",
+      "title": "Schleifeninvarianten",
+      "level": "same_problem_family_supported",
+      "diagnosticCompetencies": ["foundation-proofs"],
+      "deepTrainers": ["trainer-schleifeninvariante-summe-v1"],
+      "remainingGap": "Ein tiefes Beweisschema ist produktiv; beliebige Programminvarianten sind nicht frei bewertbar."
+    },
+    {
+      "topicId": "topic-c0af8532bb72",
+      "title": "Dynamische Programmierung",
+      "level": "same_problem_family_supported",
+      "diagnosticCompetencies": ["foundation-paradigms"],
+      "deepTrainers": ["trainer-dp-entwurf-mine-v1", "trainer-rucksack-dp-v1"],
+      "remainingGap": "Mine und Rucksack sind produktiv; andere DP-Familien wie LCS oder Münzwechsel sind nicht produktiv tief trainiert."
+    },
+    {
+      "topicId": "topic-3e0e72f97f6e",
+      "title": "Greedy",
+      "level": "same_problem_family_supported",
+      "diagnosticCompetencies": ["foundation-paradigms"],
+      "deepTrainers": ["trainer-greedy-entwurf-fitnesspunkte-v1"],
+      "remainingGap": "Fitnesspunkte ist produktiv; andere Greedy-Familien bleiben nicht tief abgedeckt."
+    },
+    {
+      "topicId": "topic-aa4a4148523b",
+      "title": "Divide and Conquer",
+      "level": "same_problem_family_supported",
+      "diagnosticCompetencies": ["foundation-paradigms"],
+      "deepTrainers": ["trainer-dc-entwurf-maxwertdifferenz-v1"],
+      "remainingGap": "Maximale Wertdifferenz ist produktiv; andere D&C-Transferaufgaben werden nicht frei bewertet."
+    },
+    {
+      "topicId": "topic-0ba342914656",
+      "title": "Union-Find",
+      "level": "same_problem_family_supported",
+      "diagnosticCompetencies": ["foundation-data-structures"],
+      "deepTrainers": ["trainer-union-find-listen-v1"],
+      "remainingGap": "Listenvariante mit Weighted Union ist produktiv; Pfadkompression bleibt nicht tief produktiv."
+    },
+    {
+      "topicId": "topic-7ae0552985f1",
+      "title": "Rot-Schwarz-Bäume",
+      "level": "same_problem_family_supported",
+      "diagnosticCompetencies": ["foundation-data-structures"],
+      "deepTrainers": ["trainer-rot-schwarz-einfuegen-v1"],
+      "remainingGap": "Einfügen und Reparatur sind produktiv; Löschen ist nicht produktiv abgedeckt."
+    },
+    {
+      "topicId": "topic-e8b80c23286d",
+      "title": "Dijkstra",
+      "level": "same_problem_family_supported",
+      "diagnosticCompetencies": ["foundation-graph-algorithms"],
+      "deepTrainers": ["trainer-graph-dijkstra-v1"],
+      "remainingGap": "Produktiv für eine quellengebundene Tracingfamilie; Varianten mit negativen Kanten bleiben ausgeschlossen."
+    },
+    {
+      "topicId": "topic-1fa208a0ed89",
+      "title": "Floyd-Warshall",
+      "level": "same_problem_family_supported",
+      "diagnosticCompetencies": ["foundation-graph-algorithms"],
+      "deepTrainers": ["trainer-graph-floyd-warshall-v1"],
+      "remainingGap": "Matrixtracing ist produktiv; freie Graphtransferfragen bleiben nicht automatisch bewertbar."
+    },
+    {
+      "topicId": "topic-c4a698fc939e",
+      "title": "Prim",
+      "level": "same_problem_family_supported",
+      "diagnosticCompetencies": ["foundation-graph-algorithms"],
+      "deepTrainers": ["trainer-graph-prim-mst-v1"],
+      "remainingGap": "Prim-MST ist produktiv; Kruskal bleibt trotz Quellenlage nicht als tiefer Trainer implementiert."
+    },
+    {
+      "topicId": "topic-0780ff989087",
+      "title": "Kruskal",
+      "level": "diagnostic_only",
+      "diagnosticCompetencies": ["foundation-graph-algorithms"],
+      "deepTrainers": [],
+      "remainingGap": "Kein produktiver Kruskal-Trainer in Phase 16."
+    }
+  ]
+}

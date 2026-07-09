@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AlgoDat Symbol maskierbar">
+  <rect width="512" height="512" fill="#173f3a"/>
+  <circle cx="256" cy="256" r="180" fill="#225a52"/>
+  <path d="M150 350 225 162h62l75 188h-58l-14-40h-74l-14 40zm84-87h40l-20-63z" fill="#f4c95d"/>
+</svg>

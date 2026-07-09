@@ -1,0 +1,2749 @@
+[
+  {
+    "id": "topic-e134b2752905",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 2
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 1
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 2
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Algorithmen und Berechnungsprobleme",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [],
+    "officialSourceCoverage": 84,
+    "exerciseCoverage": 18,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-0f08406835d1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 8
+      },
+      {
+        "sourceId": "src-ff6602b770ca",
+        "page": 8
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Pseudocode",
+    "category": "Grundlagen und Beweise",
+    "importance": "sehr hoch",
+    "prerequisites": [],
+    "officialSourceCoverage": 48,
+    "exerciseCoverage": 10,
+    "realExamOccurrences": [
+      "exam-2020-2/A1",
+      "exam-2020-2/A2",
+      "exam-2020-2/A4",
+      "exam-2020-2/A7",
+      "exam-2020-2/A8",
+      "exam-2020-2/A9",
+      "exam-2021-1/A1",
+      "exam-2021-1/A2",
+      "exam-2021-1/A3",
+      "exam-2021-1/A5",
+      "exam-2021-1/A6",
+      "exam-2022-1/A1",
+      "exam-2022-1/A3",
+      "exam-2022-1/A4",
+      "exam-2022-1/A5",
+      "exam-2022-1/A7",
+      "exam-2022-1/A8",
+      "exam-2022-1/A9",
+      "exam-2022-2/A1",
+      "exam-2022-2/A3",
+      "exam-2022-2/A4",
+      "exam-2022-2/A5",
+      "exam-2022-2/A7",
+      "exam-2022-2/A8",
+      "exam-2022-2/A9"
+    ],
+    "mockExamOccurrences": [
+      "mock-2021/A1",
+      "mock-2021/A2",
+      "mock-2021/A3",
+      "mock-2021/A5",
+      "mock-2021/A6",
+      "mock-2022/A1",
+      "mock-2022/A3",
+      "mock-2022/A4",
+      "mock-2022/A7",
+      "mock-2022/A8",
+      "mock-2022/A9",
+      "mock-2023/A1",
+      "mock-2023/A2",
+      "mock-2023/A3",
+      "mock-2023/A5",
+      "mock-2023/A7",
+      "mock-2023/A8",
+      "mock-2023/A9",
+      "mock-2024/A1",
+      "mock-2024/A2",
+      "mock-2024/A3",
+      "mock-2024/A5",
+      "mock-2024/A7",
+      "mock-2024/A8",
+      "mock-2024/A9"
+    ],
+    "exerciseOccurrences": [
+      "src-067d72f54358/A1",
+      "src-067d72f54358/A2",
+      "src-067d72f54358/A3",
+      "src-999c60c6d368/A1",
+      "src-a20cdce4d758/A1",
+      "src-a20cdce4d758/A2",
+      "src-a20cdce4d758/A3",
+      "src-b27d22aaa7cf/A1",
+      "src-b27d22aaa7cf/A2",
+      "src-b27d22aaa7cf/A3",
+      "src-c0e0f8927c2c/A1",
+      "src-c0e0f8927c2c/A3",
+      "src-c9015f5962d4/A2"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-00cf6dec50ed",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 8
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 1
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Rekursion",
+    "category": "Teile und Herrsche",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 72,
+    "exerciseCoverage": 14,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-99af8a8bfb20",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-df4f1dbaa2c8",
+        "page": 4
+      },
+      {
+        "sourceId": "src-c9015f5962d4",
+        "page": 1
+      },
+      {
+        "sourceId": "src-0a1992e2a3c1",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Exakte Laufzeitanalyse",
+    "category": "Grundlagen und Beweise",
+    "importance": "sehr hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 19,
+    "exerciseCoverage": 5,
+    "realExamOccurrences": [
+      "exam-2020-2/A6",
+      "exam-2020-2/A7",
+      "exam-2020-2/A8",
+      "exam-2020-2/A9",
+      "exam-2021-1/A1",
+      "exam-2021-1/A5",
+      "exam-2021-1/A6",
+      "exam-2022-1/A6",
+      "exam-2022-1/A7",
+      "exam-2022-1/A8",
+      "exam-2022-1/A9",
+      "exam-2022-2/A6",
+      "exam-2022-2/A7",
+      "exam-2022-2/A8",
+      "exam-2022-2/A9"
+    ],
+    "mockExamOccurrences": [
+      "mock-2021/A1",
+      "mock-2021/A5",
+      "mock-2021/A6",
+      "mock-2022/A1",
+      "mock-2022/A6",
+      "mock-2022/A7",
+      "mock-2022/A8",
+      "mock-2022/A9",
+      "mock-2023/A6",
+      "mock-2023/A7",
+      "mock-2023/A8",
+      "mock-2023/A9",
+      "mock-2024/A6",
+      "mock-2024/A7",
+      "mock-2024/A8",
+      "mock-2024/A9"
+    ],
+    "exerciseOccurrences": [
+      "src-067d72f54358/A1",
+      "src-067d72f54358/A2",
+      "src-067d72f54358/A3",
+      "src-a20cdce4d758/A1",
+      "src-a20cdce4d758/A2",
+      "src-b27d22aaa7cf/A1",
+      "src-b27d22aaa7cf/A2",
+      "src-c0e0f8927c2c/A1",
+      "src-c0e0f8927c2c/A2",
+      "src-c0e0f8927c2c/A3",
+      "src-c9015f5962d4/A2"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-05cbaf0c71b3",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 8
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Worst-Case-Analyse",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 61,
+    "exerciseCoverage": 10,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-3b45cce58b69",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-89b40b178ad8",
+        "page": 26
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 57
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Average-Case-Analyse",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 2,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-916a9f1645f2",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-0457af7a63f0",
+        "page": 2
+      },
+      {
+        "sourceId": "src-28fe81380661",
+        "page": 2
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Landau-Notation",
+    "category": "Grundlagen und Beweise",
+    "importance": "sehr hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 51,
+    "exerciseCoverage": 10,
+    "realExamOccurrences": [
+      "exam-2020-2/A6",
+      "exam-2020-2/A7",
+      "exam-2020-2/A8",
+      "exam-2020-2/A9",
+      "exam-2021-1/A1",
+      "exam-2021-1/A5",
+      "exam-2021-1/A6",
+      "exam-2022-1/A6",
+      "exam-2022-1/A7",
+      "exam-2022-1/A8",
+      "exam-2022-1/A9",
+      "exam-2022-2/A6",
+      "exam-2022-2/A7",
+      "exam-2022-2/A8",
+      "exam-2022-2/A9"
+    ],
+    "mockExamOccurrences": [
+      "mock-2021/A1",
+      "mock-2021/A5",
+      "mock-2021/A6",
+      "mock-2022/A1",
+      "mock-2022/A6",
+      "mock-2022/A7",
+      "mock-2022/A8",
+      "mock-2022/A9",
+      "mock-2023/A6",
+      "mock-2023/A7",
+      "mock-2023/A8",
+      "mock-2023/A9",
+      "mock-2024/A6",
+      "mock-2024/A7",
+      "mock-2024/A8",
+      "mock-2024/A9"
+    ],
+    "exerciseOccurrences": [
+      "src-067d72f54358/A1",
+      "src-067d72f54358/A2",
+      "src-067d72f54358/A3",
+      "src-a20cdce4d758/A1",
+      "src-a20cdce4d758/A2",
+      "src-b27d22aaa7cf/A1",
+      "src-b27d22aaa7cf/A2",
+      "src-c0e0f8927c2c/A1",
+      "src-c0e0f8927c2c/A2",
+      "src-c0e0f8927c2c/A3",
+      "src-c9015f5962d4/A2"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-38db7102a0b1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 11
+      },
+      {
+        "sourceId": "src-ff6602b770ca",
+        "page": 11
+      },
+      {
+        "sourceId": "src-1f4f87d34014",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Summen",
+    "category": "Grundlagen und Beweise",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 39,
+    "exerciseCoverage": 8,
+    "realExamOccurrences": [
+      "exam-2024-1/A5"
+    ],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-2b335556483f",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 7
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 5
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Vollständige Induktion",
+    "category": "Grundlagen und Beweise",
+    "importance": "sehr hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 65,
+    "exerciseCoverage": 8,
+    "realExamOccurrences": [
+      "exam-2020-2/A5",
+      "exam-2020-2/A6",
+      "exam-2020-2/A7",
+      "exam-2020-2/A8",
+      "exam-2021-1/A4",
+      "exam-2021-1/A5",
+      "exam-2021-1/A6",
+      "exam-2022-1/A5",
+      "exam-2022-1/A6",
+      "exam-2022-1/A8",
+      "exam-2022-1/A9",
+      "exam-2022-2/A5",
+      "exam-2022-2/A6",
+      "exam-2022-2/A7",
+      "exam-2022-2/A8",
+      "exam-2024-1/A5",
+      "exam-2024-1/A6"
+    ],
+    "mockExamOccurrences": [
+      "mock-2021/A4",
+      "mock-2021/A5",
+      "mock-2021/A6",
+      "mock-2022/A5",
+      "mock-2022/A6",
+      "mock-2022/A7",
+      "mock-2022/A9",
+      "mock-2023/A5",
+      "mock-2023/A6",
+      "mock-2023/A8",
+      "mock-2024/A5",
+      "mock-2024/A6",
+      "mock-2024/A7",
+      "mock-2024/A8",
+      "mock-2024/A9"
+    ],
+    "exerciseOccurrences": [
+      "src-067d72f54358/A1",
+      "src-067d72f54358/A2",
+      "src-067d72f54358/A3",
+      "src-a20cdce4d758/A1",
+      "src-a20cdce4d758/A2",
+      "src-a20cdce4d758/A3",
+      "src-c0e0f8927c2c/A1",
+      "src-c0e0f8927c2c/A2",
+      "src-c0e0f8927c2c/A3"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-1e43393edfb4",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 7
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 5
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Schleifeninvarianten",
+    "category": "Grundlagen und Beweise",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 46,
+    "exerciseCoverage": 5,
+    "realExamOccurrences": [
+      "exam-2024-1/A5"
+    ],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-e05ae3743b24",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Korrektheitsbeweise",
+    "category": "Grundlagen und Beweise",
+    "importance": "sehr hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 66,
+    "exerciseCoverage": 11,
+    "realExamOccurrences": [
+      "exam-2020-2/A5",
+      "exam-2020-2/A6",
+      "exam-2020-2/A7",
+      "exam-2020-2/A8",
+      "exam-2021-1/A4",
+      "exam-2021-1/A5",
+      "exam-2021-1/A6",
+      "exam-2022-1/A5",
+      "exam-2022-1/A6",
+      "exam-2022-1/A8",
+      "exam-2022-1/A9",
+      "exam-2022-2/A5",
+      "exam-2022-2/A6",
+      "exam-2022-2/A7",
+      "exam-2022-2/A8",
+      "exam-2024-1/A7",
+      "exam-2024-1/A8"
+    ],
+    "mockExamOccurrences": [
+      "mock-2021/A4",
+      "mock-2021/A5",
+      "mock-2021/A6",
+      "mock-2022/A5",
+      "mock-2022/A6",
+      "mock-2022/A7",
+      "mock-2022/A9",
+      "mock-2023/A5",
+      "mock-2023/A6",
+      "mock-2023/A8",
+      "mock-2024/A5",
+      "mock-2024/A6",
+      "mock-2024/A7",
+      "mock-2024/A8",
+      "mock-2024/A9"
+    ],
+    "exerciseOccurrences": [
+      "src-067d72f54358/A1",
+      "src-067d72f54358/A2",
+      "src-067d72f54358/A3",
+      "src-a20cdce4d758/A1",
+      "src-a20cdce4d758/A2",
+      "src-a20cdce4d758/A3",
+      "src-c0e0f8927c2c/A1",
+      "src-c0e0f8927c2c/A2",
+      "src-c0e0f8927c2c/A3"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-869c6f5b2efa",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-0878d88c532c",
+        "page": 3
+      },
+      {
+        "sourceId": "src-14b893ae2213",
+        "page": 29
+      },
+      {
+        "sourceId": "src-89b40b178ad8",
+        "page": 27
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "InsertionSort",
+    "category": "Teile und Herrsche",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 8,
+    "exerciseCoverage": 1,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-aa4a4148523b",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 1
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 8
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "MergeSort",
+    "category": "Teile und Herrsche",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 26,
+    "exerciseCoverage": 2,
+    "realExamOccurrences": [
+      "exam-2020-2/A7",
+      "exam-2024-1/A4"
+    ],
+    "mockExamOccurrences": [
+      "mock-2022/A8",
+      "mock-2023/A7"
+    ],
+    "exerciseOccurrences": [
+      "src-a20cdce4d758/A1"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-ea8f0d02371e",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      },
+      {
+        "sourceId": "src-606fe3c435ca",
+        "page": 7
+      },
+      {
+        "sourceId": "src-a20cdce4d758",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Merge",
+    "category": "Grundlagen und Beweise",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 12,
+    "exerciseCoverage": 3,
+    "realExamOccurrences": [
+      "exam-2020-2/A7",
+      "exam-2024-1/A4"
+    ],
+    "mockExamOccurrences": [
+      "mock-2022/A8",
+      "mock-2023/A7"
+    ],
+    "exerciseOccurrences": [
+      "src-a20cdce4d758/A1"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-cd03b101b7ca",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-ce685f57c358",
+        "page": 1
+      },
+      {
+        "sourceId": "src-30cdaae347ec",
+        "page": 21
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Binäre Suche",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 8,
+    "exerciseCoverage": 2,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [
+      "src-c0e0f8927c2c/A1"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-253cd88852ac",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Ganzzahlmultiplikation",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 0,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-81bfd1447d07",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Karatsuba",
+    "category": "Teile und Herrsche",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 0,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-a4e51634db8b",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-14b893ae2213",
+        "page": 12
+      },
+      {
+        "sourceId": "src-097ee0e1e694",
+        "page": 49
+      },
+      {
+        "sourceId": "src-53eb0b536ce6",
+        "page": 14
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Matrixmultiplikation",
+    "category": "Teile und Herrsche",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 5,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2022-2/A9"
+    ],
+    "mockExamOccurrences": [
+      "mock-2023/A7"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-ba664dc08e97",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-39eb3d94f40a",
+        "page": 13
+      },
+      {
+        "sourceId": "src-720584558efd",
+        "page": 13
+      },
+      {
+        "sourceId": "src-3f29b67eef5c",
+        "page": 14
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Strassen",
+    "category": "Teile und Herrsche",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 10,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2022-2/A9"
+    ],
+    "mockExamOccurrences": [
+      "mock-2023/A7"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-64b84f2856b9",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c2e38ab998fa",
+        "page": 4
+      },
+      {
+        "sourceId": "src-3816dd0c6254",
+        "page": 11
+      },
+      {
+        "sourceId": "src-097ee0e1e694",
+        "page": 16
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Rekursionsbäume",
+    "category": "Teile und Herrsche",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 6,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-e48203925235",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 6
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 7
+      },
+      {
+        "sourceId": "src-ff6602b770ca",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Master-Theorem",
+    "category": "Teile und Herrsche",
+    "importance": "sehr hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 27,
+    "exerciseCoverage": 3,
+    "realExamOccurrences": [
+      "exam-2020-2/A6",
+      "exam-2021-1/A1",
+      "exam-2024-1/A6"
+    ],
+    "mockExamOccurrences": [
+      "mock-2021/A1",
+      "mock-2022/A1",
+      "mock-2022/A6",
+      "mock-2024/A7"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-c0af8532bb72",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-b61d549b46f5",
+        "page": 6
+      },
+      {
+        "sourceId": "src-9a927aaab315",
+        "page": 1
+      },
+      {
+        "sourceId": "src-b8e8d53c94f4",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Dynamische Programmierung",
+    "category": "Dynamische Programmierung",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 24,
+    "exerciseCoverage": 8,
+    "realExamOccurrences": [
+      "exam-2024-1/A2",
+      "exam-2024-1/A8"
+    ],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [
+      "src-067d72f54358/A1",
+      "src-067d72f54358/A2",
+      "src-067d72f54358/A3"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-8e6f8280536c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-14b893ae2213",
+        "page": 6
+      },
+      {
+        "sourceId": "src-c2e38ab998fa",
+        "page": 2
+      },
+      {
+        "sourceId": "src-9ae64a21140f",
+        "page": 2
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Fibonacci",
+    "category": "Dynamische Programmierung",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 4,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-c438ca94a687",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Memoisierung",
+    "category": "Dynamische Programmierung",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 0,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-38dbeba6f940",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c2e38ab998fa",
+        "page": 6
+      },
+      {
+        "sourceId": "src-87b59d0cd424",
+        "page": 7
+      },
+      {
+        "sourceId": "src-3664167d28eb",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Bottom-up-DP",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 5,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-7a7a43065587",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c2e38ab998fa",
+        "page": 9
+      },
+      {
+        "sourceId": "src-9ae64a21140f",
+        "page": 45
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 344
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "MaxSucheDP",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 3,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-f5b57f47447c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-3cb938f5cfbe",
+        "page": 2
+      },
+      {
+        "sourceId": "src-f2148ca799c1",
+        "page": 2
+      },
+      {
+        "sourceId": "src-3f29b67eef5c",
+        "page": 5
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Rucksackproblem",
+    "category": "Dynamische Programmierung",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 14,
+    "exerciseCoverage": 3,
+    "realExamOccurrences": [
+      "exam-2022-2/A4",
+      "exam-2024-1/A2"
+    ],
+    "mockExamOccurrences": [
+      "mock-2021/A2"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-7bc80a72ce0a",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-87b59d0cd424",
+        "page": 31
+      },
+      {
+        "sourceId": "src-3664167d28eb",
+        "page": 9
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 413
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Lösungsrekonstruktion",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 3,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-461d0732a875",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c2e38ab998fa",
+        "page": 2
+      },
+      {
+        "sourceId": "src-87b59d0cd424",
+        "page": 2
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 352
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Subset Sum",
+    "category": "Dynamische Programmierung",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 3,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [
+      "src-067d72f54358/A1"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-943df06a52fb",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-067d72f54358",
+        "page": 1
+      },
+      {
+        "sourceId": "src-d020b1a9e285",
+        "page": 5
+      },
+      {
+        "sourceId": "src-c2e38ab998fa",
+        "page": 2
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Partition",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 5,
+    "exerciseCoverage": 1,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [
+      "src-067d72f54358/A1"
+    ],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-4ddb19c67c58",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-fd725d118ee1",
+        "page": 2
+      },
+      {
+        "sourceId": "src-3664167d28eb",
+        "page": 2
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 422
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "LCS",
+    "category": "Dynamische Programmierung",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 3,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [
+      "mock-2024/A1"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-db113b54985a",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 2
+      },
+      {
+        "sourceId": "src-ff6602b770ca",
+        "page": 2
+      },
+      {
+        "sourceId": "src-1f4f87d34014",
+        "page": 2
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "IntervalScheduling",
+    "category": "Greedy und Approximation",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 8,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-cd43140f32cc",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-0457af7a63f0",
+        "page": 3
+      },
+      {
+        "sourceId": "src-28fe81380661",
+        "page": 3
+      },
+      {
+        "sourceId": "src-3f29b67eef5c",
+        "page": 2
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "LatenessScheduling",
+    "category": "Greedy und Approximation",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 9,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-3e0e72f97f6e",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 2
+      },
+      {
+        "sourceId": "src-c4dde22523d3",
+        "page": 2
+      },
+      {
+        "sourceId": "src-00ae505a8756",
+        "page": 2
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "GreedyLoadBalancing",
+    "category": "Greedy und Approximation",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 10,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-690cd156e5bc",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-cc8a7a37cf43",
+        "page": 8
+      },
+      {
+        "sourceId": "src-a66dd4b4981a",
+        "page": 8
+      },
+      {
+        "sourceId": "src-d233302bcf39",
+        "page": 5
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "GreedyVertexCover",
+    "category": "Greedy und Approximation",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 4,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [
+      "mock-2022/A4"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-dff97a774ab2",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 1013
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "ApproxTSP",
+    "category": "Greedy und Approximation",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 1,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-bdda8d7bcf8c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Austauschargument",
+    "category": "Greedy und Approximation",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 0,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-414399750c67",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 10
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 8
+      },
+      {
+        "sourceId": "src-ff6602b770ca",
+        "page": 8
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Widerspruchsbeweis",
+    "category": "Greedy und Approximation",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 26,
+    "exerciseCoverage": 3,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-f2aa6e0c12ce",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Stays-ahead-Beweis",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 0,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-2ca58eb5e2fa",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 970
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Approximationsfaktor",
+    "category": "Greedy und Approximation",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 1,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-b90cc9bfd235",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 1
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 9
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Arrays",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 82,
+    "exerciseCoverage": 16,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-595ab7b2682c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 2
+      },
+      {
+        "sourceId": "src-606fe3c435ca",
+        "page": 2
+      },
+      {
+        "sourceId": "src-02c9bed0177d",
+        "page": 2
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Einfach verkettete Listen",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 5,
+    "exerciseCoverage": 1,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-014799275f99",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-30cdaae347ec",
+        "page": 23
+      },
+      {
+        "sourceId": "src-fda5a92fcd13",
+        "page": 5
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 544
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Doppelt verkettete Listen",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 3,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-249f056b552d",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-20339ee50167",
+        "page": 2
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Stacks",
+    "category": "Datenstrukturen",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 2,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2022-2/A2"
+    ],
+    "mockExamOccurrences": [
+      "mock-2023/A4",
+      "mock-2023/A9",
+      "mock-2024/A4"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-83dbc3204045",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-2ac1fff065f5",
+        "page": 1
+      },
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-1ea0642ec775",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Queues",
+    "category": "Datenstrukturen",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 6,
+    "exerciseCoverage": 1,
+    "realExamOccurrences": [
+      "exam-2022-2/A2"
+    ],
+    "mockExamOccurrences": [
+      "mock-2023/A4",
+      "mock-2023/A9",
+      "mock-2024/A4"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-3c7ef81af7cd",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-2ac1fff065f5",
+        "page": 1
+      },
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 51
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 753
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Deques",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 3,
+    "exerciseCoverage": 1,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-fba6d5e717ea",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-14b893ae2213",
+        "page": 13
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 13
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Heaps",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 2,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-9301adfa74a6",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Prioritätswarteschlangen",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 0,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-d054e6909a32",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-30cdaae347ec",
+        "page": 37
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 558
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Binäre Suchbäume",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 2,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-4c5a3b7fae42",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-30cdaae347ec",
+        "page": 38
+      },
+      {
+        "sourceId": "src-fda5a92fcd13",
+        "page": 17
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 559
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Baumtraversierung",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 3,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-c3a4ee956f66",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-a9c498f9af7b",
+        "page": 12
+      },
+      {
+        "sourceId": "src-20d1c2d0266d",
+        "page": 2
+      },
+      {
+        "sourceId": "src-5c9eadb17ccc",
+        "page": 13
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Baumrotationen",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 5,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-7ae0552985f1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 4
+      },
+      {
+        "sourceId": "src-ff6602b770ca",
+        "page": 4
+      },
+      {
+        "sourceId": "src-1f4f87d34014",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Rot-Schwarz-Bäume",
+    "category": "Grundlagen und Beweise",
+    "importance": "sehr hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 21,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2020-2/A3",
+      "exam-2022-1/A2",
+      "exam-2024-1/A3"
+    ],
+    "mockExamOccurrences": [
+      "mock-2022/A2",
+      "mock-2022/A3"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-ca027f32a2fe",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-244011e5f707",
+        "page": 2
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 701
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Direkte Adressierung",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 2,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-effd11bc0fe3",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-244011e5f707",
+        "page": 12
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 711
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Universelles Hashing",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 2,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-74e4764bc3c9",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Hashing mit Verkettung",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 0,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-a5c43d62fe0a",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-244011e5f707",
+        "page": 2
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 701
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Offene Adressierung",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 2,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-ca7bc29ee5b0",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Lineares Sondieren",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 0,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-0ba342914656",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 4
+      },
+      {
+        "sourceId": "src-606fe3c435ca",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Union-Find",
+    "category": "Datenstrukturen",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 15,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2022-2/A2"
+    ],
+    "mockExamOccurrences": [
+      "mock-2023/A4",
+      "mock-2024/A4"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-9b74ffc8e95b",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-20d1c2d0266d",
+        "page": 5
+      },
+      {
+        "sourceId": "src-14b893ae2213",
+        "page": 14
+      },
+      {
+        "sourceId": "src-c2e38ab998fa",
+        "page": 14
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Union by Rank",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 8,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-f5f6e171c082",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Graphterminologie",
+    "category": "Graphen",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 47,
+    "exerciseCoverage": 1,
+    "realExamOccurrences": [
+      "exam-2022-1/A9",
+      "exam-2024-1/A9"
+    ],
+    "mockExamOccurrences": [
+      "mock-2024/A9"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-3eaedda6bb33",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c4dde22523d3",
+        "page": 15
+      },
+      {
+        "sourceId": "src-00ae505a8756",
+        "page": 15
+      },
+      {
+        "sourceId": "src-fa63eaca933b",
+        "page": 15
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Adjazenzlisten",
+    "category": "Datenstrukturen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 7,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-257f249251dd",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-244011e5f707",
+        "page": 34
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 733
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Adjazenzmatrizen",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 2,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-b9243ead8bde",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-cc8a7a37cf43",
+        "page": 18
+      },
+      {
+        "sourceId": "src-a66dd4b4981a",
+        "page": 18
+      },
+      {
+        "sourceId": "src-1ea0642ec775",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "BFS",
+    "category": "Graphen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 4,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-c43206934ba2",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 3
+      },
+      {
+        "sourceId": "src-ff6602b770ca",
+        "page": 3
+      },
+      {
+        "sourceId": "src-1f4f87d34014",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "DFS",
+    "category": "Graphen",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 6,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2020-2/A2",
+      "exam-2024-1/A1"
+    ],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-475b9533acbe",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 11
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 3
+      },
+      {
+        "sourceId": "src-ff6602b770ca",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Entdeckungs- und Abschlusszeiten",
+    "category": "Grundlagen und Beweise",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 11,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2024-1/A1"
+    ],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-082ebf8500a4",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 928
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Topologische Sortierung",
+    "category": "Teile und Herrsche",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 1,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2020-2/A2"
+    ],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-661ab5e4830d",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Starke Zusammenhangskomponenten",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 0,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-e8b80c23286d",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-39eb3d94f40a",
+        "page": 5
+      },
+      {
+        "sourceId": "src-720584558efd",
+        "page": 5
+      },
+      {
+        "sourceId": "src-3f29b67eef5c",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Dijkstra",
+    "category": "Graphen",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 8,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2022-2/A3"
+    ],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-646279964c76",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      },
+      {
+        "sourceId": "src-606fe3c435ca",
+        "page": 3
+      },
+      {
+        "sourceId": "src-0457af7a63f0",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Bellman-Ford",
+    "category": "Graphen",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 13,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2021-1/A3",
+      "exam-2024-1/A9"
+    ],
+    "mockExamOccurrences": [
+      "mock-2022/A3"
+    ],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-51f038cebfcd",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      },
+      {
+        "sourceId": "src-606fe3c435ca",
+        "page": 3
+      },
+      {
+        "sourceId": "src-02c9bed0177d",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Negative Kreise",
+    "category": "Grundlagen und Beweise",
+    "importance": "hoch",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 5,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [
+      "exam-2024-1/A9"
+    ],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-1fa208a0ed89",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      },
+      {
+        "sourceId": "src-c4dde22523d3",
+        "page": 4
+      },
+      {
+        "sourceId": "src-00ae505a8756",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Floyd-Warshall",
+    "category": "Graphen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 12,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-6a47a10f37e0",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-02be45f603ba",
+        "page": 4
+      },
+      {
+        "sourceId": "src-14b893ae2213",
+        "page": 12
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 12
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Minimale Spannbäume",
+    "category": "Graphen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 3,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-0780ff989087",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-f2148ca799c1",
+        "page": 3
+      },
+      {
+        "sourceId": "src-02be45f603ba",
+        "page": 2
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 900
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Kruskal",
+    "category": "Graphen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 3,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-c4a698fc939e",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 5
+      },
+      {
+        "sourceId": "src-ff6602b770ca",
+        "page": 5
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Prim",
+    "category": "Graphen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 14,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-62d0e3f58250",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-067d72f54358",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Schnittknoten",
+    "category": "Grundlagen und Beweise",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 1,
+    "exerciseCoverage": 1,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  },
+  {
+    "id": "topic-c1cd67a57114",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 7
+      },
+      {
+        "sourceId": "src-1ea0642ec775",
+        "page": 1
+      },
+      {
+        "sourceId": "src-20339ee50167",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "name": "Graphfärbung",
+    "category": "Graphen",
+    "importance": "mittel",
+    "prerequisites": [
+      "Algorithmen und Berechnungsprobleme"
+    ],
+    "officialSourceCoverage": 3,
+    "exerciseCoverage": 0,
+    "realExamOccurrences": [],
+    "mockExamOccurrences": [],
+    "exerciseOccurrences": [],
+    "visualReviewStatus": "geprüft"
+  }
+]

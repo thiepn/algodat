@@ -1,0 +1,1826 @@
+[
+  {
+    "id": "trainer-graph-floyd-warshall-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-1fa208a0ed89",
+      "topic-f5f6e171c082"
+    ],
+    "taskType": "graph_algorithm_tracing",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 4,
+        "label": "Offizielle Floyd-Warshall-Aufgabe"
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 5,
+        "label": "Offizielle Floyd-Warshall-Beispiellösung"
+      },
+      {
+        "sourceId": "src-c4dde22523d3",
+        "page": 4,
+        "label": "Reale Klausurrelevanz Floyd-Warshall"
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08T00:00:00.000Z",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "engine_matches_official_method",
+    "trainerKind": "tracing",
+    "graphFamily": "shortest_paths",
+    "title": "Graph-Trainer: Floyd-Warshall-Matrixfolge",
+    "shortTitle": "Floyd-Warshall aktiv tabellieren",
+    "description": "Trainiere die Initialisierung und jede Iterationsmatrix des Floyd-Warshall-Algorithmus mit aktiver Matrixeingabe.",
+    "examTaskNumbers": [
+      3
+    ],
+    "prerequisiteTopicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "relatedTrainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1"
+    ],
+    "learningObjectives": [
+      "Distanzmatrix D(0) aus einem gerichteten gewichteten Graphen aufstellen.",
+      "Die Knotenreihenfolge als Zwischenknotenreihenfolge korrekt anwenden.",
+      "Jede Iterationsmatrix mit der Floyd-Warshall-Rekurrenz berechnen.",
+      "Unendliche Distanzen und Laufzeit sauber notieren."
+    ],
+    "supportedModes": [
+      "learn",
+      "practice",
+      "exam",
+      "review"
+    ],
+    "estimatedDurationMinutes": 18,
+    "difficultyLevels": [
+      "mittel",
+      "klausurnah"
+    ],
+    "engineVersion": "graph-tracing-floyd-warshall-v1",
+    "canonicalSolutionVersion": "floyd-warshall-canonical-v1",
+    "scoringModelVersion": "graph-tracing-scoring-v1",
+    "masteryModelVersion": "mastery-v9",
+    "answerPayloadSchemaVersion": "floyd-warshall-answer-v1",
+    "rendererType": "floyd_warshall_matrix",
+    "lazyLoader": "../features/trainer/GraphTracingTrainerPage",
+    "availabilityStatus": "available",
+    "problem": {
+      "id": "problem-graph-floyd-warshall-v1",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "phase16-fd92529318c0",
+      "topicIds": [
+        "topic-1fa208a0ed89",
+        "topic-f5f6e171c082"
+      ],
+      "taskType": "graph_algorithm_tracing",
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 4,
+          "label": "Matrixaufgabe"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 5,
+          "label": "Matrixfolge"
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "lastReviewed": "2026-07-08T00:00:00.000Z",
+      "publicDistributionStatus": "public_safe",
+      "solutionValidationStatus": "engine_matches_official_method",
+      "algorithm": "floyd_warshall",
+      "contentOrigin": "source_aligned_generated_exercise",
+      "historicalExamTextIncluded": false,
+      "graphKind": "weighted_directed",
+      "vertices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 5
+        },
+        {
+          "from": "A",
+          "to": "D",
+          "weight": 10
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": 1
+        },
+        {
+          "from": "D",
+          "to": "A",
+          "weight": -2
+        },
+        {
+          "from": "D",
+          "to": "B",
+          "weight": 4
+        }
+      ],
+      "vertexOrder": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "infinitySymbol": "∞",
+      "requiredOutput": "complete_initial_and_iteration_matrices",
+      "recurrence": "D^{(k)}[i,j] = min(D^{(k-1)}[i,j], D^{(k-1)}[i,k] + D^{(k-1)}[k,j])",
+      "runtime": "O(n^3)",
+      "canonicalSolution": {
+        "canonicalSolutionVersion": "floyd-warshall-canonical-v1",
+        "structuredAnswer": {
+          "vertexOrder": "A, B, C, D",
+          "d0": "0 5 ∞ 10; ∞ 0 3 ∞; ∞ ∞ 0 1; -2 4 ∞ 0",
+          "d1": "0 5 ∞ 10; ∞ 0 3 ∞; ∞ ∞ 0 1; -2 3 ∞ 0",
+          "d2": "0 5 8 10; ∞ 0 3 ∞; ∞ ∞ 0 1; -2 3 6 0",
+          "d3": "0 5 8 9; ∞ 0 3 4; ∞ ∞ 0 1; -2 3 6 0",
+          "d4": "0 5 8 9; 2 0 3 4; -1 4 0 1; -2 3 6 0",
+          "recurrence": "D^{(k)}[i,j] = min(D^{(k-1)}[i,j], D^{(k-1)}[i,k] + D^{(k-1)}[k,j])",
+          "runtime": "O(n^3)",
+          "explanation": "In Iteration k werden nur Wege erlaubt, deren innere Zwischenknoten aus dem Präfix der Knotenreihenfolge stammen."
+        },
+        "vertexOrder": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "matrices": [
+          {
+            "label": "D(0)",
+            "viaVertex": null,
+            "matrix": [
+              [
+                0,
+                5,
+                null,
+                10
+              ],
+              [
+                null,
+                0,
+                3,
+                null
+              ],
+              [
+                null,
+                null,
+                0,
+                1
+              ],
+              [
+                -2,
+                4,
+                null,
+                0
+              ]
+            ]
+          },
+          {
+            "label": "D(1)",
+            "viaVertex": "A",
+            "matrix": [
+              [
+                0,
+                5,
+                null,
+                10
+              ],
+              [
+                null,
+                0,
+                3,
+                null
+              ],
+              [
+                null,
+                null,
+                0,
+                1
+              ],
+              [
+                -2,
+                3,
+                null,
+                0
+              ]
+            ]
+          },
+          {
+            "label": "D(2)",
+            "viaVertex": "B",
+            "matrix": [
+              [
+                0,
+                5,
+                8,
+                10
+              ],
+              [
+                null,
+                0,
+                3,
+                null
+              ],
+              [
+                null,
+                null,
+                0,
+                1
+              ],
+              [
+                -2,
+                3,
+                6,
+                0
+              ]
+            ]
+          },
+          {
+            "label": "D(3)",
+            "viaVertex": "C",
+            "matrix": [
+              [
+                0,
+                5,
+                8,
+                9
+              ],
+              [
+                null,
+                0,
+                3,
+                4
+              ],
+              [
+                null,
+                null,
+                0,
+                1
+              ],
+              [
+                -2,
+                3,
+                6,
+                0
+              ]
+            ]
+          },
+          {
+            "label": "D(4)",
+            "viaVertex": "D",
+            "matrix": [
+              [
+                0,
+                5,
+                8,
+                9
+              ],
+              [
+                2,
+                0,
+                3,
+                4
+              ],
+              [
+                -1,
+                4,
+                0,
+                1
+              ],
+              [
+                -2,
+                3,
+                6,
+                0
+              ]
+            ]
+          }
+        ],
+        "recurrence": "D^{(k)}[i,j] = min(D^{(k-1)}[i,j], D^{(k-1)}[i,k] + D^{(k-1)}[k,j])",
+        "runtime": "O(n^3)",
+        "oracleValidationStatus": "generated_oracle_verified"
+      },
+      "variants": [
+        {
+          "id": "variant-floyd-warshall-v1-practice",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-35405e721f05",
+              "page": 5
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Matrixfolge mit negativer Kante ohne negativen Kreis",
+          "mode": "practice",
+          "graphKind": "weighted_directed",
+          "vertices": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "edges": [
+            {
+              "from": "A",
+              "to": "B",
+              "weight": 5
+            },
+            {
+              "from": "A",
+              "to": "D",
+              "weight": 10
+            },
+            {
+              "from": "B",
+              "to": "C",
+              "weight": 3
+            },
+            {
+              "from": "C",
+              "to": "D",
+              "weight": 1
+            },
+            {
+              "from": "D",
+              "to": "A",
+              "weight": -2
+            },
+            {
+              "from": "D",
+              "to": "B",
+              "weight": 4
+            }
+          ],
+          "focus": "Initialisierung, Unendlich-Einträge und Iterationsmatrizen",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "floyd-warshall-canonical-v1",
+            "structuredAnswer": {
+              "vertexOrder": "A, B, C, D",
+              "d0": "0 5 ∞ 10; ∞ 0 3 ∞; ∞ ∞ 0 1; -2 4 ∞ 0",
+              "d1": "0 5 ∞ 10; ∞ 0 3 ∞; ∞ ∞ 0 1; -2 3 ∞ 0",
+              "d2": "0 5 8 10; ∞ 0 3 ∞; ∞ ∞ 0 1; -2 3 6 0",
+              "d3": "0 5 8 9; ∞ 0 3 4; ∞ ∞ 0 1; -2 3 6 0",
+              "d4": "0 5 8 9; 2 0 3 4; -1 4 0 1; -2 3 6 0",
+              "recurrence": "D^{(k)}[i,j] = min(D^{(k-1)}[i,j], D^{(k-1)}[i,k] + D^{(k-1)}[k,j])",
+              "runtime": "O(n^3)",
+              "explanation": "In Iteration k werden nur Wege erlaubt, deren innere Zwischenknoten aus dem Präfix der Knotenreihenfolge stammen."
+            },
+            "vertexOrder": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "matrices": [
+              {
+                "label": "D(0)",
+                "viaVertex": null,
+                "matrix": [
+                  [
+                    0,
+                    5,
+                    null,
+                    10
+                  ],
+                  [
+                    null,
+                    0,
+                    3,
+                    null
+                  ],
+                  [
+                    null,
+                    null,
+                    0,
+                    1
+                  ],
+                  [
+                    -2,
+                    4,
+                    null,
+                    0
+                  ]
+                ]
+              },
+              {
+                "label": "D(1)",
+                "viaVertex": "A",
+                "matrix": [
+                  [
+                    0,
+                    5,
+                    null,
+                    10
+                  ],
+                  [
+                    null,
+                    0,
+                    3,
+                    null
+                  ],
+                  [
+                    null,
+                    null,
+                    0,
+                    1
+                  ],
+                  [
+                    -2,
+                    3,
+                    null,
+                    0
+                  ]
+                ]
+              },
+              {
+                "label": "D(2)",
+                "viaVertex": "B",
+                "matrix": [
+                  [
+                    0,
+                    5,
+                    8,
+                    10
+                  ],
+                  [
+                    null,
+                    0,
+                    3,
+                    null
+                  ],
+                  [
+                    null,
+                    null,
+                    0,
+                    1
+                  ],
+                  [
+                    -2,
+                    3,
+                    6,
+                    0
+                  ]
+                ]
+              },
+              {
+                "label": "D(3)",
+                "viaVertex": "C",
+                "matrix": [
+                  [
+                    0,
+                    5,
+                    8,
+                    9
+                  ],
+                  [
+                    null,
+                    0,
+                    3,
+                    4
+                  ],
+                  [
+                    null,
+                    null,
+                    0,
+                    1
+                  ],
+                  [
+                    -2,
+                    3,
+                    6,
+                    0
+                  ]
+                ]
+              },
+              {
+                "label": "D(4)",
+                "viaVertex": "D",
+                "matrix": [
+                  [
+                    0,
+                    5,
+                    8,
+                    9
+                  ],
+                  [
+                    2,
+                    0,
+                    3,
+                    4
+                  ],
+                  [
+                    -1,
+                    4,
+                    0,
+                    1
+                  ],
+                  [
+                    -2,
+                    3,
+                    6,
+                    0
+                  ]
+                ]
+              }
+            ],
+            "recurrence": "D^{(k)}[i,j] = min(D^{(k-1)}[i,j], D^{(k-1)}[i,k] + D^{(k-1)}[k,j])",
+            "runtime": "O(n^3)",
+            "oracleValidationStatus": "generated_oracle_verified"
+          }
+        }
+      ]
+    },
+    "hints": [
+      {
+        "id": "hint-fw-d0",
+        "level": 1,
+        "text": "D(0) enthält 0 auf der Diagonalen, direkte Kantengewichte und sonst ∞."
+      },
+      {
+        "id": "hint-fw-iteration",
+        "level": 2,
+        "text": "In D(k) darf der k-te Knoten der angegebenen Reihenfolge zusätzlich als innerer Zwischenknoten benutzt werden."
+      },
+      {
+        "id": "hint-fw-runtime",
+        "level": 3,
+        "text": "Die drei verschachtelten Schleifen über k, i und j ergeben O(n^3)."
+      }
+    ]
+  },
+  {
+    "id": "trainer-graph-dijkstra-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-e8b80c23286d",
+      "topic-f5f6e171c082"
+    ],
+    "taskType": "graph_algorithm_tracing",
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846,
+        "label": "Dijkstra-Pseudocode mit p[v]"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 829,
+        "label": "Prioritätenschlange und Tie-Semantik"
+      },
+      {
+        "sourceId": "src-1ea0642ec775",
+        "page": 6,
+        "label": "Offizielle Dijkstra-Tracing-Tabelle"
+      },
+      {
+        "sourceId": "src-011d1ee23245",
+        "page": 4,
+        "label": "Reale Klausurrelevanz Dijkstra"
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08T00:00:00.000Z",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "engine_matches_official_method",
+    "trainerKind": "tracing",
+    "graphFamily": "shortest_paths",
+    "title": "Graph-Trainer: Dijkstra mit Distanzen und Vorgängern",
+    "shortTitle": "Dijkstra aktiv tabellieren",
+    "description": "Trainiere ExtractMin, Relaxationen, Distanztabelle und Vorgängerarray für Dijkstra mit aktiver Eingabe.",
+    "examTaskNumbers": [
+      3
+    ],
+    "prerequisiteTopicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-union-find-listen-v1"
+    ],
+    "learningObjectives": [
+      "Den Startknoten und die Initialisierung d[s]=0, d[v]=∞ korrekt setzen.",
+      "In jedem Durchlauf den noch weißen Knoten mit kleinster Distanz markieren.",
+      "Ausgehende Kanten strikt relaxieren und p[v] bei Verbesserungen aktualisieren.",
+      "Die Laufzeit mit Prioritätenschlange als O((|V|+|E|) log |V|) angeben."
+    ],
+    "supportedModes": [
+      "learn",
+      "practice",
+      "exam",
+      "review"
+    ],
+    "estimatedDurationMinutes": 16,
+    "difficultyLevels": [
+      "mittel",
+      "klausurnah"
+    ],
+    "engineVersion": "graph-tracing-dijkstra-v1",
+    "canonicalSolutionVersion": "dijkstra-canonical-v1",
+    "scoringModelVersion": "single-source-tracing-scoring-v1",
+    "masteryModelVersion": "mastery-v10",
+    "answerPayloadSchemaVersion": "dijkstra-answer-v1",
+    "rendererType": "dijkstra_trace",
+    "lazyLoader": "../features/trainer/GraphTracingTrainerPage",
+    "availabilityStatus": "available",
+    "problem": {
+      "id": "problem-graph-dijkstra-v1",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "phase16-fd92529318c0",
+      "topicIds": [
+        "topic-e8b80c23286d",
+        "topic-f5f6e171c082"
+      ],
+      "taskType": "graph_algorithm_tracing",
+      "sourceRefs": [
+        {
+          "sourceId": "src-baa07f0a207a",
+          "page": 846,
+          "label": "Dijkstra-Pseudocode"
+        },
+        {
+          "sourceId": "src-1ea0642ec775",
+          "page": 6,
+          "label": "Dijkstra-Tabellenformat"
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "lastReviewed": "2026-07-08T00:00:00.000Z",
+      "publicDistributionStatus": "public_safe",
+      "solutionValidationStatus": "engine_matches_official_method",
+      "algorithm": "dijkstra",
+      "contentOrigin": "source_aligned_generated_exercise",
+      "historicalExamTextIncluded": false,
+      "graphKind": "weighted_directed",
+      "vertices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 4
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 2
+        },
+        {
+          "from": "C",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": 7
+        },
+        {
+          "from": "C",
+          "to": "E",
+          "weight": 10
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 2
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 8
+        },
+        {
+          "from": "D",
+          "to": "E",
+          "weight": 1
+        }
+      ],
+      "vertexOrder": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "startVertex": "A",
+      "infinitySymbol": "âˆž",
+      "requiredOutput": "complete_distance_predecessor_and_marking_trace",
+      "tiePolicy": "Die Trainingsinstanz vermeidet ExtractMin-Gleichstände; falls ein Gleichstand in einer Variante auftritt, entscheidet die Knotenreihenfolge.",
+      "runtime": "O((|V|+|E|) log |V|)",
+      "canonicalSolution": {
+        "canonicalSolutionVersion": "dijkstra-canonical-v1",
+        "structuredAnswer": {
+          "startVertex": "A",
+          "markedOrder": "A, C, B, D, E",
+          "distanceTable": "0: 0 ∞ ∞ ∞ ∞\n1: 0 4 2 ∞ ∞\n2: 0 3 2 9 12\n3: 0 3 2 5 11\n4: 0 3 2 5 6\n5: 0 3 2 5 6",
+          "predecessorTable": "0: NIL NIL NIL NIL NIL\n1: NIL A A NIL NIL\n2: NIL C A C C\n3: NIL C A B B\n4: NIL C A B D\n5: NIL C A B D",
+          "relaxationLog": "A: A->B: 4; A->C: 2\nC: C->B: 3; C->D: 9; C->E: 12\nB: B->D: 5; B->E: 11\nD: D->E: 6\nE: ",
+          "runtime": "O((|V|+|E|) log |V|)",
+          "explanation": "In jedem Durchlauf entfernt ExtractMin den weißen Knoten mit kleinster Distanz; danach werden ausgehende Kanten strikt relaxiert und p[v] aktualisiert."
+        },
+        "vertexOrder": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "startVertex": "A",
+        "steps": [
+          {
+            "iteration": 0,
+            "markedVertex": null,
+            "distances": {
+              "A": 0,
+              "B": null,
+              "C": null,
+              "D": null,
+              "E": null
+            },
+            "predecessors": {
+              "A": null,
+              "B": null,
+              "C": null,
+              "D": null,
+              "E": null
+            },
+            "settled": [],
+            "relaxations": []
+          },
+          {
+            "iteration": 1,
+            "markedVertex": "A",
+            "distances": {
+              "A": 0,
+              "B": 4,
+              "C": 2,
+              "D": null,
+              "E": null
+            },
+            "predecessors": {
+              "A": null,
+              "B": "A",
+              "C": "A",
+              "D": null,
+              "E": null
+            },
+            "settled": [
+              "A"
+            ],
+            "relaxations": [
+              "A->B: 4",
+              "A->C: 2"
+            ]
+          },
+          {
+            "iteration": 2,
+            "markedVertex": "C",
+            "distances": {
+              "A": 0,
+              "B": 3,
+              "C": 2,
+              "D": 9,
+              "E": 12
+            },
+            "predecessors": {
+              "A": null,
+              "B": "C",
+              "C": "A",
+              "D": "C",
+              "E": "C"
+            },
+            "settled": [
+              "A",
+              "C"
+            ],
+            "relaxations": [
+              "C->B: 3",
+              "C->D: 9",
+              "C->E: 12"
+            ]
+          },
+          {
+            "iteration": 3,
+            "markedVertex": "B",
+            "distances": {
+              "A": 0,
+              "B": 3,
+              "C": 2,
+              "D": 5,
+              "E": 11
+            },
+            "predecessors": {
+              "A": null,
+              "B": "C",
+              "C": "A",
+              "D": "B",
+              "E": "B"
+            },
+            "settled": [
+              "A",
+              "C",
+              "B"
+            ],
+            "relaxations": [
+              "B->D: 5",
+              "B->E: 11"
+            ]
+          },
+          {
+            "iteration": 4,
+            "markedVertex": "D",
+            "distances": {
+              "A": 0,
+              "B": 3,
+              "C": 2,
+              "D": 5,
+              "E": 6
+            },
+            "predecessors": {
+              "A": null,
+              "B": "C",
+              "C": "A",
+              "D": "B",
+              "E": "D"
+            },
+            "settled": [
+              "A",
+              "C",
+              "B",
+              "D"
+            ],
+            "relaxations": [
+              "D->E: 6"
+            ]
+          },
+          {
+            "iteration": 5,
+            "markedVertex": "E",
+            "distances": {
+              "A": 0,
+              "B": 3,
+              "C": 2,
+              "D": 5,
+              "E": 6
+            },
+            "predecessors": {
+              "A": null,
+              "B": "C",
+              "C": "A",
+              "D": "B",
+              "E": "D"
+            },
+            "settled": [
+              "A",
+              "C",
+              "B",
+              "D",
+              "E"
+            ],
+            "relaxations": []
+          }
+        ],
+        "runtime": "O((|V|+|E|) log |V|)",
+        "oracleValidationStatus": "generated_oracle_verified"
+      },
+      "variants": [
+        {
+          "id": "variant-dijkstra-v1-practice",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-1ea0642ec775",
+              "page": 6
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Dijkstra-Spur ohne Gleichstand",
+          "mode": "practice",
+          "graphKind": "weighted_directed",
+          "vertices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            {
+              "from": "A",
+              "to": "B",
+              "weight": 4
+            },
+            {
+              "from": "A",
+              "to": "C",
+              "weight": 2
+            },
+            {
+              "from": "C",
+              "to": "B",
+              "weight": 1
+            },
+            {
+              "from": "C",
+              "to": "D",
+              "weight": 7
+            },
+            {
+              "from": "C",
+              "to": "E",
+              "weight": 10
+            },
+            {
+              "from": "B",
+              "to": "D",
+              "weight": 2
+            },
+            {
+              "from": "B",
+              "to": "E",
+              "weight": 8
+            },
+            {
+              "from": "D",
+              "to": "E",
+              "weight": 1
+            }
+          ],
+          "focus": "ExtractMin-Reihenfolge, Distanzen, Vorgänger und Relaxationen",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "dijkstra-canonical-v1",
+            "structuredAnswer": {
+              "startVertex": "A",
+              "markedOrder": "A, C, B, D, E",
+              "distanceTable": "0: 0 ∞ ∞ ∞ ∞\n1: 0 4 2 ∞ ∞\n2: 0 3 2 9 12\n3: 0 3 2 5 11\n4: 0 3 2 5 6\n5: 0 3 2 5 6",
+              "predecessorTable": "0: NIL NIL NIL NIL NIL\n1: NIL A A NIL NIL\n2: NIL C A C C\n3: NIL C A B B\n4: NIL C A B D\n5: NIL C A B D",
+              "relaxationLog": "A: A->B: 4; A->C: 2\nC: C->B: 3; C->D: 9; C->E: 12\nB: B->D: 5; B->E: 11\nD: D->E: 6\nE: ",
+              "runtime": "O((|V|+|E|) log |V|)",
+              "explanation": "In jedem Durchlauf entfernt ExtractMin den weißen Knoten mit kleinster Distanz; danach werden ausgehende Kanten strikt relaxiert und p[v] aktualisiert."
+            },
+            "vertexOrder": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "startVertex": "A",
+            "steps": [
+              {
+                "iteration": 0,
+                "markedVertex": null,
+                "distances": {
+                  "A": 0,
+                  "B": null,
+                  "C": null,
+                  "D": null,
+                  "E": null
+                },
+                "predecessors": {
+                  "A": null,
+                  "B": null,
+                  "C": null,
+                  "D": null,
+                  "E": null
+                },
+                "settled": [],
+                "relaxations": []
+              }
+            ],
+            "runtime": "O((|V|+|E|) log |V|)",
+            "oracleValidationStatus": "generated_oracle_verified"
+          }
+        }
+      ]
+    },
+    "hints": [
+      {
+        "id": "hint-dijkstra-start",
+        "level": 1,
+        "text": "Initialisiere d[A]=0 und alle anderen Distanzen mit ∞; alle Vorgänger starten mit NIL."
+      },
+      {
+        "id": "hint-dijkstra-extract",
+        "level": 2,
+        "text": "Wähle in jedem Durchlauf den noch nicht schwarzen Knoten mit kleinster aktueller Distanz."
+      },
+      {
+        "id": "hint-dijkstra-relax",
+        "level": 3,
+        "text": "Aktualisiere p[v] nur bei strikter Verbesserung d[u]+w(u,v)<d[v]."
+      }
+    ]
+  },
+  {
+    "id": "trainer-graph-prim-mst-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-6a47a10f37e0",
+      "topic-c4a698fc939e"
+    ],
+    "taskType": "graph_algorithm_tracing",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 3,
+        "label": "Prim-Probeklausuraufgabe"
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3,
+        "label": "Prim-Beispiellösung"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 955,
+        "label": "Prim-Idee"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 958,
+        "label": "Prim mit key und parent"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 965,
+        "label": "Prim-Laufzeit"
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "trainerKind": "tracing",
+    "graphFamily": "spanning_trees",
+    "title": "Prim-Tracing für minimale Spannbäume",
+    "shortTitle": "Prim-MST-Tracing",
+    "description": "Führe Prim auf einem neu formulierten ungerichteten gewichteten Graphen aus: Startknoten, key-/parent-Updates, sichere Kanten, Endbaum und Gesamtgewicht.",
+    "examTaskNumbers": [
+      4
+    ],
+    "prerequisiteTopicIds": [
+      "topic-6a47a10f37e0",
+      "topic-c4a698fc939e"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-dijkstra-v1",
+      "trainer-union-find-listen-v1"
+    ],
+    "learningObjectives": [
+      "einen gewichteten ungerichteten Graphen als MST-Eingabe lesen",
+      "den Startknoten und Initialzustand von Prim korrekt setzen",
+      "in jedem Schritt die nächste sichere Schnittkante bestimmen",
+      "key- und parent-Werte nach Vorlesungskonvention aktualisieren",
+      "den finalen Spannbaum und sein Gesamtgewicht bestimmen"
+    ],
+    "supportedModes": [
+      "learn",
+      "practice",
+      "exam",
+      "review"
+    ],
+    "estimatedDurationMinutes": 18,
+    "difficultyLevels": [
+      "mittel"
+    ],
+    "engineVersion": "graph-tracing-prim-mst-v1",
+    "canonicalSolutionVersion": "prim-mst-canonical-v1",
+    "scoringModelVersion": "single-source-tracing-scoring-v1",
+    "masteryModelVersion": "mastery-v11",
+    "answerPayloadSchemaVersion": "prim-mst-answer-v1",
+    "rendererType": "prim_mst_trace",
+    "lazyLoader": "../features/trainer/GraphTracingTrainerPage",
+    "availabilityStatus": "available",
+    "problem": {
+      "id": "problem-graph-prim-mst-v1",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "phase16-fd92529318c0",
+      "topicIds": [
+        "topic-6a47a10f37e0",
+        "topic-c4a698fc939e"
+      ],
+      "taskType": "graph_algorithm_tracing",
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 3,
+          "label": "Prim-Aufgabenformat"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 3,
+          "label": "Prim-Kantenreihenfolge"
+        },
+        {
+          "sourceId": "src-baa07f0a207a",
+          "page": 958,
+          "label": "key-/parent-Konvention"
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "lastReviewed": "2026-07-08",
+      "publicDistributionStatus": "public_safe",
+      "solutionValidationStatus": "deterministic_engine_verified",
+      "algorithm": "prim",
+      "contentOrigin": "source_aligned_generated_exercise",
+      "historicalExamTextIncluded": false,
+      "graphKind": "weighted_undirected",
+      "vertices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 2
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 5
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "weight": 4
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": 6
+        },
+        {
+          "from": "C",
+          "to": "E",
+          "weight": 7
+        },
+        {
+          "from": "D",
+          "to": "E",
+          "weight": 1
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 8
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 9
+        }
+      ],
+      "vertexOrder": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "startVertex": "A",
+      "requiredOutput": "complete_key_parent_edge_order_and_total_weight_trace",
+      "tiePolicy": "Die Hauptinstanz enthält keine Auswahlgleichstände; es wird keine unbelegte Tie-Breaker-Regel benötigt.",
+      "multipleMstPolicy": "Der kanonische Trace ist strict; alternative Endbäume werden semantisch nur über gültigen Spannbaum und Oracle-Minimalgewicht bewertet.",
+      "runtime": "O(|E| log |V|)",
+      "canonicalSolution": {
+        "canonicalSolutionVersion": "prim-mst-canonical-v1",
+        "structuredAnswer": {
+          "startVertex": "A",
+          "selectedVertices": "A, B, D, E, C, F",
+          "selectedEdges": "A-B, B-D, D-E, B-C, D-F",
+          "keyTable": "0: A=0 B=∞ C=∞ D=∞ E=∞ F=∞\n1: A=0 B=2 C=5 D=∞ E=∞ F=∞\n2: A=0 B=2 C=4 D=3 E=∞ F=∞\n3: A=0 B=2 C=4 D=3 E=1 F=8\n4: A=0 B=2 C=4 D=3 E=1 F=8\n5: A=0 B=2 C=4 D=3 E=1 F=8\n6: A=0 B=2 C=4 D=3 E=1 F=8",
+          "parentTable": "0: A=NIL B=NIL C=NIL D=NIL E=NIL F=NIL\n1: A=NIL B=A C=A D=NIL E=NIL F=NIL\n2: A=NIL B=A C=B D=B E=NIL F=NIL\n3: A=NIL B=A C=B D=B E=D F=D\n4: A=NIL B=A C=B D=B E=D F=D\n5: A=NIL B=A C=B D=B E=D F=D\n6: A=NIL B=A C=B D=B E=D F=D",
+          "totalWeight": "18",
+          "safeEdgeExplanation": "In jeder Runde wählt Prim eine Kante minimalen Gewichts über den Schnitt zwischen Baum und Restgraph; nach dem Schnittsatz ist diese Kante sicher.",
+          "runtime": "O(|E| log |V|)"
+        },
+        "vertexOrder": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "startVertex": "A",
+        "steps": [
+          {
+            "iteration": 0,
+            "selectedVertex": null,
+            "selectedEdge": null,
+            "keys": {
+              "A": 0,
+              "B": null,
+              "C": null,
+              "D": null,
+              "E": null,
+              "F": null
+            },
+            "parents": {
+              "A": null,
+              "B": null,
+              "C": null,
+              "D": null,
+              "E": null,
+              "F": null
+            },
+            "treeVertices": [],
+            "selectedEdges": [],
+            "totalWeight": 0
+          },
+          {
+            "iteration": 1,
+            "selectedVertex": "A",
+            "selectedEdge": null,
+            "keys": {
+              "A": 0,
+              "B": 2,
+              "C": 5,
+              "D": null,
+              "E": null,
+              "F": null
+            },
+            "parents": {
+              "A": null,
+              "B": "A",
+              "C": "A",
+              "D": null,
+              "E": null,
+              "F": null
+            },
+            "treeVertices": [
+              "A"
+            ],
+            "selectedEdges": [],
+            "totalWeight": 0
+          },
+          {
+            "iteration": 2,
+            "selectedVertex": "B",
+            "selectedEdge": "A-B",
+            "keys": {
+              "A": 0,
+              "B": 2,
+              "C": 4,
+              "D": 3,
+              "E": null,
+              "F": null
+            },
+            "parents": {
+              "A": null,
+              "B": "A",
+              "C": "B",
+              "D": "B",
+              "E": null,
+              "F": null
+            },
+            "treeVertices": [
+              "A",
+              "B"
+            ],
+            "selectedEdges": [
+              "A-B"
+            ],
+            "totalWeight": 2
+          },
+          {
+            "iteration": 3,
+            "selectedVertex": "D",
+            "selectedEdge": "B-D",
+            "keys": {
+              "A": 0,
+              "B": 2,
+              "C": 4,
+              "D": 3,
+              "E": 1,
+              "F": 8
+            },
+            "parents": {
+              "A": null,
+              "B": "A",
+              "C": "B",
+              "D": "B",
+              "E": "D",
+              "F": "D"
+            },
+            "treeVertices": [
+              "A",
+              "B",
+              "D"
+            ],
+            "selectedEdges": [
+              "A-B",
+              "B-D"
+            ],
+            "totalWeight": 5
+          },
+          {
+            "iteration": 4,
+            "selectedVertex": "E",
+            "selectedEdge": "D-E",
+            "keys": {
+              "A": 0,
+              "B": 2,
+              "C": 4,
+              "D": 3,
+              "E": 1,
+              "F": 8
+            },
+            "parents": {
+              "A": null,
+              "B": "A",
+              "C": "B",
+              "D": "B",
+              "E": "D",
+              "F": "D"
+            },
+            "treeVertices": [
+              "A",
+              "B",
+              "D",
+              "E"
+            ],
+            "selectedEdges": [
+              "A-B",
+              "B-D",
+              "D-E"
+            ],
+            "totalWeight": 6
+          },
+          {
+            "iteration": 5,
+            "selectedVertex": "C",
+            "selectedEdge": "B-C",
+            "keys": {
+              "A": 0,
+              "B": 2,
+              "C": 4,
+              "D": 3,
+              "E": 1,
+              "F": 8
+            },
+            "parents": {
+              "A": null,
+              "B": "A",
+              "C": "B",
+              "D": "B",
+              "E": "D",
+              "F": "D"
+            },
+            "treeVertices": [
+              "A",
+              "B",
+              "D",
+              "E",
+              "C"
+            ],
+            "selectedEdges": [
+              "A-B",
+              "B-D",
+              "D-E",
+              "B-C"
+            ],
+            "totalWeight": 10
+          },
+          {
+            "iteration": 6,
+            "selectedVertex": "F",
+            "selectedEdge": "D-F",
+            "keys": {
+              "A": 0,
+              "B": 2,
+              "C": 4,
+              "D": 3,
+              "E": 1,
+              "F": 8
+            },
+            "parents": {
+              "A": null,
+              "B": "A",
+              "C": "B",
+              "D": "B",
+              "E": "D",
+              "F": "D"
+            },
+            "treeVertices": [
+              "A",
+              "B",
+              "D",
+              "E",
+              "C",
+              "F"
+            ],
+            "selectedEdges": [
+              "A-B",
+              "B-D",
+              "D-E",
+              "B-C",
+              "D-F"
+            ],
+            "totalWeight": 18
+          }
+        ],
+        "mstEdges": [
+          "A-B",
+          "B-D",
+          "D-E",
+          "B-C",
+          "D-F"
+        ],
+        "totalWeight": 18,
+        "runtime": "O(|E| log |V|)",
+        "oracleValidationStatus": "generated_oracle_verified",
+        "multipleMstPolicy": "strict_no_ties"
+      },
+      "variants": [
+        {
+          "id": "variant-prim-mst-v1-practice",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-baa07f0a207a",
+              "page": 955,
+              "label": "Prim-Idee"
+            },
+            {
+              "sourceId": "src-baa07f0a207a",
+              "page": 958,
+              "label": "Prim mit key und parent"
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Prim-Spur ohne Auswahlgleichstand",
+          "mode": "practice",
+          "graphKind": "weighted_undirected",
+          "vertices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "edges": [
+            {
+              "from": "A",
+              "to": "B",
+              "weight": 2
+            },
+            {
+              "from": "A",
+              "to": "C",
+              "weight": 5
+            },
+            {
+              "from": "B",
+              "to": "C",
+              "weight": 4
+            },
+            {
+              "from": "B",
+              "to": "D",
+              "weight": 3
+            },
+            {
+              "from": "C",
+              "to": "D",
+              "weight": 6
+            },
+            {
+              "from": "C",
+              "to": "E",
+              "weight": 7
+            },
+            {
+              "from": "D",
+              "to": "E",
+              "weight": 1
+            },
+            {
+              "from": "D",
+              "to": "F",
+              "weight": 8
+            },
+            {
+              "from": "E",
+              "to": "F",
+              "weight": 9
+            }
+          ],
+          "focus": "Startknoten, sichere Kante, key-/parent-Tabelle und Gesamtgewicht",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "prim-mst-canonical-v1",
+            "structuredAnswer": {
+              "startVertex": "A",
+              "selectedVertices": "A, B, D, E, C, F",
+              "selectedEdges": "A-B, B-D, D-E, B-C, D-F",
+              "keyTable": "0: A=0 B=∞ C=∞ D=∞ E=∞ F=∞\n1: A=0 B=2 C=5 D=∞ E=∞ F=∞\n2: A=0 B=2 C=4 D=3 E=∞ F=∞\n3: A=0 B=2 C=4 D=3 E=1 F=8\n4: A=0 B=2 C=4 D=3 E=1 F=8\n5: A=0 B=2 C=4 D=3 E=1 F=8\n6: A=0 B=2 C=4 D=3 E=1 F=8",
+              "parentTable": "0: A=NIL B=NIL C=NIL D=NIL E=NIL F=NIL\n1: A=NIL B=A C=A D=NIL E=NIL F=NIL\n2: A=NIL B=A C=B D=B E=NIL F=NIL\n3: A=NIL B=A C=B D=B E=D F=D\n4: A=NIL B=A C=B D=B E=D F=D\n5: A=NIL B=A C=B D=B E=D F=D\n6: A=NIL B=A C=B D=B E=D F=D",
+              "totalWeight": "18",
+              "safeEdgeExplanation": "In jeder Runde wählt Prim eine Kante minimalen Gewichts über den Schnitt zwischen Baum und Restgraph; nach dem Schnittsatz ist diese Kante sicher.",
+              "runtime": "O(|E| log |V|)"
+            },
+            "vertexOrder": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "startVertex": "A",
+            "steps": [
+              {
+                "iteration": 0,
+                "selectedVertex": null,
+                "selectedEdge": null,
+                "keys": {
+                  "A": 0,
+                  "B": null,
+                  "C": null,
+                  "D": null,
+                  "E": null,
+                  "F": null
+                },
+                "parents": {
+                  "A": null,
+                  "B": null,
+                  "C": null,
+                  "D": null,
+                  "E": null,
+                  "F": null
+                },
+                "treeVertices": [],
+                "selectedEdges": [],
+                "totalWeight": 0
+              },
+              {
+                "iteration": 1,
+                "selectedVertex": "A",
+                "selectedEdge": null,
+                "keys": {
+                  "A": 0,
+                  "B": 2,
+                  "C": 5,
+                  "D": null,
+                  "E": null,
+                  "F": null
+                },
+                "parents": {
+                  "A": null,
+                  "B": "A",
+                  "C": "A",
+                  "D": null,
+                  "E": null,
+                  "F": null
+                },
+                "treeVertices": [
+                  "A"
+                ],
+                "selectedEdges": [],
+                "totalWeight": 0
+              },
+              {
+                "iteration": 2,
+                "selectedVertex": "B",
+                "selectedEdge": "A-B",
+                "keys": {
+                  "A": 0,
+                  "B": 2,
+                  "C": 4,
+                  "D": 3,
+                  "E": null,
+                  "F": null
+                },
+                "parents": {
+                  "A": null,
+                  "B": "A",
+                  "C": "B",
+                  "D": "B",
+                  "E": null,
+                  "F": null
+                },
+                "treeVertices": [
+                  "A",
+                  "B"
+                ],
+                "selectedEdges": [
+                  "A-B"
+                ],
+                "totalWeight": 2
+              },
+              {
+                "iteration": 3,
+                "selectedVertex": "D",
+                "selectedEdge": "B-D",
+                "keys": {
+                  "A": 0,
+                  "B": 2,
+                  "C": 4,
+                  "D": 3,
+                  "E": 1,
+                  "F": 8
+                },
+                "parents": {
+                  "A": null,
+                  "B": "A",
+                  "C": "B",
+                  "D": "B",
+                  "E": "D",
+                  "F": "D"
+                },
+                "treeVertices": [
+                  "A",
+                  "B",
+                  "D"
+                ],
+                "selectedEdges": [
+                  "A-B",
+                  "B-D"
+                ],
+                "totalWeight": 5
+              },
+              {
+                "iteration": 4,
+                "selectedVertex": "E",
+                "selectedEdge": "D-E",
+                "keys": {
+                  "A": 0,
+                  "B": 2,
+                  "C": 4,
+                  "D": 3,
+                  "E": 1,
+                  "F": 8
+                },
+                "parents": {
+                  "A": null,
+                  "B": "A",
+                  "C": "B",
+                  "D": "B",
+                  "E": "D",
+                  "F": "D"
+                },
+                "treeVertices": [
+                  "A",
+                  "B",
+                  "D",
+                  "E"
+                ],
+                "selectedEdges": [
+                  "A-B",
+                  "B-D",
+                  "D-E"
+                ],
+                "totalWeight": 6
+              },
+              {
+                "iteration": 5,
+                "selectedVertex": "C",
+                "selectedEdge": "B-C",
+                "keys": {
+                  "A": 0,
+                  "B": 2,
+                  "C": 4,
+                  "D": 3,
+                  "E": 1,
+                  "F": 8
+                },
+                "parents": {
+                  "A": null,
+                  "B": "A",
+                  "C": "B",
+                  "D": "B",
+                  "E": "D",
+                  "F": "D"
+                },
+                "treeVertices": [
+                  "A",
+                  "B",
+                  "D",
+                  "E",
+                  "C"
+                ],
+                "selectedEdges": [
+                  "A-B",
+                  "B-D",
+                  "D-E",
+                  "B-C"
+                ],
+                "totalWeight": 10
+              },
+              {
+                "iteration": 6,
+                "selectedVertex": "F",
+                "selectedEdge": "D-F",
+                "keys": {
+                  "A": 0,
+                  "B": 2,
+                  "C": 4,
+                  "D": 3,
+                  "E": 1,
+                  "F": 8
+                },
+                "parents": {
+                  "A": null,
+                  "B": "A",
+                  "C": "B",
+                  "D": "B",
+                  "E": "D",
+                  "F": "D"
+                },
+                "treeVertices": [
+                  "A",
+                  "B",
+                  "D",
+                  "E",
+                  "C",
+                  "F"
+                ],
+                "selectedEdges": [
+                  "A-B",
+                  "B-D",
+                  "D-E",
+                  "B-C",
+                  "D-F"
+                ],
+                "totalWeight": 18
+              }
+            ],
+            "mstEdges": [
+              "A-B",
+              "B-D",
+              "D-E",
+              "B-C",
+              "D-F"
+            ],
+            "totalWeight": 18,
+            "runtime": "O(|E| log |V|)",
+            "oracleValidationStatus": "generated_oracle_verified",
+            "multipleMstPolicy": "strict_no_ties"
+          }
+        }
+      ]
+    },
+    "hints": [
+      {
+        "id": "hint-prim-start",
+        "level": 1,
+        "text": "Setze key[A]=0 und alle anderen key-Werte zunächst auf ∞; alle parent-Werte beginnen mit NIL."
+      },
+      {
+        "id": "hint-prim-cut",
+        "level": 2,
+        "text": "Betrachte immer nur Kanten, die den aktuellen Baum mit einem noch nicht aufgenommenen Knoten verbinden."
+      },
+      {
+        "id": "hint-prim-parent",
+        "level": 3,
+        "text": "Ein parent-Wert ändert sich nur, wenn eine neu betrachtete Kante einen kleineren key-Wert liefert."
+      }
+    ]
+  }
+]

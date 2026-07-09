@@ -1,0 +1,990 @@
+[
+  {
+    "id": "fd-data-structures-single-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-data-structures"
+    ],
+    "topicIds": [
+      "topic-249f056b552d",
+      "topic-83dbc3204045",
+      "topic-3c7ef81af7cd",
+      "topic-fba6d5e717ea",
+      "topic-d054e6909a32",
+      "topic-0ba342914656"
+    ],
+    "examTaskNumbers": [
+      2,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "single_choice",
+    "prompt": {
+      "stem": "Welche Aussage ist für „Datenstrukturen und Operationen“ belegt?",
+      "instruction": "Wähle genau eine Antwort."
+    },
+    "options": [
+      {
+        "id": "correct",
+        "text": "Union-Find verwaltet disjunkte Mengen über Make-Set, Find und Union.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "wrong-a",
+        "text": "Queues arbeiten nach LIFO.",
+        "correct": false,
+        "misconceptionId": "stack-queue-mixup",
+        "distractorCategory": "data_structure_operation_error",
+        "reasonIncorrect": "LIFO und FIFO werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Stack- und Queue-Operationen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "wrong-b",
+        "text": "Ein Heap ist dasselbe wie ein binärer Suchbaum.",
+        "correct": false,
+        "misconceptionId": "bst-heap-mixup",
+        "distractorCategory": "bst_vs_heap_confusion",
+        "reasonIncorrect": "Suchbaumordnung und Heap-Ordnung werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Baum- und Heap-Invarianten",
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "correct"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Datenstrukturen und Operationen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "stack-queue-mixup",
+      "bst-heap-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-data-structures-multiple-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-data-structures"
+    ],
+    "topicIds": [
+      "topic-249f056b552d",
+      "topic-83dbc3204045",
+      "topic-3c7ef81af7cd",
+      "topic-fba6d5e717ea",
+      "topic-d054e6909a32",
+      "topic-0ba342914656"
+    ],
+    "examTaskNumbers": [
+      2,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "multiple_choice",
+    "prompt": {
+      "stem": "Welche zwei Aussagen gehören zur Kompetenz „Datenstrukturen und Operationen“?",
+      "instruction": "Wähle alle richtigen Antworten."
+    },
+    "options": [
+      {
+        "id": "fact-1",
+        "text": "Stacks arbeiten nach dem LIFO-Prinzip.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "fact-2",
+        "text": "Queues arbeiten nach dem FIFO-Prinzip.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "distractor-a",
+        "text": "Queues arbeiten nach LIFO.",
+        "correct": false,
+        "misconceptionId": "stack-queue-mixup",
+        "distractorCategory": "data_structure_operation_error",
+        "reasonIncorrect": "LIFO und FIFO werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Stack- und Queue-Operationen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "distractor-b",
+        "text": "Ein Heap ist dasselbe wie ein binärer Suchbaum.",
+        "correct": false,
+        "misconceptionId": "bst-heap-mixup",
+        "distractorCategory": "bst_vs_heap_confusion",
+        "reasonIncorrect": "Suchbaumordnung und Heap-Ordnung werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Baum- und Heap-Invarianten",
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "fact-1",
+        "fact-2"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_correct_option"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Datenstrukturen und Operationen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "stack-queue-mixup",
+      "bst-heap-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-data-structures-true-false-reason",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-data-structures"
+    ],
+    "topicIds": [
+      "topic-249f056b552d",
+      "topic-83dbc3204045",
+      "topic-3c7ef81af7cd",
+      "topic-fba6d5e717ea",
+      "topic-d054e6909a32",
+      "topic-0ba342914656"
+    ],
+    "examTaskNumbers": [
+      2,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "true_false_reason",
+    "prompt": {
+      "stem": "Union-Find verwaltet disjunkte Mengen über Make-Set, Find und Union.",
+      "instruction": "Entscheide Wahr/Falsch und wähle die passende Begründung."
+    },
+    "options": [
+      {
+        "id": "truth-true",
+        "text": "Wahr",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "truth-false",
+        "text": "Falsch",
+        "correct": false,
+        "misconceptionId": "bst-heap-mixup",
+        "distractorCategory": "bst_vs_heap_confusion",
+        "reasonIncorrect": "Suchbaumordnung und Heap-Ordnung werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Baum- und Heap-Invarianten",
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "reason-source",
+        "text": "Begründung: Stacks arbeiten nach dem LIFO-Prinzip.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "reason-trap",
+        "text": "Begründung: Queues arbeiten nach LIFO.",
+        "correct": false,
+        "misconceptionId": "bst-heap-mixup",
+        "distractorCategory": "bst_vs_heap_confusion",
+        "reasonIncorrect": "Suchbaumordnung und Heap-Ordnung werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Baum- und Heap-Invarianten",
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "truth-true"
+      ],
+      "correctReasonId": "reason-source"
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_component"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Datenstrukturen und Operationen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "stack-queue-mixup",
+      "bst-heap-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-data-structures-matching",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-data-structures"
+    ],
+    "topicIds": [
+      "topic-249f056b552d",
+      "topic-83dbc3204045",
+      "topic-3c7ef81af7cd",
+      "topic-fba6d5e717ea",
+      "topic-d054e6909a32",
+      "topic-0ba342914656"
+    ],
+    "examTaskNumbers": [
+      2,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "matching",
+    "prompt": {
+      "stem": "Ordne die Begriffe zur Kompetenz „Datenstrukturen und Operationen“ zu.",
+      "instruction": "Wähle für jeden linken Begriff die passende rechte Beschreibung."
+    },
+    "options": [
+      {
+        "id": "left-0",
+        "text": "Stack",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "right-0",
+        "text": "LIFO",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "left-1",
+        "text": "Queue",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "right-1",
+        "text": "FIFO",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctPairs": {
+        "left-0": "right-0",
+        "left-1": "right-1"
+      }
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_pair"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Datenstrukturen und Operationen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "stack-queue-mixup",
+      "bst-heap-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-data-structures-ordering",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-data-structures"
+    ],
+    "topicIds": [
+      "topic-249f056b552d",
+      "topic-83dbc3204045",
+      "topic-3c7ef81af7cd",
+      "topic-fba6d5e717ea",
+      "topic-d054e6909a32",
+      "topic-0ba342914656"
+    ],
+    "examTaskNumbers": [
+      2,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "ordering",
+    "prompt": {
+      "stem": "Bringe die Arbeitsschritte für „Datenstrukturen und Operationen“ in eine sinnvolle Reihenfolge.",
+      "instruction": "Nutze die Pfeil-Schaltflächen oder die Tastaturreihenfolge."
+    },
+    "options": [
+      {
+        "id": "step-0",
+        "text": "Make-Set",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "step-1",
+        "text": "Find",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Union",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Repräsentanten prüfen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOrderIds": [
+        "step-0",
+        "step-1",
+        "step-2",
+        "step-3"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 3,
+      "partialCredit": "adjacent_pairs"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Datenstrukturen und Operationen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "stack-queue-mixup",
+      "bst-heap-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-data-structures-numeric",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-data-structures"
+    ],
+    "topicIds": [
+      "topic-249f056b552d",
+      "topic-83dbc3204045",
+      "topic-3c7ef81af7cd",
+      "topic-fba6d5e717ea",
+      "topic-d054e6909a32",
+      "topic-0ba342914656"
+    ],
+    "examTaskNumbers": [
+      2,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "numeric_short_answer",
+    "prompt": {
+      "stem": "Wie viele Grundoperationen nennt die Union-Find-Kurzbeschreibung?",
+      "instruction": "Gib eine ganze Zahl ein."
+    },
+    "options": [],
+    "answerDefinition": {
+      "numericAnswer": 3,
+      "tolerance": 0
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Datenstrukturen und Operationen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "stack-queue-mixup",
+      "bst-heap-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-data-structures-algorithm-selection",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-data-structures"
+    ],
+    "topicIds": [
+      "topic-249f056b552d",
+      "topic-83dbc3204045",
+      "topic-3c7ef81af7cd",
+      "topic-fba6d5e717ea",
+      "topic-d054e6909a32",
+      "topic-0ba342914656"
+    ],
+    "examTaskNumbers": [
+      2,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "algorithm_selection",
+    "prompt": {
+      "stem": "Welche Datenstruktur passt zu disjunkten Mengen?",
+      "instruction": "Wähle den passenden Algorithmus, Begriff oder die passende Struktur."
+    },
+    "options": [
+      {
+        "id": "union_find",
+        "text": "union find",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "queue",
+        "text": "queue",
+        "correct": false,
+        "misconceptionId": "bst-heap-mixup",
+        "distractorCategory": "bst_vs_heap_confusion",
+        "reasonIncorrect": "Suchbaumordnung und Heap-Ordnung werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Baum- und Heap-Invarianten",
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "heap",
+        "text": "heap",
+        "correct": false,
+        "misconceptionId": "bst-heap-mixup",
+        "distractorCategory": "bst_vs_heap_confusion",
+        "reasonIncorrect": "Suchbaumordnung und Heap-Ordnung werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Baum- und Heap-Invarianten",
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctAlgorithmId": "union_find"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Datenstrukturen und Operationen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "stack-queue-mixup",
+      "bst-heap-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-data-structures-complexity-classification",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-data-structures"
+    ],
+    "topicIds": [
+      "topic-249f056b552d",
+      "topic-83dbc3204045",
+      "topic-3c7ef81af7cd",
+      "topic-fba6d5e717ea",
+      "topic-d054e6909a32",
+      "topic-0ba342914656"
+    ],
+    "examTaskNumbers": [
+      2,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "complexity_classification",
+    "prompt": {
+      "stem": "Klassifiziere O(log n) als Laufzeitfamilie.",
+      "instruction": "Wähle die passende Klassifikation."
+    },
+    "options": [
+      {
+        "id": "konstant",
+        "text": "konstant",
+        "correct": false,
+        "misconceptionId": "bst-heap-mixup",
+        "distractorCategory": "bst_vs_heap_confusion",
+        "reasonIncorrect": "Suchbaumordnung und Heap-Ordnung werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Baum- und Heap-Invarianten",
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "logarithmisch",
+        "text": "logarithmisch",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "exponentiell",
+        "text": "exponentiell",
+        "correct": false,
+        "misconceptionId": "bst-heap-mixup",
+        "distractorCategory": "bst_vs_heap_confusion",
+        "reasonIncorrect": "Suchbaumordnung und Heap-Ordnung werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Baum- und Heap-Invarianten",
+        "sourceRefs": [
+          {
+            "sourceId": "src-79ae96ebbccf",
+            "page": 2
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "logarithmisch"
+      ],
+      "complexityClass": "logarithmisch"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Datenstrukturen und Operationen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "stack-queue-mixup",
+      "bst-heap-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  }
+]

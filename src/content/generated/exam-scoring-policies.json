@@ -1,0 +1,46 @@
+[
+  {
+    "id": "exam-exact-points-v1",
+    "exactPoints": true,
+    "showOfficialGrade": false,
+    "classificationLabels": [
+      "noch nicht stabil",
+      "knapp",
+      "solide",
+      "stark"
+    ]
+  },
+  {
+    "id": "exam-exact-points-v2",
+    "exactPoints": true,
+    "showOfficialGrade": false,
+    "classificationLabels": [
+      "noch nicht stabil",
+      "knapp",
+      "solide",
+      "stark"
+    ]
+  },
+  {
+    "id": "exam-exact-points-v3",
+    "exactPoints": true,
+    "showOfficialGrade": false,
+    "classificationLabels": [
+      "noch nicht stabil",
+      "knapp",
+      "solide",
+      "stark"
+    ]
+  },
+  {
+    "id": "exam-exact-points-v4",
+    "exactPoints": true,
+    "showOfficialGrade": false,
+    "classificationLabels": [
+      "noch nicht stabil",
+      "knapp",
+      "solide",
+      "stark"
+    ]
+  }
+]

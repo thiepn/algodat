@@ -1,0 +1,1443 @@
+{
+  "schema_version": "1.0.0",
+  "exam_set_count": 10,
+  "real_exam_count": 6,
+  "mock_exam_count": 4,
+  "exams": [
+    {
+      "id": "exam-2020-1",
+      "kind": "reale Prüfung",
+      "year": 2020,
+      "date": null,
+      "semester": "Sommersemester",
+      "examiner": null,
+      "confidence": "plausible",
+      "task_count": 9,
+      "total_points": 50,
+      "duration_minutes": 180,
+      "allowed_aids": "unbekannt; Deckblatt fehlt",
+      "question_source_id": null,
+      "solution_source_ids": [
+        "src-88179ac88dc5"
+      ],
+      "official_solution_available": true,
+      "tasks": [
+        {
+          "number": 1,
+          "points": 4,
+          "topic": "MergeSort-Tracing",
+          "format": "Tracing",
+          "requested_deliverables": "Zwischenzustände und Endergebnis",
+          "algorithm": "MergeSort-Tracing",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        },
+        {
+          "number": 2,
+          "points": 4,
+          "topic": "Hashing mit Verkettung",
+          "format": "Tracing",
+          "requested_deliverables": "alle Zustände in geforderter Reihenfolge",
+          "algorithm": "Hashing mit Verkettung",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        },
+        {
+          "number": 3,
+          "points": 4,
+          "topic": "Bellman-Ford und negative Kreise",
+          "format": "Tracing",
+          "requested_deliverables": "Tabelle/Graph nach jeder Iteration",
+          "algorithm": "Bellman-Ford und negative Kreise",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        },
+        {
+          "number": 4,
+          "points": 4,
+          "topic": "Union-Find mit Listen",
+          "format": "Tracing",
+          "requested_deliverables": "vollständige Zustandsfolge",
+          "algorithm": "Union-Find mit Listen",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        },
+        {
+          "number": 5,
+          "points": 5,
+          "topic": "Schleifeninvariante",
+          "format": "Beweis",
+          "requested_deliverables": "Behauptung, Invariante, IA/IV/IS, Schluss",
+          "algorithm": "Schleifeninvariante",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": []
+        },
+        {
+          "number": 6,
+          "points": 5,
+          "topic": "Rekurrenz, Master-Theorem und Induktion",
+          "format": "Beweis",
+          "requested_deliverables": "Schranke plus formal geschlossener Induktionsschritt",
+          "algorithm": "Rekurrenz, Master-Theorem und Induktion",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": []
+        },
+        {
+          "number": 7,
+          "points": 8,
+          "topic": "Divide and Conquer: maximale Wertdifferenz",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode, Laufzeit, Korrektheit",
+          "algorithm": "Divide and Conquer: maximale Wertdifferenz",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": []
+        },
+        {
+          "number": 8,
+          "points": 8,
+          "topic": "Dynamische Programmierung: Pausentage",
+          "format": "Dynamische Programmierung",
+          "requested_deliverables": "Definition, Beweis, Bottom-up, Laufzeit",
+          "algorithm": "Dynamische Programmierung: Pausentage",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": []
+        },
+        {
+          "number": 9,
+          "points": 8,
+          "topic": "Greedy: Graphfärbung",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode/Operationen, Laufzeit, Beweis",
+          "algorithm": "Greedy: Graphfärbung",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": []
+        }
+      ],
+      "note": "Nur eine Lösungsskizze ohne Deckblatt; Jahr und Dauer sind aus Ablage/Serienmuster abgeleitet und nicht bestätigt.",
+      "evidenceType": "real_exam",
+      "examRegime": "standard_praesenz",
+      "corpusEventId": "exam-2020-1",
+      "canonicalDocumentId": null,
+      "historicalFrequencyEligible": false,
+      "examinerAttributionStatus": "unknown",
+      "dateAttributionStatus": "archive_only",
+      "profileEvidence": {
+        "sourceIds": [
+          "src-88179ac88dc5"
+        ],
+        "confidence": "plausible"
+      }
+    },
+    {
+      "id": "exam-2020-2",
+      "kind": "reale Prüfung",
+      "year": 2020,
+      "date": "2020-10-07",
+      "semester": "Sommersemester",
+      "examiner": "Christian Sohler",
+      "confidence": "confirmed",
+      "task_count": 9,
+      "total_points": 50,
+      "duration_minutes": 180,
+      "allowed_aids": "ein handschriftlich beidseitig beschriebenes DIN-A4-Blatt",
+      "question_source_id": "src-97414623dd81",
+      "solution_source_ids": [
+        "src-8a588d5ddc35"
+      ],
+      "official_solution_available": true,
+      "tasks": [
+        {
+          "number": 1,
+          "points": 4,
+          "topic": "IntervalScheduling",
+          "format": "Tracing",
+          "requested_deliverables": "Zwischenzustände und Endergebnis",
+          "algorithm": "IntervalScheduling",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-c2391c1b18d8",
+            "q-1c1860fa3f25"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 4,
+          "topic": "DFS",
+          "format": "Tracing",
+          "requested_deliverables": "alle Zustände in geforderter Reihenfolge",
+          "algorithm": "DFS",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-d95359c32eff"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 4,
+          "topic": "Rot-Schwarz-Bäume",
+          "format": "Tracing",
+          "requested_deliverables": "Tabelle/Graph nach jeder Iteration",
+          "algorithm": "Rot-Schwarz-Bäume",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-fc833b613c79"
+          ]
+        },
+        {
+          "number": 4,
+          "points": 4,
+          "topic": "Prim",
+          "format": "Tracing",
+          "requested_deliverables": "vollständige Zustandsfolge",
+          "algorithm": "Prim",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-e12c9bac6609"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 5,
+          "topic": "Schleifeninvariante",
+          "format": "Beweis",
+          "requested_deliverables": "Behauptung, Invariante, IA/IV/IS, Schluss",
+          "algorithm": "Schleifeninvariante",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-8bf1bf38eca6"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 5,
+          "topic": "Rekurrenz, Master-Theorem und Induktion",
+          "format": "Beweis",
+          "requested_deliverables": "Schranke plus formal geschlossener Induktionsschritt",
+          "algorithm": "Rekurrenz, Master-Theorem und Induktion",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-608c00a2ba9a"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 8,
+          "topic": "Greedy: Fitnesspunkte",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode, Laufzeit, Korrektheit",
+          "algorithm": "Greedy: Fitnesspunkte",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-9c1ee15272e4"
+          ]
+        },
+        {
+          "number": 8,
+          "points": 8,
+          "topic": "Dynamische Programmierung: Rechnerbudget",
+          "format": "Dynamische Programmierung",
+          "requested_deliverables": "Definition, Beweis, Bottom-up, Laufzeit",
+          "algorithm": "Dynamische Programmierung: Rechnerbudget",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-acf24d9221a1"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 8,
+          "topic": "Datenstruktur: Multimenge",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode/Operationen, Laufzeit, Beweis",
+          "algorithm": "Datenstruktur: Multimenge",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-cbeeef570d73"
+          ]
+        }
+      ],
+      "note": null,
+      "evidenceType": "real_exam",
+      "examRegime": "standard_praesenz",
+      "corpusEventId": "exam-2020-2",
+      "canonicalDocumentId": "src-97414623dd81",
+      "historicalFrequencyEligible": true,
+      "examinerAttributionStatus": "direct_evidence",
+      "dateAttributionStatus": "direct_evidence",
+      "profileEvidence": {
+        "sourceIds": [
+          "src-97414623dd81",
+          "src-8a588d5ddc35"
+        ],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "exam-2021-1",
+      "kind": "reale Prüfung",
+      "year": 2021,
+      "date": "2021-09-29",
+      "semester": "Sommersemester",
+      "examiner": "Christian Sohler",
+      "confidence": "confirmed",
+      "task_count": 6,
+      "total_points": 60,
+      "duration_minutes": 120,
+      "allowed_aids": "handgefertigte Notizen, Vorlesungsskript, Übungsmaterial und Lehrbücher; digitale Abgabe",
+      "question_source_id": "src-28fe81380661",
+      "solution_source_ids": [
+        "src-39eb3d94f40a"
+      ],
+      "official_solution_available": true,
+      "tasks": [
+        {
+          "number": 1,
+          "points": 6,
+          "topic": "Rekurrenz und Master-Theorem",
+          "format": "Tracing",
+          "requested_deliverables": "Zwischenzustände und Endergebnis",
+          "algorithm": "Rekurrenz und Master-Theorem",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-34e4c77f6292",
+            "q-0508ae79d06c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 6,
+          "topic": "LatenessScheduling",
+          "format": "Tracing",
+          "requested_deliverables": "alle Zustände in geforderter Reihenfolge",
+          "algorithm": "LatenessScheduling",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-546983ce44a1"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 6,
+          "topic": "Bellman-Ford",
+          "format": "Tracing",
+          "requested_deliverables": "Tabelle/Graph nach jeder Iteration",
+          "algorithm": "Bellman-Ford",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-1ade26a5e8f3"
+          ]
+        },
+        {
+          "number": 4,
+          "points": 10,
+          "topic": "Schleifeninvariante",
+          "format": "Tracing",
+          "requested_deliverables": "vollständige Zustandsfolge",
+          "algorithm": "Schleifeninvariante",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-cd065b285cd1"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 16,
+          "topic": "Dynamische Programmierung: Mine",
+          "format": "Beweis",
+          "requested_deliverables": "Behauptung, Invariante, IA/IV/IS, Schluss",
+          "algorithm": "Dynamische Programmierung: Mine",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-0b5d29afa87d"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 16,
+          "topic": "Graphtransfer: Schnittknoten",
+          "format": "Beweis",
+          "requested_deliverables": "Schranke plus formal geschlossener Induktionsschritt",
+          "algorithm": "Graphtransfer: Schnittknoten",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-1e1e7714c44c"
+          ]
+        }
+      ],
+      "note": "Abweichendes Online-Prüfungsformat mit sechs Aufgaben und 60 Punkten.",
+      "evidenceType": "real_exam",
+      "examRegime": "klausur_2021_digital",
+      "corpusEventId": "exam-2021-1",
+      "canonicalDocumentId": "src-28fe81380661",
+      "historicalFrequencyEligible": true,
+      "examinerAttributionStatus": "direct_evidence",
+      "dateAttributionStatus": "direct_evidence",
+      "profileEvidence": {
+        "sourceIds": [
+          "src-28fe81380661",
+          "src-39eb3d94f40a"
+        ],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "exam-2022-1",
+      "kind": "reale Prüfung",
+      "year": 2022,
+      "date": "2022-07-29",
+      "semester": "Sommersemester",
+      "examiner": "Christian Sohler",
+      "confidence": "confirmed",
+      "task_count": 9,
+      "total_points": 50,
+      "duration_minutes": 180,
+      "allowed_aids": "ein handschriftlich beidseitig beschriebenes DIN-A4-Blatt",
+      "question_source_id": "src-c4dde22523d3",
+      "solution_source_ids": [],
+      "official_solution_available": false,
+      "tasks": [
+        {
+          "number": 1,
+          "points": 4,
+          "topic": "GreedyLoadBalancing",
+          "format": "Tracing",
+          "requested_deliverables": "Zwischenzustände und Endergebnis",
+          "algorithm": "GreedyLoadBalancing",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-778107a70766",
+            "q-f1ffa14d40d9"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 4,
+          "topic": "Rot-Schwarz-Bäume",
+          "format": "Tracing",
+          "requested_deliverables": "alle Zustände in geforderter Reihenfolge",
+          "algorithm": "Rot-Schwarz-Bäume",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-5518fe932f1e"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 4,
+          "topic": "Floyd-Warshall",
+          "format": "Tracing",
+          "requested_deliverables": "Tabelle/Graph nach jeder Iteration",
+          "algorithm": "Floyd-Warshall",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-2b1b54fe8758"
+          ]
+        },
+        {
+          "number": 4,
+          "points": 4,
+          "topic": "Prim",
+          "format": "Tracing",
+          "requested_deliverables": "vollständige Zustandsfolge",
+          "algorithm": "Prim",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-834ceeb40be0"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 5,
+          "topic": "Schleifeninvariante",
+          "format": "Beweis",
+          "requested_deliverables": "Behauptung, Invariante, IA/IV/IS, Schluss",
+          "algorithm": "Schleifeninvariante",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-bc70e450f3e2"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 5,
+          "topic": "Rekurrenz und Induktion",
+          "format": "Beweis",
+          "requested_deliverables": "Schranke plus formal geschlossener Induktionsschritt",
+          "algorithm": "Rekurrenz und Induktion",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-0b1cf4b8a0a4"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 8,
+          "topic": "Greedy: Workout",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode, Laufzeit, Korrektheit",
+          "algorithm": "Greedy: Workout",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-c5df1252c54c"
+          ]
+        },
+        {
+          "number": 8,
+          "points": 8,
+          "topic": "Dynamische Programmierung: Frosch-Distanz",
+          "format": "Dynamische Programmierung",
+          "requested_deliverables": "Definition, Beweis, Bottom-up, Laufzeit",
+          "algorithm": "Dynamische Programmierung: Frosch-Distanz",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-e32562e71549"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 8,
+          "topic": "Graphtransfer: Zusammenhang durch eine Kante",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode/Operationen, Laufzeit, Beweis",
+          "algorithm": "Graphtransfer: Zusammenhang durch eine Kante",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-f0f8e80ad9ad"
+          ]
+        }
+      ],
+      "note": null,
+      "evidenceType": "real_exam",
+      "examRegime": "standard_praesenz",
+      "corpusEventId": "exam-2022-1",
+      "canonicalDocumentId": "src-c4dde22523d3",
+      "historicalFrequencyEligible": true,
+      "examinerAttributionStatus": "direct_evidence",
+      "dateAttributionStatus": "direct_evidence",
+      "profileEvidence": {
+        "sourceIds": [
+          "src-c4dde22523d3"
+        ],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "exam-2022-2",
+      "kind": "reale Prüfung",
+      "year": 2022,
+      "date": "2022-09-17",
+      "semester": "Sommersemester",
+      "examiner": "Christian Sohler",
+      "confidence": "confirmed",
+      "task_count": 9,
+      "total_points": 50,
+      "duration_minutes": 180,
+      "allowed_aids": "ein handschriftlich beidseitig beschriebenes DIN-A4-Blatt",
+      "question_source_id": "src-011d1ee23245",
+      "solution_source_ids": [],
+      "official_solution_available": false,
+      "tasks": [
+        {
+          "number": 1,
+          "points": 4,
+          "topic": "LatenessScheduling",
+          "format": "Tracing",
+          "requested_deliverables": "Zwischenzustände und Endergebnis",
+          "algorithm": "LatenessScheduling",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-5ed6f1fa6e91",
+            "q-dbc7e6b9d24a"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 4,
+          "topic": "Union-Find",
+          "format": "Tracing",
+          "requested_deliverables": "alle Zustände in geforderter Reihenfolge",
+          "algorithm": "Union-Find",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-8cbfe3cc92e3"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 4,
+          "topic": "Dijkstra",
+          "format": "Tracing",
+          "requested_deliverables": "Tabelle/Graph nach jeder Iteration",
+          "algorithm": "Dijkstra",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-7c452ca0661f"
+          ]
+        },
+        {
+          "number": 4,
+          "points": 4,
+          "topic": "Rucksack-DP-Tabelle",
+          "format": "Tracing",
+          "requested_deliverables": "vollständige Zustandsfolge",
+          "algorithm": "Rucksack-DP-Tabelle",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-49c8cbc49028"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 5,
+          "topic": "Schleifeninvariante",
+          "format": "Beweis",
+          "requested_deliverables": "Behauptung, Invariante, IA/IV/IS, Schluss",
+          "algorithm": "Schleifeninvariante",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-c93511120c5a"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 5,
+          "topic": "Rekurrenz und Induktion",
+          "format": "Beweis",
+          "requested_deliverables": "Schranke plus formal geschlossener Induktionsschritt",
+          "algorithm": "Rekurrenz und Induktion",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-daa6c4494737"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 8,
+          "topic": "Divide and Conquer: fehlerhaftes Array",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode, Laufzeit, Korrektheit",
+          "algorithm": "Divide and Conquer: fehlerhaftes Array",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-05135a1817a5"
+          ]
+        },
+        {
+          "number": 8,
+          "points": 8,
+          "topic": "Dynamische Programmierung: Windpark",
+          "format": "Dynamische Programmierung",
+          "requested_deliverables": "Definition, Beweis, Bottom-up, Laufzeit",
+          "algorithm": "Dynamische Programmierung: Windpark",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-51de6dc1ca3a"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 8,
+          "topic": "Graphtransfer: kostenbeschränkter Spannbaum",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode/Operationen, Laufzeit, Beweis",
+          "algorithm": "Graphtransfer: kostenbeschränkter Spannbaum",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-f8a6c450c552"
+          ]
+        }
+      ],
+      "note": null,
+      "evidenceType": "real_exam",
+      "examRegime": "standard_praesenz",
+      "corpusEventId": "exam-2022-2",
+      "canonicalDocumentId": "src-011d1ee23245",
+      "historicalFrequencyEligible": true,
+      "examinerAttributionStatus": "direct_evidence",
+      "dateAttributionStatus": "direct_evidence",
+      "profileEvidence": {
+        "sourceIds": [
+          "src-011d1ee23245"
+        ],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "exam-2024-1",
+      "kind": "reale Prüfung",
+      "year": 2024,
+      "date": null,
+      "semester": "Sommersemester",
+      "examiner": null,
+      "confidence": "strongly supported",
+      "task_count": 9,
+      "total_points": 50,
+      "duration_minutes": null,
+      "allowed_aids": "unbekannt; Deckblatt fehlt im Foto-PDF",
+      "question_source_id": "src-6df30a9ff1ae",
+      "solution_source_ids": [],
+      "official_solution_available": false,
+      "tasks": [
+        {
+          "number": 1,
+          "points": 4,
+          "topic": "DFS",
+          "format": "Tracing",
+          "requested_deliverables": "Zwischenzustände und Endergebnis",
+          "algorithm": "DFS",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-325bc000d3da"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 4,
+          "topic": "Rucksack-DP-Tabelle",
+          "format": "Tracing",
+          "requested_deliverables": "alle Zustände in geforderter Reihenfolge",
+          "algorithm": "Rucksack-DP-Tabelle",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-113716b2961d"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 4,
+          "topic": "Rot-Schwarz-Bäume",
+          "format": "Tracing",
+          "requested_deliverables": "Tabelle/Graph nach jeder Iteration",
+          "algorithm": "Rot-Schwarz-Bäume",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-2d4c434cc9f4"
+          ]
+        },
+        {
+          "number": 4,
+          "points": 4,
+          "topic": "MergeSort",
+          "format": "Tracing",
+          "requested_deliverables": "vollständige Zustandsfolge",
+          "algorithm": "MergeSort",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-3737ba8fb64c"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 5,
+          "topic": "Schleifeninvariante",
+          "format": "Beweis",
+          "requested_deliverables": "Behauptung, Invariante, IA/IV/IS, Schluss",
+          "algorithm": "Schleifeninvariante",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-87db01b3a470"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 5,
+          "topic": "Rekurrenz und Induktion",
+          "format": "Beweis",
+          "requested_deliverables": "Schranke plus formal geschlossener Induktionsschritt",
+          "algorithm": "Rekurrenz und Induktion",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-58dbe7725f08"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 8,
+          "topic": "Greedy: Entsorgungsstationen",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode, Laufzeit, Korrektheit",
+          "algorithm": "Greedy: Entsorgungsstationen",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-6549208674b4"
+          ]
+        },
+        {
+          "number": 8,
+          "points": 8,
+          "topic": "Dynamische Programmierung: Messreihen",
+          "format": "Dynamische Programmierung",
+          "requested_deliverables": "Definition, Beweis, Bottom-up, Laufzeit",
+          "algorithm": "Dynamische Programmierung: Messreihen",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-68147d5b33e4"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 8,
+          "topic": "Graphtransfer: negativer Kreis",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode/Operationen, Laufzeit, Beweis",
+          "algorithm": "Graphtransfer: negativer Kreis",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-00019e2ecf83"
+          ]
+        }
+      ],
+      "note": "Alle neun Aufgaben wurden visuell aus dem bildbasierten PDF geprüft. Prüfer, Dauer und Hilfsmittel sind nicht im Bestand belegt.",
+      "evidenceType": "real_exam",
+      "examRegime": "standard_praesenz",
+      "corpusEventId": "exam-2024-1",
+      "canonicalDocumentId": "src-6df30a9ff1ae",
+      "historicalFrequencyEligible": true,
+      "examinerAttributionStatus": "unknown",
+      "dateAttributionStatus": "unknown",
+      "profileEvidence": {
+        "sourceIds": [
+          "src-6df30a9ff1ae"
+        ],
+        "confidence": "strongly supported"
+      }
+    },
+    {
+      "id": "mock-2021",
+      "kind": "Probeklausur",
+      "year": 2021,
+      "date": null,
+      "semester": "Sommersemester",
+      "examiner": "Christian Sohler",
+      "confidence": "confirmed",
+      "task_count": 3,
+      "total_points": null,
+      "duration_minutes": 120,
+      "allowed_aids": "nicht vollständig belegt",
+      "question_source_id": null,
+      "solution_source_ids": [
+        "src-f2148ca799c1"
+      ],
+      "official_solution_available": true,
+      "tasks": [
+        {
+          "number": 1,
+          "points": null,
+          "topic": "Rekurrenzanalyse",
+          "format": "Tracing",
+          "requested_deliverables": "Zwischenzustände und Endergebnis",
+          "algorithm": "Rekurrenzanalyse",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        },
+        {
+          "number": 2,
+          "points": null,
+          "topic": "Rucksack-DP-Tabelle",
+          "format": "Tracing",
+          "requested_deliverables": "alle Zustände in geforderter Reihenfolge",
+          "algorithm": "Rucksack-DP-Tabelle",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        },
+        {
+          "number": 3,
+          "points": null,
+          "topic": "weitere Aufgaben nur in Lösung dokumentiert",
+          "format": "Tracing",
+          "requested_deliverables": "Tabelle/Graph nach jeder Iteration",
+          "algorithm": "weitere Aufgaben nur in Lösung dokumentiert",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        }
+      ],
+      "note": "Der Bestand enthält die Beispiellösung, nicht die vollständige Fragenfassung.",
+      "evidenceType": "mock_exam",
+      "examRegime": "probeklausur",
+      "corpusEventId": "mock-2021",
+      "canonicalDocumentId": null,
+      "historicalFrequencyEligible": false,
+      "examinerAttributionStatus": "direct_evidence",
+      "dateAttributionStatus": "archive_only",
+      "profileEvidence": {
+        "sourceIds": [
+          "src-f2148ca799c1"
+        ],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "mock-2022",
+      "kind": "Probeklausur",
+      "year": 2022,
+      "date": null,
+      "semester": "Sommersemester",
+      "examiner": "Christian Sohler",
+      "confidence": "confirmed",
+      "task_count": 9,
+      "total_points": 50,
+      "duration_minutes": 180,
+      "allowed_aids": "nicht vollständig belegt",
+      "question_source_id": "src-d233302bcf39",
+      "solution_source_ids": [
+        "src-a66dd4b4981a"
+      ],
+      "official_solution_available": true,
+      "tasks": [
+        {
+          "number": 1,
+          "points": 4,
+          "topic": "Rekurrenzanalyse",
+          "format": "Tracing",
+          "requested_deliverables": "Zwischenzustände und Endergebnis",
+          "algorithm": "Rekurrenzanalyse",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-b0ca0eddd395"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 4,
+          "topic": "Tracing",
+          "format": "Tracing",
+          "requested_deliverables": "alle Zustände in geforderter Reihenfolge",
+          "algorithm": "Tracing",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-6cf5b401f49a"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 4,
+          "topic": "Graphalgorithmus",
+          "format": "Tracing",
+          "requested_deliverables": "Tabelle/Graph nach jeder Iteration",
+          "algorithm": "Graphalgorithmus",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-66928b5914be"
+          ]
+        },
+        {
+          "number": 4,
+          "points": 4,
+          "topic": "Tracing",
+          "format": "Tracing",
+          "requested_deliverables": "vollständige Zustandsfolge",
+          "algorithm": "Tracing",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-cf68ea0279c5"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 5,
+          "topic": "Schleifeninvariante",
+          "format": "Beweis",
+          "requested_deliverables": "Behauptung, Invariante, IA/IV/IS, Schluss",
+          "algorithm": "Schleifeninvariante",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-87153fb79237"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 5,
+          "topic": "Rekurrenz und Induktion",
+          "format": "Beweis",
+          "requested_deliverables": "Schranke plus formal geschlossener Induktionsschritt",
+          "algorithm": "Rekurrenz und Induktion",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-36f5b4d2b20d"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 8,
+          "topic": "Algorithmusentwurf",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode, Laufzeit, Korrektheit",
+          "algorithm": "Algorithmusentwurf",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-af05f7174471"
+          ]
+        },
+        {
+          "number": 8,
+          "points": 8,
+          "topic": "Dynamische Programmierung",
+          "format": "Dynamische Programmierung",
+          "requested_deliverables": "Definition, Beweis, Bottom-up, Laufzeit",
+          "algorithm": "Dynamische Programmierung",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-74799e0ce19a"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 8,
+          "topic": "Graphtransfer",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode/Operationen, Laufzeit, Beweis",
+          "algorithm": "Graphtransfer",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-08922f932413"
+          ]
+        }
+      ],
+      "note": null,
+      "evidenceType": "mock_exam",
+      "examRegime": "probeklausur",
+      "corpusEventId": "mock-2022",
+      "canonicalDocumentId": "src-d233302bcf39",
+      "historicalFrequencyEligible": false,
+      "examinerAttributionStatus": "direct_evidence",
+      "dateAttributionStatus": "archive_only",
+      "profileEvidence": {
+        "sourceIds": [
+          "src-d233302bcf39",
+          "src-a66dd4b4981a"
+        ],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "mock-2023",
+      "kind": "Probeklausur",
+      "year": 2023,
+      "date": null,
+      "semester": "Sommersemester",
+      "examiner": "Christian Sohler",
+      "confidence": "confirmed",
+      "task_count": 9,
+      "total_points": 50,
+      "duration_minutes": 180,
+      "allowed_aids": "ein handschriftlich beidseitig beschriebenes DIN-A4-Blatt",
+      "question_source_id": "src-8f16b2505bbd",
+      "solution_source_ids": [
+        "src-35405e721f05"
+      ],
+      "official_solution_available": true,
+      "tasks": [
+        {
+          "number": 1,
+          "points": 4,
+          "topic": "GreedyLoadBalancing",
+          "format": "Tracing",
+          "requested_deliverables": "Zwischenzustände und Endergebnis",
+          "algorithm": "GreedyLoadBalancing",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-7d7aa2066664",
+            "q-68424bad7007"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 4,
+          "topic": "Prim",
+          "format": "Tracing",
+          "requested_deliverables": "alle Zustände in geforderter Reihenfolge",
+          "algorithm": "Prim",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-cb21d65e0849"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 4,
+          "topic": "Floyd-Warshall",
+          "format": "Tracing",
+          "requested_deliverables": "Tabelle/Graph nach jeder Iteration",
+          "algorithm": "Floyd-Warshall",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-ba117f34bff2"
+          ]
+        },
+        {
+          "number": 4,
+          "points": 4,
+          "topic": "Union-Find",
+          "format": "Tracing",
+          "requested_deliverables": "vollständige Zustandsfolge",
+          "algorithm": "Union-Find",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": [
+            "q-a7cbff8c12ce"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 5,
+          "topic": "Schleifeninvariante",
+          "format": "Beweis",
+          "requested_deliverables": "Behauptung, Invariante, IA/IV/IS, Schluss",
+          "algorithm": "Schleifeninvariante",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-d2d9d5f5b9ce"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 5,
+          "topic": "Rekurrenz und Induktion",
+          "format": "Beweis",
+          "requested_deliverables": "Schranke plus formal geschlossener Induktionsschritt",
+          "algorithm": "Rekurrenz und Induktion",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-7d6049cf053a"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 8,
+          "topic": "Greedy: Laternen",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode, Laufzeit, Korrektheit",
+          "algorithm": "Greedy: Laternen",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-b7c16531cc6f"
+          ]
+        },
+        {
+          "number": 8,
+          "points": 8,
+          "topic": "Dynamische Programmierung: Mine",
+          "format": "Dynamische Programmierung",
+          "requested_deliverables": "Definition, Beweis, Bottom-up, Laufzeit",
+          "algorithm": "Dynamische Programmierung: Mine",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-e22793628da9"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 8,
+          "topic": "Datenstruktur: Deque-Funktionalität",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode/Operationen, Laufzeit, Beweis",
+          "algorithm": "Datenstruktur: Deque-Funktionalität",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": [
+            "q-959a0e7e7bea"
+          ]
+        }
+      ],
+      "note": null,
+      "evidenceType": "mock_exam",
+      "examRegime": "probeklausur",
+      "corpusEventId": "mock-2023",
+      "canonicalDocumentId": "src-8f16b2505bbd",
+      "historicalFrequencyEligible": false,
+      "examinerAttributionStatus": "direct_evidence",
+      "dateAttributionStatus": "archive_only",
+      "profileEvidence": {
+        "sourceIds": [
+          "src-8f16b2505bbd",
+          "src-35405e721f05"
+        ],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "mock-2024",
+      "kind": "Probeklausur",
+      "year": 2024,
+      "date": null,
+      "semester": "Sommersemester",
+      "examiner": "Christian Sohler",
+      "confidence": "confirmed",
+      "task_count": 9,
+      "total_points": 50,
+      "duration_minutes": 180,
+      "allowed_aids": "ein handschriftlich beidseitig beschriebenes DIN-A4-Blatt",
+      "question_source_id": null,
+      "solution_source_ids": [
+        "src-fd725d118ee1"
+      ],
+      "official_solution_available": true,
+      "tasks": [
+        {
+          "number": 1,
+          "points": 4,
+          "topic": "LCS-Tabelle",
+          "format": "Tracing",
+          "requested_deliverables": "Zwischenzustände und Endergebnis",
+          "algorithm": "LCS-Tabelle",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        },
+        {
+          "number": 2,
+          "points": 4,
+          "topic": "LatenessScheduling",
+          "format": "Tracing",
+          "requested_deliverables": "alle Zustände in geforderter Reihenfolge",
+          "algorithm": "LatenessScheduling",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        },
+        {
+          "number": 3,
+          "points": 4,
+          "topic": "Floyd-Warshall",
+          "format": "Tracing",
+          "requested_deliverables": "Tabelle/Graph nach jeder Iteration",
+          "algorithm": "Floyd-Warshall",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        },
+        {
+          "number": 4,
+          "points": 4,
+          "topic": "Union-Find",
+          "format": "Tracing",
+          "requested_deliverables": "vollständige Zustandsfolge",
+          "algorithm": "Union-Find",
+          "proof_type": null,
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": "in der Aufgabenstellung prüfen",
+          "question_ids": []
+        },
+        {
+          "number": 5,
+          "points": 5,
+          "topic": "Schleifeninvariante",
+          "format": "Beweis",
+          "requested_deliverables": "Behauptung, Invariante, IA/IV/IS, Schluss",
+          "algorithm": "Schleifeninvariante",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": []
+        },
+        {
+          "number": 6,
+          "points": 5,
+          "topic": "Rekurrenz und Induktion",
+          "format": "Beweis",
+          "requested_deliverables": "Schranke plus formal geschlossener Induktionsschritt",
+          "algorithm": "Rekurrenz und Induktion",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": []
+        },
+        {
+          "number": 7,
+          "points": 8,
+          "topic": "Divide and Conquer: fehlender Wert",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode, Laufzeit, Korrektheit",
+          "algorithm": "Divide and Conquer: fehlender Wert",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": []
+        },
+        {
+          "number": 8,
+          "points": 8,
+          "topic": "Dynamische Programmierung: Pausentage",
+          "format": "Dynamische Programmierung",
+          "requested_deliverables": "Definition, Beweis, Bottom-up, Laufzeit",
+          "algorithm": "Dynamische Programmierung: Pausentage",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": []
+        },
+        {
+          "number": 9,
+          "points": 8,
+          "topic": "Greedy: unabhängige Menge",
+          "format": "Entwurf/Transfer",
+          "requested_deliverables": "Idee, Pseudocode/Operationen, Laufzeit, Beweis",
+          "algorithm": "Greedy: unabhängige Menge",
+          "proof_type": "Induktion/Korrektheit",
+          "expected_runtime": "aufgabenabhängig",
+          "tie_breaker_rules": null,
+          "question_ids": []
+        }
+      ],
+      "note": "Nur die Lösungsversion ist vorhanden.",
+      "evidenceType": "mock_exam",
+      "examRegime": "probeklausur",
+      "corpusEventId": "mock-2024",
+      "canonicalDocumentId": null,
+      "historicalFrequencyEligible": false,
+      "examinerAttributionStatus": "direct_evidence",
+      "dateAttributionStatus": "archive_only",
+      "profileEvidence": {
+        "sourceIds": [
+          "src-fd725d118ee1"
+        ],
+        "confidence": "confirmed"
+      }
+    }
+  ]
+}

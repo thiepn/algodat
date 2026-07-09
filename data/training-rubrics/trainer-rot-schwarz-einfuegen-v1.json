@@ -1,0 +1,71 @@
+{
+  "id": "rubric-trainer-rot-schwarz-einfuegen-v1",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase9-rb-insertion-v1",
+  "topicIds": ["topic-7ae0552985f1", "topic-c3a4ee956f66"],
+  "taskType": "red_black_tree_insertion",
+  "sourceRefs": [
+    { "sourceId": "src-5c9eadb17ccc", "page": 5 },
+    { "sourceId": "src-5c9eadb17ccc", "page": 15 },
+    { "sourceId": "src-5c9eadb17ccc", "page": 20 },
+    { "sourceId": "src-5c9eadb17ccc", "page": 36 }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-08",
+  "duplicateGroupId": null,
+  "publicDistributionStatus": "public_safe",
+  "solutionValidationStatus": "deterministic_engine_verified",
+  "trainerKind": "tracing",
+  "trainerId": "trainer-rot-schwarz-einfuegen-v1",
+  "maxPoints": 40,
+  "examPoints": 8,
+  "criteria": [
+    {
+      "id": "nil",
+      "label": "NIL-Konvention",
+      "maxPoints": 4,
+      "description": "NIL-Blätter werden als schwarz behandelt."
+    },
+    {
+      "id": "sequence",
+      "label": "Einfügefolge",
+      "maxPoints": 4,
+      "description": "Die Einfügefolge wird unverändert angewendet."
+    },
+    {
+      "id": "cases",
+      "label": "Reparaturfälle",
+      "maxPoints": 10,
+      "description": "Fall 3 gespiegelt und Fall 1 werden korrekt erkannt."
+    },
+    {
+      "id": "tree",
+      "label": "Endbaum",
+      "maxPoints": 10,
+      "description": "Der finale Rot-Schwarz-Baum ist korrekt."
+    },
+    {
+      "id": "black-height",
+      "label": "Schwarzhöhe",
+      "maxPoints": 4,
+      "description": "Die Schwarzhöhe der Wurzel wird korrekt bestimmt."
+    },
+    {
+      "id": "runtime",
+      "label": "Laufzeit",
+      "maxPoints": 4,
+      "description": "Die Einfügelaufzeit wird mit O(log n) angegeben."
+    },
+    {
+      "id": "explanation",
+      "label": "Invariantenbegründung",
+      "maxPoints": 4,
+      "description": "Die Rolle von rotem neuen Knoten und schwarzer Wurzel wird erklärt."
+    }
+  ],
+  "followUpErrorPolicy": "Folgefehler im Endbaum werden nicht doppelt gegen Schwarzhöhe und Erklärung gewertet, wenn die Reparaturfälle korrekt benannt sind.",
+  "caps": {
+    "solutionRevealedMaximumPoints": 16,
+    "hintsUsedMaximumPoints": 32
+  }
+}

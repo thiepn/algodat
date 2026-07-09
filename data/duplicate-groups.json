@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.0.0",
+  "exact_groups": [
+    {
+      "id": "dup-exact-307863e0562a",
+      "type": "exact",
+      "sha256": "1e515fc0ac97113beb6f26e883cbe5eb9e549f63722df7eb0952cd55dbc0f90a",
+      "source_ids": [
+        "src-c4dde22523d3",
+        "src-00ae505a8756",
+        "src-fa63eaca933b",
+        "src-5bb7aaf4268b"
+      ],
+      "paths": [
+        "info 1 copy/2022/kl/ErstKlausur2022 2.pdf",
+        "info 1 copy/2022/kl/Klausur1 2.pdf",
+        "info 1 copy/2022/kl/Klausur1 INFORMATIK 1  2.pdf",
+        "info 1 copy/2022/kl/Klausur1.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-f76b31b782d8",
+      "type": "exact",
+      "sha256": "37a1da7b88bf54cf1206fdb7a0fac3cc4a9bf3b7083c3939b5bef8be3a812e2d",
+      "source_ids": [
+        "src-9c9df2cb071b",
+        "src-c8cc71517e40"
+      ],
+      "paths": [
+        "info 1 copy/2025/lo╠êsungen/Beispielloesung Blatt1.pdf",
+        "info 1 copy/u╠êbungen/Beispielloesung Blatt1.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-faf9fc793508",
+      "type": "exact",
+      "sha256": "3b24c622e8fe3c5e708412fca1df647d074ff919d2852825a398cdfa70536a49",
+      "source_ids": [
+        "src-6097edd88096",
+        "src-979baf189ea9"
+      ],
+      "paths": [
+        "info 1 copy/2025/lo╠êsungen/Beispielloesung Praesenzblatt.pdf",
+        "info 1 copy/u╠êbungen/Beispielloesung Praesenzblatt.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-578f6da22d36",
+      "type": "exact",
+      "sha256": "463b496d321afb517b7afe6e673845ca3b19f49ece1644f626b5fa53cabf2ff4",
+      "source_ids": [
+        "src-2f4e03bd738e",
+        "src-d70259daf0aa"
+      ],
+      "paths": [
+        "info 1 copy/2025/lo╠êsungen/Beispielloesung Blatt 5.pdf",
+        "info 1 copy/u╠êbungen/Beispielloesung Blatt 5.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-b05448680a76",
+      "type": "exact",
+      "sha256": "70894cb0d6b86ea4d8739ff21e2f34d5d86429e7a914b8a1f0821eb959733a3c",
+      "source_ids": [
+        "src-3f29b67eef5c",
+        "src-2461e8a663fe",
+        "src-34f58aed1d9c",
+        "src-011d1ee23245"
+      ],
+      "paths": [
+        "info 1 copy/2022/kl/Klausur2 2.pdf",
+        "info 1 copy/2022/kl/Klausur2 INFORMATIK 2.pdf",
+        "info 1 copy/2022/kl/Klausur2.pdf",
+        "info 1 copy/2022/kl/ZweitKlausur2022 2.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-a6663953e108",
+      "type": "exact",
+      "sha256": "7bd192b6db95d61efbafda8722d57bf3be0d891c2bfbbf50a6f6d90386d7ee16",
+      "source_ids": [
+        "src-88179ac88dc5",
+        "src-606fe3c435ca",
+        "src-02c9bed0177d",
+        "src-5a4d89dac601"
+      ],
+      "paths": [
+        "info 1 copy/2020/kl/1.Klausur Loesungsskizze 3.pdf",
+        "info 1 copy/2021/kl/1.Klausur Loesungsskizze.pdf",
+        "info 1 copy/2024/kl/1.Klausur Loesungsskizze 3.pdf",
+        "info 1 copy/2024/kl/1.Klausur Loesungsskizze 4.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-862781bf5801",
+      "type": "exact",
+      "sha256": "9183e955fd85767d8cf59a22a28d57e9df43d0c6eed80f27a15b31c5d1057d9d",
+      "source_ids": [
+        "src-5e111e0131e5",
+        "src-c22f4ccd2e96"
+      ],
+      "paths": [
+        "info 1 copy/2025/lo╠êsungen/Beispielloesung Blatt4.pdf",
+        "info 1 copy/u╠êbungen/Beispielloesung Blatt4.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-ad5c27e68775",
+      "type": "exact",
+      "sha256": "a8cd5d2d477868ae97bf5a0b59a655d156d96ff91eebb83b51c641d499941258",
+      "source_ids": [
+        "src-618e7da9bab3",
+        "src-029a40284706"
+      ],
+      "paths": [
+        "info 1 copy/2025/lo╠êsungen/Beispielloesung Blatt 7.pdf",
+        "info 1 copy/u╠êbungen/Beispielloesung Blatt 7.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-e90dfcbbefa0",
+      "type": "exact",
+      "sha256": "ac8dcdfbf9e42e58f87c1795e30fd4d082f215ad6fcb8992038b8cfbaafebfcc",
+      "source_ids": [
+        "src-79ae96ebbccf",
+        "src-20339ee50167"
+      ],
+      "paths": [
+        "info 1 copy/2021/lo╠êsungen/Loesung9.pdf",
+        "info 1 copy/2024/lo╠êsungen/Loesung9.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-503c2fc8ed32",
+      "type": "exact",
+      "sha256": "bb379f2d459cc3c604b87921435460654ed8156ab1251a2ae3a6704d3b7e1fd2",
+      "source_ids": [
+        "src-0457af7a63f0",
+        "src-28fe81380661"
+      ],
+      "paths": [
+        "info 1 copy/2021/kl/Klausur2021 2.pdf",
+        "info 1 copy/2021/kl/Klausur2021.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-8840bfcbf663",
+      "type": "exact",
+      "sha256": "bde127de1c3cffa3f159b528c542be743270c6b82ddc3d979f984bea6d4f9c86",
+      "source_ids": [
+        "src-d84d48bf72d8",
+        "src-21607a51dfc2"
+      ],
+      "paths": [
+        "info 1 copy/2025/lo╠êsungen/Beispielloesung Blatt3.pdf",
+        "info 1 copy/u╠êbungen/Beispielloesung Blatt3.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-201311bdac2e",
+      "type": "exact",
+      "sha256": "bf528f154b753bde8a2c8a238c4cae1325362bdfe0a09ecdcc337afeb922127c",
+      "source_ids": [
+        "src-35405e721f05",
+        "src-b6c99693279c"
+      ],
+      "paths": [
+        "Beispielloesung_Probeklausur.pdf",
+        "info 1 copy/2023/kl/Beispielloesung_Probeklausur2023.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-aa6aed90bd1d",
+      "type": "exact",
+      "sha256": "c05edf25d3ebbc6670541d0789223defbf714aa232d9019274dbb28b27755800",
+      "source_ids": [
+        "src-1b8a7a5c0ab7",
+        "src-f224a2cb6840"
+      ],
+      "paths": [
+        "info 1 copy/2025/lo╠êsungen/Beispielloesung Blatt2.pdf",
+        "info 1 copy/u╠êbungen/Beispielloesung Blatt2.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-7e1d593b9f7d",
+      "type": "exact",
+      "sha256": "c6415588c11153dfc8ba7dd51e5b152c4421c8bb9af93a03b4bc324826a103d2",
+      "source_ids": [
+        "src-a969dc88f8e9",
+        "src-fbf39f80037d"
+      ],
+      "paths": [
+        "info 1 copy/2021/lo╠êsungen/Beispielloesung_Probeklausur.pdf",
+        "info 1 copy/2024/kl/Beispielloesung_Probeklausur.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-9e4ca178d6ef",
+      "type": "exact",
+      "sha256": "d3cbf5b40c9c2d0efa2d259b87dcf7f6b1cb501247796be6bad33c39bcbd00e9",
+      "source_ids": [
+        "src-39eb3d94f40a",
+        "src-720584558efd"
+      ],
+      "paths": [
+        "info 1 copy/2021/kl/LoesungKlausur1.pdf",
+        "info 1 copy/2021/lo╠êsungen/LoesungKlausur1.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-fa9356182868",
+      "type": "exact",
+      "sha256": "f12b7db05236f50ebc0ce414f8d241db58509abe138b3e75ed88e94498120299",
+      "source_ids": [
+        "src-1b25f4d8fc92",
+        "src-05d12625ba00"
+      ],
+      "paths": [
+        "info 1 copy/2025/lo╠êsungen/Besispielloesung Blatt 6.pdf",
+        "info 1 copy/u╠êbungen/Besispielloesung Blatt 6.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-953f9c6f11df",
+      "type": "exact",
+      "sha256": "f7ce71c32320dc567278669d80bb7fd0ece09db566a7e9f0f704a457d5450419",
+      "source_ids": [
+        "src-ff6602b770ca",
+        "src-1f4f87d34014",
+        "src-0e61160d8c0d"
+      ],
+      "paths": [
+        "info 1 copy/2020/kl/info1 2. Klausur Loesungsskizze 4.pdf",
+        "info 1 copy/2020/kl/info1 2. Klausur Loesungsskizze 5.pdf",
+        "info 1 copy/2020/kl/info1 2. Klausur Loesungsskizze.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    },
+    {
+      "id": "dup-exact-5771ba7f1157",
+      "type": "exact",
+      "sha256": "ff0843ff716bb519b8fbc0c8856bcc49f5e32f83bff36d8221fa5fc18a6c88b3",
+      "source_ids": [
+        "src-ce97639c1821",
+        "src-6df30a9ff1ae"
+      ],
+      "paths": [
+        "info 1 copy/2024/kl/Klausur 2024 2.pdf",
+        "info 1 copy/2024/kl/Klausur 2024.pdf"
+      ],
+      "relationship": "byteidentische Dateien"
+    }
+  ],
+  "near_duplicate_relationships": [
+    {
+      "id": "near-probe-2023",
+      "type": "question_solution_pair",
+      "paths": [
+        "Probeklausur.pdf",
+        "Beispielloesung_Probeklausur.pdf"
+      ],
+      "relationship": "Fragenfassung und offizielle Beispiellösung"
+    },
+    {
+      "id": "near-probe-2022",
+      "type": "question_solution_pair",
+      "paths": [
+        "info 1 copy/2022/kl/Probeklausur 2.pdf",
+        "info 1 copy/2022/kl/PK22L.pdf"
+      ],
+      "relationship": "Fragenfassung und Lösungsversion"
+    },
+    {
+      "id": "near-lectures-combined",
+      "type": "compiled_collection",
+      "paths": [
+        "Vorlesungen.pdf",
+        "info 1 copy/vorlesungen/"
+      ],
+      "relationship": "zusammengeführte Vorlesung gegenüber Einzelfolien"
+    },
+    {
+      "id": "near-exercises-combined",
+      "type": "compiled_collection",
+      "paths": [
+        "Uebungen 0-9.pdf",
+        "info 1 copy/2025/",
+        "info 1 copy/u╠êbungen/"
+      ],
+      "relationship": "zusammengeführte Übungen gegenüber Einzelblättern"
+    },
+    {
+      "id": "near-exam-2024-images",
+      "type": "scan_derivative",
+      "paths": [
+        "info 1 copy/2024/kl/Klausur 2024.pdf",
+        "info 1 copy/2024/kl1/"
+      ],
+      "relationship": "PDF-Ausschnitt und ursprüngliche Smartphone-Aufnahmen"
+    }
+  ]
+}

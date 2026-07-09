@@ -1,0 +1,95 @@
+[
+  {
+    "id": "rubric-rekurrenz-master-fall1-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-e48203925235",
+      "topic-99af8a8bfb20",
+      "topic-2b335556483f",
+      "topic-64b84f2856b9"
+    ],
+    "taskType": "recurrence_runtime_proof",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 18,
+        "label": "Übungen 0-9, Rekursionsgleichungen, Lösung"
+      },
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 26,
+        "label": "Übungen 0-9, Mastertheorem, Lösung"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 230,
+        "label": "Vorlesungen, Induktiver Laufzeitbeweis"
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-07",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "verified_against_official_solution",
+    "trainerKind": "proof",
+    "trainerId": "trainer-rekurrenz-master-fall1-v1",
+    "maxPoints": 23,
+    "criteria": [
+      {
+        "id": "preflight",
+        "label": "Rekurrenz, Basisfall und Domäne verstanden",
+        "maxPoints": 3
+      },
+      {
+        "id": "parameters",
+        "label": "a, b und f(n) bestimmt",
+        "maxPoints": 3
+      },
+      {
+        "id": "master",
+        "label": "Master-Theorem-Fall und Schranke",
+        "maxPoints": 4
+      },
+      {
+        "id": "tree",
+        "label": "Rekursionsbaum erklärt",
+        "maxPoints": 3
+      },
+      {
+        "id": "claim",
+        "label": "Induktionsbehauptung",
+        "maxPoints": 2
+      },
+      {
+        "id": "base_case",
+        "label": "Induktionsanfang",
+        "maxPoints": 1
+      },
+      {
+        "id": "hypothesis",
+        "label": "Starke Induktionsvoraussetzung",
+        "maxPoints": 1
+      },
+      {
+        "id": "substitution",
+        "label": "Rekurrenzeinsatz",
+        "maxPoints": 2
+      },
+      {
+        "id": "algebra",
+        "label": "Algebraischer Schluss",
+        "maxPoints": 3
+      },
+      {
+        "id": "conclusion",
+        "label": "O-Schlussfolgerung",
+        "maxPoints": 1
+      }
+    ],
+    "followUpErrorPolicy": "Der erste schwere Fehler bestimmt die Wiederholungsempfehlung; Hinweise und Musterlösung begrenzen die erreichbaren Punkte deterministisch.",
+    "caps": {
+      "solutionRevealedMaximumPoints": 10,
+      "hintsUsedMaximumPoints": 14
+    }
+  }
+]

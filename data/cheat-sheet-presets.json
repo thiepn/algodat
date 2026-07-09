@@ -1,0 +1,71 @@
+[
+  {
+    "presetId": "preset-standard",
+    "title": "Standard-Spickzettel",
+    "mode": "standard",
+    "description": "Ausgewogene zweitseitige Referenz für zentrale Klausurkompetenzen.",
+    "defaultBlockIds": [
+      "cs-asymptotik",
+      "cs-master-theorem",
+      "cs-rekurrenz-induktion",
+      "cs-schleifeninvariante",
+      "cs-dp-zustand",
+      "cs-greedy-austausch",
+      "cs-divide-conquer",
+      "cs-union-find",
+      "cs-rot-schwarz",
+      "cs-dijkstra",
+      "cs-floyd-warshall",
+      "cs-prim",
+      "cs-rucksack-dp",
+      "cs-typische-fehler"
+    ],
+    "maxBlocks": 14,
+    "priorityHint": "Breite Klausurabdeckung vor Spezialfällen."
+  },
+  {
+    "presetId": "preset-weakness",
+    "title": "Schwächenorientiert",
+    "mode": "weakness",
+    "description": "Priorisiert Blöcke zu niedrigen Mastery- und Diagnosewerten.",
+    "defaultBlockIds": [],
+    "maxBlocks": 14,
+    "priorityHint": "Lokale Schwächen erhöhen die Priorität; keine Optimalaussage."
+  },
+  {
+    "presetId": "preset-slot",
+    "title": "Klausurslot-orientiert",
+    "mode": "slot",
+    "description": "Verteilt Platz entlang der Aufgabe-1-bis-9-Struktur.",
+    "defaultBlockIds": [],
+    "maxBlocks": 16,
+    "priorityHint": "Slots mit mehreren produktiven Aktivitäten erhalten mehr Gewicht."
+  },
+  {
+    "presetId": "preset-manual",
+    "title": "Manuell",
+    "mode": "manual",
+    "description": "Nutzer wählt Blöcke selbst; Layout bleibt deterministisch.",
+    "defaultBlockIds": [],
+    "maxBlocks": 18,
+    "priorityHint": "Gesperrte Blöcke werden bevorzugt platziert."
+  },
+  {
+    "presetId": "preset-minimal",
+    "title": "Minimal",
+    "mode": "minimal",
+    "description": "Nur Algorithmen, Laufzeiten, Beweisschemata und typische Fallen.",
+    "defaultBlockIds": [
+      "cs-laufzeiten",
+      "cs-master-theorem",
+      "cs-schleifeninvariante",
+      "cs-dp-zustand",
+      "cs-greedy-austausch",
+      "cs-dijkstra",
+      "cs-prim",
+      "cs-typische-fehler"
+    ],
+    "maxBlocks": 10,
+    "priorityHint": "Maximale Kürze vor Themenbreite."
+  }
+]

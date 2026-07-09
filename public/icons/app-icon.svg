@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AlgoDat Symbol">
+  <rect width="512" height="512" rx="96" fill="#173f3a"/>
+  <path d="M128 352 218 128h76l90 224h-70l-16-47h-88l-16 47zm101-103h50l-25-75z" fill="#f4c95d"/>
+  <circle cx="112" cy="128" r="24" fill="#dce9e5"/><circle cx="400" cy="128" r="24" fill="#dce9e5"/>
+  <path d="M136 128h54m132 0h54" stroke="#dce9e5" stroke-width="14" stroke-linecap="round"/>
+</svg>

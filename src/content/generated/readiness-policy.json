@@ -1,0 +1,17 @@
+{
+  "policyVersion": "exam-readiness-v1",
+  "thresholds": {
+    "foundationMissingBelow": 0.35,
+    "developingBelow": 0.55,
+    "mostlyStableBelow": 0.78,
+    "examReadyAt": 0.82,
+    "staleAfterDays": 21,
+    "minEvidenceForReady": 3
+  },
+  "caps": {
+    "diagnosticOnlyMaxBand": "developing",
+    "noTimedEvidenceMaxBand": "mostly_stable",
+    "repeatedErrorMaxBand": "developing",
+    "unsupportedCoverageMaxBand": "developing"
+  }
+}

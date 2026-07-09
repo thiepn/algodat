@@ -1,0 +1,3357 @@
+[
+  {
+    "id": "src-88179ac88dc5",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-a6663953e108",
+    "displayName": "1.Klausur Loesungsskizze 3.pdf",
+    "title": "Matrikelnummer: Name: Seite 1 Aufgabe1 4 Punkte Gegeben sei das folgende FeldA[1..7] mit den Eintr¨agen: A = 20 24 15 6 13 3 10 Das Feld soll mit dem AlgorithmusMergeSort aus der Vorlesung aufsteigend sortiert werden. Geben Sie den Inhalt der Teilarrays nach Abarbeitung auf jeder Rekursionsebene an. 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 6 15 3 13 6 15 20 24 3 10 13 3 6 10 13 15 20 24",
+    "authorityLevel": 1,
+    "category": "Prüfungslösung",
+    "evidenceType": "official_solution",
+    "year": 2020,
+    "pageCount": 12,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-88179ac88dc5",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-02c9bed0177d",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-02c9bed0177d",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-a6663953e108",
+    "displayName": "1.Klausur Loesungsskizze 3.pdf",
+    "title": "Matrikelnummer: Name: Seite 1 Aufgabe1 4 Punkte Gegeben sei das folgende FeldA[1..7] mit den Eintr¨agen: A = 20 24 15 6 13 3 10 Das Feld soll mit dem AlgorithmusMergeSort aus der Vorlesung aufsteigend sortiert werden. Geben Sie den Inhalt der Teilarrays nach Abarbeitung auf jeder Rekursionsebene an. 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 6 15 3 13 6 15 20 24 3 10 13 3 6 10 13 15 20 24",
+    "authorityLevel": 1,
+    "category": "Prüfungslösung",
+    "evidenceType": "unknown",
+    "year": 2024,
+    "pageCount": 12,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-88179ac88dc5",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-5a4d89dac601",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-5a4d89dac601",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-a6663953e108",
+    "displayName": "1.Klausur Loesungsskizze 4.pdf",
+    "title": "Matrikelnummer: Name: Seite 1 Aufgabe1 4 Punkte Gegeben sei das folgende FeldA[1..7] mit den Eintr¨agen: A = 20 24 15 6 13 3 10 Das Feld soll mit dem AlgorithmusMergeSort aus der Vorlesung aufsteigend sortiert werden. Geben Sie den Inhalt der Teilarrays nach Abarbeitung auf jeder Rekursionsebene an. 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 6 15 3 13 6 15 20 24 3 10 13 3 6 10 13 15 20 24",
+    "authorityLevel": 1,
+    "category": "Prüfungslösung",
+    "evidenceType": "unknown",
+    "year": 2024,
+    "pageCount": 12,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-88179ac88dc5",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-606fe3c435ca",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-606fe3c435ca",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-a6663953e108",
+    "displayName": "1.Klausur Loesungsskizze.pdf",
+    "title": "Matrikelnummer: Name: Seite 1 Aufgabe1 4 Punkte Gegeben sei das folgende FeldA[1..7] mit den Eintr¨agen: A = 20 24 15 6 13 3 10 Das Feld soll mit dem AlgorithmusMergeSort aus der Vorlesung aufsteigend sortiert werden. Geben Sie den Inhalt der Teilarrays nach Abarbeitung auf jeder Rekursionsebene an. 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 15 6 13 3 10 20 24 6 15 3 13 6 15 20 24 3 10 13 3 6 10 13 15 20 24",
+    "authorityLevel": 1,
+    "category": "Prüfungslösung",
+    "evidenceType": "unknown",
+    "year": 2021,
+    "pageCount": 12,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-88179ac88dc5",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-97414623dd81",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "20_2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2020 Dr. Anja Rey, Jan H¨ockendorﬀ Klausur zur Vorlesung Grundz¨uge der Informatik 1 7.10.2020 • Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Unterschrift • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2020,
+    "pageCount": 12,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-97414623dd81",
+    "historicalFrequencyEligible": true
+  },
+  {
+    "id": "src-c490ac0e823c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c490ac0e823c",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "AlgoDat_Cheat_Sheet_Perfekt.pdf",
+    "title": "UltimateAlgo&DatCheatSheet Algorithmen und Datenstrukturen - Klausurhilfe Deutsch, formatiert, mit gerenderter mathematischer Notation PrüfungslogikStand: generiert aus den hochgeladenen Altklausuren, Probeklausur, Musterlösung und ZieldiesesDokuments Zusammenfassungen DieKlausurfolgtsehrstabileinem9-Aufgaben-Schema:Aufgaben1–4sindmeistmanuelles DiesesCheatSheetistalsgutlesbareVorlagegedacht,dieduvorderKlausurstarkverdichten Ausführen,Aufgabe5Schleifeninvariante,Aufgabe6Rekurrenz,Aufgabe7Greedyoder undhandschriftlichaufdeinerlaubtesDIN-A4-Blattübertragenkannst.Esistbewusstnicht Divide-and-Conquer,Aufgabe8dynamischeProgrammierung,Aufgabe9Graphen-Transfer aufzweiSeitenbegrenzt:Formatierung,ÜbersichtundVerständlichkeithabenVorrang. oderDatenstruktur-Entwurf.",
+    "authorityLevel": 4,
+    "category": "Spickzettel",
+    "evidenceType": "generated_example",
+    "year": null,
+    "pageCount": 33,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-c490ac0e823c",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-88d1cdb2c8d7",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88d1cdb2c8d7",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "AlgoDat_Exam_Study_Guide.pdf",
+    "title": "AlgoDat Exam Study Guide Vollständiges Lernhandbuch für die Klausur Algorithmen und Datenstrukturen Fokus: Sohler-typische Klausurstruktur mit Aufgabe 1 bis 9 Grundlage: Vorlesungsfolien, Altklausuren, Probeklausur, Musterlösung, Struktur- und Strategieunterlagen, Algorithmensammlung, Zusammenfassungen Sprache: Deutsch Ziel: schnelles Wiederholen, korrektes Lösen, Beweise formulieren, Teilpunkte sichern Erstellt als umfassendes Prüfungslernhandbuch.",
+    "authorityLevel": 4,
+    "category": "Spickzettel",
+    "evidenceType": "generated_example",
+    "year": null,
+    "pageCount": 104,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-88d1cdb2c8d7",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-7d7a7f7ada92",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-7d7a7f7ada92",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "algorithmen.pdf",
+    "title": "Liste aller Algorithmen &Datenstrukturen Klausur-Kompendium der Algorithmen Dieses Skript folgt dem Prinzip: Intuition zuerst — Formalismus danach. Automatisch generiert aus Vorlesungsmaterial",
+    "authorityLevel": 3,
+    "category": "Analysedokument",
+    "evidenceType": "generated_example",
+    "year": null,
+    "pageCount": 42,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-7d7a7f7ada92",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-a9c498f9af7b",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-a9c498f9af7b",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Altklausuren 2.pdf",
+    "title": "Altklausuren 2",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "unknown",
+    "year": 2024,
+    "pageCount": 17,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-a9c498f9af7b",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-9a15c067adc0",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-9a15c067adc0",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "beispiello╠êsung (1) 2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2023 Nicole Funk, Matthijs Ebb ens Prob eklausur zur Vorlesung Grundz ¨uge der Informatik 1 Besprechung in der Vorlesung in Kalenderwo che 28 Die Prob eklausur ist nicht zulassungsrelevant! Die Bepunktung der Aufgab en dient zur Visualisierung des Bepunktungskonzept der eigentlichen Klausur. Bitte notieren Sie die folgenden Angab en in deutlicher Blo ckschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise f”ur die Klausur: • Die Klausur b esteht aus 9 Aufgab en. Sollte Ihr Exemplar weniger Aufgab en enthalten, melden Sie sich bitte umgehend b ei der Klausuraufsicht. • Geb en Sie das Titelblatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreib en Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier b en”otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt eb enfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d ¨urfen nur von uns zur Verf”ugung gestelltes Papier und dokumentenechte Stifte (also insb esondere keine Bleistifte) verwenden. Verwenden Sie eb enfalls keine Stifte mit roter Farb e. Neb en einem handschriftlich b eidseitig b eschrieb enen DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches b eschrieb enes Blatt nutzen, geb en Sie dieses eb enfalls nach der Bearb eitung der Klausur mit ab. • Die Bearb eitungszeit b etr”agt 180 Minuten. Viel Erfolg! Aufgab e 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht",
+    "authorityLevel": 1,
+    "category": "Probeklausurlösung",
+    "evidenceType": "official_solution",
+    "year": 2023,
+    "pageCount": 26,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-9a15c067adc0",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-2f4e03bd738e",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-2f4e03bd738e",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-578f6da22d36",
+    "displayName": "Beispielloesung Blatt 5.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn 5. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum14.5.14:00Uhr. BesprechunginKalenderwoche21. Aufgabe 1Mastertheorem (2 + 2 + 2 Punkte) VerwendenSiedasMaster-Theorem,umfürdiefolgendenRekursionsgleichungenasym- ptotischeSchrankenanzugeben: ( a) T(n) = 1 n = 1 2·T(n3)+4 sonst a = 2 b = 3 f(n) = 4 Wähle γ = 12 f(n)≤γ2·f(n3) 4≤γ2·4 4≤ 122·4 4≤ 4 Fall3 T(n)∈O(alogbn) =O(2log3n) =O(nlog32) ( b) T(n) = 2 n = 1 2·T(n2)+2n sonst a = 2 b = 2 f(n) = 2n Wähle γ = 1",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2025,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-2f4e03bd738e",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-d70259daf0aa",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-d70259daf0aa",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-578f6da22d36",
+    "displayName": "Beispielloesung Blatt 5.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn 5. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum14.5.14:00Uhr. BesprechunginKalenderwoche21. Aufgabe 1Mastertheorem (2 + 2 + 2 Punkte) VerwendenSiedasMaster-Theorem,umfürdiefolgendenRekursionsgleichungenasym- ptotischeSchrankenanzugeben: ( a) T(n) = 1 n = 1 2·T(n3)+4 sonst a = 2 b = 3 f(n) = 4 Wähle γ = 12 f(n)≤γ2·f(n3) 4≤γ2·4 4≤ 122·4 4≤ 4 Fall3 T(n)∈O(alogbn) =O(2log3n) =O(nlog32) ( b) T(n) = 2 n = 1 2·T(n2)+2n sonst a = 2 b = 2 f(n) = 2n Wähle γ = 1",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": null,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-2f4e03bd738e",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-618e7da9bab3",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-618e7da9bab3",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-ad5c27e68775",
+    "displayName": "Beispielloesung Blatt 7.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn 7. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum28.5.14:00Uhr. BesprechunginKalenderwoche23. Aufgabe 1Dynamische Programmierung (3 + 3 + 2 + 2 + 2 Punkte) DieMeeresbiologinJuliemöchtedenVerlaufdesMeeresspiegelaneinerbestimmtenStelle untersuchen.SiehatdafürdieDatenvonzweiMessgerätenzurVerfügung.Messgerät1hat nMesswertegeliefert,dieindemFeldA[1...n]inchronologischerReihenfolgegespeichert sind.Messgerät2hatmMesswertegeliefert,dieindemFeldB[1...m]inchronologischer Reihenfolgegespeichertsind.Dabeigilt n≥m. JuliemöchtedenVerlaufderbeidenMessreihenvergleichen.Dafürverbindetsiejeden Messpunktin AmitmindestenseinemMesspunktin B.Wirbeschreibendiesdurchdie surjektiveFunktion f : {1,...n} → {1,...,m}.DieVerbindungenmüssendiefolgende Eigenschafterfüllen: • EinWertderkürzerenMessreihe BkannmitmehrerenMesswertenderMessreihe Averbundensein. • DererstePunktvon AwirdmitdemerstenPunktvon Bverbundenundderletzte Punktvon AwirdmitdemletztenPunktvon Bverbunden,also f(1) = 1und f(n) =m. • EinMesswert jin BkannnurmiteinemMesswert iin Averbundenwerden,wenn i−1,dervorherigeWertin A,mit joder j−1verbundenist. Eskannalsonurf(i) =jfür1<i≤ngelten,wennf(i−1) =j−1oderf(i−1) =j gilt. SolcheineVerbindungkönntezumBeispielsoaussehen: UmdieÄhnlichkeitderMessreihenzubeschreibennimmtsiedanndiegrößteDistanz zwischenverbundenenMesswerten,erhältalsodenWert maxi∈{1,...,n}|A[i]−B[f(i)]|.Die Verbindung fderMesswertemusssogewähltwerden,dassdieserÄhnlichkeitswertmini- malist. A 1 3 4 8 4 1 Ähnlichkeit: 3 B 2 9 4",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2025,
+    "pageCount": 5,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-618e7da9bab3",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-029a40284706",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-029a40284706",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-ad5c27e68775",
+    "displayName": "Beispielloesung Blatt 7.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn 7. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum28.5.14:00Uhr. BesprechunginKalenderwoche23. Aufgabe 1Dynamische Programmierung (3 + 3 + 2 + 2 + 2 Punkte) DieMeeresbiologinJuliemöchtedenVerlaufdesMeeresspiegelaneinerbestimmtenStelle untersuchen.SiehatdafürdieDatenvonzweiMessgerätenzurVerfügung.Messgerät1hat nMesswertegeliefert,dieindemFeldA[1...n]inchronologischerReihenfolgegespeichert sind.Messgerät2hatmMesswertegeliefert,dieindemFeldB[1...m]inchronologischer Reihenfolgegespeichertsind.Dabeigilt n≥m. JuliemöchtedenVerlaufderbeidenMessreihenvergleichen.Dafürverbindetsiejeden Messpunktin AmitmindestenseinemMesspunktin B.Wirbeschreibendiesdurchdie surjektiveFunktion f : {1,...n} → {1,...,m}.DieVerbindungenmüssendiefolgende Eigenschafterfüllen: • EinWertderkürzerenMessreihe BkannmitmehrerenMesswertenderMessreihe Averbundensein. • DererstePunktvon AwirdmitdemerstenPunktvon Bverbundenundderletzte Punktvon AwirdmitdemletztenPunktvon Bverbunden,also f(1) = 1und f(n) =m. • EinMesswert jin BkannnurmiteinemMesswert iin Averbundenwerden,wenn i−1,dervorherigeWertin A,mit joder j−1verbundenist. Eskannalsonurf(i) =jfür1<i≤ngelten,wennf(i−1) =j−1oderf(i−1) =j gilt. SolcheineVerbindungkönntezumBeispielsoaussehen: UmdieÄhnlichkeitderMessreihenzubeschreibennimmtsiedanndiegrößteDistanz zwischenverbundenenMesswerten,erhältalsodenWert maxi∈{1,...,n}|A[i]−B[f(i)]|.Die Verbindung fderMesswertemusssogewähltwerden,dassdieserÄhnlichkeitswertmini- malist. A 1 3 4 8 4 1 Ähnlichkeit: 3 B 2 9 4",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": null,
+    "pageCount": 5,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-618e7da9bab3",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-9c9df2cb071b",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-9c9df2cb071b",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-f76b31b782d8",
+    "displayName": "Beispielloesung Blatt1.pdf",
+    "title": "Dr. Alexander Munteanu Sommersemester 2025 Nicole Funk, Dennis Köhn Lösung zum 1. Übungsblatt zur Vorlesung Algorithmen und Datenstrukturen Abgabe über Ilias bis zum 16.4. 14:00 Uhr. Besprechung in Kalenderwoche 17. Aufgabe 1Rekursion (4 Punkte) GebenSieinPseudocodeeinenrekursivenAlgorithmusan,welcherfüreinegegebeneZahl n die SummePn 1 i=1 i berechnet. SummeBrueche(n) 1. if n=0 then 2. return 0 3. else 4. return 1n +SummeBrueche(n−1)",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2025,
+    "pageCount": 4,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-9c9df2cb071b",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-c8cc71517e40",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c8cc71517e40",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-f76b31b782d8",
+    "displayName": "Beispielloesung Blatt1.pdf",
+    "title": "Dr. Alexander Munteanu Sommersemester 2025 Nicole Funk, Dennis Köhn Lösung zum 1. Übungsblatt zur Vorlesung Algorithmen und Datenstrukturen Abgabe über Ilias bis zum 16.4. 14:00 Uhr. Besprechung in Kalenderwoche 17. Aufgabe 1Rekursion (4 Punkte) GebenSieinPseudocodeeinenrekursivenAlgorithmusan,welcherfüreinegegebeneZahl n die SummePn 1 i=1 i berechnet. SummeBrueche(n) 1. if n=0 then 2. return 0 3. else 4. return 1n +SummeBrueche(n−1)",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2025,
+    "pageCount": 4,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-9c9df2cb071b",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-1b8a7a5c0ab7",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-1b8a7a5c0ab7",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-aa6aed90bd1d",
+    "displayName": "Beispielloesung Blatt2.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn Lösung zum 2. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum23.4.14:00Uhr. BesprechunginKalenderwoche18. Aufgabe 1 Laufzeitanalyse BetrachtenSiefolgendenAlgorithmus: BerechneZahl(n): 1 a = 0 1 2 for i = 1 to n do 3 n+1 4 k = 1 n 5 while k <i do 6 Pni=1i 7 k =k +1 Pni=1i− 1 8 a =a+2·k n 9 a =a+1 n 10 b = 1 1 11 for j = 1 to n do 12 n+1 13 p = 0 n 14 for ℓ = 1 to n do 15 n(n+1) 16 p =p+2·ℓ n 2 17 p =p/2 n 18 b =b+2·p n 19 return a+b a)AnalysierenSiedieWost-Case-LaufzeitdesAlgorithmus.Dasbedeutet: • NotierenSiedieAnzahlderRechenschrittezeilenweiseinAbhängigkeitder Eingabegrößenn. • SummierenSiedieGesamtanzahlderRechenschritte. • OrdnenSiedieasymptotischeLaufzeitinO-Notationein.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2025,
+    "pageCount": 4,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-1b8a7a5c0ab7",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-f224a2cb6840",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-f224a2cb6840",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-aa6aed90bd1d",
+    "displayName": "Beispielloesung Blatt2.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn Lösung zum 2. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum23.4.14:00Uhr. BesprechunginKalenderwoche18. Aufgabe 1 Laufzeitanalyse BetrachtenSiefolgendenAlgorithmus: BerechneZahl(n): 1 a = 0 1 2 for i = 1 to n do 3 n+1 4 k = 1 n 5 while k <i do 6 Pni=1i 7 k =k +1 Pni=1i− 1 8 a =a+2·k n 9 a =a+1 n 10 b = 1 1 11 for j = 1 to n do 12 n+1 13 p = 0 n 14 for ℓ = 1 to n do 15 n(n+1) 16 p =p+2·ℓ n 2 17 p =p/2 n 18 b =b+2·p n 19 return a+b a)AnalysierenSiedieWost-Case-LaufzeitdesAlgorithmus.Dasbedeutet: • NotierenSiedieAnzahlderRechenschrittezeilenweiseinAbhängigkeitder Eingabegrößenn. • SummierenSiedieGesamtanzahlderRechenschritte. • OrdnenSiedieasymptotischeLaufzeitinO-Notationein.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": null,
+    "pageCount": 4,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-1b8a7a5c0ab7",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-d84d48bf72d8",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-d84d48bf72d8",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-8840bfcbf663",
+    "displayName": "Beispielloesung Blatt3.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn 3. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum30.4.14:00Uhr. BesprechunginKalenderwoche19. Aufgabe 1 Schleifeninvariante (1 + 5 + 1 Punkte) BetrachtenSiedenfolgendenAlgorithmus,deralsEingabeeinArray A = [a1,a2,...,an] derLänge nmit ai∈N, 1≤i≤nerhält. BerechneWert(A,n): 1. p = 1 2. for i = 1 to n do 3. p =p∗A[i] 4. return n√p a)StellenSieeineBehauptungauf,welchenWertderAlgorithmusinAbhängigkeitdes Eingabearraysberechnet. Behauptung:BerechneWert(A,n)berechnetdasgeometrischeMittelderWerteinQn A,also np i=1ai. b)Formulieren Sie eine Schleifeninvariante, die zu Beginn jeder Iteration der for- Schleife (Zeilen 2 und 3) für die Variable p gilt. Beweisen Sie diese mittels vollständigerInduktion. Schleifeninvariante: S(i) : Vor Iteration i hat p den WertQi−1j=1aj mit 1≤i≤n+1 Beweis: durchInduktionüber i. Induktionsanfang i = 1 VorIteration 1wurdeinZ.1derWertvon pauf1gesetzt.Diesentspricht: 0Y i−1Y p = 1 = aj = aj✓ j=1 j=1 Induktionsannahme/ Induktionsvorraussetzung (IV) S(i)giltfür 1≤i< (n+1) alternativ: S(j)giltfür 1≤j < (i+1)",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2025,
+    "pageCount": 5,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-d84d48bf72d8",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-21607a51dfc2",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-21607a51dfc2",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-8840bfcbf663",
+    "displayName": "Beispielloesung Blatt3.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn 3. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum30.4.14:00Uhr. BesprechunginKalenderwoche19. Aufgabe 1 Schleifeninvariante (1 + 5 + 1 Punkte) BetrachtenSiedenfolgendenAlgorithmus,deralsEingabeeinArray A = [a1,a2,...,an] derLänge nmit ai∈N, 1≤i≤nerhält. BerechneWert(A,n): 1. p = 1 2. for i = 1 to n do 3. p =p∗A[i] 4. return n√p a)StellenSieeineBehauptungauf,welchenWertderAlgorithmusinAbhängigkeitdes Eingabearraysberechnet. Behauptung:BerechneWert(A,n)berechnetdasgeometrischeMittelderWerteinQn A,also np i=1ai. b)Formulieren Sie eine Schleifeninvariante, die zu Beginn jeder Iteration der for- Schleife (Zeilen 2 und 3) für die Variable p gilt. Beweisen Sie diese mittels vollständigerInduktion. Schleifeninvariante: S(i) : Vor Iteration i hat p den WertQi−1j=1aj mit 1≤i≤n+1 Beweis: durchInduktionüber i. Induktionsanfang i = 1 VorIteration 1wurdeinZ.1derWertvon pauf1gesetzt.Diesentspricht: 0Y i−1Y p = 1 = aj = aj✓ j=1 j=1 Induktionsannahme/ Induktionsvorraussetzung (IV) S(i)giltfür 1≤i< (n+1) alternativ: S(j)giltfür 1≤j < (i+1)",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": null,
+    "pageCount": 5,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-d84d48bf72d8",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-5e111e0131e5",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-5e111e0131e5",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-862781bf5801",
+    "displayName": "Beispielloesung Blatt4.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn Lösung zu 4. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum8.5.23:59Uhr. BesprechunginKalenderwoche20.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2025,
+    "pageCount": 8,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-5e111e0131e5",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-c22f4ccd2e96",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c22f4ccd2e96",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-862781bf5801",
+    "displayName": "Beispielloesung Blatt4.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn Lösung zu 4. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum8.5.23:59Uhr. BesprechunginKalenderwoche20.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": null,
+    "pageCount": 8,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-5e111e0131e5",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-6097edd88096",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-6097edd88096",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-faf9fc793508",
+    "displayName": "Beispielloesung Praesenzblatt.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2022 JanHöckendorff,NicoleFunk LösungzumPräsenzblatt zurVorlesung Grundzüge der Informatik I BesprechunginKalenderwoche16. Aussagenlogik–Grundlagen Aussagen:z.B. A=die Eingabe ist groß B=Der Algorithmus löst das Problem mitWahrheitsbelegungen0oder1 Verknüpfungen: unär:z.,B.Negation¬ binär:z.,B.Konjuktion∧,Disjunktion∨,Implikation=⇒,Äquivalenz⇐⇒ A B ¬A A∧B A∨B A⇒B A⇔B 0 0 1 0 0 1 1 0 1 1 0 1 1 0 1 0 0 0 1 0 0 1 1 0 1 1 1 1 Aufgabe 1Aussagenlogik Vokal ungerade Vokal=⇒ungerade 0 0 1 0 1 1 1 0 0 1 1 1 A=Das Problem ist leicht B=Der Algorithmus löst das Problem A=⇒B O K 9 6 ? egal egal ?",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2025,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-6097edd88096",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-979baf189ea9",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-979baf189ea9",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-faf9fc793508",
+    "displayName": "Beispielloesung Praesenzblatt.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2022 JanHöckendorff,NicoleFunk LösungzumPräsenzblatt zurVorlesung Grundzüge der Informatik I BesprechunginKalenderwoche16. Aussagenlogik–Grundlagen Aussagen:z.B. A=die Eingabe ist groß B=Der Algorithmus löst das Problem mitWahrheitsbelegungen0oder1 Verknüpfungen: unär:z.,B.Negation¬ binär:z.,B.Konjuktion∧,Disjunktion∨,Implikation=⇒,Äquivalenz⇐⇒ A B ¬A A∧B A∨B A⇒B A⇔B 0 0 1 0 0 1 1 0 1 1 0 1 1 0 1 0 0 0 1 0 0 1 1 0 1 1 1 1 Aufgabe 1Aussagenlogik Vokal ungerade Vokal=⇒ungerade 0 0 1 0 1 1 1 0 0 1 1 1 A=Das Problem ist leicht B=Der Algorithmus löst das Problem A=⇒B O K 9 6 ? egal egal ?",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": null,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-6097edd88096",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-35405e721f05",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-201311bdac2e",
+    "displayName": "Beispielloesung_Probeklausur.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2023 Nicole Funk, Matthijs Ebb ens Prob eklausur zur Vorlesung Grundz ¨uge der Informatik 1 Besprechung in der Vorlesung in Kalenderwo che 28 Die Prob eklausur ist nicht zulassungsrelevant! Die Bepunktung der Aufgab en dient zur Visualisierung des Bepunktungskonzept der eigentlichen Klausur. Bitte notieren Sie die folgenden Angab en in deutlicher Blo ckschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise f”ur die Klausur: • Die Klausur b esteht aus 9 Aufgab en. Sollte Ihr Exemplar weniger Aufgab en enthalten, melden Sie sich bitte umgehend b ei der Klausuraufsicht. • Geb en Sie das Titelblatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreib en Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier b en”otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt eb enfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d ¨urfen nur von uns zur Verf”ugung gestelltes Papier und dokumentenechte Stifte (also insb esondere keine Bleistifte) verwenden. Verwenden Sie eb enfalls keine Stifte mit roter Farb e. Neb en einem handschriftlich b eidseitig b eschrieb enen DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches b eschrieb enes Blatt nutzen, geb en Sie dieses eb enfalls nach der Bearb eitung der Klausur mit ab. • Die Bearb eitungszeit b etr”agt 180 Minuten. Viel Erfolg! Aufgab e 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht",
+    "authorityLevel": 1,
+    "category": "Probeklausurlösung",
+    "evidenceType": "official_solution",
+    "year": 2023,
+    "pageCount": 14,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-35405e721f05",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-a969dc88f8e9",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-a969dc88f8e9",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-7e1d593b9f7d",
+    "displayName": "Beispielloesung_Probeklausur.pdf",
+    "title": "Beispielloesung_Probeklausur",
+    "authorityLevel": 1,
+    "category": "Probeklausurlösung",
+    "evidenceType": "unofficial_solution",
+    "year": 2021,
+    "pageCount": 11,
+    "extractionSucceeded": false,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-a969dc88f8e9",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-fbf39f80037d",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-fbf39f80037d",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-7e1d593b9f7d",
+    "displayName": "Beispielloesung_Probeklausur.pdf",
+    "title": "Beispielloesung_Probeklausur",
+    "authorityLevel": 1,
+    "category": "Probeklausurlösung",
+    "evidenceType": "unofficial_solution",
+    "year": 2024,
+    "pageCount": 11,
+    "extractionSucceeded": false,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-a969dc88f8e9",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-b6c99693279c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-b6c99693279c",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-201311bdac2e",
+    "displayName": "Beispielloesung_Probeklausur2023.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2023 Nicole Funk, Matthijs Ebb ens Prob eklausur zur Vorlesung Grundz ¨uge der Informatik 1 Besprechung in der Vorlesung in Kalenderwo che 28 Die Prob eklausur ist nicht zulassungsrelevant! Die Bepunktung der Aufgab en dient zur Visualisierung des Bepunktungskonzept der eigentlichen Klausur. Bitte notieren Sie die folgenden Angab en in deutlicher Blo ckschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise f”ur die Klausur: • Die Klausur b esteht aus 9 Aufgab en. Sollte Ihr Exemplar weniger Aufgab en enthalten, melden Sie sich bitte umgehend b ei der Klausuraufsicht. • Geb en Sie das Titelblatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreib en Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier b en”otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt eb enfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d ¨urfen nur von uns zur Verf”ugung gestelltes Papier und dokumentenechte Stifte (also insb esondere keine Bleistifte) verwenden. Verwenden Sie eb enfalls keine Stifte mit roter Farb e. Neb en einem handschriftlich b eidseitig b eschrieb enen DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches b eschrieb enes Blatt nutzen, geb en Sie dieses eb enfalls nach der Bearb eitung der Klausur mit ab. • Die Bearb eitungszeit b etr”agt 180 Minuten. Viel Erfolg! Aufgab e 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht",
+    "authorityLevel": 1,
+    "category": "Probeklausurlösung",
+    "evidenceType": "official_solution",
+    "year": 2023,
+    "pageCount": 14,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-35405e721f05",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-1b25f4d8fc92",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-1b25f4d8fc92",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-fa9356182868",
+    "displayName": "Besispielloesung Blatt 6.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn 6. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum21.5.14:00Uhr. BesprechunginKalenderwoche22.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2025,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-1b25f4d8fc92",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-05d12625ba00",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-05d12625ba00",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-fa9356182868",
+    "displayName": "Besispielloesung Blatt 6.pdf",
+    "title": "Dr.AlexanderMunteanu Sommersemester2025 NicoleFunk,DennisKöhn 6. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum21.5.14:00Uhr. BesprechunginKalenderwoche22.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": null,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-1b25f4d8fc92",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-cc8a7a37cf43",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-cc8a7a37cf43",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "BspLo╠êsungProbeklausur2022.pdf",
+    "title": "1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan Hockendor↵ ¨ Prob eklausur zur Vorlesung Grundzuge der Informatik 1¨ Die Prob eklausur ist nicht zulassungsrelevant! Die Bepunktung der Aufgab en dient zur Visualisierung des Bepunktungskonzept der eigentlichen Klausur. Der Umfang der Prob eklausur ist auf eine Bearb eitungszeit von 3 Stunden ausgelegt.",
+    "authorityLevel": 1,
+    "category": "Probeklausurlösung",
+    "evidenceType": "official_solution",
+    "year": 2022,
+    "pageCount": 18,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-cc8a7a37cf43",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-f2148ca799c1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-f2148ca799c1",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "BspLoesungProbeklausur2021 2.pdf",
+    "title": "Prof. Dr. Christian Sohler Sommersemester 2021 Dr. Anja Rey, Nicole Funk, Jan Hö ckendorﬀ Prob eklausur zur Vorlesung Grundzüge der Informatik 1 Die Prob eklausur ist nicht zulassungsrelevant! Die Bepunktung der Aufgab en dient zur Visualisierung des Bepunktungskonzept der eigentlichen Klausur. Der Umfang der Prob eklausur ist auf eine Bearb eitungszeit von 2 Stunden ausgelegt. Aufgab e 1 (6) Punkte Sei n eine Zweierp otenz. Für ein Feld von n reelen Zahlen A und zwei natürliche Zahlen l, r mit 1  l  r  n sei der folgende Algorithmus deﬁniert. BerechneEtwas(A,l,r): 1 if r = l then 2 return A[l] 3 m =(l+r\u00001)/2 4 a = \u00001 5 b = \u00001 6 s =0 7 for i = m to r +1 do 8 s = s + A[i] 9 a =max{a, s} 10 s =0 11 for i = l to m do 12 s = s + A[i] 13 b =max{b, s} 14 return max{a + b, BerechneEtwas(A, l , m), BerechneEtwas(A, m +1,r)} a) Geb en Sie eine Rekursiongleichung an, welche die Worst-Case Laufzeit des gegeb e- nen Algorithmus b eschreibt. b) Ordnen Sie die Laufzeit des Algorithmus, mithilfe des Master-Theorems, einer mög- lichst langsam wachsenden Funktion in O-Notation zu.",
+    "authorityLevel": 1,
+    "category": "Probeklausurlösung",
+    "evidenceType": "official_solution",
+    "year": 2022,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-f2148ca799c1",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-acdc203042cd",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "DC797902-740E-4129-BBD5-45676538B416.JPG",
+    "title": "DC797902-740E-4129-BBD5-45676538B416.JPG",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-acdc203042cd",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-c4dde22523d3",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c4dde22523d3",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-307863e0562a",
+    "displayName": "ErstKlausur2022 2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan H¨ockendorﬀ Klausur zur Vorlesung Grundz¨uge der Informatik 1 29. Juli 2022 Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise: • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2022,
+    "pageCount": 16,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-c4dde22523d3",
+    "historicalFrequencyEligible": true
+  },
+  {
+    "id": "src-d5794c78829b",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "FDC57C06-6D47-4057-86E7-A16AAF2FA8A4.JPG",
+    "title": "FDC57C06-6D47-4057-86E7-A16AAF2FA8A4.JPG",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-d5794c78829b",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-ff6602b770ca",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-ff6602b770ca",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-953f9c6f11df",
+    "displayName": "info1 2. Klausur Loesungsskizze 4.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2020 Dr. Anja Rey, Jan H¨ockendorﬀ Klausur zur Vorlesung Grundz¨uge der Informatik 1 7.10.2020 • Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Unterschrift • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfungslösung",
+    "evidenceType": "unknown",
+    "year": 2020,
+    "pageCount": 12,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-ff6602b770ca",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-1f4f87d34014",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-1f4f87d34014",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-953f9c6f11df",
+    "displayName": "info1 2. Klausur Loesungsskizze 5.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2020 Dr. Anja Rey, Jan H¨ockendorﬀ Klausur zur Vorlesung Grundz¨uge der Informatik 1 7.10.2020 • Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Unterschrift • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfungslösung",
+    "evidenceType": "unknown",
+    "year": 2020,
+    "pageCount": 12,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-ff6602b770ca",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-8a588d5ddc35",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8a588d5ddc35",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "info1 2. Klausur Loesungsskizze 6.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2020 Dr. Anja Rey, Jan Hockendor↵ ¨ Klausur zur Vorlesung Grundzuge der Informatik 1¨ 7.10.2020 • Bitte notieren Sie die folgenden Angab en in deutlicher Blo ckschrift: Name Vorname Matrikelnummer Studiengang Unterschrift • Die Klausur b esteht aus 9 Aufgab en. Sollte Ihr Exemplar weniger Aufgab en enthalten, melden Sie sich bitte umgehend b ei der Klausuraufsicht. • Geb en Sie dieses Blatt zusammen mit Ihren Losungen ab und entfernen Sie nicht die¨ Klammerung der Klausur. • Schreib en Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier b enotigen, wenden Sie sich an die Klausuraufsicht. Beschriften¨ Sie jedes weitere Blatt eb enfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie durfen nur von uns zur Verf¨ ugung gestelltes Papier und dokumentenechte Stifte (also¨ insb esondere keine Bleistifte) verwenden. Verwenden Sie eb enfalls keine Stifte mit roter Farb e. Neb en einem handschriftlich b eidseitig b eschrieb enem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches b eschrieb enes Blatt nutzen, geb en Sie dieses eb enfalls nach der Bearb eitung der Klausur mit ab. • Die Bearb eitungszeit b etragt 180 Minuten. ¨ Viel Erfolg! Aufgab e 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Prufer):¨",
+    "authorityLevel": 1,
+    "category": "Prüfungslösung",
+    "evidenceType": "official_solution",
+    "year": 2020,
+    "pageCount": 12,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-8a588d5ddc35",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-0e61160d8c0d",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-0e61160d8c0d",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-953f9c6f11df",
+    "displayName": "info1 2. Klausur Loesungsskizze.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2020 Dr. Anja Rey, Jan H¨ockendorﬀ Klausur zur Vorlesung Grundz¨uge der Informatik 1 7.10.2020 • Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Unterschrift • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfungslösung",
+    "evidenceType": "unknown",
+    "year": 2020,
+    "pageCount": 12,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-ff6602b770ca",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-ce97639c1821",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-ce97639c1821",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-5771ba7f1157",
+    "displayName": "Klausur 2024 2.pdf",
+    "title": "---2 e",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2024,
+    "pageCount": 9,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-6df30a9ff1ae",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-6df30a9ff1ae",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-6df30a9ff1ae",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-5771ba7f1157",
+    "displayName": "Klausur 2024.pdf",
+    "title": "---2 e",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2024,
+    "pageCount": 9,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-6df30a9ff1ae",
+    "historicalFrequencyEligible": true
+  },
+  {
+    "id": "src-00ae505a8756",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-00ae505a8756",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-307863e0562a",
+    "displayName": "Klausur1 2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan H¨ockendorﬀ Klausur zur Vorlesung Grundz¨uge der Informatik 1 29. Juli 2022 Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise: • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2022,
+    "pageCount": 16,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-c4dde22523d3",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-fa63eaca933b",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-fa63eaca933b",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-307863e0562a",
+    "displayName": "Klausur1 INFORMATIK 1  2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan H¨ockendorﬀ Klausur zur Vorlesung Grundz¨uge der Informatik 1 29. Juli 2022 Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise: • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2022,
+    "pageCount": 16,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-c4dde22523d3",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-5bb7aaf4268b",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-5bb7aaf4268b",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-307863e0562a",
+    "displayName": "Klausur1.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan H¨ockendorﬀ Klausur zur Vorlesung Grundz¨uge der Informatik 1 29. Juli 2022 Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise: • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2022,
+    "pageCount": 16,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-c4dde22523d3",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-3f29b67eef5c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-3f29b67eef5c",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-b05448680a76",
+    "displayName": "Klausur2 2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan H¨ockendorff Klausur zur Vorlesung Grundz¨uge der Informatik 1 17. September 2022 Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise: • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2022,
+    "pageCount": 15,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-011d1ee23245",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-2461e8a663fe",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-2461e8a663fe",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-b05448680a76",
+    "displayName": "Klausur2 INFORMATIK 2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan H¨ockendorff Klausur zur Vorlesung Grundz¨uge der Informatik 1 17. September 2022 Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise: • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2022,
+    "pageCount": 15,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-011d1ee23245",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-34f58aed1d9c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-34f58aed1d9c",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-b05448680a76",
+    "displayName": "Klausur2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan H¨ockendorff Klausur zur Vorlesung Grundz¨uge der Informatik 1 17. September 2022 Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise: • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2022,
+    "pageCount": 15,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-011d1ee23245",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-0457af7a63f0",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-0457af7a63f0",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-503c2fc8ed32",
+    "displayName": "Klausur2021 2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2021 Dr. Anja Rey, Nicole Funk, Jan H¨ockendorﬀ Klausur zur Vorlesung Grundz¨uge der Informatik 1 29. September 2021 Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Unterschrift Wichtige Hinweise: • Sie d¨urfen zur Bearbeitung der Klausur nur handgefertige Notizen, Vorlesungskript, ¨Ubungsmaterial und Lehrb¨ucher zur Vorlesung in physischer oder digitaler Form nut- zen. Die Nutzung von Suchmaschinen und die Kommunikation mit Personen (außer dem Pr¨ufungspersonal) ist nicht erlaubt. • Sieversichernzudem,dassSiediePr¨ufungsleistungselbst¨andigundohneunzul¨assigefrem- de Hilfe erbringen. • Die Bearbeitungszeit der Klausur ist 120 Minuten. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Erstellen Sie eine PDF Datei Ihrer L¨osungen inklusive einem von Ihnen ausgef¨ullten und unterschriebenen Deckblatt mit den Informationen Vor-Nachname, Matrikelnummer und Studiengang. Achten Sie dabei auf die Reihenfolge der Aufgaben. Benennen Sie die PDF Datei nach dem Schema: Nachname Vorname. • Laden Sie Ihre Antworten im Anschluss unmittelbar im EA-Flex Kurs hoch. Sie haben dazu ca. 15 Minuten zus¨atzliche Zeit. • Bewahren Sie das Original Ihrer Klausur bis zum Erhalt Ihrer Note auf. Viel Erfolg! Aufgabe 1 2 3 4 5 6 Gesamt Note maximal 6 6 6 10 16 16 60 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2021,
+    "pageCount": 7,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-28fe81380661",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-28fe81380661",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-28fe81380661",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-503c2fc8ed32",
+    "displayName": "Klausur2021.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2021 Dr. Anja Rey, Nicole Funk, Jan H¨ockendorﬀ Klausur zur Vorlesung Grundz¨uge der Informatik 1 29. September 2021 Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Unterschrift Wichtige Hinweise: • Sie d¨urfen zur Bearbeitung der Klausur nur handgefertige Notizen, Vorlesungskript, ¨Ubungsmaterial und Lehrb¨ucher zur Vorlesung in physischer oder digitaler Form nut- zen. Die Nutzung von Suchmaschinen und die Kommunikation mit Personen (außer dem Pr¨ufungspersonal) ist nicht erlaubt. • Sieversichernzudem,dassSiediePr¨ufungsleistungselbst¨andigundohneunzul¨assigefrem- de Hilfe erbringen. • Die Bearbeitungszeit der Klausur ist 120 Minuten. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Erstellen Sie eine PDF Datei Ihrer L¨osungen inklusive einem von Ihnen ausgef¨ullten und unterschriebenen Deckblatt mit den Informationen Vor-Nachname, Matrikelnummer und Studiengang. Achten Sie dabei auf die Reihenfolge der Aufgaben. Benennen Sie die PDF Datei nach dem Schema: Nachname Vorname. • Laden Sie Ihre Antworten im Anschluss unmittelbar im EA-Flex Kurs hoch. Sie haben dazu ca. 15 Minuten zus¨atzliche Zeit. • Bewahren Sie das Original Ihrer Klausur bis zum Erhalt Ihrer Note auf. Viel Erfolg! Aufgabe 1 2 3 4 5 6 Gesamt Note maximal 6 6 6 10 16 16 60 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2021,
+    "pageCount": 7,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-28fe81380661",
+    "historicalFrequencyEligible": true
+  },
+  {
+    "id": "src-633f6b4de3ec",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-633f6b4de3ec",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Konzepte.pdf",
+    "title": "Algorithmische Entwurfsmethoden &Konzepte Klausur-Kompendium der Algorithmen Dieses Skript folgt dem Prinzip: Intuition zuerst — Formalismus danach. Automatisch generiert aus Vorlesungsmaterial",
+    "authorityLevel": 3,
+    "category": "Analysedokument",
+    "evidenceType": "generated_example",
+    "year": null,
+    "pageCount": 15,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-633f6b4de3ec",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-7a4064a0710d",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-7a4064a0710d",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung03.pdf",
+    "title": "Loesung03",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 5,
+    "extractionSucceeded": false,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-7a4064a0710d",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-c9cd3fa0f544",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c9cd3fa0f544",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung1.pdf",
+    "title": "Übungsblatt 1 Blatt1 Seite 1",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "unofficial_solution",
+    "year": 2021,
+    "pageCount": 2,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-c9cd3fa0f544",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-0878d88c532c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-0878d88c532c",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung1.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger Lösung zum 1. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen BesprechunginKalenderwoche17. 22.April-26.April Aufgabe 1Rekursion (4 Punkte) GebenSieinPseudocodeeinenrekursivenAlgorithmusan,welcherfüreinegegebeneZahl ndieSummederQuadratenallerZahlenvon 1bis n,alsoPni=1i2,berechnet. SummeDerQuadrate(n) 1. if n=1 then 2. return 1 3. else 4. return n2+SummeDerQuadrate(n−1) Aufgabe 2Felder (4 + 2 Punkte) a)GegebenseieinFeld Amit nZahlen a1,a2,...,anundeineZahl x. GebenSieinPseudocodeeinenrekursivenAlgorithmusan,derdiePositionvonxin Aausgibt,fallsxinAvorkommtund−1sonst.SolltexmehrmalsinAvorkommen, reichteinebeliebigePositionvon x. b)GebenSiedieLaufzeitihresAlgorithmusausTeilaufgabea)an. Suche(x,A,n) 1. if n=0 then 1 1 1 2. return −1 1 0 0 3. if A[n]=x then 1 1 4. return n 1 0",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 3,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-0878d88c532c",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-2ac1fff065f5",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-2ac1fff065f5",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung10.pdf",
+    "title": "Loesung10 (1).pdf.xopp",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-2ac1fff065f5",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-20d1c2d0266d",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-20d1c2d0266d",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung10.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger 10. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum26.6.14:00Uhr. BesprechunginKalenderwoche27. Aufgabe 1RS-Bäume (6 Punkte) BetrachtenSiedenfolgendenRot-Schwarz-Baum. LöschenSiedieWerte 13, 24, 19,und 29indergenanntenReihenfolge.ZeichnenSieden Rot-Schwarz-BaumnachjedemAusführeneinesFallesvonRS-Löschen-FixundgebenSie an,welcheFälledurchgeführtwurden,undmarkierenSiedenKnoten x. LautVLwirdalsNachfolgerimmerderlinkesteKnotenimrechtenKindverwendet. 13 -13 9 24 3 10 19 31 w 6 29",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 7,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-20d1c2d0266d",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-c7ef1f699742",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c7ef1f699742",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung11.pdf",
+    "title": "Loesung11",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "unofficial_solution",
+    "year": 2021,
+    "pageCount": 4,
+    "extractionSucceeded": false,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-c7ef1f699742",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-1ea0642ec775",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-1ea0642ec775",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung11.pdf",
+    "title": "Prof. Dr. Christian Sohler Sommersemester 2024 Nicole Funk, Jonathan Langer 1. Übungsblatt zur Vorlesung Algorithmen und Datenstrukturen Abgab e üb er Ilias bis zum 13.4. 14:00 Uhr. Besprechung in Kalenderwo che 16. Aufgab e 1 Breitensuche (5 Punkte) Führen Sie auf dem gegeb enen Graphen den Breitensuche-Algorithmus aus. Gehen Sie da- b ei so vor, dass der Knoten a als Startknoten genutzt wird und b ei mehreren b enachbarten Knoten der mit dem lexikographisch kleineren Buchstab en zuerst der Warteschlange hin- zugefügt wird. Skizzieren Sie für jeden Schritt der Traversierung den Zustand der Breitensuche. Geb en Sie dazu jeweils die Färbung der Knoten und den Inhalt der Warteschlangen-Datenstruktur an. ∞ ∞ ∞ a b c ∞ d e ∞ f ∞ g h ∞ ∞",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 9,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-1ea0642ec775",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-02be45f603ba",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-02be45f603ba",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung12.pdf",
+    "title": "Prof. Dr. Christian Sohler Sommersemester 2024 Nicole Funk, Jonathan Langer 12. Übungsblatt zur Vorlesung Algorithmen und Datenstrukturen Abgab e üb er Ilias bis zum 3.7. 14:00 Uhr. Besprechung in Kalenderwo che 28. Aufgab e 1 Bel lman-Ford (6 Punkte) Gegeb en sei der folgende Graph: Führen Sie die verb esserte Version des Algorithmus von Bellman-Ford für den gegeb e- nen Graphen mit Startknoten 1 aus. Tragen Sie dazu die Werte des Arrays d nach jedem Durchlauf der äuÿeren Schleife des Algorithmus in eine Tab elle ein. Gehen Sie dab ei die Knoten in aufsteigender Reihenfolge durch. i d[a] d[b] d[c] d[d] d[e] d[f] 0 0 ∞ ∞ ∞ ∞ ∞ 1 0 ∞ 7 1 3 9 2 0 4 6 1 3 9 3 0 4 6 1 3 9 4 0 4 6 1 3 9 5 0 4 6 1 3 9 7 a b 2 c 1 3 1 3 5 d 2 e f 8",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 4,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-02be45f603ba",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-df4f1dbaa2c8",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-df4f1dbaa2c8",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung2.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2021 Dr.AnjaRey,NicoleFunk,JanHöckendorﬀ 2. Übungsblatt zurVorlesung Grundzüge der Informatik I AbgabeüberIliasbiszum28.4.14:00Uhr. BesprechunginKalenderwoche18. Aufgabe 1Landau Notation (12 Punkte) WelchederfolgendenAussagensindkorrekt? 1. n3+12n2∈ Ω(n4) 2. 3n+6∈O(n3) 3. O(9n3)̸=O(n3) 4. 6log2(n)+18+n∈ Θ(log2(n)) 5. log2(n)−6∈ Ω(1) 6. 63n∈O(n2) BegründenSieihreAntwortmiteinemBeweisbzw.einemGegenbeispiel.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 4,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-df4f1dbaa2c8",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-0a1992e2a3c1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-0a1992e2a3c1",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung2.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger Lösung zum 2. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen BesprechunginKalenderwoche18. Aufgabe 1 Laufzeitanalyse BetrachtenSiefolgendenAlgorithmus: BerechneZahl(n, k): 1 a = 1 1 2 for i = 0 to k−1 do 3 k+1 4 b = 1 Pk−1i=0 1 =k 5 for j = 1 to i+1 do 6 Pk−1i=0 i+2 Pi+1 7 b =b·n Pk−1i=0 j=11 =Pk−1i=0 i+1 8 b =ni+1 9 c = 1 Pk−1i=0 1 =k 10 for j = 1 to i do 11 Pk−1i=0 i+1 Pi 12 c =c·n Pk−1i=0 j=11 =Pk−1i=0 i 13 b =ni 14 a =a+b−c Pk−1i=0 1 =k 15 a =a+ni+1−ni = 1+Pk−1i=0 ni+1−ni 16 return a 1 17 1+Pk−1i=0 ni+1−ni =nk(Teleskopsumme/geometrischeReihe) a)AnalysierenSiedieWost-Case-LaufzeitdesAlgorithmus.Dasbedeutet: • NotierenSiedieAnzahlderRechenschrittezeilenweiseinAbhängigkeitder Eingabegrößennund k. • SummierenSiedieGesamtanzahlderRechenschritte. • OrdnenSiedieasymptotischeLaufzeitinO-Notationein. GaußscheSummenformelPni=1i = n(n+1)2",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 5,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-0a1992e2a3c1",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-24401da9edbe",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-24401da9edbe",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung3.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger Lösung des 3. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen BesprechunginKalenderwoche19. Aufgabe 1Korrektheit (4 Punkte) GegebenseiderfolgendeAlgorithmuszurBerechnungdasProdukta·bfürzweiZahlena∈ N≥0und b∈N≥0. Produkt(a, b): 1. if b=0 then 2. return 0 3. return a+Produkt(a,b−1) BeweisenSiemithilfevonvollständigerInduktiondieKorrektheitdesAlgorithmus.Zeigen SiedazueinenInduktionsanfangfüreinegeeigneteInduktionsvariable,formulierenSieeine InduktionsannahmeundzeigenSieunterdiesereinenInduktionsschritt. Behauptung:Produkt(a,b)berechnet a·b. Beweis: durchInduktionüber b. Sei abeliebig. Induktionsanfang b=0 Da b = 0gilt,wirddieBedingunginZ.1erfülltundZ.2ausgeführt.Alsowird 0 zurückgegeben.Beobachte: 0=a·0=a·b DamitgiltdieBehauptungfür b=0.✓ Induktionsannahme/ Induktionsvorraussetzung (IV) Produkt(a,i)berechnet a·ifür 0≤i<b. Induktionsschritt b>0 Dab>0gilt,wirddieBedingunginZ.1nichterfülltundZ.3ausgeführt.Dortwird a+Produkt(a,b−1)zurückgegeben.LautIVberechnetProdukt(a,b−1)denWert a·(b−1),weil 0≤b−1<b.Danachwirdzurückgegeben: a+(a·(b−1))=a·b DamitgiltdieBehauptungfür b>0.✓",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 4,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-24401da9edbe",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-10a4e5432d36",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-10a4e5432d36",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung4.pdf",
+    "title": "Lösungsskizze 4 Seite 1",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 9,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-10a4e5432d36",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-ce685f57c358",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-ce685f57c358",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung4.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger 1. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum13.4.14:00Uhr. BesprechunginKalenderwoche16. Aufgabe 1Binäre Suche (2 Punkte) BetrachtenSiedasfolgendeFeldvonZahlen: A = [13,3,93,12,7,89,130,19,4,24,9] StrukturierenSiedieElementeindemFeldum,sodassBinäreSucheanwendbarist. FührenSieanschließenddieausderVorlesungbekannteMethodeBinäreSuche(A,3,1,11) aus,umindemFeld A[1,...,11]nachdemWert 3zusuchenundgebenSiedieAusgabe, sowiediebesuchtenTeilfelderdesAlgorithmusan. Umstrukturiereung=Sortierung A = [3,4,7,9,12,13,19,24,89,93,130] m = 6,A[m] = 13⇒l = 1,r = 6 [3,4,7,9,12,13] m = 3,A[m] = 7⇒l = 1,r = 3 [3,4,7] m = 2,A[m] = 4⇒l = 1,r = 2 [3,4] m = 1,A[m] = 3⇒l = 1,r = 1 [3] Ausgabe: 1",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 9,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-ce685f57c358",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-b61d549b46f5",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-b61d549b46f5",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung5.pdf",
+    "title": "Loesung5.pdf.xopp",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 7,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-b61d549b46f5",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-d020b1a9e285",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-d020b1a9e285",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung5.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger Beispiellösung zum 5. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum15.5.14:00Uhr. BesprechunginKalenderwoche22. Aufgabe 1Mastertheorem (2 + 2 + 2 Punkte) VerwendenSiedasMaster-Theorem,umfürdiefolgendenRekursionsgleichungenasym- ptotischeSchrankenanzugeben: ( a) T(n) = 9 n = 1 3·T(n3)+9 sonst f(n)≤γ3f(n3) a = 3 9≤γ3·9 b = 3 9≤ 133·9 f(n) = 9 9≤ 9 Wähle γ = 13 Fall3 T(n)∈O(alogbn) =O(3log3n) =O(n) ( b) T(n) = 1 n = 4 1·T(n2)+4 sonst f(n) =γ1f(n2) a = 1 4 =γ4 b = 2 4 = 1··4 f(n) = 4 4 = 4 Wähle γ = 1 Fall1 T(n)∈O(f(n)logn) =O(4logn) =O(logn)",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 9,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-d020b1a9e285",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-f4eb1fb11ce8",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-f4eb1fb11ce8",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung6.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger 6. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum27.5.14:00Uhr. BesprechunginKalenderwoche23. Aufgabe 1Dynamische Programmierung (3 + 1 Punkte) WendenSiedenAlgorithmus Rucksack(n,g,v,W)ausderVorlesungaufdiefolgende Eingabean.EsgibtfünfObjekteundderRucksackhatGesamtgewicht 6.KeinObjekt darfmehrmalsgewähltwerden.Esistalso n = 5und W = 8. Größe(g[i])undWerte(v[i])derObjektestehenunteninderfolgendenTabelle,für 1≤i≤n. Objekt g[i] v[i] 1 3 7 2 4 5 3 1 2 4 7 18 5 5 13 a)GebenSiedasFeldOptdesAlgorithmusinFormeinerTabellean. b)MarkierenSiedieAusgabedesAlgorithmusinIhrerTabelle. alteKlausuraufgabe 5 0 2 2 7 9 13 15 18 20 4 0 2 2 7 9 9 9 18 20 3 0 2 2 7 9 9 9 12 14 2 0 0 0 7 7 7 7 12 12 1 0 0 0 7 7 7 7 7 7 0 1 2 3 4 5 6 7 8",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 4,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-f4eb1fb11ce8",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-7d955b2b611b",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-7d955b2b611b",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung7.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger Lösung zum 7. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum5.6.14:00Uhr. BesprechunginKalenderwoche24. Aufgabe 1Dynamische Programmierung (3 + 3 + 2 + 2 + 2 Punkte) AlicebenötigtmehrHeizleistunginihremHaus.DahermöchtesieeinenneuenHeizkör- peranbringen.DafürmusssieimKellerentlangvonzweiWändenneueHeizungsrohre verlegen.ImkellerIhresOpasfindetsienochKupferrohrresteinverschiedenenLängen, undmehralsgenugRohrverbindungen.SiemisstundnotiertdieLängenderRohrstücke ineinemArray R = [r1,...,rℓ],mit ri∈N>0,für 1≤i≤ℓ.Außerdemmisstsiediezwei Wandlängen w1und w2 ∈ N>0,andenensiejeeindurchgehendesRohrentlanglegen muss. AllerdingshatAlicekeinenRohrschneider.DeswegenmöchteSiewissen,obsiedievor- handenenRohrstückeverwendenkann,umdiebeidenWändeentlangzulegenohne,diese schneidenzumüssen. a)Esbezeichne L(i,j,k)dieEntscheidung,obeszweidisjunkteTeilmengenderers- ten iRohrstückegibt,welchedieGesamtlängen jund khaben.Dasheißt,essei L(i,j,k) = 1,fallsesdisjunkteTeilmengen T1,T2⊆{1,...,i}mitPt∈T1rt =jund P t∈T2rt =kgibt,und L(i,j,k) = 0sonst. GebenSieeineRekursionsgleichungfür L(i,j,k)an. 1 ,falls j = 0∧k = 0 L(i,j,k) = 0 ,falls i = 0 0 ,falls j < 0∨k < 0 L(i−1,j−ri,k)∨L(i−1,j,k−ri)∨L(i−1,j,k) sonst b)BeweisenSiedieKorrektheitIhrerRekursionsgleichung. Behauptung:EsgiltL(i,j,k) = 1,fallsesdisjunkteTeilmengenT1,T2⊆{1,...,i} mitPt∈T1rt = jundPt∈T2rt = kgibt,und L(i,j,k) = 0sonst. Beweis: durch Induktionüber i, jund k. Induktionsanfang",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-7d955b2b611b",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-9a927aaab315",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-9a927aaab315",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung8.pdf",
+    "title": "Loesung8 V2.pdf.xopp",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 7,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-9a927aaab315",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-c2e829ae5a27",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c2e829ae5a27",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesung8.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger L\"osung zum 8. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum12.6.14:00Uhr. BesprechunginKalenderwoche25. Aufgabe 1Gierig (4 + 2 + 2 Punkte) BobmöchteinentlangeinerSeiteseinesGarteneineHeckepflanzen.Dafürwillerver- schiedeneSträucherverwenden,dieerallezumgleichenStückpreisvoneinemBekannten kaufenkann.DerBekanntehat n∈NSträucherzurVerfügung.Bobmöchteabermög- lichstwenigGeldausgeben. DiePflanzenbenötigenunterschiedlichenPlatz,umsichauszubreiten.FürStrauch i, 1≤i≤n,beschreibt sidenRadius(inMetern),indem iwachsenkann.Strauch ideckt also 2siMeterderStreckeab.EinArray S[1..n]enhaltedieseDaten. EssolleineStreckederLänge m,mit 0 < m≤ 2Pni=1si(inMetern),bepflanztwerden. Zielistes,dabeimöglichstwenigSträucherunterzubringen.JederStrauchkannnureinmal eingesetztwerden. FormalwirdeingierigerAlgorithmusgesucht,derfüreineEingabeeinesArrays S,der Arraylänge nundderLänge mdieminimaleAnzahlderPflanzenausgibt,diebenötigt werdenumeineHeckemitMindestlänge mzubilden.EsistkeinProblemfürBob,wenn dieHeckelängerwirdalsdievorgegebeneStrecke. si Beispiel: Gegebenseien n = 5Sträuchermit s1 = 3, s2 = 2, s3 = 8, s4 = 4und s5 = 6undeineStreckederLänge m = 30.DannkönnendieSträucher 1, 3und 5mit 2·3+2·8+2·6 = 34≥ 30anderStreckewachsen.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-c2e829ae5a27",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-79ae96ebbccf",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-e90dfcbbefa0",
+    "displayName": "Loesung9.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger 9. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum19.4.14:00Uhr. BesprechunginKalenderwoche26. Aufgabe 1Datenstrukturen (10 Punkte) EntwerfenSieeineDatenstruktur,dieallefolgendenOperationenin O(1)unterstützt. IndieserAufgabesindalleElementeausdemWertebereich {1,...,k}, und k ist eine Konstante. • Einfügen(x):FügteinElement xindieDatenstrukturein. • LöscheNeuestes:LöschtunterallenElementeninderDatenstrukturdas,waszu- letzteingefügtwurde. • LöscheÄltestes:LöschtunterallenElementeninderDatenstrukturdas,wasam frühesteneingefügtwurde. • Zähle(x):Gibtzurück,wieoft xaktuellinderDatenstrukturist. Beispiel: Nach der Sequenz Einfügen(8), Einfügen(8), Einfügen(3), Einfügen(8), Einfügen(5), LöscheÄltestes, Zähle(8)solldieDatenstrukturbeiderletztenOpe- ration 2zurückliefern,dadie 8nochzweimalinderDatenstrukturist. FürdievollePunktzahlwirderwartet,dassalleOperationeneineWorst-CaseLauf- zeit von O(1) haben. BeschreibenSieinwenigenkurzenSätzen,wieIhreDatenstrukturaufgebautistund welcheVerbundstypenfürdieUmsetztungbenötigtwerden.GebenSiedieImplementie- rungendergefordertenOperationeninPseudocodeanundanalysierenSiederenWorst- Case-Laufzeiten. WirsetzendieDatenstrukturdurcheinedoppeltverketteListeum.Daberverwendenwir einenVerbundstypenfuerdieElementederListe,derdengespeichertenWertx,einen ZeigeraufdasvorherigeundeinenZeigeraufdasnächsteObjektbeinhalten. ZusätzlichwirddasersteElement,sowiedasletzteElementseperatgespeichert.Wenn einneuesElementimmeramEndederListeeingefügtwird,istdasersteElementdas ÄltesteunddasletztedasNeueste.SomitkannfiegeforderteLaufzeitfürdieOperationen LöscheNeuestesund LöscheÄltesteseingehaltenwerden.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 7,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-79ae96ebbccf",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-20339ee50167",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-20339ee50167",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-e90dfcbbefa0",
+    "displayName": "Loesung9.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2024 NicoleFunk,JonathanLanger 9. Übungsblatt zurVorlesung Algorithmen und Datenstrukturen AbgabeüberIliasbiszum19.4.14:00Uhr. BesprechunginKalenderwoche26. Aufgabe 1Datenstrukturen (10 Punkte) EntwerfenSieeineDatenstruktur,dieallefolgendenOperationenin O(1)unterstützt. IndieserAufgabesindalleElementeausdemWertebereich {1,...,k}, und k ist eine Konstante. • Einfügen(x):FügteinElement xindieDatenstrukturein. • LöscheNeuestes:LöschtunterallenElementeninderDatenstrukturdas,waszu- letzteingefügtwurde. • LöscheÄltestes:LöschtunterallenElementeninderDatenstrukturdas,wasam frühesteneingefügtwurde. • Zähle(x):Gibtzurück,wieoft xaktuellinderDatenstrukturist. Beispiel: Nach der Sequenz Einfügen(8), Einfügen(8), Einfügen(3), Einfügen(8), Einfügen(5), LöscheÄltestes, Zähle(8)solldieDatenstrukturbeiderletztenOpe- ration 2zurückliefern,dadie 8nochzweimalinderDatenstrukturist. FürdievollePunktzahlwirderwartet,dassalleOperationeneineWorst-CaseLauf- zeit von O(1) haben. BeschreibenSieinwenigenkurzenSätzen,wieIhreDatenstrukturaufgebautistund welcheVerbundstypenfürdieUmsetztungbenötigtwerden.GebenSiedieImplementie- rungendergefordertenOperationeninPseudocodeanundanalysierenSiederenWorst- Case-Laufzeiten. WirsetzendieDatenstrukturdurcheinedoppeltverketteListeum.Daberverwendenwir einenVerbundstypenfuerdieElementederListe,derdengespeichertenWertx,einen ZeigeraufdasvorherigeundeinenZeigeraufdasnächsteObjektbeinhalten. ZusätzlichwirddasersteElement,sowiedasletzteElementseperatgespeichert.Wenn einneuesElementimmeramEndederListeeingefügtwird,istdasersteElementdas ÄltesteunddasletztedasNeueste.SomitkannfiegeforderteLaufzeitfürdieOperationen LöscheNeuestesund LöscheÄltesteseingehaltenwerden.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 7,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-79ae96ebbccf",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-39eb3d94f40a",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-39eb3d94f40a",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-9e4ca178d6ef",
+    "displayName": "LoesungKlausur1.pdf",
+    "title": "L¨osung 1.Klausur Info1 SoSe 21 A Aufgabe1 (6) Punkte Sein≥ 3 eine Dreierpotenz. F¨ur ein Feld vonn reelen ZahlenA und zwei nat¨urliche Zahlenl,r mit 1≤l≤r≤n sei der folgende Algorithmus deﬁniert. BerechneEtwas(A,l,r): 1 if (r−l+1 = 3) then 2 if (A[l]+A[l+1] = 42) oder (A[r−1]+A[r] = 42) then 3 returntrue 4 else 5 returnfalse 6m1 = (r−l+1)/3+l−1 7m2 = 2·(r−l+1)/3+l−1 8a = BerechneEtwas(A,l,m1) 9b = BerechneEtwas(A,m1+1,m2) 10c = BerechneEtwas(A,m2+1,r) 11d =false 12 if (A[m1−1]+A[m1] = 42) oder (A[m1]+A[m1+1] = 42) then 13 d =true 14 if (A[m2−1]+A[m2] = 42) oder (A[m2]+A[m2+1] = 42) then 15 d =true 16 returna oderb oderc oderd a)Geben Sie eine Rekursiongleichung an, welche die Worst-Case Laufzeit des Algorithmus BerechneEtwas(A,l,r) beschreibt. Initial wird der Algorithmus mitl = 1 undr =n aufge- rufen. SeiT(n) die Laufzeit des Algorithmus mitr−l+1 =n. Der Rekursionsabbruch in Z.1 bein = 3 brauchtO(1) Zeitschritte. Zeilen 8,9,10 brauchen jeweilsT(n/3) Zeitschritte. Der Rest brauchtO(1) Zeitschritte. Seic∈N eine hinreichend große Konstante. Dann gilt: { T(n)≤ c, n = 3 3·T(n/3)+c, n> 3 b)Ordnen Sie die Laufzeit des Algorithmus, mithilfe des Master-Theorems, einer m ¨oglichst langsam wachsenden Funktion inO-Notation zu. F¨urγ = 1/3 gilt:c =γ·3·c Fall 3 da 0<γ< 1. Daher istT(n)∈O(3log3n) =O(n) 1",
+    "authorityLevel": 1,
+    "category": "Prüfungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 16,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-39eb3d94f40a",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-720584558efd",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-720584558efd",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-9e4ca178d6ef",
+    "displayName": "LoesungKlausur1.pdf",
+    "title": "L¨osung 1.Klausur Info1 SoSe 21 A Aufgabe1 (6) Punkte Sein≥ 3 eine Dreierpotenz. F¨ur ein Feld vonn reelen ZahlenA und zwei nat¨urliche Zahlenl,r mit 1≤l≤r≤n sei der folgende Algorithmus deﬁniert. BerechneEtwas(A,l,r): 1 if (r−l+1 = 3) then 2 if (A[l]+A[l+1] = 42) oder (A[r−1]+A[r] = 42) then 3 returntrue 4 else 5 returnfalse 6m1 = (r−l+1)/3+l−1 7m2 = 2·(r−l+1)/3+l−1 8a = BerechneEtwas(A,l,m1) 9b = BerechneEtwas(A,m1+1,m2) 10c = BerechneEtwas(A,m2+1,r) 11d =false 12 if (A[m1−1]+A[m1] = 42) oder (A[m1]+A[m1+1] = 42) then 13 d =true 14 if (A[m2−1]+A[m2] = 42) oder (A[m2]+A[m2+1] = 42) then 15 d =true 16 returna oderb oderc oderd a)Geben Sie eine Rekursiongleichung an, welche die Worst-Case Laufzeit des Algorithmus BerechneEtwas(A,l,r) beschreibt. Initial wird der Algorithmus mitl = 1 undr =n aufge- rufen. SeiT(n) die Laufzeit des Algorithmus mitr−l+1 =n. Der Rekursionsabbruch in Z.1 bein = 3 brauchtO(1) Zeitschritte. Zeilen 8,9,10 brauchen jeweilsT(n/3) Zeitschritte. Der Rest brauchtO(1) Zeitschritte. Seic∈N eine hinreichend große Konstante. Dann gilt: { T(n)≤ c, n = 3 3·T(n/3)+c, n> 3 b)Ordnen Sie die Laufzeit des Algorithmus, mithilfe des Master-Theorems, einer m ¨oglichst langsam wachsenden Funktion inO-Notation zu. F¨urγ = 1/3 gilt:c =γ·3·c Fall 3 da 0<γ< 1. Daher istT(n)∈O(3log3n) =O(n) 1",
+    "authorityLevel": 1,
+    "category": "Prüfungslösung",
+    "evidenceType": "unknown",
+    "year": 2021,
+    "pageCount": 16,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-39eb3d94f40a",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-8810db64d0f1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8810db64d0f1",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "LoesungPB.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2022 JanHöckendorff,NicoleFunk LösungzumPräsenzblatt zurVorlesung Grundzüge der Informatik I BesprechunginKalenderwoche16. Aussagenlogik–Grundlagen Aussagen: z.B. A = die Eingabe ist groß B = Der Algorithmus löst das Problem mitWahrheitsbelegungen0oder1 Verknüpfungen: unär:z.,B.Negation ¬ binär:z.,B.Konjuktion ∧,Disjunktion ∨,Implikation =⇒,Äquivalenz ⇐⇒ A B ¬A A∧B A∨B A⇒B A⇔B 0 0 1 0 0 1 1 0 1 1 0 1 1 0 1 0 0 0 1 0 0 1 1 0 1 1 1 1 Aufgabe 1Aussagenlogik Vokal ungerade Vokal =⇒ ungerade 0 0 1 0 1 1 1 0 0 1 1 1 A = Das Problem ist leicht B = Der Algorithmus löst das Problem A =⇒ B O K 9 6 ? egal egal ?",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 6,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-8810db64d0f1",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-d2005423b398",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-d2005423b398",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesungskizze6.pdf",
+    "title": "Loesungskizze6",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "unofficial_solution",
+    "year": 2021,
+    "pageCount": 7,
+    "extractionSucceeded": false,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-d2005423b398",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-cac60f372056",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-cac60f372056",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "loesungsskizze 12.pdf",
+    "title": "A1 lösungsskizze 12 Seite 1",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 5,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-cac60f372056",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-10b5f48b8bcf",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-10b5f48b8bcf",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesungsskizze 7.pdf",
+    "title": "Lösungsskizze 7 Seite 1",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 5,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-10b5f48b8bcf",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-97a574565e91",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-97a574565e91",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Loesungsskizze9.pdf",
+    "title": "A1 Lösungsskizze 9 Seite 1",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 4,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-97a574565e91",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-5c05cfe2fcfa",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-5c05cfe2fcfa",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Organisatorisches.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2019,
+    "pageCount": 12,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-5c05cfe2fcfa",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-a66dd4b4981a",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-a66dd4b4981a",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "PK22L.pdf",
+    "title": "1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan Hockendor↵ ¨ Prob eklausur zur Vorlesung Grundzuge der Informatik 1¨ Die Prob eklausur ist nicht zulassungsrelevant! Die Bepunktung der Aufgab en dient zur Visualisierung des Bepunktungskonzept der eigentlichen Klausur. Der Umfang der Prob eklausur ist auf eine Bearb eitungszeit von 3 Stunden ausgelegt.",
+    "authorityLevel": 1,
+    "category": "Probeklausurlösung",
+    "evidenceType": "official_solution",
+    "year": 2022,
+    "pageCount": 18,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-a66dd4b4981a",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-cfa0492edc16",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-cfa0492edc16",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "PK23L 2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2023 Nicole Funk, Matthijs Ebb ens Prob eklausur zur Vorlesung Grundz ¨uge der Informatik 1 Besprechung in der Vorlesung in Kalenderwo che 28 Die Prob eklausur ist nicht zulassungsrelevant! Die Bepunktung der Aufgab en dient zur Visualisierung des Bepunktungskonzept der eigentlichen Klausur. Bitte notieren Sie die folgenden Angab en in deutlicher Blo ckschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise f”ur die Klausur: • Die Klausur b esteht aus 9 Aufgab en. Sollte Ihr Exemplar weniger Aufgab en enthalten, melden Sie sich bitte umgehend b ei der Klausuraufsicht. • Geb en Sie das Titelblatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreib en Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier b en”otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt eb enfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d ¨urfen nur von uns zur Verf”ugung gestelltes Papier und dokumentenechte Stifte (also insb esondere keine Bleistifte) verwenden. Verwenden Sie eb enfalls keine Stifte mit roter Farb e. Neb en einem handschriftlich b eidseitig b eschrieb enen DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches b eschrieb enes Blatt nutzen, geb en Sie dieses eb enfalls nach der Bearb eitung der Klausur mit ab. • Die Bearb eitungszeit b etr”agt 180 Minuten. Viel Erfolg! Aufgab e 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht",
+    "authorityLevel": 1,
+    "category": "Probeklausurlösung",
+    "evidenceType": "official_solution",
+    "year": 2023,
+    "pageCount": 14,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-cfa0492edc16",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-6ee0d3f4fa76",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-6ee0d3f4fa76",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "PraesenzLoesung.pdf",
+    "title": "Grundzüge der Informatik 1 Präsenzübung",
+    "authorityLevel": 2,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 37,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-6ee0d3f4fa76",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-999c60c6d368",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-999c60c6d368",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Praesenzuebung.pdf",
+    "title": "Prof. Dr. Christian Sohler Sommersemester 2021 Dr. Anja Rey, Nicole Funk, Jan Hö ckendor Präsenzuebung zur Vorlesung Grundzüge der Informatik I ohne Abgab e, Besprechung in der Kalenderwo che 16 Aufgab e 1 Aussagenlogik a) Auf einem Tisch liegen vier Karten mit je einem Buchstab en auf einer Seite und einer Zahl auf der anderen. Es soll gelten: Wenn auf einer Seite ein Vokal steht, dann steht auf der anderen Seite eine ungerade Zahl. Welche der Karten ( A, B , 3, 4) müssen umgedreht werden, um diese Regel zu üb erprüfen? b) Seien A und B zwei Aussagen, für die A =⇒ B gilt. Welche Aussagen sind äquivalent dazu? • A∧B • B =⇒ A •¬ A∨B •¬ B =⇒¬A c) Seien die Eingabe ist groÿ und der Algorithmus löst das Problem zwei Aussagen. Es gelte: Wenn die Eingabe ist groÿ gilt, dann gilt der Algorithmus löst das Problem . Welche Aussagen sind äuqivalent dazu? • Aus der Algorithmus löst das Problem folgt die Eingabe ist groÿ . • Aus der Algorithmus löst das Problem nicht folgt die Eingabe ist nicht groÿ . • Die Eingabe ist nicht groÿ o der der Algorithmus löst das Problem . • Die Eingabe ist groÿ und der Algorithmus löst das Problem . Aufgab e 2 Summen-Notation Es seien A = [a1,a2,...,an] ein aufsteigend sortiertes Array natürlicher Zahlen (also ai∈N, 1≤i≤n, und a1≤a2≤···≤an ) und k , 1≤k≤⌊n/2⌋, ein Index. A B 3 4",
+    "authorityLevel": 1,
+    "category": "Übung",
+    "evidenceType": "exercise",
+    "year": 2021,
+    "pageCount": 2,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-999c60c6d368",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-d233302bcf39",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-d233302bcf39",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Probeklausur 2.pdf",
+    "title": "1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan H¨ockendorﬀ Probeklausur zur Vorlesung Grundz¨uge der Informatik 1 Die Probeklausur ist nicht zulassungsrelevant! Die Bepunktung der Aufgaben dient zur Visualisierung des Bepunktungskonzept der eigentlichen Klausur. Der Umfang der Probeklausur ist auf eine Bearbeitungszeit von 3 Stunden ausgelegt.",
+    "authorityLevel": 1,
+    "category": "Probeklausur",
+    "evidenceType": "mock_exam",
+    "year": 2022,
+    "pageCount": 10,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-d233302bcf39",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-8f16b2505bbd",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Probeklausur.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2023 Nicole Funk, Matthijs Ebbens Probeklausur zur Vorlesung Grundz¨uge der Informatik 1 Besprechung in der Vorlesung in Kalenderwoche 28 Die Probeklausur ist nicht zulassungsrelevant! Die Bepunktung der Aufgaben dient zur Visualisierung des Bepunktungskonzept der eigentlichen Klausur. Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise f¨ur die Klausur: • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie das Titelblatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenen DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht",
+    "authorityLevel": 1,
+    "category": "Probeklausur",
+    "evidenceType": "mock_exam",
+    "year": 2023,
+    "pageCount": 11,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-8f16b2505bbd",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-fd725d118ee1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-fd725d118ee1",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "ProbeklausurLoesung.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2024 Nicole Funk, Jonathan Langer Probeklausur zur Vorlesung Algorithmen und Datenstrukturen Die Probeklausur ist nicht zulassungsrelevant! Die Bepunktung der Aufgaben dient zur Visualisierung des Bepunktungskonzept der eigentlichen Klausur. Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise f¨ur die Klausur: • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie das Titelblatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenen DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht",
+    "authorityLevel": 1,
+    "category": "Probeklausurlösung",
+    "evidenceType": "official_solution",
+    "year": 2024,
+    "pageCount": 15,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-fd725d118ee1",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-23b127de2279",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-23b127de2279",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "strategien.pdf",
+    "title": "Strategie und Notfall-Hacks für dieKlausur Klausur-Kompendium der Algorithmen Dieses Skript folgt dem Prinzip: Intuition zuerst — Formalismus danach. Automatisch generiert aus Vorlesungsmaterial",
+    "authorityLevel": 3,
+    "category": "Analysedokument",
+    "evidenceType": "generated_example",
+    "year": null,
+    "pageCount": 19,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-23b127de2279",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-966482ee029d",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-966482ee029d",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "struktur.pdf",
+    "title": "Systematische Struktur derKlausuraufgaben Klausur-Kompendium der Algorithmen Dieses Skript folgt dem Prinzip: Intuition zuerst — Formalismus danach. Automatisch generiert aus Vorlesungsmaterial",
+    "authorityLevel": 3,
+    "category": "Analysedokument",
+    "evidenceType": "generated_example",
+    "year": null,
+    "pageCount": 5,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-966482ee029d",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-25d6340b518c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Uebungen 0-9.pdf",
+    "title": "Prof. Dr. Christian Sohler Sommersemester 2026 Dr. Felix Hommelsheim Lösung zum 1. Übungsblatt zur Vorlesung Algorithmen und Datenstrukturen Abgab e üb er Ilias bis zum 22.04. 15:30 Uhr. Besprechung in der Wo che vom 27. April - 1. Mai. Aufgab e 1 Rekursion (4 Punkte) Geb en Sie in Pseudo co de einen rekursiven Algorithmus an, welcher für eine gegeb ene Zahl n∈Z ≥0 die Summe Pn 1 i=1 i2 b erechnet. SummeBruecheQuadriert(n) 1. if n= 0 then 2. return 0 3. else 4. return 1n2 +SummeBrueche(n−1)",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2026,
+    "pageCount": 63,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-25d6340b518c",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-b27d22aaa7cf",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-b27d22aaa7cf",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Uebungsblatt 1.pdf",
+    "title": "Prof. Dr. Christian Sohler Sommersemester 2021 Dr. Anja Rey, Nicole Funk, Jan Hö ckendor 1. Übungsblatt zur Vorlesung Grundzüge der Informatik I Abgab e üb er Ilias bis zum 21.4. 14:00 Uhr. Besprechung in Kalenderwo che 17. Aufgab e 1 (4 Punkte) Geb en Sie in Pseudo co de einen rekursiven Algorithmus an, welcher für eine gegeb ene Zahl n die Summe ∑ni=1i b erechnet. Aufgab e 2 (4 + 2 Punkte) a) Gegeb en sei ein Feld A mit n Zahlen und eine weitere Zahl x. Gesucht ist eine Zahl y in A mit kleinstem Abstand zu x. (eine Zahl A[i], so dass für alle i̸=j :|A[i]−x|≤|A[j]−x| gilt). Geb en Sie in Pseudo co de einen rekursiven Algorithmus an, welche aus einem gege- b enen Feld A für eine Zahl x eine solche Zahl y zurückgibt. b) Geb en Sie die Laufzeit ihres Algorithmus aus Teilaufgab e a) an. Aufgab e 3 (2 + 4 + 4) Punkte In den folgenden Teilaufgab en sind eine Problemstellung und ein rekursiver Algorithmus zum Lösen des Problems gegeb en. Jedo ch hab en sich Fehler in die Algorithmen einge- schlichen. Finden und korrigieren Sie die Fehler, so dass die b etro enen Algorithmen ihr Problem richtig lösen. Verändern Sie dab ei so wenig wie möglich an dem vorhandenen Pseudo co de! a) Gegeb en sei eine natürliche Zahl n. Der folgende Algorithmus soll rekursiv die Potenz 2n b erechnen. Potenz (n) 1. if n = 0 then return 0 2. return 2· Potenz (n−1) b) Gegeb en sei eine natürliche Zahl n. Es soll die Fakultät n! b erechnet werden, welche wie folgt de niert ist: n! =n·(n−1)·(n−2)·(n−3)·...·3·2·1, wob ei 0! = 1 ist.",
+    "authorityLevel": 1,
+    "category": "Übung",
+    "evidenceType": "exercise",
+    "year": 2021,
+    "pageCount": 2,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-b27d22aaa7cf",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-c9015f5962d4",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c9015f5962d4",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Uebungsblatt 2.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2021 Dr.AnjaRey,NicoleFunk,JanHöckendorﬀ 2. Übungsblatt zurVorlesung Grundzüge der Informatik I AbgabeüberIliasbiszum28.4.14:00Uhr. BesprechunginKalenderwoche18. Aufgabe 1Landau Notation (12 Punkte) WelchederfolgendenAussagensindkorrekt? 1. n3+12n2∈ Ω(n4) 2. 3n+6∈O(n3) 3. O(9n3)̸=O(n3) 4. 6log2(n)+18+n∈ Θ(log2(n)) 5. log2(n)−6∈ Ω(1) 6. 63n∈O(n2) BegründenSieihreAntwortmiteinemBeweisbzw.einemGegenbeispiel. Aufgabe 2 Laufzeitanalyse BetrachtenSiefolgendenAlgorithmus BerechneZahl(n, k): 1 a = 0 2 for i = 0 to k−1 do 3 b = 1 4 for j = 1 to i+1 do 5 b =b·n 6 c = 1 7 for j = 1 to i do 8 c =c·n 9 a =a+b−c 10 a =a+1 11 return a",
+    "authorityLevel": 1,
+    "category": "Übung",
+    "evidenceType": "exercise",
+    "year": 2021,
+    "pageCount": 2,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-c9015f5962d4",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-a20cdce4d758",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-a20cdce4d758",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Uebungsblatt3.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2021 Dr.AnjaRey,NicoleFunk,JanHöckendorﬀ 3. Übungsblatt zurVorlesung Grundzüge der Informatik I AbgabeüberIliasbiszum05.05.14:00Uhr. BesprechunginKalenderwoche19. Aufgabe 1 Merge-Operation (3 + 1 Punkte) BetrachtenSiedieFunktion Merge(A,p,q,r)ausderVorlesung.Diesefügtdiesortier- tenTeilarrays A[p..q]und A[q + 1..r], 1≤ p≤ q < r,zumsortiertenTeilarray A[p..r] zusammenundsolldabei O(n)Zeitschrittebenötigen,wobei n =r−p+1ist. a)SpeziﬁzierenSiedieMerge-FunktioninPseudocode.GebenSieaußerdemeinein- tuitiveErklärungzuIhremPseudocodean. b)AnalysierenSiedieWorst-Case-LaufzeitIhresAlgorithmus. Aufgabe 2Korrektheit (3 Punkte) Gegeben sei der folgende Algorithmus zur Berechnung der Zweierpotenz 2n für eine Zahl n∈N≥0. Zweierpotenz(n): 1. if n = 0 then 2. return 1 3. return 2·Zweierpotenz(n−1) BeweisenSiemithilfevonvollständigerInduktiondieKorrektheitdesAlgorithmus.Zeigen SiedazueinenInduktionsanfangfüreinegeigneteInduktionsvariable,formuliereneine InduktionsannahmeundzeigenunterdiesereinenInduktionsschritt. Aufgabe 3 Schleifeninvariante (1 + 3 + 1 Punkte) BetrachtenSiedenfolgendenAlgorithmus,deralsEingabeeinArray A = [a1,a2,...,an] derLänge nmit ai∈N, 1≤i≤nerhält. BerechneWert(A): 1. p = 1 2. for i = 1 to n do 3. p =p·A[i] 4. return p",
+    "authorityLevel": 1,
+    "category": "Übung",
+    "evidenceType": "exercise",
+    "year": 2021,
+    "pageCount": 2,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-a20cdce4d758",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-c0e0f8927c2c",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Uebungsblatt4.pdf",
+    "title": "Prof. Dr. Christian Sohler Sommersemester 2021 Dr. Anja Rey, Nicole Funk, Jan Hö ckendor 4. Übungsblatt zur Vorlesung Grundzüge der Informatik I Abgab e üb er Ilias bis zum 12.05. 14:00 Uhr. Besprechung in Kalenderwo che 20. Aufgab e 1 Binäre Suche (2 Punkte) Betrachten Sie das folgende Feld von Zahlen: A = [9,17,17,16,11,2,9,19,7,18,20] Strukturieren Sie die Elemente in dem Feld um, so dass Binäre Suche anwendbar ist. Führen Sie anschlieÿend die aus der Vorlesung b ekannte Metho de BinäreSuche(A,11,1,11) aus, um in dem Feld A[1,...,11] nach dem Wert 11 zu suchen und geb en Sie die Ausgab e, sowie die b esuchten Teilfelder des Algorithmus an. Aufgab e 2 Rekursionsgleichungen (3 + 3 + 3 Punkte) Geb en Sie für die folgenden Rekursionsgleichungen eine möglichst einfache und langsam wachsene Funktion g(n) an, so dass T(n)∈O(g(n)) ist. Gehen Sie dab ei wie folgt vor: Lösen Sie die Rekursionsgleichungen auf, um eine nicht rekursive Funktion zu erhalten, welche die Laufzeit in Abhängikeit von n b eschreibt und b eweisen Sie deren Korrektheit mittels Induktion. Drücken Sie nun Ihre b ewiesene Funktion durch O -Notation aus. { a) T(n) = 1 n = 1 9·T(n3)+n2 sonst { b) T(n) = 1 n = 1 8·T(n2)+7 sonst { c) T(n) = 1 n = 1 2·T(n4)+n sonst",
+    "authorityLevel": 1,
+    "category": "Übung",
+    "evidenceType": "exercise",
+    "year": 2021,
+    "pageCount": 2,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-c0e0f8927c2c",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-cdbc1b9d94b2",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-cdbc1b9d94b2",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Uebungsblatt5.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2021 Dr.AnjaRey,NicoleFunk,JanHöckendorﬀ 5. Übungsblatt zurVorlesung Grundzüge der Informatik I AbgabeüberIliasbiszum19.5.14:00Uhr. BesprechunginKalenderwoche22. Aufgabe 1Mastertheorem (6 Punkte) VerwendenSiedasMaster-Theorem,umfürdiefolgendenRekursionsgleichungenasym- ptotischeSchrankenanzugeben: • T(n)=3T(n/6)+n. • T(n)=4T(n/2)+6. • T(n)=3T(n/9)+√n. GebenSieinallenTeilaufgabenan,welchenTeildesTheoremsSienutzen,undüberprüfen Siestets,obdienötigeVoraussetzungerfülltist. Aufgabe 2Teile & Herrsche (4 + 2 + 2 Punkte) GegebenseieinzweidimensionalesFeld A[1..n][1..d]natürlicherZahlenundeinenatürli- cheZahl x. Beispiel: [[44,8,123], [12,42,24], [112,6,11]] a)EntwerfenSieeinen Teile-und-Herrsche-Algorithmus,welcherineinemEingabefeld AderLängen nund ddasElement xsucht.DerAlgorithmussolleine 1zurück geben,falls xin Aist,und 0sonst.BeschreibenSiedazuIhreIdeeinWortenund gebenSiedenAlgorithmusinPseudocodean. b)AnalysierenSiedieLaufzeitIhresAlgorithmus. c)ZeigenSiedieKorrektheitIhresAlgorithmus.",
+    "authorityLevel": 1,
+    "category": "Übung",
+    "evidenceType": "exercise",
+    "year": 2021,
+    "pageCount": 2,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-cdbc1b9d94b2",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-067d72f54358",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-067d72f54358",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Uebungsblatt6.pdf",
+    "title": "Prof. Dr. Christian Sohler Sommersemester 2021 Dr. Anja Rey, Nicole Funk, Jan Hö ckendor 6. Übungsblatt zur Vorlesung Grundzüge der Informatik I Abgab e üb er Ilias bis zum 02.06. 14:00 Uhr. Besprechung in Kalenderwo che 23. Aufgab e 1 Dynamische Programmierung (2 + 2 Punkte) Für eine Menge mit n Elementen b eschreibt die Stirling-Zahl zweiter Art Sn,k die Anzahl aller k -elementigen Partitionen. Die Zahl Sn,k lässt sich für k,n∈ N0 , k≤ n, durch folgende Rekursionsgleichung darstellen. 0 falls k =0,n>0 Sn,k = 1 falls k =n Sn−1,k−1+k·Sn−1,k sonst . a) Geb en Sie einen Algorithmus in Pseudo co de an, der Sn,k mit dynamischer Program- mierung b erechnet. b) Analysieren Sie die asymptotische Worst-Case-Laufzeit Ihres Algorithmus. Aufgab e 2 Dynamische Programmierung (2 + 2 + 2 + 2 Punkte) Bob räumt sein Homeo ce auf. Dab ei vertauscht er allerdings teilweise die chronologische Reihenfolge seiner Ordner. Nun interessiert ihn, welches die längste Sequenz in zeitlich absteigender Reihenfolge sortierter Ordner ist. Er notiert die Jahreszahlen in einem Array A = [a1,...,aℓ], in dem keine Zahlen dopp elt vorkommen. Darin sucht er nach einer längsten absteigenden Teilsequenz. Dies ist eine Teilsequenz mit maximaler Länge, deren Elemente absteigend sortiert sind. Dab ei muss die Sequenz nicht zusammenhängend sein. a) Es b ezeichne T(i) die Länge der längsten absteigenden Teilfolge im Teilar- ray [a1,...,ai], 1≤i≤ℓ. Geb en Sie eine Rekursionsgleichung für T(i) an. b) Entwerfen Sie basierend auf der Rekursionsgleichung in a) einen Algorithmus in Pseudo co de, der mit dynamischer Programmierung b ei Eingab e eines Arrays A = [a1,...,aℓ] eine längste absteigende Teilsequenz ausgibt. c) Analysieren Sie die asymptotische Worst-Case-Laufzeit Ihres Algorithmus. d) Beweisen Sie die Korrektheit Ihres Algorithmus mithilfe einer Schleifeninvariante.",
+    "authorityLevel": 1,
+    "category": "Übung",
+    "evidenceType": "exercise",
+    "year": 2021,
+    "pageCount": 2,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-067d72f54358",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-3cb938f5cfbe",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-3cb938f5cfbe",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Uebungsblatt7.pdf",
+    "title": "Prof. Dr. Christian Sohler Sommersemester 2021 Dr. Anja Rey, Nicole Funk, Jan Hö ckendor 7. Übungsblatt zur Vorlesung Grundzüge der Informatik I Abgab e üb er Ilias bis zum 09.06. 14:00 Uhr. Besprechung in Kalenderwo che 24. Aufgab e 1 Dynamische Programmierung (3 + 3 + 2 + 2 Punkte) Alice b enötigt mehr Stauraum in ihrem Homeo ce. Daher möchte sie Regalb öden an zwei Wänden anbringen. Auf dem Sp eicher ndet sie Holzbretter unterschiedlicher Längen. Sie misst und notiert die Längen in einem Array R = [r1,...,rℓ], ri∈ N>0 , 1≤ i≤ ℓ. Auÿerdem misst sie zwei Wandlängen w1 und w2∈N>0 , an denen sie je eine durchgehende Regaleb ene b efestigen möchte. Sie möchte wissen, ob sie die vorhandenen Bretter dafür ohne zu sägen verwenden kann. a) Es b ezeichne L(i,j,k) die Entscheidung, ob es zwei disjunkte Teilmengen der ersten i Bretter gibt, welche die Gesamtlänge von j und k hab en. Das heiÿt, es sei L(i,j,k)= 1, falls es disjunkte Teilmengen T1,T2⊆{1,...,i} mit ∑t∈T1rt =j und ∑t∈T2rt = k gibt, und L(i,j,k)=0 sonst. Geb en Sie eine Rekursionsgleichung für L(i,j,k) an. b) Entwerfen Sie, mithilfe der Rekursionsgleichung in a) einen Algorithmus in Pseu- do co de, der mit dynamischer Programmierung b ei Eingab e von R =[r1,...,rℓ], w1 und w2 entscheidet, ob mit disjunkten Teilmengen aus {r1,...,rℓ} die Längen w1 und w2 erreicht werden können. c) Analysieren Sie die asymptotische Worst-Case-Laufzeit Ihres Algorithmus. d) Zeigen Sie die Korrektheit Ihres Algorithmus, mithilfe einer Schleifeninvariante, d. h., zeigen Sie, dass der Algorithmus das Entscheidungsproblem korrekt löst.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 2,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-3cb938f5cfbe",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-b8e8d53c94f4",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-b8e8d53c94f4",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Uebungsblatt8.pdf",
+    "title": "Prof.Dr.ChristianSohler Sommersemester2021 Dr.AnjaRey,NicoleFunk,JanHöckendorﬀ 8. Übungsblatt zurVorlesung Grundzüge der Informatik I AbgabeüberIliasbiszum16.6.14:00Uhr. BesprechunginKalenderwoche25. Aufgabe 1Dynamische Programmierung (3 + 3 + 2 + 2 Punkte) WirbetrachtendasWechselgeldproblem:EsisteinBetrag B∈NinCentgegebenund dieminimaleAnzahlMünzengesucht,diebenötigtwird,umdenBetragdarzustellen.Die möglichenMünzwertesinddabeiinderMenge M ={m1,...,mn}gegeben. LösenSiediesesProblemnunmitdynamischerProgrammierung. a)Entwickeln Sie eine Rekursionsgleichung L(i,j) zur Berechnung der Lösung des Wechselgeldproblems.Dabeisoll L(i,j)dieminimaleAnzahlMünzenmitWerten aus{m1,...,mj}mit j≤ nbeschreiben,diebenötigtwird,umdenBetrag i≤ B darzustellen. b)EntwerfenSiemithilfederRekursionsgleichungina)einenAlgorithmus,dermitdy- namischerProgrammierungbeiEingabedesWertesBdieminimaleAnzahlMünzen ausgibt,diebenötigtwird,um Bdarzustellen,undkommentierenSiediesen. c)AnalysierenSiedieasymptotischeWorst-Case-LaufzeitIhresAlgorithmus. d)ZeigenSiedieKorrektheitIhresAlgorithmus.",
+    "authorityLevel": 1,
+    "category": "Übungslösung",
+    "evidenceType": "official_solution",
+    "year": 2021,
+    "pageCount": 2,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-b8e8d53c94f4",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-1cf99d50623a",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-1cf99d50623a",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Ultimate_AlgoDat_Cheat_Sheet.pdf",
+    "title": "1. Klausurstrategie & Aufgabenraster Kompakte Klausurhilfe - Algorithmen und Datenstrukturen · Seite 1/10 Aufgabentypen 1-9 Sofort-Erkennung A1-A4: Tracing / Ausführung - bekannte Algorithmen manuell ausführen: Graphen, Tabellen, Scheduling, Hashing, Union- minimale Anzahl + lokale Wahl -> Greedy. Find, RB-Bäume, MergeSort. optimale Sequenz/Tabelle/Budget/Pfad -> DP. A5: Schleifeninvariante - Behauptung, Invariante, vollständige Induktion, Terminierung. kürzeste Wege ohne negative Kanten -> Dijkstra. A6: Rekurrenz - Schranke bestimmen, dann O-Beweis per starker Induktion. negative Kanten / negativer Kreis -> Bellman-Ford. A7: Entwurf I - meist Greedy, alternativ Divide & Conquer. Algorithmus + WCL + Korrektheit. alle Paare kürzeste Wege -> Floyd-Warshall. A8: DP - Rekurrenz, Induktion, Bottom-up-Algorithmus, WCL. Spannbaum -> Kruskal/Prim. A9: Transfer - Graphalgorithmus modifizieren oder Datenstruktur entwerfen. Zyklen, Zeiten, Toposort, Komponenten -> DFS. ungewichtet kürzeste Wege -> BFS. Operationen in O(1) -> Liste/Array/Hash/Deque kombinieren. Zeitplan 180 min A1-A3: je 8-12 min. Nicht hängen bleiben. Standard-Antwortformat Designaufgaben A4: 12-18 min, besonders RB-Baum/Union-Find sauber zeichnen. A5: 15-20 min. 1. Idee: Welche Struktur/Strategie? A6: 15-20 min. 2. Pseudocode: Eingabe, Variablen, Schleifen, Rückgabe. A7: 25-32 min. 3. Worst-Case-Laufzeit: Zeilen/Operationen begründen. A8: 30-35 min. 4. Korrektheit: passendes Beweismuster. A9: 25-32 min. Greedy: Austauschargument / stays ahead. Reserve: 8-15 min zum Prüfen. DP: Induktion über Zustände. Regel: Bei 4-Punkte-Aufgaben nie 25 min verbrennen. A7-A9 tragen fast die Hälfte der Punkte. D&C: Induktion über Eingabegröße. Graph: bekannte Invariante des Algorithmus. Datenstruktur: Invarianten + jede Operation O(1)/O(log n) zeigen. Teilpunkte-Strategie Nie leer lassen: Prüfungs-Deutsch: Satzbausteine - Algorithmusidee in 1-2 Sätzen. - Pseudocode grob, aber eindeutig. - \"Wir zeigen die Behauptung per vollständiger Induktion über ...\" - Laufzeit immer angeben. - \"Nach Induktionsvoraussetzung sind alle kleineren Teilprobleme korrekt gelöst.\" - Bei DP: Basisfälle + max/min-Rekurrenz. - \"Die Rekurrenz betrachtet genau alle möglichen letzten Entscheidungen.\" - Bei Beweisen: IA/IV/IS/Schluss hinschreiben. - \"Die Wahl des Minimums/Maximums liefert daher den optimalen Wert.\" - Wenn schneller Algorithmus fehlt: korrekten langsamen Algorithmus angeben. - \"Angenommen, es gibt eine bessere Lösung O. Wir transformieren O ohne Verschlechterung in eine Lösung, die die Greedy- Korrektor sieht Struktur zuerst. Unscharfer Inhalt mit sauberem Schema gibt oft noch Punkte. Wahl enthält.\" Tracing-Fallen Mini-Check vor Abgabe Vor Rechnen markieren: Für jede Aufgabe prüfen: - Tie-Breaker: kleinster Index? alphabetisch? Knotenreihenfolge? - Rückgabewert angegeben? - Gerichteter vs. ungerichteter Graph. - Laufzeit mit Variablen aus Aufgabe? - Negative Kanten? Dann nicht Dijkstra. - Korrektheitsbeweis hat Schlussfolgerung? - Tabellenindexierung: 0-basiert oder 1-basiert? - Tabellen-Endfeld markiert? - Wird Endfeld markiert verlangt? - Alle geforderten Zwischenschritte gezeichnet? - Nach jeder Operation zeichnen oder nur Endzustand? - Bei Graphen: Reihenfolge der Knoten/Kanten notiert? - Rote Knoten in RB-Aufgaben manchmal weiß dargestellt. - Bei RB-Bäumen: Wurzel schwarz? keine roten Eltern-Kind-Paare? gleiche Schwarzhöhe? Exam-Use: Algorithmen erkennen -> Standardtemplate anwenden -> Laufzeit + Korrektheit nie vergessen.",
+    "authorityLevel": 4,
+    "category": "Spickzettel",
+    "evidenceType": "generated_example",
+    "year": null,
+    "pageCount": 10,
+    "extractionSucceeded": true,
+    "visualReviewRequired": false,
+    "canonicalDocumentId": "src-1cf99d50623a",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-14b893ae2213",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-14b893ae2213",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung1-Teil2.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2020,
+    "pageCount": 31,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-14b893ae2213",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-c2e38ab998fa",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c2e38ab998fa",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung10.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 32,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-c2e38ab998fa",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-87b59d0cd424",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-87b59d0cd424",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung11.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 38,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-87b59d0cd424",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-3664167d28eb",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-3664167d28eb",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung12.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 31,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-3664167d28eb",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-e8d5bdb2a460",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-e8d5bdb2a460",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung13.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 33,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-e8d5bdb2a460",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-f3da387145f4",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-f3da387145f4",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung14.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 37,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-f3da387145f4",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-30cdaae347ec",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-30cdaae347ec",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung15.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 45,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-30cdaae347ec",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-fda5a92fcd13",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-fda5a92fcd13",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung16.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 47,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-fda5a92fcd13",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-5c9eadb17ccc",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-5c9eadb17ccc",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung17.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 38,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-5c9eadb17ccc",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-859ed6e00e98",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-859ed6e00e98",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung18.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 48,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-859ed6e00e98",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-244011e5f707",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-244011e5f707",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung19.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 39,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-244011e5f707",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-89b40b178ad8",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-89b40b178ad8",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung2.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 33,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-89b40b178ad8",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-75c58e6f6ec8",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-75c58e6f6ec8",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung3.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 25,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-75c58e6f6ec8",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-d67eb8027232",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-d67eb8027232",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung4.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 32,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-d67eb8027232",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-bd56951daf23",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-bd56951daf23",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung5.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 42,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-bd56951daf23",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-3816dd0c6254",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-3816dd0c6254",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung6.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2021,
+    "pageCount": 37,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-3816dd0c6254",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-097ee0e1e694",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-097ee0e1e694",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung7.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 60,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-097ee0e1e694",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-53eb0b536ce6",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-53eb0b536ce6",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung8.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2022,
+    "pageCount": 39,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-53eb0b536ce6",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-9ae64a21140f",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-9ae64a21140f",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesung9.pdf",
+    "title": "PowerPoint-Präsentation",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2021,
+    "pageCount": 51,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-9ae64a21140f",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-baa07f0a207a",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Vorlesungen.pdf",
+    "title": "Informatik I Vorlesung 1 – Teil 2 (Grundbegriffe und Lernziele)",
+    "authorityLevel": 1,
+    "category": "Vorlesung",
+    "evidenceType": "unknown",
+    "year": 2020,
+    "pageCount": 1052,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-baa07f0a207a",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-28ccd3fc19df",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.04.jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.04.jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-28ccd3fc19df",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-20a1f0837025",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.05 (1).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.05 (1).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-20a1f0837025",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-4b6a35e42cd8",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.05 (2).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.05 (2).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-4b6a35e42cd8",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-7a161b7ad101",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.05 (3).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.05 (3).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-7a161b7ad101",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-7cf15c279b98",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.05 (4).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.05 (4).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-7cf15c279b98",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-99ddb2d62983",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.05 (5).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.05 (5).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-99ddb2d62983",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-147d1c7eab5a",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.05 (6).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.05 (6).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-147d1c7eab5a",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-9835660fab6e",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.05 (7).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.05 (7).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-9835660fab6e",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-f5806923681e",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.05 (8).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.05 (8).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-f5806923681e",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-3949f4396338",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.05 (9).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.05 (9).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-3949f4396338",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-22375a7589e7",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.05.jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.05.jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-22375a7589e7",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-1ed79aeda531",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.06 (1).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.06 (1).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-1ed79aeda531",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-6ab836d3b726",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.06 (2).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.06 (2).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-6ab836d3b726",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-035b9efe8241",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.06 (3).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.06 (3).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-035b9efe8241",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-0d4b0731e1a5",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.06 (4).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.06 (4).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-0d4b0731e1a5",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-fb334669ebf8",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.06 (5).jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.06 (5).jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-fb334669ebf8",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-748370c47b9a",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [],
+    "verificationStatus": "visual_review_required",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "WhatsApp Image 2024-09-01 at 14.45.06.jpeg",
+    "title": "WhatsApp Image 2024-09-01 at 14.45.06.jpeg",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": null,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-748370c47b9a",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-aaa10e08e0c3",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-aaa10e08e0c3",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "extraction_uncertain",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "zusammenfassgun1.pdf",
+    "title": "Inhalt ALGORITHMEN-EINFÜHRUNG ..................................................................................................................... 2 SPEICHERAUFBAU UND DATENSTRUKTUREN ............................................................................................. 2 LAUFZEITEN VON ALGORITHMEN ............................................................................................................... 3 LANDAU-NOTATION .................................................................................................................................... 4 HIERARCHIEN BZGL. O-NOTATION .............................................................................................................. 5 KORREKTHEITSBEWEISE .............................................................................................................................. 5 REKURSIVE ALGORITHMEN ......................................................................................................................... 6 Matrix-Multiplikation nach Strassen ..................................................................................................... 6 MASTER-THEOREM ..................................................................................................................................... 7 DYNAMISCHE PROGRAMMIERUNG ............................................................................................................ 7 SubsetSum Problem ................................................................................................................................ 8 Rucksackproblem .................................................................................................................................... 8 Längste gemeinsame Teilfolge ............................................................................................................... 9 GREEDY-ALGORITHMEN .............................................................................................................................. 9 Interval-Scheduling ............................................................................................................................... 10 Maximize-Minimum-Lateness .............................................................................................................. 10 DATENSTRUKTUREN .................................................................................................................................. 10 Binärbäume .......................................................................................................................................... 11 ROT-SCHWARZ-BÄUME ............................................................................................................................. 12 Direkte Adressierung ............................................................................................................................ 15 HASH-TABELLEN ........................................................................................................................................ 15 GRAPH-ALGORITHMEN ............................................................................................................................. 16 BREITENSUCHE .......................................................................................................................................... 19 DIJKSTRAS ALGORITHMUS ........................................................................................................................ 20 BELLMAN-FORD ALGORITHMUS ............................................................................................................... 21 FLOYD-WARSHALL ALGORITHMUS ............................................................................................................ 21 TIEFENSUCHE ............................................................................................................................................. 22 Klassifikation von Kanten ..................................................................................................................... 22 ALGORITHMUS VON KRUSKAL .................................................................................................................. 22 UNION-FIND DATENSTRUKTUR ................................................................................................................. 23 ALGORITHMUS VON PRIM ........................................................................................................................ 23",
+    "authorityLevel": 2,
+    "category": "Sonstiges",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": 23,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-aaa10e08e0c3",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-f4acc332df89",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-f4acc332df89",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "generated_unverified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "displayName": "Zusammenfassung Info.pdf",
+    "title": "Zusammenfassung Info",
+    "authorityLevel": 2,
+    "category": "Zusammenfassung",
+    "evidenceType": "unknown",
+    "year": null,
+    "pageCount": 45,
+    "extractionSucceeded": false,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-f4acc332df89",
+    "historicalFrequencyEligible": false
+  },
+  {
+    "id": "src-011d1ee23245",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-011d1ee23245",
+        "page": 1
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-b05448680a76",
+    "displayName": "ZweitKlausur2022 2.pdf",
+    "title": "Seite 1 Prof. Dr. Christian Sohler Sommersemester 2022 Nicole Funk, Jan H¨ockendorff Klausur zur Vorlesung Grundz¨uge der Informatik 1 17. September 2022 Bitte notieren Sie die folgenden Angaben in deutlicher Blockschrift: Name Vorname Matrikelnummer Studiengang Wichtige Hinweise: • Die Klausur besteht aus 9 Aufgaben. Sollte Ihr Exemplar weniger Aufgaben enthalten, melden Sie sich bitte umgehend bei der Klausuraufsicht. • Geben Sie dieses Blatt zusammen mit Ihren L¨osungen ab und entfernen Sie nicht die Klammerung der Klausur. • Schreiben Sie auf jedes Blatt Ihren Namen und Ihre Matrikelnummer. • Sollten Sie weiteres Papier ben¨otigen, wenden Sie sich an die Klausuraufsicht. Beschriften Sie jedes weitere Blatt ebenfalls sofort mit Ihrem Namen und Ihrer Matrikelnummer. • Sie d¨urfen nur von uns zur Verf¨ugung gestelltes Papier und dokumentenechte Stifte (also insbesondere keine Bleistifte) verwenden. Verwenden Sie ebenfalls keine Stifte mit roter Farbe. Neben einem handschriftlich beidseitig beschriebenem DIN A4 Blatt sind keine weiteren Hilfsmittel erlaubt. Sollten Sie ein solches beschriebenes Blatt nutzen, geben Sie dieses ebenfalls nach der Bearbeitung der Klausur mit ab. • Die Bearbeitungszeit betr¨agt 180 Minuten. Viel Erfolg! Aufgabe 1 2 3 4 5 6 7 8 9 Gesamt Note maximal 4 4 4 4 5 5 8 8 8 50 erreicht Unterschrift (Dozent / Pr¨ufer):",
+    "authorityLevel": 1,
+    "category": "Prüfung",
+    "evidenceType": "real_exam",
+    "year": 2022,
+    "pageCount": 15,
+    "extractionSucceeded": true,
+    "visualReviewRequired": true,
+    "canonicalDocumentId": "src-011d1ee23245",
+    "historicalFrequencyEligible": true
+  }
+]

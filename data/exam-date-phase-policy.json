@@ -1,0 +1,40 @@
+{
+  "policyVersion": "exam-date-phase-v1",
+  "phases": [
+    {
+      "phase": "past_exam_date",
+      "minDaysUntilExam": null,
+      "maxDaysUntilExam": -1,
+      "priorityMultiplier": 1,
+      "description": "Das gesetzte Prüfungsdatum liegt in der Vergangenheit; es wird keine künstliche Dringlichkeit erzeugt."
+    },
+    {
+      "phase": "final_review_phase",
+      "minDaysUntilExam": 0,
+      "maxDaysUntilExam": 6,
+      "priorityMultiplier": 1.25,
+      "description": "Kurze Wiederholung, Fehlerstabilisierung und begrenzte Simulationen."
+    },
+    {
+      "phase": "exam_practice_phase",
+      "minDaysUntilExam": 7,
+      "maxDaysUntilExam": 14,
+      "priorityMultiplier": 1.2,
+      "description": "Zeitbegrenzte Aufgaben und Probeklausuren werden höher gewichtet."
+    },
+    {
+      "phase": "consolidation_phase",
+      "minDaysUntilExam": 15,
+      "maxDaysUntilExam": 28,
+      "priorityMultiplier": 1.1,
+      "description": "Transfer, gemischte Übung und Slotbreite werden erhöht."
+    },
+    {
+      "phase": "foundation_phase",
+      "minDaysUntilExam": 29,
+      "maxDaysUntilExam": null,
+      "priorityMultiplier": 1,
+      "description": "Grundlagen und tiefe Trainer haben Vorrang."
+    }
+  ]
+}

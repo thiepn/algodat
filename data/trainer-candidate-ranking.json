@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "1.0.0",
+  "evaluatedAt": "2026-07-06",
+  "scoreScale": {
+    "0": "nicht erfüllt",
+    "1": "teilweise oder nur über nicht mehr zugängliche Metadaten belegt",
+    "2": "vollständig und aktuell prüfbar erfüllt"
+  },
+  "minimumRequirements": {
+    "minimumTotal": 20,
+    "mandatoryCriteria": [
+      "officialProblemSource",
+      "verifiedSolution",
+      "safeProblemSolutionLink",
+      "noOpenConflict",
+      "notGeneratedSolution",
+      "deterministicFlow",
+      "objectivePartialCredit",
+      "noUnresolvedReviewIssue"
+    ],
+    "mandatoryMinimum": 2
+  },
+  "criteria": [
+    "officialProblemSource",
+    "verifiedSolution",
+    "safeProblemSolutionLink",
+    "noOpenConflict",
+    "notGeneratedSolution",
+    "deterministicFlow",
+    "explicitTieBreaker",
+    "objectivePartialCredit",
+    "manageableVisualization",
+    "examRelevance",
+    "engineReusability",
+    "noUnresolvedReviewIssue"
+  ],
+  "selectedCandidateId": "rucksack-dp-tabelle",
+  "candidates": [
+    {
+      "id": "rucksack-dp-tabelle",
+      "title": "Rucksack-DP-Tabelle",
+      "scores": {
+        "officialProblemSource": 2,
+        "verifiedSolution": 2,
+        "safeProblemSolutionLink": 2,
+        "noOpenConflict": 2,
+        "notGeneratedSolution": 2,
+        "deterministicFlow": 2,
+        "explicitTieBreaker": 2,
+        "objectivePartialCredit": 2,
+        "manageableVisualization": 2,
+        "examRelevance": 2,
+        "engineReusability": 2,
+        "noUnresolvedReviewIssue": 2
+      },
+      "total": 24,
+      "gatePassed": true,
+      "sourceRefs": [
+        { "sourceId": "src-25d6340b518c", "page": 33, "role": "Aufgabe und Rekurrenz" },
+        { "sourceId": "src-25d6340b518c", "page": 34, "role": "offizielle Tabelle und Endwert" },
+        { "sourceId": "src-baa07f0a207a", "page": 390, "role": "Vorlesungsgrundlage Rucksack-DP" }
+      ],
+      "risks": [
+        "Die öffentliche Trainingsinstanz muss neu formuliert werden und darf die Originalaufgabe nicht reproduzieren.",
+        "Bei gleichem include/exclude-Wert wird der Tabellenwert eindeutig, eine Rekonstruktionswahl jedoch nicht; Phase 2 bewertet deshalb primär Tabellenwerte."
+      ],
+      "decision": "selected"
+    },
+    {
+      "id": "dijkstra",
+      "title": "Dijkstra-Tracing",
+      "scores": {
+        "officialProblemSource": 2,
+        "verifiedSolution": 0,
+        "safeProblemSolutionLink": 0,
+        "noOpenConflict": 2,
+        "notGeneratedSolution": 2,
+        "deterministicFlow": 2,
+        "explicitTieBreaker": 0,
+        "objectivePartialCredit": 2,
+        "manageableVisualization": 2,
+        "examRelevance": 2,
+        "engineReusability": 2,
+        "noUnresolvedReviewIssue": 1
+      },
+      "total": 17,
+      "gatePassed": false,
+      "sourceRefs": [
+        { "sourceId": "src-34f58aed1d9c", "page": 4, "role": "reale Klausuraufgabe 2022 ohne Lösung" },
+        { "sourceId": "src-baa07f0a207a", "page": 823, "role": "offizielle Vorlesungsregel" }
+      ],
+      "risks": [
+        "Kein zugängliches, sicher verknüpftes offizielles Lösungspaar.",
+        "Die Dijkstra-Tags der 2021-Seiten 5–6 widersprechen der Klausurmatrix, die A3 als Bellman-Ford ausweist.",
+        "Tie-Breaker der realen Aufgabe ist nicht zuverlässig belegt."
+      ],
+      "decision": "rejected"
+    },
+    {
+      "id": "union-find",
+      "title": "Union-Find",
+      "scores": {
+        "officialProblemSource": 2,
+        "verifiedSolution": 0,
+        "safeProblemSolutionLink": 1,
+        "noOpenConflict": 2,
+        "notGeneratedSolution": 1,
+        "deterministicFlow": 2,
+        "explicitTieBreaker": 2,
+        "objectivePartialCredit": 2,
+        "manageableVisualization": 2,
+        "examRelevance": 2,
+        "engineReusability": 2,
+        "noUnresolvedReviewIssue": 1
+      },
+      "total": 19,
+      "gatePassed": false,
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "page": 6, "role": "Probeklausuraufgabe" },
+        { "sourceId": "src-b6c99693279c", "page": 6, "role": "handschriftliche Bearbeitung" }
+      ],
+      "risks": ["Die aktuell zugängliche Lösung ist handschriftlich und nicht als offizielle Musterlösung belegbar."],
+      "decision": "rejected"
+    },
+    {
+      "id": "greedy-load-balancing",
+      "title": "GreedyLoadBalancing",
+      "scores": {
+        "officialProblemSource": 2,
+        "verifiedSolution": 0,
+        "safeProblemSolutionLink": 1,
+        "noOpenConflict": 2,
+        "notGeneratedSolution": 1,
+        "deterministicFlow": 2,
+        "explicitTieBreaker": 2,
+        "objectivePartialCredit": 2,
+        "manageableVisualization": 2,
+        "examRelevance": 2,
+        "engineReusability": 1,
+        "noUnresolvedReviewIssue": 1
+      },
+      "total": 18,
+      "gatePassed": false,
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "page": 2, "role": "Probeklausuraufgabe" },
+        { "sourceId": "src-b6c99693279c", "page": 2, "role": "handschriftliche Bearbeitung" }
+      ],
+      "risks": ["Die aktuell zugängliche Lösung ist handschriftlich und darf nicht als Produktionslösung dienen."],
+      "decision": "rejected"
+    },
+    {
+      "id": "prim",
+      "title": "Prim",
+      "scores": {
+        "officialProblemSource": 2,
+        "verifiedSolution": 0,
+        "safeProblemSolutionLink": 1,
+        "noOpenConflict": 2,
+        "notGeneratedSolution": 1,
+        "deterministicFlow": 1,
+        "explicitTieBreaker": 0,
+        "objectivePartialCredit": 2,
+        "manageableVisualization": 2,
+        "examRelevance": 2,
+        "engineReusability": 2,
+        "noUnresolvedReviewIssue": 1
+      },
+      "total": 16,
+      "gatePassed": false,
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "page": 3, "role": "Probeklausuraufgabe" },
+        { "sourceId": "src-b6c99693279c", "page": 3, "role": "handschriftliche Bearbeitung" }
+      ],
+      "risks": ["Kein belegter Tie-Breaker; aktuell zugängliche Lösung handschriftlich."],
+      "decision": "rejected"
+    },
+    {
+      "id": "floyd-warshall",
+      "title": "Floyd-Warshall",
+      "scores": {
+        "officialProblemSource": 2,
+        "verifiedSolution": 0,
+        "safeProblemSolutionLink": 1,
+        "noOpenConflict": 2,
+        "notGeneratedSolution": 1,
+        "deterministicFlow": 2,
+        "explicitTieBreaker": 2,
+        "objectivePartialCredit": 2,
+        "manageableVisualization": 2,
+        "examRelevance": 2,
+        "engineReusability": 2,
+        "noUnresolvedReviewIssue": 1
+      },
+      "total": 19,
+      "gatePassed": false,
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "page": 4, "role": "Probeklausuraufgabe" },
+        { "sourceId": "src-b6c99693279c", "page": 4, "role": "handschriftliche Bearbeitung" }
+      ],
+      "risks": ["Die aktuell zugängliche Lösung ist handschriftlich; vollständige Matrizen sind nicht offiziell typgesetzt belegt."],
+      "decision": "rejected"
+    },
+    {
+      "id": "mergesort",
+      "title": "MergeSort",
+      "scores": {
+        "officialProblemSource": 2,
+        "verifiedSolution": 1,
+        "safeProblemSolutionLink": 1,
+        "noOpenConflict": 2,
+        "notGeneratedSolution": 2,
+        "deterministicFlow": 2,
+        "explicitTieBreaker": 2,
+        "objectivePartialCredit": 2,
+        "manageableVisualization": 2,
+        "examRelevance": 2,
+        "engineReusability": 2,
+        "noUnresolvedReviewIssue": 1
+      },
+      "total": 21,
+      "gatePassed": false,
+      "sourceRefs": [{ "sourceId": "src-88179ac88dc5", "page": 1, "role": "historische Lösungsskizze, aktuell nicht separat zugänglich" }],
+      "risks": ["Metadaten belegen Lösungsskizzen, die zugehörigen Einzeldokumente sind im aktuellen Quellenordner nicht zugänglich."],
+      "decision": "rejected"
+    },
+    {
+      "id": "hashing",
+      "title": "Hashing",
+      "scores": {
+        "officialProblemSource": 2,
+        "verifiedSolution": 1,
+        "safeProblemSolutionLink": 1,
+        "noOpenConflict": 2,
+        "notGeneratedSolution": 2,
+        "deterministicFlow": 2,
+        "explicitTieBreaker": 1,
+        "objectivePartialCredit": 2,
+        "manageableVisualization": 2,
+        "examRelevance": 1,
+        "engineReusability": 1,
+        "noUnresolvedReviewIssue": 1
+      },
+      "total": 18,
+      "gatePassed": false,
+      "sourceRefs": [{ "sourceId": "src-88179ac88dc5", "page": 2, "role": "historische Lösungsskizze, aktuell nicht separat zugänglich" }],
+      "risks": ["Kein aktuell zugängliches vollständiges Aufgaben-/Lösungspaar mit belegter Hashfunktion und Kollisionsregel."],
+      "decision": "rejected"
+    },
+    {
+      "id": "lcs-tabelle",
+      "title": "LCS-Tabelle",
+      "scores": {
+        "officialProblemSource": 1,
+        "verifiedSolution": 1,
+        "safeProblemSolutionLink": 1,
+        "noOpenConflict": 2,
+        "notGeneratedSolution": 2,
+        "deterministicFlow": 2,
+        "explicitTieBreaker": 1,
+        "objectivePartialCredit": 2,
+        "manageableVisualization": 2,
+        "examRelevance": 2,
+        "engineReusability": 2,
+        "noUnresolvedReviewIssue": 1
+      },
+      "total": 19,
+      "gatePassed": false,
+      "sourceRefs": [{ "sourceId": "src-fd725d118ee1", "page": 2, "role": "Metadatensatz einer aktuell nicht zugänglichen Einzelquelle" }],
+      "risks": ["Die zugehörige Einzelquelle befindet sich nicht unter den aktuell verfügbaren privaten PDFs."],
+      "decision": "rejected"
+    }
+  ]
+}

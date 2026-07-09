@@ -1,0 +1,35 @@
+{
+  "id": "rubric-trainer-graph-floyd-warshall-v1",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase10-floyd-warshall-v1",
+  "topicIds": ["topic-1fa208a0ed89", "topic-f5f6e171c082"],
+  "taskType": "graph_algorithm_tracing",
+  "sourceRefs": [
+    { "sourceId": "src-8f16b2505bbd", "page": 4 },
+    { "sourceId": "src-35405e721f05", "page": 5 }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-08T00:00:00.000Z",
+  "duplicateGroupId": null,
+  "publicDistributionStatus": "public_safe",
+  "solutionValidationStatus": "engine_matches_official_method",
+  "trainerKind": "tracing",
+  "trainerId": "trainer-graph-floyd-warshall-v1",
+  "maxPoints": 40,
+  "examPoints": 4,
+  "criteria": [
+    { "id": "vertex-order", "label": "Knotenreihenfolge", "maxPoints": 4 },
+    { "id": "initial-matrix", "label": "Initialmatrix D(0)", "maxPoints": 6 },
+    { "id": "iteration-d1", "label": "Iteration D(1)", "maxPoints": 5 },
+    { "id": "iteration-d2", "label": "Iteration D(2)", "maxPoints": 5 },
+    { "id": "iteration-d3", "label": "Iteration D(3)", "maxPoints": 5 },
+    { "id": "iteration-d4", "label": "Iteration D(4)", "maxPoints": 5 },
+    { "id": "recurrence", "label": "Rekurrenznotation", "maxPoints": 5 },
+    { "id": "runtime", "label": "Laufzeit und Begründung", "maxPoints": 5 }
+  ],
+  "followUpErrorPolicy": "Matrixfehler werden pro Iteration isoliert; Folgefehler werden markiert, aber nicht als erfundene alternative Wahrheit akzeptiert.",
+  "caps": {
+    "solutionRevealedMaximumPoints": 24,
+    "hintsUsedMaximumPoints": 34
+  }
+}

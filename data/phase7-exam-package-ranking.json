@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": 7,
+  "selectedPackageId": "exam-package-kernkompetenz-v1",
+  "rankedOptions": [
+    {
+      "id": "historical-full-exam",
+      "title": "Vollständige historische Klausur",
+      "status": "rejected",
+      "score": 22,
+      "reason": "Kein reales historisches Profil besitzt für alle Slots public-safe Instanzen, Rubriken und deterministische Trainer."
+    },
+    {
+      "id": "standard-profile-disabled-gaps",
+      "title": "Standardprofil mit deaktivierten Lücken",
+      "status": "metadata_preview_only",
+      "score": 48,
+      "reason": "Didaktisch nützlich als Coverage-Vorschau, aber nicht als vollständige Klausur startbar."
+    },
+    {
+      "id": "exam-package-kernkompetenz-v1",
+      "title": "Kernkompetenz-Probeklausur V1",
+      "status": "selected",
+      "score": 94,
+      "reason": "Alle fünf bestehenden produktiven Trainer können public-safe, deterministisch und offline bewertet werden."
+    },
+    {
+      "id": "short-diagnostic-exam",
+      "title": "Kurze Diagnoseprüfung",
+      "status": "fallback_not_needed",
+      "score": 71,
+      "reason": "Technisch möglich, aber weniger breit als die Kernkompetenz-Probeklausur."
+    }
+  ]
+}

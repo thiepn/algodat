@@ -1,0 +1,280 @@
+[
+  {
+    "id": "variant-greedy-fitnesspunkte-guided",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8a588d5ddc35",
+        "page": 8
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Geführte Einstiegsinstanz",
+    "mode": "learn",
+    "difficulties": [
+      3,
+      1,
+      8
+    ],
+    "focus": "Sortierregel und Wertfaktoren erkennen",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-greedy-fitnesspunkte-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "inputObjects": "siehe Hauptlösung",
+          "objective": "siehe Hauptlösung",
+          "constraints": "siehe Hauptlösung",
+          "output": "siehe Hauptlösung"
+        },
+        "greedyRule": {
+          "sortingOrder": "siehe Hauptlösung",
+          "tieBreaker": "siehe Hauptlösung",
+          "decision": "siehe Hauptlösung",
+          "objectiveReason": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "preprocessing": "siehe Hauptlösung",
+          "accumulator": "siehe Hauptlösung",
+          "loop": "siehe Hauptlösung",
+          "returnStatement": "siehe Hauptlösung"
+        },
+        "proof": {
+          "claim": "siehe Hauptlösung",
+          "contradictionAssumption": "siehe Hauptlösung",
+          "exchangeStep": "siehe Hauptlösung",
+          "difference": "siehe Hauptlösung",
+          "conclusion": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "sorting": "siehe Hauptlösung",
+          "loop": "siehe Hauptlösung",
+          "total": "siehe Hauptlösung",
+          "memory": "siehe Hauptlösung"
+        }
+      },
+      "sampleInput": [
+        3,
+        1,
+        8
+      ],
+      "sortedOrder": [
+        8,
+        3,
+        1
+      ],
+      "optimalValue": 31,
+      "oracleValidationStatus": "brute_force_matches_greedy"
+    }
+  },
+  {
+    "id": "variant-greedy-fitnesspunkte-practice",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8a588d5ddc35",
+        "page": 8
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Standard-Übungsinstanz",
+    "mode": "practice",
+    "difficulties": [
+      6,
+      2,
+      10,
+      4
+    ],
+    "focus": "Pseudocode und Summe berechnen",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-greedy-fitnesspunkte-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "inputObjects": "siehe Hauptlösung",
+          "objective": "siehe Hauptlösung",
+          "constraints": "siehe Hauptlösung",
+          "output": "siehe Hauptlösung"
+        },
+        "greedyRule": {
+          "sortingOrder": "siehe Hauptlösung",
+          "tieBreaker": "siehe Hauptlösung",
+          "decision": "siehe Hauptlösung",
+          "objectiveReason": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "preprocessing": "siehe Hauptlösung",
+          "accumulator": "siehe Hauptlösung",
+          "loop": "siehe Hauptlösung",
+          "returnStatement": "siehe Hauptlösung"
+        },
+        "proof": {
+          "claim": "siehe Hauptlösung",
+          "contradictionAssumption": "siehe Hauptlösung",
+          "exchangeStep": "siehe Hauptlösung",
+          "difference": "siehe Hauptlösung",
+          "conclusion": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "sorting": "siehe Hauptlösung",
+          "loop": "siehe Hauptlösung",
+          "total": "siehe Hauptlösung",
+          "memory": "siehe Hauptlösung"
+        }
+      },
+      "sampleInput": [
+        6,
+        2,
+        10,
+        4
+      ],
+      "sortedOrder": [
+        10,
+        6,
+        4,
+        2
+      ],
+      "optimalValue": 68,
+      "oracleValidationStatus": "brute_force_matches_greedy"
+    }
+  },
+  {
+    "id": "variant-greedy-fitnesspunkte-exam",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-97414623dd81",
+        "page": 8
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Prüfungsinstanz",
+    "mode": "exam",
+    "difficulties": [
+      5,
+      11,
+      1,
+      8,
+      3
+    ],
+    "focus": "ohne Hinweise vollständig entwerfen",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-greedy-fitnesspunkte-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "inputObjects": "siehe Hauptlösung",
+          "objective": "siehe Hauptlösung",
+          "constraints": "siehe Hauptlösung",
+          "output": "siehe Hauptlösung"
+        },
+        "greedyRule": {
+          "sortingOrder": "siehe Hauptlösung",
+          "tieBreaker": "siehe Hauptlösung",
+          "decision": "siehe Hauptlösung",
+          "objectiveReason": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "preprocessing": "siehe Hauptlösung",
+          "accumulator": "siehe Hauptlösung",
+          "loop": "siehe Hauptlösung",
+          "returnStatement": "siehe Hauptlösung"
+        },
+        "proof": {
+          "claim": "siehe Hauptlösung",
+          "contradictionAssumption": "siehe Hauptlösung",
+          "exchangeStep": "siehe Hauptlösung",
+          "difference": "siehe Hauptlösung",
+          "conclusion": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "sorting": "siehe Hauptlösung",
+          "loop": "siehe Hauptlösung",
+          "total": "siehe Hauptlösung",
+          "memory": "siehe Hauptlösung"
+        }
+      },
+      "sampleInput": [
+        5,
+        11,
+        1,
+        8,
+        3
+      ],
+      "sortedOrder": [
+        11,
+        8,
+        5,
+        3,
+        1
+      ],
+      "optimalValue": 109,
+      "oracleValidationStatus": "brute_force_matches_greedy"
+    }
+  },
+  {
+    "id": "variant-greedy-fitnesspunkte-review",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8a588d5ddc35",
+        "page": 8
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Wiederholung Austauschbeweis",
+    "mode": "review",
+    "difficulties": [
+      2,
+      9
+    ],
+    "focus": "ein Fehlpaar argumentativ tauschen",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-greedy-fitnesspunkte-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "inputObjects": "siehe Hauptlösung",
+          "objective": "siehe Hauptlösung",
+          "constraints": "siehe Hauptlösung",
+          "output": "siehe Hauptlösung"
+        },
+        "greedyRule": {
+          "sortingOrder": "siehe Hauptlösung",
+          "tieBreaker": "siehe Hauptlösung",
+          "decision": "siehe Hauptlösung",
+          "objectiveReason": "siehe Hauptlösung"
+        },
+        "algorithm": {
+          "preprocessing": "siehe Hauptlösung",
+          "accumulator": "siehe Hauptlösung",
+          "loop": "siehe Hauptlösung",
+          "returnStatement": "siehe Hauptlösung"
+        },
+        "proof": {
+          "claim": "siehe Hauptlösung",
+          "contradictionAssumption": "siehe Hauptlösung",
+          "exchangeStep": "siehe Hauptlösung",
+          "difference": "siehe Hauptlösung",
+          "conclusion": "siehe Hauptlösung"
+        },
+        "complexity": {
+          "sorting": "siehe Hauptlösung",
+          "loop": "siehe Hauptlösung",
+          "total": "siehe Hauptlösung",
+          "memory": "siehe Hauptlösung"
+        }
+      },
+      "sampleInput": [
+        2,
+        9
+      ],
+      "sortedOrder": [
+        9,
+        2
+      ],
+      "optimalValue": 20,
+      "oracleValidationStatus": "brute_force_matches_greedy"
+    }
+  }
+]

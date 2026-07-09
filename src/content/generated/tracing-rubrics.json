@@ -1,0 +1,137 @@
+[
+  {
+    "id": "rubric-trainer-rucksack-dp-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-f5b57f47447c",
+      "topic-c0af8532bb72"
+    ],
+    "taskType": "dp_table_tracing",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 33
+      },
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 34
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "engine_matches_official_method",
+    "trainerId": "trainer-rucksack-dp-v1",
+    "maxPoints": 12,
+    "criteria": [
+      {
+        "id": "preflight",
+        "label": "Aufgabentyp und Voraussetzungen erkannt",
+        "maxPoints": 1
+      },
+      {
+        "id": "initialization",
+        "label": "Nullzeile korrekt initialisiert",
+        "maxPoints": 1
+      },
+      {
+        "id": "canonical_rows",
+        "label": "Tabellenwerte stimmen mit dem kanonischen Trace überein",
+        "maxPoints": 6
+      },
+      {
+        "id": "method_consistency",
+        "label": "Rekurrenz relativ zum eigenen vorherigen Zustand korrekt angewendet",
+        "maxPoints": 2
+      },
+      {
+        "id": "tie_breaker",
+        "label": "Gleichstandsregel korrekt angewendet",
+        "maxPoints": 1
+      },
+      {
+        "id": "final_output",
+        "label": "Opt[n,W] korrekt und vollständig angegeben",
+        "maxPoints": 1
+      }
+    ],
+    "followUpErrorPolicy": "Ergebnispunkte vergleichen mit dem kanonischen Zustand. Verfahrenspunkte prüfen zusätzlich die Rekurrenz relativ zur vorherigen Nutzerzeile, sodass ein früher Folgefehler spätere methodisch korrekte Schritte nicht vollständig entwertet.",
+    "caps": {
+      "solutionRevealedMaximumRatio": 0.7,
+      "incompleteMaximumRatio": 0.8
+    }
+  },
+  {
+    "id": "rubric-trainer-union-find-listen-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-0ba342914656",
+      "topic-595ab7b2682c"
+    ],
+    "taskType": "union_find_list_tracing",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 6
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 950
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-07",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "engine_matches_official_method",
+    "trainerId": "trainer-union-find-listen-v1",
+    "maxPoints": 12,
+    "criteria": [
+      {
+        "id": "preflight",
+        "label": "Repräsentation, Weighted Union und Tie-Breaker erkannt",
+        "maxPoints": 2
+      },
+      {
+        "id": "partition",
+        "label": "Mengenpartition nach jedem Kontrollpunkt korrekt",
+        "maxPoints": 2
+      },
+      {
+        "id": "representatives",
+        "label": "Repräsentanten und Repräsentantenzeiger korrekt",
+        "maxPoints": 2
+      },
+      {
+        "id": "list_order",
+        "label": "Listenreihenfolge und next-Zeiger korrekt",
+        "maxPoints": 2
+      },
+      {
+        "id": "metadata",
+        "label": "head, tail und size konsistent",
+        "maxPoints": 1
+      },
+      {
+        "id": "weighted_union",
+        "label": "Angehängte Liste und Gleichstandsregel korrekt",
+        "maxPoints": 2
+      },
+      {
+        "id": "complete_checkpoints",
+        "label": "Alle geforderten Zwischenzustände vollständig",
+        "maxPoints": 1
+      }
+    ],
+    "followUpErrorPolicy": "Strukturpunkte vergleichen die kanonische Partition. Verfahrenspunkte erkennen, ob die Weighted-Union-Entscheidung relativ zum eigenen vorherigen Zustand konsistent war.",
+    "caps": {
+      "solutionRevealedMaximumRatio": 0.7,
+      "incompleteMaximumRatio": 0.8
+    }
+  }
+]

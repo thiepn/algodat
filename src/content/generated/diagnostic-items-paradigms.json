@@ -1,0 +1,966 @@
+[
+  {
+    "id": "fd-paradigms-single-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-paradigms"
+    ],
+    "topicIds": [
+      "topic-c0af8532bb72",
+      "topic-3e0e72f97f6e",
+      "topic-aa4a4148523b"
+    ],
+    "examTaskNumbers": [
+      7,
+      8,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "single_choice",
+    "prompt": {
+      "stem": "Welche Aussage ist für „Entwurfsparadigmen unterscheiden“ belegt?",
+      "instruction": "Wähle genau eine Antwort."
+    },
+    "options": [
+      {
+        "id": "correct",
+        "text": "Divide-and-Conquer zerlegt in Teilprobleme und kombiniert deren Ergebnisse.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "wrong-a",
+        "text": "DP und D&C sind immer identisch.",
+        "correct": false,
+        "misconceptionId": "dp-dnc-mixup",
+        "distractorCategory": "algorithm_mixup",
+        "reasonIncorrect": "DP und Divide-and-Conquer werden nur wegen Rekursion gleichgesetzt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Überlappung und Zustandsspeicherung prüfen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "wrong-b",
+        "text": "Greedy benötigt nie einen Korrektheitsbeweis.",
+        "correct": false,
+        "misconceptionId": "greedy-proof-missing",
+        "distractorCategory": "result_vs_proof",
+        "reasonIncorrect": "Eine lokale Greedy-Regel wird ohne Korrektheitsargument akzeptiert.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Greedy-Beweisform wiederholen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "correct"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Entwurfsparadigmen unterscheiden: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "dp-dnc-mixup",
+      "greedy-proof-missing"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dp-entwurf-mine-v1",
+      "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-paradigms-multiple-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-paradigms"
+    ],
+    "topicIds": [
+      "topic-c0af8532bb72",
+      "topic-3e0e72f97f6e",
+      "topic-aa4a4148523b"
+    ],
+    "examTaskNumbers": [
+      7,
+      8,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "multiple_choice",
+    "prompt": {
+      "stem": "Welche zwei Aussagen gehören zur Kompetenz „Entwurfsparadigmen unterscheiden“?",
+      "instruction": "Wähle alle richtigen Antworten."
+    },
+    "options": [
+      {
+        "id": "fact-1",
+        "text": "Dynamische Programmierung nutzt überlappende Teilprobleme und gespeicherte Zustände.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "fact-2",
+        "text": "Divide-and-Conquer zerlegt in Teilprobleme und kombiniert deren Ergebnisse.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "distractor-a",
+        "text": "DP und D&C sind immer identisch.",
+        "correct": false,
+        "misconceptionId": "dp-dnc-mixup",
+        "distractorCategory": "algorithm_mixup",
+        "reasonIncorrect": "DP und Divide-and-Conquer werden nur wegen Rekursion gleichgesetzt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Überlappung und Zustandsspeicherung prüfen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "distractor-b",
+        "text": "Greedy benötigt nie einen Korrektheitsbeweis.",
+        "correct": false,
+        "misconceptionId": "greedy-proof-missing",
+        "distractorCategory": "result_vs_proof",
+        "reasonIncorrect": "Eine lokale Greedy-Regel wird ohne Korrektheitsargument akzeptiert.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Greedy-Beweisform wiederholen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "fact-1",
+        "fact-2"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_correct_option"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Entwurfsparadigmen unterscheiden: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "dp-dnc-mixup",
+      "greedy-proof-missing"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dp-entwurf-mine-v1",
+      "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-paradigms-true-false-reason",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-paradigms"
+    ],
+    "topicIds": [
+      "topic-c0af8532bb72",
+      "topic-3e0e72f97f6e",
+      "topic-aa4a4148523b"
+    ],
+    "examTaskNumbers": [
+      7,
+      8,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "true_false_reason",
+    "prompt": {
+      "stem": "Divide-and-Conquer zerlegt in Teilprobleme und kombiniert deren Ergebnisse.",
+      "instruction": "Entscheide Wahr/Falsch und wähle die passende Begründung."
+    },
+    "options": [
+      {
+        "id": "truth-true",
+        "text": "Wahr",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "truth-false",
+        "text": "Falsch",
+        "correct": false,
+        "misconceptionId": "greedy-proof-missing",
+        "distractorCategory": "result_vs_proof",
+        "reasonIncorrect": "Eine lokale Greedy-Regel wird ohne Korrektheitsargument akzeptiert.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Greedy-Beweisform wiederholen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "reason-source",
+        "text": "Begründung: Dynamische Programmierung nutzt überlappende Teilprobleme und gespeicherte Zustände.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "reason-trap",
+        "text": "Begründung: DP und D&C sind immer identisch.",
+        "correct": false,
+        "misconceptionId": "greedy-proof-missing",
+        "distractorCategory": "result_vs_proof",
+        "reasonIncorrect": "Eine lokale Greedy-Regel wird ohne Korrektheitsargument akzeptiert.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Greedy-Beweisform wiederholen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "truth-true"
+      ],
+      "correctReasonId": "reason-source"
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_component"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Entwurfsparadigmen unterscheiden: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "dp-dnc-mixup",
+      "greedy-proof-missing"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dp-entwurf-mine-v1",
+      "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-paradigms-matching",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-paradigms"
+    ],
+    "topicIds": [
+      "topic-c0af8532bb72",
+      "topic-3e0e72f97f6e",
+      "topic-aa4a4148523b"
+    ],
+    "examTaskNumbers": [
+      7,
+      8,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "matching",
+    "prompt": {
+      "stem": "Ordne die Begriffe zur Kompetenz „Entwurfsparadigmen unterscheiden“ zu.",
+      "instruction": "Wähle für jeden linken Begriff die passende rechte Beschreibung."
+    },
+    "options": [
+      {
+        "id": "left-0",
+        "text": "DP",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "right-0",
+        "text": "überlappende Teilprobleme und Zustände",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "left-1",
+        "text": "D&C",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "right-1",
+        "text": "zerlegen und kombinieren",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctPairs": {
+        "left-0": "right-0",
+        "left-1": "right-1"
+      }
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_pair"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Entwurfsparadigmen unterscheiden: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "dp-dnc-mixup",
+      "greedy-proof-missing"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dp-entwurf-mine-v1",
+      "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-paradigms-ordering",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-paradigms"
+    ],
+    "topicIds": [
+      "topic-c0af8532bb72",
+      "topic-3e0e72f97f6e",
+      "topic-aa4a4148523b"
+    ],
+    "examTaskNumbers": [
+      7,
+      8,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "ordering",
+    "prompt": {
+      "stem": "Bringe die Arbeitsschritte für „Entwurfsparadigmen unterscheiden“ in eine sinnvolle Reihenfolge.",
+      "instruction": "Nutze die Pfeil-Schaltflächen oder die Tastaturreihenfolge."
+    },
+    "options": [
+      {
+        "id": "step-0",
+        "text": "Problemstruktur erkennen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "step-1",
+        "text": "Paradigma wählen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Algorithmus formulieren",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Korrektheit begründen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOrderIds": [
+        "step-0",
+        "step-1",
+        "step-2",
+        "step-3"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 3,
+      "partialCredit": "adjacent_pairs"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Entwurfsparadigmen unterscheiden: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "dp-dnc-mixup",
+      "greedy-proof-missing"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dp-entwurf-mine-v1",
+      "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-paradigms-numeric",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-paradigms"
+    ],
+    "topicIds": [
+      "topic-c0af8532bb72",
+      "topic-3e0e72f97f6e",
+      "topic-aa4a4148523b"
+    ],
+    "examTaskNumbers": [
+      7,
+      8,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "numeric_short_answer",
+    "prompt": {
+      "stem": "Wie viele Bestandteile nennt die Entwurfsaufgabe: Idee, Algorithmus, Laufzeit, Korrektheit?",
+      "instruction": "Gib eine ganze Zahl ein."
+    },
+    "options": [],
+    "answerDefinition": {
+      "numericAnswer": 4,
+      "tolerance": 0
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Entwurfsparadigmen unterscheiden: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "dp-dnc-mixup",
+      "greedy-proof-missing"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dp-entwurf-mine-v1",
+      "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-paradigms-algorithm-selection",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-paradigms"
+    ],
+    "topicIds": [
+      "topic-c0af8532bb72",
+      "topic-3e0e72f97f6e",
+      "topic-aa4a4148523b"
+    ],
+    "examTaskNumbers": [
+      7,
+      8,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "algorithm_selection",
+    "prompt": {
+      "stem": "Welches Paradigma passt zu überlappenden Teilproblemen mit gespeicherten Zuständen?",
+      "instruction": "Wähle den passenden Algorithmus, Begriff oder die passende Struktur."
+    },
+    "options": [
+      {
+        "id": "dynamic_programming",
+        "text": "dynamic programming",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "divide_and_conquer",
+        "text": "divide and conquer",
+        "correct": false,
+        "misconceptionId": "greedy-proof-missing",
+        "distractorCategory": "result_vs_proof",
+        "reasonIncorrect": "Eine lokale Greedy-Regel wird ohne Korrektheitsargument akzeptiert.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Greedy-Beweisform wiederholen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "greedy",
+        "text": "greedy",
+        "correct": false,
+        "misconceptionId": "greedy-proof-missing",
+        "distractorCategory": "result_vs_proof",
+        "reasonIncorrect": "Eine lokale Greedy-Regel wird ohne Korrektheitsargument akzeptiert.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Greedy-Beweisform wiederholen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctAlgorithmId": "dynamic_programming"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Entwurfsparadigmen unterscheiden: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "dp-dnc-mixup",
+      "greedy-proof-missing"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dp-entwurf-mine-v1",
+      "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-paradigms-complexity-classification",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-paradigms"
+    ],
+    "topicIds": [
+      "topic-c0af8532bb72",
+      "topic-3e0e72f97f6e",
+      "topic-aa4a4148523b"
+    ],
+    "examTaskNumbers": [
+      7,
+      8,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "complexity_classification",
+    "prompt": {
+      "stem": "Klassifiziere „zerlegen und kombinieren“ als Paradigma.",
+      "instruction": "Wähle die passende Klassifikation."
+    },
+    "options": [
+      {
+        "id": "divide_and_conquer",
+        "text": "divide and conquer",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "queue",
+        "text": "queue",
+        "correct": false,
+        "misconceptionId": "greedy-proof-missing",
+        "distractorCategory": "result_vs_proof",
+        "reasonIncorrect": "Eine lokale Greedy-Regel wird ohne Korrektheitsargument akzeptiert.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Greedy-Beweisform wiederholen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "shortest_path",
+        "text": "shortest path",
+        "correct": false,
+        "misconceptionId": "greedy-proof-missing",
+        "distractorCategory": "result_vs_proof",
+        "reasonIncorrect": "Eine lokale Greedy-Regel wird ohne Korrektheitsargument akzeptiert.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Greedy-Beweisform wiederholen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-8f16b2505bbd",
+            "page": 10
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "divide_and_conquer"
+      ],
+      "complexityClass": "divide_and_conquer"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Entwurfsparadigmen unterscheiden: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "dp-dnc-mixup",
+      "greedy-proof-missing"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dp-entwurf-mine-v1",
+      "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  }
+]

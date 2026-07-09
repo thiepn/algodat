@@ -1,0 +1,311 @@
+{
+  "id": "trainer-graph-prim-mst-v1",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase12-prim-mst-v1",
+  "topicIds": ["topic-6a47a10f37e0", "topic-c4a698fc939e"],
+  "taskType": "graph_algorithm_tracing",
+  "sourceRefs": [
+    { "sourceId": "src-8f16b2505bbd", "page": 3, "label": "Prim-Probeklausuraufgabe" },
+    { "sourceId": "src-35405e721f05", "page": 3, "label": "Prim-Beispiellösung" },
+    { "sourceId": "src-baa07f0a207a", "page": 955, "label": "Prim-Idee" },
+    { "sourceId": "src-baa07f0a207a", "page": 958, "label": "Prim mit key und parent" },
+    { "sourceId": "src-baa07f0a207a", "page": 965, "label": "Prim-Laufzeit" }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-08",
+  "publicDistributionStatus": "public_safe",
+  "solutionValidationStatus": "deterministic_engine_verified",
+  "trainerKind": "tracing",
+  "graphFamily": "spanning_trees",
+  "title": "Prim-Tracing für minimale Spannbäume",
+  "shortTitle": "Prim-MST-Tracing",
+  "description": "Führe Prim auf einem neu formulierten ungerichteten gewichteten Graphen aus: Startknoten, key-/parent-Updates, sichere Kanten, Endbaum und Gesamtgewicht.",
+  "examTaskNumbers": [4],
+  "prerequisiteTopicIds": ["topic-6a47a10f37e0", "topic-c4a698fc939e"],
+  "relatedTrainerIds": ["trainer-graph-dijkstra-v1", "trainer-union-find-listen-v1"],
+  "learningObjectives": [
+    "einen gewichteten ungerichteten Graphen als MST-Eingabe lesen",
+    "den Startknoten und Initialzustand von Prim korrekt setzen",
+    "in jedem Schritt die nächste sichere Schnittkante bestimmen",
+    "key- und parent-Werte nach Vorlesungskonvention aktualisieren",
+    "den finalen Spannbaum und sein Gesamtgewicht bestimmen"
+  ],
+  "supportedModes": ["learn", "practice", "exam", "review"],
+  "estimatedDurationMinutes": 18,
+  "difficultyLevels": ["mittel"],
+  "engineVersion": "graph-tracing-prim-mst-v1",
+  "canonicalSolutionVersion": "prim-mst-canonical-v1",
+  "scoringModelVersion": "single-source-tracing-scoring-v1",
+  "masteryModelVersion": "mastery-v11",
+  "answerPayloadSchemaVersion": "prim-mst-answer-v1",
+  "rendererType": "prim_mst_trace",
+  "lazyLoader": "../features/trainer/GraphTracingTrainerPage",
+  "availabilityStatus": "available",
+  "problem": {
+    "id": "problem-graph-prim-mst-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase12-prim-mst-v1",
+    "topicIds": ["topic-6a47a10f37e0", "topic-c4a698fc939e"],
+    "taskType": "graph_algorithm_tracing",
+    "sourceRefs": [
+      { "sourceId": "src-8f16b2505bbd", "page": 3, "label": "Prim-Aufgabenformat" },
+      { "sourceId": "src-35405e721f05", "page": 3, "label": "Prim-Kantenreihenfolge" },
+      { "sourceId": "src-baa07f0a207a", "page": 958, "label": "key-/parent-Konvention" }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "algorithm": "prim",
+    "contentOrigin": "source_aligned_generated_exercise",
+    "historicalExamTextIncluded": false,
+    "graphKind": "weighted_undirected",
+    "vertices": ["A", "B", "C", "D", "E", "F"],
+    "edges": [
+      { "from": "A", "to": "B", "weight": 2 },
+      { "from": "A", "to": "C", "weight": 5 },
+      { "from": "B", "to": "C", "weight": 4 },
+      { "from": "B", "to": "D", "weight": 3 },
+      { "from": "C", "to": "D", "weight": 6 },
+      { "from": "C", "to": "E", "weight": 7 },
+      { "from": "D", "to": "E", "weight": 1 },
+      { "from": "D", "to": "F", "weight": 8 },
+      { "from": "E", "to": "F", "weight": 9 }
+    ],
+    "vertexOrder": ["A", "B", "C", "D", "E", "F"],
+    "startVertex": "A",
+    "requiredOutput": "complete_key_parent_edge_order_and_total_weight_trace",
+    "tiePolicy": "Die Hauptinstanz enthält keine Auswahlgleichstände; es wird keine unbelegte Tie-Breaker-Regel benötigt.",
+    "multipleMstPolicy": "Der kanonische Trace ist strict; alternative Endbäume werden semantisch nur über gültigen Spannbaum und Oracle-Minimalgewicht bewertet.",
+    "runtime": "O(|E| log |V|)",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "prim-mst-canonical-v1",
+      "structuredAnswer": {
+        "startVertex": "A",
+        "selectedVertices": "A, B, D, E, C, F",
+        "selectedEdges": "A-B, B-D, D-E, B-C, D-F",
+        "keyTable": "0: A=0 B=∞ C=∞ D=∞ E=∞ F=∞\n1: A=0 B=2 C=5 D=∞ E=∞ F=∞\n2: A=0 B=2 C=4 D=3 E=∞ F=∞\n3: A=0 B=2 C=4 D=3 E=1 F=8\n4: A=0 B=2 C=4 D=3 E=1 F=8\n5: A=0 B=2 C=4 D=3 E=1 F=8\n6: A=0 B=2 C=4 D=3 E=1 F=8",
+        "parentTable": "0: A=NIL B=NIL C=NIL D=NIL E=NIL F=NIL\n1: A=NIL B=A C=A D=NIL E=NIL F=NIL\n2: A=NIL B=A C=B D=B E=NIL F=NIL\n3: A=NIL B=A C=B D=B E=D F=D\n4: A=NIL B=A C=B D=B E=D F=D\n5: A=NIL B=A C=B D=B E=D F=D\n6: A=NIL B=A C=B D=B E=D F=D",
+        "totalWeight": "18",
+        "safeEdgeExplanation": "In jeder Runde wählt Prim eine Kante minimalen Gewichts über den Schnitt zwischen Baum und Restgraph; nach dem Schnittsatz ist diese Kante sicher.",
+        "runtime": "O(|E| log |V|)"
+      },
+      "vertexOrder": ["A", "B", "C", "D", "E", "F"],
+      "startVertex": "A",
+      "steps": [
+        {
+          "iteration": 0,
+          "selectedVertex": null,
+          "selectedEdge": null,
+          "keys": { "A": 0, "B": null, "C": null, "D": null, "E": null, "F": null },
+          "parents": { "A": null, "B": null, "C": null, "D": null, "E": null, "F": null },
+          "treeVertices": [],
+          "selectedEdges": [],
+          "totalWeight": 0
+        },
+        {
+          "iteration": 1,
+          "selectedVertex": "A",
+          "selectedEdge": null,
+          "keys": { "A": 0, "B": 2, "C": 5, "D": null, "E": null, "F": null },
+          "parents": { "A": null, "B": "A", "C": "A", "D": null, "E": null, "F": null },
+          "treeVertices": ["A"],
+          "selectedEdges": [],
+          "totalWeight": 0
+        },
+        {
+          "iteration": 2,
+          "selectedVertex": "B",
+          "selectedEdge": "A-B",
+          "keys": { "A": 0, "B": 2, "C": 4, "D": 3, "E": null, "F": null },
+          "parents": { "A": null, "B": "A", "C": "B", "D": "B", "E": null, "F": null },
+          "treeVertices": ["A", "B"],
+          "selectedEdges": ["A-B"],
+          "totalWeight": 2
+        },
+        {
+          "iteration": 3,
+          "selectedVertex": "D",
+          "selectedEdge": "B-D",
+          "keys": { "A": 0, "B": 2, "C": 4, "D": 3, "E": 1, "F": 8 },
+          "parents": { "A": null, "B": "A", "C": "B", "D": "B", "E": "D", "F": "D" },
+          "treeVertices": ["A", "B", "D"],
+          "selectedEdges": ["A-B", "B-D"],
+          "totalWeight": 5
+        },
+        {
+          "iteration": 4,
+          "selectedVertex": "E",
+          "selectedEdge": "D-E",
+          "keys": { "A": 0, "B": 2, "C": 4, "D": 3, "E": 1, "F": 8 },
+          "parents": { "A": null, "B": "A", "C": "B", "D": "B", "E": "D", "F": "D" },
+          "treeVertices": ["A", "B", "D", "E"],
+          "selectedEdges": ["A-B", "B-D", "D-E"],
+          "totalWeight": 6
+        },
+        {
+          "iteration": 5,
+          "selectedVertex": "C",
+          "selectedEdge": "B-C",
+          "keys": { "A": 0, "B": 2, "C": 4, "D": 3, "E": 1, "F": 8 },
+          "parents": { "A": null, "B": "A", "C": "B", "D": "B", "E": "D", "F": "D" },
+          "treeVertices": ["A", "B", "D", "E", "C"],
+          "selectedEdges": ["A-B", "B-D", "D-E", "B-C"],
+          "totalWeight": 10
+        },
+        {
+          "iteration": 6,
+          "selectedVertex": "F",
+          "selectedEdge": "D-F",
+          "keys": { "A": 0, "B": 2, "C": 4, "D": 3, "E": 1, "F": 8 },
+          "parents": { "A": null, "B": "A", "C": "B", "D": "B", "E": "D", "F": "D" },
+          "treeVertices": ["A", "B", "D", "E", "C", "F"],
+          "selectedEdges": ["A-B", "B-D", "D-E", "B-C", "D-F"],
+          "totalWeight": 18
+        }
+      ],
+      "mstEdges": ["A-B", "B-D", "D-E", "B-C", "D-F"],
+      "totalWeight": 18,
+      "runtime": "O(|E| log |V|)",
+      "oracleValidationStatus": "generated_oracle_verified",
+      "multipleMstPolicy": "strict_no_ties"
+    },
+    "variants": [
+      {
+        "id": "variant-prim-mst-v1-practice",
+        "contentVersion": "phase12-prim-mst-v1",
+        "sourceRefs": [
+          { "sourceId": "src-baa07f0a207a", "page": 955, "label": "Prim-Idee" },
+          { "sourceId": "src-baa07f0a207a", "page": 958, "label": "Prim mit key und parent" }
+        ],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Prim-Spur ohne Auswahlgleichstand",
+        "mode": "practice",
+        "graphKind": "weighted_undirected",
+        "vertices": ["A", "B", "C", "D", "E", "F"],
+        "edges": [
+          { "from": "A", "to": "B", "weight": 2 },
+          { "from": "A", "to": "C", "weight": 5 },
+          { "from": "B", "to": "C", "weight": 4 },
+          { "from": "B", "to": "D", "weight": 3 },
+          { "from": "C", "to": "D", "weight": 6 },
+          { "from": "C", "to": "E", "weight": 7 },
+          { "from": "D", "to": "E", "weight": 1 },
+          { "from": "D", "to": "F", "weight": 8 },
+          { "from": "E", "to": "F", "weight": 9 }
+        ],
+        "focus": "Startknoten, sichere Kante, key-/parent-Tabelle und Gesamtgewicht",
+        "canonicalSolution": {
+          "canonicalSolutionVersion": "prim-mst-canonical-v1",
+          "structuredAnswer": {
+            "startVertex": "A",
+            "selectedVertices": "A, B, D, E, C, F",
+            "selectedEdges": "A-B, B-D, D-E, B-C, D-F",
+            "keyTable": "0: A=0 B=∞ C=∞ D=∞ E=∞ F=∞\n1: A=0 B=2 C=5 D=∞ E=∞ F=∞\n2: A=0 B=2 C=4 D=3 E=∞ F=∞\n3: A=0 B=2 C=4 D=3 E=1 F=8\n4: A=0 B=2 C=4 D=3 E=1 F=8\n5: A=0 B=2 C=4 D=3 E=1 F=8\n6: A=0 B=2 C=4 D=3 E=1 F=8",
+            "parentTable": "0: A=NIL B=NIL C=NIL D=NIL E=NIL F=NIL\n1: A=NIL B=A C=A D=NIL E=NIL F=NIL\n2: A=NIL B=A C=B D=B E=NIL F=NIL\n3: A=NIL B=A C=B D=B E=D F=D\n4: A=NIL B=A C=B D=B E=D F=D\n5: A=NIL B=A C=B D=B E=D F=D\n6: A=NIL B=A C=B D=B E=D F=D",
+            "totalWeight": "18",
+            "safeEdgeExplanation": "In jeder Runde wählt Prim eine Kante minimalen Gewichts über den Schnitt zwischen Baum und Restgraph; nach dem Schnittsatz ist diese Kante sicher.",
+            "runtime": "O(|E| log |V|)"
+          },
+          "vertexOrder": ["A", "B", "C", "D", "E", "F"],
+          "startVertex": "A",
+          "steps": [
+            {
+              "iteration": 0,
+              "selectedVertex": null,
+              "selectedEdge": null,
+              "keys": { "A": 0, "B": null, "C": null, "D": null, "E": null, "F": null },
+              "parents": { "A": null, "B": null, "C": null, "D": null, "E": null, "F": null },
+              "treeVertices": [],
+              "selectedEdges": [],
+              "totalWeight": 0
+            },
+            {
+              "iteration": 1,
+              "selectedVertex": "A",
+              "selectedEdge": null,
+              "keys": { "A": 0, "B": 2, "C": 5, "D": null, "E": null, "F": null },
+              "parents": { "A": null, "B": "A", "C": "A", "D": null, "E": null, "F": null },
+              "treeVertices": ["A"],
+              "selectedEdges": [],
+              "totalWeight": 0
+            },
+            {
+              "iteration": 2,
+              "selectedVertex": "B",
+              "selectedEdge": "A-B",
+              "keys": { "A": 0, "B": 2, "C": 4, "D": 3, "E": null, "F": null },
+              "parents": { "A": null, "B": "A", "C": "B", "D": "B", "E": null, "F": null },
+              "treeVertices": ["A", "B"],
+              "selectedEdges": ["A-B"],
+              "totalWeight": 2
+            },
+            {
+              "iteration": 3,
+              "selectedVertex": "D",
+              "selectedEdge": "B-D",
+              "keys": { "A": 0, "B": 2, "C": 4, "D": 3, "E": 1, "F": 8 },
+              "parents": { "A": null, "B": "A", "C": "B", "D": "B", "E": "D", "F": "D" },
+              "treeVertices": ["A", "B", "D"],
+              "selectedEdges": ["A-B", "B-D"],
+              "totalWeight": 5
+            },
+            {
+              "iteration": 4,
+              "selectedVertex": "E",
+              "selectedEdge": "D-E",
+              "keys": { "A": 0, "B": 2, "C": 4, "D": 3, "E": 1, "F": 8 },
+              "parents": { "A": null, "B": "A", "C": "B", "D": "B", "E": "D", "F": "D" },
+              "treeVertices": ["A", "B", "D", "E"],
+              "selectedEdges": ["A-B", "B-D", "D-E"],
+              "totalWeight": 6
+            },
+            {
+              "iteration": 5,
+              "selectedVertex": "C",
+              "selectedEdge": "B-C",
+              "keys": { "A": 0, "B": 2, "C": 4, "D": 3, "E": 1, "F": 8 },
+              "parents": { "A": null, "B": "A", "C": "B", "D": "B", "E": "D", "F": "D" },
+              "treeVertices": ["A", "B", "D", "E", "C"],
+              "selectedEdges": ["A-B", "B-D", "D-E", "B-C"],
+              "totalWeight": 10
+            },
+            {
+              "iteration": 6,
+              "selectedVertex": "F",
+              "selectedEdge": "D-F",
+              "keys": { "A": 0, "B": 2, "C": 4, "D": 3, "E": 1, "F": 8 },
+              "parents": { "A": null, "B": "A", "C": "B", "D": "B", "E": "D", "F": "D" },
+              "treeVertices": ["A", "B", "D", "E", "C", "F"],
+              "selectedEdges": ["A-B", "B-D", "D-E", "B-C", "D-F"],
+              "totalWeight": 18
+            }
+          ],
+          "mstEdges": ["A-B", "B-D", "D-E", "B-C", "D-F"],
+          "totalWeight": 18,
+          "runtime": "O(|E| log |V|)",
+          "oracleValidationStatus": "generated_oracle_verified",
+          "multipleMstPolicy": "strict_no_ties"
+        }
+      }
+    ]
+  },
+  "hints": [
+    {
+      "id": "hint-prim-start",
+      "level": 1,
+      "text": "Setze key[A]=0 und alle anderen key-Werte zunächst auf ∞; alle parent-Werte beginnen mit NIL."
+    },
+    {
+      "id": "hint-prim-cut",
+      "level": 2,
+      "text": "Betrachte immer nur Kanten, die den aktuellen Baum mit einem noch nicht aufgenommenen Knoten verbinden."
+    },
+    {
+      "id": "hint-prim-parent",
+      "level": 3,
+      "text": "Ein parent-Wert ändert sich nur, wenn eine neu betrachtete Kante einen kleineren key-Wert liefert."
+    }
+  ]
+}

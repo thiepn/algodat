@@ -1,0 +1,30 @@
+{
+  "id": "rubric-trainer-rucksack-dp-v1",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase2-source",
+  "trainerId": "trainer-rucksack-dp-v1",
+  "topicIds": ["topic-f5b57f47447c", "topic-c0af8532bb72"],
+  "taskType": "dp_table_tracing",
+  "sourceRefs": [
+    { "sourceId": "src-25d6340b518c", "page": 33 },
+    { "sourceId": "src-25d6340b518c", "page": 34 }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-06",
+  "publicDistributionStatus": "public_safe",
+  "solutionValidationStatus": "engine_matches_official_method",
+  "maxPoints": 12,
+  "criteria": [
+    { "id": "preflight", "label": "Aufgabentyp und Voraussetzungen erkannt", "maxPoints": 1 },
+    { "id": "initialization", "label": "Nullzeile korrekt initialisiert", "maxPoints": 1 },
+    { "id": "canonical_rows", "label": "Tabellenwerte stimmen mit dem kanonischen Trace überein", "maxPoints": 6 },
+    { "id": "method_consistency", "label": "Rekurrenz relativ zum eigenen vorherigen Zustand korrekt angewendet", "maxPoints": 2 },
+    { "id": "tie_breaker", "label": "Gleichstandsregel korrekt angewendet", "maxPoints": 1 },
+    { "id": "final_output", "label": "Opt[n,W] korrekt und vollständig angegeben", "maxPoints": 1 }
+  ],
+  "followUpErrorPolicy": "Ergebnispunkte vergleichen mit dem kanonischen Zustand. Verfahrenspunkte prüfen zusätzlich die Rekurrenz relativ zur vorherigen Nutzerzeile, sodass ein früher Folgefehler spätere methodisch korrekte Schritte nicht vollständig entwertet.",
+  "caps": {
+    "solutionRevealedMaximumRatio": 0.7,
+    "incompleteMaximumRatio": 0.8
+  }
+}

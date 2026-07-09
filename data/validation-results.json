@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "validated_at": "2026-07-06T10:54:41.276373+00:00",
+  "passed": true,
+  "check_count": 21,
+  "passed_count": 21,
+  "failed_count": 0,
+  "checks": [
+    {
+      "name": "JSON parsebar: source-manifest.json",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "JSON parsebar: duplicate-groups.json",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "JSON parsebar: exam-corpus.json",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "JSON parsebar: exam-blueprint.json",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "JSON parsebar: topic-map.json",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "JSON parsebar: question-inventory.json",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "JSON parsebar: source-conflicts.json",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "Jede Quelldatei im Manifest",
+      "passed": true,
+      "detail": "Ist=146, Manifest=146"
+    },
+    {
+      "name": "Eindeutige Quellen-IDs",
+      "passed": true,
+      "detail": "146/146 eindeutig"
+    },
+    {
+      "name": "Keine fehlenden Quellpfade",
+      "passed": true,
+      "detail": "fehlend=[]"
+    },
+    {
+      "name": "Keine Quelle verändert",
+      "passed": true,
+      "detail": "verändert=[]"
+    },
+    {
+      "name": "PDF-Seitenzahl oder Fehlergrund",
+      "passed": true,
+      "detail": "problematisch=[]"
+    },
+    {
+      "name": "Keine erzeugte Quelle als offiziell",
+      "passed": true,
+      "detail": "problematisch=[]"
+    },
+    {
+      "name": "Duplikatquellen gültig",
+      "passed": true,
+      "detail": "ungültig=[]"
+    },
+    {
+      "name": "Fragen referenzieren Quelle und Seite",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Verifikations-Enuma gültig",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Fragen-Duplikat-IDs gültig",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Offizielle Lösungen verknüpft",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Jedes Topic mit gültiger Quelle",
+      "passed": true,
+      "detail": "ungültig=0"
+    },
+    {
+      "name": "Prüfungen und Lösungen referenziell gültig",
+      "passed": true,
+      "detail": "ungültig=[]"
+    },
+    {
+      "name": "Konfliktreferenzen gültig",
+      "passed": true,
+      "detail": "ungültig=[]"
+    }
+  ],
+  "errors": []
+}

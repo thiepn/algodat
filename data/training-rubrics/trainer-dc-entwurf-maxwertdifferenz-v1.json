@@ -1,0 +1,36 @@
+{
+  "id": "rubric-dc-entwurf-maxwertdifferenz-v1",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase13-source",
+  "topicIds": ["topic-00cf6dec50ed"],
+  "taskType": "divide_conquer_design",
+  "sourceRefs": [
+    {
+      "sourceId": "src-88179ac88dc5",
+      "page": 7,
+      "label": "Lösungsskizze maximale Wertdifferenz"
+    }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-08",
+  "duplicateGroupId": null,
+  "publicDistributionStatus": "public_safe",
+  "solutionValidationStatus": "verified_against_official_solution",
+  "trainerKind": "design",
+  "trainerId": "trainer-dc-entwurf-maxwertdifferenz-v1",
+  "maxPoints": 48,
+  "examPoints": 8,
+  "criteria": [
+    { "id": "interpretation", "label": "Problem, Richtung und Ausgabe korrekt gedeutet", "maxPoints": 6 },
+    { "id": "decomposition", "label": "Teilproblem, Basisfall und Split", "maxPoints": 9 },
+    { "id": "combine", "label": "alle drei Fälle und Rückgabetripel", "maxPoints": 12 },
+    { "id": "algorithm", "label": "rekursiver Pseudocode mit Rückgabewert", "maxPoints": 7 },
+    { "id": "recurrence", "label": "Rekurrenz und Laufzeit", "maxPoints": 6 },
+    { "id": "proof", "label": "Induktiver Korrektheitsbeweis", "maxPoints": 8 }
+  ],
+  "followUpErrorPolicy": "Ein falscher Basisfall begrenzt Algorithmus- und Beweispunkte, wird aber nicht zusätzlich beim Rekurrenzteil bestraft. Ein fehlender Cross-Fall wird im Combine und Beweis diagnostiziert, nicht als erfundener Laufzeitfehler.",
+  "caps": {
+    "solutionRevealedMaximumPoints": 14,
+    "hintsUsedMaximumPoints": 31
+  }
+}

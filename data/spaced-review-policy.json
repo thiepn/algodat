@@ -1,0 +1,12 @@
+{
+  "policyVersion": "spaced-review-v1",
+  "intervalDays": [1, 3, 7, 14, 30],
+  "modifiers": {
+    "wrong": 0,
+    "correctWithHint": 1,
+    "correctWithoutHint": 2,
+    "repeatedExamCorrect": 3,
+    "wrongHighConfidence": 0,
+    "correctLowConfidence": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "settingsVersion": "study-plan-settings-v1",
+  "dailyMinuteBudget": 60,
+  "maxSingleSessionMinutes": 45,
+  "learningDaysPerWeek": 5,
+  "preferredWeekdays": [1, 2, 3, 4, 5],
+  "preferredModes": ["practice", "review", "exam"],
+  "focusMode": "balanced",
+  "plannedMockExams": 1,
+  "bufferDays": 1,
+  "weekStartsOn": 1,
+  "timezone": "Europe/Berlin"
+}

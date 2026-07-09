@@ -1,0 +1,213 @@
+{
+  "id": "trainer-graph-dijkstra-v1",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase11-dijkstra-v1",
+  "topicIds": ["topic-e8b80c23286d", "topic-f5f6e171c082"],
+  "taskType": "graph_algorithm_tracing",
+  "sourceRefs": [
+    { "sourceId": "src-baa07f0a207a", "page": 846, "label": "Dijkstra-Pseudocode mit p[v]" },
+    { "sourceId": "src-baa07f0a207a", "page": 829, "label": "Prioritätenschlange und Tie-Semantik" },
+    { "sourceId": "src-1ea0642ec775", "page": 6, "label": "Offizielle Dijkstra-Tracing-Tabelle" },
+    { "sourceId": "src-011d1ee23245", "page": 4, "label": "Reale Klausurrelevanz Dijkstra" }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-08T00:00:00.000Z",
+  "duplicateGroupId": null,
+  "publicDistributionStatus": "public_safe",
+  "solutionValidationStatus": "engine_matches_official_method",
+  "trainerKind": "tracing",
+  "graphFamily": "shortest_paths",
+  "title": "Graph-Trainer: Dijkstra mit Distanzen und Vorgängern",
+  "shortTitle": "Dijkstra aktiv tabellieren",
+  "description": "Trainiere ExtractMin, Relaxationen, Distanztabelle und Vorgängerarray für Dijkstra mit aktiver Eingabe.",
+  "examTaskNumbers": [3],
+  "prerequisiteTopicIds": ["topic-f5f6e171c082"],
+  "relatedTrainerIds": ["trainer-graph-floyd-warshall-v1", "trainer-union-find-listen-v1"],
+  "learningObjectives": [
+    "Den Startknoten und die Initialisierung d[s]=0, d[v]=∞ korrekt setzen.",
+    "In jedem Durchlauf den noch weißen Knoten mit kleinster Distanz markieren.",
+    "Ausgehende Kanten strikt relaxieren und p[v] bei Verbesserungen aktualisieren.",
+    "Die Laufzeit mit Prioritätenschlange als O((|V|+|E|) log |V|) angeben."
+  ],
+  "supportedModes": ["learn", "practice", "exam", "review"],
+  "estimatedDurationMinutes": 16,
+  "difficultyLevels": ["mittel", "klausurnah"],
+  "engineVersion": "graph-tracing-dijkstra-v1",
+  "canonicalSolutionVersion": "dijkstra-canonical-v1",
+  "scoringModelVersion": "single-source-tracing-scoring-v1",
+  "masteryModelVersion": "mastery-v10",
+  "answerPayloadSchemaVersion": "dijkstra-answer-v1",
+  "rendererType": "dijkstra_trace",
+  "lazyLoader": "../features/trainer/GraphTracingTrainerPage",
+  "availabilityStatus": "available",
+  "problem": {
+    "id": "problem-graph-dijkstra-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase11-dijkstra-v1",
+    "topicIds": ["topic-e8b80c23286d", "topic-f5f6e171c082"],
+    "taskType": "graph_algorithm_tracing",
+    "sourceRefs": [
+      { "sourceId": "src-baa07f0a207a", "page": 846, "label": "Dijkstra-Pseudocode" },
+      { "sourceId": "src-1ea0642ec775", "page": 6, "label": "Dijkstra-Tabellenformat" }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08T00:00:00.000Z",
+    "duplicateGroupId": null,
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "engine_matches_official_method",
+    "algorithm": "dijkstra",
+    "contentOrigin": "source_aligned_generated_exercise",
+    "historicalExamTextIncluded": false,
+    "graphKind": "weighted_directed",
+    "vertices": ["A", "B", "C", "D", "E"],
+    "edges": [
+      { "from": "A", "to": "B", "weight": 4 },
+      { "from": "A", "to": "C", "weight": 2 },
+      { "from": "C", "to": "B", "weight": 1 },
+      { "from": "C", "to": "D", "weight": 7 },
+      { "from": "C", "to": "E", "weight": 10 },
+      { "from": "B", "to": "D", "weight": 2 },
+      { "from": "B", "to": "E", "weight": 8 },
+      { "from": "D", "to": "E", "weight": 1 }
+    ],
+    "vertexOrder": ["A", "B", "C", "D", "E"],
+    "startVertex": "A",
+    "infinitySymbol": "âˆž",
+    "requiredOutput": "complete_distance_predecessor_and_marking_trace",
+    "tiePolicy": "Die Trainingsinstanz vermeidet ExtractMin-Gleichstände; falls ein Gleichstand in einer Variante auftritt, entscheidet die Knotenreihenfolge.",
+    "runtime": "O((|V|+|E|) log |V|)",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "dijkstra-canonical-v1",
+      "structuredAnswer": {
+        "startVertex": "A",
+        "markedOrder": "A, C, B, D, E",
+        "distanceTable": "0: 0 ∞ ∞ ∞ ∞\n1: 0 4 2 ∞ ∞\n2: 0 3 2 9 12\n3: 0 3 2 5 11\n4: 0 3 2 5 6\n5: 0 3 2 5 6",
+        "predecessorTable": "0: NIL NIL NIL NIL NIL\n1: NIL A A NIL NIL\n2: NIL C A C C\n3: NIL C A B B\n4: NIL C A B D\n5: NIL C A B D",
+        "relaxationLog": "A: A->B: 4; A->C: 2\nC: C->B: 3; C->D: 9; C->E: 12\nB: B->D: 5; B->E: 11\nD: D->E: 6\nE: ",
+        "runtime": "O((|V|+|E|) log |V|)",
+        "explanation": "In jedem Durchlauf entfernt ExtractMin den weißen Knoten mit kleinster Distanz; danach werden ausgehende Kanten strikt relaxiert und p[v] aktualisiert."
+      },
+      "vertexOrder": ["A", "B", "C", "D", "E"],
+      "startVertex": "A",
+      "steps": [
+        {
+          "iteration": 0,
+          "markedVertex": null,
+          "distances": { "A": 0, "B": null, "C": null, "D": null, "E": null },
+          "predecessors": { "A": null, "B": null, "C": null, "D": null, "E": null },
+          "settled": [],
+          "relaxations": []
+        },
+        {
+          "iteration": 1,
+          "markedVertex": "A",
+          "distances": { "A": 0, "B": 4, "C": 2, "D": null, "E": null },
+          "predecessors": { "A": null, "B": "A", "C": "A", "D": null, "E": null },
+          "settled": ["A"],
+          "relaxations": ["A->B: 4", "A->C: 2"]
+        },
+        {
+          "iteration": 2,
+          "markedVertex": "C",
+          "distances": { "A": 0, "B": 3, "C": 2, "D": 9, "E": 12 },
+          "predecessors": { "A": null, "B": "C", "C": "A", "D": "C", "E": "C" },
+          "settled": ["A", "C"],
+          "relaxations": ["C->B: 3", "C->D: 9", "C->E: 12"]
+        },
+        {
+          "iteration": 3,
+          "markedVertex": "B",
+          "distances": { "A": 0, "B": 3, "C": 2, "D": 5, "E": 11 },
+          "predecessors": { "A": null, "B": "C", "C": "A", "D": "B", "E": "B" },
+          "settled": ["A", "C", "B"],
+          "relaxations": ["B->D: 5", "B->E: 11"]
+        },
+        {
+          "iteration": 4,
+          "markedVertex": "D",
+          "distances": { "A": 0, "B": 3, "C": 2, "D": 5, "E": 6 },
+          "predecessors": { "A": null, "B": "C", "C": "A", "D": "B", "E": "D" },
+          "settled": ["A", "C", "B", "D"],
+          "relaxations": ["D->E: 6"]
+        },
+        {
+          "iteration": 5,
+          "markedVertex": "E",
+          "distances": { "A": 0, "B": 3, "C": 2, "D": 5, "E": 6 },
+          "predecessors": { "A": null, "B": "C", "C": "A", "D": "B", "E": "D" },
+          "settled": ["A", "C", "B", "D", "E"],
+          "relaxations": []
+        }
+      ],
+      "runtime": "O((|V|+|E|) log |V|)",
+      "oracleValidationStatus": "generated_oracle_verified"
+    },
+    "variants": [
+      {
+        "id": "variant-dijkstra-v1-practice",
+        "contentVersion": "phase11-dijkstra-v1",
+        "sourceRefs": [{ "sourceId": "src-1ea0642ec775", "page": 6 }],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Dijkstra-Spur ohne Gleichstand",
+        "mode": "practice",
+        "graphKind": "weighted_directed",
+        "vertices": ["A", "B", "C", "D", "E"],
+        "edges": [
+          { "from": "A", "to": "B", "weight": 4 },
+          { "from": "A", "to": "C", "weight": 2 },
+          { "from": "C", "to": "B", "weight": 1 },
+          { "from": "C", "to": "D", "weight": 7 },
+          { "from": "C", "to": "E", "weight": 10 },
+          { "from": "B", "to": "D", "weight": 2 },
+          { "from": "B", "to": "E", "weight": 8 },
+          { "from": "D", "to": "E", "weight": 1 }
+        ],
+        "focus": "ExtractMin-Reihenfolge, Distanzen, Vorgänger und Relaxationen",
+        "canonicalSolution": {
+          "canonicalSolutionVersion": "dijkstra-canonical-v1",
+          "structuredAnswer": {
+            "startVertex": "A",
+            "markedOrder": "A, C, B, D, E",
+            "distanceTable": "0: 0 ∞ ∞ ∞ ∞\n1: 0 4 2 ∞ ∞\n2: 0 3 2 9 12\n3: 0 3 2 5 11\n4: 0 3 2 5 6\n5: 0 3 2 5 6",
+            "predecessorTable": "0: NIL NIL NIL NIL NIL\n1: NIL A A NIL NIL\n2: NIL C A C C\n3: NIL C A B B\n4: NIL C A B D\n5: NIL C A B D",
+            "relaxationLog": "A: A->B: 4; A->C: 2\nC: C->B: 3; C->D: 9; C->E: 12\nB: B->D: 5; B->E: 11\nD: D->E: 6\nE: ",
+            "runtime": "O((|V|+|E|) log |V|)",
+            "explanation": "In jedem Durchlauf entfernt ExtractMin den weißen Knoten mit kleinster Distanz; danach werden ausgehende Kanten strikt relaxiert und p[v] aktualisiert."
+          },
+          "vertexOrder": ["A", "B", "C", "D", "E"],
+          "startVertex": "A",
+          "steps": [
+            {
+              "iteration": 0,
+              "markedVertex": null,
+              "distances": { "A": 0, "B": null, "C": null, "D": null, "E": null },
+              "predecessors": { "A": null, "B": null, "C": null, "D": null, "E": null },
+              "settled": [],
+              "relaxations": []
+            }
+          ],
+          "runtime": "O((|V|+|E|) log |V|)",
+          "oracleValidationStatus": "generated_oracle_verified"
+        }
+      }
+    ]
+  },
+  "hints": [
+    {
+      "id": "hint-dijkstra-start",
+      "level": 1,
+      "text": "Initialisiere d[A]=0 und alle anderen Distanzen mit ∞; alle Vorgänger starten mit NIL."
+    },
+    {
+      "id": "hint-dijkstra-extract",
+      "level": 2,
+      "text": "Wähle in jedem Durchlauf den noch nicht schwarzen Knoten mit kleinster aktueller Distanz."
+    },
+    {
+      "id": "hint-dijkstra-relax",
+      "level": 3,
+      "text": "Aktualisiere p[v] nur bei strikter Verbesserung d[u]+w(u,v)<d[v]."
+    }
+  ]
+}

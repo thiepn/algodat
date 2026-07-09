@@ -1,0 +1,10 @@
+node_modules/
+dist/
+tmp/
+data/
+docs/
+coverage/
+test-results/
+playwright-report/
+src/content/generated/*.json
+package-lock.json

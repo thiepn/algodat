@@ -1,0 +1,942 @@
+[
+  {
+    "id": "fd-sorting-search-single-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-sorting-search"
+    ],
+    "topicIds": [
+      "topic-cd03b101b7ca",
+      "topic-aa4a4148523b",
+      "topic-869c6f5b2efa"
+    ],
+    "examTaskNumbers": [
+      1,
+      4
+    ],
+    "difficulty": "leicht",
+    "itemType": "single_choice",
+    "prompt": {
+      "stem": "Welche Aussage ist für „Suchen und Sortieren“ belegt?",
+      "instruction": "Wähle genau eine Antwort."
+    },
+    "options": [
+      {
+        "id": "correct",
+        "text": "Binäre Suche setzt eine sortierte Suchmenge voraus.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "wrong-a",
+        "text": "Binäre Suche funktioniert ohne Ordnung.",
+        "correct": false,
+        "misconceptionId": "binary-search-unsorted",
+        "distractorCategory": "prerequisite_confusion",
+        "reasonIncorrect": "Binäre Suche wird auf unsortierte Daten angewendet.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Suchvoraussetzung sortierte Folge",
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "wrong-b",
+        "text": "MergeSort ist ein Greedy-Verfahren.",
+        "correct": false,
+        "misconceptionId": "stable-inplace-mixup",
+        "distractorCategory": "stable_vs_in_place",
+        "reasonIncorrect": "Stabilität und In-place-Eigenschaft werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Sortierklassifikation",
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "correct"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Suchen und Sortieren: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "binary-search-unsorted",
+      "stable-inplace-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-sorting-search-multiple-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-sorting-search"
+    ],
+    "topicIds": [
+      "topic-cd03b101b7ca",
+      "topic-aa4a4148523b",
+      "topic-869c6f5b2efa"
+    ],
+    "examTaskNumbers": [
+      1,
+      4
+    ],
+    "difficulty": "leicht",
+    "itemType": "multiple_choice",
+    "prompt": {
+      "stem": "Welche zwei Aussagen gehören zur Kompetenz „Suchen und Sortieren“?",
+      "instruction": "Wähle alle richtigen Antworten."
+    },
+    "options": [
+      {
+        "id": "fact-1",
+        "text": "Binäre Suche setzt eine sortierte Suchmenge voraus.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "fact-2",
+        "text": "MergeSort ist ein Divide-and-Conquer-Sortierverfahren.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "distractor-a",
+        "text": "Binäre Suche funktioniert ohne Ordnung.",
+        "correct": false,
+        "misconceptionId": "binary-search-unsorted",
+        "distractorCategory": "prerequisite_confusion",
+        "reasonIncorrect": "Binäre Suche wird auf unsortierte Daten angewendet.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Suchvoraussetzung sortierte Folge",
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "distractor-b",
+        "text": "MergeSort ist ein Greedy-Verfahren.",
+        "correct": false,
+        "misconceptionId": "stable-inplace-mixup",
+        "distractorCategory": "stable_vs_in_place",
+        "reasonIncorrect": "Stabilität und In-place-Eigenschaft werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Sortierklassifikation",
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "fact-1",
+        "fact-2"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_correct_option"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Suchen und Sortieren: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "binary-search-unsorted",
+      "stable-inplace-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-sorting-search-true-false-reason",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-sorting-search"
+    ],
+    "topicIds": [
+      "topic-cd03b101b7ca",
+      "topic-aa4a4148523b",
+      "topic-869c6f5b2efa"
+    ],
+    "examTaskNumbers": [
+      1,
+      4
+    ],
+    "difficulty": "leicht",
+    "itemType": "true_false_reason",
+    "prompt": {
+      "stem": "Binäre Suche setzt eine sortierte Suchmenge voraus.",
+      "instruction": "Entscheide Wahr/Falsch und wähle die passende Begründung."
+    },
+    "options": [
+      {
+        "id": "truth-true",
+        "text": "Wahr",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "truth-false",
+        "text": "Falsch",
+        "correct": false,
+        "misconceptionId": "stable-inplace-mixup",
+        "distractorCategory": "stable_vs_in_place",
+        "reasonIncorrect": "Stabilität und In-place-Eigenschaft werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Sortierklassifikation",
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "reason-source",
+        "text": "Begründung: Binäre Suche setzt eine sortierte Suchmenge voraus.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "reason-trap",
+        "text": "Begründung: Binäre Suche funktioniert ohne Ordnung.",
+        "correct": false,
+        "misconceptionId": "stable-inplace-mixup",
+        "distractorCategory": "stable_vs_in_place",
+        "reasonIncorrect": "Stabilität und In-place-Eigenschaft werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Sortierklassifikation",
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "truth-true"
+      ],
+      "correctReasonId": "reason-source"
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_component"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Suchen und Sortieren: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "binary-search-unsorted",
+      "stable-inplace-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-sorting-search-matching",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-sorting-search"
+    ],
+    "topicIds": [
+      "topic-cd03b101b7ca",
+      "topic-aa4a4148523b",
+      "topic-869c6f5b2efa"
+    ],
+    "examTaskNumbers": [
+      1,
+      4
+    ],
+    "difficulty": "leicht",
+    "itemType": "matching",
+    "prompt": {
+      "stem": "Ordne die Begriffe zur Kompetenz „Suchen und Sortieren“ zu.",
+      "instruction": "Wähle für jeden linken Begriff die passende rechte Beschreibung."
+    },
+    "options": [
+      {
+        "id": "left-0",
+        "text": "Binäre Suche",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "right-0",
+        "text": "sortierte Suchmenge vorausgesetzt",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "left-1",
+        "text": "MergeSort",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "right-1",
+        "text": "Divide-and-Conquer-Sortieren",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctPairs": {
+        "left-0": "right-0",
+        "left-1": "right-1"
+      }
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_pair"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Suchen und Sortieren: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "binary-search-unsorted",
+      "stable-inplace-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-sorting-search-ordering",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-sorting-search"
+    ],
+    "topicIds": [
+      "topic-cd03b101b7ca",
+      "topic-aa4a4148523b",
+      "topic-869c6f5b2efa"
+    ],
+    "examTaskNumbers": [
+      1,
+      4
+    ],
+    "difficulty": "mittel",
+    "itemType": "ordering",
+    "prompt": {
+      "stem": "Bringe die Arbeitsschritte für „Suchen und Sortieren“ in eine sinnvolle Reihenfolge.",
+      "instruction": "Nutze die Pfeil-Schaltflächen oder die Tastaturreihenfolge."
+    },
+    "options": [
+      {
+        "id": "step-0",
+        "text": "Intervall prüfen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "step-1",
+        "text": "Mitte wählen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Vergleich auswerten",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Intervall halbieren",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOrderIds": [
+        "step-0",
+        "step-1",
+        "step-2",
+        "step-3"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 3,
+      "partialCredit": "adjacent_pairs"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Suchen und Sortieren: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "binary-search-unsorted",
+      "stable-inplace-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-sorting-search-numeric",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-sorting-search"
+    ],
+    "topicIds": [
+      "topic-cd03b101b7ca",
+      "topic-aa4a4148523b",
+      "topic-869c6f5b2efa"
+    ],
+    "examTaskNumbers": [
+      1,
+      4
+    ],
+    "difficulty": "mittel",
+    "itemType": "numeric_short_answer",
+    "prompt": {
+      "stem": "Wie viele Hälften bleiben nach einem Binärsuche-Vergleich aktiv?",
+      "instruction": "Gib eine ganze Zahl ein."
+    },
+    "options": [],
+    "answerDefinition": {
+      "numericAnswer": 1,
+      "tolerance": 0
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Suchen und Sortieren: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "binary-search-unsorted",
+      "stable-inplace-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-sorting-search-algorithm-selection",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-sorting-search"
+    ],
+    "topicIds": [
+      "topic-cd03b101b7ca",
+      "topic-aa4a4148523b",
+      "topic-869c6f5b2efa"
+    ],
+    "examTaskNumbers": [
+      1,
+      4
+    ],
+    "difficulty": "mittel",
+    "itemType": "algorithm_selection",
+    "prompt": {
+      "stem": "Welches Verfahren passt zu einer sortierten Folge und Intervallhalbierung?",
+      "instruction": "Wähle den passenden Algorithmus, Begriff oder die passende Struktur."
+    },
+    "options": [
+      {
+        "id": "binary_search",
+        "text": "binary search",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "union_find",
+        "text": "union find",
+        "correct": false,
+        "misconceptionId": "stable-inplace-mixup",
+        "distractorCategory": "stable_vs_in_place",
+        "reasonIncorrect": "Stabilität und In-place-Eigenschaft werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Sortierklassifikation",
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "floyd_warshall",
+        "text": "floyd warshall",
+        "correct": false,
+        "misconceptionId": "stable-inplace-mixup",
+        "distractorCategory": "stable_vs_in_place",
+        "reasonIncorrect": "Stabilität und In-place-Eigenschaft werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Sortierklassifikation",
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctAlgorithmId": "binary_search"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Suchen und Sortieren: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "binary-search-unsorted",
+      "stable-inplace-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-sorting-search-complexity-classification",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-sorting-search"
+    ],
+    "topicIds": [
+      "topic-cd03b101b7ca",
+      "topic-aa4a4148523b",
+      "topic-869c6f5b2efa"
+    ],
+    "examTaskNumbers": [
+      1,
+      4
+    ],
+    "difficulty": "mittel",
+    "itemType": "complexity_classification",
+    "prompt": {
+      "stem": "Klassifiziere die typische Halbierungssuche grob.",
+      "instruction": "Wähle die passende Klassifikation."
+    },
+    "options": [
+      {
+        "id": "konstant",
+        "text": "konstant",
+        "correct": false,
+        "misconceptionId": "stable-inplace-mixup",
+        "distractorCategory": "stable_vs_in_place",
+        "reasonIncorrect": "Stabilität und In-place-Eigenschaft werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Sortierklassifikation",
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "logarithmisch",
+        "text": "logarithmisch",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "quadratisch",
+        "text": "quadratisch",
+        "correct": false,
+        "misconceptionId": "stable-inplace-mixup",
+        "distractorCategory": "stable_vs_in_place",
+        "reasonIncorrect": "Stabilität und In-place-Eigenschaft werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Sortierklassifikation",
+        "sourceRefs": [
+          {
+            "sourceId": "src-c0e0f8927c2c",
+            "page": 1
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "logarithmisch"
+      ],
+      "complexityClass": "logarithmisch"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Suchen und Sortieren: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "binary-search-unsorted",
+      "stable-inplace-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  }
+]

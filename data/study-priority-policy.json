@@ -1,0 +1,19 @@
+{
+  "policyVersion": "study-priority-v1",
+  "weights": {
+    "masteryDeficit": 40,
+    "examSlotWeight": 12,
+    "reviewDueUrgency": 18,
+    "repeatedErrorWeight": 16,
+    "confidenceMismatchWeight": 12,
+    "evidenceRecencyWeight": 10,
+    "unsupportedCoveragePenalty": 10,
+    "prerequisitePenalty": 14,
+    "timeFit": 8,
+    "activityVariety": 4,
+    "recentRepetitionPenalty": 8,
+    "userPinnedPriority": 20,
+    "examDateUrgency": 12
+  },
+  "tieBreakers": ["examTaskNumber", "activityType", "activityId"]
+}

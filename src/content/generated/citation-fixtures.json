@@ -1,0 +1,40 @@
+[
+  {
+    "id": "fixture-citation-2024-a7",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-6df30a9ff1ae",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": "dup-exact-5771ba7f1157",
+    "title": "Klausur 2024",
+    "pageLabel": "Seite 7",
+    "authorityLabel": "Offizielle Primärquelle",
+    "evidenceType": "real_exam",
+    "conflictWarning": "Prüfer, Datum, Dauer und Hilfsmittel sind nicht belegt."
+  },
+  {
+    "id": "fixture-citation-lecture17",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-5c9eadb17ccc",
+        "page": 12
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "duplicateGroupId": null,
+    "title": "Vorlesung 17",
+    "pageLabel": "Folie 12",
+    "authorityLabel": "Offizielle Primärquelle",
+    "evidenceType": "unknown",
+    "conflictWarning": null
+  }
+]

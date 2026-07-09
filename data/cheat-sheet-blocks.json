@@ -1,0 +1,490 @@
+[
+  {
+    "blockId": "cs-asymptotik",
+    "title": "Asymptotik und Landau-Notation",
+    "category": "grundlagen",
+    "topicIds": ["topic-916a9f1645f2", "topic-05cbaf0c71b3"],
+    "examTaskNumbers": [1, 6],
+    "sourceRefs": [
+      { "sourceId": "src-35405e721f05", "page": 9 },
+      { "sourceId": "src-35405e721f05", "page": 11 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Landau-Notation beschreibt asymptotische Schranken.",
+      "Konstante Faktoren ändern die asymptotische Klasse nicht.",
+      "Worst Case ist vom Best Case getrennt zu begründen."
+    ],
+    "optionalExpandedContent": [
+      "Vor dem Rechnen klären: obere Schranke, untere Schranke oder enge Schranke.",
+      "Bei Vergleichen zuerst dominante Terme isolieren."
+    ],
+    "estimatedArea": 72,
+    "priorityWeight": 9,
+    "prerequisites": [],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-master-theorem",
+    "title": "Master-Theorem",
+    "category": "laufzeiten",
+    "topicIds": ["topic-e48203925235"],
+    "examTaskNumbers": [6],
+    "sourceRefs": [
+      { "sourceId": "src-25d6340b518c", "page": 17 },
+      { "sourceId": "src-25d6340b518c", "page": 25 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Rekurrenzform zuerst auf Parameter und Nebenterm prüfen.",
+      "Vergleichsterm aus Teilproblemstruktur und Nebenkosten ableiten.",
+      "Fallwahl immer mit begründetem Vergleich notieren."
+    ],
+    "optionalExpandedContent": [
+      "Nicht nur Fallnummer nennen: kurze Begründung des Größenvergleichs ergänzt die Lösung.",
+      "Regelmäßig Vorzeichen, Teilproblemgröße und Anzahl rekursiver Aufrufe prüfen."
+    ],
+    "estimatedArea": 86,
+    "priorityWeight": 10,
+    "prerequisites": ["Asymptotik"],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-rekurrenz-induktion",
+    "title": "Rekurrenz-Induktion",
+    "category": "beweis",
+    "topicIds": ["topic-e48203925235", "topic-64b84f2856b9"],
+    "examTaskNumbers": [6],
+    "sourceRefs": [
+      { "sourceId": "src-25d6340b518c", "page": 17 },
+      { "sourceId": "src-baa07f0a207a", "page": 230 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Induktionsziel vor der Einsetzung festlegen.",
+      "Basisfall, Induktionsvoraussetzung und Einsetzung getrennt schreiben.",
+      "Konstantenbedingung explizit aus dem letzten Ungleichungsschritt ableiten."
+    ],
+    "optionalExpandedContent": [
+      "Ein Rekursionsbaum kann die vermutete Schranke vorbereiten, ersetzt aber nicht den Beweis.",
+      "Bei \\(O\\)-Beweisen nicht mit einer exakten Gleichheit schließen."
+    ],
+    "estimatedArea": 88,
+    "priorityWeight": 9,
+    "prerequisites": ["Master-Theorem"],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-schleifeninvariante",
+    "title": "Schleifeninvarianten-Schema",
+    "category": "beweis",
+    "topicIds": ["topic-1e43393edfb4"],
+    "examTaskNumbers": [5, 9],
+    "sourceRefs": [
+      { "sourceId": "src-25d6340b518c", "page": 11 },
+      { "sourceId": "src-baa07f0a207a", "page": 132 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "IA: Invariante vor der ersten Iteration zeigen.",
+      "IV/IS: Gültigkeit vor einer Iteration annehmen und nach dem Schleifenkörper zeigen.",
+      "Terminierung: Invariante plus Abbruchbedingung liefert die Behauptung."
+    ],
+    "optionalExpandedContent": [
+      "Zeitpunkt der Invariante genau benennen: vor oder nach Iteration.",
+      "Indexbereich und leere Summe/Initialwert nie stillschweigend behandeln."
+    ],
+    "estimatedArea": 92,
+    "priorityWeight": 10,
+    "prerequisites": ["Induktion"],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-greedy-austausch",
+    "title": "Greedy-Austauschargument",
+    "category": "entwurf",
+    "topicIds": ["topic-3e0e72f97f6e"],
+    "examTaskNumbers": [7],
+    "sourceRefs": [
+      { "sourceId": "src-97414623dd81", "page": 8 },
+      { "sourceId": "src-8a588d5ddc35", "page": 8 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Greedy-Regel präzise formulieren.",
+      "Austauschidee: eine optimale Lösung schrittweise mit der Greedy-Wahl kompatibel machen.",
+      "Laufzeit getrennt von der Korrektheit begründen."
+    ],
+    "optionalExpandedContent": [
+      "Nicht jede lokale Regel ist korrekt; Gegenbeispielprüfung gehört zur Strategie.",
+      "Sortierkosten müssen in der Gesamtlaufzeit enthalten sein."
+    ],
+    "estimatedArea": 84,
+    "priorityWeight": 8,
+    "prerequisites": ["Sortieren"],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-divide-conquer",
+    "title": "Divide-and-Conquer-Beweisschema",
+    "category": "entwurf",
+    "topicIds": ["topic-aa4a4148523b"],
+    "examTaskNumbers": [7],
+    "sourceRefs": [{ "sourceId": "src-88179ac88dc5", "page": 7 }],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Teilprobleme, Kombinationsfall und Randfall getrennt angeben.",
+      "Rekurrenz aus Anzahl der Teilprobleme, Teilproblemgröße und Kombinationskosten ableiten.",
+      "Korrektheit üblicherweise über Induktion auf die Eingabegröße zeigen."
+    ],
+    "optionalExpandedContent": [
+      "Bei Max-/Min-Transferaufgaben muss der übergreifende Kombinationskandidat explizit betrachtet werden."
+    ],
+    "estimatedArea": 82,
+    "priorityWeight": 8,
+    "prerequisites": ["Rekursion"],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-dp-zustand",
+    "title": "DP-Zustand und Rekurrenz",
+    "category": "dynamische_programmierung",
+    "topicIds": ["topic-c0af8532bb72"],
+    "examTaskNumbers": [8],
+    "sourceRefs": [
+      { "sourceId": "src-8f16b2505bbd", "page": 10 },
+      { "sourceId": "src-35405e721f05", "page": 11 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Zustand mit Bedeutung und Indexbereich definieren.",
+      "Randfälle vor der allgemeinen Rekurrenz angeben.",
+      "Auswertungsordnung muss alle Abhängigkeiten vorher verfügbar machen."
+    ],
+    "optionalExpandedContent": [
+      "Algorithmus, Korrektheit und Speicherbedarf getrennt notieren.",
+      "Wenn Rekurrenz mehrere Fälle hat, jeden Fall mit Bedingung versehen."
+    ],
+    "estimatedArea": 92,
+    "priorityWeight": 10,
+    "prerequisites": ["Rekurrenz"],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-binaere-suche",
+    "title": "Binäre Suche",
+    "category": "grundlagen",
+    "topicIds": ["topic-cd03b101b7ca"],
+    "examTaskNumbers": [1, 4],
+    "sourceRefs": [
+      { "sourceId": "src-c0e0f8927c2c", "page": 1 },
+      { "sourceId": "src-35405e721f05", "page": 9 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Voraussetzung: sortierte Suchmenge.",
+      "Intervallgrenzen nach jedem Vergleich konsistent aktualisieren.",
+      "Typische Falle: unsortierte Eingabe oder Off-by-one bei Grenzen."
+    ],
+    "optionalExpandedContent": [],
+    "estimatedArea": 58,
+    "priorityWeight": 6,
+    "prerequisites": ["Sortierung"],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-mergesort",
+    "title": "MergeSort",
+    "category": "grundlagen",
+    "topicIds": ["topic-aa4a4148523b"],
+    "examTaskNumbers": [1, 4, 6],
+    "sourceRefs": [{ "sourceId": "src-c0e0f8927c2c", "page": 1 }],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Divide-and-Conquer: teilen, rekursiv sortieren, zusammenführen.",
+      "Laufzeit über Rekurrenz der Teilung und Merge-Kosten begründen.",
+      "Stabilität und Speicherbedarf getrennt prüfen, falls gefragt."
+    ],
+    "optionalExpandedContent": [],
+    "estimatedArea": 62,
+    "priorityWeight": 6,
+    "prerequisites": ["Rekursion"],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-union-find",
+    "title": "Union-Find",
+    "category": "datenstruktur",
+    "topicIds": ["topic-0ba342914656"],
+    "examTaskNumbers": [2, 3, 9],
+    "sourceRefs": [
+      { "sourceId": "src-8f16b2505bbd", "page": 6 },
+      { "sourceId": "src-baa07f0a207a", "page": 943 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Operationen: Make-Set, Find, Union.",
+      "Listenvariante: Repräsentant, next-Zeiger und Listengröße konsistent führen.",
+      "Weighted Union hängt die kleinere Liste an die größere."
+    ],
+    "optionalExpandedContent": [
+      "Nach Union müssen alle betroffenen Repräsentantenzeiger aktualisiert sein.",
+      "Tie-Breaker nur verwenden, wenn er in der Aufgabe definiert ist."
+    ],
+    "estimatedArea": 82,
+    "priorityWeight": 9,
+    "prerequisites": ["Mengen"],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-binaerer-suchbaum",
+    "title": "Binärer Suchbaum",
+    "category": "datenstruktur",
+    "topicIds": ["topic-d054e6909a32"],
+    "examTaskNumbers": [2, 4, 9],
+    "sourceRefs": [{ "sourceId": "src-35405e721f05", "page": 6 }],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Suchbaumordnung ist keine Heap-Ordnung.",
+      "Links/rechts-Beziehung immer relativ zum aktuellen Knoten prüfen.",
+      "Operationen hängen von der Baumhöhe ab."
+    ],
+    "optionalExpandedContent": [],
+    "estimatedArea": 54,
+    "priorityWeight": 6,
+    "prerequisites": ["Baumbegriffe"],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-rot-schwarz",
+    "title": "Rot-Schwarz-Invarianten",
+    "category": "datenstruktur",
+    "topicIds": ["topic-7ae0552985f1"],
+    "examTaskNumbers": [2, 4, 9],
+    "sourceRefs": [
+      { "sourceId": "src-97414623dd81", "page": 4 },
+      { "sourceId": "src-5c9eadb17ccc", "page": 5 },
+      { "sourceId": "src-5c9eadb17ccc", "page": 20 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "BST-Einfügen zuerst, Reparatur danach.",
+      "Invarianten: Wurzel schwarz, rote Knoten haben schwarze Kinder, gleiche Schwarzhöhe.",
+      "Reparaturfälle mit Onkel-Farbe, Rotation und Umfärbung sauber trennen."
+    ],
+    "optionalExpandedContent": [
+      "Nach jeder Rotation Eltern-Kind-Beziehungen und Wurzel prüfen.",
+      "Schwarzhöhe entlang aller Pfade kontrollieren."
+    ],
+    "estimatedArea": 94,
+    "priorityWeight": 9,
+    "prerequisites": ["Binärer Suchbaum"],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-dijkstra",
+    "title": "Dijkstra",
+    "category": "graphen",
+    "topicIds": ["topic-e8b80c23286d"],
+    "examTaskNumbers": [3, 4, 9],
+    "sourceRefs": [
+      { "sourceId": "src-baa07f0a207a", "page": 846 },
+      { "sourceId": "src-1ea0642ec775", "page": 6 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Startdistanz setzen, übrige Distanzen initial als unendlich führen.",
+      "Extract-Min wählt den nächsten fest markierten Knoten.",
+      "Relaxation aktualisiert Distanz und Vorgänger nur bei Verbesserung."
+    ],
+    "optionalExpandedContent": [
+      "Voraussetzungen zu Kantengewichten vor der Algorithmuswahl prüfen.",
+      "Markierungsreihenfolge und Vorgängertabelle getrennt dokumentieren."
+    ],
+    "estimatedArea": 86,
+    "priorityWeight": 9,
+    "prerequisites": ["Gewichtete Graphen"],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-floyd-warshall",
+    "title": "Floyd-Warshall",
+    "category": "graphen",
+    "topicIds": ["topic-1fa208a0ed89"],
+    "examTaskNumbers": [3, 4, 9],
+    "sourceRefs": [
+      { "sourceId": "src-8f16b2505bbd", "page": 4 },
+      { "sourceId": "src-35405e721f05", "page": 5 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Matrixverfahren für paarweise kürzeste Wege.",
+      "Zwischenknotenmenge wächst schrittweise über die Iterationen.",
+      "Initialmatrix, Iterationsmatrizen und Unendlich-Symbol konsistent führen."
+    ],
+    "optionalExpandedContent": [
+      "Beim Update nur prüfen, ob der Weg über den aktuellen Zwischenknoten besser ist."
+    ],
+    "estimatedArea": 78,
+    "priorityWeight": 8,
+    "prerequisites": ["Adjazenzmatrix"],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-prim",
+    "title": "Prim-MST",
+    "category": "graphen",
+    "topicIds": ["topic-c4a698fc939e"],
+    "examTaskNumbers": [3, 4, 9],
+    "sourceRefs": [
+      { "sourceId": "src-8f16b2505bbd", "page": 3 },
+      { "sourceId": "src-baa07f0a207a", "page": 955 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "MST-Problem ist vom kürzeste-Wege-Problem getrennt.",
+      "Prim wächst von einem Startknoten über sichere Kanten.",
+      "key-/parent-Tabelle und Gesamtgewicht getrennt kontrollieren."
+    ],
+    "optionalExpandedContent": [
+      "Bei Gleichständen keine nicht belegte Tie-Breaker-Regel erfinden.",
+      "Baumkanten müssen alle Knoten verbinden und kreisfrei bleiben."
+    ],
+    "estimatedArea": 80,
+    "priorityWeight": 8,
+    "prerequisites": ["Gewichtete ungerichtete Graphen"],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-rucksack-dp",
+    "title": "Rucksack-DP",
+    "category": "dynamische_programmierung",
+    "topicIds": ["topic-f5b57f47447c"],
+    "examTaskNumbers": [8],
+    "sourceRefs": [
+      { "sourceId": "src-25d6340b518c", "page": 33 },
+      { "sourceId": "src-baa07f0a207a", "page": 390 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Zeilen und Kapazitäten gemäß Aufgabenkonvention indexieren.",
+      "Eintrag vergleicht Ausschließen und Einschließen, falls das Item passt.",
+      "Tie-Breaker und Endwert explizit aus der Tabelle ablesen."
+    ],
+    "optionalExpandedContent": [
+      "Vorzeichen und Kapazitätsgrenzen prüfen; negative Restkapazität ist kein gültiger Zustand."
+    ],
+    "estimatedArea": 82,
+    "priorityWeight": 9,
+    "prerequisites": ["Dynamische Programmierung"],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-laufzeiten",
+    "title": "Typische Laufzeiten",
+    "category": "laufzeiten",
+    "topicIds": ["topic-916a9f1645f2", "topic-e48203925235"],
+    "examTaskNumbers": [1, 6, 7, 8, 9],
+    "sourceRefs": [
+      { "sourceId": "src-35405e721f05", "page": 9 },
+      { "sourceId": "src-25d6340b518c", "page": 17 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Laufzeit immer in Bezug auf definierte Eingabegrößen angeben.",
+      "Sortierung, Initialisierung und Kombinationsschritte mitzählen.",
+      "Korrektheitsbeweis ersetzt keine Komplexitätsanalyse."
+    ],
+    "optionalExpandedContent": [],
+    "estimatedArea": 58,
+    "priorityWeight": 8,
+    "prerequisites": ["Asymptotik"],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-graphbegriffe",
+    "title": "Graphbegriffe",
+    "category": "graphen",
+    "topicIds": ["topic-f5f6e171c082"],
+    "examTaskNumbers": [1, 3, 4, 9],
+    "sourceRefs": [
+      { "sourceId": "src-35405e721f05", "page": 3 },
+      { "sourceId": "src-88179ac88dc5", "page": 3 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Gerichtet/ungerichtet und gewichtet/ungewichtet zuerst lesen.",
+      "Spannbaum, kürzester Weg und Erreichbarkeit sind verschiedene Ziele.",
+      "Negative Kante und negativer Kreis nicht gleichsetzen."
+    ],
+    "optionalExpandedContent": [],
+    "estimatedArea": 60,
+    "priorityWeight": 7,
+    "prerequisites": [],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  },
+  {
+    "blockId": "cs-typische-fehler",
+    "title": "Häufige Klausurfehler",
+    "category": "fehler",
+    "topicIds": ["topic-1e43393edfb4", "topic-c0af8532bb72", "topic-f5f6e171c082"],
+    "examTaskNumbers": [1, 5, 6, 7, 8, 9],
+    "sourceRefs": [
+      { "sourceId": "src-25d6340b518c", "page": 11 },
+      { "sourceId": "src-8f16b2505bbd", "page": 10 },
+      { "sourceId": "src-baa07f0a207a", "page": 846 }
+    ],
+    "contentVersion": "cheat-sheet-v1",
+    "compactContent": [
+      "Nicht aus Ergebnis oder Laufzeit auf Korrektheit schließen.",
+      "Bei Entwurfsaufgaben Idee, Algorithmus, Laufzeit und Beweis trennen.",
+      "Bei Graphaufgaben zuerst Problemtyp und Voraussetzungen klassifizieren."
+    ],
+    "optionalExpandedContent": [
+      "Keine Tie-Breaker, Normalformen oder Zusatzannahmen erfinden, wenn die Quelle sie nicht vorgibt.",
+      "Musterlösung erst nach Abgabe verwenden, nicht als Ersatz für aktives Erinnern."
+    ],
+    "estimatedArea": 92,
+    "priorityWeight": 10,
+    "prerequisites": [],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": 11,
+  "targetVersion": "0.11.0-single-source-shortest-paths-tracing",
+  "selectionDate": "2026-07-08",
+  "selectedTrainerId": "trainer-graph-dijkstra-v1",
+  "selectionRule": "Bellman-Ford bevorzugt; Dijkstra nur als Fallback; kein produktiver Trainer bei beidseitigem Gate-Fehlschlag.",
+  "candidates": [
+    {
+      "id": "bellman-ford-round-tracing",
+      "algorithm": "bellman_ford",
+      "rank": 1,
+      "gateStatus": "failed",
+      "positiveEvidence": [
+        { "sourceId": "src-88179ac88dc5", "page": 3, "claim": "offizielle Bellman-Ford-Rundentabelle mit negativer Zyklusdiagnose" },
+        { "sourceId": "src-baa07f0a207a", "page": 877, "claim": "Vorlesungs-Pseudocode für die speicheroptimierte Bellman-Ford-Version" },
+        { "sourceId": "src-02be45f603ba", "page": 1, "claim": "offizielle Übungslösung zur verbesserten Bellman-Ford-Version" }
+      ],
+      "blockingEvidence": [
+        "Für den verlangten Phase-11-Primärpfad ist Vorgänger-Tracking gefordert; die geprüften Bellman-Ford-Aufgaben und Vorlesungsfolien belegen Distanzupdates, aber keine eindeutige p[v]-Konvention.",
+        "Die 2021er Aufgaben-/Lösungsverknüpfung enthält einen Konflikt: Bellman-Ford-Aufgabe, aber als Dijkstra klassifizierte Lösungseiten."
+      ],
+      "nonCompensableGateResults": {
+        "officialPrimarySource": true,
+        "verifiedCompleteSolution": false,
+        "secureTaskSolutionLinkage": false,
+        "clearProcessingOrder": true,
+        "clearUpdateTieSemantics": true,
+        "deterministicCanonicalTrace": false,
+        "publicSafeInstance": true,
+        "independentOracle": true,
+        "noUnresolvedConflict": false
+      }
+    },
+    {
+      "id": "dijkstra-distance-predecessor-tracing",
+      "algorithm": "dijkstra",
+      "rank": 2,
+      "gateStatus": "passed_selected_fallback",
+      "positiveEvidence": [
+        { "sourceId": "src-baa07f0a207a", "page": 846, "claim": "Dijkstra-Pseudocode mit ExtractMin, DecreaseKey und p[v]=u" },
+        { "sourceId": "src-baa07f0a207a", "page": 829, "claim": "Prioritätenschlange, ExtractMin, DecreaseKey und Gleichstands-Zusatzinformation" },
+        { "sourceId": "src-baa07f0a207a", "page": 848, "claim": "Laufzeitanalyse O((|V|+|E|) log |V|)" },
+        { "sourceId": "src-1ea0642ec775", "page": 6, "claim": "offizielle Dijkstra-Tracing-Tabelle mit markiertem Knoten" },
+        { "sourceId": "src-011d1ee23245", "page": 4, "claim": "reale Klausuraufgabe zu Dijkstra mit alphabetischer Gleichstandsregel" }
+      ],
+      "nonCompensableGateResults": {
+        "officialPrimarySource": true,
+        "verifiedCompleteSolution": true,
+        "secureTaskSolutionLinkage": true,
+        "clearProcessingOrder": true,
+        "clearUpdateTieSemantics": true,
+        "deterministicCanonicalTrace": true,
+        "publicSafeInstance": true,
+        "independentOracle": true,
+        "noUnresolvedConflict": true
+      }
+    }
+  ]
+}

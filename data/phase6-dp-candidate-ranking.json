@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": 6,
+  "selectionDate": "2026-07-07",
+  "selectedCandidateId": "dp-mine-probeklausur-2023",
+  "mandatoryGate": {
+    "requiresTaskAndOfficialSolution": true,
+    "requiresLocalPdfAvailability": true,
+    "requiresDeterministicOracle": true,
+    "requiresNoHistoricalFrequencyPollution": true,
+    "passed": true
+  },
+  "ranking": [
+    {
+      "id": "dp-mine-probeklausur-2023",
+      "title": "Mine / maximaler Erzpfad",
+      "examProfile": "Probeklausur 2023, Aufgabe 8",
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "page": 10, "label": "Probeklausur.pdf, Aufgabe 8" },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 11,
+          "label": "Beispielloesung_Probeklausur.pdf, Rekurrenz"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 12,
+          "label": "Beispielloesung_Probeklausur.pdf, Beweis und Algorithmus"
+        }
+      ],
+      "score": 94,
+      "status": "selected",
+      "reasons": [
+        "Aufgabe und offizielle Beispiellösung sind lokal in pdfs/ vorhanden.",
+        "Zustand, Basisfall, Randfälle, innerer Fall, Algorithmus, Induktionsbeweis und Laufzeit sind vollständig belegbar.",
+        "Ein Brute-Force-Orakel kann die DP-Tabelle deterministisch gegenprüfen.",
+        "Mock-Exam-Herkunft bleibt getrennt von deduplizierten echten Klausurereignissen."
+      ],
+      "limitations": [
+        "Die Aufgabe ist eine Probeklausur und wird daher nicht als historische echte Klausurfrequenz gezählt."
+      ]
+    },
+    {
+      "id": "dp-messreihen-2024",
+      "title": "Messreihen",
+      "examProfile": "Klausur 2024, Aufgabe 8",
+      "sourceRefs": [
+        { "sourceId": "src-ce97639c1821", "page": 8, "label": "Klausur 2024 2.pdf" },
+        { "sourceId": "src-6df30a9ff1ae", "page": 8, "label": "Klausur 2024.pdf" }
+      ],
+      "score": 71,
+      "status": "rejected_for_phase6",
+      "reasons": [
+        "Echte Klausur und Aufgabe-8-Bezug sind stark.",
+        "Im aktuellen Inventar ist keine offizielle Lösung für die vollständige DP-Musterantwort belegt."
+      ],
+      "limitations": [
+        "Ohne offizielle Lösung würde eine Lösung oder Rubrik erfunden; das ist nach AGENTS.md unzulässig."
+      ]
+    },
+    {
+      "id": "dp-pausentage-2020",
+      "title": "Pausentage",
+      "examProfile": "Klausur 2020, Aufgabe 8",
+      "sourceRefs": [
+        { "sourceId": "src-97414623dd81", "page": 9, "label": "20_2.pdf" },
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 9,
+          "label": "info1 2. Klausur Loesungsskizze 6.pdf"
+        }
+      ],
+      "score": 66,
+      "status": "rejected_for_phase6",
+      "reasons": [
+        "Aufgabe und Lösung sind im Inventar vorhanden.",
+        "Die Original-PDFs lagen zum Implementierungszeitpunkt nicht im lokalen Ordner pdfs/."
+      ],
+      "limitations": [
+        "Für die Phase-6-Gate-Entscheidung wurde lokale PDF-Prüfbarkeit gefordert."
+      ]
+    },
+    {
+      "id": "dp-rechnerbudget-2021",
+      "title": "Rechnerbudget",
+      "examProfile": "Klausur 2021, Aufgabe 5 digitale Ausnahme",
+      "sourceRefs": [
+        { "sourceId": "src-28fe81380661", "page": 5, "label": "Klausur2021.pdf" },
+        { "sourceId": "src-39eb3d94f40a", "page": 13, "label": "LoesungKlausur1.pdf" }
+      ],
+      "score": 59,
+      "status": "rejected_for_phase6",
+      "reasons": [
+        "Aufgabe und Lösung sind im Inventar vorhanden.",
+        "Das Profil ist eine historische digitale Ausnahme und nicht Aufgabe 8 im Standardprofil."
+      ],
+      "limitations": [
+        "Für Phase 6 wurde der Standardfokus Aufgabe 8 priorisiert."
+      ]
+    }
+  ]
+}

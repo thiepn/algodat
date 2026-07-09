@@ -1,0 +1,109 @@
+[
+  {
+    "id": "variant-dc-maxwertdifferenz-guided",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Geführte Einstiegsinstanz",
+    "mode": "learn",
+    "values": [
+      6,
+      3,
+      8,
+      2
+    ],
+    "focus": "drei Combine-Fälle erkennen",
+    "canonicalResult": {
+      "maxDifference": 6,
+      "minimum": 2,
+      "maximum": 8
+    }
+  },
+  {
+    "id": "variant-dc-maxwertdifferenz-practice",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Standard-Übungsinstanz",
+    "mode": "practice",
+    "values": [
+      4,
+      11,
+      3,
+      10,
+      1
+    ],
+    "focus": "Cross-Fall und Rückgabetripel berechnen",
+    "canonicalResult": {
+      "maxDifference": 10,
+      "minimum": 1,
+      "maximum": 11
+    }
+  },
+  {
+    "id": "variant-dc-maxwertdifferenz-exam",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Prüfungsinstanz",
+    "mode": "exam",
+    "values": [
+      5,
+      13,
+      7,
+      2,
+      9,
+      1
+    ],
+    "focus": "vollständig ohne Hinweise entwerfen",
+    "canonicalResult": {
+      "maxDifference": 12,
+      "minimum": 1,
+      "maximum": 13
+    }
+  },
+  {
+    "id": "variant-dc-maxwertdifferenz-review",
+    "contentVersion": "phase16-fd92529318c0",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "publicDistributionStatus": "public_safe",
+    "title": "Wiederholung Cross-Fall",
+    "mode": "review",
+    "values": [
+      3,
+      9,
+      4,
+      1
+    ],
+    "focus": "fehlenden Cross-Fall diagnostizieren",
+    "canonicalResult": {
+      "maxDifference": 8,
+      "minimum": 1,
+      "maximum": 9
+    }
+  }
+]

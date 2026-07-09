@@ -1,0 +1,40 @@
+{
+  "id": "rubric-dp-entwurf-mine-v1",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase6-source",
+  "topicIds": ["topic-c0af8532bb72", "topic-2b335556483f"],
+  "taskType": "dp_design",
+  "sourceRefs": [
+    { "sourceId": "src-35405e721f05", "page": 11, "label": "Beispiellösung Aufgabe 8, Rekurrenz" },
+    { "sourceId": "src-35405e721f05", "page": 12, "label": "Beispiellösung Aufgabe 8, Beweis und Algorithmus" }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-07",
+  "duplicateGroupId": null,
+  "publicDistributionStatus": "public_safe",
+  "solutionValidationStatus": "deterministic_engine_verified",
+  "trainerKind": "design",
+  "trainerId": "trainer-dp-entwurf-mine-v1",
+  "maxPoints": 54,
+  "examPoints": 8,
+  "criteria": [
+    { "id": "interpretation", "label": "Problem und Ziel verstanden", "maxPoints": 4 },
+    { "id": "state_dimensions", "label": "Zustandsdimensionen", "maxPoints": 4 },
+    { "id": "state_meaning", "label": "Zustandsbedeutung", "maxPoints": 5 },
+    { "id": "base_cases", "label": "Basisfälle", "maxPoints": 4 },
+    { "id": "boundary_cases", "label": "Randfälle", "maxPoints": 5 },
+    { "id": "inner_case", "label": "Innerer Rekurrenzfall", "maxPoints": 5 },
+    { "id": "invalid_states", "label": "Unzulässige Zustände", "maxPoints": 2 },
+    { "id": "order", "label": "Bottom-up-Reihenfolge", "maxPoints": 4 },
+    { "id": "output", "label": "Ausgabezelle", "maxPoints": 3 },
+    { "id": "algorithm", "label": "Iterativer Algorithmus", "maxPoints": 6 },
+    { "id": "proof", "label": "Korrektheitsbeweis", "maxPoints": 6 },
+    { "id": "runtime", "label": "Laufzeit", "maxPoints": 3 },
+    { "id": "memory", "label": "Speicherbedarf", "maxPoints": 3 }
+  ],
+  "followUpErrorPolicy": "Zustandsfehler, Rekurrenzfehler und Algorithmusfehler werden getrennt diagnostiziert; Folgefehler werden über Rubrikbereiche gekappt.",
+  "caps": {
+    "solutionRevealedMaximumPoints": 16,
+    "hintsUsedMaximumPoints": 28
+  }
+}

@@ -1,0 +1,21 @@
+# Dauerhafte Arbeitsregeln
+
+- Offizielle Quellen haben Vorrang vor erzeugten oder studentischen Quellen.
+- Jede fachliche Inhaltsaussage benötigt Datei- und Seiten-/Folienbezug.
+- Lerninhalte, Benutzeroberfläche und Dokumentation werden auf Deutsch verfasst.
+- Die Originalnotation der Vorlesung bleibt erhalten; Mathematik wird mit KaTeX gerendert.
+- Fragen, Lösungen, Laufzeiten und Beweise dürfen niemals erfunden werden. Unsicherheit wird ausdrücklich markiert.
+- Quelldateien dürfen nicht verändert, verschoben, umbenannt oder gelöscht werden.
+- Lokale Original-PDFs im Projektordner `pdfs/` sind privates Eingangsmaterial und dürfen nicht veröffentlicht, gecacht oder verlinkt werden.
+- Alle erzeugten JSON-Dateien werden gegen explizite Schemas und referenzielle Regeln validiert.
+- Scoring und Datentransformationen erhalten deterministische Tests.
+- Eine neue Phase beginnt erst, wenn die vorherige Phase ihre Validierung besteht.
+- Produktionsartefakte dürfen keine Quell-PDFs, privaten Verzeichnisse, absoluten Benutzerpfade oder PDF-Links enthalten.
+- Häufigkeitsangaben zu Klausuren verwenden ausschließlich deduplizierte echte Klausurereignisse; Probe-, Übungs- und erzeugte Vorkommen bleiben getrennt.
+- Persistente Nutzerdaten werden bei jeder Ein- und Ausgabe gegen die ausführbaren Schemas validiert.
+- Alle sichtbaren Texte, Fehlermeldungen und Dokumentationen werden auf Deutsch verfasst.
+- Aktives Erinnern und aktive Eingabe haben Vorrang vor passivem Lesen oder bloßen Animationen.
+- Prüfungsvorbereitung wird im bestätigten Standardprofil um Aufgabe 1 bis 9 organisiert; historische Ausnahmen bleiben als eigene Profile erhalten.
+- Parallel dazu bleibt eine vollständige themenbasierte Navigation erhalten.
+- Erzeugte Lernleitfäden und Spickzettel sind Referenzen, keine kanonische Wahrheit.
+- Quellenkonflikte werden dokumentiert und nicht stillschweigend aufgelöst.

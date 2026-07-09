@@ -1,0 +1,194 @@
+[
+  {
+    "id": "problem-dc-maxwertdifferenz-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-00cf6dec50ed"
+    ],
+    "taskType": "divide_conquer_design",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7,
+        "label": "Aufgabe und Lösungsskizze maximale Wertdifferenz"
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "verified_against_official_solution",
+    "algorithm": "max_value_difference_divide_conquer",
+    "contentOrigin": "official_exam_solution",
+    "historicalExamTextIncluded": false,
+    "inputDescription": "Feld A[1..n] positiver ganzer Zahlen.",
+    "objective": "Bestimme max A[i] - A[j] unter der Bedingung i <= j.",
+    "subproblem": "Für ein Teilfeld A[l..r] werden maximale Differenz, kleinster Wert und größter Wert zurückgegeben.",
+    "split": "Teile A[l..r] bei m = floor((l+r)/2) in A[l..m] und A[m+1..r].",
+    "combine": "Vergleiche linke Differenz, rechte Differenz und max(linke Hälfte) - min(rechte Hälfte); aktualisiere außerdem globales Minimum und Maximum des Teilfelds.",
+    "recurrence": "T(n) = 2T(n/2) + O(1)",
+    "runtime": "O(n)",
+    "proof": "Vollständige Induktion über k = r - l + 1 mit Fallunterscheidung: Paar links, Paar rechts oder i links und j rechts.",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "canonical-dc-maxwertdifferenz-v1",
+      "structuredAnswer": {
+        "interpretation": {
+          "input": "Feld A[1..n] positiver ganzer Zahlen",
+          "objective": "maximiere A[i] - A[j] unter der Bedingung i <= j",
+          "output": "maximale gerichtete Wertdifferenz"
+        },
+        "decomposition": {
+          "subproblem": "MaxWertDiff(A,l,r) liefert [maximale Differenz, kleinster Wert, größter Wert] für A[l..r]",
+          "baseCase": "wenn l = r: return [0, A[l], A[l]]",
+          "split": "m = floor((l+r)/2); löse A[l..m] und A[m+1..r] rekursiv"
+        },
+        "combine": {
+          "leftCase": "optimales Paar liegt vollständig in der linken Hälfte: L[1]",
+          "rightCase": "optimales Paar liegt vollständig in der rechten Hälfte: R[1]",
+          "crossCase": "optimales Paar kreuzt die Mitte: L[3] - R[2]",
+          "summary": "return [max(L[1], R[1], L[3] - R[2]), min(L[2], R[2]), max(L[3], R[3])]"
+        },
+        "algorithm": {
+          "signature": "MaxWertDiff(A,l,r)",
+          "recursiveCalls": "L = MaxWertDiff(A,l,m); R = MaxWertDiff(A,m+1,r)",
+          "returnValue": "[max(L[1], R[1], L[3] - R[2]), min(L[2], R[2]), max(L[3], R[3])]"
+        },
+        "recurrence": {
+          "equation": "T(n) = 2T(n/2) + O(1)",
+          "combineCost": "O(1)",
+          "runtime": "O(n)"
+        },
+        "proof": {
+          "claim": "MaxWertDiff(A,l,r) berechnet die maximale Differenz A[i] - A[j] mit i <= j und liefert Minimum und Maximum von A[l..r]",
+          "inductionParameter": "k = r - l + 1",
+          "baseCase": "für k = 1 ist die maximale Differenz 0 und A[l] zugleich Minimum und Maximum",
+          "inductionStep": "nach Induktionsvoraussetzung sind L und R für beide Hälften korrekt",
+          "caseAnalysis": "jedes zulässige Paar liegt links, rechts oder kreuzt von links nach rechts über die Mitte",
+          "conclusion": "das Maximum der drei Fälle ist vollständig; Minimum und Maximum werden mit min und max korrekt zusammengeführt"
+        }
+      },
+      "sampleInput": [
+        7,
+        2,
+        9,
+        1,
+        5
+      ],
+      "result": {
+        "maxDifference": 8,
+        "minimum": 1,
+        "maximum": 9
+      },
+      "oracleValidationStatus": "brute_force_matches_divide_conquer"
+    },
+    "variants": [
+      {
+        "id": "variant-dc-maxwertdifferenz-guided",
+        "contentVersion": "phase16-fd92529318c0",
+        "sourceRefs": [
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Geführte Einstiegsinstanz",
+        "mode": "learn",
+        "values": [
+          6,
+          3,
+          8,
+          2
+        ],
+        "focus": "drei Combine-Fälle erkennen",
+        "canonicalResult": {
+          "maxDifference": 6,
+          "minimum": 2,
+          "maximum": 8
+        }
+      },
+      {
+        "id": "variant-dc-maxwertdifferenz-practice",
+        "contentVersion": "phase16-fd92529318c0",
+        "sourceRefs": [
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Standard-Übungsinstanz",
+        "mode": "practice",
+        "values": [
+          4,
+          11,
+          3,
+          10,
+          1
+        ],
+        "focus": "Cross-Fall und Rückgabetripel berechnen",
+        "canonicalResult": {
+          "maxDifference": 10,
+          "minimum": 1,
+          "maximum": 11
+        }
+      },
+      {
+        "id": "variant-dc-maxwertdifferenz-exam",
+        "contentVersion": "phase16-fd92529318c0",
+        "sourceRefs": [
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Prüfungsinstanz",
+        "mode": "exam",
+        "values": [
+          5,
+          13,
+          7,
+          2,
+          9,
+          1
+        ],
+        "focus": "vollständig ohne Hinweise entwerfen",
+        "canonicalResult": {
+          "maxDifference": 12,
+          "minimum": 1,
+          "maximum": 13
+        }
+      },
+      {
+        "id": "variant-dc-maxwertdifferenz-review",
+        "contentVersion": "phase16-fd92529318c0",
+        "sourceRefs": [
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 7
+          }
+        ],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Wiederholung Cross-Fall",
+        "mode": "review",
+        "values": [
+          3,
+          9,
+          4,
+          1
+        ],
+        "focus": "fehlenden Cross-Fall diagnostizieren",
+        "canonicalResult": {
+          "maxDifference": 8,
+          "minimum": 1,
+          "maximum": 9
+        }
+      }
+    ]
+  }
+]

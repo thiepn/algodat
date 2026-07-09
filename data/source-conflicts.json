@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "conflicts": [
+    {
+      "id": "conflict-exam-structure",
+      "topic": "Klausurstruktur",
+      "higher_authority_claim": "Die reale Klausur 2021 hat 6 Aufgaben, 60 Punkte und 120 Minuten.",
+      "higher_authority_source": {
+        "source_id": "src-28fe81380661",
+        "page": 1
+      },
+      "lower_authority_claim": "Erzeugte Leitfäden beschreiben Aufgabe 1 bis 9 als allgemeines Sohler-Schema.",
+      "lower_authority_sources": [
+        {
+          "source_id": "src-966482ee029d",
+          "page": 3
+        },
+        {
+          "source_id": "src-88d1cdb2c8d7",
+          "page": 1
+        }
+      ],
+      "resolution": "Das Neun-Aufgaben-Modell wird nur als Regime mit dokumentierter 2021-Ausnahme geführt.",
+      "status": "conflict_detected"
+    },
+    {
+      "id": "conflict-2024-attribution",
+      "topic": "Prüferzuordnung 2024",
+      "higher_authority_claim": "Das vorhandene Foto-PDF enthält kein Deckblatt und keine Prüferangabe.",
+      "higher_authority_source": {
+        "source_id": "src-6df30a9ff1ae",
+        "page": 1
+      },
+      "lower_authority_claim": "Die Aufgabenfolge ähnelt stark dem Sohler-Schema.",
+      "lower_authority_sources": [],
+      "resolution": "Prüfer bleibt unbekannt; Ähnlichkeit wird nicht als Autorennachweis verwendet.",
+      "status": "extraction_uncertain"
+    },
+    {
+      "id": "conflict-handwritten-solution-status",
+      "topic": "Status handschriftlicher Lösungen",
+      "higher_authority_claim": "Kursattribuierte Aufgabenblätter sind offiziell; die Autorenschaft handschriftlicher Antworten ist nicht separat belegt.",
+      "higher_authority_source": {
+        "source_id": "src-7a4064a0710d",
+        "page": 1
+      },
+      "lower_authority_claim": "Dateinamen wie Lösung oder Beispiellösung allein belegen keinen offiziellen Lösungsstatus.",
+      "lower_authority_sources": [],
+      "resolution": "Aufgabenstellung und Lösungsteil erhalten getrennte Verifikationsstatus; Handschrift bleibt unofficial_solution_only.",
+      "status": "conflict_detected"
+    }
+  ]
+}

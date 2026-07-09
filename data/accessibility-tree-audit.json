@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "releaseCandidate": "1.0.0-rc.2",
+  "auditType": "browser_accessibility_tree_fallback",
+  "auditedAt": "2026-07-09",
+  "realScreenreaderTest": "not_executed",
+  "finalScreenreaderGate": "open",
+  "routes": [
+    {
+      "route": "/",
+      "title": "AlgoDat Study System",
+      "language": "de",
+      "landmarks": ["navigation:Hauptnavigation", "main:hauptinhalt", "contentinfo"],
+      "headingsChecked": true,
+      "interactiveNamesChecked": true,
+      "ariaReferencesChecked": true,
+      "axeViolations": 0,
+      "result": "passed",
+      "evidence": "Dashboard per DOM, axe und Chromium-Accessibility-Tree-Fallback geprüft."
+    },
+    {
+      "route": "/diagnose",
+      "title": "AlgoDat Study System",
+      "language": "de",
+      "landmarks": ["navigation:Hauptnavigation", "main:hauptinhalt"],
+      "headingsChecked": true,
+      "interactiveNamesChecked": true,
+      "ariaReferencesChecked": true,
+      "axeViolations": 0,
+      "result": "passed",
+      "evidence": "Diagnoseübersicht und aktiver Fehlerzustand geprüft."
+    },
+    {
+      "route": "/trainer",
+      "title": "AlgoDat Study System",
+      "language": "de",
+      "landmarks": ["navigation:Hauptnavigation", "main:hauptinhalt"],
+      "headingsChecked": true,
+      "interactiveNamesChecked": true,
+      "ariaReferencesChecked": true,
+      "axeViolations": 0,
+      "result": "passed",
+      "evidence": "Trainerübersicht und Graph-/Entwurfs-/Beweisfamilien stichprobenartig geprüft."
+    },
+    {
+      "route": "/simulator",
+      "title": "AlgoDat Study System",
+      "language": "de",
+      "landmarks": ["navigation:Hauptnavigation", "main:hauptinhalt"],
+      "headingsChecked": true,
+      "interactiveNamesChecked": true,
+      "ariaReferencesChecked": true,
+      "axeViolations": 0,
+      "result": "passed",
+      "evidence": "Simulatorübersicht, V4-Briefing, aktive Sitzung und Ergebnis geprüft."
+    },
+    {
+      "route": "/lernplan",
+      "title": "AlgoDat Study System",
+      "language": "de",
+      "landmarks": ["navigation:Hauptnavigation", "main:hauptinhalt"],
+      "headingsChecked": true,
+      "interactiveNamesChecked": true,
+      "ariaReferencesChecked": true,
+      "axeViolations": 0,
+      "result": "passed",
+      "evidence": "Lernplan, Tagesplan, Einstellungen und Prüfungsreife geprüft."
+    },
+    {
+      "route": "/spickzettel",
+      "title": "AlgoDat Study System",
+      "language": "de",
+      "landmarks": ["navigation:Hauptnavigation", "main:hauptinhalt"],
+      "headingsChecked": true,
+      "interactiveNamesChecked": true,
+      "ariaReferencesChecked": true,
+      "axeViolations": 0,
+      "result": "passed",
+      "evidence": "Spickzettelübersicht, Editor, Vorschau und Druckroute geprüft."
+    }
+  ],
+  "specialStructures": [
+    {
+      "type": "graph",
+      "requirement": "Textbeschreibung, Knoten-/Kantenliste oder strukturierte Tabellenalternative",
+      "result": "passed",
+      "evidence": "Graphtrainer nutzen strukturierte Eingaben, Tabellen, Beschriftungen und Textalternativen."
+    },
+    {
+      "type": "matrix",
+      "requirement": "semantische Tabellen oder beschriftete Zellen",
+      "result": "passed",
+      "evidence": "DP- und Graphmatrizen besitzen Tabellen, Captions, Header oder feldspezifische Labels."
+    },
+    {
+      "type": "tree",
+      "requirement": "Rot-/Schwarz-Status nicht nur visuell",
+      "result": "passed",
+      "evidence": "Rot-Schwarz-Trainer nutzt textuelle Zustands- und Rubrikdaten; Farbinformation wird zusätzlich benannt."
+    },
+    {
+      "type": "cheat-sheet-print",
+      "requirement": "keine Canvas-only-Ausgabe",
+      "result": "passed",
+      "evidence": "Druckansicht ist HTML mit Überschriften, Listen, Quellenangaben und beschriftetem Druckbutton."
+    }
+  ],
+  "limitations": [
+    "Keine reale Screenreader-Aussprache geprüft.",
+    "Kein Browse-/Forms-Mode-Verhalten geprüft.",
+    "Browser-Accessibility-Tree ersetzt keinen echten Screenreader-Test."
+  ]
+}

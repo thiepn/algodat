@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": 7,
+  "auditedAt": "2026-07-08",
+  "profiles": [
+    {
+      "profileId": "standard-praesenz",
+      "title": "Standard-Präsenzprofil",
+      "slots": 9,
+      "points": 50,
+      "durationMinutes": 180,
+      "supportedSlots": [
+        4,
+        6,
+        8
+      ],
+      "partiallySupportedSlots": [
+        1,
+        2,
+        5
+      ],
+      "unsupportedSlots": [
+        3,
+        7,
+        9
+      ],
+      "coverageStatus": "partially_supported",
+      "startable": false,
+      "fullyGradable": false,
+      "missingTrainerFamilies": [
+        "A1-A3-Breite",
+        "A7",
+        "A9",
+        "Graphen/Greedy je nach Profil"
+      ],
+      "evidenceStatus": "strongly_supported_standard_profile"
+    },
+    {
+      "profileId": "klausur-2021",
+      "title": "Klausur 2021 digitale Ausnahme",
+      "slots": 6,
+      "points": 60,
+      "durationMinutes": 120,
+      "supportedSlots": [
+        5
+      ],
+      "partiallySupportedSlots": [
+        1,
+        2
+      ],
+      "unsupportedSlots": [
+        3,
+        4,
+        6
+      ],
+      "coverageStatus": "partially_supported",
+      "startable": false,
+      "fullyGradable": false,
+      "missingTrainerFamilies": [
+        "vollständige 2021-spezifische Aufgabenfamilien"
+      ],
+      "evidenceStatus": "verified_against_official_source",
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "profileId": "exam-2020-2",
+      "title": "Klausur 2020, 2. Termin",
+      "slots": 9,
+      "points": 50,
+      "durationMinutes": 180,
+      "supportedSlots": [
+        8
+      ],
+      "partiallySupportedSlots": [
+        1,
+        2,
+        4
+      ],
+      "unsupportedSlots": [
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "coverageStatus": "partially_supported",
+      "startable": false,
+      "fullyGradable": false,
+      "missingTrainerFamilies": [
+        "mehrere 2020-spezifische Trainerfamilien"
+      ],
+      "evidenceStatus": "verified_against_official_source",
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "profileId": "exam-2022-1",
+      "title": "Klausur 2022, Profil 1",
+      "slots": 9,
+      "points": 50,
+      "durationMinutes": 180,
+      "supportedSlots": [
+        8
+      ],
+      "partiallySupportedSlots": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "unsupportedSlots": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "coverageStatus": "partially_supported",
+      "startable": false,
+      "fullyGradable": false,
+      "missingTrainerFamilies": [
+        "vollständige 2022-spezifische Slotabdeckung"
+      ],
+      "evidenceStatus": "verified_against_official_source",
+      "sourceRefs": [
+        {
+          "sourceId": "src-c4dde22523d3",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "profileId": "exam-2022-2",
+      "title": "Klausur 2022, Profil 2",
+      "slots": 9,
+      "points": 50,
+      "durationMinutes": 180,
+      "supportedSlots": [
+        8
+      ],
+      "partiallySupportedSlots": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "unsupportedSlots": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "coverageStatus": "partially_supported",
+      "startable": false,
+      "fullyGradable": false,
+      "missingTrainerFamilies": [
+        "vollständige 2022-spezifische Slotabdeckung"
+      ],
+      "evidenceStatus": "verified_against_official_source",
+      "sourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "profileId": "exam-2024-1",
+      "title": "Klausur 2024 mit unbekannten Metadaten",
+      "slots": 9,
+      "points": 50,
+      "durationMinutes": null,
+      "supportedSlots": [
+        8
+      ],
+      "partiallySupportedSlots": [
+        6
+      ],
+      "unsupportedSlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "coverageStatus": "metadata_only",
+      "startable": false,
+      "fullyGradable": false,
+      "missingTrainerFamilies": [
+        "A1-A5",
+        "A7",
+        "A9",
+        "vollständige 2024-Metadaten"
+      ],
+      "evidenceStatus": "strongly_supported_with_unknown_metadata",
+      "unknownFields": [
+        "Prüfer",
+        "Datum",
+        "Dauer",
+        "Hilfsmittel"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 1
+        }
+      ]
+    }
+  ]
+}

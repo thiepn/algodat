@@ -1,0 +1,166 @@
+[
+  {
+    "id": "problem-rb-insertion-10-20-30-15-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-7ae0552985f1",
+      "topic-c3a4ee956f66"
+    ],
+    "taskType": "red_black_tree_insertion",
+    "sourceRefs": [
+      {
+        "sourceId": "src-5c9eadb17ccc",
+        "page": 5
+      },
+      {
+        "sourceId": "src-5c9eadb17ccc",
+        "page": 15
+      },
+      {
+        "sourceId": "src-5c9eadb17ccc",
+        "page": 20
+      },
+      {
+        "sourceId": "src-5c9eadb17ccc",
+        "page": 36
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-08",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "algorithm": "rb_insert_fixup",
+    "contentOrigin": "source_aligned_generated_exercise",
+    "historicalExamTextIncluded": false,
+    "nilConvention": "NIL-Blätter werden als schwarze Blätter behandelt.",
+    "insertedKeys": [
+      10,
+      20,
+      30,
+      15
+    ],
+    "inputDescription": "Füge nacheinander 10, 20, 30 und 15 in einen zunächst leeren Rot-Schwarz-Baum ein.",
+    "invariantChecklist": [
+      "Jeder Knoten ist rot oder schwarz.",
+      "Die Wurzel ist schwarz.",
+      "Jedes NIL-Blatt ist schwarz.",
+      "Ein roter Knoten besitzt keine roten Kinder.",
+      "Alle Pfade zu NIL haben dieselbe Anzahl schwarzer Knoten.",
+      "Die Suchbaumeigenschaft bleibt erhalten."
+    ],
+    "rotationNotation": "Linksrotation(T,x) und Rechtsrotation(T,y) gemäß Vorlesungsnotation.",
+    "runtime": "O(log n) pro Einfügung.",
+    "canonicalSolution": {
+      "canonicalSolutionVersion": "rb-insertion-solution-v1",
+      "structuredAnswer": {
+        "nilConvention": "NIL-Blätter werden als schwarze Blätter behandelt; in der kompakten Darstellung steht N für NIL.",
+        "insertedKeys": "10, 20, 30, 15",
+        "fixupCases": "30: Fall 3 gespiegelt mit Linksrotation um 10; 15: Fall 1 mit Umfärbung von 10 und 30.",
+        "finalTree": "20B(10B(N,15R(N,N)),30B(N,N))",
+        "blackHeight": "3",
+        "runtime": "O(log n) pro Einfügung, weil die Höhe des Rot-Schwarz-Baums O(log n) ist.",
+        "explanation": "Nach jeder BST-Einfügung wird der neue Knoten rot eingefügt. Rot-Rot-Verletzungen werden lokal durch Umfärben oder Rotation repariert; am Ende wird die Wurzel schwarz gesetzt."
+      },
+      "insertedKeys": [
+        10,
+        20,
+        30,
+        15
+      ],
+      "finalTreeCompact": "20B(10B(N,15R(N,N)),30B(N,N))",
+      "blackHeight": 3,
+      "trace": [
+        {
+          "insertedKey": 10,
+          "action": "BST-Einfügung von 10 als roter Knoten",
+          "caseLabel": "root-black",
+          "reason": "Neue Knoten werden rot eingefügt.",
+          "tree": "10R(N,N)"
+        },
+        {
+          "insertedKey": 10,
+          "action": "Wurzel schwarz setzen",
+          "caseLabel": "root-black",
+          "reason": "Nach der Reparatur wird die Wurzel schwarz gefärbt.",
+          "tree": "10B(N,N)"
+        },
+        {
+          "insertedKey": 30,
+          "action": "Fall 3 gespiegelt: Linksrotation und Umfärbung",
+          "caseLabel": "case-3-rotate",
+          "reason": "Der Onkel ist schwarz und z liegt außen.",
+          "tree": "20B(10R(N,N),30R(N,N))"
+        },
+        {
+          "insertedKey": 15,
+          "action": "Fall 1: Eltern- und Onkelknoten umfärben",
+          "caseLabel": "case-1-recolor",
+          "reason": "Der Onkel von z ist rot.",
+          "tree": "20R(10B(N,15R(N,N)),30B(N,N))"
+        },
+        {
+          "insertedKey": 15,
+          "action": "Wurzel schwarz setzen",
+          "caseLabel": "root-black",
+          "reason": "Nach der Reparatur wird die Wurzel schwarz gefärbt.",
+          "tree": "20B(10B(N,15R(N,N)),30B(N,N))"
+        }
+      ],
+      "oracleValidationStatus": "rb_invariants_validated"
+    },
+    "variants": [
+      {
+        "id": "rb-insertion-learn-v1",
+        "contentVersion": "phase16-fd92529318c0",
+        "sourceRefs": [
+          {
+            "sourceId": "src-5c9eadb17ccc",
+            "page": 20
+          }
+        ],
+        "verificationStatus": "verified_against_official_source",
+        "publicDistributionStatus": "public_safe",
+        "title": "Geführte Einfügung mit Reparaturfällen",
+        "mode": "learn",
+        "insertedKeys": [
+          10,
+          20,
+          30,
+          15
+        ],
+        "focus": "Invarianten, Fall 3 gespiegelt und Fall 1.",
+        "canonicalSolution": {
+          "canonicalSolutionVersion": "rb-insertion-solution-v1",
+          "structuredAnswer": {
+            "nilConvention": "NIL-Blätter werden als schwarze Blätter behandelt; in der kompakten Darstellung steht N für NIL.",
+            "insertedKeys": "10, 20, 30, 15",
+            "fixupCases": "30: Fall 3 gespiegelt mit Linksrotation um 10; 15: Fall 1 mit Umfärbung von 10 und 30.",
+            "finalTree": "20B(10B(N,15R(N,N)),30B(N,N))",
+            "blackHeight": "3",
+            "runtime": "O(log n) pro Einfügung, weil die Höhe des Rot-Schwarz-Baums O(log n) ist.",
+            "explanation": "Nach jeder BST-Einfügung wird der neue Knoten rot eingefügt. Rot-Rot-Verletzungen werden lokal durch Umfärben oder Rotation repariert; am Ende wird die Wurzel schwarz gesetzt."
+          },
+          "insertedKeys": [
+            10,
+            20,
+            30,
+            15
+          ],
+          "finalTreeCompact": "20B(10B(N,15R(N,N)),30B(N,N))",
+          "blackHeight": 3,
+          "trace": [
+            {
+              "insertedKey": 10,
+              "action": "Wurzel schwarz setzen",
+              "caseLabel": "root-black",
+              "reason": "Nach der Reparatur wird die Wurzel schwarz gefärbt.",
+              "tree": "10B(N,N)"
+            }
+          ],
+          "oracleValidationStatus": "rb_invariants_validated"
+        }
+      }
+    ]
+  }
+]

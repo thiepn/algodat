@@ -1,0 +1,153 @@
+{
+  "id": "exam-package-kernkompetenz-v2",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase8-draft",
+  "sourceRefs": [
+    { "sourceId": "src-25d6340b518c", "page": 11, "label": "Vorlesung: Beweisbausteine" },
+    { "sourceId": "src-25d6340b518c", "page": 17, "label": "Vorlesung: Rekurrenzen" },
+    { "sourceId": "src-8f16b2505bbd", "page": 6, "label": "Probeklausur: Union-Find" },
+    { "sourceId": "src-8f16b2505bbd", "page": 10, "label": "Probeklausur: DP-Entwurf Mine" },
+    { "sourceId": "src-97414623dd81", "page": 8, "label": "Klausur 2020-2: Greedy-Fitnesspunkte" },
+    { "sourceId": "src-8a588d5ddc35", "page": 8, "label": "Lösungsskizze: Greedy-Fitnesspunkte" },
+    { "sourceId": "src-baa07f0a207a", "page": 390, "label": "Offizielles Lehrmaterial: DP" }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-08",
+  "publicDistributionStatus": "public_safe",
+  "engineVersion": "exam-simulator-v2",
+  "examPackageId": "exam-package-kernkompetenz-v2",
+  "title": "Kernkompetenz-Probeklausur V2",
+  "shortTitle": "Kernkompetenz V2",
+  "description": "Neu zusammengestellte, quellenorientierte und vollständig automatisch bewertbare Probeklausur aus sechs produktiven Trainern. Sie ist keine historische Originalklausur.",
+  "packageType": "generated_core_mock",
+  "historicalExam": false,
+  "sourceAligned": true,
+  "fullyAutoGradable": true,
+  "version": "kernkompetenz-v2",
+  "durationMinutes": 173,
+  "totalPoints": { "numerator": 48, "denominator": 1 },
+  "taskSlots": [
+    {
+      "id": "exam-task-kern-v2-rucksack",
+      "taskSlotId": "slot-1-rucksack-dp",
+      "trainerId": "trainer-rucksack-dp-v1",
+      "adapterId": "adapter-knapsack-v1",
+      "title": "Rucksack-DP-Tabelle",
+      "family": "tracing",
+      "rendererType": "knapsack",
+      "examPoints": { "numerator": 8, "denominator": 1 },
+      "internalMaxPoints": 12,
+      "sourceRefs": [
+        { "sourceId": "src-25d6340b518c", "page": 33 },
+        { "sourceId": "src-baa07f0a207a", "page": 390 }
+      ]
+    },
+    {
+      "id": "exam-task-kern-v2-union-find",
+      "taskSlotId": "slot-2-union-find",
+      "trainerId": "trainer-union-find-listen-v1",
+      "adapterId": "adapter-union-find-v1",
+      "title": "Union-Find mit verketteten Listen",
+      "family": "tracing",
+      "rendererType": "union_find",
+      "examPoints": { "numerator": 8, "denominator": 1 },
+      "internalMaxPoints": 12,
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "page": 6 },
+        { "sourceId": "src-35405e721f05", "page": 6 }
+      ]
+    },
+    {
+      "id": "exam-task-kern-v2-invariante",
+      "taskSlotId": "slot-3-schleifeninvariante",
+      "trainerId": "trainer-schleifeninvariante-summe-v1",
+      "adapterId": "adapter-loop-invariant-v1",
+      "title": "Schleifeninvariante",
+      "family": "proof",
+      "rendererType": "proof_loop_invariant",
+      "examPoints": { "numerator": 8, "denominator": 1 },
+      "internalMaxPoints": 16,
+      "sourceRefs": [
+        { "sourceId": "src-25d6340b518c", "page": 11 },
+        { "sourceId": "src-baa07f0a207a", "page": 132 }
+      ]
+    },
+    {
+      "id": "exam-task-kern-v2-rekurrenz",
+      "taskSlotId": "slot-4-rekurrenz",
+      "trainerId": "trainer-rekurrenz-master-fall1-v1",
+      "adapterId": "adapter-recurrence-v1",
+      "title": "Rekurrenz- und Laufzeitbeweis",
+      "family": "proof",
+      "rendererType": "recurrence_runtime_proof",
+      "examPoints": { "numerator": 8, "denominator": 1 },
+      "internalMaxPoints": 23,
+      "sourceRefs": [
+        { "sourceId": "src-25d6340b518c", "page": 17 },
+        { "sourceId": "src-baa07f0a207a", "page": 194 }
+      ]
+    },
+    {
+      "id": "exam-task-kern-v2-greedy-entwurf",
+      "taskSlotId": "slot-5-greedy-entwurf",
+      "trainerId": "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "adapterId": "adapter-greedy-design-v1",
+      "title": "Greedy-Algorithmusentwurf",
+      "family": "design",
+      "rendererType": "greedy_design_fitnesspunkte",
+      "examPoints": { "numerator": 8, "denominator": 1 },
+      "internalMaxPoints": 40,
+      "sourceRefs": [
+        { "sourceId": "src-97414623dd81", "page": 8 },
+        { "sourceId": "src-8a588d5ddc35", "page": 8 }
+      ]
+    },
+    {
+      "id": "exam-task-kern-v2-dp-entwurf",
+      "taskSlotId": "slot-6-dp-entwurf",
+      "trainerId": "trainer-dp-entwurf-mine-v1",
+      "adapterId": "adapter-dp-design-v1",
+      "title": "DP-Algorithmusentwurf",
+      "family": "design",
+      "rendererType": "dp_design_mine",
+      "examPoints": { "numerator": 8, "denominator": 1 },
+      "internalMaxPoints": 54,
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "page": 10 },
+        { "sourceId": "src-35405e721f05", "page": 11 },
+        { "sourceId": "src-35405e721f05", "page": 12 }
+      ]
+    }
+  ],
+  "allowedAids": ["Ein handschriftlich beidseitig beschriebenes DIN-A4-Blatt als Trainingsannahme"],
+  "pausePolicy": "strict_exam: keine Pause; practice_exam: technische Unterbrechung möglich, Timerregel sichtbar.",
+  "submissionPolicy": {
+    "id": "submission-final-only-v2",
+    "irreversible": true,
+    "gradeOnlyAfterFinalSubmission": true,
+    "allowUnansweredSubmission": true
+  },
+  "recoveryPolicy": {
+    "id": "exam-recovery-v2",
+    "autosave": true,
+    "timerContinuesOnReload": true,
+    "snapshotVersion": "exam-snapshot-v2",
+    "corruptedSnapshotPolicy": "Beschädigte Snapshots werden verworfen; die letzte valide Session bleibt erhalten."
+  },
+  "timerPolicy": {
+    "id": "timer-173m-v2",
+    "durationMinutes": 173,
+    "derivation": "Trainingsableitung: 48 Punkte × 3,6 Minuten pro Punkt aus 180/50, auf ganze Minuten gerundet.",
+    "officialDuration": false,
+    "warningThresholdMinutes": [30, 15, 5, 1],
+    "warningThresholdRatios": [0.5]
+  },
+  "scoringPolicy": {
+    "id": "exam-exact-points-v2",
+    "exactPoints": true,
+    "showOfficialGrade": false,
+    "classificationLabels": ["noch nicht stabil", "knapp", "solide", "stark"]
+  },
+  "masteryPolicy": "mastery-v7-after-final-submission",
+  "createdAt": "2026-07-08"
+}

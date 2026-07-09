@@ -1,0 +1,1009 @@
+[
+  {
+    "id": "trainer-dp-entwurf-mine-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-c0af8532bb72",
+      "topic-2b335556483f"
+    ],
+    "taskType": "dp_design",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10,
+        "label": "Probeklausur Aufgabe 8, Aufgabenstellung"
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11,
+        "label": "Beispiellösung Aufgabe 8, Rekurrenz"
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 12,
+        "label": "Beispiellösung Aufgabe 8, Beweis, Algorithmus und Laufzeit"
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-07",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "trainerKind": "design",
+    "designFamily": "dynamic_programming",
+    "title": "DP-Entwurfstrainer: Mine",
+    "shortTitle": "DP-Entwurf Mine",
+    "description": "Entwirf aus einer Matrix natürlicher Erzwerte einen vollständigen dynamischen Programmierungsalgorithmus.",
+    "examTaskNumbers": [
+      8
+    ],
+    "prerequisiteTopicIds": [
+      "topic-c0af8532bb72",
+      "topic-2b335556483f"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rucksack-dp-v1"
+    ],
+    "learningObjectives": [
+      "DP-Zustand mit Bedeutung und Indexbereichen formulieren",
+      "Basis- und Randfälle vollständig trennen",
+      "Bottom-up-Reihenfolge und Ausgabezelle begründen",
+      "Algorithmus, Korrektheit, Laufzeit und Speicherbedarf klausurreif angeben"
+    ],
+    "supportedModes": [
+      "learn",
+      "practice",
+      "exam",
+      "review"
+    ],
+    "estimatedDurationMinutes": 30,
+    "difficultyLevels": [
+      "mittel",
+      "klausurnah"
+    ],
+    "engineVersion": "dp-design-mine-v1",
+    "canonicalSolutionVersion": "canonical-dp-mine-v1",
+    "scoringModelVersion": "dp-design-scoring-v1",
+    "masteryModelVersion": "mastery-v5",
+    "answerPayloadSchemaVersion": "dp-design-answer-v1",
+    "rendererType": "dp_design_mine",
+    "lazyLoader": "../features/trainer/DpDesignTrainerPage",
+    "availabilityStatus": "available",
+    "problem": {
+      "id": "problem-dp-entwurf-mine-v1",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "phase16-fd92529318c0",
+      "topicIds": [
+        "topic-c0af8532bb72",
+        "topic-2b335556483f"
+      ],
+      "taskType": "dp_design",
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 10,
+          "label": "Probeklausur Aufgabe 8, Aufgabenstellung"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 11,
+          "label": "Beispiellösung Aufgabe 8, Rekurrenz"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 12,
+          "label": "Beispiellösung Aufgabe 8, Algorithmus"
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "lastReviewed": "2026-07-07",
+      "publicDistributionStatus": "public_safe",
+      "solutionValidationStatus": "deterministic_engine_verified",
+      "algorithm": "mine_path_dynamic_programming",
+      "contentOrigin": "source_aligned_generated_exercise",
+      "historicalExamTextIncluded": false,
+      "input": {
+        "objects": [
+          "Matrix A mit k Zeilen und l Spalten natürlicher Erzwerte"
+        ],
+        "domain": "k>=1, l>1, A[i][j] natürliche Zahl"
+      },
+      "objective": {
+        "direction": "maximize",
+        "quantity": "gesammelte Erzsumme auf einem gültigen Weg von oben nach unten"
+      },
+      "stateDefinition": {
+        "tableName": "G",
+        "dimensions": [
+          {
+            "name": "i",
+            "meaning": "aktuelle Zeile",
+            "range": "1<=i<=k"
+          },
+          {
+            "name": "j",
+            "meaning": "aktuelle Spalte",
+            "range": "1<=j<=l"
+          }
+        ],
+        "entryMeaning": "G(i,j) ist die maximale Erzmenge auf einem gültigen Weg, der in der ersten Reihe beginnt und in a_ij endet",
+        "optimizationDirection": "Maximum"
+      },
+      "recurrence": {
+        "baseCases": [
+          {
+            "id": "base-top-row",
+            "condition": "i=1",
+            "value": "G(1,j)=a_1j für 1<=j<=l"
+          }
+        ],
+        "transitionCases": [
+          {
+            "id": "left-boundary",
+            "condition": "i>1 und j=1",
+            "formula": "G(i,1)=a_i1+max{G(i-1,1),G(i-1,2)}",
+            "predecessors": [
+              "G(i-1,1)",
+              "G(i-1,2)"
+            ]
+          },
+          {
+            "id": "right-boundary",
+            "condition": "i>1 und j=l",
+            "formula": "G(i,l)=a_il+max{G(i-1,l),G(i-1,l-1)}",
+            "predecessors": [
+              "G(i-1,l)",
+              "G(i-1,l-1)"
+            ]
+          },
+          {
+            "id": "inner",
+            "condition": "i>1 und 1<j<l",
+            "formula": "G(i,j)=a_ij+max{G(i-1,j),G(i-1,j-1),G(i-1,j+1)}",
+            "predecessors": [
+              "G(i-1,j)",
+              "G(i-1,j-1)",
+              "G(i-1,j+1)"
+            ]
+          }
+        ],
+        "invalidStatePolicy": "Zustände mit j<1 oder j>l sind unzulässig und werden nicht gelesen"
+      },
+      "evaluationOrder": {
+        "dependencyDirection": "jeder Zustand hängt nur von der vorherigen Zeile i-1 ab",
+        "order": "zeilenweise von i=1 bis k, innerhalb einer Zeile von j=1 bis l",
+        "outputCell": "max_{1<=j<=l} G(k,j)"
+      },
+      "algorithmAst": {
+        "allocation": "G = neues Array[k][l]",
+        "initialization": "für j=1 bis l: G[1][j]=A[1][j]",
+        "loops": [
+          "für i=2 bis k",
+          "berechne G[i][1] aus G[i-1][1] und G[i-1][2]",
+          "berechne G[i][j] für 2<=j<=l-1 aus den drei Vorgängern",
+          "berechne G[i][l] aus G[i-1][l] und G[i-1][l-1]"
+        ],
+        "returnStatement": "return max_{1<=j<=l} G[k][j]",
+        "renderedPseudocode": [
+          "Alice(A,l,k):",
+          "G = new array[k][l]",
+          "for j=1 to l do G[1][j]=A[1][j]",
+          "for i=2 to k do berechne Rand- und Innenfälle",
+          "return max_{1<=j<=l} G[k][j]"
+        ]
+      },
+      "outputDefinition": {
+        "value": "max_{1<=j<=l} G(k,j)",
+        "reconstructionRequired": false,
+        "reconstruction": "Nicht gefordert; ein Pfad kann optional über Vorgängerzeiger rekonstruiert werden."
+      },
+      "correctnessProof": {
+        "claim": "Für alle i,j enthält G(i,j) die maximale Erzmenge eines gültigen Weges von Zeile 1 nach a_ij",
+        "baseCase": "Für i=1 besteht der Weg nur aus a_1j, daher gilt G(1,j)=a_1j",
+        "inductionHypothesis": "Für Zeile i sind alle Werte G(i,j) korrekt",
+        "inductionStep": "Für Position (i+1,j) sind genau die zulässigen Vorgänger (i,j), (i,j-1), (i,j+1) möglich; das Maximum wählt den besten korrekten Vorgänger",
+        "conclusion": "Damit ist die Rekurrenz korrekt; die beste Endposition ist max_j G(k,j)"
+      },
+      "complexity": {
+        "stateCount": "k*l Zustände",
+        "transitionCost": "O(1) pro Zustand",
+        "runtime": "O(k*l)",
+        "memory": "O(k*l)"
+      },
+      "canonicalSolution": {
+        "canonicalSolutionVersion": "canonical-dp-mine-v1",
+        "structuredAnswer": {
+          "interpretation": {
+            "inputObjects": "Matrix A mit k Zeilen und l Spalten natürlicher Erzwerte",
+            "objective": "maximiere die Summe des gesammelten Erzes auf einem gültigen Weg",
+            "constraints": "Start in Zeile 1; pro Schritt eine Zeile tiefer; Spalte bleibt gleich oder ändert sich um 1; keine Seitenüberschreitung",
+            "output": "maximal erreichbare Erzmenge in der unteren Zeile"
+          },
+          "state": {
+            "tableName": "G",
+            "dimensions": "zwei Dimensionen i und j",
+            "rowRange": "1<=i<=k",
+            "columnRange": "1<=j<=l",
+            "entryMeaning": "G(i,j) ist die maximale Erzmenge auf einem gültigen Weg, der in der ersten Reihe beginnt und in a_ij endet",
+            "optimizationDirection": "Maximum"
+          },
+          "recurrence": {
+            "baseCase": "G(1,j)=a_1j für 1<=j<=l",
+            "leftBoundary": "G(i,1)=a_i1+max{G(i-1,1),G(i-1,2)} für i>1",
+            "rightBoundary": "G(i,l)=a_il+max{G(i-1,l),G(i-1,l-1)} für i>1",
+            "innerCase": "G(i,j)=a_ij+max{G(i-1,j),G(i-1,j-1),G(i-1,j+1)} für i>1 und 1<j<l",
+            "invalidStates": "Zustände mit j<1 oder j>l sind unzulässig und werden nicht gelesen"
+          },
+          "evaluation": {
+            "dependencyDirection": "jeder Zustand hängt nur von der vorherigen Zeile i-1 ab",
+            "order": "zeilenweise von i=1 bis k, innerhalb einer Zeile von j=1 bis l",
+            "outputCell": "max_{1<=j<=l} G(k,j)"
+          },
+          "algorithm": {
+            "allocation": "G = neues Array[k][l]",
+            "initialization": "für j=1 bis l: G[1][j]=A[1][j]",
+            "loops": "für i=2 bis k: berechne linken Rand, innere Spalten und rechten Rand aus Zeile i-1",
+            "returnStatement": "return max_{1<=j<=l} G[k][j]"
+          },
+          "proof": {
+            "claim": "Für alle i,j enthält G(i,j) die maximale Erzmenge eines gültigen Weges von Zeile 1 nach a_ij",
+            "baseCase": "Für i=1 besteht der Weg nur aus a_1j, daher gilt G(1,j)=a_1j",
+            "inductionHypothesis": "Für Zeile i sind alle Werte G(i,j) korrekt",
+            "inductionStep": "Für Position (i+1,j) sind genau die zulässigen Vorgänger (i,j), (i,j-1), (i,j+1) möglich; das Maximum wählt den besten korrekten Vorgänger",
+            "conclusion": "Damit ist die Rekurrenz korrekt; die beste Endposition ist max_j G(k,j)"
+          },
+          "complexity": {
+            "states": "k*l Zustände",
+            "transitionCost": "O(1) pro Zustand",
+            "runtime": "O(k*l)",
+            "memory": "O(k*l)"
+          }
+        },
+        "dpTable": [
+          [
+            5,
+            6,
+            12,
+            9,
+            43
+          ],
+          [
+            50,
+            28,
+            67,
+            51,
+            44
+          ],
+          [
+            151,
+            79,
+            173,
+            85,
+            53
+          ],
+          [
+            168,
+            192,
+            195,
+            214,
+            91
+          ]
+        ],
+        "optimalValue": 214,
+        "oracleValidationStatus": "brute_force_matches_dp"
+      },
+      "variants": [
+        {
+          "id": "variant-mine-guided-entry",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-8f16b2505bbd",
+              "page": 10
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Geführte Einstiegsinstanz",
+          "mode": "learn",
+          "matrix": [
+            [
+              4,
+              7,
+              2
+            ],
+            [
+              8,
+              1,
+              5
+            ],
+            [
+              3,
+              9,
+              6
+            ]
+          ],
+          "focus": "Zustand und Vorgänger verstehen",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "canonical-dp-mine-v1",
+            "structuredAnswer": {
+              "interpretation": {
+                "x": "siehe Hauptlösung"
+              },
+              "state": {
+                "x": "siehe Hauptlösung"
+              },
+              "recurrence": {
+                "x": "siehe Hauptlösung"
+              },
+              "evaluation": {
+                "x": "siehe Hauptlösung"
+              },
+              "algorithm": {
+                "x": "siehe Hauptlösung"
+              },
+              "proof": {
+                "x": "siehe Hauptlösung"
+              },
+              "complexity": {
+                "x": "siehe Hauptlösung"
+              }
+            },
+            "dpTable": [
+              [
+                4,
+                7,
+                2
+              ],
+              [
+                15,
+                8,
+                12
+              ],
+              [
+                18,
+                24,
+                18
+              ]
+            ],
+            "optimalValue": 24,
+            "oracleValidationStatus": "brute_force_matches_dp"
+          }
+        },
+        {
+          "id": "variant-mine-standard-practice",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-8f16b2505bbd",
+              "page": 10
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Standard-Übungsinstanz",
+          "mode": "practice",
+          "matrix": [
+            [
+              5,
+              6,
+              12,
+              9,
+              43
+            ],
+            [
+              44,
+              16,
+              55,
+              8,
+              1
+            ],
+            [
+              101,
+              12,
+              106,
+              18,
+              2
+            ],
+            [
+              17,
+              19,
+              22,
+              41,
+              6
+            ]
+          ],
+          "focus": "vollständiger Entwurf",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "canonical-dp-mine-v1",
+            "structuredAnswer": {
+              "interpretation": {
+                "x": "siehe Hauptlösung"
+              },
+              "state": {
+                "x": "siehe Hauptlösung"
+              },
+              "recurrence": {
+                "x": "siehe Hauptlösung"
+              },
+              "evaluation": {
+                "x": "siehe Hauptlösung"
+              },
+              "algorithm": {
+                "x": "siehe Hauptlösung"
+              },
+              "proof": {
+                "x": "siehe Hauptlösung"
+              },
+              "complexity": {
+                "x": "siehe Hauptlösung"
+              }
+            },
+            "dpTable": [
+              [
+                5,
+                6,
+                12,
+                9,
+                43
+              ],
+              [
+                50,
+                28,
+                67,
+                51,
+                44
+              ],
+              [
+                151,
+                79,
+                173,
+                85,
+                53
+              ],
+              [
+                168,
+                192,
+                195,
+                214,
+                91
+              ]
+            ],
+            "optimalValue": 214,
+            "oracleValidationStatus": "brute_force_matches_dp"
+          }
+        },
+        {
+          "id": "variant-mine-exam",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-35405e721f05",
+              "page": 11
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Prüfungsinstanz",
+          "mode": "exam",
+          "matrix": [
+            [
+              3,
+              10,
+              2,
+              5
+            ],
+            [
+              8,
+              4,
+              9,
+              1
+            ],
+            [
+              6,
+              7,
+              2,
+              11
+            ],
+            [
+              1,
+              5,
+              13,
+              4
+            ]
+          ],
+          "focus": "ohne Hinweise entwerfen",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "canonical-dp-mine-v1",
+            "structuredAnswer": {
+              "interpretation": {
+                "x": "siehe Hauptlösung"
+              },
+              "state": {
+                "x": "siehe Hauptlösung"
+              },
+              "recurrence": {
+                "x": "siehe Hauptlösung"
+              },
+              "evaluation": {
+                "x": "siehe Hauptlösung"
+              },
+              "algorithm": {
+                "x": "siehe Hauptlösung"
+              },
+              "proof": {
+                "x": "siehe Hauptlösung"
+              },
+              "complexity": {
+                "x": "siehe Hauptlösung"
+              }
+            },
+            "dpTable": [
+              [
+                3,
+                10,
+                2,
+                5
+              ],
+              [
+                18,
+                14,
+                19,
+                6
+              ],
+              [
+                24,
+                26,
+                21,
+                30
+              ],
+              [
+                27,
+                31,
+                43,
+                34
+              ]
+            ],
+            "optimalValue": 43,
+            "oracleValidationStatus": "brute_force_matches_dp"
+          }
+        },
+        {
+          "id": "variant-mine-review-state",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-35405e721f05",
+              "page": 11
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Wiederholung Zustandsdefinition",
+          "mode": "review",
+          "matrix": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "focus": "Zustandsbedeutung",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "canonical-dp-mine-v1",
+            "structuredAnswer": {
+              "interpretation": {
+                "x": "siehe Hauptlösung"
+              },
+              "state": {
+                "x": "siehe Hauptlösung"
+              },
+              "recurrence": {
+                "x": "siehe Hauptlösung"
+              },
+              "evaluation": {
+                "x": "siehe Hauptlösung"
+              },
+              "algorithm": {
+                "x": "siehe Hauptlösung"
+              },
+              "proof": {
+                "x": "siehe Hauptlösung"
+              },
+              "complexity": {
+                "x": "siehe Hauptlösung"
+              }
+            },
+            "dpTable": [
+              [
+                2,
+                1
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "optimalValue": 6,
+            "oracleValidationStatus": "brute_force_matches_dp"
+          }
+        },
+        {
+          "id": "variant-mine-review-recurrence",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-35405e721f05",
+              "page": 11
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Wiederholung Rekurrenz",
+          "mode": "review",
+          "matrix": [
+            [
+              9,
+              1,
+              8
+            ],
+            [
+              2,
+              10,
+              3
+            ],
+            [
+              4,
+              5,
+              6
+            ]
+          ],
+          "focus": "Rand- und Innenfälle",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "canonical-dp-mine-v1",
+            "structuredAnswer": {
+              "interpretation": {
+                "x": "siehe Hauptlösung"
+              },
+              "state": {
+                "x": "siehe Hauptlösung"
+              },
+              "recurrence": {
+                "x": "siehe Hauptlösung"
+              },
+              "evaluation": {
+                "x": "siehe Hauptlösung"
+              },
+              "algorithm": {
+                "x": "siehe Hauptlösung"
+              },
+              "proof": {
+                "x": "siehe Hauptlösung"
+              },
+              "complexity": {
+                "x": "siehe Hauptlösung"
+              }
+            },
+            "dpTable": [
+              [
+                9,
+                1,
+                8
+              ],
+              [
+                11,
+                19,
+                11
+              ],
+              [
+                23,
+                24,
+                25
+              ]
+            ],
+            "optimalValue": 25,
+            "oracleValidationStatus": "brute_force_matches_dp"
+          }
+        },
+        {
+          "id": "variant-mine-state-part",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-35405e721f05",
+              "page": 11
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Teilübung Zustandsdefinition",
+          "mode": "practice",
+          "matrix": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "focus": "nur Zustand",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "canonical-dp-mine-v1",
+            "structuredAnswer": {
+              "interpretation": {
+                "x": "siehe Hauptlösung"
+              },
+              "state": {
+                "x": "siehe Hauptlösung"
+              },
+              "recurrence": {
+                "x": "siehe Hauptlösung"
+              },
+              "evaluation": {
+                "x": "siehe Hauptlösung"
+              },
+              "algorithm": {
+                "x": "siehe Hauptlösung"
+              },
+              "proof": {
+                "x": "siehe Hauptlösung"
+              },
+              "complexity": {
+                "x": "siehe Hauptlösung"
+              }
+            },
+            "dpTable": [
+              [
+                1,
+                2
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "optimalValue": 6,
+            "oracleValidationStatus": "brute_force_matches_dp"
+          }
+        },
+        {
+          "id": "variant-mine-recurrence-part",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-35405e721f05",
+              "page": 11
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Teilübung Rekurrenz",
+          "mode": "practice",
+          "matrix": [
+            [
+              2,
+              5,
+              1
+            ],
+            [
+              4,
+              3,
+              6
+            ]
+          ],
+          "focus": "nur Rekurrenz",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "canonical-dp-mine-v1",
+            "structuredAnswer": {
+              "interpretation": {
+                "x": "siehe Hauptlösung"
+              },
+              "state": {
+                "x": "siehe Hauptlösung"
+              },
+              "recurrence": {
+                "x": "siehe Hauptlösung"
+              },
+              "evaluation": {
+                "x": "siehe Hauptlösung"
+              },
+              "algorithm": {
+                "x": "siehe Hauptlösung"
+              },
+              "proof": {
+                "x": "siehe Hauptlösung"
+              },
+              "complexity": {
+                "x": "siehe Hauptlösung"
+              }
+            },
+            "dpTable": [
+              [
+                2,
+                5,
+                1
+              ],
+              [
+                9,
+                8,
+                11
+              ]
+            ],
+            "optimalValue": 11,
+            "oracleValidationStatus": "brute_force_matches_dp"
+          }
+        },
+        {
+          "id": "variant-mine-order-part",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-35405e721f05",
+              "page": 12
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Teilübung Bottom-up-Reihenfolge",
+          "mode": "practice",
+          "matrix": [
+            [
+              7,
+              3
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "focus": "Abhängigkeiten",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "canonical-dp-mine-v1",
+            "structuredAnswer": {
+              "interpretation": {
+                "x": "siehe Hauptlösung"
+              },
+              "state": {
+                "x": "siehe Hauptlösung"
+              },
+              "recurrence": {
+                "x": "siehe Hauptlösung"
+              },
+              "evaluation": {
+                "x": "siehe Hauptlösung"
+              },
+              "algorithm": {
+                "x": "siehe Hauptlösung"
+              },
+              "proof": {
+                "x": "siehe Hauptlösung"
+              },
+              "complexity": {
+                "x": "siehe Hauptlösung"
+              }
+            },
+            "dpTable": [
+              [
+                7,
+                3
+              ],
+              [
+                8,
+                15
+              ],
+              [
+                17,
+                19
+              ]
+            ],
+            "optimalValue": 19,
+            "oracleValidationStatus": "brute_force_matches_dp"
+          }
+        },
+        {
+          "id": "variant-mine-error-correction",
+          "contentVersion": "phase16-fd92529318c0",
+          "sourceRefs": [
+            {
+              "sourceId": "src-35405e721f05",
+              "page": 12
+            }
+          ],
+          "verificationStatus": "verified_against_official_source",
+          "publicDistributionStatus": "public_safe",
+          "title": "Fehlerkorrektur-Teilübung",
+          "mode": "review",
+          "matrix": [
+            [
+              6,
+              2,
+              9
+            ],
+            [
+              1,
+              7,
+              3
+            ],
+            [
+              8,
+              4,
+              5
+            ]
+          ],
+          "focus": "falsche Vorgänger korrigieren",
+          "canonicalSolution": {
+            "canonicalSolutionVersion": "canonical-dp-mine-v1",
+            "structuredAnswer": {
+              "interpretation": {
+                "x": "siehe Hauptlösung"
+              },
+              "state": {
+                "x": "siehe Hauptlösung"
+              },
+              "recurrence": {
+                "x": "siehe Hauptlösung"
+              },
+              "evaluation": {
+                "x": "siehe Hauptlösung"
+              },
+              "algorithm": {
+                "x": "siehe Hauptlösung"
+              },
+              "proof": {
+                "x": "siehe Hauptlösung"
+              },
+              "complexity": {
+                "x": "siehe Hauptlösung"
+              }
+            },
+            "dpTable": [
+              [
+                6,
+                2,
+                9
+              ],
+              [
+                7,
+                16,
+                12
+              ],
+              [
+                24,
+                20,
+                21
+              ]
+            ],
+            "optimalValue": 24,
+            "oracleValidationStatus": "brute_force_matches_dp"
+          }
+        }
+      ]
+    },
+    "hints": [
+      {
+        "id": "hint-dp-state",
+        "level": 1,
+        "text": "Ein Zustand muss festhalten, in welcher Zeile und Spalte Alice endet."
+      },
+      {
+        "id": "hint-dp-recurrence",
+        "level": 2,
+        "text": "Die letzte Entscheidung kommt aus der vorherigen Zeile: links oben, oben oder rechts oben, sofern die Spalte existiert."
+      },
+      {
+        "id": "hint-dp-output",
+        "level": 3,
+        "text": "Alice darf in jeder Spalte der unteren Zeile enden; deshalb wird über G(k,j) maximiert."
+      }
+    ]
+  }
+]

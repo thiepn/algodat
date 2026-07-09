@@ -1,0 +1,16 @@
+[
+  {
+    "id": "variant-rekurrenz-acht-halb-kubisch-kanonisch",
+    "title": "Kanonische offizielle Übungsaufgabe",
+    "mutation": "keine",
+    "productionStatus": "locked_reference",
+    "sourcePolicy": "Nur diese Variante wird bewertet, weil Aufgabe und Lösung offiziell belegt sind."
+  },
+  {
+    "id": "variant-probeklausur-sechzehn-viertel-kubisch",
+    "title": "Probeklausur-Aufgabe 6",
+    "mutation": "a=16, b=4, f(n)=n^3",
+    "productionStatus": "blocked",
+    "sourcePolicy": "Aufgabe ist offiziell belegt; die extrahierte Beispiellösung ist für eine Golden-Truth-Bewertung noch nicht belastbar genug."
+  }
+]

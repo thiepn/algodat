@@ -1,0 +1,238 @@
+import { content } from '../../content/loaders/content';
+import type {
+  ExamPackage,
+  ExamResult as StoredExamResult,
+  ExamSession as StoredExamSession,
+  ExamSnapshot as StoredExamSnapshot,
+  MasteryRecord,
+} from '../../content/schemas';
+import {
+  createExamSession,
+  createRecoverySnapshot,
+  exactToLabel,
+  finalizeExamSubmission,
+  handleExamExpiry,
+  markTaskForReview,
+  navigateToTask,
+  restoreRecoverySnapshot,
+  startExamSession,
+  updateTaskCompletionState,
+  type ExamResultReport,
+  type ExamSession,
+} from '../../domain/exam-simulator';
+import {
+  examResultRepository,
+  examSessionRepository,
+  examSnapshotRepository,
+  masteryRepository,
+} from '../../persistence/repositories';
+
+export function getCoreExamPackage(): ExamPackage {
+  const examPackage = content.examPackages.find(
+    (candidate) => candidate.id === 'exam-package-kernkompetenz-v4',
+  );
+  if (!examPackage) throw new Error('Kernkompetenz-Probeklausur fehlt.');
+  return examPackage;
+}
+
+export function getExamPackageById(examPackageId: string): ExamPackage | undefined {
+  return content.examPackages.find((candidate) => candidate.id === examPackageId);
+}
+
+function packageForSession(session: ExamSession) {
+  return getExamPackageById(session.examPackageId) ?? getCoreExamPackage();
+}
+
+function meta(session: ExamSession, examPackage = getCoreExamPackage()): StoredExamSession {
+  return {
+    ...session,
+    schemaVersion: '1.0.0',
+    sourceRefs: examPackage.sourceRefs,
+    verificationStatus: 'verified_against_official_source',
+    lastReviewed: new Date().toISOString(),
+    duplicateGroupId: null,
+    taskPayloadVersions: Object.fromEntries(
+      examPackage.taskSlots.map((slot) => [slot.taskSlotId, `${slot.adapterId}-payload-v1`]),
+    ),
+    recoveryMetadata: { policy: examPackage.recoveryPolicy.id },
+    appVersion: content.manifest.contentVersion,
+  };
+}
+
+export async function createSimulatorSession(
+  mode: 'strict_exam' | 'practice_exam' = 'strict_exam',
+  examPackageId = getCoreExamPackage().id,
+) {
+  const examPackage = getExamPackageById(examPackageId) ?? getCoreExamPackage();
+  const session = createExamSession({
+    examPackage,
+    mode,
+    now: new Date().toISOString(),
+    contentVersion: content.manifest.contentVersion,
+  });
+  const briefing = { ...session, status: 'briefing' as const };
+  await examSessionRepository.put(meta(briefing, examPackage));
+  return briefing;
+}
+
+export async function startSimulatorSession(session: ExamSession) {
+  const examPackage = packageForSession(session);
+  const started = startExamSession(session, examPackage.durationMinutes, Date.now());
+  await examSessionRepository.put(meta(started, examPackage));
+  await saveSimulatorSnapshot(started);
+  return started;
+}
+
+export async function saveSimulatorSnapshot(session: ExamSession) {
+  const examPackage = packageForSession(session);
+  const snapshot = createRecoverySnapshot({
+    session,
+    savedAt: new Date().toISOString(),
+    adapterVersions: Object.fromEntries(
+      examPackage.taskSlots.map((slot) => [slot.adapterId, `${slot.adapterId}-v1`]),
+    ),
+    taskPayloadVersions: Object.fromEntries(
+      examPackage.taskSlots.map((slot) => [slot.taskSlotId, `${slot.adapterId}-payload-v1`]),
+    ),
+  });
+  const stored: StoredExamSnapshot = {
+    ...snapshot,
+    payload: snapshot.payload,
+  };
+  await examSnapshotRepository.put(stored);
+  return stored;
+}
+
+export async function restoreSimulatorSession(sessionId: string) {
+  const snapshot = await examSnapshotRepository.get(`snapshot-${sessionId}`);
+  if (!snapshot) return undefined;
+  const restored = restoreRecoverySnapshot(snapshot as never);
+  if (!restored.ok || !restored.value) return undefined;
+  return restored.value;
+}
+
+export async function getSimulatorSession(sessionId: string) {
+  return (await examSessionRepository.get(sessionId)) as ExamSession | undefined;
+}
+
+export async function listSimulatorSessions() {
+  return (await examSessionRepository.list()) as ExamSession[];
+}
+
+export async function saveTaskAnswer({
+  session,
+  taskSlotId,
+  answerText,
+}: {
+  session: ExamSession;
+  taskSlotId: string;
+  answerText: string;
+}) {
+  let answer: unknown;
+  try {
+    answer = answerText.trim() ? JSON.parse(answerText) : null;
+  } catch {
+    answer = { invalidJson: answerText };
+  }
+  const completionStatus = answerText.trim()
+    ? answerText.includes('{') && answerText.includes('}')
+      ? 'answered'
+      : 'partial'
+    : 'unanswered';
+  const updated = updateTaskCompletionState(
+    session,
+    taskSlotId,
+    answer,
+    completionStatus,
+    new Date().toISOString(),
+  );
+  await examSessionRepository.put(meta(updated, packageForSession(updated)));
+  await saveSimulatorSnapshot(updated);
+  return updated;
+}
+
+export async function navigateSimulatorTask(session: ExamSession, taskSlotId: string) {
+  const updated = navigateToTask(session, taskSlotId, new Date().toISOString());
+  await examSessionRepository.put(meta(updated, packageForSession(updated)));
+  await saveSimulatorSnapshot(updated);
+  return updated;
+}
+
+export async function setSimulatorReviewFlag(
+  session: ExamSession,
+  taskSlotId: string,
+  marked: boolean,
+) {
+  const updated = markTaskForReview(session, taskSlotId, marked);
+  await examSessionRepository.put(meta(updated, packageForSession(updated)));
+  await saveSimulatorSnapshot(updated);
+  return updated;
+}
+
+export async function expireSimulatorSession(session: ExamSession) {
+  const expired = handleExamExpiry(session, new Date().toISOString());
+  return submitSimulatorSession(expired);
+}
+
+export async function submitSimulatorSession(session: ExamSession) {
+  const examPackage = packageForSession(session);
+  const { session: graded, report } = finalizeExamSubmission(
+    session,
+    examPackage,
+    new Date().toISOString(),
+  );
+  await examSessionRepository.put(meta(graded, examPackage));
+  await examResultRepository.put(toStoredResult(report));
+  await masteryRepository.put(toMasteryRecord(report, examPackage));
+  return { session: graded, report };
+}
+
+export async function getSimulatorResult(sessionId: string) {
+  return examResultRepository.get(`exam-result-${sessionId}`);
+}
+
+function serializableExact(value: { numerator: bigint; denominator: bigint }) {
+  return { numerator: Number(value.numerator), denominator: Number(value.denominator) };
+}
+
+function toStoredResult(report: ExamResultReport): StoredExamResult {
+  return {
+    id: `exam-result-${report.sessionId}`,
+    resultId: `exam-result-${report.sessionId}`,
+    sessionId: report.sessionId,
+    taskScores: report.aggregate.taskScores.map((score) => ({
+      ...score,
+      mappedExamScore: serializableExact(score.mappedExamScore),
+      examMaximum: serializableExact(score.examMaximum),
+    })),
+    totalScore: serializableExact(report.aggregate.totalScore),
+    maximumScore: serializableExact(report.aggregate.maximumScore),
+    timingAnalytics: { ...report.timing },
+    errorClusters: report.errorClusters,
+    masteryImpact: report.masteryImpact,
+    recommendations: report.recommendations,
+    generatedAt: report.submittedAt,
+    scoringVersion: 'exam-scoring-v1',
+  };
+}
+
+function toMasteryRecord(report: ExamResultReport, examPackage: ExamPackage): MasteryRecord {
+  const now = new Date().toISOString();
+  return {
+    id: `mastery-${report.sessionId}`,
+    schemaVersion: '1.0.0',
+    contentVersion: content.manifest.contentVersion,
+    sourceRefs: examPackage.sourceRefs,
+    verificationStatus: 'verified_against_official_source',
+    lastReviewed: now,
+    duplicateGroupId: null,
+    topicOrTaskId: report.sessionId,
+    dimensions: report.masteryImpact,
+    evidenceAttemptIds: [report.sessionId],
+    updatedAt: now,
+  };
+}
+
+export function formatExamPoint(value: { numerator: bigint; denominator: bigint }) {
+  return exactToLabel(value);
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": 10,
+  "selectedTrainerId": "trainer-graph-floyd-warshall-v1",
+  "selectedCandidate": "floyd_warshall_matrix_tracing",
+  "decisionPolicy": "Nicht kompensierbare Gates zuerst; Präferenzreihenfolge nur bei gleicher Evidenz.",
+  "candidates": [
+    {
+      "id": "floyd_warshall_matrix_tracing",
+      "rank": 1,
+      "gateStatus": "passed",
+      "score": 94,
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "page": 4, "role": "offizielle Aufgabe" },
+        { "sourceId": "src-35405e721f05", "page": 5, "role": "offizielle Beispiellösung" },
+        { "sourceId": "src-c4dde22523d3", "page": 4, "role": "reale Klausurrelevanz ohne verwendete Lösung" }
+      ],
+      "passedGates": [
+        "official_primary_source",
+        "complete_solution",
+        "deterministic_vertex_order",
+        "oracle_reproduces_official_matrix_sequence",
+        "public_safe_generated_instance"
+      ],
+      "risks": [
+        "Handschriftliche Lösung muss als Matrixfolge maschinell konserviert werden; diese Phase verwendet dafür eine geprüfte Oracle-Reproduktion."
+      ]
+    },
+    {
+      "id": "bellman_ford_round_tracing",
+      "rank": 2,
+      "gateStatus": "deferred",
+      "score": 81,
+      "sourceRefs": [
+        { "sourceId": "src-88179ac88dc5", "page": 3, "role": "offizielle Lösung/Inventar" },
+        { "sourceId": "src-28fe81380661", "page": 4, "role": "offizielle Aufgabe/Inventar" }
+      ],
+      "blockingIssues": ["Kantenreihenfolge und Rundensemantik für produktives Scoring noch nicht eng genug auditiert."]
+    },
+    {
+      "id": "prim_tracing",
+      "rank": 3,
+      "gateStatus": "deferred",
+      "score": 78,
+      "sourceRefs": [
+        { "sourceId": "src-8f16b2505bbd", "page": 3, "role": "offizielle Aufgabe" },
+        { "sourceId": "src-35405e721f05", "page": 3, "role": "offizielle Beispiellösung" }
+      ],
+      "blockingIssues": ["Gleichstands- und Auswahlkonvention weniger eng prüfbar als die Floyd-Warshall-Matrixfolge."]
+    },
+    {
+      "id": "dfs_tracing",
+      "rank": 4,
+      "gateStatus": "deferred",
+      "score": 72,
+      "sourceRefs": [
+        { "sourceId": "src-6df30a9ff1ae", "page": 1, "role": "offizielle Aufgabe mit alphabetischer Tie-Break-Regel" }
+      ],
+      "blockingIssues": ["Keine verknüpfte vollständige Lösung im verfügbaren lokalen PDF-Satz."]
+    },
+    {
+      "id": "dijkstra_tracing",
+      "rank": 5,
+      "gateStatus": "blocked",
+      "score": 66,
+      "sourceRefs": [
+        { "sourceId": "src-011d1ee23245", "page": 4, "role": "offizielle Aufgabe ohne verknüpfte Lösung" }
+      ],
+      "blockingIssues": ["Frühere Audits dokumentieren fehlende oder widersprüchliche Lösungslage."]
+    },
+    {
+      "id": "bfs_tracing",
+      "rank": 6,
+      "gateStatus": "blocked",
+      "score": 60,
+      "sourceRefs": [
+        { "sourceId": "src-1ea0642ec775", "page": 1, "role": "Übungs-/Lösungsumfeld laut Inventar" }
+      ],
+      "blockingIssues": ["Kein stärkeres produktives Klausur-/Lösungspaket als Floyd-Warshall im Phase-10-Gate."]
+    }
+  ]
+}

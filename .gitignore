@@ -1,0 +1,54 @@
+# Abhängigkeiten und Build-Artefakte
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.vite/
+*.log
+
+# Lokale Umgebungen und Secrets
+.env
+.env.*
+!.env.example
+.venv/
+.pytest_cache/
+.mypy_cache/
+__pycache__/
+*.py[cod]
+
+# Betriebssystem-Artefakte
+.DS_Store
+Thumbs.db
+
+# Lokale Nutzerdaten und temporäre Arbeitsstände
+exports/
+backups/
+user-data/
+tmp/
+temp/
+output/
+
+# Private lokale Quellen - niemals committen oder deployen
+*.pdf
+private-sources/
+source-pdfs/
+lecture-pdfs/
+scans/
+raw-extractions/
+info 1 copy/
+pdfs/
+
+# Quellscans und gerenderte Ableitungen; anwendungseigene Bilder unter public/ bleiben erlaubt
+info 1 copy/**/*.jpg
+info 1 copy/**/*.JPG
+info 1 copy/**/*.jpeg
+info 1 copy/**/*.png
+pdfs/**/*.jpg
+pdfs/**/*.JPG
+pdfs/**/*.jpeg
+pdfs/**/*.png
+
+# Lokale OCR- und Extraktionscaches
+.ocr-cache/
+.extraction-cache/

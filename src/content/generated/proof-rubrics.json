@@ -1,0 +1,77 @@
+[
+  {
+    "id": "rubric-trainer-schleifeninvariante-summe-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-e05ae3743b24"
+    ],
+    "taskType": "loop_invariant_proof",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 11,
+        "label": "Offizielle Übungslösung: Behauptung, Invariante und IA"
+      },
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 12,
+        "label": "Offizielle Übungslösung: IV, IS, Terminierung und Schluss"
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-07",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "engine_matches_official_method",
+    "trainerKind": "proof",
+    "trainerId": "trainer-schleifeninvariante-summe-v1",
+    "maxPoints": 16,
+    "criteria": [
+      {
+        "id": "program_analysis",
+        "label": "Programm verstanden",
+        "maxPoints": 2
+      },
+      {
+        "id": "claim",
+        "label": "Behauptung formuliert",
+        "maxPoints": 2
+      },
+      {
+        "id": "invariant",
+        "label": "Zeitpunkt, Bereich und Invariante",
+        "maxPoints": 3
+      },
+      {
+        "id": "initialization",
+        "label": "Induktionsanfang",
+        "maxPoints": 2
+      },
+      {
+        "id": "hypothesis",
+        "label": "Induktionsvoraussetzung",
+        "maxPoints": 1
+      },
+      {
+        "id": "preservation",
+        "label": "Induktionsschritt und Erhaltung",
+        "maxPoints": 3
+      },
+      {
+        "id": "termination",
+        "label": "Terminierung",
+        "maxPoints": 2
+      },
+      {
+        "id": "conclusion",
+        "label": "Schlussfolgerung",
+        "maxPoints": 1
+      }
+    ],
+    "followUpErrorPolicy": "Formale Strukturpunkte können trotz Folgefehlern vergeben werden; mathematische Inhaltspunkte erfordern parsebare Ausdrücke innerhalb der dokumentierten Grammatik.",
+    "caps": {
+      "solutionRevealedMaximumRatio": 0.5,
+      "incompleteMaximumRatio": 0.7
+    }
+  }
+]

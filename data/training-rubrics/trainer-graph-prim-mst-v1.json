@@ -1,0 +1,47 @@
+{
+  "id": "rubric-trainer-graph-prim-mst-v1",
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase12-prim-mst-v1",
+  "topicIds": ["topic-6a47a10f37e0", "topic-c4a698fc939e"],
+  "taskType": "graph_algorithm_tracing",
+  "sourceRefs": [
+    { "sourceId": "src-8f16b2505bbd", "page": 3, "label": "Prim-Aufgabenformat" },
+    { "sourceId": "src-35405e721f05", "page": 3, "label": "Prim-Lösung" },
+    { "sourceId": "src-baa07f0a207a", "page": 958, "label": "key-/parent-Konvention" },
+    { "sourceId": "src-baa07f0a207a", "page": 965, "label": "Laufzeit" }
+  ],
+  "verificationStatus": "verified_against_official_source",
+  "lastReviewed": "2026-07-08",
+  "publicDistributionStatus": "public_safe",
+  "solutionValidationStatus": "deterministic_engine_verified",
+  "trainerKind": "tracing",
+  "trainerId": "trainer-graph-prim-mst-v1",
+  "maxPoints": 40,
+  "examPoints": 4,
+  "criteria": [
+    { "id": "prim-start", "label": "Startknoten", "maxPoints": 4 },
+    {
+      "id": "prim-vertex-order",
+      "label": "Aufnahmereihenfolge der Knoten",
+      "maxPoints": 6
+    },
+    {
+      "id": "prim-edge-order",
+      "label": "Kantenreihenfolge und Endbaum",
+      "maxPoints": 8
+    },
+    { "id": "prim-key-table", "label": "key-Tabelle", "maxPoints": 7 },
+    { "id": "prim-parent-table", "label": "parent-Tabelle", "maxPoints": 6 },
+    { "id": "prim-total-weight", "label": "Gesamtgewicht", "maxPoints": 4 },
+    {
+      "id": "prim-safe-edge-runtime",
+      "label": "Sichere Kante und Laufzeit",
+      "maxPoints": 5
+    }
+  ],
+  "followUpErrorPolicy": "Ein früher falscher Prim-Schritt wird nicht doppelt bestraft: Ein semantisch gültiger minimaler Endbaum erhält Teilpunkte, auch wenn die strict-kanonische Reihenfolge abweicht.",
+  "caps": {
+    "solutionRevealedMaximumPoints": 24,
+    "hintsUsedMaximumPoints": 34
+  }
+}

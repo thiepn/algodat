@@ -1,0 +1,258 @@
+[
+  {
+    "misconceptionId": "mixup-big-o-theta",
+    "category": "complexity_mixup",
+    "title": "O wird als exakte Schranke statt als obere Schranke gelesen.",
+    "remediationTarget": "Landau-Notation wiederholen",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ]
+  },
+  {
+    "misconceptionId": "best-worst-confusion",
+    "category": "best_vs_worst_case",
+    "title": "Best Case und Worst Case werden vertauscht.",
+    "remediationTarget": "Worst-Case-Begriff klären",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ]
+  },
+  {
+    "misconceptionId": "master-case-mixup",
+    "category": "complexity_mixup",
+    "title": "Master-Theorem-Fälle werden ohne Vergleich der Terme gewählt.",
+    "remediationTarget": "Master-Theorem-Fallanalyse",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 17
+      },
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 25
+      }
+    ]
+  },
+  {
+    "misconceptionId": "recurrence-shape-error",
+    "category": "notation_confusion",
+    "title": "Die Anzahl rekursiver Aufrufe oder die Teilproblemgröße wird falsch gelesen.",
+    "remediationTarget": "Rekurrenzparameter a und b",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 17
+      },
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 25
+      }
+    ]
+  },
+  {
+    "misconceptionId": "binary-search-unsorted",
+    "category": "prerequisite_confusion",
+    "title": "Binäre Suche wird auf unsortierte Daten angewendet.",
+    "remediationTarget": "Suchvoraussetzung sortierte Folge",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ]
+  },
+  {
+    "misconceptionId": "stable-inplace-mixup",
+    "category": "stable_vs_in_place",
+    "title": "Stabilität und In-place-Eigenschaft werden verwechselt.",
+    "remediationTarget": "Sortierklassifikation",
+    "sourceRefs": [
+      {
+        "sourceId": "src-c0e0f8927c2c",
+        "page": 1
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      }
+    ]
+  },
+  {
+    "misconceptionId": "stack-queue-mixup",
+    "category": "data_structure_operation_error",
+    "title": "LIFO und FIFO werden vertauscht.",
+    "remediationTarget": "Stack- und Queue-Operationen",
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ]
+  },
+  {
+    "misconceptionId": "bst-heap-mixup",
+    "category": "bst_vs_heap_confusion",
+    "title": "Suchbaumordnung und Heap-Ordnung werden verwechselt.",
+    "remediationTarget": "Baum- und Heap-Invarianten",
+    "sourceRefs": [
+      {
+        "sourceId": "src-79ae96ebbccf",
+        "page": 2
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 6
+      }
+    ]
+  },
+  {
+    "misconceptionId": "directed-undirected-mixup",
+    "category": "directed_vs_undirected",
+    "title": "Gerichtete und ungerichtete Kanten werden gleich behandelt.",
+    "remediationTarget": "Graphmodell lesen",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ]
+  },
+  {
+    "misconceptionId": "negative-edge-cycle-mixup",
+    "category": "necessary_vs_sufficient",
+    "title": "Negative Kante und negativer Kreis werden verwechselt.",
+    "remediationTarget": "Voraussetzungen kürzester Wege",
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ]
+  },
+  {
+    "misconceptionId": "shortest-path-mst-mixup",
+    "category": "mst_shortest_path_confusion",
+    "title": "MST- und kürzeste-Wege-Problem werden vertauscht.",
+    "remediationTarget": "Graphproblem zuerst klassifizieren",
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ]
+  },
+  {
+    "misconceptionId": "dijkstra-negative-edge",
+    "category": "shortest_path_precondition_error",
+    "title": "Dijkstra wird trotz negativer Kanten gewählt.",
+    "remediationTarget": "Dijkstra-Voraussetzungen",
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ]
+  },
+  {
+    "misconceptionId": "dp-dnc-mixup",
+    "category": "algorithm_mixup",
+    "title": "DP und Divide-and-Conquer werden nur wegen Rekursion gleichgesetzt.",
+    "remediationTarget": "Überlappung und Zustandsspeicherung prüfen",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ]
+  },
+  {
+    "misconceptionId": "greedy-proof-missing",
+    "category": "result_vs_proof",
+    "title": "Eine lokale Greedy-Regel wird ohne Korrektheitsargument akzeptiert.",
+    "remediationTarget": "Greedy-Beweisform wiederholen",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ]
+  },
+  {
+    "misconceptionId": "correctness-runtime-mixup",
+    "category": "result_vs_proof",
+    "title": "Aus einer Laufzeitangabe wird fälschlich Korrektheit abgeleitet.",
+    "remediationTarget": "Korrektheit und Laufzeit trennen",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 11
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 12
+      }
+    ]
+  },
+  {
+    "misconceptionId": "invariant-step-missing",
+    "category": "necessary_vs_sufficient",
+    "title": "Ein Invariantenbeweis lässt Initialisierung oder Erhaltung aus.",
+    "remediationTarget": "Invariantenstruktur IA/IV/IS",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 11
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 12
+      }
+    ]
+  }
+]

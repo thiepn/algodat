@@ -1,0 +1,950 @@
+[
+  {
+    "id": "fd-asymptotics-single-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-asymptotics"
+    ],
+    "topicIds": [
+      "topic-916a9f1645f2",
+      "topic-05cbaf0c71b3"
+    ],
+    "examTaskNumbers": [
+      1,
+      6
+    ],
+    "difficulty": "leicht",
+    "itemType": "single_choice",
+    "prompt": {
+      "stem": "Welche Aussage ist für „Asymptotik und Landau-Notation“ belegt?",
+      "instruction": "Wähle genau eine Antwort."
+    },
+    "options": [
+      {
+        "id": "correct",
+        "text": "Worst-Case-Analyse betrachtet den ungünstigsten zulässigen Eingabefall.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "wrong-a",
+        "text": "O-Notation ist immer eine exakte Schranke.",
+        "correct": false,
+        "misconceptionId": "mixup-big-o-theta",
+        "distractorCategory": "complexity_mixup",
+        "reasonIncorrect": "O wird als exakte Schranke statt als obere Schranke gelesen.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Landau-Notation wiederholen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "wrong-b",
+        "text": "Konstante Faktoren dominieren asymptotisch.",
+        "correct": false,
+        "misconceptionId": "best-worst-confusion",
+        "distractorCategory": "best_vs_worst_case",
+        "reasonIncorrect": "Best Case und Worst Case werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Worst-Case-Begriff klären",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "correct"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Asymptotik und Landau-Notation: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "mixup-big-o-theta",
+      "best-worst-confusion"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-asymptotics-multiple-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-asymptotics"
+    ],
+    "topicIds": [
+      "topic-916a9f1645f2",
+      "topic-05cbaf0c71b3"
+    ],
+    "examTaskNumbers": [
+      1,
+      6
+    ],
+    "difficulty": "leicht",
+    "itemType": "multiple_choice",
+    "prompt": {
+      "stem": "Welche zwei Aussagen gehören zur Kompetenz „Asymptotik und Landau-Notation“?",
+      "instruction": "Wähle alle richtigen Antworten."
+    },
+    "options": [
+      {
+        "id": "fact-1",
+        "text": "Landau-Notation beschreibt asymptotische Schranken.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "fact-2",
+        "text": "Worst-Case-Analyse betrachtet den ungünstigsten zulässigen Eingabefall.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "distractor-a",
+        "text": "O-Notation ist immer eine exakte Schranke.",
+        "correct": false,
+        "misconceptionId": "mixup-big-o-theta",
+        "distractorCategory": "complexity_mixup",
+        "reasonIncorrect": "O wird als exakte Schranke statt als obere Schranke gelesen.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Landau-Notation wiederholen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "distractor-b",
+        "text": "Konstante Faktoren dominieren asymptotisch.",
+        "correct": false,
+        "misconceptionId": "best-worst-confusion",
+        "distractorCategory": "best_vs_worst_case",
+        "reasonIncorrect": "Best Case und Worst Case werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Worst-Case-Begriff klären",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "fact-1",
+        "fact-2"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_correct_option"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Asymptotik und Landau-Notation: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "mixup-big-o-theta",
+      "best-worst-confusion"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-asymptotics-true-false-reason",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-asymptotics"
+    ],
+    "topicIds": [
+      "topic-916a9f1645f2",
+      "topic-05cbaf0c71b3"
+    ],
+    "examTaskNumbers": [
+      1,
+      6
+    ],
+    "difficulty": "leicht",
+    "itemType": "true_false_reason",
+    "prompt": {
+      "stem": "Worst-Case-Analyse betrachtet den ungünstigsten zulässigen Eingabefall.",
+      "instruction": "Entscheide Wahr/Falsch und wähle die passende Begründung."
+    },
+    "options": [
+      {
+        "id": "truth-true",
+        "text": "Wahr",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "truth-false",
+        "text": "Falsch",
+        "correct": false,
+        "misconceptionId": "best-worst-confusion",
+        "distractorCategory": "best_vs_worst_case",
+        "reasonIncorrect": "Best Case und Worst Case werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Worst-Case-Begriff klären",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "reason-source",
+        "text": "Begründung: Landau-Notation beschreibt asymptotische Schranken.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "reason-trap",
+        "text": "Begründung: O-Notation ist immer eine exakte Schranke.",
+        "correct": false,
+        "misconceptionId": "best-worst-confusion",
+        "distractorCategory": "best_vs_worst_case",
+        "reasonIncorrect": "Best Case und Worst Case werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Worst-Case-Begriff klären",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "truth-true"
+      ],
+      "correctReasonId": "reason-source"
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_component"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Asymptotik und Landau-Notation: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "mixup-big-o-theta",
+      "best-worst-confusion"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-asymptotics-matching",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-asymptotics"
+    ],
+    "topicIds": [
+      "topic-916a9f1645f2",
+      "topic-05cbaf0c71b3"
+    ],
+    "examTaskNumbers": [
+      1,
+      6
+    ],
+    "difficulty": "leicht",
+    "itemType": "matching",
+    "prompt": {
+      "stem": "Ordne die Begriffe zur Kompetenz „Asymptotik und Landau-Notation“ zu.",
+      "instruction": "Wähle für jeden linken Begriff die passende rechte Beschreibung."
+    },
+    "options": [
+      {
+        "id": "left-0",
+        "text": "O",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "right-0",
+        "text": "obere asymptotische Schranke",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "left-1",
+        "text": "Worst Case",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "right-1",
+        "text": "ungünstigster zulässiger Eingabefall",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctPairs": {
+        "left-0": "right-0",
+        "left-1": "right-1"
+      }
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_pair"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Asymptotik und Landau-Notation: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "mixup-big-o-theta",
+      "best-worst-confusion"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-asymptotics-ordering",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-asymptotics"
+    ],
+    "topicIds": [
+      "topic-916a9f1645f2",
+      "topic-05cbaf0c71b3"
+    ],
+    "examTaskNumbers": [
+      1,
+      6
+    ],
+    "difficulty": "mittel",
+    "itemType": "ordering",
+    "prompt": {
+      "stem": "Bringe die Arbeitsschritte für „Asymptotik und Landau-Notation“ in eine sinnvolle Reihenfolge.",
+      "instruction": "Nutze die Pfeil-Schaltflächen oder die Tastaturreihenfolge."
+    },
+    "options": [
+      {
+        "id": "step-0",
+        "text": "konstant",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "step-1",
+        "text": "logarithmisch",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "linear",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "polynomiell",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "step-4",
+        "text": "exponentiell",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOrderIds": [
+        "step-0",
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 4,
+      "partialCredit": "adjacent_pairs"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Asymptotik und Landau-Notation: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "mixup-big-o-theta",
+      "best-worst-confusion"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-asymptotics-numeric",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-asymptotics"
+    ],
+    "topicIds": [
+      "topic-916a9f1645f2",
+      "topic-05cbaf0c71b3"
+    ],
+    "examTaskNumbers": [
+      1,
+      6
+    ],
+    "difficulty": "mittel",
+    "itemType": "numeric_short_answer",
+    "prompt": {
+      "stem": "Wie viele führende Terme bestimmen bei n^2 + 3n + 7 die asymptotische Klasse?",
+      "instruction": "Gib eine ganze Zahl ein."
+    },
+    "options": [],
+    "answerDefinition": {
+      "numericAnswer": 1,
+      "tolerance": 0
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Asymptotik und Landau-Notation: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "mixup-big-o-theta",
+      "best-worst-confusion"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-asymptotics-algorithm-selection",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-asymptotics"
+    ],
+    "topicIds": [
+      "topic-916a9f1645f2",
+      "topic-05cbaf0c71b3"
+    ],
+    "examTaskNumbers": [
+      1,
+      6
+    ],
+    "difficulty": "mittel",
+    "itemType": "algorithm_selection",
+    "prompt": {
+      "stem": "Welche Analyse passt zu „ungünstigster zulässiger Eingabefall“?",
+      "instruction": "Wähle den passenden Algorithmus, Begriff oder die passende Struktur."
+    },
+    "options": [
+      {
+        "id": "worst_case",
+        "text": "worst case",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "best_case",
+        "text": "best case",
+        "correct": false,
+        "misconceptionId": "best-worst-confusion",
+        "distractorCategory": "best_vs_worst_case",
+        "reasonIncorrect": "Best Case und Worst Case werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Worst-Case-Begriff klären",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "zufallsfall",
+        "text": "zufallsfall",
+        "correct": false,
+        "misconceptionId": "best-worst-confusion",
+        "distractorCategory": "best_vs_worst_case",
+        "reasonIncorrect": "Best Case und Worst Case werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Worst-Case-Begriff klären",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctAlgorithmId": "worst_case"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Asymptotik und Landau-Notation: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "mixup-big-o-theta",
+      "best-worst-confusion"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-asymptotics-complexity-classification",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-asymptotics"
+    ],
+    "topicIds": [
+      "topic-916a9f1645f2",
+      "topic-05cbaf0c71b3"
+    ],
+    "examTaskNumbers": [
+      1,
+      6
+    ],
+    "difficulty": "mittel",
+    "itemType": "complexity_classification",
+    "prompt": {
+      "stem": "Klassifiziere n^2 + 3n + 7.",
+      "instruction": "Wähle die passende Klassifikation."
+    },
+    "options": [
+      {
+        "id": "linear",
+        "text": "linear",
+        "correct": false,
+        "misconceptionId": "best-worst-confusion",
+        "distractorCategory": "best_vs_worst_case",
+        "reasonIncorrect": "Best Case und Worst Case werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Worst-Case-Begriff klären",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "quadratisch",
+        "text": "quadratisch",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "exponentiell",
+        "text": "exponentiell",
+        "correct": false,
+        "misconceptionId": "best-worst-confusion",
+        "distractorCategory": "best_vs_worst_case",
+        "reasonIncorrect": "Best Case und Worst Case werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Worst-Case-Begriff klären",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 9
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 11
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "quadratisch"
+      ],
+      "complexityClass": "quadratisch"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Asymptotik und Landau-Notation: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "mixup-big-o-theta",
+      "best-worst-confusion"
+    ],
+    "relatedTrainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 9
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  }
+]

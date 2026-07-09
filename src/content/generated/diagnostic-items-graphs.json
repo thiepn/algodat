@@ -1,0 +1,1962 @@
+[
+  {
+    "id": "fd-graph-basics-single-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-basics"
+    ],
+    "topicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "single_choice",
+    "prompt": {
+      "stem": "Welche Aussage ist für „Graphgrundlagen“ belegt?",
+      "instruction": "Wähle genau eine Antwort."
+    },
+    "options": [
+      {
+        "id": "correct",
+        "text": "Graphaufgaben unterscheiden gerichtete und ungerichtete Graphen.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "wrong-a",
+        "text": "Negative Kante und negativer Kreis bedeuten dasselbe.",
+        "correct": false,
+        "misconceptionId": "directed-undirected-mixup",
+        "distractorCategory": "directed_vs_undirected",
+        "reasonIncorrect": "Gerichtete und ungerichtete Kanten werden gleich behandelt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Graphmodell lesen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "wrong-b",
+        "text": "Ein Spannbaum darf Kreise enthalten.",
+        "correct": false,
+        "misconceptionId": "negative-edge-cycle-mixup",
+        "distractorCategory": "necessary_vs_sufficient",
+        "reasonIncorrect": "Negative Kante und negativer Kreis werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Voraussetzungen kürzester Wege",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "correct"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphgrundlagen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "directed-undirected-mixup",
+      "negative-edge-cycle-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-basics-multiple-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-basics"
+    ],
+    "topicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "multiple_choice",
+    "prompt": {
+      "stem": "Welche zwei Aussagen gehören zur Kompetenz „Graphgrundlagen“?",
+      "instruction": "Wähle alle richtigen Antworten."
+    },
+    "options": [
+      {
+        "id": "fact-1",
+        "text": "Graphaufgaben unterscheiden gerichtete und ungerichtete Graphen.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "fact-2",
+        "text": "Graphaufgaben unterscheiden gewichtete und ungewichtete Graphen.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "distractor-a",
+        "text": "Negative Kante und negativer Kreis bedeuten dasselbe.",
+        "correct": false,
+        "misconceptionId": "directed-undirected-mixup",
+        "distractorCategory": "directed_vs_undirected",
+        "reasonIncorrect": "Gerichtete und ungerichtete Kanten werden gleich behandelt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Graphmodell lesen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "distractor-b",
+        "text": "Ein Spannbaum darf Kreise enthalten.",
+        "correct": false,
+        "misconceptionId": "negative-edge-cycle-mixup",
+        "distractorCategory": "necessary_vs_sufficient",
+        "reasonIncorrect": "Negative Kante und negativer Kreis werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Voraussetzungen kürzester Wege",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "fact-1",
+        "fact-2"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_correct_option"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphgrundlagen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "directed-undirected-mixup",
+      "negative-edge-cycle-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-basics-true-false-reason",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-basics"
+    ],
+    "topicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "true_false_reason",
+    "prompt": {
+      "stem": "Graphaufgaben unterscheiden gerichtete und ungerichtete Graphen.",
+      "instruction": "Entscheide Wahr/Falsch und wähle die passende Begründung."
+    },
+    "options": [
+      {
+        "id": "truth-true",
+        "text": "Wahr",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "truth-false",
+        "text": "Falsch",
+        "correct": false,
+        "misconceptionId": "negative-edge-cycle-mixup",
+        "distractorCategory": "necessary_vs_sufficient",
+        "reasonIncorrect": "Negative Kante und negativer Kreis werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Voraussetzungen kürzester Wege",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "reason-source",
+        "text": "Begründung: Graphaufgaben unterscheiden gerichtete und ungerichtete Graphen.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "reason-trap",
+        "text": "Begründung: Negative Kante und negativer Kreis bedeuten dasselbe.",
+        "correct": false,
+        "misconceptionId": "negative-edge-cycle-mixup",
+        "distractorCategory": "necessary_vs_sufficient",
+        "reasonIncorrect": "Negative Kante und negativer Kreis werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Voraussetzungen kürzester Wege",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "truth-true"
+      ],
+      "correctReasonId": "reason-source"
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_component"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphgrundlagen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "directed-undirected-mixup",
+      "negative-edge-cycle-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-basics-matching",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-basics"
+    ],
+    "topicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "matching",
+    "prompt": {
+      "stem": "Ordne die Begriffe zur Kompetenz „Graphgrundlagen“ zu.",
+      "instruction": "Wähle für jeden linken Begriff die passende rechte Beschreibung."
+    },
+    "options": [
+      {
+        "id": "left-0",
+        "text": "gerichtet",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "right-0",
+        "text": "Kanten besitzen Richtung",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "left-1",
+        "text": "ungerichtet",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "right-1",
+        "text": "Kanten besitzen keine Richtung",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctPairs": {
+        "left-0": "right-0",
+        "left-1": "right-1"
+      }
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_pair"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphgrundlagen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "directed-undirected-mixup",
+      "negative-edge-cycle-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-basics-ordering",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-basics"
+    ],
+    "topicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "ordering",
+    "prompt": {
+      "stem": "Bringe die Arbeitsschritte für „Graphgrundlagen“ in eine sinnvolle Reihenfolge.",
+      "instruction": "Nutze die Pfeil-Schaltflächen oder die Tastaturreihenfolge."
+    },
+    "options": [
+      {
+        "id": "step-0",
+        "text": "Graphart lesen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "step-1",
+        "text": "Gewichte prüfen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Zusammenhang prüfen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Problemklasse wählen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOrderIds": [
+        "step-0",
+        "step-1",
+        "step-2",
+        "step-3"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 3,
+      "partialCredit": "adjacent_pairs"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphgrundlagen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "directed-undirected-mixup",
+      "negative-edge-cycle-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-basics-numeric",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-basics"
+    ],
+    "topicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "numeric_short_answer",
+    "prompt": {
+      "stem": "Wie viele Richtungsvarianten nennt die gerichtete/ungerichtete Unterscheidung?",
+      "instruction": "Gib eine ganze Zahl ein."
+    },
+    "options": [],
+    "answerDefinition": {
+      "numericAnswer": 2,
+      "tolerance": 0
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphgrundlagen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "directed-undirected-mixup",
+      "negative-edge-cycle-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-basics-algorithm-selection",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-basics"
+    ],
+    "topicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "algorithm_selection",
+    "prompt": {
+      "stem": "Welche Struktur verbindet alle Knoten ohne Kreis?",
+      "instruction": "Wähle den passenden Algorithmus, Begriff oder die passende Struktur."
+    },
+    "options": [
+      {
+        "id": "spanning_tree",
+        "text": "spanning tree",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "negative_cycle",
+        "text": "negative cycle",
+        "correct": false,
+        "misconceptionId": "negative-edge-cycle-mixup",
+        "distractorCategory": "necessary_vs_sufficient",
+        "reasonIncorrect": "Negative Kante und negativer Kreis werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Voraussetzungen kürzester Wege",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "priority_queue",
+        "text": "priority queue",
+        "correct": false,
+        "misconceptionId": "negative-edge-cycle-mixup",
+        "distractorCategory": "necessary_vs_sufficient",
+        "reasonIncorrect": "Negative Kante und negativer Kreis werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Voraussetzungen kürzester Wege",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctAlgorithmId": "spanning_tree"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphgrundlagen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "directed-undirected-mixup",
+      "negative-edge-cycle-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-basics-complexity-classification",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-basics"
+    ],
+    "topicIds": [
+      "topic-f5f6e171c082"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "complexity_classification",
+    "prompt": {
+      "stem": "Klassifiziere die Prüfung „gerichtet oder ungerichtet“ als Modellentscheidung.",
+      "instruction": "Wähle die passende Klassifikation."
+    },
+    "options": [
+      {
+        "id": "graphmodell",
+        "text": "graphmodell",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "sortierlaufzeit",
+        "text": "sortierlaufzeit",
+        "correct": false,
+        "misconceptionId": "negative-edge-cycle-mixup",
+        "distractorCategory": "necessary_vs_sufficient",
+        "reasonIncorrect": "Negative Kante und negativer Kreis werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Voraussetzungen kürzester Wege",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "rekurrenzfall",
+        "text": "rekurrenzfall",
+        "correct": false,
+        "misconceptionId": "negative-edge-cycle-mixup",
+        "distractorCategory": "necessary_vs_sufficient",
+        "reasonIncorrect": "Negative Kante und negativer Kreis werden verwechselt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Voraussetzungen kürzester Wege",
+        "sourceRefs": [
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 3
+          },
+          {
+            "sourceId": "src-88179ac88dc5",
+            "page": 3
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "graphmodell"
+      ],
+      "complexityClass": "graphmodell"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphgrundlagen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "directed-undirected-mixup",
+      "negative-edge-cycle-mixup"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 3
+      },
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 3
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-algorithms-single-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-algorithms"
+    ],
+    "topicIds": [
+      "topic-b9243ead8bde",
+      "topic-c43206934ba2",
+      "topic-e8b80c23286d",
+      "topic-646279964c76",
+      "topic-1fa208a0ed89",
+      "topic-0780ff989087",
+      "topic-c4a698fc939e"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "single_choice",
+    "prompt": {
+      "stem": "Welche Aussage ist für „Graphalgorithmen auswählen“ belegt?",
+      "instruction": "Wähle genau eine Antwort."
+    },
+    "options": [
+      {
+        "id": "correct",
+        "text": "Prim und Kruskal lösen MST-Probleme, nicht allgemeine kürzeste-Wege-Probleme.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "wrong-a",
+        "text": "Dijkstra ist für negative Kanten immer die richtige Wahl.",
+        "correct": false,
+        "misconceptionId": "shortest-path-mst-mixup",
+        "distractorCategory": "mst_shortest_path_confusion",
+        "reasonIncorrect": "MST- und kürzeste-Wege-Problem werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Graphproblem zuerst klassifizieren",
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "wrong-b",
+        "text": "Floyd-Warshall ist ein MST-Verfahren.",
+        "correct": false,
+        "misconceptionId": "dijkstra-negative-edge",
+        "distractorCategory": "shortest_path_precondition_error",
+        "reasonIncorrect": "Dijkstra wird trotz negativer Kanten gewählt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Dijkstra-Voraussetzungen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "correct"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphalgorithmen auswählen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "shortest-path-mst-mixup",
+      "dijkstra-negative-edge"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-algorithms-multiple-choice",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-algorithms"
+    ],
+    "topicIds": [
+      "topic-b9243ead8bde",
+      "topic-c43206934ba2",
+      "topic-e8b80c23286d",
+      "topic-646279964c76",
+      "topic-1fa208a0ed89",
+      "topic-0780ff989087",
+      "topic-c4a698fc939e"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "multiple_choice",
+    "prompt": {
+      "stem": "Welche zwei Aussagen gehören zur Kompetenz „Graphalgorithmen auswählen“?",
+      "instruction": "Wähle alle richtigen Antworten."
+    },
+    "options": [
+      {
+        "id": "fact-1",
+        "text": "Dijkstra berechnet kürzeste Wege unter passenden Nichtnegativitätsvoraussetzungen.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "fact-2",
+        "text": "Bellman-Ford ist für kürzeste Wege mit negativen Kanten relevant.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "distractor-a",
+        "text": "Dijkstra ist für negative Kanten immer die richtige Wahl.",
+        "correct": false,
+        "misconceptionId": "shortest-path-mst-mixup",
+        "distractorCategory": "mst_shortest_path_confusion",
+        "reasonIncorrect": "MST- und kürzeste-Wege-Problem werden vertauscht.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Graphproblem zuerst klassifizieren",
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "distractor-b",
+        "text": "Floyd-Warshall ist ein MST-Verfahren.",
+        "correct": false,
+        "misconceptionId": "dijkstra-negative-edge",
+        "distractorCategory": "shortest_path_precondition_error",
+        "reasonIncorrect": "Dijkstra wird trotz negativer Kanten gewählt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Dijkstra-Voraussetzungen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "fact-1",
+        "fact-2"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_correct_option"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphalgorithmen auswählen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "shortest-path-mst-mixup",
+      "dijkstra-negative-edge"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-algorithms-true-false-reason",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-algorithms"
+    ],
+    "topicIds": [
+      "topic-b9243ead8bde",
+      "topic-c43206934ba2",
+      "topic-e8b80c23286d",
+      "topic-646279964c76",
+      "topic-1fa208a0ed89",
+      "topic-0780ff989087",
+      "topic-c4a698fc939e"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "true_false_reason",
+    "prompt": {
+      "stem": "Prim und Kruskal lösen MST-Probleme, nicht allgemeine kürzeste-Wege-Probleme.",
+      "instruction": "Entscheide Wahr/Falsch und wähle die passende Begründung."
+    },
+    "options": [
+      {
+        "id": "truth-true",
+        "text": "Wahr",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "truth-false",
+        "text": "Falsch",
+        "correct": false,
+        "misconceptionId": "dijkstra-negative-edge",
+        "distractorCategory": "shortest_path_precondition_error",
+        "reasonIncorrect": "Dijkstra wird trotz negativer Kanten gewählt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Dijkstra-Voraussetzungen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "reason-source",
+        "text": "Begründung: Dijkstra berechnet kürzeste Wege unter passenden Nichtnegativitätsvoraussetzungen.",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "reason-trap",
+        "text": "Begründung: Dijkstra ist für negative Kanten immer die richtige Wahl.",
+        "correct": false,
+        "misconceptionId": "dijkstra-negative-edge",
+        "distractorCategory": "shortest_path_precondition_error",
+        "reasonIncorrect": "Dijkstra wird trotz negativer Kanten gewählt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Dijkstra-Voraussetzungen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "truth-true"
+      ],
+      "correctReasonId": "reason-source"
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_component"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphalgorithmen auswählen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "shortest-path-mst-mixup",
+      "dijkstra-negative-edge"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-algorithms-matching",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-algorithms"
+    ],
+    "topicIds": [
+      "topic-b9243ead8bde",
+      "topic-c43206934ba2",
+      "topic-e8b80c23286d",
+      "topic-646279964c76",
+      "topic-1fa208a0ed89",
+      "topic-0780ff989087",
+      "topic-c4a698fc939e"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "leicht",
+    "itemType": "matching",
+    "prompt": {
+      "stem": "Ordne die Begriffe zur Kompetenz „Graphalgorithmen auswählen“ zu.",
+      "instruction": "Wähle für jeden linken Begriff die passende rechte Beschreibung."
+    },
+    "options": [
+      {
+        "id": "left-0",
+        "text": "Dijkstra",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "right-0",
+        "text": "Single-Source kürzeste Wege unter passenden Voraussetzungen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "left-1",
+        "text": "Prim",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "right-1",
+        "text": "minimaler Spannbaum",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctPairs": {
+        "left-0": "right-0",
+        "left-1": "right-1"
+      }
+    },
+    "rubric": {
+      "maxPoints": 2,
+      "partialCredit": "per_pair"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphalgorithmen auswählen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "shortest-path-mst-mixup",
+      "dijkstra-negative-edge"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-algorithms-ordering",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-algorithms"
+    ],
+    "topicIds": [
+      "topic-b9243ead8bde",
+      "topic-c43206934ba2",
+      "topic-e8b80c23286d",
+      "topic-646279964c76",
+      "topic-1fa208a0ed89",
+      "topic-0780ff989087",
+      "topic-c4a698fc939e"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "ordering",
+    "prompt": {
+      "stem": "Bringe die Arbeitsschritte für „Graphalgorithmen auswählen“ in eine sinnvolle Reihenfolge.",
+      "instruction": "Nutze die Pfeil-Schaltflächen oder die Tastaturreihenfolge."
+    },
+    "options": [
+      {
+        "id": "step-0",
+        "text": "Problemklasse lesen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "step-1",
+        "text": "Kantengewichte prüfen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Voraussetzungen prüfen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Algorithmus wählen",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOrderIds": [
+        "step-0",
+        "step-1",
+        "step-2",
+        "step-3"
+      ]
+    },
+    "rubric": {
+      "maxPoints": 3,
+      "partialCredit": "adjacent_pairs"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphalgorithmen auswählen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "shortest-path-mst-mixup",
+      "dijkstra-negative-edge"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 75,
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-algorithms-numeric",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-algorithms"
+    ],
+    "topicIds": [
+      "topic-b9243ead8bde",
+      "topic-c43206934ba2",
+      "topic-e8b80c23286d",
+      "topic-646279964c76",
+      "topic-1fa208a0ed89",
+      "topic-0780ff989087",
+      "topic-c4a698fc939e"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "numeric_short_answer",
+    "prompt": {
+      "stem": "Wie viele Problemklassen werden hier unterschieden: MST und kürzeste Wege?",
+      "instruction": "Gib eine ganze Zahl ein."
+    },
+    "options": [],
+    "answerDefinition": {
+      "numericAnswer": 2,
+      "tolerance": 0
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphalgorithmen auswählen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "shortest-path-mst-mixup",
+      "dijkstra-negative-edge"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-algorithms-algorithm-selection",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-algorithms"
+    ],
+    "topicIds": [
+      "topic-b9243ead8bde",
+      "topic-c43206934ba2",
+      "topic-e8b80c23286d",
+      "topic-646279964c76",
+      "topic-1fa208a0ed89",
+      "topic-0780ff989087",
+      "topic-c4a698fc939e"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "algorithm_selection",
+    "prompt": {
+      "stem": "Welcher Algorithmus passt zu paarweisen kürzesten Wegen als Matrixverfahren?",
+      "instruction": "Wähle den passenden Algorithmus, Begriff oder die passende Struktur."
+    },
+    "options": [
+      {
+        "id": "floyd_warshall",
+        "text": "floyd warshall",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "prim",
+        "text": "prim",
+        "correct": false,
+        "misconceptionId": "dijkstra-negative-edge",
+        "distractorCategory": "shortest_path_precondition_error",
+        "reasonIncorrect": "Dijkstra wird trotz negativer Kanten gewählt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Dijkstra-Voraussetzungen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "kruskal",
+        "text": "kruskal",
+        "correct": false,
+        "misconceptionId": "dijkstra-negative-edge",
+        "distractorCategory": "shortest_path_precondition_error",
+        "reasonIncorrect": "Dijkstra wird trotz negativer Kanten gewählt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Dijkstra-Voraussetzungen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctAlgorithmId": "floyd_warshall"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphalgorithmen auswählen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "shortest-path-mst-mixup",
+      "dijkstra-negative-edge"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  },
+  {
+    "id": "fd-graph-algorithms-complexity-classification",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "competencyIds": [
+      "foundation-graph-algorithms"
+    ],
+    "topicIds": [
+      "topic-b9243ead8bde",
+      "topic-c43206934ba2",
+      "topic-e8b80c23286d",
+      "topic-646279964c76",
+      "topic-1fa208a0ed89",
+      "topic-0780ff989087",
+      "topic-c4a698fc939e"
+    ],
+    "examTaskNumbers": [
+      1,
+      3,
+      4,
+      9
+    ],
+    "difficulty": "mittel",
+    "itemType": "complexity_classification",
+    "prompt": {
+      "stem": "Klassifiziere ein MST-Problem fachlich.",
+      "instruction": "Wähle die passende Klassifikation."
+    },
+    "options": [
+      {
+        "id": "spannbaum",
+        "text": "spannbaum",
+        "correct": true,
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "single_source_shortest_path",
+        "text": "single source shortest path",
+        "correct": false,
+        "misconceptionId": "dijkstra-negative-edge",
+        "distractorCategory": "shortest_path_precondition_error",
+        "reasonIncorrect": "Dijkstra wird trotz negativer Kanten gewählt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Dijkstra-Voraussetzungen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "sortierung",
+        "text": "sortierung",
+        "correct": false,
+        "misconceptionId": "dijkstra-negative-edge",
+        "distractorCategory": "shortest_path_precondition_error",
+        "reasonIncorrect": "Dijkstra wird trotz negativer Kanten gewählt.",
+        "diagnosticValue": "Dieser Distraktor identifiziert eine typische Kurzaufgabenfalle.",
+        "remediationTarget": "Dijkstra-Voraussetzungen",
+        "sourceRefs": [
+          {
+            "sourceId": "src-baa07f0a207a",
+            "page": 846
+          },
+          {
+            "sourceId": "src-35405e721f05",
+            "page": 4
+          }
+        ]
+      }
+    ],
+    "answerDefinition": {
+      "correctOptionIds": [
+        "spannbaum"
+      ],
+      "complexityClass": "spannbaum"
+    },
+    "rubric": {
+      "maxPoints": 1,
+      "partialCredit": "none"
+    },
+    "feedbackRules": [
+      {
+        "id": "feedback-rule",
+        "level": 2,
+        "message": "Graphalgorithmen auswählen: nutze die belegte Definition und prüfe die Voraussetzung."
+      }
+    ],
+    "misconceptionIds": [
+      "shortest-path-mst-mixup",
+      "dijkstra-negative-edge"
+    ],
+    "relatedTrainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "estimatedSeconds": 45,
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      },
+      {
+        "sourceId": "src-35405e721f05",
+        "page": 4
+      }
+    ],
+    "verificationStatus": "official_verified",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "deterministic_engine_verified",
+    "engineVersion": "foundations-diagnostic-v1",
+    "lastReviewed": "2026-07-09"
+  }
+]

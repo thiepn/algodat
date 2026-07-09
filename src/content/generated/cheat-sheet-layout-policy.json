@@ -1,0 +1,19 @@
+{
+  "policyVersion": "cheat-sheet-layout-policy-v1",
+  "pageFormat": "A4",
+  "pageCount": 2,
+  "widthMm": 210,
+  "heightMm": 297,
+  "marginMm": 9,
+  "minFontSizePt": 7.5,
+  "baseFontSizePt": 8.5,
+  "pageAreaUnits": 1000,
+  "columnCount": 2,
+  "gutterMm": 4,
+  "overflowStrategy": [
+    "weniger priorisierte Blöcke weglassen",
+    "erweiterte Inhalte durch kompakte Variante ersetzen",
+    "keine Schrift unter Mindestgröße erzwingen",
+    "Overflow sichtbar melden"
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase16-fd92529318c0",
+  "frequencyPolicy": "Nur kanonische reale Prüfungsereignisse; Probeklausuren, Übungen, erzeugte Beispiele und Dateiduplikate sind ausgeschlossen.",
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "format": "Tracing",
+      "historicalTopics": [
+        "MergeSort-Tracing",
+        "IntervalScheduling",
+        "GreedyLoadBalancing",
+        "LatenessScheduling",
+        "DFS"
+      ],
+      "typicalPoints": 4,
+      "answerComponents": "Zwischenzustände und Endergebnis",
+      "priority": "hoch",
+      "confidence": "strongly supported"
+    },
+    {
+      "taskNumber": 2,
+      "format": "Tracing",
+      "historicalTopics": [
+        "Hashing mit Verkettung",
+        "DFS",
+        "Rot-Schwarz-Bäume",
+        "Union-Find",
+        "Rucksack-DP-Tabelle"
+      ],
+      "typicalPoints": 4,
+      "answerComponents": "alle Zustände in geforderter Reihenfolge",
+      "priority": "hoch",
+      "confidence": "strongly supported"
+    },
+    {
+      "taskNumber": 3,
+      "format": "Tracing",
+      "historicalTopics": [
+        "Bellman-Ford und negative Kreise",
+        "Rot-Schwarz-Bäume",
+        "Floyd-Warshall",
+        "Dijkstra",
+        "Rot-Schwarz-Bäume"
+      ],
+      "typicalPoints": 4,
+      "answerComponents": "Tabelle/Graph nach jeder Iteration",
+      "priority": "hoch",
+      "confidence": "strongly supported"
+    },
+    {
+      "taskNumber": 4,
+      "format": "Tracing",
+      "historicalTopics": [
+        "Union-Find mit Listen",
+        "Prim",
+        "Prim",
+        "Rucksack-DP-Tabelle",
+        "MergeSort"
+      ],
+      "typicalPoints": 4,
+      "answerComponents": "vollständige Zustandsfolge",
+      "priority": "hoch",
+      "confidence": "strongly supported"
+    },
+    {
+      "taskNumber": 5,
+      "format": "Programmverständnis und Beweis",
+      "historicalTopics": [
+        "Schleifeninvariante",
+        "Schleifeninvariante",
+        "Schleifeninvariante",
+        "Schleifeninvariante",
+        "Schleifeninvariante"
+      ],
+      "typicalPoints": 5,
+      "answerComponents": "Behauptung, Invariante, IA/IV/IS, Schluss",
+      "priority": "sehr hoch",
+      "confidence": "strongly supported"
+    },
+    {
+      "taskNumber": 6,
+      "format": "Rekurrenzbeweis",
+      "historicalTopics": [
+        "Rekurrenz, Master-Theorem und Induktion",
+        "Rekurrenz, Master-Theorem und Induktion",
+        "Rekurrenz und Induktion",
+        "Rekurrenz und Induktion",
+        "Rekurrenz und Induktion"
+      ],
+      "typicalPoints": 5,
+      "answerComponents": "Schranke plus formal geschlossener Induktionsschritt",
+      "priority": "sehr hoch",
+      "confidence": "strongly supported"
+    },
+    {
+      "taskNumber": 7,
+      "format": "Algorithmusentwurf",
+      "historicalTopics": [
+        "Divide and Conquer: maximale Wertdifferenz",
+        "Greedy: Fitnesspunkte",
+        "Greedy: Workout",
+        "Divide and Conquer: fehlerhaftes Array",
+        "Greedy: Entsorgungsstationen"
+      ],
+      "typicalPoints": 8,
+      "answerComponents": "Idee, Pseudocode, Laufzeit, Korrektheit",
+      "priority": "hoch",
+      "confidence": "strongly supported"
+    },
+    {
+      "taskNumber": 8,
+      "format": "Dynamische Programmierung",
+      "historicalTopics": [
+        "Dynamische Programmierung: Pausentage",
+        "Dynamische Programmierung: Rechnerbudget",
+        "Dynamische Programmierung: Frosch-Distanz",
+        "Dynamische Programmierung: Windpark",
+        "Dynamische Programmierung: Messreihen"
+      ],
+      "typicalPoints": 8,
+      "answerComponents": "Definition, Beweis, Bottom-up, Laufzeit",
+      "priority": "sehr hoch",
+      "confidence": "strongly supported"
+    },
+    {
+      "taskNumber": 9,
+      "format": "Transfer/Datendstruktur",
+      "historicalTopics": [
+        "Greedy: Graphfärbung",
+        "Datenstruktur: Multimenge",
+        "Graphtransfer: Zusammenhang durch eine Kante",
+        "Graphtransfer: kostenbeschränkter Spannbaum",
+        "Graphtransfer: negativer Kreis"
+      ],
+      "typicalPoints": 8,
+      "answerComponents": "Idee, Pseudocode/Operationen, Laufzeit, Beweis",
+      "priority": "hoch",
+      "confidence": "strongly supported"
+    }
+  ]
+}

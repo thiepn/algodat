@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase16-fd92529318c0",
+  "builtAt": "2026-07-06T10:54:12.806583+00:00",
+  "sourceCount": 138,
+  "topicCount": 76,
+  "examProfileCount": 2,
+  "fixtureCount": 2,
+  "trainerCount": 11,
+  "files": [
+    {
+      "name": "cheat-sheet-blocks.json",
+      "sha256": "5cdc59dfabf4796ab74474a77a3600f6cbb2bdfa42d16e78ff3344e9fec2a9de"
+    },
+    {
+      "name": "cheat-sheet-layout-policy.json",
+      "sha256": "d3f220ae59a9ee422f14b6566ab32ca87bfc54655388d85326fd9c5f8be784ec"
+    },
+    {
+      "name": "cheat-sheet-presets.json",
+      "sha256": "4c3f8f423c74101ef696352d1d928df96b95e556f39605674474db168ccb1b43"
+    },
+    {
+      "name": "citation-fixtures.json",
+      "sha256": "c4863e2a091414e7099c49874c42f4475cc6431e67f1b9cc0e20ff640b315d57"
+    },
+    {
+      "name": "content-health.json",
+      "sha256": "75f4e5605b4befd688227a2e5fe8bccabe62f5c32453864809c7be3b0b9a68f1"
+    },
+    {
+      "name": "diagnostic-items-asymptotics.json",
+      "sha256": "7da185a80c92b97f935350322e013a19ff19e594a14b6b31d1ab39f83d1ba4ec"
+    },
+    {
+      "name": "diagnostic-items-data-structures.json",
+      "sha256": "416583a60e6a7098734651941280eaf4fa9c9a63c3f6d2a6a690e900e2de6346"
+    },
+    {
+      "name": "diagnostic-items-graphs.json",
+      "sha256": "9baaca2b73fa0dc12323a58dfef5f183cc24c18c1ec87bf38f7548c96d250453"
+    },
+    {
+      "name": "diagnostic-items-paradigms.json",
+      "sha256": "852de10ed397dca2f756051b7ced2cad689fce25a9e7c3948275b010d70c8311"
+    },
+    {
+      "name": "diagnostic-items-proofs.json",
+      "sha256": "0388346f1afab6729e02d79dd98cd0ffad92db2563b9f3690179b02dd12848d5"
+    },
+    {
+      "name": "diagnostic-items-recurrences.json",
+      "sha256": "aa5f1127bf812ce64b5628cc72a5e2e8f310db2d9cc2d3060dd1d703d82e894f"
+    },
+    {
+      "name": "diagnostic-items-sorting-search.json",
+      "sha256": "16df290d57f3b62542233f9d520e881c68bef951a949ad75d298d0f1613ea7d0"
+    },
+    {
+      "name": "diagnostic-misconceptions.json",
+      "sha256": "76eb0221e1ea41c746176aee48d482834dddb56ec070dc77d2c13e83b1c2dde0"
+    },
+    {
+      "name": "diagnostic-recommendation-rules.json",
+      "sha256": "6530d96e675462be34e8510cde7fc084816abab05f6d9bade8d3757bbc89aad6"
+    },
+    {
+      "name": "diagnostic-session-templates.json",
+      "sha256": "ae762730383d9e21ab93b592007a61fbb486c0f89ebc622b98c559857e4c57b4"
+    },
+    {
+      "name": "divide-conquer-design-problems.json",
+      "sha256": "954589bd165ac908bb0ea93e61c87fe0962b2e01a58588a2901b117fab389efa"
+    },
+    {
+      "name": "divide-conquer-design-rubrics.json",
+      "sha256": "7e822fb86fb154259ea713e23ea5f63fea1274aaf92ba0c8c2a2d322fe5acacd"
+    },
+    {
+      "name": "divide-conquer-design-trainers.json",
+      "sha256": "fdd8a39ada494e3b0e29818b899f3d5a50a10867d34caadc16c6e39637c55c7d"
+    },
+    {
+      "name": "divide-conquer-design-variants.json",
+      "sha256": "42d6bc49c494a67d2bff30451b0438c8f925a60c913dcf5c92f0f3f8c3a68b87"
+    },
+    {
+      "name": "dp-design-problems.json",
+      "sha256": "043815dd275e7e925a23554dfd929a1719b10a3846d0819a11640f47ebf2a178"
+    },
+    {
+      "name": "dp-design-rubrics.json",
+      "sha256": "82cc455f56f6c459afcae7c676f9ba4cb4d5ab70d23d5b15a000a8bde9c870ca"
+    },
+    {
+      "name": "dp-design-trainers.json",
+      "sha256": "fcf8bfa84ff851f3b0bf7b6537aab2f80980fdc483cec968c31aabfdd00136d3"
+    },
+    {
+      "name": "dp-design-variants.json",
+      "sha256": "51a18c5d49c02d5567afd26e69919534c6e590077ada0696b513cd55746d83ec"
+    },
+    {
+      "name": "exam-blueprint.json",
+      "sha256": "9a8b55e206e3b7321593523bd691bec5203a0145ca61e2bb8b314e5e7546085a"
+    },
+    {
+      "name": "exam-date-phase-policy.json",
+      "sha256": "d5a852e41c52e5794583625f417796150bd38477112231041deff38f9cae6b21"
+    },
+    {
+      "name": "exam-packages.json",
+      "sha256": "922567cb1051e085aa1c74cd200bc3c0f5eb57388849c545a8f979398763cf7f"
+    },
+    {
+      "name": "exam-profile-coverage.json",
+      "sha256": "c3738291d290296901911fb578e5b5a757e435f09c3b53fdfce07ecbf08c4c32"
+    },
+    {
+      "name": "exam-profiles.json",
+      "sha256": "5e057db1c5adbf178344c39452b33c5dd192e9fda5a901bac9e0fc4edbc7f3f3"
+    },
+    {
+      "name": "exam-scoring-policies.json",
+      "sha256": "31a28d9bf6cb6b7c4b78159bdf0e4dfa3d73cd91721ae8a0b1137573baf115f3"
+    },
+    {
+      "name": "exam-slot-competency-map.json",
+      "sha256": "0a1d7f76cb001bf5d6759363f7b516f84cb2c86edc8aa9ab44e73b445c1012ca"
+    },
+    {
+      "name": "exam-task-instances.json",
+      "sha256": "f14d60ddf3a4c4fa46b36d047df1e293e5d964a5cfa4840ce3beed0333eab6ab"
+    },
+    {
+      "name": "foundation-competencies.json",
+      "sha256": "703d33fb20472a1bfd30b705b15ab338796712c62cf58e4a9d6981e501a5b2c1"
+    },
+    {
+      "name": "graph-tracing-problems.json",
+      "sha256": "3d4da5bef4219c34f9545eec20b62cb067588e7dfdf3c70afc11688b10f0068e"
+    },
+    {
+      "name": "graph-tracing-rubrics.json",
+      "sha256": "aae0024c1fbad4aebb822121305a965b15d7db9b46f6f92679dd68ecf1cdf843"
+    },
+    {
+      "name": "graph-tracing-trainers.json",
+      "sha256": "f6b4aedd29ae9c55e30d0f88655f970be3c7f56246f431c3fb47a5dd77b92fba"
+    },
+    {
+      "name": "graph-tracing-variants.json",
+      "sha256": "2aadbf61912a56c7a049e76511be681cc1423bc91f01ae99481f7599bbac3eaf"
+    },
+    {
+      "name": "greedy-design-problems.json",
+      "sha256": "69157571bafcfcc0ebcc719d057328ccc72be801b7e8d2cf767f22f9c4635547"
+    },
+    {
+      "name": "greedy-design-rubrics.json",
+      "sha256": "183a69402d3f1600f0a5150f7209add7b78b4cc40cd0b7129b2a1afb4055ef38"
+    },
+    {
+      "name": "greedy-design-trainers.json",
+      "sha256": "9b717edac535abf3c8dcfac6a678bd839d74746af8122f1b48371a697410a514"
+    },
+    {
+      "name": "greedy-design-variants.json",
+      "sha256": "43d55ab86ece5ba126ff038e586b72ca991d723fbdeb5d159ef928ab8f45d06a"
+    },
+    {
+      "name": "proof-rubrics.json",
+      "sha256": "52fbb9031d1efa3d3c353977e274688bcb6c31583e018ceb5b35abd324348744"
+    },
+    {
+      "name": "proof-trainers.json",
+      "sha256": "dce750a19e3d15d1c9b440970c835134056136255cedf3b59e1c2388ce7222e1"
+    },
+    {
+      "name": "rb-insertion-problems.json",
+      "sha256": "103882e07ed3ed18730b778c481b40e3ee444642415b677f3a4e7fd681d361de"
+    },
+    {
+      "name": "rb-insertion-rubrics.json",
+      "sha256": "358b478adf734621d3f4f370346afeccab5dfc438b83a620229aa995d3a2667a"
+    },
+    {
+      "name": "rb-insertion-trainers.json",
+      "sha256": "ff1363e714690693631f696dee41fdb772dd821da41dc317598090ab76d574a5"
+    },
+    {
+      "name": "rb-insertion-variants.json",
+      "sha256": "b2973d0ece1f1350acc1ef72403ae4c4f06f5b2f8943ebf259920dd5e94b7424"
+    },
+    {
+      "name": "readiness-policy.json",
+      "sha256": "5badfa29af67fd66c7ecbfb7cc5d47dd6030227d505102b062f9849fffb3173a"
+    },
+    {
+      "name": "recurrence-rubrics.json",
+      "sha256": "c087a9819c1e30a9d0fd791df75b0b2a27562f15d84d6ab1019969c1d85ec5d7"
+    },
+    {
+      "name": "recurrence-trainers.json",
+      "sha256": "8c54aa8f8a5f5ccda3855b7caadb6de567ec9a43d42bc017b22745f863c756eb"
+    },
+    {
+      "name": "recurrence-variants.json",
+      "sha256": "42cfc5212ffc0bbed3dd43601a6063958df0c233ca2daa7be4159afb9149fb91"
+    },
+    {
+      "name": "sources.json",
+      "sha256": "9451084a86f4eb61ba8ab83077d27533567e81ceee02d9dcd2003ea4ee3263f5"
+    },
+    {
+      "name": "spaced-review-policy.json",
+      "sha256": "2b3a4221cf1c002d279bfed71854f09aa967c291ead6013b2dc38c35bab2de06"
+    },
+    {
+      "name": "study-activity-catalog.json",
+      "sha256": "e4c3110328e58b903ec4175655c479963fea196e8af4e184b9df507f1b9498b7"
+    },
+    {
+      "name": "study-plan-default-settings.json",
+      "sha256": "bc72e1b9fa1e412951bba49d3d654e8e1512f5f29b5b0d93452336b6d0c4cf47"
+    },
+    {
+      "name": "study-priority-policy.json",
+      "sha256": "4ff45bc136aca1af32cdf8bf1ee11c8303f20ed0854031edc351d4339eeef573"
+    },
+    {
+      "name": "topics-index.json",
+      "sha256": "e1540de7c95f079d1d8c38ac471651afda4857a249cb20350272bdf74911006a"
+    },
+    {
+      "name": "tracing-rubrics.json",
+      "sha256": "4f62c97b1b5af5c173de18d8bb4aecd933f5eda8c21e219383320c26a6834a5e"
+    },
+    {
+      "name": "tracing-trainers.json",
+      "sha256": "c231d56baf2250ad6d09786657d818eab0f22854f02f14caf7ad30628a16216d"
+    }
+  ]
+}

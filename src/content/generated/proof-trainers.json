@@ -1,0 +1,192 @@
+[
+  {
+    "id": "trainer-schleifeninvariante-summe-v1",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-fd92529318c0",
+    "topicIds": [
+      "topic-e05ae3743b24"
+    ],
+    "taskType": "loop_invariant_proof",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 11,
+        "label": "Offizielle Übungslösung: Aufgabenstellung und Beweisbeginn"
+      },
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 12,
+        "label": "Offizielle Übungslösung: Induktionsschritt, Terminierung und Schluss"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 132,
+        "label": "Vorlesung: Schleifeninvariante und Induktionsanfang"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 133,
+        "label": "Vorlesung: Induktionsannahme und Induktionsschluss"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 135,
+        "label": "Vorlesung: Terminierung und Korrektheit aus Invariante"
+      },
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 140,
+        "label": "Vorlesung: Korrektheit mit Invarianten und Induktion"
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-07",
+    "publicDistributionStatus": "public_safe",
+    "solutionValidationStatus": "engine_matches_official_method",
+    "trainerKind": "proof",
+    "title": "Schleifeninvariante für gewichtete Summe",
+    "proofFamily": "Schleifeninvariante und vollständige Induktion",
+    "problemClass": "Aufgabe 5 – Programmkorrektheit",
+    "typicalExamTask": "Formuliere Behauptung und Schleifeninvariante, beweise IA/IV/IS und folgere die Ausgabe nach Terminierung.",
+    "inputDescription": "Ein Array A=[a_1,...,a_n] der Länge n mit natürlichen Einträgen.",
+    "outputDescription": "Die gewichtete Summe der Einträge: Summe über j*A[j] für j=1 bis n.",
+    "prerequisites": [
+      "Pseudocode",
+      "Summen",
+      "Vollständige Induktion",
+      "Schleifeninvarianten",
+      "Korrektheitsbeweise"
+    ],
+    "estimatedMinutes": 18,
+    "centralInvariant": "Zu Beginn der i-ten Iteration gilt s = sum(j,1,i-1,j*A[j]) für 1<=i<=n+1.",
+    "commonMistakes": [
+      "Invariante mit i statt i-1 formulieren",
+      "Zeitpunkt der Invariante nach statt vor der Iteration wählen",
+      "n statt i in der Induktionsvoraussetzung verwenden",
+      "Terminierung mit i=n statt hypothetisch i=n+1 auswerten",
+      "Rückgabezeile nicht mit der Behauptung verbinden"
+    ],
+    "historicalRelevance": "Aufgabe 5 ist im bestätigten Neun-Aufgaben-Profil stabil als Schleifeninvarianten- und Korrektheitsbeweis belegt.",
+    "intuition": "Die Variable s sammelt nach und nach genau die bereits verarbeiteten gewichteten Arrayeinträge. Vor Iteration i sind das die Einträge 1 bis i-1.",
+    "correctnessIdea": "Der Induktionsanfang zeigt die leere Summe. Der Induktionsschritt fügt mit dem Schleifenrumpf genau den neuen Term i*A[i] hinzu. Nach n Iterationen liefert die Invariante die Summe bis n, die zurückgegeben wird.",
+    "failureConditions": "Dieser Trainer bewertet nur die strukturierte Summen-Invariante dieser Aufgabe. Andere äquivalente Beweise außerhalb der dokumentierten Grammatik werden nicht automatisch voll anerkannt.",
+    "steps": [
+      "Programmvariablen und Iterationswirkung bestimmen.",
+      "Rückgabebehauptung als Summenformel formulieren.",
+      "Zeitpunkt der Invariante festlegen.",
+      "Invariante mit Bereich 1<=i<=n+1 formulieren.",
+      "Induktionsanfang für i=1 zeigen.",
+      "Induktionsvoraussetzung für 1<=i<n+1 formulieren.",
+      "Schleifenrumpf einsetzen und zur Invariante für i+1 vereinfachen.",
+      "Nach Terminierung i=n+1 einsetzen und Rückgabe folgern."
+    ],
+    "problem": {
+      "id": "problem-schleifeninvariante-gewichtete-summe-v1",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "phase16-fd92529318c0",
+      "topicIds": [
+        "topic-e05ae3743b24"
+      ],
+      "taskType": "loop_invariant_proof",
+      "sourceRefs": [
+        {
+          "sourceId": "src-25d6340b518c",
+          "page": 11,
+          "label": "Offizielle Übungslösung: Aufgabenstellung und Beweisbeginn"
+        },
+        {
+          "sourceId": "src-25d6340b518c",
+          "page": 12,
+          "label": "Offizielle Übungslösung: Induktionsschritt, Terminierung und Schluss"
+        },
+        {
+          "sourceId": "src-baa07f0a207a",
+          "page": 132,
+          "label": "Vorlesung: Schleifeninvariante und Induktionsanfang"
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "lastReviewed": "2026-07-07",
+      "publicDistributionStatus": "public_safe",
+      "solutionValidationStatus": "engine_matches_official_method",
+      "algorithm": "loop_invariant_weighted_sum",
+      "contentOrigin": "source_aligned_generated_exercise",
+      "proofType": "loop_invariant",
+      "program": {
+        "name": "BerechneWert",
+        "input": "Array A=[a_1,...,a_n] der Länge n mit a_i in N",
+        "output": "gewichtete Summe der Arraywerte",
+        "pseudocode": [
+          "s = 0",
+          "for i = 1 to n do",
+          "  s = s + i * A[i]",
+          "return s"
+        ],
+        "accumulator": "s",
+        "loopIndex": "i",
+        "loopStart": 1,
+        "loopEnd": "n",
+        "loopBody": "s = s + i * A[i]",
+        "returnVariable": "s"
+      },
+      "allowedSymbols": [
+        "s",
+        "i",
+        "n",
+        "j",
+        "A"
+      ],
+      "requiredSections": [
+        "program_analysis",
+        "claim",
+        "loop_timing",
+        "invariant",
+        "initialization",
+        "hypothesis",
+        "preservation",
+        "termination",
+        "conclusion"
+      ],
+      "canonical": {
+        "canonicalProofVersion": "canonical-proof-loop-sum-v1",
+        "formulaLabels": {
+          "claim": "sum(j,1,n,j*A[j])",
+          "invariant": "sum(j,1,i-1,j*A[j])",
+          "preservationTarget": "sum(j,1,i,j*A[j])"
+        },
+        "claim": {
+          "expression": "sum(j,1,n,j*A[j])",
+          "text": "Für jede zulässige Eingabe gibt BerechneWert die gewichtete Summe sum(j,1,n,j*A[j]) zurück."
+        },
+        "invariant": {
+          "timing": "before_iteration_i",
+          "expression": "sum(j,1,i-1,j*A[j])",
+          "range": "1<=i<=n+1",
+          "text": "Zu Beginn der i-ten Iteration hat s den Wert sum(j,1,i-1,j*A[j])."
+        },
+        "initialization": "Für i=1 ist s=0 und die leere Summe sum(j,1,0,j*A[j]) ist 0.",
+        "hypothesis": "Angenommen, zu Beginn von Iteration i gilt s=sum(j,1,i-1,j*A[j]) für 1<=i<n+1.",
+        "preservation": "Nach s=s+i*A[i] gilt s=sum(j,1,i,j*A[j]), also die Invariante für i+1.",
+        "termination": "Nach n Iterationen ist der nächste Index n+1; damit gilt s=sum(j,1,n,j*A[j]).",
+        "conclusion": "Da return s ausgeführt wird, gibt der Algorithmus genau die behauptete Summe zurück."
+      }
+    },
+    "hints": [
+      {
+        "id": "proof-hint-timing",
+        "level": 1,
+        "text": "Vor Iteration i wurden bereits die Iterationen 1 bis i-1 ausgeführt."
+      },
+      {
+        "id": "proof-hint-empty-sum",
+        "level": 2,
+        "text": "Für i=1 ist die Summe von 1 bis 0 leer und hat Wert 0."
+      },
+      {
+        "id": "proof-hint-preservation",
+        "level": 3,
+        "text": "Setze im Induktionsschritt zuerst die IV für s ein und addiere dann den neuen Term i*A[i]."
+      }
+    ]
+  }
+]

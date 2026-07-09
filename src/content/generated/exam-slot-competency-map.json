@@ -1,0 +1,338 @@
+[
+  {
+    "slotId": "slot-a1-grundlagen",
+    "taskNumber": 1,
+    "title": "Aufgabe 1: Grundlagen und kurze Entscheidungen",
+    "typicalPoints": 8,
+    "supportedFamilies": [
+      "diagnostic",
+      "tracing"
+    ],
+    "trainerIds": [
+      "trainer-rucksack-dp-v1"
+    ],
+    "competencyIds": [
+      "foundation-asymptotics",
+      "foundation-sorting-search",
+      "foundation-graph-basics"
+    ],
+    "masteryDimensions": [
+      "recognition",
+      "tracing",
+      "diagnostic_foundations"
+    ],
+    "requiredEvidenceTypes": [
+      "diagnostic_session",
+      "trainer_attempt"
+    ],
+    "optionalEvidenceTypes": [
+      "exam_result",
+      "review_history"
+    ],
+    "unsupportedVariants": [
+      "historische Mischvarianten ohne Traineradapter"
+    ],
+    "coverageStatus": "partial",
+    "activityIds": [
+      "activity-diagnostic-schnellcheck",
+      "activity-concept-buffer"
+    ]
+  },
+  {
+    "slotId": "slot-a2-dp-union",
+    "taskNumber": 2,
+    "title": "Aufgabe 2: DP oder Datenstruktur-Tracing",
+    "typicalPoints": 8,
+    "supportedFamilies": [
+      "tracing"
+    ],
+    "trainerIds": [
+      "trainer-rucksack-dp-v1",
+      "trainer-union-find-listen-v1"
+    ],
+    "competencyIds": [
+      "foundation-data-structures",
+      "foundation-paradigms"
+    ],
+    "masteryDimensions": [
+      "tracing",
+      "set_representation",
+      "state_definition"
+    ],
+    "requiredEvidenceTypes": [
+      "trainer_attempt"
+    ],
+    "optionalEvidenceTypes": [
+      "diagnostic_session",
+      "exam_result"
+    ],
+    "unsupportedVariants": [
+      "nicht belegte historische DP-Varianten"
+    ],
+    "coverageStatus": "partial",
+    "activityIds": [
+      "activity-union-find-review",
+      "activity-dp-design-practice"
+    ]
+  },
+  {
+    "slotId": "slot-a3-graphen",
+    "taskNumber": 3,
+    "title": "Aufgabe 3: Graphentracing",
+    "typicalPoints": 8,
+    "supportedFamilies": [
+      "graph_tracing"
+    ],
+    "trainerIds": [
+      "trainer-graph-floyd-warshall-v1",
+      "trainer-graph-dijkstra-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "competencyIds": [
+      "foundation-graph-basics",
+      "foundation-graph-algorithms"
+    ],
+    "masteryDimensions": [
+      "dijkstra_distanzen",
+      "fw_iterationen",
+      "prim_key_updates"
+    ],
+    "requiredEvidenceTypes": [
+      "trainer_attempt"
+    ],
+    "optionalEvidenceTypes": [
+      "diagnostic_session",
+      "exam_result",
+      "review_history"
+    ],
+    "unsupportedVariants": [
+      "Bellman-Ford-Vorgängerkonflikte"
+    ],
+    "coverageStatus": "strong",
+    "activityIds": [
+      "activity-dijkstra-error",
+      "activity-graph-mst-review"
+    ]
+  },
+  {
+    "slotId": "slot-a4-datenstrukturen-graphen",
+    "taskNumber": 4,
+    "title": "Aufgabe 4: Datenstrukturen und Graphen",
+    "typicalPoints": 8,
+    "supportedFamilies": [
+      "tracing",
+      "graph_tracing"
+    ],
+    "trainerIds": [
+      "trainer-union-find-listen-v1",
+      "trainer-rot-schwarz-einfuegen-v1",
+      "trainer-graph-prim-mst-v1"
+    ],
+    "competencyIds": [
+      "foundation-data-structures",
+      "foundation-graph-algorithms"
+    ],
+    "masteryDimensions": [
+      "weighted_union",
+      "rb_reparaturfaelle",
+      "prim_sichere_kante"
+    ],
+    "requiredEvidenceTypes": [
+      "trainer_attempt"
+    ],
+    "optionalEvidenceTypes": [
+      "diagnostic_session",
+      "exam_result"
+    ],
+    "unsupportedVariants": [
+      "Hashing-Varianten ohne produktiven Trainer"
+    ],
+    "coverageStatus": "partial",
+    "activityIds": [
+      "activity-union-find-review",
+      "activity-graph-mst-review"
+    ]
+  },
+  {
+    "slotId": "slot-a5-beweise",
+    "taskNumber": 5,
+    "title": "Aufgabe 5: Schleifeninvariante",
+    "typicalPoints": 8,
+    "supportedFamilies": [
+      "proof"
+    ],
+    "trainerIds": [
+      "trainer-schleifeninvariante-summe-v1"
+    ],
+    "competencyIds": [
+      "foundation-proofs"
+    ],
+    "masteryDimensions": [
+      "invariant_formulation",
+      "preservation_proof",
+      "correctness_conclusion"
+    ],
+    "requiredEvidenceTypes": [
+      "trainer_attempt"
+    ],
+    "optionalEvidenceTypes": [
+      "diagnostic_session",
+      "exam_result"
+    ],
+    "unsupportedVariants": [
+      "freie Invarianten außerhalb der unterstützten Grammatik"
+    ],
+    "coverageStatus": "narrow_family_only",
+    "activityIds": [
+      "activity-proof-practice"
+    ]
+  },
+  {
+    "slotId": "slot-a6-rekurrenzen",
+    "taskNumber": 6,
+    "title": "Aufgabe 6: Rekurrenz und Laufzeitbeweis",
+    "typicalPoints": 8,
+    "supportedFamilies": [
+      "recurrence"
+    ],
+    "trainerIds": [
+      "trainer-rekurrenz-master-fall1-v1"
+    ],
+    "competencyIds": [
+      "foundation-recurrences",
+      "foundation-asymptotics",
+      "foundation-proofs"
+    ],
+    "masteryDimensions": [
+      "recurrence_interpretation",
+      "master_theorem_application",
+      "induction_structure"
+    ],
+    "requiredEvidenceTypes": [
+      "trainer_attempt"
+    ],
+    "optionalEvidenceTypes": [
+      "diagnostic_session",
+      "exam_result",
+      "review_history"
+    ],
+    "unsupportedVariants": [
+      "andere Rekurrenzformen ohne geprüfte Lösungskette"
+    ],
+    "coverageStatus": "partial",
+    "activityIds": [
+      "activity-recurrence-practice"
+    ]
+  },
+  {
+    "slotId": "slot-a7-entwurf",
+    "taskNumber": 7,
+    "title": "Aufgabe 7: Algorithmusentwurf",
+    "typicalPoints": 8,
+    "supportedFamilies": [
+      "greedy",
+      "divide_conquer"
+    ],
+    "trainerIds": [
+      "trainer-greedy-entwurf-fitnesspunkte-v1",
+      "trainer-dc-entwurf-maxwertdifferenz-v1"
+    ],
+    "competencyIds": [
+      "foundation-paradigms",
+      "foundation-proofs",
+      "foundation-sorting-search"
+    ],
+    "masteryDimensions": [
+      "greedy_rule",
+      "decomposition",
+      "induction_proof"
+    ],
+    "requiredEvidenceTypes": [
+      "trainer_attempt"
+    ],
+    "optionalEvidenceTypes": [
+      "diagnostic_session",
+      "exam_result"
+    ],
+    "unsupportedVariants": [
+      "Workout und Entsorgungsstationen ohne vollständige Lösungsevidenz"
+    ],
+    "coverageStatus": "partial",
+    "activityIds": [
+      "activity-dc-design-exam"
+    ]
+  },
+  {
+    "slotId": "slot-a8-dp-entwurf",
+    "taskNumber": 8,
+    "title": "Aufgabe 8: Dynamische Programmierung",
+    "typicalPoints": 8,
+    "supportedFamilies": [
+      "dp_design"
+    ],
+    "trainerIds": [
+      "trainer-dp-entwurf-mine-v1"
+    ],
+    "competencyIds": [
+      "foundation-paradigms",
+      "foundation-proofs"
+    ],
+    "masteryDimensions": [
+      "state_definition",
+      "recurrence_design",
+      "correctness_proof",
+      "complexity_analysis"
+    ],
+    "requiredEvidenceTypes": [
+      "trainer_attempt"
+    ],
+    "optionalEvidenceTypes": [
+      "diagnostic_session",
+      "exam_result"
+    ],
+    "unsupportedVariants": [
+      "weitere DP-Aufgaben ohne produktive Engine"
+    ],
+    "coverageStatus": "narrow_family_only",
+    "activityIds": [
+      "activity-dp-design-practice"
+    ]
+  },
+  {
+    "slotId": "slot-a9-transfer",
+    "taskNumber": 9,
+    "title": "Aufgabe 9: Transfer und gemischte Datenstrukturen",
+    "typicalPoints": 8,
+    "supportedFamilies": [
+      "diagnostic",
+      "mixed_review"
+    ],
+    "trainerIds": [],
+    "competencyIds": [
+      "foundation-data-structures",
+      "foundation-graph-basics",
+      "foundation-paradigms",
+      "foundation-proofs"
+    ],
+    "masteryDimensions": [
+      "diagnostic_foundations",
+      "transfer_coverage"
+    ],
+    "requiredEvidenceTypes": [
+      "diagnostic_session"
+    ],
+    "optionalEvidenceTypes": [
+      "trainer_attempt",
+      "exam_result",
+      "review_history"
+    ],
+    "unsupportedVariants": [
+      "freier Transfer ohne passenden produktiven Trainer"
+    ],
+    "coverageStatus": "diagnostic_only",
+    "activityIds": [
+      "activity-diagnostic-standard",
+      "activity-concept-buffer"
+    ]
+  }
+]

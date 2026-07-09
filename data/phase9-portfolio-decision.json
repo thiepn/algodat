@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": 9,
+  "decision": {
+    "selectedPath": "red_black_tree_insertion",
+    "selectedTrainerId": "trainer-rot-schwarz-einfuegen-v1",
+    "deferredPath": "graph_transfer",
+    "ruleApplied": "Beide Pfade wurden auditiert; Rot-Schwarz besteht die Mindestkriterien enger und deterministischer. Graphtransfer wird wegen breiter Aufgabenfamilie und Lösungskonflikten zurückgestellt."
+  },
+  "paths": [
+    {
+      "id": "red_black_tree",
+      "label": "Rot-Schwarz-Bäume",
+      "nonCompensableGates": {
+        "officialPrimarySource": true,
+        "completeVerifiedSolution": true,
+        "questionSolutionLinked": true,
+        "deterministicallyGradable": true,
+        "publicSafeReformulation": true
+      },
+      "weightedScore": 91,
+      "sourceRefs": [
+        { "sourceId": "src-97414623dd81", "page": 4 },
+        { "sourceId": "src-8a588d5ddc35", "page": 4 },
+        { "sourceId": "src-5c9eadb17ccc", "page": 5 },
+        { "sourceId": "src-5c9eadb17ccc", "page": 15 },
+        { "sourceId": "src-5c9eadb17ccc", "page": 20 },
+        { "sourceId": "src-5c9eadb17ccc", "page": 36 }
+      ],
+      "notes": [
+        "Die produktive Phase beschränkt sich auf Einfügung, Rotation, Reparatur und Invarianten.",
+        "Löschung bleibt zurückgestellt, weil sie nicht für den stabilen Vertikalschnitt benötigt wird."
+      ]
+    },
+    {
+      "id": "graph_transfer",
+      "label": "Graphtransfer",
+      "nonCompensableGates": {
+        "officialPrimarySource": true,
+        "completeVerifiedSolution": false,
+        "questionSolutionLinked": false,
+        "deterministicallyGradable": true,
+        "publicSafeReformulation": true
+      },
+      "weightedScore": 76,
+      "sourceRefs": [
+        { "sourceId": "src-28fe81380661", "page": 7 },
+        { "sourceId": "src-d233302bcf39", "page": 10 },
+        { "sourceId": "src-a66dd4b4981a", "page": 18 },
+        { "sourceId": "src-6df30a9ff1ae", "page": 9 }
+      ],
+      "notes": [
+        "Die Probeklausurlösung zu Schnittknoten ist verwertbar, echte neuere Graphtransfer-Aufgaben besitzen aber keine verknüpfte Lösung.",
+        "Die 2021er Lösungsdatei enthält im extrahierten Bereich Variantenkonflikte; dieser Konflikt wird nicht still aufgelöst."
+      ]
+    }
+  ]
+}
