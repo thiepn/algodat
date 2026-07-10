@@ -98,4 +98,12 @@ export const migrations: Migration[] = [
       cheatSheets.createIndex('by-mode', 'mode');
     },
   },
+  {
+    version: 11,
+    upgrade(database) {
+      const localDocuments = database.createObjectStore('localDocuments');
+      localDocuments.createIndex('by-source', 'sourceId');
+      localDocuments.createIndex('by-updated', 'updatedAt');
+    },
+  },
 ];

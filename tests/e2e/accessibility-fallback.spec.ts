@@ -5,7 +5,7 @@ const centralRoutes = [
   { path: './', heading: /ruhiger Ausgangspunkt/u },
   { path: './diagnose', heading: 'Kurze Klausurkompetenzen diagnostizieren' },
   { path: './trainer', heading: 'Trainer' },
-  { path: './simulator', heading: 'Klausursimulator' },
+  { path: './simulator', heading: 'Aktuelle Probeklausur' },
   { path: './lernplan', heading: 'Was heute sinnvoll ist' },
   { path: './spickzettel', heading: 'A4-Spickzettel' },
 ] as const;
@@ -228,7 +228,7 @@ test('Simulator V4 kommuniziert Timer, Aufgabenwechsel, Recovery und Abgabe ohne
   await expect(page.getByText(/Laufende Prüfung/u)).toBeVisible();
   await expect(page.getByRole('navigation', { name: 'Prüfungsaufgaben' })).toBeVisible();
 
-  await page.getByRole('button', { name: /2\. unbeantwortet/u }).focus();
+  await page.getByRole('button', { name: /Aufgabe 2/u }).focus();
   await page.keyboard.press('Enter');
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   await page.reload();

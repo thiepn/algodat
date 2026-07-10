@@ -1407,3 +1407,95 @@ th {
     page-break-after: auto;
   }
 }
+
+.exam-task-nav {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.exam-task-nav a,
+.exam-task-nav button {
+  min-width: 9.5rem;
+  border: 2px solid var(--border);
+  border-radius: 0.9rem;
+  padding: 0.7rem;
+  background: #f8fafc;
+  color: var(--text);
+  text-align: left;
+  text-decoration: none;
+}
+
+.exam-task-nav a[aria-current='step'],
+.exam-task-nav button[aria-current='step'] {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(26, 90, 80, 0.18);
+}
+
+.exam-task-nav strong,
+.exam-task-nav span {
+  display: block;
+}
+
+.exam-task-nav span {
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+}
+
+.module-toc {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+}
+
+.module-toc button {
+  display: block;
+  width: 100%;
+  margin: 0.35rem 0;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0.65rem;
+  background: #fff;
+  color: var(--text);
+  text-align: left;
+}
+
+.module-toc__active {
+  border-color: var(--accent) !important;
+  background: #eef8f5 !important;
+  font-weight: 700;
+}
+
+.module-section pre,
+.code-card pre {
+  overflow-x: auto;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background: #10201d;
+  color: #f7fff7;
+}
+
+.answer-details,
+.exam-task-prompt {
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  padding: 1rem;
+  background: #fff;
+}
+
+.source-actions {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.pdf-viewer {
+  width: 100%;
+  min-height: 72vh;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: #fff;
+}

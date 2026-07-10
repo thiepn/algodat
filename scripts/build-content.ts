@@ -284,6 +284,25 @@ function assertPhase17LearningContent(
     throw new Error(`Learning-Resource-Graph enthält eine gebrochene Kante: ${brokenEdge.from}`);
 }
 
+function normalExamQuestionViolation(question: RawQuestions['questions'][number]): string | null {
+  if (question.verification_status === 'generated_unverified')
+    return 'generated_unverified darf nicht in normalen Klausuransichten erscheinen.';
+  if (question.evidenceType === 'generated_example')
+    return 'generated_example ohne freigegebenen didaktischen Zweck bleibt Entwickler-Audit.';
+  if (/thema aus quelle zu verifizieren/iu.test(question.title))
+    return 'generischer Platzhaltertitel ist nicht publikationsfähig.';
+  if (question.topic_tags.length === 0) return 'Themen-Tags fehlen.';
+  if (!question.source_id || question.page < 1) return 'Datei-/Seitenbezug fehlt.';
+  const hasLearningAction =
+    question.task_number !== null ||
+    question.expected_solution_method !== null ||
+    question.expected_proof_type !== null ||
+    question.expected_runtime !== null ||
+    question.official_solution_available;
+  if (!hasLearningAction) return 'keine nutzbare Lernaktion oder Lösungsevidenz.';
+  return null;
+}
+
 async function main(): Promise<void> {
   await mkdir(generatedDir, { recursive: true });
   const manifest = await readJson<RawManifest>(path.join(dataDir, 'source-manifest.json'));
@@ -840,7 +859,7 @@ async function main(): Promise<void> {
     duplicateSafeExamFrequency: true,
     phase0ValidationPassed: phase0.passed,
     phase0aValidationPassed: phase0a.passed,
-    indexedDbSchemaVersion: 10,
+    indexedDbSchemaVersion: 11,
     pwaVersion: contentVersion,
   };
   ContentHealthSchema.parse(contentHealth);
@@ -851,6 +870,22 @@ async function main(): Promise<void> {
     frequencyPolicy: blueprint.frequencyPolicy,
     tasks: standardTasks,
   };
+  const questionPublicationAudit = rawQuestions.questions
+    .map((question) => ({
+      id: question.id,
+      title: question.title,
+      taskNumber: question.task_number,
+      sourceId: question.source_id,
+      page: question.page,
+      verificationStatus: question.verification_status,
+      evidenceType: question.evidenceType,
+      topicTags: question.topic_tags,
+      violation: normalExamQuestionViolation(question),
+    }))
+    .filter((entry) => entry.violation !== null);
+  const publicQuestions = rawQuestions.questions.filter(
+    (question) => normalExamQuestionViolation(question) === null,
+  );
   const safeExamLibrary = {
     schemaVersion,
     contentVersion,
@@ -878,7 +913,7 @@ async function main(): Promise<void> {
         requestedDeliverables: task.requested_deliverables,
       })),
     })),
-    questions: rawQuestions.questions.map((question) => ({
+    questions: publicQuestions.map((question) => ({
       id: question.id,
       examId: question.corpusEventId,
       taskNumber: question.task_number,
@@ -900,6 +935,18 @@ async function main(): Promise<void> {
       solutionSourceIds: question.solution_source_ids,
     })),
   };
+  const invalidPublicQuestion = safeExamLibrary.questions.find(
+    (question) =>
+      question.verificationStatus === 'generated_unverified' ||
+      question.evidenceType === 'generated_example' ||
+      /thema aus quelle zu verifizieren/iu.test(question.paraphrasedTitle) ||
+      question.topicTags.length === 0 ||
+      question.sourceRefs.length === 0,
+  );
+  if (invalidPublicQuestion)
+    throw new Error(
+      `Nicht publikationsfähige Frage in normaler Bibliothek: ${invalidPublicQuestion.id}`,
+    );
   const outputs: Record<string, unknown> = {
     'sources.json': sources,
     'exam-profiles.json': profiles,
@@ -957,6 +1004,12 @@ async function main(): Promise<void> {
     'task-slot-learning-map.json': { ...phase17TaskMap, contentVersion },
     'learning-resource-graph.json': { ...phase17LearningGraph, contentVersion },
     'exam-library.json': safeExamLibrary,
+    'exam-question-publication-audit.json': {
+      schemaVersion,
+      contentVersion,
+      excludedQuestionCount: questionPublicationAudit.length,
+      excludedQuestions: questionPublicationAudit,
+    },
   };
   for (const [name, value] of Object.entries(outputs))
     await writeJson(path.join(generatedDir, name), value);

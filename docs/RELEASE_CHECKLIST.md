@@ -1,5 +1,18 @@
 # Release Checklist
 
+## Phase 18 / 1.0.0-rc.4
+
+- [x] Version bleibt `1.0.0-rc.4`, nicht `1.0.0`.
+- [x] `Klausurprofile` ist aus der primären Navigation entfernt.
+- [x] `/pruefungsstruktur` ersetzt die studentische Profilfläche.
+- [x] Normale Klausurenansichten enthalten keine `generated_unverified`-Fragen.
+- [x] Lokale PDFs bleiben device-local und werden nicht deployed.
+- [x] 500-kB-Bundle-Grenze ist Warnung; 5 MB ist harte Notfallgrenze.
+- [ ] `npm.cmd run format:check`
+- [ ] `npm.cmd run verify`
+- [ ] GitHub Actions nach Push prüfen.
+- [ ] Live-Smoke für Lernen, Aufgaben, Prüfungsstruktur, Dokumente und Simulator ausführen.
+
 ## Automatisch
 
 - [x] Content-Build mit Phase-16-Spickzetteldaten.

@@ -7,13 +7,14 @@ import { NextLearningActions } from '../study-content/NextLearningActions';
 function sourceLabel(sourceId: string): string {
   const source = sources.find((candidate) => candidate.id === sourceId);
   if (!source) return sourceId;
-  return `${source.displayName} (${sourceId})`;
+  return source.displayName;
 }
 
 function evidenceLabel(question: SafeExamQuestion): string {
   if (question.historicalFrequencyEligible) return 'reales dedupliziertes Klausurereignis';
   if (question.evidenceType === 'mock_exam') return 'Probeklausur';
-  if (question.evidenceType === 'generated_example') return 'generiertes Beispiel';
+  if (question.evidenceType === 'official_solution') return 'offizielle Lösung';
+  if (question.evidenceType === 'unofficial_solution') return 'inoffizielle Lösung';
   return question.evidenceType;
 }
 
@@ -142,7 +143,6 @@ export function ExamQuestionListPage() {
             <option value="alle">Alle</option>
             <option value="real">Nur reale deduplizierte Ereignisse</option>
             <option value="mock_exam">Probeklausuren</option>
-            <option value="generated_example">Generierte Beispiele</option>
           </select>
         </label>
       </section>
@@ -260,10 +260,23 @@ export function ExamQuestionDetailPage() {
         </p>
         <h1>{question.paraphrasedTitle}</h1>
         <p>
-          Veröffentlichung: Metadaten und Paraphrase. Vollständige historische Aufgabentexte werden
-          nicht ausgeliefert.
+          Veröffentlichung: geprüfte Metadaten und Paraphrase. Vollständige historische
+          Aufgabentexte werden nicht ausgeliefert.
         </p>
       </header>
+      <NextLearningActions
+        actions={[
+          ...(question.taskNumber
+            ? [
+                {
+                  resourceId: `klausuren:fragen?aufgabe=${question.taskNumber}`,
+                  reason: `Weitere sichere Fragen zu Aufgabe ${question.taskNumber}.`,
+                },
+              ]
+            : []),
+          { resourceId: 'diagnose:standard', reason: 'Vor dem Üben die eigenen Lücken prüfen.' },
+        ]}
+      />
       <div className="two-column">
         <section className="panel">
           <h2>Erwartete Bearbeitungsart</h2>
@@ -289,7 +302,17 @@ export function ExamQuestionDetailPage() {
               .map((ref) => `${sourceLabel(ref.sourceId)} S. ${ref.page}`)
               .join(', ')}
           </p>
-          <p className="quiet">Status: {question.verificationStatus}</p>
+          <details>
+            <summary>Technische Provenienz anzeigen</summary>
+            <p>Status: {question.verificationStatus}</p>
+            <ul>
+              {question.sourceRefs.map((ref) => (
+                <li key={`${ref.sourceId}-${ref.page}`}>
+                  {ref.sourceId}, Seite {ref.page}
+                </li>
+              ))}
+            </ul>
+          </details>
         </section>
       </div>
       <section className="panel">

@@ -1,5 +1,11 @@
 # AlgoDat Study System
 
+Phase 18 setzt den Stand auf `1.0.0-rc.4`: vollständige Lernmodule unter
+`/lernen`, neun Aufgabe-Guides, aktuelle Prüfungsstruktur statt studentischer
+Klausurprofile, lokale private PDF-Bibliothek unter `/dokumente` und eine
+bereinigte Klausurenbibliothek ohne `generated_unverified`-Normalansichten. Das
+echte Screenreader-Gate bleibt offen; `1.0.0` ist weiterhin gesperrt.
+
 Deutschsprachige, lokale und quellenbasierte Lernanwendung für Algorithmen und Datenstrukturen. Phase 0/0A inventarisierte und prüfte den Quellenbestand, Phase 1 stellte das React-/TypeScript-/PWA-Fundament bereit, Phase 2 bis 13 bauten elf aktive Lernpfade und den Klausursimulator auf, Phase 14 ergänzte die Grundlagen-Diagnose, Phase 15 ergänzt einen adaptiven Lernorchestrator und Phase 16 führt den Stand als `1.0.0-rc.2` mit lokalem A4-Spickzettel-Builder und Accessibility-Fallback-Audit in die Release-Härtung.
 
 ## Lokaler Start

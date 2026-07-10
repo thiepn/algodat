@@ -128,17 +128,14 @@ export async function saveTaskAnswer({
   taskSlotId: string;
   answerText: string;
 }) {
-  let answer: unknown;
-  try {
-    answer = answerText.trim() ? JSON.parse(answerText) : null;
-  } catch {
-    answer = { invalidJson: answerText };
-  }
-  const completionStatus = answerText.trim()
-    ? answerText.includes('{') && answerText.includes('}')
-      ? 'answered'
-      : 'partial'
-    : 'unanswered';
+  const answer = answerText.trim()
+    ? {
+        kind: 'student_text_answer',
+        text: answerText.trim(),
+        invalidJson: answerText.trim(),
+      }
+    : null;
+  const completionStatus = answerText.trim() ? 'answered' : 'unanswered';
   const updated = updateTaskCompletionState(
     session,
     taskSlotId,

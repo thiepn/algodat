@@ -1,13 +1,29 @@
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { sources } from '../../content/loaders/sources';
+import { taskSlotLearningMap } from '../../content/loaders/study-content';
+import { topics } from '../../content/loaders/topics';
 import { StatusBadge } from '../../ui/components/StatusBadge';
+import { richStudyModules } from '../learning/study-module-details';
+import { trainerRegistry } from '../trainer/trainer-service';
+import { listLocalDocuments } from '../documents/local-document-service';
+import type { LocalDocumentBinding } from '../../persistence/database/schema';
+
+function normalStatus(status: string) {
+  if (status === 'official_verified') return 'offiziell geprüft';
+  if (status === 'verified_against_official_source') return 'gegen Quelle geprüft';
+  if (status === 'visual_review_required') return 'Sichtprüfung offen';
+  if (status === 'extraction_uncertain') return 'Extraktion unsicher';
+  return 'intern markiert';
+}
 
 export function SourcesPage() {
   const [search, setSearch] = useState('');
-  const [authority, setAuthority] = useState('alle');
   const [category, setCategory] = useState('alle');
   const [year, setYear] = useState('alle');
-  const [status, setStatus] = useState('alle');
+  const [bindings, setBindings] = useState<LocalDocumentBinding[]>([]);
+  useEffect(() => void listLocalDocuments().then(setBindings), []);
+  const connected = useMemo(() => new Set(bindings.map((binding) => binding.sourceId)), [bindings]);
   const categories = [...new Set(sources.map((source) => source.category))].sort();
   const years = [
     ...new Set(
@@ -17,43 +33,31 @@ export function SourcesPage() {
   const filtered = sources.filter(
     (source) =>
       source.displayName.toLocaleLowerCase('de').includes(search.toLocaleLowerCase('de')) &&
-      (authority === 'alle' || String(source.authorityLevel) === authority) &&
       (category === 'alle' || source.category === category) &&
-      (year === 'alle' || String(source.year) === year) &&
-      (status === 'alle' || source.verificationStatus === status),
+      (year === 'alle' || String(source.year) === year),
   );
   return (
     <div className="page-flow">
       <header className="page-header">
-        <p className="eyebrow">Private Dateien bleiben lokal</p>
-        <h1>Quellenbrowser</h1>
+        <p className="eyebrow">Quellen als Lernmaterial</p>
+        <h1>Quellenbibliothek</h1>
         <p>
-          Lokale Dateien werden nicht geöffnet, verlinkt oder in das PWA-Paket kopiert. Sichtbar
-          sind nur Anzeigename, Quellen-ID, Autoritätsstufe und Seitenbezüge.
+          Diese Ansicht zeigt, was du mit einer Quelle lernen kannst: Themen, Aufgaben, Module,
+          Trainer, Fragen und lokale PDF-Verbindung. Technische IDs bleiben in Details.
         </p>
       </header>
       <section className="filters" aria-label="Quellen filtern">
         <label>
-          Dateiname
+          Quelle suchen
           <input
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Quelle suchen"
+            placeholder="z. B. Vorlesung oder Klausur"
           />
         </label>
         <label>
-          Autorität
-          <select value={authority} onChange={(e) => setAuthority(e.target.value)}>
-            <option value="alle">Alle</option>
-            <option value="1">Stufe 1</option>
-            <option value="2">Stufe 2</option>
-            <option value="3">Stufe 3</option>
-            <option value="4">Stufe 4</option>
-          </select>
-        </label>
-        <label>
-          Kategorie
+          Dokumenttyp
           <select value={category} onChange={(e) => setCategory(e.target.value)}>
             <option value="alle">Alle</option>
             {categories.map((value) => (
@@ -70,68 +74,90 @@ export function SourcesPage() {
             ))}
           </select>
         </label>
-        <label>
-          Status
-          <select value={status} onChange={(e) => setStatus(e.target.value)}>
-            <option value="alle">Alle</option>
-            <option value="official_verified">offiziell verifiziert</option>
-            <option value="visual_review_required">Sichtprüfung offen</option>
-            <option value="generated_unverified">generiert, ungeprüft</option>
-          </select>
-        </label>
       </section>
       <p className="result-count" aria-live="polite">
         {filtered.length} Quellen
       </p>
       <div className="source-list">
-        {filtered.map((source) => (
-          <details className="source-row" key={source.id}>
-            <summary>
-              <span>
-                <strong>{source.displayName}</strong>
-                <small>
-                  Quellen-ID {source.id} · {source.category} · {source.year ?? 'Jahr unbekannt'} ·{' '}
-                  {source.pageCount ?? '–'} Seiten
-                </small>
-              </span>
-              <StatusBadge tone={source.authorityLevel === 1 ? 'success' : 'neutral'}>
-                Stufe {source.authorityLevel}
+        {filtered.map((source) => {
+          const linkedModules = richStudyModules.filter((module) =>
+            module.sourceRefs.some((ref) => ref.sourceId === source.id),
+          );
+          const linkedTasks = taskSlotLearningMap.tasks.filter((task) =>
+            task.sourceRefs.some((ref) => ref.sourceId === source.id),
+          );
+          const linkedTopics = topics.filter((topic) =>
+            topic.sourceRefs.some((ref) => ref.sourceId === source.id),
+          );
+          const linkedTrainers = trainerRegistry.filter((trainer) =>
+            trainer.sourceRefs.some((ref) => ref.sourceId === source.id),
+          );
+          return (
+            <article className="source-row source-row--article" key={source.id}>
+              <div>
+                <p className="eyebrow">{source.category}</p>
+                <h2>{source.title}</h2>
+                <p>
+                  {source.year ?? 'Jahr unbekannt'} · {source.pageCount ?? 'unbekannte'} Seiten ·{' '}
+                  {normalStatus(source.verificationStatus)}
+                </p>
+                <div className="evidence-chips">
+                  {linkedTopics.slice(0, 4).map((topic) => (
+                    <span key={topic.id}>{topic.name}</span>
+                  ))}
+                  {linkedTasks.slice(0, 3).map((task) => (
+                    <span key={task.taskNumber}>Aufgabe {task.taskNumber}</span>
+                  ))}
+                </div>
+                <p>
+                  {linkedModules.length} Lernmodule · {linkedTrainers.length} Trainer ·{' '}
+                  {connected.has(source.id) ? 'lokale PDF verbunden' : 'Datei nicht verbunden'}
+                </p>
+              </div>
+              <div className="source-actions">
+                {connected.has(source.id) ? (
+                  <>
+                    <Link className="button-link" to={`/dokumente/local-document-${source.id}`}>
+                      PDF öffnen
+                    </Link>
+                    <Link className="button-link" to={`/dokumente/local-document-${source.id}`}>
+                      Seite öffnen
+                    </Link>
+                  </>
+                ) : (
+                  <Link className="button-link" to={`/dokumente/verbinden?source=${source.id}`}>
+                    Lokale PDF verbinden
+                  </Link>
+                )}
+                {linkedModules[0] && (
+                  <Link className="button-link" to={`/lernen/${linkedModules[0].slug}`}>
+                    Lernmodul öffnen
+                  </Link>
+                )}
+                <details>
+                  <summary>Technische Details</summary>
+                  <dl className="metadata-list">
+                    <div>
+                      <dt>Quellen-ID</dt>
+                      <dd>{source.id}</dd>
+                    </div>
+                    <div>
+                      <dt>Duplikatgruppe</dt>
+                      <dd>{source.duplicateGroupId ?? 'keine'}</dd>
+                    </div>
+                    <div>
+                      <dt>Extraktion</dt>
+                      <dd>{source.extractionSucceeded ? 'erfolgreich' : 'nicht oder unsicher'}</dd>
+                    </div>
+                  </dl>
+                </details>
+              </div>
+              <StatusBadge tone={connected.has(source.id) ? 'success' : 'neutral'}>
+                {connected.has(source.id) ? 'PDF verbunden' : 'lokal verbindbar'}
               </StatusBadge>
-            </summary>
-            <dl className="metadata-list">
-              <div>
-                <dt>Evidenztyp</dt>
-                <dd>{source.evidenceType}</dd>
-              </div>
-              <div>
-                <dt>Extraktion</dt>
-                <dd>
-                  {source.extractionSucceeded === null
-                    ? 'nicht anwendbar'
-                    : source.extractionSucceeded
-                      ? 'erfolgreich'
-                      : 'nicht erfolgreich'}
-                </dd>
-              </div>
-              <div>
-                <dt>Sichtprüfung</dt>
-                <dd>
-                  {source.visualReviewRequired
-                    ? 'erforderlich oder dokumentiert'
-                    : 'nicht erforderlich'}
-                </dd>
-              </div>
-              <div>
-                <dt>Duplikatgruppe</dt>
-                <dd>{source.duplicateGroupId ?? 'keine'}</dd>
-              </div>
-              <div>
-                <dt>Kanonische Quelle</dt>
-                <dd>{source.canonicalDocumentId}</dd>
-              </div>
-            </dl>
-          </details>
-        ))}
+            </article>
+          );
+        })}
       </div>
     </div>
   );

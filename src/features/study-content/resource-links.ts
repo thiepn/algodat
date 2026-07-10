@@ -1,4 +1,5 @@
 import { trainerRegistry } from '../trainer/trainer-service';
+import { getRichModule } from '../learning/study-module-details';
 
 export function trainerPath(trainerId: string): string {
   const entry = trainerRegistry.find((candidate) => candidate.trainerId === trainerId);
@@ -23,7 +24,11 @@ export function hrefForResource(resourceId: string): string {
   if (resourceId === 'diagnose:schnellcheck') return '/diagnose/schnellcheck';
   if (resourceId === 'diagnose:standard') return '/diagnose/standard';
   if (resourceId.startsWith('trainer:')) return trainerPath(resourceId.replace('trainer:', ''));
-  if (resourceId.startsWith('module:')) return `/themen?modul=${resourceId.replace('module:', '')}`;
+  if (resourceId.startsWith('module:')) {
+    const moduleId = resourceId.replace('module:', '');
+    const module = getRichModule(moduleId);
+    return module ? `/lernen/${module.slug}` : '/lernen';
+  }
   if (resourceId.startsWith('klausuren:fragen')) {
     const query = resourceId.split('?')[1];
     return query ? `/klausuren/fragen?${query}` : '/klausuren/fragen';
@@ -38,7 +43,10 @@ export function labelForResource(resourceId: string): string {
     const trainerId = resourceId.replace('trainer:', '');
     return trainerRegistry.find((entry) => entry.trainerId === trainerId)?.title ?? trainerId;
   }
-  if (resourceId.startsWith('module:')) return 'Lernmodul lesen';
+  if (resourceId.startsWith('module:')) {
+    const module = getRichModule(resourceId.replace('module:', ''));
+    return module?.title ?? 'Lernmodul lesen';
+  }
   if (resourceId.startsWith('klausuren:fragen')) return 'Historische Fragen ansehen';
   return 'Lernplan öffnen';
 }

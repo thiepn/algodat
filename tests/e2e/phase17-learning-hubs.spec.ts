@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 test('Aufgaben-Hub und Klausurenbibliothek sind klickbar verbunden', async ({ page }) => {
   await page.goto('./aufgaben/3');
   await expect(page.getByRole('heading', { name: 'Passende produktive Trainer' })).toBeVisible();
-  await page.getByRole('link', { name: /Fragen zu Aufgabe 3 öffnen/u }).click();
+  await page.getByRole('link', { name: /sichere Fragenmetadaten zu Aufgabe 3/u }).click();
   await expect(page).toHaveURL(/\/algodat\/klausuren\/fragen\?aufgabe=3/u);
   await expect(
     page.getByRole('heading', { name: 'Alte Fragen als sichere Metadaten' }),

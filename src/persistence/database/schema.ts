@@ -19,7 +19,20 @@ import {
 import { CheatSheetDocumentSchema } from '../../domain/cheat-sheet/schemas';
 
 export const DATABASE_NAME = 'algodat-study-system';
-export const DATABASE_VERSION = 10;
+export const DATABASE_VERSION = 11;
+
+export const LocalDocumentBindingSchema = z.object({
+  id: z.string(),
+  sourceId: z.string(),
+  displayName: z.string(),
+  fileName: z.string(),
+  mimeType: z.literal('application/pdf'),
+  sizeBytes: z.number().int().nonnegative(),
+  sha256: z.string().nullable(),
+  connectedAt: z.string(),
+  updatedAt: z.string(),
+  bytes: z.instanceof(ArrayBuffer),
+});
 
 export const UserPreferencesSchema = z.object({
   id: z.literal('preferences'),
@@ -44,6 +57,7 @@ export const PersistenceExportSchema = z.object({
   studyPlanSettings: z.array(StudyPlanSettingsSchema).default([]),
   reviewSchedules: z.array(ReviewScheduleSchema).default([]),
   cheatSheets: z.array(CheatSheetDocumentSchema).default([]),
+  localDocuments: z.array(LocalDocumentBindingSchema).default([]),
   preferences: UserPreferencesSchema.nullable(),
 });
 
@@ -62,6 +76,7 @@ export type StudyPlan =
 export type StudyPlanSettings = z.infer<typeof StudyPlanSettingsSchema>;
 export type ReviewSchedule = z.infer<typeof ReviewScheduleSchema>;
 export type CheatSheetDocument = z.infer<typeof CheatSheetDocumentSchema>;
+export type LocalDocumentBinding = z.infer<typeof LocalDocumentBindingSchema>;
 
 export interface AlgoDatDatabase extends DBSchema {
   studySessions: { key: string; value: StudySession };
@@ -96,5 +111,10 @@ export interface AlgoDatDatabase extends DBSchema {
     key: string;
     value: CheatSheetDocument;
     indexes: { 'by-updated': string; 'by-mode': string };
+  };
+  localDocuments: {
+    key: string;
+    value: LocalDocumentBinding;
+    indexes: { 'by-source': string; 'by-updated': string };
   };
 }

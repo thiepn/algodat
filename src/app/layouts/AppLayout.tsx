@@ -7,6 +7,7 @@ const navigationGroups = [
     label: 'Lernen',
     items: [
       ['/', 'Übersicht'],
+      ['/lernen', 'Lernen'],
       ['/aufgaben', 'Aufgaben 1–9'],
       ['/themen', 'Themen'],
       ['/trainer', 'Trainer'],
@@ -15,8 +16,8 @@ const navigationGroups = [
   {
     label: 'Prüfen',
     items: [
+      ['/pruefungsstruktur', 'Prüfungsstruktur'],
       ['/klausuren', 'Klausuren'],
-      ['/klausurprofile', 'Klausurprofile'],
       ['/simulator', 'Simulator'],
     ],
   },
@@ -27,6 +28,7 @@ const navigationGroups = [
       ['/lernplan', 'Lernplan'],
       ['/spickzettel', 'Spickzettel'],
       ['/quellen', 'Quellen'],
+      ['/dokumente', 'Dokumente'],
     ],
   },
 ] as const;
@@ -71,7 +73,7 @@ export function AppLayout() {
             <small>Study System</small>
           </span>
         </NavLink>
-        <span className="topbar__phase">1.0.0-rc.3 · 11 Trainer · Screenreader-Gate offen</span>
+        <span className="topbar__phase">1.0.0-rc.4 · 11 Trainer · Screenreader-Gate offen</span>
       </header>
       <nav className="primary-nav" aria-label="Hauptnavigation">
         {navigationGroups.map((group) => (

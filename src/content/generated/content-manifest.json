@@ -26,7 +26,7 @@
     },
     {
       "name": "content-health.json",
-      "sha256": "3503e15795fdfd59ce85e1973fd4629c8437d39dc211f38cb67c4de6d5d32dac"
+      "sha256": "96d83c1cfa826cc1f1c6bb37df37c945377a2231a62d37755ed560ecf1d6bb1d"
     },
     {
       "name": "diagnostic-items-asymptotics.json",
@@ -110,7 +110,7 @@
     },
     {
       "name": "exam-library.json",
-      "sha256": "e36d2f668868a3308a1704cbed17b4b65f310b3696a4cb99c71eb7ca5482c5c4"
+      "sha256": "594a7f869adc136d3d6e8ac18dc496618865cb006ee95076e26ae045a942838e"
     },
     {
       "name": "exam-packages.json",
@@ -123,6 +123,10 @@
     {
       "name": "exam-profiles.json",
       "sha256": "23919e92a59958f52c15d2149c40b1c614565cf37917429a4cf1de51e76ffe24"
+    },
+    {
+      "name": "exam-question-publication-audit.json",
+      "sha256": "d97bb06bea89b45eeab3f4f10ce10345da0ee3fbbef4e701a13cd1c257a3c1de"
     },
     {
       "name": "exam-scoring-policies.json",

@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { content } from '../../content/loaders/content';
 import { computeRemainingTime, exactFromContent, exactToLabel } from '../../domain/exam-simulator';
 import type { ExamSession } from '../../domain/exam-simulator';
 import {
@@ -16,6 +15,7 @@ import {
   startSimulatorSession,
   submitSimulatorSession,
 } from './exam-simulator-service';
+import { trainerRegistry } from '../trainer/trainer-service';
 
 const sessionStatusLabels: Record<ExamSession['status'], string> = {
   created: 'angelegt',
@@ -39,16 +39,18 @@ const completionStatusLabels: Record<
   answered: 'beantwortet',
 };
 
-const coverageStatusLabels = {
-  fully_supported: 'vollständig unterstützt',
-  partially_supported: 'teilweise unterstützt',
-  metadata_only: 'nur Metadaten',
-  unsupported: 'nicht unterstützt',
-} as const;
-
-const examPackageTypeLabels = {
-  generated_core_mock: 'neu zusammengestellte Kernkompetenz-Probeklausur',
-} as const;
+const rendererLabels: Record<string, string> = {
+  knapsack: 'Rucksack-DP-Tabelle',
+  union_find: 'Union-Find-Tracing',
+  red_black_tree_insertion: 'Rot-Schwarz-Einfügen',
+  proof_loop_invariant: 'Schleifeninvariante',
+  recurrence_runtime_proof: 'Rekurrenz- und Laufzeitbeweis',
+  divide_conquer_max_difference: 'Divide-and-Conquer-Entwurf',
+  dp_design_mine: 'DP-Entwurf',
+  floyd_warshall_matrix: 'Floyd-Warshall-Matrix',
+  dijkstra_trace: 'Dijkstra-Tracing',
+  prim_mst_trace: 'Prim-Tracing',
+};
 
 function subscribeClock(callback: () => void) {
   const id = window.setInterval(callback, 1000);
@@ -66,12 +68,11 @@ export function SimulatorDashboard() {
   return (
     <div className="page-flow">
       <header className="page-header">
-        <p className="eyebrow">Phase 7 · Klausursimulator</p>
-        <h1>Klausursimulator</h1>
+        <p className="eyebrow">Aktuelle Probeklausur</p>
+        <h1>Aktuelle Probeklausur</h1>
         <p>
-          Historische Profile werden ehrlich als Coverage-Vorschau gezeigt. Die startbaren
-          Kernkompetenz-Probeklausuren V1 bis V4 bleiben als nicht historische, automatisch
-          bewertbare Prüfungssets erhalten.
+          Ein aktuelles, nicht historisches Prüfungsprodukt mit sichtbaren Aufgaben, Timer,
+          Autosave, Review-Markierung und Ergebnisbericht.
         </p>
       </header>
       <section className="trainer-grid">
@@ -84,15 +85,7 @@ export function SimulatorDashboard() {
             keine historische Originalklausur.
           </p>
           <Link className="button-link" to={`/simulator/pruefungen/${examPackage.id}`}>
-            Probeklausur öffnen
-          </Link>
-        </article>
-        <article className="trainer-card">
-          <span className="status-badge status-badge--info">Vorschau</span>
-          <h2>Historische Profile</h2>
-          <p>Zeigt, welche Slots bereits unterstützt sind und welche Trainerfamilien fehlen.</p>
-          <Link className="button-link" to="/simulator/profile">
-            Profilabdeckung ansehen
+            Aktuelle Probeklausur öffnen
           </Link>
         </article>
       </section>
@@ -117,85 +110,44 @@ export function SimulatorDashboard() {
 
 export function ExamProfileBrowser() {
   return (
-    <div className="page-flow">
-      <header className="page-header">
-        <p className="eyebrow">Historische Profile · keine Vollsimulation</p>
-        <h1>Profilabdeckung</h1>
-        <p>
-          Nur `fully_supported` dürfte vollständig gestartet werden. Aktuell ist kein historisches
-          Profil vollständig startbar.
-        </p>
-      </header>
-      <section className="trainer-grid">
-        {content.examProfileCoverage.profiles.map((profile) => (
-          <article className="trainer-card" key={profile.profileId}>
-            <span className="status-badge status-badge--info">
-              {coverageStatusLabels[profile.coverageStatus]}
-            </span>
-            <h2>{profile.title}</h2>
-            <p>
-              Unterstützt: {profile.supportedSlots.join(', ') || 'keine'} · Nicht unterstützt:{' '}
-              {profile.unsupportedSlots.join(', ') || 'keine'}
-            </p>
-            <p>{profile.startable ? 'Startbar' : 'Nicht startbar'}</p>
-            <Link className="button-link" to={`/simulator/profile/${profile.profileId}`}>
-              Details ansehen
-            </Link>
-          </article>
-        ))}
-      </section>
-    </div>
+    <Missing
+      title="Klausurprofile wurden durch die aktuelle Prüfungsstruktur ersetzt"
+      to="/pruefungsstruktur"
+    />
   );
 }
 
 export function ExamProfileDetail() {
-  const { profileId } = useParams();
-  const profile = content.examProfileCoverage.profiles.find(
-    (candidate) => candidate.profileId === profileId,
-  );
-  if (!profile) return <Missing title="Profil nicht gefunden" to="/simulator/profile" />;
   return (
-    <div className="page-flow">
-      <Link className="back-link" to="/simulator/profile">
-        ← Profilübersicht
-      </Link>
-      <header className="page-header">
-        <p className="eyebrow">{coverageStatusLabels[profile.coverageStatus]}</p>
-        <h1>{profile.title}</h1>
-        <p>
-          {profile.startable
-            ? 'Vollständig startbar.'
-            : 'Nicht als vollständige Simulation startbar.'}
-        </p>
-      </header>
-      <CoverageTable profile={profile} />
-    </div>
+    <Missing
+      title="Historische Profile sind keine primäre Produktfläche mehr"
+      to="/pruefungsstruktur"
+    />
   );
 }
 
 export function ExamPackageList() {
+  const examPackage = getCoreExamPackage();
   return (
     <div className="page-flow">
       <header className="page-header">
-        <h1>Startbare Prüfungssets</h1>
-        <p>V1 bis V4 bleiben als startbare, nicht historische Kernkompetenz-Pakete erhalten.</p>
+        <h1>Aktuelle Probeklausur</h1>
+        <p>Es gibt genau ein primäres startbares Prüfungsprodukt.</p>
       </header>
-      {content.examPackages.map((examPackage) => (
-        <article className="trainer-card" key={examPackage.id}>
-          <h2>{examPackage.title}</h2>
-          <p>{examPackage.description}</p>
-          <Link className="button-link" to={`/simulator/pruefungen/${examPackage.id}`}>
-            Öffnen
-          </Link>
-        </article>
-      ))}
+      <article className="trainer-card">
+        <h2>{examPackage.title}</h2>
+        <p>{examPackage.description}</p>
+        <Link className="button-link" to={`/simulator/pruefungen/${examPackage.id}`}>
+          Öffnen
+        </Link>
+      </article>
     </div>
   );
 }
 
 export function ExamPackageDetail() {
   const { examPackageId } = useParams();
-  const examPackage = content.examPackages.find((candidate) => candidate.id === examPackageId);
+  const examPackage = examPackageId ? getExamPackageById(examPackageId) : getCoreExamPackage();
   if (!examPackage)
     return <Missing title="Prüfungsset nicht gefunden" to="/simulator/pruefungen" />;
   return (
@@ -204,7 +156,7 @@ export function ExamPackageDetail() {
         ← Simulator
       </Link>
       <header className="page-header">
-        <p className="eyebrow">{examPackageTypeLabels[examPackage.packageType]}</p>
+        <p className="eyebrow">Aktuelle Probeklausur</p>
         <h1>{examPackage.title}</h1>
         <p>{examPackage.description}</p>
       </header>
@@ -213,6 +165,7 @@ export function ExamPackageDetail() {
         historische Originalklausur.
       </p>
       <ExamPackageFacts examPackage={examPackage} />
+      <TaskSlotPreview examPackage={examPackage} />
       <Link className="button-link" to={`/simulator/pruefungen/${examPackage.id}/briefing`}>
         Briefing öffnen
       </Link>
@@ -224,18 +177,8 @@ export function ExamBriefing() {
   const { examPackageId } = useParams();
   const navigate = useNavigate();
   const examPackage = examPackageId ? getExamPackageById(examPackageId) : getCoreExamPackage();
-  const [confirmed, setConfirmed] = useState<Record<string, boolean>>({});
   if (!examPackage)
     return <Missing title="Prüfungsset nicht gefunden" to="/simulator/pruefungen" />;
-  const checks = [
-    'Timer verstanden',
-    'Keine Hinweise während der Prüfung',
-    'Antworten werden automatisch gespeichert',
-    'Zeit läuft bei Reload weiter',
-    'Endgültige Abgabe ist nicht rückgängig zu machen',
-    'Diese Probeklausur ist keine historische Originalklausur',
-  ];
-  const ready = checks.every((check) => confirmed[check]);
   const start = async () => {
     const session = await createSimulatorSession('strict_exam', examPackage.id);
     const running = await startSimulatorSession({ ...session, status: 'ready' });
@@ -244,10 +187,10 @@ export function ExamBriefing() {
   return (
     <div className="page-flow">
       <Link className="back-link" to={`/simulator/pruefungen/${examPackage.id}`}>
-        ← Prüfungsset
+        ← Probeklausur
       </Link>
       <header className="page-header">
-        <p className="eyebrow">Briefing · Strict Exam</p>
+        <p className="eyebrow">Briefing</p>
         <h1>{examPackage.title}</h1>
         <p>
           {examPackage.taskSlots.length} Aufgaben ·{' '}
@@ -255,26 +198,16 @@ export function ExamBriefing() {
           {examPackage.durationMinutes} Minuten.
         </p>
       </header>
-      <ExamPackageFacts examPackage={examPackage} />
       <section className="panel">
-        <h2>Startbestätigung</h2>
-        {checks.map((check) => (
-          <label key={check} className="checkbox-row">
-            <input
-              type="checkbox"
-              checked={confirmed[check] ?? false}
-              onChange={(event) => setConfirmed({ ...confirmed, [check]: event.target.checked })}
-            />
-            {check}
-          </label>
-        ))}
+        <h2>Vor dem Start</h2>
+        <ul>
+          <li>Autosave speichert Antworten lokal.</li>
+          <li>Der Timer läuft während Reloads weiter.</li>
+          <li>Du kannst Aufgaben zur Kontrolle markieren.</li>
+          <li>Modellantworten und Bewertung erscheinen erst nach endgültiger Abgabe.</li>
+        </ul>
       </section>
-      <button
-        className="primary-button"
-        type="button"
-        disabled={!ready}
-        onClick={() => void start()}
-      >
+      <button className="primary-button" type="button" onClick={() => void start()}>
         Prüfung starten
       </button>
     </div>
@@ -296,7 +229,11 @@ export function ExamSessionPage() {
       setSession(loaded);
       const currentSlot = taskSlotId ?? loaded?.currentTaskSlotId;
       const answer = currentSlot ? loaded?.taskStates[currentSlot]?.answer : null;
-      setAnswerText(answer ? JSON.stringify(answer, null, 2) : '');
+      setAnswerText(
+        answer && typeof answer === 'object' && 'text' in answer
+          ? String((answer as { text: unknown }).text)
+          : '',
+      );
       setSaveStatus('');
     });
   }, [sessionId, taskSlotId]);
@@ -350,8 +287,8 @@ export function ExamSessionPage() {
         <p className="eyebrow">Laufende Prüfung · {formatTime(remainingMs)}</p>
         <h1>{task.title}</h1>
         <p>
-          {task.examPoints.numerator / task.examPoints.denominator} Punkte · Status verrät keine
-          fachliche Richtigkeit.
+          {task.examPoints.numerator / task.examPoints.denominator} Punkte · Bewertung erst nach
+          endgültiger Abgabe.
         </p>
       </header>
       <ExamTaskNavigation
@@ -360,17 +297,15 @@ export function ExamSessionPage() {
         onSelect={(slotId) => void go(slotId)}
       />
       <section className="step-input">
-        <h2>Antwort-Payload aktiv eingeben</h2>
-        <p>
-          Gib die strukturierte Antwort als JSON ein. Die Bewertung erfolgt erst nach endgültiger
-          Abgabe.
-        </p>
+        <h2>Aufgabe bearbeiten</h2>
+        <ExamTaskPrompt task={task} />
         <label className="wide-input">
           Antwort für {task.title}
           <textarea
             rows={12}
             value={answerText}
             onChange={(event) => setAnswerText(event.target.value)}
+            placeholder="Schreibe hier Tabellenwerte, Zwischenschritte, Begründungen oder Pseudocode in normaler Klausurform."
           />
         </label>
         <label className="checkbox-row">
@@ -386,21 +321,9 @@ export function ExamSessionPage() {
               setSession(optimisticSession);
               const persistence = setSimulatorReviewFlag(session, task.taskSlotId, marked);
               pendingReviewSave.current = persistence;
-              void persistence
-                .then((stored) => {
-                  setSession((current) =>
-                    current?.id === stored.id
-                      ? {
-                          ...stored,
-                          currentTaskSlotId: current.currentTaskSlotId,
-                          taskStates: current.taskStates,
-                        }
-                      : stored,
-                  );
-                })
-                .finally(() => {
-                  if (pendingReviewSave.current === persistence) pendingReviewSave.current = null;
-                });
+              void persistence.finally(() => {
+                if (pendingReviewSave.current === persistence) pendingReviewSave.current = null;
+              });
             }}
           />
           Zur Kontrolle markieren
@@ -431,16 +354,49 @@ export function ExamOverview() {
     if (sessionId) void getSimulatorSession(sessionId).then(setSession);
   }, [sessionId]);
   if (!session) return <Missing title="Übersicht nicht gefunden" to="/simulator" />;
+  const examPackage = getExamPackageById(session.examPackageId) ?? getCoreExamPackage();
   return (
     <div className="page-flow">
       <header className="page-header">
-        <h1>Aufgabenübersicht vor Abgabe</h1>
+        <h1>Review vor Abgabe</h1>
         <p>
-          Keine fachliche Bewertung vor Abgabe. Unbeantwortete Aufgaben können trotzdem abgegeben
-          werden.
+          Prüfe beantwortete, unbeantwortete und markierte Aufgaben. Es gibt noch keine
+          Modellantworten.
         </p>
       </header>
       <ExamTaskNavigation session={session} activeTaskSlotId={session.currentTaskSlotId} />
+      <section className="task-table-wrapper">
+        <table>
+          <caption>Abgabestatus</caption>
+          <thead>
+            <tr>
+              <th>Aufgabe</th>
+              <th>Status</th>
+              <th>Kontrolle</th>
+              <th>Punkte</th>
+              <th>Aktion</th>
+            </tr>
+          </thead>
+          <tbody>
+            {examPackage.taskSlots.map((slot, index) => {
+              const state = session.taskStates[slot.taskSlotId];
+              return (
+                <tr key={slot.taskSlotId}>
+                  <td>Aufgabe {index + 1}</td>
+                  <td>{completionStatusLabels[state?.completionStatus ?? 'unanswered']}</td>
+                  <td>{session.reviewFlags[slot.taskSlotId] ? 'markiert' : 'nicht markiert'}</td>
+                  <td>{slot.examPoints.numerator / slot.examPoints.denominator}</td>
+                  <td>
+                    <Link to={`/simulator/sitzung/${session.id}/aufgabe/${slot.taskSlotId}`}>
+                      öffnen
+                    </Link>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </section>
       <Link
         className="button-link"
         to={`/simulator/sitzung/${session.id}/aufgabe/${session.currentTaskSlotId}`}
@@ -460,6 +416,12 @@ export function ExamResultPage() {
   if (!result) return <Missing title="Ergebnis nicht gefunden" to="/simulator" />;
   const total = result.totalScore.numerator / result.totalScore.denominator;
   const max = result.maximumScore.numerator / result.maximumScore.denominator;
+  const taskScores = result.taskScores as Array<{
+    trainerId: string;
+    mappedExamScore: { numerator: number; denominator: number };
+    examMaximum: { numerator: number; denominator: number };
+    errors: unknown[];
+  }>;
   return (
     <div className="page-flow trainer-result">
       <header className="page-header">
@@ -467,48 +429,45 @@ export function ExamResultPage() {
         <h1>
           {total}/{max} Punkte
         </h1>
-        <p>Trainingsinterne Auswertung der Kernkompetenz-Probeklausur.</p>
+        <p>Trainingsinterne Auswertung der aktuellen Probeklausur mit Lernhinweisen.</p>
       </header>
       <section className="task-table-wrapper">
         <table>
-          <caption>Aufgabenpunkte</caption>
+          <caption>Aufgabenpunkte und nächste Lernaktion</caption>
           <thead>
             <tr>
               <th>Aufgabe</th>
               <th>Punkte</th>
-              <th>Fehler</th>
+              <th>Rubrikfehler</th>
+              <th>Lernhinweis</th>
             </tr>
           </thead>
           <tbody>
-            {(
-              result.taskScores as Array<{
-                trainerId: string;
-                mappedExamScore: { numerator: number; denominator: number };
-                examMaximum: { numerator: number; denominator: number };
-                errors: unknown[];
-              }>
-            ).map((score) => (
-              <tr key={score.trainerId}>
-                <td>{score.trainerId}</td>
-                <td>
-                  {score.mappedExamScore.numerator / score.mappedExamScore.denominator}/
-                  {score.examMaximum.numerator / score.examMaximum.denominator}
-                </td>
-                <td>{score.errors.length}</td>
-              </tr>
-            ))}
+            {taskScores.map((score, index) => {
+              const trainer = trainerRegistry.find((entry) => entry.trainerId === score.trainerId);
+              return (
+                <tr key={score.trainerId}>
+                  <td>{trainer?.title ?? `Aufgabe ${index + 1}`}</td>
+                  <td>
+                    {score.mappedExamScore.numerator / score.mappedExamScore.denominator}/
+                    {score.examMaximum.numerator / score.examMaximum.denominator}
+                  </td>
+                  <td>{score.errors.length}</td>
+                  <td>
+                    <Link to="/lernplan/heute">Schwäche in den Lernplan übernehmen</Link>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </section>
       <section className="panel">
-        <h2>Mastery V6</h2>
-        <ul>
-          {Object.entries(result.masteryImpact).map(([key, value]) => (
-            <li key={key}>
-              {key}: {Math.round(value * 100)} %
-            </li>
-          ))}
-        </ul>
+        <h2>Erklärung</h2>
+        <p>
+          Der Bericht zeigt Punkte und Rubrikfehler erst nach Abgabe. Öffne die passenden Trainer
+          oder Lernmodule, um falsche Zwischenschritte aktiv zu wiederholen.
+        </p>
       </section>
       <Link className="button-link" to="/simulator">
         Zum Simulator
@@ -549,46 +508,26 @@ function ExamPackageFacts({
   );
 }
 
-function CoverageTable({
-  profile,
+function TaskSlotPreview({
+  examPackage = getCoreExamPackage(),
 }: {
-  profile: (typeof content.examProfileCoverage.profiles)[number];
+  examPackage?: ReturnType<typeof getCoreExamPackage>;
 }) {
   return (
-    <section className="task-table-wrapper">
-      <table>
-        <caption>Coverage für {profile.title}</caption>
-        <tbody>
-          <tr>
-            <th>Slots</th>
-            <td>{profile.slots}</td>
-          </tr>
-          <tr>
-            <th>Punkte</th>
-            <td>{profile.points ?? 'unbekannt'}</td>
-          </tr>
-          <tr>
-            <th>Dauer</th>
-            <td>{profile.durationMinutes ?? 'unbekannt'}</td>
-          </tr>
-          <tr>
-            <th>Unterstützt</th>
-            <td>{profile.supportedSlots.join(', ') || 'keine'}</td>
-          </tr>
-          <tr>
-            <th>Teilweise</th>
-            <td>{profile.partiallySupportedSlots.join(', ') || 'keine'}</td>
-          </tr>
-          <tr>
-            <th>Nicht unterstützt</th>
-            <td>{profile.unsupportedSlots.join(', ') || 'keine'}</td>
-          </tr>
-          <tr>
-            <th>Fehlende Familien</th>
-            <td>{profile.missingTrainerFamilies.join('; ')}</td>
-          </tr>
-        </tbody>
-      </table>
+    <section className="panel">
+      <h2>Aufgaben</h2>
+      <div className="task-grid">
+        {examPackage.taskSlots.map((slot, index) => (
+          <article className="task-card" key={slot.taskSlotId}>
+            <span className="task-card__number">{index + 1}</span>
+            <div>
+              <h3>{slot.title}</h3>
+              <p>{rendererLabels[slot.rendererType] ?? slot.family}</p>
+              <small>{slot.examPoints.numerator / slot.examPoints.denominator} Punkte</small>
+            </div>
+          </article>
+        ))}
+      </div>
     </section>
   );
 }
@@ -604,13 +543,14 @@ function ExamTaskNavigation({
 }) {
   const examPackage = getExamPackageById(session.examPackageId) ?? getCoreExamPackage();
   return (
-    <nav className="step-navigator" aria-label="Prüfungsaufgaben">
+    <nav className="exam-task-nav" aria-label="Prüfungsaufgaben">
       {examPackage.taskSlots.map((slot, index) => {
         const state = session.taskStates[slot.taskSlotId];
         const statusLabel = state
           ? completionStatusLabels[state.completionStatus]
           : 'unbeantwortet';
-        const label = `${index + 1}. ${statusLabel}${session.reviewFlags[slot.taskSlotId] ? ' · Kontrolle' : ''}`;
+        const label = `Aufgabe ${index + 1}`;
+        const detail = `${statusLabel}${session.reviewFlags[slot.taskSlotId] ? ' · zur Kontrolle' : ''} · ${slot.examPoints.numerator / slot.examPoints.denominator} Punkte`;
         return onSelect ? (
           <button
             key={slot.taskSlotId}
@@ -618,18 +558,52 @@ function ExamTaskNavigation({
             aria-current={slot.taskSlotId === activeTaskSlotId ? 'step' : undefined}
             onClick={() => onSelect(slot.taskSlotId)}
           >
-            {label}
+            <strong>{label}</strong>
+            <span>{detail}</span>
           </button>
         ) : (
           <Link
             key={slot.taskSlotId}
+            aria-current={slot.taskSlotId === activeTaskSlotId ? 'step' : undefined}
             to={`/simulator/sitzung/${session.id}/aufgabe/${slot.taskSlotId}`}
           >
-            {label}
+            <strong>{label}</strong>
+            <span>{detail}</span>
           </Link>
         );
       })}
     </nav>
+  );
+}
+
+function ExamTaskPrompt({
+  task,
+}: {
+  task: ReturnType<typeof getCoreExamPackage>['taskSlots'][number];
+}) {
+  return (
+    <div className="exam-task-prompt">
+      <p className="eyebrow">{rendererLabels[task.rendererType] ?? task.family}</p>
+      <h3>{task.title}</h3>
+      <p>
+        Erzeuge die erwartete Klausurantwort für diesen Aufgabentyp: Zwischenschritte,
+        Tabellenzustände, Beweisstruktur oder Pseudocode. Nutze die Angaben aus dem passenden
+        Trainer als Arbeitsform.
+      </p>
+      <ul>
+        <li>Punkte: {task.examPoints.numerator / task.examPoints.denominator}</li>
+        <li>Renderer: {rendererLabels[task.rendererType] ?? task.rendererType}</li>
+        <li>Trainerfamilie: {task.family}</li>
+      </ul>
+      <details>
+        <summary>Quellenbezug anzeigen</summary>
+        <ul>
+          {task.sourceRefs.map((ref) => (
+            <li key={`${ref.sourceId}-${ref.page}`}>Quelle aus Manifest, Seite {ref.page}</li>
+          ))}
+        </ul>
+      </details>
+    </div>
   );
 }
 

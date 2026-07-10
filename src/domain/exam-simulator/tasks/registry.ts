@@ -108,6 +108,15 @@ function zeroScore(task: ExamTaskDefinition, errorCode = 'exam_task_unanswered')
   };
 }
 
+function isStudentTextFallback(answer: unknown): boolean {
+  return (
+    !!answer &&
+    typeof answer === 'object' &&
+    'kind' in answer &&
+    (answer as { kind?: unknown }).kind === 'student_text_answer'
+  );
+}
+
 function mapScore(score: number, maxScore: number, task: ExamTaskDefinition) {
   if (maxScore <= 0) return exact(0);
   return multiplyExact(
@@ -175,6 +184,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     (answer, task) => {
       const trainer = getTrainerById(task.trainerId);
       if (!trainer) return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object' || !('kind' in answer)) return zeroScore(task);
       const result = scoreAttempt(trainer, attemptFor(task.trainerId, answer));
       return normalizeResult(task, result);
@@ -187,6 +197,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     (answer, task) => {
       const trainer = getTrainerById(task.trainerId);
       if (!trainer) return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object' || !('kind' in answer)) return zeroScore(task);
       const result = scoreAttempt(trainer, attemptFor(task.trainerId, answer));
       return normalizeResult(task, result);
@@ -198,6 +209,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     () => ({ kind: 'proof_exam_empty' }),
     (answer, task) => {
       if (!getProofTrainerById(task.trainerId)) return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object') return zeroScore(task);
       const result = scoreStoredProofAttempt(attemptFor(task.trainerId, answer), answer as never);
       return normalizeResult(task, result);
@@ -210,6 +222,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     (answer, task) => {
       if (!getRecurrenceTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object') return zeroScore(task);
       const result = scoreStoredRecurrenceAttempt(
         attemptFor(task.trainerId, answer),
@@ -225,6 +238,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     (answer, task) => {
       if (!getDpDesignTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object') return zeroScore(task);
       const result = scoreStoredDpDesignAttempt(
         attemptFor(task.trainerId, answer),
@@ -240,6 +254,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     (answer, task) => {
       if (!getGreedyDesignTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object') return zeroScore(task);
       const result = scoreStoredGreedyDesignAttempt(
         attemptFor(task.trainerId, answer),
@@ -255,6 +270,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     (answer, task) => {
       if (!getDivideConquerDesignTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object') return zeroScore(task);
       const result = scoreStoredDivideConquerDesignAttempt(
         attemptFor(task.trainerId, answer),
@@ -270,6 +286,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     (answer, task) => {
       if (!getRbInsertionTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object') return zeroScore(task);
       const result = scoreStoredRbInsertionAttempt(
         attemptFor(task.trainerId, answer),
@@ -285,6 +302,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     (answer, task) => {
       if (!getGraphTracingTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object') return zeroScore(task);
       const result = scoreStoredGraphTracingAttempt(
         attemptFor(task.trainerId, answer),
@@ -300,6 +318,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     (answer, task) => {
       if (!getGraphTracingTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object') return zeroScore(task);
       const result = scoreStoredGraphTracingAttempt(
         attemptFor(task.trainerId, answer),
@@ -315,6 +334,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
     (answer, task) => {
       if (!getGraphTracingTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
+      if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
       if (!answer || typeof answer !== 'object') return zeroScore(task);
       const result = scoreStoredGraphTracingAttempt(
         attemptFor(task.trainerId, answer),

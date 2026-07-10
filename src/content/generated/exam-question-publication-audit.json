@@ -1,0 +1,3802 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase16-8dc6433c95c7",
+  "excludedQuestionCount": 231,
+  "excludedQuestions": [
+    {
+      "id": "q-f8820d2219f8",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 7,
+      "sourceId": "src-c490ac0e823c",
+      "page": 33,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Vertex Cover und Approximation",
+        "Hashing",
+        "Union-Find",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-be8455fdc596",
+      "title": "Aufgabe 4: Grundlagen und Pseudocode, Vertex Cover und Approximation, Hashing",
+      "taskNumber": 4,
+      "sourceId": "src-c490ac0e823c",
+      "page": 33,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Vertex Cover und Approximation",
+        "Hashing",
+        "Union-Find"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-7453b8177fca",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-c490ac0e823c",
+      "page": 33,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-0876ecfa0651",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 1,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-3f05b23f2856",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 2,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "InsertionSort",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Verspaetungsplanung",
+        "Lastverteilung",
+        "Vertex Cover und Approximation",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Union-Find",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-473460316996",
+      "title": "Aufgabe 5: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 2,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-0f1fb7c003ab",
+      "title": "Aufgabe 6: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 2,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-12b2476cb6e6",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 3,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "MergeSort",
+        "Dynamische Programmierung",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Verspaetungsplanung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-47bd0b4b5b40",
+      "title": "Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 3,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Dynamische Programmierung",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-d41ec958bce0",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 3,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-831a19531164",
+      "title": "Aufgabe 5: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ba71043708c8",
+      "title": "Aufgabe 6: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b4120ba76809",
+      "title": "Aufgabe 7: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ca1cd6edfc68",
+      "title": "Aufgabe 8: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-767543100e9d",
+      "title": "Aufgabe 9: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-831a19531164",
+      "title": "Aufgabe 5: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ba71043708c8",
+      "title": "Aufgabe 6: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b4120ba76809",
+      "title": "Aufgabe 7: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ca1cd6edfc68",
+      "title": "Aufgabe 8: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-767543100e9d",
+      "title": "Aufgabe 9: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-831a19531164",
+      "title": "Aufgabe 5: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ba71043708c8",
+      "title": "Aufgabe 6: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b4120ba76809",
+      "title": "Aufgabe 7: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ca1cd6edfc68",
+      "title": "Aufgabe 8: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-767543100e9d",
+      "title": "Aufgabe 9: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-831a19531164",
+      "title": "Aufgabe 5: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ba71043708c8",
+      "title": "Aufgabe 6: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b4120ba76809",
+      "title": "Aufgabe 7: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ca1cd6edfc68",
+      "title": "Aufgabe 8: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-767543100e9d",
+      "title": "Aufgabe 9: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Dijkstra",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6d778a1af77c",
+      "title": "Aufgabe 1: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Hashing"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-831a19531164",
+      "title": "Aufgabe 5: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ba71043708c8",
+      "title": "Aufgabe 6: Master-Theorem und Rekurrenzen, Greedy-Algorithmen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b4120ba76809",
+      "title": "Aufgabe 7: Greedy-Algorithmen",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ca1cd6edfc68",
+      "title": "Aufgabe 8: Thema aus Quelle zu verifizieren",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-767543100e9d",
+      "title": "Aufgabe 9: Thema aus Quelle zu verifizieren",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 4,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-9202d9e0051b",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 5,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume",
+        "Hashing"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-9202d9e0051b",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 5,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Rot-Schwarz-Baeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-f1305218979a",
+      "title": "Aufgabe 4: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 4,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 5,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Rot-Schwarz-Baeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-e89899d76541",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 5,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-e39da2463fc2",
+      "title": "Aufgabe 6: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 5,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-d2f034321724",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 5,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-af6755f3c9fc",
+      "title": "Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 5,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-5d1b76860057",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 5,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-4f353526d7e1",
+      "title": "Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 6,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Matrixmultiplikation und Strassen",
+        "Dynamische Programmierung",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Lastverteilung",
+        "Vertex Cover und Approximation",
+        "Hashing",
+        "Union-Find",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-98044d7abe36",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 6,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Matrixmultiplikation und Strassen",
+        "Dynamische Programmierung",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Lastverteilung",
+        "Vertex Cover und Approximation",
+        "Hashing",
+        "Union-Find",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-1c884747e7f7",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 6,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Matrixmultiplikation und Strassen",
+        "Dynamische Programmierung",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Lastverteilung",
+        "Vertex Cover und Approximation",
+        "Hashing",
+        "Union-Find",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-c028f319b2e1",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 6,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Matrixmultiplikation und Strassen",
+        "Dynamische Programmierung",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Lastverteilung",
+        "Vertex Cover und Approximation",
+        "Hashing",
+        "Union-Find",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-569af245841f",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 6,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Matrixmultiplikation und Strassen",
+        "Dynamische Programmierung",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Lastverteilung",
+        "Vertex Cover und Approximation",
+        "Hashing",
+        "Union-Find",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2f4a13065b45",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, InsertionSort",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 7,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "InsertionSort",
+        "Hashing",
+        "Graphgrundlagen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2f4a13065b45",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, InsertionSort",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 7,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "InsertionSort",
+        "Hashing",
+        "Graphgrundlagen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-feec4b097cd1",
+      "title": "Aufgabe 1: Laufzeitanalyse und Landau-Notation, MergeSort, Binaere Suche",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 8,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-95154d47a214",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Greedy-Algorithmen",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 9,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Verspaetungsplanung",
+        "Lastverteilung",
+        "Vertex Cover und Approximation"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-a841e7a469ae",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Greedy-Algorithmen, Lastverteilung",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 10,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Greedy-Algorithmen",
+        "Lastverteilung",
+        "Vertex Cover und Approximation",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-d9f14369ddf9",
+      "title": "Aufgabe 1: Laufzeitanalyse und Landau-Notation, Master-Theorem und Rekurrenzen, Rucksackproblem",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 11,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Floyd-Warshall"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2d6ce46370d2",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Floyd-Warshall",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 12,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Floyd-Warshall"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-56a4468ae566",
+      "title": "Aufgabe 1: Laufzeitanalyse und Landau-Notation, Listen, Stapel und Warteschlangen, BFS",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 13,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Listen, Stapel und Warteschlangen",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-fb375b15bb21",
+      "title": "Aufgabe 1: Laufzeitanalyse und Landau-Notation, Union-Find, Bellman-Ford",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 14,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Union-Find",
+        "Bellman-Ford",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-e8da291cd1ec",
+      "title": "Aufgabe 1: Laufzeitanalyse und Landau-Notation, Binaere Suchbaeume, Rot-Schwarz-Baeume",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 15,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Binaere Suchbaeume",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Union-Find"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-3af5a537ebe2",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 16,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Induktion und Korrektheit"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-3af5a537ebe2",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 16,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Induktion und Korrektheit"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-3af5a537ebe2",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 16,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Induktion und Korrektheit"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-8b656baafde3",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 17,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Induktion und Korrektheit"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-1e2b235640df",
+      "title": "Aufgabe 5: Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 18,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2b6c12a97db0",
+      "title": "Aufgabe 6: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 19,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2b6c12a97db0",
+      "title": "Aufgabe 6: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 19,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-7c653276c066",
+      "title": "Aufgabe 6: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 20,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Karatsuba und Ganzzahlmultiplikation",
+        "Matrixmultiplikation und Strassen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6f7feb1b1259",
+      "title": "Aufgabe 6: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 21,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6f7feb1b1259",
+      "title": "Aufgabe 6: Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 21,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2162932fb571",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 22,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Verspaetungsplanung"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2162932fb571",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 22,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Verspaetungsplanung"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-553179c5dd12",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 23,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "MergeSort",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2ff2519e886d",
+      "title": "Aufgabe 8: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 24,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Dynamische Programmierung"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2ff2519e886d",
+      "title": "Aufgabe 8: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 24,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Dynamische Programmierung"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-62dc3a6a662f",
+      "title": "Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 25,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Dynamische Programmierung",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-551ae7e03ce2",
+      "title": "Aufgabe 8: Laufzeitanalyse und Landau-Notation, Master-Theorem und Rekurrenzen, Dynamische Programmierung",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 26,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Master-Theorem und Rekurrenzen",
+        "Dynamische Programmierung"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-983c5ed89811",
+      "title": "Aufgabe 8: Laufzeitanalyse und Landau-Notation, Dynamische Programmierung",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 27,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Dynamische Programmierung"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-e6fc690e6a90",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 28,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-e6fc690e6a90",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 28,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-e6fc690e6a90",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 28,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-972cca6f63f2",
+      "title": "Aufgabe 9: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Listen, Stapel und Warteschlangen",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 29,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Listen, Stapel und Warteschlangen",
+        "Heaps und Prioritaetswarteschlangen",
+        "Rot-Schwarz-Baeume",
+        "Hashing",
+        "Union-Find",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2c456838223e",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Induktion und Korrektheit, Master-Theorem und Rekurrenzen",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 35,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Verspaetungsplanung",
+        "Hashing",
+        "Union-Find",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2c456838223e",
+      "title": "Aufgabe 5: Induktion und Korrektheit, Master-Theorem und Rekurrenzen, Rucksackproblem",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 35,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Verspaetungsplanung",
+        "Hashing",
+        "Union-Find",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-256b276eeac0",
+      "title": "Aufgabe 1: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, InsertionSort",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 37,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "InsertionSort",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Intervallplanung",
+        "Listen, Stapel und Warteschlangen",
+        "Hashing",
+        "Union-Find",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-dc08622e0672",
+      "title": "Aufgabe 5: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, InsertionSort",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 37,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "InsertionSort",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Listen, Stapel und Warteschlangen",
+        "Hashing",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-36e430b482c2",
+      "title": "Aufgabe 6: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, InsertionSort",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 37,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "InsertionSort",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Listen, Stapel und Warteschlangen",
+        "Hashing",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b930505fb970",
+      "title": "Aufgabe 7: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, InsertionSort",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 37,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "InsertionSort",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Listen, Stapel und Warteschlangen",
+        "Hashing",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-c41e7fd390c5",
+      "title": "Aufgabe 8: Laufzeitanalyse und Landau-Notation, InsertionSort, MergeSort",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 37,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "InsertionSort",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "LCS",
+        "Listen, Stapel und Warteschlangen",
+        "Hashing",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-d52a34e4d49c",
+      "title": "Aufgabe 9: Laufzeitanalyse und Landau-Notation, InsertionSort, MergeSort",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 37,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Laufzeitanalyse und Landau-Notation",
+        "InsertionSort",
+        "MergeSort",
+        "Binaere Suche",
+        "Rucksackproblem",
+        "LCS",
+        "Listen, Stapel und Warteschlangen",
+        "Hashing",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-3b37eda8c58a",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 60,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-919ce974ce24",
+      "title": "Aufgabe 6: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 61,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-487b82f7b10a",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 62,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-c56ffce980b5",
+      "title": "Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 63,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-5da5fd56698a",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 64,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Bellman-Ford"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-4cbc07831b69",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 65,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Listen, Stapel und Warteschlangen",
+        "Dijkstra"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-c27e9954b9ab",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 66,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Floyd-Warshall"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-01d3a1b4bcdf",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 67,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-188d55849891",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 68,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-abb377fb8eab",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 69,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Hashing"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b4aadfc8f3ad",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 70,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-ffc09ee25809",
+      "title": "Aufgabe 6: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 71,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-6604f997642b",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 72,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-57624f8534db",
+      "title": "Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 73,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-adedd7586bb2",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 74,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Bellman-Ford"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-e32f4a8e0589",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 75,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Listen, Stapel und Warteschlangen",
+        "Dijkstra"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b78197667127",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 76,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Floyd-Warshall"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-2adfb569a17e",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 77,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-92a5c3d52848",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 78,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-627144498c04",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 79,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Hashing"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b55dd49e9858",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 80,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-52e6d16bb8c5",
+      "title": "Aufgabe 6: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 81,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-0928c10d25ea",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 82,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-d52ad24316cf",
+      "title": "Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 83,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-8122eb8f3600",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 84,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Bellman-Ford"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-0bad55479d6b",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 85,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Listen, Stapel und Warteschlangen",
+        "Dijkstra"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-835b933effb5",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 86,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Floyd-Warshall"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-0b3f4b3de0d0",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 87,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-4efe24029ad4",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 88,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-f8aeb22caa6e",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 89,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Hashing"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-fd694ba61043",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 90,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-7f19294c4fbc",
+      "title": "Aufgabe 6: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 91,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-85fe6051c5b0",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 92,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-7a1496abb048",
+      "title": "Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 93,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b10615e80fe9",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 94,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Bellman-Ford"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b8257b8dec90",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 95,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Listen, Stapel und Warteschlangen",
+        "Dijkstra"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-dd701d1fc917",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 96,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Floyd-Warshall"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-551652d9ab4a",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 97,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-146c6bdf1a06",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 98,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Rot-Schwarz-Baeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-615c97600e17",
+      "title": "Aufgabe 1: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 1,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 99,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Hashing"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-82af44b43413",
+      "title": "Aufgabe 5: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 5,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 100,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b620b2c027e5",
+      "title": "Aufgabe 6: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 6,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 101,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-159847130176",
+      "title": "Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 7,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 102,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-83185f4b8a73",
+      "title": "Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 8,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 103,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Greedy-Algorithmen"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-b2d2a5a87637",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-88d1cdb2c8d7",
+      "page": 104,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Greedy-Algorithmen",
+        "Bellman-Ford"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-c62724c0fc32",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-35405e721f05",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-c2391c1b18d8",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-97414623dd81",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-879f1d395e4d",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-ff6602b770ca",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-18d1b1c95451",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-1f4f87d34014",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-32867772a3cd",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-8a588d5ddc35",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-35fec5c08e67",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-0e61160d8c0d",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-426f5c618c6e",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-0457af7a63f0",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-34e4c77f6292",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-28fe81380661",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-962792361523",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-39eb3d94f40a",
+      "page": 3,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-7866a78ca82c",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-39eb3d94f40a",
+      "page": 4,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-609e9e4961bb",
+      "title": "Aufgabe 4: Divide and Conquer: nächster Wert",
+      "taskNumber": 4,
+      "sourceId": "src-7a4064a0710d",
+      "page": 4,
+      "verificationStatus": "official_solution_available",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-421d3b02e3a0",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-2ac1fff065f5",
+      "page": 4,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-1ab0bf565e18",
+      "title": "Aufgabe 2: Hashtabelle mit offener Adressierung und linearem Sondieren",
+      "taskNumber": 2,
+      "sourceId": "src-c7ef1f699742",
+      "page": 3,
+      "verificationStatus": "unofficial_solution_only",
+      "evidenceType": "unofficial_solution",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-ab60e959c40a",
+      "title": "Aufgabe 3: Datenstruktur für Multimengen mit direkter Adressierung",
+      "taskNumber": 3,
+      "sourceId": "src-c7ef1f699742",
+      "page": 4,
+      "verificationStatus": "unofficial_solution_only",
+      "evidenceType": "unofficial_solution",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-825737172aee",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-720584558efd",
+      "page": 3,
+      "verificationStatus": "official_verified",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-66e94cc862fa",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-720584558efd",
+      "page": 4,
+      "verificationStatus": "official_verified",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-ac212f771b66",
+      "title": "Aufgabe 1: Stirlingzahlen mit dynamischer Programmierung",
+      "taskNumber": 1,
+      "sourceId": "src-d2005423b398",
+      "page": 1,
+      "verificationStatus": "unofficial_solution_only",
+      "evidenceType": "unofficial_solution",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-9742ec9507b8",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 2,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-a67e7a2229c8",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 10,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-a67e7a2229c8",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 10,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-ce094fca92a5",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 11,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-d74a4ed35653",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 12,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-39679dd7ae0a",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 13,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-e54d3872034b",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 14,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-4b87b6d6a9d0",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 15,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-6d57fb2136c3",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 22,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-41f4a9f0628f",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 23,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-b587498f3c48",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 24,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-0e1efd2b40ee",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 25,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-7157ecd3fea0",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 26,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-9421468525d0",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 27,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-d657c01066e6",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 28,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-aca11833287a",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 29,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-3bda208d6b4f",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 30,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-91a6735b318b",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 31,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-28330fb9ab8a",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 32,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-bce008288029",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 33,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-225de6c51fb3",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 34,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-bc7b75d9336f",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 35,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-6563c7737f87",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 36,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-4e45fb38e232",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-6ee0d3f4fa76",
+      "page": 37,
+      "verificationStatus": "extraction_uncertain",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-651993ef8d05",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-999c60c6d368",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "exercise",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-778107a70766",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-c4dde22523d3",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-49fd7a5970cb",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-00ae505a8756",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-a9d059eee74c",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-fa63eaca933b",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-ae7c49724101",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-5bb7aaf4268b",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-99be7ed653ef",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-3f29b67eef5c",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-52fec7986417",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-2461e8a663fe",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-b31aaf85c2b9",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-34f58aed1d9c",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-5ed6f1fa6e91",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-011d1ee23245",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "real_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-f1771ac63f72",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-b6c99693279c",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-809bdfc22781",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-9a15c067adc0",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-9e2c81142283",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-cfa0492edc16",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-77ff5f656b4d",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-fd725d118ee1",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-232701f44b63",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-28ccd3fc19df",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-257b668b49ad",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-20a1f0837025",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-ea19fdde0ffe",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-4b6a35e42cd8",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-99fb3b5be2b1",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-7a161b7ad101",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-18497c721096",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-7cf15c279b98",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-1832880dcf77",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-99ddb2d62983",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-46ef01f080d6",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-147d1c7eab5a",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-8337dca9f2b3",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-9835660fab6e",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-002f5f152dd4",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-f5806923681e",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-f6891266e69d",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-3949f4396338",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-b7144f1dfcc1",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-22375a7589e7",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-44de0ef1a879",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-1ed79aeda531",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-ec5aec543b42",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-6ab836d3b726",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-2fa2f8b48243",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-035b9efe8241",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-fc4482a8bd13",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-0d4b0731e1a5",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-0e80e2398f11",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-fb334669ebf8",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-c7b98822a306",
+      "title": "Bildbasierter Klausur-/Lösungsinhalt",
+      "taskNumber": null,
+      "sourceId": "src-748370c47b9a",
+      "page": 1,
+      "verificationStatus": "visual_review_required",
+      "evidenceType": "unknown",
+      "topicTags": [],
+      "violation": "Themen-Tags fehlen."
+    },
+    {
+      "id": "q-7d7aa2066664",
+      "title": "Aufgabe 1: Thema aus Quelle zu verifizieren",
+      "taskNumber": 1,
+      "sourceId": "src-8f16b2505bbd",
+      "page": 1,
+      "verificationStatus": "official_verified",
+      "evidenceType": "mock_exam",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-253cbe6359fa",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-25d6340b518c",
+      "page": 47,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-473792a87081",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-25d6340b518c",
+      "page": 53,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-ce013e98758e",
+      "title": "Aufgabe 2: Thema aus Quelle zu verifizieren",
+      "taskNumber": 2,
+      "sourceId": "src-25d6340b518c",
+      "page": 60,
+      "verificationStatus": "official_verified",
+      "evidenceType": "official_solution",
+      "topicTags": [],
+      "violation": "generischer Platzhaltertitel ist nicht publikationsfähig."
+    },
+    {
+      "id": "q-5b1f5c9eaf24",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-1cf99d50623a",
+      "page": 10,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "InsertionSort",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Listen, Stapel und Warteschlangen",
+        "Heaps und Prioritaetswarteschlangen",
+        "Hashing",
+        "Union-Find",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-5b1f5c9eaf24",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-1cf99d50623a",
+      "page": 10,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "InsertionSort",
+        "MergeSort",
+        "Binaere Suche",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "Listen, Stapel und Warteschlangen",
+        "Heaps und Prioritaetswarteschlangen",
+        "Hashing",
+        "Union-Find",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Dijkstra",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    },
+    {
+      "id": "q-5b1f5c9eaf24",
+      "title": "Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit",
+      "taskNumber": 9,
+      "sourceId": "src-1cf99d50623a",
+      "page": 10,
+      "verificationStatus": "generated_unverified",
+      "evidenceType": "generated_example",
+      "topicTags": [
+        "Grundlagen und Pseudocode",
+        "Laufzeitanalyse und Landau-Notation",
+        "Induktion und Korrektheit",
+        "Master-Theorem und Rekurrenzen",
+        "Rucksackproblem",
+        "Subset Sum und Partition",
+        "LCS",
+        "Greedy-Algorithmen",
+        "BFS",
+        "DFS und topologische Sortierung",
+        "Bellman-Ford",
+        "Floyd-Warshall",
+        "Minimale Spannbaeume"
+      ],
+      "violation": "generated_unverified darf nicht in normalen Klausuransichten erscheinen."
+    }
+  ]
+}

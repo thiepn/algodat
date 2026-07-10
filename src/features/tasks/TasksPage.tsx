@@ -1,10 +1,17 @@
 import { Link, useParams } from 'react-router-dom';
 import { coreContent as content } from '../../content/loaders/core';
 import { examLibrary } from '../../content/loaders/exam-library';
-import { getTaskLearningEntry, studyModules } from '../../content/loaders/study-content';
+import { getTaskLearningEntry } from '../../content/loaders/study-content';
+import { topics } from '../../content/loaders/topics';
+import { getRichModulesForTask } from '../learning/study-module-details';
 import { NextLearningActions } from '../study-content/NextLearningActions';
 import { trainerPath } from '../study-content/resource-links';
 import { trainerRegistry } from '../trainer/trainer-service';
+import { getTaskGuide } from './task-guides';
+
+function topicName(topicId: string) {
+  return topics.find((topic) => topic.id === topicId)?.name ?? 'zugeordnetes Thema';
+}
 
 export function TasksPage() {
   const profile =
@@ -15,31 +22,35 @@ export function TasksPage() {
   return (
     <div className="page-flow">
       <header className="page-header">
-        <p className="eyebrow">Standard-Präsenzprofil</p>
+        <p className="eyebrow">Aktuelle Prüfungsstruktur</p>
         <h1>Aufgaben 1–9</h1>
         <p>
-          Jede Aufgabe ist jetzt ein Lernhub: Profil, Themen, Trainer, Diagnose und historische
-          Metadaten bleiben getrennt und quellengebunden.
+          Jede Aufgabe ist ein vollständiger Prüfungsguide mit Workflow, Beispiel, Checkliste,
+          Lernmodulen, Trainern und sicheren alten Fragenmetadaten.
         </p>
       </header>
       <div className="task-grid">
-        {profile?.tasks.map((task) => (
-          <Link className="task-card" key={task.taskNumber} to={`/aufgaben/${task.taskNumber}`}>
-            <span className="task-card__number">{task.taskNumber}</span>
-            <div>
-              <h2>{task.format}</h2>
-              <p>{task.answerComponents}</p>
-              <p className="quiet">
-                {getTaskLearningEntry(task.taskNumber)?.actionableLearningResourceIds.length ?? 0}{' '}
-                aktive Lernressourcen ·{' '}
-                {supportedTasks.has(task.taskNumber) ? 'Standardprofil' : 'historische Ausnahme'}
-              </p>
-              <small>
-                {task.typicalPoints} Punkte · {task.confidence}
-              </small>
-            </div>
-          </Link>
-        ))}
+        {profile?.tasks.map((task) => {
+          const guide = getTaskGuide(task.taskNumber);
+          return (
+            <Link className="task-card" key={task.taskNumber} to={`/aufgaben/${task.taskNumber}`}>
+              <span className="task-card__number">{task.taskNumber}</span>
+              <div>
+                <h2>{task.format}</h2>
+                <p>{guide.tests}</p>
+                <p className="quiet">
+                  {getRichModulesForTask(task.taskNumber).length} Lernmodule ·{' '}
+                  {supportedTasks.has(task.taskNumber)
+                    ? 'aktuelles Modell'
+                    : 'historische Ausnahme'}
+                </p>
+                <small>
+                  {task.typicalPoints} Punkte · {task.confidence}
+                </small>
+              </div>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );
@@ -58,31 +69,29 @@ export function TaskDetailPage() {
       </section>
     );
 
+  const guide = getTaskGuide(task.taskNumber);
   const learningEntry = getTaskLearningEntry(task.taskNumber);
-  const modules = studyModules.modules.filter((module) =>
-    learningEntry?.studyModuleIds.includes(module.moduleId),
-  );
+  const modules = getRichModulesForTask(task.taskNumber);
   const trainers = trainerRegistry.filter((trainer) =>
     learningEntry?.trainerIds.includes(trainer.trainerId),
   );
   const questions = examLibrary.questions.filter(
     (question) => question.taskNumber === task.taskNumber,
   );
-  const realQuestionCount = questions.filter(
-    (question) => question.historicalFrequencyEligible,
-  ).length;
-  const mockOrGeneratedCount = questions.length - realQuestionCount;
-  const actions =
-    learningEntry?.recommendedOrder.map((resourceId) => ({
-      resourceId,
-      reason: resourceId.startsWith('trainer:')
-        ? 'Direktes aktives Üben mit deterministischem Feedback.'
-        : resourceId.startsWith('module:')
-          ? 'Kurze quellengebundene Vorbereitung vor der Eingabe.'
-          : resourceId.startsWith('klausuren:')
-            ? 'Historische Varianten als Metadaten vergleichen.'
-            : 'Lücken vor der nächsten Übung diagnostizieren.',
-    })) ?? [];
+  const actions = [
+    ...modules.slice(0, 3).map((module) => ({
+      resourceId: `module:${module.moduleId}`,
+      reason: `Modul „${module.title}“ zuerst wiederholen.`,
+    })),
+    ...trainers.slice(0, 2).map((trainer) => ({
+      resourceId: `trainer:${trainer.trainerId}`,
+      reason: 'Danach aktiv mit Eingabe üben.',
+    })),
+    {
+      resourceId: `klausuren:fragen?aufgabe=${task.taskNumber}`,
+      reason: 'Sichere alte Fragenmetadaten ansehen.',
+    },
+  ];
 
   return (
     <div className="page-flow">
@@ -94,48 +103,107 @@ export function TaskDetailPage() {
           Aufgabe {task.taskNumber} · typischerweise {task.typicalPoints} Punkte
         </p>
         <h1>{task.format}</h1>
-        <p>{task.answerComponents}</p>
+        <p>{guide.tests}</p>
       </header>
 
       <NextLearningActions actions={actions} />
 
       <div className="two-column">
         <section className="panel">
-          <h2>Was du hier können musst</h2>
+          <h2>Was diese Aufgabe prüft</h2>
+          <p>{guide.tests}</p>
+          <h3>Typische Struktur</h3>
           <ul>
-            {(learningEntry?.topicIds.length ? learningEntry.topicIds : task.historicalTopics).map(
-              (topic) => (
-                <li key={topic}>{topic}</li>
-              ),
-            )}
+            {guide.typicalStructure.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <h3>Erwartete Antwortbestandteile</h3>
+          <ul>
+            {guide.expectedAnswerComponents.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="panel">
+          <h2>Lösungsworkflow</h2>
+          <ol>
+            {guide.solvingWorkflow.map((step) => (
+              <li key={step}>{step}</li>
+            ))}
+          </ol>
+          <p>
+            <strong>Zeitmanagement:</strong> {guide.timeManagement}
+          </p>
+          <p>
+            <strong>Bewertung:</strong> {guide.markingLogic}
+          </p>
+        </section>
+      </div>
+
+      <section className="panel">
+        <h2>Konkretes Beispiel</h2>
+        <article className="card">
+          <h3>{guide.workedExample.title}</h3>
+          <ol>
+            {guide.workedExample.steps.map((step) => (
+              <li key={step}>{step}</li>
+            ))}
+          </ol>
+          <h4>Modellantwort-Struktur</h4>
+          <ul>
+            {guide.workedExample.modelAnswer.map((line) => (
+              <li key={line}>{line}</li>
+            ))}
+          </ul>
+        </article>
+      </section>
+
+      <div className="two-column">
+        <section className="panel">
+          <h2>Häufige Fehler</h2>
+          <ul>
+            {guide.commonMistakes.map((mistake) => (
+              <li key={mistake}>{mistake}</li>
+            ))}
           </ul>
         </section>
         <section className="panel">
-          <h2>Historische Einordnung</h2>
-          <dl className="metadata-list">
-            <div>
-              <dt>Priorität</dt>
-              <dd>{task.priority}</dd>
-            </div>
-            <div>
-              <dt>Sicherheit</dt>
-              <dd>{task.confidence}</dd>
-            </div>
-            <div>
-              <dt>Reale Ereignisse</dt>
-              <dd>{realQuestionCount}</dd>
-            </div>
-            <div>
-              <dt>Probe/Übung/generiert</dt>
-              <dd>{mockOrGeneratedCount}</dd>
-            </div>
-            <div>
-              <dt>Abdeckung</dt>
-              <dd>{learningEntry?.coverageLevel ?? 'nicht kartiert'}</dd>
-            </div>
-          </dl>
+          <h2>Checkliste vor Abgabe</h2>
+          <ul>
+            {guide.submissionChecklist.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </section>
       </div>
+
+      <section className="panel">
+        <h2>Lesbare Themen</h2>
+        <div className="evidence-chips">
+          {(learningEntry?.topicIds.length ? learningEntry.topicIds : task.historicalTopics).map(
+            (topic) => (
+              <span key={topic}>{topic.startsWith('topic-') ? topicName(topic) : topic}</span>
+            ),
+          )}
+        </div>
+      </section>
+
+      <section className="panel">
+        <h2>Lernmodule</h2>
+        <div className="card-grid">
+          {modules.map((module) => (
+            <article className="card" key={module.moduleId}>
+              <h3>{module.title}</h3>
+              <p>{module.shortDescription}</p>
+              <Link className="button-link" to={`/lernen/${module.slug}`}>
+                Modul öffnen
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <section className="panel">
         <h2>Passende produktive Trainer</h2>
@@ -153,39 +221,19 @@ export function TaskDetailPage() {
             ))}
           </div>
         ) : (
-          <p className="quiet">Für diese Aufgabe ist nur Diagnose/Review produktiv freigegeben.</p>
+          <p>Für diese Aufgabe ist aktuell Diagnose und Review produktiv freigegeben.</p>
         )}
       </section>
 
       <section className="panel">
-        <h2>Lernmodule</h2>
-        <div className="card-grid">
-          {modules.map((module) => (
-            <article className="card" key={module.moduleId}>
-              <h3>{module.title}</h3>
-              <p>{module.summary}</p>
-              <ul>
-                {module.learningObjectives.slice(0, 3).map((objective) => (
-                  <li key={objective}>{objective}</li>
-                ))}
-              </ul>
-              <p className="quiet">
-                Quellen:{' '}
-                {module.sourceRefs.map((ref) => `${ref.sourceId} S. ${ref.page}`).join(', ')}
-              </p>
-            </article>
+        <h2>Übungsset</h2>
+        <ul>
+          {guide.practiceSet.map((item) => (
+            <li key={item}>{item}</li>
           ))}
-        </div>
-      </section>
-
-      <section className="panel">
-        <h2>Alte Klausurfragen</h2>
-        <p>
-          Es werden nur Metadaten und paraphrasierte Titel angezeigt; Original-PDFs und vollständige
-          Aufgabentexte bleiben privat.
-        </p>
+        </ul>
         <Link className="button-link" to={`/klausuren/fragen?aufgabe=${task.taskNumber}`}>
-          Fragen zu Aufgabe {task.taskNumber} öffnen
+          {questions.length} sichere Fragenmetadaten zu Aufgabe {task.taskNumber} öffnen
         </Link>
       </section>
     </div>

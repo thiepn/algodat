@@ -1,8 +1,7 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { AppLayout } from './layouts/AppLayout';
 import { DashboardPage } from '../features/dashboard/DashboardPage';
 import { DiagnosticsPage } from '../features/diagnostics/DiagnosticsPage';
-import { ExamProfilesPage } from '../features/exam-profiles/ExamProfilesPage';
 import { PlannedState } from '../ui/feedback/PlannedState';
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/u, '');
@@ -14,7 +13,26 @@ export const router = createBrowserRouter(
       element: <AppLayout />,
       children: [
         { index: true, element: <DashboardPage /> },
-        { path: 'klausurprofile', element: <ExamProfilesPage /> },
+        { path: 'klausurprofile', element: <Navigate to="/pruefungsstruktur" replace /> },
+        {
+          path: 'pruefungsstruktur',
+          lazy: async () => ({
+            Component: (await import('../features/exam-structure/ExamStructurePage'))
+              .ExamStructurePage,
+          }),
+        },
+        {
+          path: 'lernen',
+          lazy: async () => ({
+            Component: (await import('../features/learning/LearningPages')).LearningIndexPage,
+          }),
+        },
+        {
+          path: 'lernen/:moduleSlug',
+          lazy: async () => ({
+            Component: (await import('../features/learning/LearningPages')).LearningModulePage,
+          }),
+        },
         {
           path: 'klausuren',
           lazy: async () => ({
@@ -77,6 +95,24 @@ export const router = createBrowserRouter(
           path: 'quellen',
           lazy: async () => ({
             Component: (await import('../features/sources/SourcesPage')).SourcesPage,
+          }),
+        },
+        {
+          path: 'dokumente',
+          lazy: async () => ({
+            Component: (await import('../features/documents/DocumentPages')).DocumentIndexPage,
+          }),
+        },
+        {
+          path: 'dokumente/verbinden',
+          lazy: async () => ({
+            Component: (await import('../features/documents/DocumentPages')).DocumentConnectPage,
+          }),
+        },
+        {
+          path: 'dokumente/:documentId',
+          lazy: async () => ({
+            Component: (await import('../features/documents/DocumentPages')).DocumentDetailPage,
           }),
         },
         { path: 'diagnostik', element: <DiagnosticsPage /> },
@@ -459,15 +495,11 @@ export const router = createBrowserRouter(
         },
         {
           path: 'simulator/profile',
-          lazy: async () => ({
-            Component: (await import('../features/simulator/SimulatorPages')).ExamProfileBrowser,
-          }),
+          element: <Navigate to="/pruefungsstruktur" replace />,
         },
         {
           path: 'simulator/profile/:profileId',
-          lazy: async () => ({
-            Component: (await import('../features/simulator/SimulatorPages')).ExamProfileDetail,
-          }),
+          element: <Navigate to="/pruefungsstruktur" replace />,
         },
         {
           path: 'simulator/pruefungen',
