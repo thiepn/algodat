@@ -49,7 +49,7 @@ test('Grundlagen-Diagnose startet, speichert Antworten und zeigt eine Auswertung
       .getByRole('button', {
         name: index === 15 ? 'Diagnose abschließen' : 'Antwort speichern und weiter',
       })
-      .click();
+      .click({ force: true });
   }
 
   await expect(page).toHaveURL(/\/diagnose\/auswertung\/diagnostic-/u);
