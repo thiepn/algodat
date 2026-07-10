@@ -17,6 +17,6 @@
   "duplicateSafeExamFrequency": true,
   "phase0ValidationPassed": true,
   "phase0aValidationPassed": true,
-  "indexedDbSchemaVersion": 11,
+  "indexedDbSchemaVersion": 12,
   "pwaVersion": "phase16-8dc6433c95c7"
 }

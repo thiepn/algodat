@@ -2,7 +2,10 @@
 
 ## Phase 18
 
-- Die App bleibt `1.0.0-rc.4`; der reale Screenreader-Gate ist weiterhin offen.
+- Die App bleibt `1.0.0-rc.5`; der reale Screenreader-Gate ist weiterhin offen.
+- Exakte Crop-Rechtecke werden für viele alte Dokumente zunächst als sichere Vollseitenregionen
+  oder lokal nutzerindexierte Regionen geführt. Präzisere Ausschnitte müssen lokal geprüft und
+  nur als normalisierte Metadaten übernommen werden.
 - Bellman-Ford und Kruskal werden erst als vollständige Module freigegeben, wenn die Quellenlage im Produktmodell belastbar bestätigt ist.
 - Der Simulator nutzt keine JSON-Eingabe mehr, aber die vollständige direkte Einbettung aller spezialisierten Trainer-Renderer in Exam-Mode bleibt Folgearbeit.
 - Ergebnisberichte enthalten Lernhinweise und Rubrikpunkte; vollständig ausgearbeitete Modellantworten sind noch nicht für jeden Adapter gleich tief.

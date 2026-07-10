@@ -1,15 +1,26 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Suspense, lazy, useEffect, useMemo, useState } from 'react';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { sources } from '../../content/loaders/sources';
-import type { LocalDocumentBinding } from '../../persistence/database/schema';
+import type { LocalDocumentBinding, SourceTaskRegion } from '../../persistence/database/schema';
 import {
   connectLocalPdf,
   exportDocumentMappings,
+  exportTaskRegionMetadata,
   getLocalDocument,
   listLocalDocuments,
+  listLocalTaskRegions,
+  matchLocalPdf,
   removeLocalDocument,
+  removeLocalTaskRegion,
+  saveLocalTaskRegion,
   storageUsage,
+  type DocumentMatchCandidate,
 } from './local-document-service';
+import { sourceTaskRegions, sourceTitle, topicNames } from './source-task-index';
+
+const LocalPdfRenderer = lazy(() =>
+  import('./local-pdf-renderer').then((module) => ({ default: module.LocalPdfRenderer })),
+);
 
 function formatBytes(bytes: number) {
   if (bytes < 1024) return `${bytes} B`;
@@ -21,10 +32,16 @@ function sourceForBinding(binding: LocalDocumentBinding) {
   return sources.find((source) => source.id === binding.sourceId);
 }
 
+function connectedSourceIds(bindings: LocalDocumentBinding[]) {
+  return new Set(bindings.map((binding) => binding.sourceId));
+}
+
 export function DocumentIndexPage() {
   const [bindings, setBindings] = useState<LocalDocumentBinding[]>([]);
+  const [regions, setRegions] = useState<SourceTaskRegion[]>([]);
   useEffect(() => void listLocalDocuments().then(setBindings), []);
-  const connectedSourceIds = new Set(bindings.map((binding) => binding.sourceId));
+  useEffect(() => void listLocalTaskRegions().then(setRegions), []);
+  const connected = connectedSourceIds(bindings);
   return (
     <div className="page-flow">
       <header className="page-header">
@@ -46,8 +63,8 @@ export function DocumentIndexPage() {
           <span>lokal belegter Speicher</span>
         </article>
         <article>
-          <strong>{sources.length}</strong>
-          <span>Quellenkarten im Manifest</span>
+          <strong>{sourceTaskRegions.length + regions.length}</strong>
+          <span>statische und lokale Regionen</span>
         </article>
       </section>
 
@@ -55,22 +72,19 @@ export function DocumentIndexPage() {
         <Link className="button-link" to="/dokumente/verbinden">
           Lokale PDFs verbinden
         </Link>
-        <button
-          type="button"
-          onClick={() => {
-            const payload = JSON.stringify(exportDocumentMappings(bindings), null, 2);
-            void navigator.clipboard?.writeText(payload);
-          }}
-        >
-          Mapping ohne PDF-Bytes kopieren
-        </button>
+        <Link className="button-link" to="/dokumente/indexierung">
+          Aufgabenregion indexieren
+        </Link>
+        <Link className="button-link" to="/dokumente/zuordnungen">
+          Zuordnungen exportieren
+        </Link>
       </div>
 
       <section className="panel">
         <h2>Verbundene Dokumente</h2>
         {bindings.length === 0 ? (
           <p>
-            Noch keine lokale PDF verbunden. Wähle eine Datei aus deinem privaten `pdfs`-Ordner aus.
+            Noch keine lokale PDF verbunden. Wähle eine Datei aus deinem privaten pdfs-Ordner aus.
           </p>
         ) : (
           <div className="source-list">
@@ -80,9 +94,10 @@ export function DocumentIndexPage() {
                 <article className="source-row source-row--article" key={binding.id}>
                   <div>
                     <p className="eyebrow">{source?.category ?? 'Quelle'}</p>
-                    <h2>{source?.title ?? binding.displayName}</h2>
+                    <h2>{source?.title ? sourceTitle(source.id) : binding.actualFilename}</h2>
                     <p>
-                      {binding.fileName} · {formatBytes(binding.sizeBytes)} · verbunden am{' '}
+                      {binding.actualFilename} · {formatBytes(binding.byteSize)} ·{' '}
+                      {binding.matchingState} · verbunden am{' '}
                       {new Date(binding.connectedAt).toLocaleString('de-DE')}
                     </p>
                   </div>
@@ -99,16 +114,16 @@ export function DocumentIndexPage() {
       <section className="panel">
         <h2>Quellen mit Verbindungsstatus</h2>
         <div className="source-list">
-          {sources.slice(0, 80).map((source) => (
+          {sources.slice(0, 100).map((source) => (
             <article className="source-row source-row--article" key={source.id}>
               <div>
-                <h3>{source.title}</h3>
+                <h3>{sourceTitle(source.id)}</h3>
                 <p>
                   {source.category} · {source.year ?? 'Jahr unbekannt'} ·{' '}
-                  {connectedSourceIds.has(source.id) ? 'PDF verbunden' : 'Datei nicht verbunden'}
+                  {connected.has(source.id) ? 'PDF verbunden' : 'Datei nicht verbunden'}
                 </p>
               </div>
-              {connectedSourceIds.has(source.id) ? (
+              {connected.has(source.id) ? (
                 <Link className="button-link" to={`/dokumente/local-document-${source.id}`}>
                   PDF öffnen
                 </Link>
@@ -125,30 +140,61 @@ export function DocumentIndexPage() {
   );
 }
 
+interface PendingFile {
+  id: string;
+  file: File;
+  match: DocumentMatchCandidate;
+  selectedSourceId: string;
+}
+
 export function DocumentConnectPage() {
+  const [searchParams] = useSearchParams();
+  const initialSource = searchParams.get('source') ?? sources[0]?.id ?? '';
   const [bindings, setBindings] = useState<LocalDocumentBinding[]>([]);
   const [message, setMessage] = useState('');
-  const [selectedSourceId, setSelectedSourceId] = useState(sources[0]?.id ?? '');
+  const [pending, setPending] = useState<PendingFile[]>([]);
+  const [selectedSourceId, setSelectedSourceId] = useState(initialSource);
   useEffect(() => void listLocalDocuments().then(setBindings), []);
-  const source = sources.find((candidate) => candidate.id === selectedSourceId);
-  const connect = async (files: FileList | null) => {
-    if (!files || files.length === 0 || !selectedSourceId) return;
-    const connected: LocalDocumentBinding[] = [];
+
+  const inspectFiles = async (files: FileList | null) => {
+    if (!files || files.length === 0) return;
+    const nextPending: PendingFile[] = [];
+    let autoConnected = 0;
     for (const file of Array.from(files)) {
-      const guessedSource =
-        sources.find(
-          (candidate) =>
-            candidate.displayName.toLocaleLowerCase('de') === file.name.toLocaleLowerCase('de') ||
-            candidate.title.toLocaleLowerCase('de') === file.name.toLocaleLowerCase('de'),
-        ) ?? source;
-      if (!guessedSource) continue;
-      connected.push(await connectLocalPdf(guessedSource.id, file));
+      const match = await matchLocalPdf(file);
+      const sourceId = match.sourceId ?? selectedSourceId;
+      if (
+        sourceId &&
+        (match.state === 'exact_hash_match' || match.state === 'filename_match') &&
+        match.sourceId
+      ) {
+        await connectLocalPdf(sourceId, file, match.state);
+        autoConnected += 1;
+      } else {
+        nextPending.push({
+          id: `${file.name}-${file.size}-${file.lastModified}`,
+          file,
+          match,
+          selectedSourceId: sourceId,
+        });
+      }
     }
+    setPending(nextPending);
     setBindings(await listLocalDocuments());
     setMessage(
-      `${connected.length} lokale PDF-Datei(en) verbunden. Keine Datei wurde hochgeladen.`,
+      autoConnected
+        ? `${autoConnected} PDF-Datei(en) sicher automatisch verbunden. Unsichere Treffer warten auf Bestätigung.`
+        : 'Keine Datei wurde hochgeladen. Bitte unsichere oder manuelle Zuordnungen bestätigen.',
     );
   };
+
+  const confirmPending = async (item: PendingFile) => {
+    await connectLocalPdf(item.selectedSourceId, item.file, item.match.state || 'manual_match');
+    setPending((items) => items.filter((candidate) => candidate.id !== item.id));
+    setBindings(await listLocalDocuments());
+    setMessage('Lokale PDF-Bindung bestätigt. Die Datei bleibt ausschließlich im Browser.');
+  };
+
   return (
     <div className="page-flow">
       <Link className="back-link" to="/dokumente">
@@ -158,21 +204,21 @@ export function DocumentConnectPage() {
         <p className="eyebrow">Nur lokal</p>
         <h1>Lokale PDFs verbinden</h1>
         <p>
-          Wähle eine oder mehrere PDF-Dateien aus. Wenn der Dateiname zu einer Manifestquelle passt,
-          wird diese automatisch verbunden; sonst nutzt die App die ausgewählte Quelle.
+          Wähle eine oder mehrere PDF-Dateien aus. Exakte Hash- oder Dateinamen-Treffer werden
+          automatisch verbunden; wahrscheinliche und manuelle Treffer brauchen deine Bestätigung.
         </p>
       </header>
       <section className="panel">
         <h2>Dateien auswählen</h2>
         <label>
-          Quelle für nicht automatisch erkannte Dateien
+          Quelle für manuelle Zuordnung
           <select
             value={selectedSourceId}
             onChange={(event) => setSelectedSourceId(event.target.value)}
           >
             {sources.map((candidate) => (
               <option key={candidate.id} value={candidate.id}>
-                {candidate.title}
+                {sourceTitle(candidate.id)}
               </option>
             ))}
           </select>
@@ -183,21 +229,63 @@ export function DocumentConnectPage() {
             type="file"
             accept="application/pdf,.pdf"
             multiple
-            onChange={(event) => void connect(event.target.files)}
+            onChange={(event) => void inspectFiles(event.target.files)}
           />
         </label>
         <p className="notice">
-          Browser mit Verzeichnis-Auswahl können den lokalen `pdfs`-Ordner im Dateidialog markieren.
-          Die Anwendung erhält nur die von dir ausgewählten Dateien.
+          Die Anwendung erhält nur die von dir ausgewählten Dateien. Keine PDF-Bytes, Screenshots
+          oder extrahierten Volltexte verlassen dein Gerät.
         </p>
         <p aria-live="polite">{message}</p>
       </section>
+
+      {pending.length > 0 && (
+        <section className="panel">
+          <h2>Bestätigung erforderlich</h2>
+          {pending.map((item) => (
+            <article className="source-row source-row--article" key={item.id}>
+              <div>
+                <h3>{item.file.name}</h3>
+                <p>
+                  Matching: {item.match.state} · Vertrauen: {item.match.confidence} ·{' '}
+                  {item.match.reason}
+                </p>
+                <label>
+                  Zu bindende Quelle
+                  <select
+                    value={item.selectedSourceId}
+                    onChange={(event) =>
+                      setPending((items) =>
+                        items.map((candidate) =>
+                          candidate.id === item.id
+                            ? { ...candidate, selectedSourceId: event.target.value }
+                            : candidate,
+                        ),
+                      )
+                    }
+                  >
+                    {sources.map((source) => (
+                      <option key={source.id} value={source.id}>
+                        {sourceTitle(source.id)}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              </div>
+              <button type="button" onClick={() => void confirmPending(item)}>
+                Zuordnung bestätigen
+              </button>
+            </article>
+          ))}
+        </section>
+      )}
+
       <section className="panel">
         <h2>Aktuelle lokale Bindings</h2>
         <ul>
           {bindings.map((binding) => (
             <li key={binding.id}>
-              {binding.displayName} · {formatBytes(binding.sizeBytes)}
+              {binding.actualFilename} · {formatBytes(binding.byteSize)} · {binding.matchingState}
             </li>
           ))}
         </ul>
@@ -213,25 +301,22 @@ export function DocumentDetailPage() {
   useEffect(() => {
     if (documentId) void getLocalDocument(documentId).then(setBinding);
   }, [documentId]);
-  const objectUrl = useMemo(() => {
-    if (!binding) return undefined;
-    return URL.createObjectURL(new Blob([binding.bytes], { type: binding.mimeType }));
-  }, [binding]);
-  useEffect(
-    () => () => {
-      if (objectUrl) URL.revokeObjectURL(objectUrl);
-    },
-    [objectUrl],
+
+  const source = binding ? sourceForBinding(binding) : undefined;
+  const relevantRegions = useMemo(
+    () => sourceTaskRegions.filter((region) => region.sourceId === binding?.sourceId).slice(0, 12),
+    [binding?.sourceId],
   );
+
   if (!documentId || !binding)
     return (
       <section className="page-flow">
         <h1>Dokument nicht verbunden</h1>
         <p>Die PDF-Datei ist auf diesem Gerät nicht verbunden oder wurde entfernt.</p>
-        <Link to="/dokumente/verbinden">PDF erneut verbinden</Link>
+        <Link to="/dokumente/verbinden">Dokument erneut verbinden</Link>
       </section>
     );
-  const source = sourceForBinding(binding);
+
   return (
     <div className="page-flow">
       <Link className="back-link" to="/dokumente">
@@ -239,10 +324,10 @@ export function DocumentDetailPage() {
       </Link>
       <header className="page-header">
         <p className="eyebrow">Lokale PDF</p>
-        <h1>{source?.title ?? binding.displayName}</h1>
+        <h1>{source?.title ? sourceTitle(source.id) : binding.actualFilename}</h1>
         <p>
-          Datei bleibt lokal: {binding.fileName} · {formatBytes(binding.sizeBytes)}. Der Viewer
-          nutzt die native PDF-Anzeige des Browsers.
+          Datei bleibt lokal: {binding.actualFilename} · {formatBytes(binding.byteSize)} ·{' '}
+          {binding.matchingState}
         </p>
       </header>
       <div className="button-row">
@@ -255,14 +340,6 @@ export function DocumentDetailPage() {
             onChange={(event) => setPage(Number(event.target.value))}
           />
         </label>
-        <a
-          className="button-link"
-          href={`${objectUrl ?? ''}#page=${page}`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Seite {page} in PDF öffnen
-        </a>
         <button
           type="button"
           onClick={() => {
@@ -272,13 +349,24 @@ export function DocumentDetailPage() {
           Lokale Bindung entfernen
         </button>
       </div>
-      {objectUrl && (
-        <iframe
-          className="pdf-viewer"
-          title={`Lokale PDF ${binding.displayName}`}
-          src={`${objectUrl}#page=${page}`}
-        />
-      )}
+      <Suspense fallback={<p>Lokaler PDF-Renderer wird geladen …</p>}>
+        <LocalPdfRenderer binding={binding} label="Lokales Dokument" pageStart={page} />
+      </Suspense>
+      <section className="panel">
+        <h2>Indizierte Regionen in diesem Dokument</h2>
+        {relevantRegions.length === 0 ? (
+          <p>Für dieses Dokument sind noch keine Aufgabenregionen zugeordnet.</p>
+        ) : (
+          <ul>
+            {relevantRegions.map((region) => (
+              <li key={region.regionId}>
+                Aufgabe {region.taskNumber}, Seite {region.pageStart} ·{' '}
+                {topicNames(region.topicIds).join(', ') || 'Themen offen'}
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
       <details className="panel">
         <summary>Technische lokale Bindung</summary>
         <dl className="metadata-list">
@@ -290,8 +378,184 @@ export function DocumentDetailPage() {
             <dt>SHA-256</dt>
             <dd>{binding.sha256 ?? 'im Browser nicht verfügbar'}</dd>
           </div>
+          <div>
+            <dt>Speicherbackend</dt>
+            <dd>{binding.storageBackend}</dd>
+          </div>
         </dl>
       </details>
+    </div>
+  );
+}
+
+export function DocumentIndexingPage() {
+  const [regions, setRegions] = useState<SourceTaskRegion[]>([]);
+  const [sourceId, setSourceId] = useState(sources[0]?.id ?? '');
+  const [taskNumber, setTaskNumber] = useState(1);
+  const [page, setPage] = useState(1);
+  const [crop, setCrop] = useState({ x: 0.08, y: 0.12, width: 0.84, height: 0.55 });
+  const [message, setMessage] = useState('');
+  useEffect(() => void listLocalTaskRegions().then(setRegions), []);
+  const source = sources.find((candidate) => candidate.id === sourceId);
+
+  const save = async () => {
+    const now = new Date().toISOString();
+    const region: SourceTaskRegion = {
+      id: `local-region-${sourceId}-aufgabe-${taskNumber}`,
+      regionId: `local-region-${sourceId}-aufgabe-${taskNumber}`,
+      sourceId,
+      documentKind: source?.category === 'Übung' ? 'exercise_sheet' : 'past_exam',
+      year: source?.year ?? null,
+      sheetNumber: null,
+      examId: null,
+      taskNumber,
+      subtask: null,
+      pageStart: page,
+      pageEnd: page,
+      cropRegions: [{ page, ...crop, coordinateSystem: 'normalized_page' }],
+      solutionSourceId: null,
+      solutionPageStart: null,
+      solutionPageEnd: null,
+      topicIds: [],
+      trainerIds: [],
+      taskSlot: null,
+      verificationStatus: 'local_user_indexed',
+      updatedAt: now,
+    };
+    await saveLocalTaskRegion(region);
+    setRegions(await listLocalTaskRegions());
+    setMessage('Lokale Aufgabenregion gespeichert. Export enthält nur Metadaten.');
+  };
+
+  return (
+    <div className="page-flow">
+      <Link className="back-link" to="/dokumente">
+        ← Dokumente
+      </Link>
+      <header className="page-header">
+        <p className="eyebrow">Lokale Indexierung</p>
+        <h1>Aufgabenregion indexieren</h1>
+        <p>
+          Markiere eine normalisierte Crop-Region. Gespeichert werden nur Koordinaten und
+          Zuordnungen, niemals Screenshots oder PDF-Bytes.
+        </p>
+      </header>
+
+      <section className="panel document-indexer">
+        <div>
+          <label>
+            Verbundene oder erwartete Quelle
+            <select value={sourceId} onChange={(event) => setSourceId(event.target.value)}>
+              {sources.map((candidate) => (
+                <option key={candidate.id} value={candidate.id}>
+                  {sourceTitle(candidate.id)}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Aufgabe
+            <input
+              min={1}
+              type="number"
+              value={taskNumber}
+              onChange={(event) => setTaskNumber(Number(event.target.value))}
+            />
+          </label>
+          <label>
+            Seite
+            <input
+              min={1}
+              type="number"
+              value={page}
+              onChange={(event) => setPage(Number(event.target.value))}
+            />
+          </label>
+          {(['x', 'y', 'width', 'height'] as const).map((field) => (
+            <label key={field}>
+              {field}
+              <input
+                max={1}
+                min={0}
+                step={0.01}
+                type="number"
+                value={crop[field]}
+                onChange={(event) =>
+                  setCrop((value) => ({ ...value, [field]: Number(event.target.value) }))
+                }
+              />
+            </label>
+          ))}
+          <button type="button" onClick={() => void save()}>
+            Region lokal speichern
+          </button>
+          <p aria-live="polite">{message}</p>
+        </div>
+        <div className="crop-preview" aria-label="Vorschau der normalisierten Crop-Region">
+          <span
+            className="pdf-crop-overlay"
+            style={{
+              left: `${crop.x * 100}%`,
+              top: `${crop.y * 100}%`,
+              width: `${crop.width * 100}%`,
+              height: `${crop.height * 100}%`,
+            }}
+          />
+        </div>
+      </section>
+
+      <section className="panel">
+        <h2>Lokale Regionen</h2>
+        <ul>
+          {regions.map((region) => (
+            <li key={region.id}>
+              {sourceTitle(region.sourceId)} · Aufgabe {region.taskNumber} · Seite{' '}
+              {region.pageStart}{' '}
+              <button type="button" onClick={() => void removeLocalTaskRegion(region.id)}>
+                entfernen
+              </button>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  );
+}
+
+export function DocumentMappingsPage() {
+  const [bindings, setBindings] = useState<LocalDocumentBinding[]>([]);
+  const [regions, setRegions] = useState<SourceTaskRegion[]>([]);
+  useEffect(() => void listLocalDocuments().then(setBindings), []);
+  useEffect(() => void listLocalTaskRegions().then(setRegions), []);
+  const documentExport = JSON.stringify(exportDocumentMappings(bindings), null, 2);
+  const regionExport = JSON.stringify(exportTaskRegionMetadata(regions), null, 2);
+  return (
+    <div className="page-flow">
+      <Link className="back-link" to="/dokumente">
+        ← Dokumente
+      </Link>
+      <header className="page-header">
+        <p className="eyebrow">Sicherer Export</p>
+        <h1>Lokale Zuordnungen</h1>
+        <p>
+          Diese Exporte enthalten nur sichere Metadaten. PDF-Bytes, Screenshots, extrahierte
+          Volltexte, Base64-Bilder und Browser-Dateihandles sind ausgeschlossen.
+        </p>
+      </header>
+      <section className="panel">
+        <h2>Dokumentbindungen</h2>
+        <button type="button" onClick={() => void navigator.clipboard?.writeText(documentExport)}>
+          Dokument-Mapping kopieren
+        </button>
+        <pre>{documentExport}</pre>
+      </section>
+      <section className="panel">
+        <h2>Aufgabenregionen</h2>
+        <button type="button" onClick={() => void navigator.clipboard?.writeText(regionExport)}>
+          Regionen-Metadaten kopieren
+        </button>
+        <pre>{regionExport}</pre>
+      </section>
     </div>
   );
 }

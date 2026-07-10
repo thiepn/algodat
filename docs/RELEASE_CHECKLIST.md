@@ -1,5 +1,15 @@
 # Release Checklist
 
+## Phase 19 / 1.0.0-rc.5
+
+- [x] Version bleibt `1.0.0-rc.5`, nicht `1.0.0`.
+- [x] Übungen, Altklausuren und Aufgabenregionen sind als sichere Metadaten indexiert.
+- [x] Lokale PDF-Bindungen speichern Bytes ausschließlich in IndexedDB.
+- [x] Matching unterscheidet Hash-, Dateinamen-, wahrscheinliche, manuelle und ungebundene Fälle.
+- [x] Deployment-Audit blockiert PDFs, Screenshots, Base64-Bilder, Volltext- und Dateihandle-Leaks.
+- [x] PDF-Renderer ist lazy geladen und nicht Teil des initialen Entry-Chunks.
+- [ ] Realer Screenreader-Gate bleibt offen.
+
 ## Phase 18 / 1.0.0-rc.4
 
 - [x] Version bleibt `1.0.0-rc.4`, nicht `1.0.0`.

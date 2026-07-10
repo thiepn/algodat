@@ -61,10 +61,42 @@ export const router = createBrowserRouter(
           }),
         },
         {
+          path: 'klausuren/:examId/original',
+          lazy: async () => ({
+            Component: (await import('../features/exam-library/ExamOriginalPages'))
+              .ExamOriginalPage,
+          }),
+        },
+        {
           path: 'klausuren/:examId/aufgabe/:questionId',
           lazy: async () => ({
             Component: (await import('../features/exam-library/ExamLibraryPages'))
               .ExamQuestionDetailPage,
+          }),
+        },
+        {
+          path: 'klausuren/:examId/aufgabe/:taskId/original',
+          lazy: async () => ({
+            Component: (await import('../features/exam-library/ExamOriginalPages'))
+              .ExamTaskOriginalPage,
+          }),
+        },
+        {
+          path: 'uebungen',
+          lazy: async () => ({
+            Component: (await import('../features/exercises/ExercisePages')).ExerciseIndexPage,
+          }),
+        },
+        {
+          path: 'uebungen/:sheetId',
+          lazy: async () => ({
+            Component: (await import('../features/exercises/ExercisePages')).ExerciseSheetPage,
+          }),
+        },
+        {
+          path: 'uebungen/:sheetId/aufgabe/:taskId',
+          lazy: async () => ({
+            Component: (await import('../features/exercises/ExercisePages')).ExerciseTaskPage,
           }),
         },
         {
@@ -107,6 +139,18 @@ export const router = createBrowserRouter(
           path: 'dokumente/verbinden',
           lazy: async () => ({
             Component: (await import('../features/documents/DocumentPages')).DocumentConnectPage,
+          }),
+        },
+        {
+          path: 'dokumente/indexierung',
+          lazy: async () => ({
+            Component: (await import('../features/documents/DocumentPages')).DocumentIndexingPage,
+          }),
+        },
+        {
+          path: 'dokumente/zuordnungen',
+          lazy: async () => ({
+            Component: (await import('../features/documents/DocumentPages')).DocumentMappingsPage,
           }),
         },
         {

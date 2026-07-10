@@ -81,6 +81,9 @@ export function ExamLibraryIndexPage() {
               <Link className="button-link" to={`/klausuren/${exam.id}`}>
                 Details öffnen
               </Link>
+              <Link className="button-link" to={`/klausuren/${exam.id}/original`}>
+                Originalseiten öffnen
+              </Link>
             </article>
           ))}
         </div>
@@ -216,17 +219,31 @@ export function ExamDetailPage() {
         <h2>Aufgabenstruktur</h2>
         <div className="task-grid">
           {exam.tasks.map((task) => (
-            <Link className="task-card" key={task.questionId} to={`/aufgaben/${task.number}`}>
+            <article className="task-card" key={task.questionId}>
               <span className="task-card__number">{task.number}</span>
               <div>
                 <h3>{task.topic}</h3>
                 <p>{task.format}</p>
                 <small>{task.points ?? 'Punkte unbekannt'} Punkte</small>
+                <div className="button-row">
+                  <Link to={`/aufgaben/${task.number}`}>Lernhub</Link>
+                  <Link to={`/klausuren/${exam.id}/aufgabe/${task.number}/original`}>
+                    Originalaufgabe anzeigen
+                  </Link>
+                </div>
               </div>
-            </Link>
+            </article>
           ))}
         </div>
       </section>
+      <div className="button-row">
+        <Link className="button-link" to={`/klausuren/${exam.id}/original`}>
+          Originalklausur lokal öffnen
+        </Link>
+        <Link className="button-link" to="/dokumente/verbinden">
+          Dokument verbinden
+        </Link>
+      </div>
       <section className="panel">
         <h2>Quellenbezug</h2>
         <p>
@@ -277,6 +294,31 @@ export function ExamQuestionDetailPage() {
           { resourceId: 'diagnose:standard', reason: 'Vor dem Üben die eigenen Lücken prüfen.' },
         ]}
       />
+      <div className="button-row">
+        <Link
+          className="button-link"
+          to={`/klausuren/${question.examId}/aufgabe/${question.id}/original`}
+        >
+          Originalaufgabe anzeigen
+        </Link>
+        <Link className="button-link" to="/dokumente/verbinden">
+          Originalseite öffnen
+        </Link>
+        {question.officialSolutionAvailable && (
+          <Link
+            className="button-link"
+            to={`/klausuren/${question.examId}/aufgabe/${question.id}/original`}
+          >
+            Lösung anzeigen
+          </Link>
+        )}
+        <Link className="button-link" to={`/klausuren/fragen?aufgabe=${question.taskNumber}`}>
+          Ähnliche Aufgaben
+        </Link>
+        <Link className="button-link" to="/lernplan/heute">
+          Zum Lernplan hinzufügen
+        </Link>
+      </div>
       <div className="two-column">
         <section className="panel">
           <h2>Erwartete Bearbeitungsart</h2>

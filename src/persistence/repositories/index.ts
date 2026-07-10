@@ -14,5 +14,6 @@ export const studyPlanSettingsRepository = createRepository('studyPlanSettings')
 export const reviewScheduleRepository = createRepository('reviewSchedules');
 export const cheatSheetRepository = createRepository('cheatSheets');
 export const localDocumentRepository = createRepository('localDocuments');
+export const localTaskRegionRepository = createRepository('localTaskRegions');
 
 export type { Repository } from './repository';

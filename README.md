@@ -1,6 +1,11 @@
 # AlgoDat Study System
 
-Phase 18 setzt den Stand auf `1.0.0-rc.4`: vollständige Lernmodule unter
+Phase 19 setzt den Stand auf `1.0.0-rc.5`: lokale Originalquellen bleiben privat, während
+Übungen, Altklausuren, Lösungen und Aufgabenregionen über sichere Metadaten auffindbar sind.
+Verbundene PDFs werden ausschließlich im Browser aus IndexedDB gerendert; GitHub Pages enthält
+keine PDF-Bytes, Screenshots oder Volltext-Extrakte.
+
+Phase 18 setzte den Stand auf `1.0.0-rc.4`: vollständige Lernmodule unter
 `/lernen`, neun Aufgabe-Guides, aktuelle Prüfungsstruktur statt studentischer
 Klausurprofile, lokale private PDF-Bibliothek unter `/dokumente` und eine
 bereinigte Klausurenbibliothek ohne `generated_unverified`-Normalansichten. Das

@@ -24,6 +24,9 @@ export async function inspectDeploymentAssets(dist: string): Promise<DeploymentI
     if (['.pdf', '.jpg', '.jpeg'].includes(extension)) {
       errors.push(`Private Binärdatei im Deployment: ${relative}`);
     }
+    if (['.webp', '.gif', '.bmp', '.tiff'].includes(extension)) {
+      errors.push(`Nicht freigegebene gerenderte Bilddatei im Deployment: ${relative}`);
+    }
     if (extension === '.png' && !allowedApplicationPngs.has(relative)) {
       errors.push(`Nicht freigegebene PNG-Datei im Deployment: ${relative}`);
     }
@@ -41,6 +44,23 @@ export async function inspectDeploymentAssets(dist: string): Promise<DeploymentI
       if (/Users[\\/]junso/iu.test(contents)) errors.push(`Privater Benutzerpfad in ${relative}`);
       if (/(?:href|src|url)\s*[:=]\s*["'`][^"'`]*\.pdf/iu.test(contents)) {
         errors.push(`Öffentlicher PDF-Verweis in ${relative}`);
+      }
+      if (/data:image\/(?:png|jpeg|jpg|webp|gif);base64,/iu.test(contents)) {
+        errors.push(`Base64-Bildpayload im Deployment: ${relative}`);
+      }
+      if (
+        /(?:renderedPage|pageScreenshot|ocrFullText|extractedFullText|["']screenshots?["']\s*:|["']seitenbilder?["']\s*:)/iu.test(
+          contents,
+        )
+      ) {
+        errors.push(`Screenshot- oder Volltext-Artefakt im Deployment: ${relative}`);
+      }
+      if (
+        /(?:browserFileHandle|fileHandleMetadata"\s*:\s*\{[^}]*kind|webkitRelativePath"\s*:\s*"[^"]+)/iu.test(
+          contents,
+        )
+      ) {
+        errors.push(`Browser-Dateihandle oder lokaler Dateipfad im Deployment: ${relative}`);
       }
       if (/precacheAndRoute\([^)]*(?:\.pdf|info 1 copy)/isu.test(contents)) {
         errors.push(`Private Quelle im Precache: ${relative}`);

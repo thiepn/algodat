@@ -106,4 +106,15 @@ export const migrations: Migration[] = [
       localDocuments.createIndex('by-updated', 'updatedAt');
     },
   },
+  {
+    version: 12,
+    upgrade(database) {
+      if (!database.objectStoreNames.contains('localTaskRegions')) {
+        const localTaskRegions = database.createObjectStore('localTaskRegions');
+        localTaskRegions.createIndex('by-source', 'sourceId');
+        localTaskRegions.createIndex('by-region', 'regionId');
+        localTaskRegions.createIndex('by-updated', 'updatedAt');
+      }
+    },
+  },
 ];

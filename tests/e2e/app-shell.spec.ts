@@ -5,11 +5,11 @@ test('deutsche App-Shell, Kernrouten und GitHub-Pages-Basispfad', async ({ page 
   await page.goto('./');
   await expect(page.getByRole('heading', { name: /ruhiger Ausgangspunkt/u })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Klausurprofile' })).toHaveCount(0);
-  await page.getByRole('link', { name: 'Prüfungsstruktur' }).click();
-  await expect(page.getByRole('heading', { name: 'Aktuelle Prüfungsstruktur' })).toBeVisible();
+  await page.getByRole('link', { name: 'Übungen' }).click();
+  await expect(page.getByRole('heading', { name: 'Übungen und Übungsblätter' })).toBeVisible();
   await page.reload();
-  await expect(page.getByRole('heading', { name: 'Aktuelle Prüfungsstruktur' })).toBeVisible();
-  expect(page.url()).toContain('/algodat/pruefungsstruktur');
+  await expect(page.getByRole('heading', { name: 'Übungen und Übungsblätter' })).toBeVisible();
+  expect(page.url()).toContain('/algodat/uebungen');
   const viewport = await page.evaluate(() => ({
     clientWidth: document.documentElement.clientWidth,
     scrollWidth: document.documentElement.scrollWidth,

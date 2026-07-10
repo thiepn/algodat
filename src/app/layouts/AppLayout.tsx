@@ -6,7 +6,6 @@ const navigationGroups = [
   {
     label: 'Lernen',
     items: [
-      ['/', 'Übersicht'],
       ['/lernen', 'Lernen'],
       ['/aufgaben', 'Aufgaben 1–9'],
       ['/themen', 'Themen'],
@@ -14,11 +13,11 @@ const navigationGroups = [
     ],
   },
   {
-    label: 'Prüfen',
+    label: 'Üben',
     items: [
-      ['/pruefungsstruktur', 'Prüfungsstruktur'],
-      ['/klausuren', 'Klausuren'],
-      ['/simulator', 'Simulator'],
+      ['/uebungen', 'Übungen'],
+      ['/klausuren', 'Altklausuren'],
+      ['/simulator', 'Aktuelle Probeklausur'],
     ],
   },
   {
@@ -27,8 +26,13 @@ const navigationGroups = [
       ['/diagnose', 'Diagnose'],
       ['/lernplan', 'Lernplan'],
       ['/spickzettel', 'Spickzettel'],
-      ['/quellen', 'Quellen'],
+    ],
+  },
+  {
+    label: 'Quellen',
+    items: [
       ['/dokumente', 'Dokumente'],
+      ['/quellen', 'Quellen'],
     ],
   },
 ] as const;
@@ -73,7 +77,7 @@ export function AppLayout() {
             <small>Study System</small>
           </span>
         </NavLink>
-        <span className="topbar__phase">1.0.0-rc.4 · 11 Trainer · Screenreader-Gate offen</span>
+        <span className="topbar__phase">1.0.0-rc.5 · 11 Trainer · Screenreader-Gate offen</span>
       </header>
       <nav className="primary-nav" aria-label="Hauptnavigation">
         {navigationGroups.map((group) => (
@@ -83,7 +87,7 @@ export function AppLayout() {
               <NavLink
                 key={to}
                 to={to}
-                end={to === '/'}
+                end={false}
                 className={({ isActive }) => (isActive ? 'active' : undefined)}
               >
                 {label}

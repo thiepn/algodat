@@ -859,7 +859,7 @@ async function main(): Promise<void> {
     duplicateSafeExamFrequency: true,
     phase0ValidationPassed: phase0.passed,
     phase0aValidationPassed: phase0a.passed,
-    indexedDbSchemaVersion: 11,
+    indexedDbSchemaVersion: 12,
     pwaVersion: contentVersion,
   };
   ContentHealthSchema.parse(contentHealth);
