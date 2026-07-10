@@ -449,3 +449,486 @@ export function topicNames(topicIds: string[]) {
     .map((topicId) => (topicsData as Topic[]).find((topic) => topic.id === topicId)?.name)
     .filter((name): name is string => Boolean(name));
 }
+
+export type CropPrecision =
+  | 'exact_task_crop'
+  | 'exact_subtask_crop'
+  | 'page_section_crop'
+  | 'full_page_fallback'
+  | 'unmapped';
+
+export type CoverageState =
+  | 'fully_indexed'
+  | 'pages_mapped_crop_pending'
+  | 'tasks_partially_indexed'
+  | 'solution_mapping_missing'
+  | 'document_unmatched'
+  | 'source_metadata_only';
+
+export type RegionValidationIssueCode =
+  | 'task_without_page_mapping'
+  | 'solution_without_source_mapping'
+  | 'crop_bounds_invalid'
+  | 'zero_crop'
+  | 'duplicate_task_region'
+  | 'wrong_document_type'
+  | 'invalid_task_number'
+  | 'missing_topic_mapping'
+  | 'missing_learning_action'
+  | 'full_page_fallback_mislabeled_precise'
+  | 'same_incorrect_region';
+
+export interface SourceCoverageRecord {
+  sourceId: string;
+  displayName: string;
+  title: string;
+  filename: string;
+  documentKind: DocumentKind;
+  coverageState: CoverageState;
+  cropPrecision: CropPrecision;
+  pageCount: number | null;
+  year: number | null;
+  sheetNumber: number | null;
+  examId: string | null;
+  taskCount: number;
+  subtaskCount: number;
+  taskPageMappings: number;
+  solutionPageMappings: number;
+  topicMappings: number;
+  trainerMappings: number;
+  requiresLocalFile: boolean;
+  actionRequired: string;
+}
+
+export interface RegionValidationIssue {
+  code: RegionValidationIssueCode;
+  severity: 'error' | 'warning' | 'info';
+  regionId: string;
+  sourceId: string;
+  taskNumber: number | null;
+  message: string;
+}
+
+export interface SourceLibrarySearchResult {
+  sourceId: string;
+  label: string;
+  documentKind: DocumentKind;
+  filename: string;
+  year: number | null;
+  sheetNumber: number | null;
+  examId: string | null;
+  taskNumbers: number[];
+  topics: string[];
+  trainers: string[];
+  modules: string[];
+  coverageState: CoverageState;
+  cropPrecision: CropPrecision;
+}
+
+export interface IndexedTaskPointer {
+  id: string;
+  title: string;
+  sourceId: string;
+  regionId: string;
+  taskNumber: number;
+  href: string;
+}
+
+export function isFullPageCrop(crop: CropRegion | null | undefined) {
+  if (!crop) return false;
+  return crop.x === 0 && crop.y === 0 && crop.width === 1 && crop.height === 1;
+}
+
+export function cropPrecisionForRegion(region: SourceTaskRegion | null | undefined): CropPrecision {
+  if (!region) return 'unmapped';
+  if (region.cropRegions.length === 0) return 'unmapped';
+  if (region.cropRegions.every(isFullPageCrop)) return 'full_page_fallback';
+  if (region.subtask && region.verificationStatus === 'local_user_indexed')
+    return 'exact_subtask_crop';
+  if (region.verificationStatus === 'local_user_indexed') return 'exact_task_crop';
+  return 'page_section_crop';
+}
+
+export function cropPrecisionLabel(precision: CropPrecision) {
+  switch (precision) {
+    case 'exact_task_crop':
+      return 'exakter Aufgaben-Crop';
+    case 'exact_subtask_crop':
+      return 'exakter Teilaufgaben-Crop';
+    case 'page_section_crop':
+      return 'Seitenabschnitt-Crop';
+    case 'full_page_fallback':
+      return 'Vollseiten-Fallback';
+    case 'unmapped':
+      return 'nicht zugeordnet';
+  }
+}
+
+export const indexedTaskPointers: IndexedTaskPointer[] = [
+  ...exerciseSheets.flatMap((sheet) =>
+    sheet.tasks.map((task) => ({
+      id: task.id,
+      title: `${sheet.title} · Aufgabe ${task.taskNumber}`,
+      sourceId: task.sourceId,
+      regionId: task.regionId,
+      taskNumber: task.taskNumber,
+      href: `/uebungen/${sheet.id}/aufgabe/${task.id}`,
+    })),
+  ),
+  ...indexedExams.flatMap((exam) =>
+    exam.tasks.map((task) => ({
+      id: task.id,
+      title: `${exam.title} · Aufgabe ${task.taskNumber}`,
+      sourceId: task.sourceId ?? exam.id,
+      regionId: task.regionId,
+      taskNumber: task.taskNumber,
+      href: `/klausuren/${exam.id}/aufgabe/${task.id}/original`,
+    })),
+  ),
+];
+
+export function adjacentTaskPointers(regionIdValue: string | null | undefined) {
+  const index = indexedTaskPointers.findIndex((task) => task.regionId === regionIdValue);
+  return {
+    previous: index > 0 ? indexedTaskPointers[index - 1] : null,
+    next:
+      index >= 0 && index < indexedTaskPointers.length - 1 ? indexedTaskPointers[index + 1] : null,
+  };
+}
+
+function coverageStateForSource(
+  source: SourceDocument,
+  regions: SourceTaskRegion[],
+): CoverageState {
+  if (regions.length === 0) {
+    return source.pageCount ? 'source_metadata_only' : 'document_unmatched';
+  }
+  if (
+    regions.some(
+      (region) => !region.solutionSourceId && region.documentKind !== 'lecture_reference',
+    )
+  ) {
+    return 'solution_mapping_missing';
+  }
+  if (regions.some((region) => cropPrecisionForRegion(region) === 'full_page_fallback')) {
+    return 'pages_mapped_crop_pending';
+  }
+  if (regions.some((region) => !region.topicIds.length || !region.trainerIds.length)) {
+    return 'tasks_partially_indexed';
+  }
+  return 'fully_indexed';
+}
+
+function strongestCropPrecision(regions: SourceTaskRegion[]): CropPrecision {
+  const order: CropPrecision[] = [
+    'exact_subtask_crop',
+    'exact_task_crop',
+    'page_section_crop',
+    'full_page_fallback',
+    'unmapped',
+  ];
+  const precisions = regions.map(cropPrecisionForRegion);
+  return order.find((precision) => precisions.includes(precision)) ?? 'unmapped';
+}
+
+export const sourceTaskCoverageRecords: SourceCoverageRecord[] = sources.map((source) => {
+  const sourceRegions = sourceTaskRegions.filter(
+    (region) => region.sourceId === source.id || region.solutionSourceId === source.id,
+  );
+  const primaryRegions = sourceTaskRegions.filter((region) => region.sourceId === source.id);
+  const taskNumbers = new Set(primaryRegions.map((region) => region.taskNumber));
+  const topics = new Set(primaryRegions.flatMap((region) => region.topicIds));
+  const trainers = new Set(primaryRegions.flatMap((region) => region.trainerIds));
+  const documentKind = documentKindForSource(source);
+  const state = coverageStateForSource(source, primaryRegions);
+  const solutionMappings = sourceTaskRegions.filter(
+    (region) => region.solutionSourceId === source.id,
+  );
+  return {
+    sourceId: source.id,
+    displayName: source.displayName,
+    title: titleForSource(source),
+    filename: source.displayName,
+    documentKind,
+    coverageState:
+      solutionMappings.length && primaryRegions.length === 0 ? 'source_metadata_only' : state,
+    cropPrecision: strongestCropPrecision(sourceRegions),
+    pageCount: source.pageCount,
+    year: source.year,
+    sheetNumber: inferSheetNumber(source),
+    examId:
+      indexedExams.find(
+        (exam) => exam.sourceId === source.id || exam.solutionSourceId === source.id,
+      )?.id ?? null,
+    taskCount: taskNumbers.size || solutionMappings.length,
+    subtaskCount: primaryRegions.filter((region) => Boolean(region.subtask)).length,
+    taskPageMappings: primaryRegions.filter((region) => region.pageStart > 0).length,
+    solutionPageMappings: solutionMappings.length,
+    topicMappings: topics.size,
+    trainerMappings: trainers.size,
+    requiresLocalFile: true,
+    actionRequired:
+      state === 'pages_mapped_crop_pending'
+        ? 'Lokale PDF verbinden und Vollseiten-Fallback durch exakten Crop ersetzen.'
+        : state === 'source_metadata_only'
+          ? 'Dokument ist inventarisiert; Aufgabenregionen müssen bei Bedarf lokal erfasst werden.'
+          : state === 'solution_mapping_missing'
+            ? 'Lösungsquelle oder Lösungsseite ergänzen.'
+            : state === 'document_unmatched'
+              ? 'Quelle gegen lokale PDF-Datei abgleichen.'
+              : 'Keine Pflichtaktion; lokale Präzisierung bleibt möglich.',
+  };
+});
+
+export function buildRegionValidationIssues(
+  regions: SourceTaskRegion[] = sourceTaskRegions,
+): RegionValidationIssue[] {
+  const issues: RegionValidationIssue[] = [];
+  const seen = new Map<string, SourceTaskRegion>();
+  for (const region of regions) {
+    const source = sourceById(region.sourceId);
+    const key = `${region.sourceId}:${region.taskNumber}:${region.subtask ?? 'gesamt'}`;
+    const previous = seen.get(key);
+    if (previous) {
+      issues.push({
+        code: 'duplicate_task_region',
+        severity: 'warning',
+        regionId: region.regionId,
+        sourceId: region.sourceId,
+        taskNumber: region.taskNumber,
+        message: `Doppelte Aufgabenregion mit ${previous.regionId}.`,
+      });
+    }
+    seen.set(key, region);
+    if (region.pageStart < 1 || region.pageEnd < region.pageStart) {
+      issues.push({
+        code: 'task_without_page_mapping',
+        severity: 'error',
+        regionId: region.regionId,
+        sourceId: region.sourceId,
+        taskNumber: region.taskNumber,
+        message: 'Aufgabe besitzt keine gültige Seitenzuordnung.',
+      });
+    }
+    if (region.solutionPageStart && !region.solutionSourceId) {
+      issues.push({
+        code: 'solution_without_source_mapping',
+        severity: 'error',
+        regionId: region.regionId,
+        sourceId: region.sourceId,
+        taskNumber: region.taskNumber,
+        message: 'Eine Lösungsseite ist gesetzt, aber keine Lösungsquelle.',
+      });
+    }
+    if (!Number.isInteger(region.taskNumber) || region.taskNumber < 1 || region.taskNumber > 12) {
+      issues.push({
+        code: 'invalid_task_number',
+        severity: 'error',
+        regionId: region.regionId,
+        sourceId: region.sourceId,
+        taskNumber: region.taskNumber,
+        message: 'Aufgabennummer liegt außerhalb des erwarteten Klausur-/Übungsbereichs.',
+      });
+    }
+    if (source && documentKindForSource(source) !== region.documentKind) {
+      const expectedKind = documentKindForSource(source);
+      const compatible =
+        (expectedKind === 'mock_exam' && region.documentKind === 'past_exam') ||
+        (expectedKind === 'past_exam' && region.documentKind === 'mock_exam');
+      if (!compatible) {
+        issues.push({
+          code: 'wrong_document_type',
+          severity: 'warning',
+          regionId: region.regionId,
+          sourceId: region.sourceId,
+          taskNumber: region.taskNumber,
+          message: `Dokumenttyp ${region.documentKind} passt nicht zur Quelle ${expectedKind}.`,
+        });
+      }
+    }
+    if (!region.topicIds.length) {
+      issues.push({
+        code: 'missing_topic_mapping',
+        severity: 'warning',
+        regionId: region.regionId,
+        sourceId: region.sourceId,
+        taskNumber: region.taskNumber,
+        message: 'Keine Themenzuordnung vorhanden.',
+      });
+    }
+    if (!region.trainerIds.length) {
+      issues.push({
+        code: 'missing_learning_action',
+        severity: 'warning',
+        regionId: region.regionId,
+        sourceId: region.sourceId,
+        taskNumber: region.taskNumber,
+        message: 'Keine direkte Lernaktion oder Trainerzuordnung vorhanden.',
+      });
+    }
+    for (const cropRegion of region.cropRegions) {
+      const boundsInvalid =
+        cropRegion.x < 0 ||
+        cropRegion.y < 0 ||
+        cropRegion.width <= 0 ||
+        cropRegion.height <= 0 ||
+        cropRegion.x + cropRegion.width > 1 ||
+        cropRegion.y + cropRegion.height > 1;
+      if (boundsInvalid) {
+        issues.push({
+          code: 'crop_bounds_invalid',
+          severity: 'error',
+          regionId: region.regionId,
+          sourceId: region.sourceId,
+          taskNumber: region.taskNumber,
+          message: 'Crop-Koordinaten liegen außerhalb der normalisierten Seite.',
+        });
+      }
+      if (cropRegion.width === 0 || cropRegion.height === 0) {
+        issues.push({
+          code: 'zero_crop',
+          severity: 'error',
+          regionId: region.regionId,
+          sourceId: region.sourceId,
+          taskNumber: region.taskNumber,
+          message: 'Crop besitzt keine sichtbare Fläche.',
+        });
+      }
+      if (isFullPageCrop(cropRegion) && region.verificationStatus === 'source_verified') {
+        issues.push({
+          code: 'full_page_fallback_mislabeled_precise',
+          severity: 'error',
+          regionId: region.regionId,
+          sourceId: region.sourceId,
+          taskNumber: region.taskNumber,
+          message: 'Vollseiten-Fallback darf nicht als quellenverifizierter Präzisionscrop gelten.',
+        });
+      }
+    }
+  }
+  const groupedBySourcePage = new Map<string, SourceTaskRegion[]>();
+  for (const region of regions) {
+    const crop = region.cropRegions[0];
+    if (!crop || !isFullPageCrop(crop)) continue;
+    const key = `${region.sourceId}:${region.pageStart}:full-page`;
+    groupedBySourcePage.set(key, [...(groupedBySourcePage.get(key) ?? []), region]);
+  }
+  for (const samePageRegions of groupedBySourcePage.values()) {
+    if (samePageRegions.length < 2) continue;
+    for (const region of samePageRegions.slice(1)) {
+      issues.push({
+        code: 'same_incorrect_region',
+        severity: 'info',
+        regionId: region.regionId,
+        sourceId: region.sourceId,
+        taskNumber: region.taskNumber,
+        message:
+          'Mehrere Aufgaben teilen denselben Vollseiten-Fallback; lokale Präzisierung empfohlen.',
+      });
+    }
+  }
+  return issues;
+}
+
+export const regionValidationIssues = buildRegionValidationIssues();
+
+export const sourceCoverageSummary = {
+  totalSources: sources.length,
+  indexedExerciseSheets: exerciseSheets.length,
+  indexedExerciseTasks: exerciseSheets.reduce((sum, sheet) => sum + sheet.tasks.length, 0),
+  indexedExams: indexedExams.length,
+  indexedExamTasks: indexedExams.reduce((sum, exam) => sum + exam.tasks.length, 0),
+  indexedRegions: sourceTaskRegions.length,
+  coverageStates: sourceTaskCoverageRecords.reduce<Record<CoverageState, number>>(
+    (counts, record) => ({ ...counts, [record.coverageState]: counts[record.coverageState] + 1 }),
+    {
+      fully_indexed: 0,
+      pages_mapped_crop_pending: 0,
+      tasks_partially_indexed: 0,
+      solution_mapping_missing: 0,
+      document_unmatched: 0,
+      source_metadata_only: 0,
+    },
+  ),
+  cropPrecision: sourceTaskCoverageRecords.reduce<Record<CropPrecision, number>>(
+    (counts, record) => ({ ...counts, [record.cropPrecision]: counts[record.cropPrecision] + 1 }),
+    {
+      exact_task_crop: 0,
+      exact_subtask_crop: 0,
+      page_section_crop: 0,
+      full_page_fallback: 0,
+      unmapped: 0,
+    },
+  ),
+  validationIssues: regionValidationIssues.reduce<
+    Record<RegionValidationIssue['severity'], number>
+  >((counts, issue) => ({ ...counts, [issue.severity]: counts[issue.severity] + 1 }), {
+    error: 0,
+    warning: 0,
+    info: 0,
+  }),
+};
+
+export function searchSourceLibrary(query: string): SourceLibrarySearchResult[] {
+  const normalizedQuery = query.trim().toLocaleLowerCase('de');
+  const records = sourceTaskCoverageRecords.map((record): SourceLibrarySearchResult => {
+    const regions = sourceTaskRegions.filter(
+      (region) =>
+        region.sourceId === record.sourceId || region.solutionSourceId === record.sourceId,
+    );
+    const taskNumbers = [...new Set(regions.map((region) => region.taskNumber))].sort(
+      (a, b) => a - b,
+    );
+    const topicIds = [...new Set(regions.flatMap((region) => region.topicIds))];
+    const trainerIds = [...new Set(regions.flatMap((region) => region.trainerIds))];
+    const moduleIds = [
+      ...new Set(
+        [
+          ...exerciseSheets.flatMap((sheet) => sheet.tasks),
+          ...indexedExams.flatMap((exam) => exam.tasks),
+        ]
+          .filter(
+            (task) =>
+              task.sourceId === record.sourceId ||
+              ('solutionSourceId' in task && task.solutionSourceId === record.sourceId),
+          )
+          .flatMap((task) => task.moduleIds),
+      ),
+    ];
+    return {
+      sourceId: record.sourceId,
+      label: sourceTitle(record.sourceId),
+      documentKind: record.documentKind,
+      filename: record.filename,
+      year: record.year,
+      sheetNumber: record.sheetNumber,
+      examId: record.examId,
+      taskNumbers,
+      topics: topicNames(topicIds),
+      trainers: trainerIds,
+      modules: moduleIds,
+      coverageState: record.coverageState,
+      cropPrecision: record.cropPrecision,
+    };
+  });
+  if (!normalizedQuery) return records.slice(0, 50);
+  return records
+    .filter((record) =>
+      [
+        record.label,
+        record.filename,
+        record.documentKind,
+        record.year?.toString() ?? '',
+        record.sheetNumber?.toString() ?? '',
+        record.examId ?? '',
+        record.taskNumbers.join(' '),
+        record.topics.join(' '),
+        record.trainers.join(' '),
+        record.modules.join(' '),
+      ]
+        .join(' ')
+        .toLocaleLowerCase('de')
+        .includes(normalizedQuery),
+    )
+    .slice(0, 50);
+}

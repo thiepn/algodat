@@ -1,5 +1,16 @@
 # Release Checklist
 
+## Phase 20 / 1.0.0-rc.6
+
+- [x] Version bleibt `1.0.0-rc.6`, nicht `1.0.0`.
+- [x] `data/source-task-coverage.json` enthält nur sichere Metadaten.
+- [x] `data/source-region-validation-report.json` validiert Aufgaben-, Lösungs- und Crop-Regeln.
+- [x] `/dokumente/abdeckung` bietet lokale Metadaten-Suche.
+- [x] `/dokumente/indexierung/qualitaet` trennt Vollseiten-Fallbacks von präzisen Crops.
+- [x] `/dokumente/indexierung` bietet Aufgabenliste, Nachbar-Navigation, Undo/Redo, Lösungsmapping,
+  Side-by-side-Vorschau, Tastaturjustage und Speichern-und-weiter.
+- [ ] Realer Screenreader-Gate bleibt offen.
+
 ## Phase 19 / 1.0.0-rc.5
 
 - [x] Version bleibt `1.0.0-rc.5`, nicht `1.0.0`.

@@ -42,7 +42,7 @@ test('Dokumentenindexierung speichert und exportiert nur lokale Metadaten', asyn
   await page.goto('./dokumente/indexierung');
   await expect(page.getByRole('heading', { name: 'Aufgabenregion indexieren' })).toBeVisible();
   await page.getByRole('spinbutton', { name: 'Aufgabe' }).fill('3');
-  await page.getByRole('spinbutton', { name: 'Seite' }).fill('2');
+  await page.getByRole('spinbutton', { name: 'Seite', exact: true }).fill('2');
   await page.getByRole('spinbutton', { name: 'x' }).fill('0.1');
   await page.getByRole('spinbutton', { name: 'y' }).fill('0.2');
   await page.getByRole('spinbutton', { name: 'width' }).fill('0.5');

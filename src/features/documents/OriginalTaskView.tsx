@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 import type { LocalDocumentBinding, SourceTaskRegion } from '../../persistence/database/schema';
 import { hrefForResource, labelForResource, trainerPath } from '../study-content/resource-links';
 import { getLocalDocumentBySource } from './local-document-service';
-import { sourceTitle, topicNames } from './source-task-index';
+import {
+  adjacentTaskPointers,
+  cropPrecisionForRegion,
+  cropPrecisionLabel,
+  sourceTitle,
+  topicNames,
+} from './source-task-index';
 
 const LocalPdfRenderer = lazy(() =>
   import('./local-pdf-renderer').then((module) => ({ default: module.LocalPdfRenderer })),
@@ -52,6 +58,13 @@ export function OriginalTaskView({
   }
 
   const names = topicNames(topicIds);
+  const adjacent = adjacentTaskPointers(region.regionId);
+  const precision = cropPrecisionForRegion(region);
+  const solutionStatus = region.solutionSourceId
+    ? solutionBinding
+      ? 'Lösung lokal verbunden'
+      : 'Lösungsquelle bekannt, lokale PDF noch nicht verbunden'
+    : 'Keine Lösungsquelle zugeordnet';
   return (
     <div className="page-flow">
       <Link className="back-link" to={fallbackBackLink}>
@@ -65,6 +78,18 @@ export function OriginalTaskView({
           {region.pageEnd !== region.pageStart ? `–${region.pageEnd}` : ''} ·{' '}
           {sourceTitle(region.sourceId)}
         </p>
+        <div className="button-row">
+          {adjacent.previous && (
+            <Link className="button-link" to={adjacent.previous.href}>
+              ← Vorherige Aufgabe
+            </Link>
+          )}
+          {adjacent.next && (
+            <Link className="button-link" to={adjacent.next.href}>
+              Nächste Aufgabe →
+            </Link>
+          )}
+        </div>
       </header>
 
       <section className="panel">
@@ -81,6 +106,22 @@ export function OriginalTaskView({
           <div>
             <dt>Themen</dt>
             <dd>{names.length ? names.join(', ') : 'Noch nicht zugeordnet'}</dd>
+          </div>
+          <div>
+            <dt>Crop-Qualität</dt>
+            <dd>{cropPrecisionLabel(precision)}</dd>
+          </div>
+          <div>
+            <dt>Voller Kontext</dt>
+            <dd>
+              Seite {region.pageStart}
+              {region.pageEnd !== region.pageStart ? `–${region.pageEnd}` : ''}; exakte
+              Ausschnittsgrenzen werden nur nach lokaler Crop-Bearbeitung behauptet.
+            </dd>
+          </div>
+          <div>
+            <dt>Lösungsstatus</dt>
+            <dd>{solutionStatus}</dd>
           </div>
           <div>
             <dt>Trainer</dt>

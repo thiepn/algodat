@@ -148,6 +148,19 @@ export const router = createBrowserRouter(
           }),
         },
         {
+          path: 'dokumente/indexierung/qualitaet',
+          lazy: async () => ({
+            Component: (await import('../features/documents/DocumentPages'))
+              .DocumentCropQualityPage,
+          }),
+        },
+        {
+          path: 'dokumente/abdeckung',
+          lazy: async () => ({
+            Component: (await import('../features/documents/DocumentPages')).DocumentCoveragePage,
+          }),
+        },
+        {
           path: 'dokumente/zuordnungen',
           lazy: async () => ({
             Component: (await import('../features/documents/DocumentPages')).DocumentMappingsPage,
