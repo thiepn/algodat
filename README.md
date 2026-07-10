@@ -1,15 +1,13 @@
 # AlgoDat Study System
 
-Phase 20 setzt den Stand auf `1.0.0-rc.6`: lokale Originalquellen bleiben privat, während
-Quellenabdeckung, Crop-Qualität, Indexierungsworkflow und Metadaten-Suche über sichere
-Dokumentmetadaten prüfbar sind. Verbundene PDFs werden ausschließlich im Browser aus IndexedDB
-gerendert; GitHub Pages enthält keine PDF-Bytes, Screenshots oder Volltext-Extrakte.
+Phase 20.1 setzt den Stand auf `1.0.0-rc.7`: die lokale private PDF-Bibliothek,
+Originalseitenansichten, Crop-/Indexierungswerkzeuge und `/dokumente`-Routen wurden entfernt.
+Quellen erscheinen weiter als sichere Metadaten unter `/quellen`; Originalmaterialien dürfen erst
+über ein genehmigtes Hosted-Material-Manifest veröffentlicht oder extern verlinkt werden.
 
-Phase 18 setzte den Stand auf `1.0.0-rc.4`: vollständige Lernmodule unter
-`/lernen`, neun Aufgabe-Guides, aktuelle Prüfungsstruktur statt studentischer
-Klausurprofile, lokale private PDF-Bibliothek unter `/dokumente` und eine
-bereinigte Klausurenbibliothek ohne `generated_unverified`-Normalansichten. Das
-echte Screenreader-Gate bleibt offen; `1.0.0` ist weiterhin gesperrt.
+Phase 18 bis 20 hatten lokale Dokumentfunktionen eingeführt. Diese Berichte bleiben historisch,
+sind aber seit `1.0.0-rc.7` archiviert. Das echte Screenreader-Gate bleibt offen; `1.0.0` ist
+weiterhin gesperrt.
 
 Deutschsprachige, lokale und quellenbasierte Lernanwendung für Algorithmen und Datenstrukturen. Phase 0/0A inventarisierte und prüfte den Quellenbestand, Phase 1 stellte das React-/TypeScript-/PWA-Fundament bereit, Phase 2 bis 13 bauten elf aktive Lernpfade und den Klausursimulator auf, Phase 14 ergänzte die Grundlagen-Diagnose, Phase 15 ergänzt einen adaptiven Lernorchestrator und Phase 16 führt den Stand als `1.0.0-rc.2` mit lokalem A4-Spickzettel-Builder und Accessibility-Fallback-Audit in die Release-Härtung.
 
@@ -33,6 +31,8 @@ Der Verify-Befehl führt Datenvalidierung, Inhaltsbuild, Inhaltsvalidierung, For
 ## Architektur
 
 - `src/content/`: ausführbare Zod-Schemas, Loader, Selektoren und generierte Inhaltsindizes
+- `data/hosted-materials.json`: Manifest für künftig genehmigte öffentliche Materialien; in
+  `1.0.0-rc.7` leer
 - `src/domain/tracing/`: deterministische Rucksack-DP- und Union-Find-Engines
 - `src/domain/proofs/`: deterministische Schleifeninvarianten-Engine, Ausdrucksparser, Scoring und Mastery V3
 - `src/domain/recurrences/`: Rekurrenzanalyse, Master-Theorem, Rekursionsbaum und Laufzeitinduktion

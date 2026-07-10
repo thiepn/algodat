@@ -1,3 +1,5 @@
+# Archived: local source indexing was removed in 1.0.0-rc.7.
+
 # Phase 19 Completion Report – lokale Originalquellenbibliothek
 
 Version: `1.0.0-rc.5`  

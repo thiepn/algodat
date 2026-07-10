@@ -1,5 +1,17 @@
 # Produktspezifikation
 
+## Phase 20.1 Produktstand
+
+`1.0.0-rc.7` entfernt die lokale Dokumentbibliothek, lokale PDF-Verknüpfungen,
+Originalseitenansichten und Crop-/Indexierungswerkzeuge. Quellen bleiben als sichere
+Metadatenansicht erhalten: Titel, Typ, Semester/Jahr, Themen, verknüpfte Übungs-/Klausuraufgaben,
+Module, Trainer und — nur bei genehmigtem Hosted-Material-Manifest — ein öffentlicher Material-
+oder offizieller URL-Verweis.
+
+Übungs- und Klausurseiten bleiben produktive Lernflächen. Sie zeigen keine privaten Original-PDFs,
+sondern sichere Quellenmetadaten, Aufgabenbezug, erwartete Methode sowie autorisierte
+Übungsvarianten und Lösungsskizzen.
+
 ## Ziel
 
 Ziel ist eine deutschsprachige, lokale, offlinefähige Prüfungsvorbereitung mit nachvollziehbaren Quellen und aktiver Reproduktion. Inhalte werden nur produktiv freigegeben, wenn Quelle, Seite/Folie, Verifikationsstatus und deterministische Auswertung dokumentiert sind.

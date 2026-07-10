@@ -1,5 +1,17 @@
 # Datenmodell
 
+## Phase 20.1 Nachtrag
+
+`data/hosted-materials.json` ist das einzige Datenmodell für künftig veröffentlichbare
+Originalmaterialien. Das Manifest ist in `1.0.0-rc.7` leer und wird durch
+`src/content/loaders/hosted-materials.ts` validiert. Zulässige `distributionBasis`-Werte sind
+`author_owned`, `explicit_permission`, `open_license` und `official_public_url`; zulässige
+`publicationStatus`-Werte sind `approved`, `pending` und `rejected`.
+
+IndexedDB-Version 13 entfernt die alten lokalen Quellen-Stores `localDocuments` und
+`localTaskRegions` sowie optionale private Cache-/FileHandle-Stores. Die Lernfortschritts-Stores
+bleiben erhalten und werden weiter beim Export/Import gegen ausführbare Schemas validiert.
+
 ## Phase-4-Ergänzung
 
 Phase 4 ergänzt `ProofTrainer`, `LoopInvariantProofProblem` und `ProofRubric`. `PracticeAttempt` kann nun `trainerKind: "proof"` und `canonicalProofVersion` tragen. Die Antwort eines Beweisversuchs ist ein strukturierter Beweis mit Programmanalyse, Behauptung, Invariante, Induktionsanfang, Induktionsvoraussetzung, Induktionsschritt, Terminierung und Schluss. Quellenbezug des produktiven Proof-Inhalts: `src-25d6340b518c`, Seiten 11–12; `src-baa07f0a207a`, Seiten 132–135 und 140.

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { UpdatePrompt } from '../../ui/feedback/UpdatePrompt';
 
@@ -30,16 +30,16 @@ const navigationGroups = [
   },
   {
     label: 'Quellen',
-    items: [
-      ['/dokumente', 'Dokumente'],
-      ['/quellen', 'Quellen'],
-    ],
+    items: [['/quellen', 'Quellen']],
   },
 ] as const;
 
 export function AppLayout() {
   const location = useLocation();
   const initialRouteHandled = useRef(false);
+  const [showRemovalNotice, setShowRemovalNotice] = useState(
+    () => window.localStorage.getItem('algodat-local-source-removal-notice-v13') !== 'seen',
+  );
 
   useEffect(() => {
     if (!initialRouteHandled.current) {
@@ -77,7 +77,7 @@ export function AppLayout() {
             <small>Study System</small>
           </span>
         </NavLink>
-        <span className="topbar__phase">1.0.0-rc.6 · 11 Trainer · Screenreader-Gate offen</span>
+        <span className="topbar__phase">1.0.0-rc.7 · 11 Trainer · Screenreader-Gate offen</span>
       </header>
       <nav className="primary-nav" aria-label="Hauptnavigation">
         {navigationGroups.map((group) => (
@@ -97,6 +97,23 @@ export function AppLayout() {
         ))}
       </nav>
       <main id="hauptinhalt" className="main-content" tabIndex={-1}>
+        {showRemovalNotice && (
+          <section className="notice" aria-live="polite">
+            <p>
+              Die lokale Dokumentbibliothek wurde entfernt. Lokal gespeicherte PDF-Verknüpfungen und
+              Ausschnittdaten wurden gelöscht.
+            </p>
+            <button
+              type="button"
+              onClick={() => {
+                window.localStorage.setItem('algodat-local-source-removal-notice-v13', 'seen');
+                setShowRemovalNotice(false);
+              }}
+            >
+              Verstanden
+            </button>
+          </section>
+        )}
         <Outlet />
       </main>
       <footer className="footer">

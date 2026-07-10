@@ -1,5 +1,15 @@
 # Technische Architektur
 
+## Phase 20.1 Architekturentscheidung
+
+Die lokale PDF-Schicht wurde entfernt: kein Browser-PDF-Renderer, keine ArrayBuffer-Persistenz,
+keine Object-URLs, keine lokale Crop-Bearbeitung, keine Side-by-side-Originalansicht und keine
+Indexierungswerkbank. Die Quellen-UI konsumiert nur sichere Metadaten und das leere
+Hosted-Material-Manifest.
+
+IndexedDB v13 löscht alte lokale Quellen-Stores per Migration. Das Deployment-Gate validiert
+Hosted Materials über Manifest, Rechtebasis, Pfad und SHA-256-Hash.
+
 ## Phase-4-Ergänzung
 
 `src/domain/proofs/` ist ein reiner Domainkern für Beweistrainer. Er enthält Ausdrucksparser, Normalisierung, Beweisbewertung, Fehlercodes und Mastery V3. UI und Persistenz rufen diesen Kern über `src/features/trainer/proof-service.ts` auf.

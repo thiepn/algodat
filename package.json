@@ -1,6 +1,6 @@
 {
   "name": "algodat-study-system",
-  "version": "1.0.0-rc.6",
+  "version": "1.0.0-rc.7",
   "private": true,
   "type": "module",
   "scripts": {
@@ -16,8 +16,7 @@
     "test:e2e": "npm run build && playwright test",
     "validate:phase-data": "tsx scripts/validate-phase-data.ts",
     "validate:content": "tsx scripts/validate-content.ts",
-    "build:source-coverage": "tsx scripts/build-source-coverage.ts",
-    "build:content": "tsx scripts/build-content.ts && npm run build:source-coverage",
+    "build:content": "tsx scripts/build-content.ts",
     "check:deployment": "tsx scripts/check-deployment-assets.ts",
     "analyze:bundle": "tsx scripts/analyze-bundle.ts",
     "verify": "npm run validate:phase-data && npm run build:content && npm run validate:content && npm run format:check && npm run lint && npm run typecheck && npm run test && npm run test:coverage && npm run build && npm run analyze:bundle && npm run check:deployment && playwright test"

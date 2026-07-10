@@ -1,5 +1,24 @@
 # Informationsarchitektur
 
+## Phase 20.1 Routen
+
+Aktive Quellenroute:
+
+- `/quellen`
+
+Entfernte lokale Dokumentrouten leiten nach `/quellen` um:
+
+- `/dokumente/*`
+
+Entfernte Originalansichten leiten auf die jeweilige Metadatenseite um:
+
+- `/klausuren/:examId/original` → `/klausuren/:examId`
+- `/klausuren/:examId/aufgabe/:taskId/original` → `/klausuren/:examId/aufgabe/:taskId`
+- `/uebungen/:sheetId/aufgabe/:taskId/original` → `/uebungen/:sheetId/aufgabe/:taskId`
+
+`/uebungen`, `/klausuren`, `/klausuren/fragen`, Themen, Module, Trainer, Diagnose, Lernplan,
+Simulator und Spickzettel bleiben erhalten.
+
 ## Phase-4-Ergänzung
 
 Die Trainer-Navigation enthält jetzt zwei Familien: Tracing und Beweise. Proof-Routen liegen unter `/trainer/beweise/...`; die themenbasierte Navigation bleibt unverändert parallel erhalten.

@@ -3,6 +3,12 @@ import { AppLayout } from './layouts/AppLayout';
 import { DashboardPage } from '../features/dashboard/DashboardPage';
 import { DiagnosticsPage } from '../features/diagnostics/DiagnosticsPage';
 import { PlannedState } from '../ui/feedback/PlannedState';
+import {
+  RetiredDocumentRouteRedirect,
+  RetiredExamOriginalRedirect,
+  RetiredExamTaskOriginalRedirect,
+  RetiredExerciseOriginalRedirect,
+} from './RetiredRouteRedirects';
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/u, '');
 
@@ -62,23 +68,17 @@ export const router = createBrowserRouter(
         },
         {
           path: 'klausuren/:examId/original',
-          lazy: async () => ({
-            Component: (await import('../features/exam-library/ExamOriginalPages'))
-              .ExamOriginalPage,
-          }),
+          element: <RetiredExamOriginalRedirect />,
+        },
+        {
+          path: 'klausuren/:examId/aufgabe/:taskId/original',
+          element: <RetiredExamTaskOriginalRedirect />,
         },
         {
           path: 'klausuren/:examId/aufgabe/:questionId',
           lazy: async () => ({
             Component: (await import('../features/exam-library/ExamLibraryPages'))
               .ExamQuestionDetailPage,
-          }),
-        },
-        {
-          path: 'klausuren/:examId/aufgabe/:taskId/original',
-          lazy: async () => ({
-            Component: (await import('../features/exam-library/ExamOriginalPages'))
-              .ExamTaskOriginalPage,
           }),
         },
         {
@@ -92,6 +92,10 @@ export const router = createBrowserRouter(
           lazy: async () => ({
             Component: (await import('../features/exercises/ExercisePages')).ExerciseSheetPage,
           }),
+        },
+        {
+          path: 'uebungen/:sheetId/aufgabe/:taskId/original',
+          element: <RetiredExerciseOriginalRedirect />,
         },
         {
           path: 'uebungen/:sheetId/aufgabe/:taskId',
@@ -130,47 +134,8 @@ export const router = createBrowserRouter(
           }),
         },
         {
-          path: 'dokumente',
-          lazy: async () => ({
-            Component: (await import('../features/documents/DocumentPages')).DocumentIndexPage,
-          }),
-        },
-        {
-          path: 'dokumente/verbinden',
-          lazy: async () => ({
-            Component: (await import('../features/documents/DocumentPages')).DocumentConnectPage,
-          }),
-        },
-        {
-          path: 'dokumente/indexierung',
-          lazy: async () => ({
-            Component: (await import('../features/documents/DocumentPages')).DocumentIndexingPage,
-          }),
-        },
-        {
-          path: 'dokumente/indexierung/qualitaet',
-          lazy: async () => ({
-            Component: (await import('../features/documents/DocumentPages'))
-              .DocumentCropQualityPage,
-          }),
-        },
-        {
-          path: 'dokumente/abdeckung',
-          lazy: async () => ({
-            Component: (await import('../features/documents/DocumentPages')).DocumentCoveragePage,
-          }),
-        },
-        {
-          path: 'dokumente/zuordnungen',
-          lazy: async () => ({
-            Component: (await import('../features/documents/DocumentPages')).DocumentMappingsPage,
-          }),
-        },
-        {
-          path: 'dokumente/:documentId',
-          lazy: async () => ({
-            Component: (await import('../features/documents/DocumentPages')).DocumentDetailPage,
-          }),
+          path: 'dokumente/*',
+          element: <RetiredDocumentRouteRedirect />,
         },
         { path: 'diagnostik', element: <DiagnosticsPage /> },
         {

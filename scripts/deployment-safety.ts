@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { walk } from './content-utils';
 
@@ -14,20 +15,92 @@ export interface DeploymentInspection {
   errors: string[];
 }
 
-export async function inspectDeploymentAssets(dist: string): Promise<DeploymentInspection> {
+interface HostedMaterialRecord {
+  assetPath: string | null;
+  officialUrl: string | null;
+  distributionBasis: string;
+  rightsHolder: string;
+  permissionNote: string;
+  sha256: string | null;
+  publicationStatus: string;
+}
+
+async function readHostedMaterials(manifestPath?: string): Promise<HostedMaterialRecord[]> {
+  const candidates = manifestPath
+    ? [manifestPath]
+    : [path.join(process.cwd(), 'data', 'hosted-materials.json')];
+  for (const candidate of candidates) {
+    try {
+      const parsed = JSON.parse(await readFile(candidate, 'utf8')) as HostedMaterialRecord[];
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      // Kein Manifest im jeweiligen Kontext; ohne Manifest ist kein Hosted Asset freigegeben.
+    }
+  }
+  return [];
+}
+
+function allowedHostedMaterial(records: HostedMaterialRecord[], relative: string) {
+  return records.find(
+    (record) =>
+      record.publicationStatus === 'approved' &&
+      record.assetPath === `/${relative}` &&
+      ['author_owned', 'explicit_permission', 'open_license'].includes(record.distributionBasis) &&
+      record.rightsHolder &&
+      record.permissionNote &&
+      record.sha256,
+  );
+}
+
+function allowedOfficialPdfLink(records: HostedMaterialRecord[], url: string) {
+  return records.some(
+    (record) =>
+      record.publicationStatus === 'approved' &&
+      record.distributionBasis === 'official_public_url' &&
+      record.officialUrl === url &&
+      record.rightsHolder &&
+      record.permissionNote,
+  );
+}
+
+function allowedHostedMaterialLink(records: HostedMaterialRecord[], link: string) {
+  const normalized = link.replace(/^\.?\//u, '');
+  const materialsIndex = normalized.indexOf('materials-approved/');
+  if (materialsIndex < 0) return false;
+  return Boolean(allowedHostedMaterial(records, normalized.slice(materialsIndex)));
+}
+
+export async function inspectDeploymentAssets(
+  dist: string,
+  hostedMaterialsManifestPath?: string,
+): Promise<DeploymentInspection> {
   const files = await walk(dist);
   const errors: string[] = [];
+  const hostedMaterials = await readHostedMaterials(hostedMaterialsManifestPath);
 
   for (const file of files) {
     const relative = path.relative(dist, file).replaceAll('\\', '/');
     const extension = path.extname(file).toLocaleLowerCase();
-    if (['.pdf', '.jpg', '.jpeg'].includes(extension)) {
+    const hostedMaterial = relative.startsWith('materials-approved/')
+      ? allowedHostedMaterial(hostedMaterials, relative)
+      : null;
+    if (relative.startsWith('materials-approved/') && !hostedMaterial) {
+      errors.push(`Nicht genehmigtes Hosted Material im Deployment: ${relative}`);
+    }
+    if (hostedMaterial) {
+      const bytes = await readFile(file);
+      const sha256 = createHash('sha256').update(bytes).digest('hex');
+      if (sha256 !== hostedMaterial.sha256) {
+        errors.push(`Hosted-Material-Hash stimmt nicht: ${relative}`);
+      }
+    }
+    if (['.pdf', '.jpg', '.jpeg'].includes(extension) && !hostedMaterial) {
       errors.push(`Private Binärdatei im Deployment: ${relative}`);
     }
-    if (['.webp', '.gif', '.bmp', '.tiff'].includes(extension)) {
+    if (['.webp', '.gif', '.bmp', '.tiff'].includes(extension) && !hostedMaterial) {
       errors.push(`Nicht freigegebene gerenderte Bilddatei im Deployment: ${relative}`);
     }
-    if (extension === '.png' && !allowedApplicationPngs.has(relative)) {
+    if (extension === '.png' && !allowedApplicationPngs.has(relative) && !hostedMaterial) {
       errors.push(`Nicht freigegebene PNG-Datei im Deployment: ${relative}`);
     }
     if (extension === '.map') {
@@ -42,7 +115,17 @@ export async function inspectDeploymentAssets(dist: string): Promise<DeploymentI
         errors.push(`Windows-Absolutpfad in ${relative}`);
       }
       if (/Users[\\/]junso/iu.test(contents)) errors.push(`Privater Benutzerpfad in ${relative}`);
-      if (/(?:href|src|url)\s*[:=]\s*["'`][^"'`]*\.pdf/iu.test(contents)) {
+      const pdfLinks = [
+        ...contents.matchAll(/(?:href|src|url)\s*[:=]\s*["'`]([^"'`]*\.pdf)["'`]/giu),
+      ].map((match) => match[1]);
+      if (
+        pdfLinks.some(
+          (link) =>
+            link &&
+            !allowedHostedMaterialLink(hostedMaterials, link) &&
+            !allowedOfficialPdfLink(hostedMaterials, link),
+        )
+      ) {
         errors.push(`Öffentlicher PDF-Verweis in ${relative}`);
       }
       if (/data:image\/(?:png|jpeg|jpg|webp|gif);base64,/iu.test(contents)) {

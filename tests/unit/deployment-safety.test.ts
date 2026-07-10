@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { mkdtemp, mkdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
@@ -15,15 +16,57 @@ describe('Deployment-Sicherheitsprüfung', () => {
     await rm(directory, { recursive: true, force: true });
   });
 
-  async function errorsFor(relative: string, contents: string | Uint8Array = '') {
+  async function errorsFor(
+    relative: string,
+    contents: string | Uint8Array = '',
+    manifest?: unknown[],
+  ) {
     const target = path.join(directory, relative);
     await mkdir(path.dirname(target), { recursive: true });
     await writeFile(target, contents);
-    return (await inspectDeploymentAssets(directory)).errors;
+    const manifestPath = path.join(directory, '..', 'hosted-materials-test.json');
+    if (manifest) await writeFile(manifestPath, JSON.stringify(manifest, null, 2));
+    return (await inspectDeploymentAssets(directory, manifest ? manifestPath : undefined)).errors;
+  }
+
+  function approvedHostedMaterial(relative: string, contents: string | Uint8Array) {
+    return {
+      materialId: 'test-material',
+      title: 'Freigegebenes Testmaterial',
+      sourceId: 'src-test',
+      documentType: 'exercise',
+      assetType: 'pdf',
+      assetPath: `/${relative}`,
+      officialUrl: null,
+      distributionBasis: 'explicit_permission',
+      rightsHolder: 'Testrechteinhaber',
+      permissionNote: 'Explizite Testfreigabe für das Manifest.',
+      licenseName: null,
+      licenseUrl: null,
+      sha256: createHash('sha256').update(contents).digest('hex'),
+      publicationStatus: 'approved',
+    };
   }
 
   it('lehnt PDF-Dateien ab', async () => {
     expect(await errorsFor('quelle.pdf')).toContain('Private Binärdatei im Deployment: quelle.pdf');
+  });
+
+  it('erlaubt Hosted Material nur mit genehmigtem Manifest und passendem Hash', async () => {
+    const contents = new Uint8Array([37, 80, 68, 70]);
+    const relative = 'materials-approved/test.pdf';
+    expect(await errorsFor(relative, contents)).toContain(
+      'Nicht genehmigtes Hosted Material im Deployment: materials-approved/test.pdf',
+    );
+    expect(
+      await errorsFor(relative, contents, [approvedHostedMaterial(relative, contents)]),
+    ).toEqual([]);
+    const wrongManifest = [
+      { ...approvedHostedMaterial(relative, contents), sha256: '0'.repeat(64) },
+    ];
+    expect(await errorsFor(relative, contents, wrongManifest)).toContain(
+      'Hosted-Material-Hash stimmt nicht: materials-approved/test.pdf',
+    );
   });
 
   it('lehnt einen als PNG abgelegten Quellscan ab', async () => {
@@ -110,5 +153,30 @@ describe('Deployment-Sicherheitsprüfung', () => {
     expect(
       await errorsFor('assets/app.js', 'const marker = "solutionBeforeSubmission";'),
     ).toContain('Referenzlösung vor Abgabe im Deployment: assets/app.js');
+  });
+
+  it('erlaubt PDF-Links nur auf genehmigte Hosted- oder offizielle Public-URL-Materialien', async () => {
+    const contents = new Uint8Array([37, 80, 68, 70]);
+    const hosted = approvedHostedMaterial('materials-approved/test.pdf', contents);
+    const official = {
+      ...hosted,
+      materialId: 'official-public-url',
+      assetPath: null,
+      officialUrl: 'https://example.edu/material.pdf',
+      distributionBasis: 'official_public_url',
+      sha256: null,
+    };
+    expect(
+      await errorsFor(
+        'index.html',
+        '<a href="/materials-approved/test.pdf">Quelle</a><a href="https://example.edu/material.pdf">Offiziell</a>',
+        [hosted, official],
+      ),
+    ).toEqual([]);
+    expect(
+      (await errorsFor('index.html', '<a href="/materials-approved/test.pdf">Quelle</a>')).some(
+        (error) => error.includes('PDF-Verweis in index.html'),
+      ),
+    ).toBe(true);
   });
 });

@@ -1,3 +1,5 @@
+# Archived: local source indexing was removed in 1.0.0-rc.7.
+
 # Performance Report Phase 20
 
 Version: `1.0.0-rc.6`  

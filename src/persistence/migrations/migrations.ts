@@ -1,6 +1,20 @@
 import type { IDBPDatabase, IDBPTransaction, StoreNames } from 'idb';
 import type { AlgoDatDatabase } from '../database/schema';
 
+type LegacyObjectStore = {
+  createIndex(name: string, keyPath: string | string[], options?: IDBIndexParameters): unknown;
+};
+
+type LegacyMigrationDatabase = {
+  objectStoreNames: DOMStringList;
+  createObjectStore(name: string): LegacyObjectStore;
+  deleteObjectStore(name: string): void;
+};
+
+function legacy(database: IDBPDatabase<AlgoDatDatabase>): LegacyMigrationDatabase {
+  return database as unknown as LegacyMigrationDatabase;
+}
+
 export interface Migration {
   version: number;
   upgrade: (
@@ -101,7 +115,7 @@ export const migrations: Migration[] = [
   {
     version: 11,
     upgrade(database) {
-      const localDocuments = database.createObjectStore('localDocuments');
+      const localDocuments = legacy(database).createObjectStore('localDocuments');
       localDocuments.createIndex('by-source', 'sourceId');
       localDocuments.createIndex('by-updated', 'updatedAt');
     },
@@ -109,11 +123,29 @@ export const migrations: Migration[] = [
   {
     version: 12,
     upgrade(database) {
-      if (!database.objectStoreNames.contains('localTaskRegions')) {
-        const localTaskRegions = database.createObjectStore('localTaskRegions');
+      const legacyDatabase = legacy(database);
+      if (!legacyDatabase.objectStoreNames.contains('localTaskRegions')) {
+        const localTaskRegions = legacyDatabase.createObjectStore('localTaskRegions');
         localTaskRegions.createIndex('by-source', 'sourceId');
         localTaskRegions.createIndex('by-region', 'regionId');
         localTaskRegions.createIndex('by-updated', 'updatedAt');
+      }
+    },
+  },
+  {
+    version: 13,
+    upgrade(database) {
+      const legacyDatabase = legacy(database);
+      const removedLocalSourceStores = [
+        'localDocuments',
+        'localTaskRegions',
+        'privateExtractionCache',
+        'localFileHandles',
+      ];
+      for (const storeName of removedLocalSourceStores) {
+        if (legacyDatabase.objectStoreNames.contains(storeName)) {
+          legacyDatabase.deleteObjectStore(storeName);
+        }
       }
     },
   },

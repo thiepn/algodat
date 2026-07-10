@@ -2,6 +2,7 @@ import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { examLibrary } from '../../content/loaders/exam-library';
 import { sources } from '../../content/loaders/sources';
 import type { SafeExamQuestion } from '../../domain/study-content/types';
+import { getIndexedExamTask } from '../documents/source-task-index';
 import { NextLearningActions } from '../study-content/NextLearningActions';
 
 function sourceLabel(sourceId: string): string {
@@ -80,9 +81,6 @@ export function ExamLibraryIndexPage() {
               </p>
               <Link className="button-link" to={`/klausuren/${exam.id}`}>
                 Details öffnen
-              </Link>
-              <Link className="button-link" to={`/klausuren/${exam.id}/original`}>
-                Originalseiten öffnen
               </Link>
             </article>
           ))}
@@ -227,23 +225,15 @@ export function ExamDetailPage() {
                 <small>{task.points ?? 'Punkte unbekannt'} Punkte</small>
                 <div className="button-row">
                   <Link to={`/aufgaben/${task.number}`}>Lernhub</Link>
-                  <Link to={`/klausuren/${exam.id}/aufgabe/${task.number}/original`}>
-                    Originalaufgabe anzeigen
-                  </Link>
+                  {task.questionId && (
+                    <Link to={`/klausuren/${exam.id}/aufgabe/${task.questionId}`}>Details</Link>
+                  )}
                 </div>
               </div>
             </article>
           ))}
         </div>
       </section>
-      <div className="button-row">
-        <Link className="button-link" to={`/klausuren/${exam.id}/original`}>
-          Originalklausur lokal öffnen
-        </Link>
-        <Link className="button-link" to="/dokumente/verbinden">
-          Dokument verbinden
-        </Link>
-      </div>
       <section className="panel">
         <h2>Quellenbezug</h2>
         <p>
@@ -251,14 +241,21 @@ export function ExamDetailPage() {
             ? exam.sourceRefs.map((ref) => `${sourceLabel(ref.sourceId)} S. ${ref.page}`).join(', ')
             : 'Für dieses Korpusereignis ist kein veröffentlichbarer Quellenbezug hinterlegt.'}
         </p>
+        <p className="notice">Originaldokument nicht öffentlich eingebunden.</p>
       </section>
     </div>
   );
 }
 
 export function ExamQuestionDetailPage() {
-  const { questionId } = useParams();
-  const question = examLibrary.questions.find((candidate) => candidate.id === questionId);
+  const { examId, questionId } = useParams();
+  const question = examLibrary.questions.find(
+    (candidate) =>
+      candidate.id === questionId ||
+      (candidate.examId === examId && String(candidate.taskNumber) === questionId),
+  );
+  const indexedTask =
+    question?.examId && question?.id ? getIndexedExamTask(question.examId, question.id) : null;
   if (!question)
     return (
       <section>
@@ -295,23 +292,6 @@ export function ExamQuestionDetailPage() {
         ]}
       />
       <div className="button-row">
-        <Link
-          className="button-link"
-          to={`/klausuren/${question.examId}/aufgabe/${question.id}/original`}
-        >
-          Originalaufgabe anzeigen
-        </Link>
-        <Link className="button-link" to="/dokumente/verbinden">
-          Originalseite öffnen
-        </Link>
-        {question.officialSolutionAvailable && (
-          <Link
-            className="button-link"
-            to={`/klausuren/${question.examId}/aufgabe/${question.id}/original`}
-          >
-            Lösung anzeigen
-          </Link>
-        )}
         <Link className="button-link" to={`/klausuren/fragen?aufgabe=${question.taskNumber}`}>
           Ähnliche Aufgaben
         </Link>
@@ -355,8 +335,23 @@ export function ExamQuestionDetailPage() {
               ))}
             </ul>
           </details>
+          <p className="notice">Originaldokument nicht öffentlich eingebunden.</p>
         </section>
       </div>
+      <section className="panel">
+        <h2>Autorisierte Übungsvariante</h2>
+        <p>
+          {indexedTask?.authoredPracticeVariant ??
+            'Übe denselben Aufgabenslot mit einer kleinen selbstgewählten Instanz und dokumentiere Methode, Zwischenschritte und Laufzeit.'}
+        </p>
+      </section>
+      <section className="panel">
+        <h2>Lösungsskizze</h2>
+        <p>
+          {indexedTask?.authoredSolutionOutline ??
+            'Leite zuerst die geforderte Methode aus den Metadaten ab, notiere eine vollständige Begründung und vergleiche anschließend mit den passenden Lernmodulen.'}
+        </p>
+      </section>
       <section className="panel">
         <h2>Themen-Tags</h2>
         <div className="evidence-chips">

@@ -1,8 +1,13 @@
 import { afterEach, describe, expect, it } from 'vitest';
+import { deleteDB, openDB } from 'idb';
 import { content } from '../../src/content/loaders/content';
 import { createExamSession, createRecoverySnapshot } from '../../src/domain/exam-simulator';
 import { getDatabase, resetDatabase } from '../../src/persistence/database/database';
-import { DATABASE_VERSION, PersistenceExportSchema } from '../../src/persistence/database/schema';
+import {
+  DATABASE_NAME,
+  DATABASE_VERSION,
+  PersistenceExportSchema,
+} from '../../src/persistence/database/schema';
 import { exportProgress, importProgress } from '../../src/persistence/database/transfer';
 import {
   cheatSheetRepository,
@@ -37,6 +42,54 @@ describe('IndexedDB-Grundlage', () => {
         'cheatSheets',
         'preferences',
       ]),
+    );
+  });
+
+  it('migriert Version 13 ohne lokale PDF-Stores und ohne Lernfortschritt zu verlieren', async () => {
+    await deleteDB(DATABASE_NAME);
+    const oldDatabase = await openDB(DATABASE_NAME, 12, {
+      upgrade(database) {
+        for (const storeName of [
+          'studySessions',
+          'practiceAttempts',
+          'masteryRecords',
+          'errorRecords',
+          'preferences',
+          'examSessions',
+          'examSnapshots',
+          'examResults',
+          'diagnosticSessions',
+          'studyPlans',
+          'studyPlanSettings',
+          'reviewSchedules',
+          'cheatSheets',
+          'localDocuments',
+          'localTaskRegions',
+        ]) {
+          if (!database.objectStoreNames.contains(storeName)) database.createObjectStore(storeName);
+        }
+      },
+    });
+    await oldDatabase.put(
+      'preferences',
+      {
+        id: 'preferences',
+        selectedExamProfileId: 'klausur-2021',
+        reducedMotion: true,
+        updatedAt: '2026-07-10T00:00:00.000Z',
+      },
+      'preferences',
+    );
+    await oldDatabase.put('localDocuments', { id: 'private-pdf-binding' }, 'private-pdf-binding');
+    await oldDatabase.put('localTaskRegions', { id: 'private-region' }, 'private-region');
+    oldDatabase.close();
+
+    const migrated = await getDatabase();
+    expect(migrated.version).toBe(DATABASE_VERSION);
+    expect([...migrated.objectStoreNames]).not.toContain('localDocuments');
+    expect([...migrated.objectStoreNames]).not.toContain('localTaskRegions');
+    expect((await preferencesRepository.get('preferences'))?.selectedExamProfileId).toBe(
+      'klausur-2021',
     );
   });
 

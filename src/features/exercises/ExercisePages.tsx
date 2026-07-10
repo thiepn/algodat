@@ -1,33 +1,18 @@
 import { Link, useParams } from 'react-router-dom';
-import { hrefForResource, trainerPath } from '../study-content/resource-links';
-import { OriginalTaskView } from '../documents/OriginalTaskView';
+import { hrefForResource, labelForResource, trainerPath } from '../study-content/resource-links';
 import {
   exerciseSheets,
   getExerciseSheet,
   getExerciseTask,
-  getSourceTaskRegion,
   sourceTitle,
   topicNames,
 } from '../documents/source-task-index';
-import { useEffect, useState } from 'react';
-import type { LocalDocumentBinding } from '../../persistence/database/schema';
-import { listLocalDocuments } from '../documents/local-document-service';
 
-function useBindings() {
-  const [bindings, setBindings] = useState<LocalDocumentBinding[]>([]);
-  useEffect(() => void listLocalDocuments().then(setBindings), []);
-  return bindings;
-}
-
-function connectionLabel(bindings: LocalDocumentBinding[], sourceId: string | null) {
-  if (!sourceId) return 'Keine Quelle zugeordnet';
-  return bindings.some((binding) => binding.sourceId === sourceId)
-    ? 'Lokale PDF verbunden'
-    : 'Lokale PDF nicht verbunden';
+function hostedMaterialNotice() {
+  return 'Originaldokument nicht öffentlich eingebunden.';
 }
 
 export function ExerciseIndexPage() {
-  const bindings = useBindings();
   const taskCount = exerciseSheets.reduce((sum, sheet) => sum + sheet.taskCount, 0);
   return (
     <div className="page-flow">
@@ -35,8 +20,8 @@ export function ExerciseIndexPage() {
         <p className="eyebrow">Üben</p>
         <h1>Übungen und Übungsblätter</h1>
         <p>
-          Sichere Metadaten zu Übungsblättern. Originalseiten erscheinen erst, wenn du die
-          entsprechende PDF lokal verbindest.
+          Sichere, öffentlich geeignete Metadaten zu Übungsblättern. Private PDFs werden nicht lokal
+          verbunden, nicht gerendert und nicht als Originalseiten angezeigt.
         </p>
       </header>
 
@@ -47,11 +32,11 @@ export function ExerciseIndexPage() {
         </article>
         <article>
           <strong>{taskCount}</strong>
-          <span>indizierte Aufgaben</span>
+          <span>aufbereitete Aufgaben</span>
         </article>
         <article>
-          <strong>{bindings.length}</strong>
-          <span>lokal verbundene PDFs</span>
+          <strong>0</strong>
+          <span>öffentlich eingebundene Originale</span>
         </article>
       </section>
 
@@ -66,25 +51,18 @@ export function ExerciseIndexPage() {
                 </p>
                 <h2>{sheet.title}</h2>
                 <p>
-                  {sheet.taskCount} Aufgaben · {names.slice(0, 4).join(', ') || 'Themen offen'} ·{' '}
-                  {connectionLabel(bindings, sheet.sourceId)}
+                  {sheet.taskCount} Aufgaben · {names.slice(0, 4).join(', ') || 'Themen offen'}
                 </p>
-                <p>
-                  Lösung:{' '}
-                  {sheet.solutionSourceId
-                    ? `${sourceTitle(sheet.solutionSourceId)} · ${connectionLabel(
-                        bindings,
-                        sheet.solutionSourceId,
-                      )}`
-                    : 'keine sichere Lösungsquelle zugeordnet'}
+                <p className="quiet">
+                  Quelle: {sourceTitle(sheet.sourceId)} · {hostedMaterialNotice()}
                 </p>
               </div>
               <div className="button-row">
                 <Link className="button-link" to={`/uebungen/${sheet.id}`}>
                   Blatt öffnen
                 </Link>
-                <Link className="button-link" to={`/dokumente/verbinden?source=${sheet.sourceId}`}>
-                  Dokument verbinden
+                <Link className="button-link" to="/quellen">
+                  Quellen prüfen
                 </Link>
               </div>
             </article>
@@ -97,7 +75,6 @@ export function ExerciseIndexPage() {
 
 export function ExerciseSheetPage() {
   const { sheetId } = useParams();
-  const bindings = useBindings();
   const sheet = sheetId ? getExerciseSheet(sheetId) : undefined;
   if (!sheet) {
     return (
@@ -116,11 +93,8 @@ export function ExerciseSheetPage() {
         <p className="eyebrow">{sheet.semester}</p>
         <h1>{sheet.title}</h1>
         <p>
-          {sheet.taskCount} Aufgaben · Original: {connectionLabel(bindings, sheet.sourceId)} ·
-          Lösung:{' '}
-          {sheet.solutionSourceId
-            ? connectionLabel(bindings, sheet.solutionSourceId)
-            : 'nicht zugeordnet'}
+          {sheet.taskCount} Aufgaben · Quelle: {sourceTitle(sheet.sourceId)} ·{' '}
+          {hostedMaterialNotice()}
         </p>
       </header>
 
@@ -129,12 +103,12 @@ export function ExerciseSheetPage() {
         <div className="button-row">
           {sheet.moduleIds.slice(0, 4).map((moduleId) => (
             <Link className="button-link" key={moduleId} to={hrefForResource(`module:${moduleId}`)}>
-              Lernmodul
+              {labelForResource(`module:${moduleId}`)}
             </Link>
           ))}
           {sheet.trainerIds.slice(0, 4).map((trainerId) => (
             <Link className="button-link" key={trainerId} to={trainerPath(trainerId)}>
-              Trainer
+              Trainer starten
             </Link>
           ))}
         </div>
@@ -151,10 +125,11 @@ export function ExerciseSheetPage() {
                   Seite {task.pageStart} · {topicNames(task.topicIds).join(', ') || 'Themen offen'}{' '}
                   · {task.expectedMethod}
                 </p>
+                <p className="quiet">{task.authoredSummary}</p>
               </div>
               <div className="button-row">
                 <Link className="button-link" to={`/uebungen/${sheet.id}/aufgabe/${task.id}`}>
-                  Originalaufgabe anzeigen
+                  Aufgabe öffnen
                 </Link>
                 {task.trainerIds[0] && (
                   <Link className="button-link" to={trainerPath(task.trainerIds[0])}>
@@ -173,7 +148,6 @@ export function ExerciseSheetPage() {
 export function ExerciseTaskPage() {
   const { sheetId, taskId } = useParams();
   const task = sheetId && taskId ? getExerciseTask(sheetId, taskId) : null;
-  const region = getSourceTaskRegion(task?.regionId);
   if (!task || !sheetId) {
     return (
       <div className="page-flow">
@@ -182,15 +156,75 @@ export function ExerciseTaskPage() {
       </div>
     );
   }
+  const names = topicNames(task.topicIds);
   return (
-    <OriginalTaskView
-      fallbackBackLink={`/uebungen/${sheetId}`}
-      moduleIds={task.moduleIds}
-      region={region}
-      taskNumber={task.taskNumber}
-      title={`Übungsaufgabe ${task.taskNumber}`}
-      topicIds={task.topicIds}
-      trainerIds={task.trainerIds}
-    />
+    <div className="page-flow">
+      <Link className="back-link" to={`/uebungen/${sheetId}`}>
+        ← Übungsblatt
+      </Link>
+      <header className="page-header">
+        <p className="eyebrow">Übungsaufgabe</p>
+        <h1>Aufgabe {task.taskNumber}</h1>
+        <p>
+          {names.join(', ') || 'Themen offen'} · Quelle: {sourceTitle(task.sourceId)} · Seite{' '}
+          {task.pageStart}
+        </p>
+      </header>
+
+      <section className="panel">
+        <h2>Aufgabenzusammenfassung</h2>
+        <p>{task.authoredSummary}</p>
+        <p className="notice">{hostedMaterialNotice()}</p>
+      </section>
+
+      <section className="panel">
+        <h2>Bearbeitungsart</h2>
+        <dl className="metadata-list">
+          <div>
+            <dt>Methode</dt>
+            <dd>{task.expectedMethod}</dd>
+          </div>
+          <div>
+            <dt>Teilaufgaben</dt>
+            <dd>{task.subtasks.join(', ')}</dd>
+          </div>
+          <div>
+            <dt>Lösungsquelle</dt>
+            <dd>
+              {task.solutionSourceId ? sourceTitle(task.solutionSourceId) : 'nicht öffentlich'}
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section className="panel">
+        <h2>Autorisierte Übungsvariante</h2>
+        <p>{task.authoredPracticeVariant}</p>
+      </section>
+
+      <section className="panel">
+        <h2>Lösungsskizze</h2>
+        <p>{task.authoredSolutionOutline}</p>
+      </section>
+
+      <section className="panel">
+        <h2>Lernressourcen</h2>
+        <div className="button-row">
+          {task.moduleIds.slice(0, 4).map((moduleId) => (
+            <Link className="button-link" key={moduleId} to={hrefForResource(`module:${moduleId}`)}>
+              {labelForResource(`module:${moduleId}`)}
+            </Link>
+          ))}
+          {task.trainerIds.slice(0, 4).map((trainerId) => (
+            <Link className="button-link" key={trainerId} to={trainerPath(trainerId)}>
+              Trainer starten
+            </Link>
+          ))}
+          <Link className="button-link" to="/lernplan/heute">
+            Zum Lernplan hinzufügen
+          </Link>
+        </div>
+      </section>
+    </div>
   );
 }

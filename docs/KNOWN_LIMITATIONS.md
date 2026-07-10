@@ -1,13 +1,15 @@
 # Known Limitations
 
-## Phase 20
+## Phase 20.1
 
-- Die App bleibt `1.0.0-rc.6`; der reale Screenreader-Gate ist weiterhin offen.
-- Exakte Crop-Rechtecke werden für viele alte Dokumente zunächst als sichere Vollseitenregionen
-  oder lokal nutzerindexierte Regionen geführt. Präzisere Ausschnitte müssen lokal geprüft und
-  nur als normalisierte Metadaten übernommen werden.
-- Die neuen Coverage-Reports inventarisieren alle bekannten Quellen, ersetzen aber keine fachliche
-  Sichtprüfung der privaten PDFs.
+- Die App bleibt `1.0.0-rc.7`; der reale Screenreader-Gate ist weiterhin offen.
+- Die lokale Dokumentbibliothek und alle lokalen PDF-/Crop-/Originalseitenansichten wurden
+  entfernt. Alte `/dokumente`-URLs leiten auf `/quellen` um.
+- Es gibt initial keine genehmigten eingebetteten Originalmaterialien. Künftige Materialien
+  benötigen `data/hosted-materials.json`, Rechte-/Lizenzmetadaten, Status `approved` und bei
+  kopierten Assets einen passenden SHA-256-Hash unter `public/materials-approved/`.
+- Die archivierten Phase-19/20-Coverage-Reports ersetzen keine fachliche Sichtprüfung der
+  privaten PDFs und sind kein aktives Produktfeature mehr.
 - Bellman-Ford und Kruskal werden erst als vollständige Module freigegeben, wenn die Quellenlage im Produktmodell belastbar bestätigt ist.
 - Der Simulator nutzt keine JSON-Eingabe mehr, aber die vollständige direkte Einbettung aller spezialisierten Trainer-Renderer in Exam-Mode bleibt Folgearbeit.
 - Ergebnisberichte enthalten Lernhinweise und Rubrikpunkte; vollständig ausgearbeitete Modellantworten sind noch nicht für jeden Adapter gleich tief.

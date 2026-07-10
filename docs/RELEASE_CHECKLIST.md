@@ -1,17 +1,24 @@
 # Release Checklist
 
-## Phase 20 / 1.0.0-rc.6
+## Phase 20.1 / 1.0.0-rc.7
 
-- [x] Version bleibt `1.0.0-rc.6`, nicht `1.0.0`.
-- [x] `data/source-task-coverage.json` enthält nur sichere Metadaten.
-- [x] `data/source-region-validation-report.json` validiert Aufgaben-, Lösungs- und Crop-Regeln.
-- [x] `/dokumente/abdeckung` bietet lokale Metadaten-Suche.
-- [x] `/dokumente/indexierung/qualitaet` trennt Vollseiten-Fallbacks von präzisen Crops.
-- [x] `/dokumente/indexierung` bietet Aufgabenliste, Nachbar-Navigation, Undo/Redo, Lösungsmapping,
-  Side-by-side-Vorschau, Tastaturjustage und Speichern-und-weiter.
+- [x] Version bleibt `1.0.0-rc.7`, nicht `1.0.0`.
+- [x] Lokale Dokumentbibliothek, lokale PDF-Verknüpfungen, Originalseitenrouten und Crop-Werkzeuge
+  sind entfernt.
+- [x] Alte `/dokumente`-URLs leiten auf `/quellen` um; alte Originalrouten leiten auf die
+  jeweiligen Metadatenseiten um.
+- [x] IndexedDB-Version 13 entfernt `localDocuments`, `localTaskRegions` und optionale private
+  Cache-/Handle-Stores, ohne Lernfortschritt zu löschen.
+- [x] `data/hosted-materials.json` existiert mit leerem Startzustand und ausführbarem Schema.
+- [x] Deployment-Safety erlaubt Hosted Materials nur mit genehmigtem Manifest, Rechtemetadaten,
+  passendem Hash und Pfad unter `materials-approved/`.
 - [ ] Realer Screenreader-Gate bleibt offen.
 
-## Phase 19 / 1.0.0-rc.5
+## Phase 20 / 1.0.0-rc.6 archiviert
+
+- [x] Phase-20-Quellenabdeckung und Crop-Berichte sind historisch archiviert.
+
+## Phase 19 / 1.0.0-rc.5 archiviert
 
 - [x] Version bleibt `1.0.0-rc.5`, nicht `1.0.0`.
 - [x] Übungen, Altklausuren und Aufgabenregionen sind als sichere Metadaten indexiert.
@@ -43,9 +50,9 @@
 - [x] Gezielte neue Tests.
 - [x] Accessibility-Fallback-E2E für Keyboard, Fokus, axe, Accessibility Tree, Zoom/Reflow, Forced Colors, Reduced Motion und Spickzettel-Druckroute.
 - [x] Accessibility-Auditdaten gegen ausführbare Schemas validiert.
-- [ ] Vollständiges `npm.cmd run verify` nach der letzten Änderung.
-- [ ] Bundle-Analyse nach finalem Build.
-- [ ] Deployment-Audit nach finalem Build.
+- [x] Vollständiges `npm.cmd run verify` nach der letzten Änderung.
+- [x] Bundle-Analyse nach finalem Build.
+- [x] Deployment-Audit nach finalem Build.
 
 ## Manuell
 

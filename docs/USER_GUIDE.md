@@ -1,5 +1,15 @@
 # Nutzerhandbuch
 
+## Quellen und Originalmaterialien
+
+Die frühere lokale Dokumentbibliothek wurde entfernt. Öffne `/quellen`, um sichere
+Quellenmetadaten, Themen, Übungs-/Klausurbezüge, Module und Trainer zu sehen. Wenn künftig ein
+Originalmaterial ausdrücklich freigegeben ist, erscheint dort ein genehmigter öffentlicher Link.
+Ohne Freigabe zeigt die App: „Originaldokument nicht öffentlich eingebunden.“
+
+Nach dem Update kann einmalig der Hinweis erscheinen, dass lokale PDF-Verknüpfungen und
+Ausschnittdaten gelöscht wurden. Dein Lernfortschritt bleibt davon getrennt.
+
 ## Start
 
 Öffne die App lokal oder als PWA. Beginne mit Diagnose, Lernplan oder Trainerübersicht.

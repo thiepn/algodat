@@ -1,3 +1,5 @@
+# Archived: local source indexing was removed in 1.0.0-rc.7.
+
 # Phase 20 Region Quality Report
 
 Version: `1.0.0-rc.6`  
