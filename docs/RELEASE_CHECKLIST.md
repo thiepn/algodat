@@ -24,3 +24,10 @@
 ## Finalfreigabe
 
 `1.0.0` bleibt gesperrt, bis der echte Screenreader-Gate erfüllt oder ausdrücklich als offene Einschränkung akzeptiert wurde.
+# Phase 17 Release Checklist
+
+- [ ] `npm.cmd run format:check`
+- [ ] `npm.cmd run verify`
+- [ ] Build-Artefakte enthalten keine privaten PDFs, lokalen Pfade oder PDF-Links.
+- [ ] Live-Smoke für `/`, `/aufgaben/3`, `/themen`, `/klausuren`, `/klausuren/fragen`, `/klausuren/vergleich`.
+- [ ] Screenreader-Gate bleibt als offen dokumentiert; keine Version `1.0.0`.

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase17-rc3",
+  "nodes": [
+    { "id": "route:/aufgaben", "kind": "route", "label": "Aufgaben 1–9" },
+    { "id": "route:/themen", "kind": "route", "label": "Themenindex" },
+    { "id": "route:/klausuren", "kind": "route", "label": "Klausurenbibliothek" },
+    { "id": "route:/trainer", "kind": "route", "label": "Trainer" },
+    { "id": "diagnose:schnellcheck", "kind": "diagnostic", "label": "Schnellcheck" },
+    { "id": "diagnose:standard", "kind": "diagnostic", "label": "Standarddiagnose" },
+    { "id": "trainer:trainer-rucksack-dp-v1", "kind": "trainer", "label": "Rucksack-DP" },
+    { "id": "trainer:trainer-union-find-listen-v1", "kind": "trainer", "label": "Union-Find mit Listen" },
+    { "id": "trainer:trainer-schleifeninvariante-summe-v1", "kind": "trainer", "label": "Schleifeninvariante" },
+    { "id": "trainer:trainer-rekurrenz-master-fall1-v1", "kind": "trainer", "label": "Rekurrenz Master-Fall 1" },
+    { "id": "trainer:trainer-dp-entwurf-mine-v1", "kind": "trainer", "label": "DP-Entwurf Mine" },
+    { "id": "trainer:trainer-greedy-entwurf-fitnesspunkte-v1", "kind": "trainer", "label": "Greedy-Entwurf Fitnesspunkte" },
+    { "id": "trainer:trainer-rot-schwarz-einfuegen-v1", "kind": "trainer", "label": "Rot-Schwarz-Einfügen" },
+    { "id": "trainer:trainer-graph-floyd-warshall-v1", "kind": "trainer", "label": "Floyd-Warshall" },
+    { "id": "trainer:trainer-graph-dijkstra-v1", "kind": "trainer", "label": "Dijkstra" },
+    { "id": "trainer:trainer-graph-prim-mst-v1", "kind": "trainer", "label": "Prim-MST" },
+    { "id": "trainer:trainer-dc-entwurf-maxwertdifferenz-v1", "kind": "trainer", "label": "D&C Maxwertdifferenz" }
+  ],
+  "edges": [
+    { "from": "route:/aufgaben", "to": "route:/klausuren", "relation": "showsHistoricalContext" },
+    { "from": "route:/aufgaben", "to": "route:/trainer", "relation": "startsPractice" },
+    { "from": "route:/themen", "to": "route:/aufgaben", "relation": "mapsToExamSlots" },
+    { "from": "route:/klausuren", "to": "route:/themen", "relation": "indexesTopics" },
+    { "from": "diagnose:schnellcheck", "to": "route:/trainer", "relation": "recommendsPractice" },
+    { "from": "diagnose:standard", "to": "route:/aufgaben", "relation": "prioritizesSlots" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-rucksack-dp-v1", "relation": "containsAction" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-union-find-listen-v1", "relation": "containsAction" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-schleifeninvariante-summe-v1", "relation": "containsAction" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-rekurrenz-master-fall1-v1", "relation": "containsAction" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-dp-entwurf-mine-v1", "relation": "containsAction" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-greedy-entwurf-fitnesspunkte-v1", "relation": "containsAction" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-rot-schwarz-einfuegen-v1", "relation": "containsAction" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-graph-floyd-warshall-v1", "relation": "containsAction" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-graph-dijkstra-v1", "relation": "containsAction" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-graph-prim-mst-v1", "relation": "containsAction" },
+    { "from": "route:/aufgaben", "to": "trainer:trainer-dc-entwurf-maxwertdifferenz-v1", "relation": "containsAction" }
+  ]
+}

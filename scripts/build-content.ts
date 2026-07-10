@@ -100,12 +100,16 @@ interface RawManifest {
 }
 interface RawExam {
   id: string;
+  kind?: string;
   year: number | null;
+  date?: string | null;
+  semester?: string | null;
   task_count: number;
   total_points: number | null;
   duration_minutes: number | null;
   confidence: string;
   question_source_id: string | null;
+  historicalFrequencyEligible?: boolean;
   tasks: Array<{
     number: number;
     points: number | null;
@@ -157,13 +161,79 @@ interface RawTopics {
   topics: RawTopic[];
 }
 interface RawQuestions {
-  questions: Array<{ verification_status: VerificationStatus; visualReviewDisposition?: string }>;
+  questions: Array<{
+    id: string;
+    source_id: string;
+    page: number;
+    year: number | null;
+    task_number: number | null;
+    subtask: string;
+    title: string;
+    topic_tags: string[];
+    difficulty: string;
+    expected_solution_method: string | null;
+    expected_runtime: string | null;
+    expected_proof_type: string | null;
+    official_solution_available: boolean;
+    solution_source_ids: string[];
+    source_authority_level: number;
+    duplicate_group_id: string | null;
+    exam_relevance: string;
+    verification_status: VerificationStatus;
+    evidenceType: string;
+    corpusEventId: string | null;
+    canonicalDocumentId: string;
+    historicalFrequencyEligible: boolean;
+    visualReviewDisposition?: string;
+  }>;
 }
 interface RawConflicts {
   conflicts: Array<{ status: string }>;
 }
 interface Validation {
   passed: boolean;
+}
+
+interface Phase17StudyModules {
+  schemaVersion: string;
+  contentVersion: string;
+  modules: Array<{
+    moduleId: string;
+    title: string;
+    topicIds: string[];
+    taskNumbers: number[];
+    trainerIds: string[];
+    diagnosticCompetencyIds: string[];
+    sourceRefs: Array<{ sourceId: string; page: number; label?: string }>;
+    publicDistributionStatus: string;
+  }>;
+}
+
+interface Phase17TaskMap {
+  schemaVersion: string;
+  contentVersion: string;
+  tasks: Array<{
+    taskNumber: number;
+    title: string;
+    examSlotIds: string[];
+    topicIds: string[];
+    trainerIds: string[];
+    diagnosticCompetencyIds: string[];
+    studyModuleIds: string[];
+    historicalQuestionIds: string[];
+    commonMistakeIds: string[];
+    coverageLevel: string;
+    actionableLearningResourceIds: string[];
+    recommendedOrder: string[];
+    sourceRefs: Array<{ sourceId: string; page: number }>;
+  }>;
+}
+
+interface Phase17LearningGraph {
+  schemaVersion: string;
+  contentVersion: string;
+  nodes: Array<{ id: string; kind: string; label: string }>;
+  edges: Array<{ from: string; to: string; relation: string }>;
 }
 
 const schemaVersion = '1.0.0';
@@ -180,6 +250,40 @@ function categoryForTopic(name: string): string {
   return 'Grundlagen und Beweise';
 }
 
+function assertPhase17LearningContent(
+  studyModules: Phase17StudyModules,
+  taskMap: Phase17TaskMap,
+  learningGraph: Phase17LearningGraph,
+): void {
+  const moduleIds = new Set(studyModules.modules.map((module) => module.moduleId));
+  const taskNumbers = new Set(taskMap.tasks.map((task) => task.taskNumber));
+  if (taskMap.tasks.length !== 9 || taskNumbers.size !== 9)
+    throw new Error('Phase 17 verlangt genau neun Aufgaben-Lernhubs.');
+  for (let taskNumber = 1; taskNumber <= 9; taskNumber += 1) {
+    const task = taskMap.tasks.find((candidate) => candidate.taskNumber === taskNumber);
+    if (!task) throw new Error(`Phase-17-Lernhub für Aufgabe ${taskNumber} fehlt.`);
+    if (task.actionableLearningResourceIds.length === 0)
+      throw new Error(`Aufgabe ${taskNumber} hat keine nächste Lernaktion.`);
+    const missingModule = task.studyModuleIds.find((moduleId) => !moduleIds.has(moduleId));
+    if (missingModule)
+      throw new Error(`Aufgabe ${taskNumber} referenziert ein fehlendes Modul: ${missingModule}`);
+    if (task.sourceRefs.length === 0)
+      throw new Error(`Aufgabe ${taskNumber} hat keinen Datei-/Seitenbezug.`);
+  }
+  for (const module of studyModules.modules) {
+    if (module.publicDistributionStatus !== 'public_safe')
+      throw new Error(`Lernmodul ${module.moduleId} ist nicht öffentlich freigegeben.`);
+    if (module.sourceRefs.length === 0)
+      throw new Error(`Lernmodul ${module.moduleId} hat keinen Datei-/Seitenbezug.`);
+  }
+  const graphNodeIds = new Set(learningGraph.nodes.map((node) => node.id));
+  const brokenEdge = learningGraph.edges.find(
+    (edge) => !graphNodeIds.has(edge.from) || !graphNodeIds.has(edge.to),
+  );
+  if (brokenEdge)
+    throw new Error(`Learning-Resource-Graph enthält eine gebrochene Kante: ${brokenEdge.from}`);
+}
+
 async function main(): Promise<void> {
   await mkdir(generatedDir, { recursive: true });
   const manifest = await readJson<RawManifest>(path.join(dataDir, 'source-manifest.json'));
@@ -187,6 +291,16 @@ async function main(): Promise<void> {
   const blueprint = await readJson<RawBlueprint>(path.join(dataDir, 'exam-blueprint.json'));
   const rawTopics = await readJson<RawTopics>(path.join(dataDir, 'topic-map.json'));
   const rawQuestions = await readJson<RawQuestions>(path.join(dataDir, 'question-inventory.json'));
+  const phase17StudyModules = await readJson<Phase17StudyModules>(
+    path.join(dataDir, 'study-modules.json'),
+  );
+  const phase17TaskMap = await readJson<Phase17TaskMap>(
+    path.join(dataDir, 'task-slot-learning-map.json'),
+  );
+  const phase17LearningGraph = await readJson<Phase17LearningGraph>(
+    path.join(dataDir, 'learning-resource-graph.json'),
+  );
+  assertPhase17LearningContent(phase17StudyModules, phase17TaskMap, phase17LearningGraph);
   const conflicts = await readJson<RawConflicts>(path.join(dataDir, 'source-conflicts.json'));
   const phase0 = await readJson<Validation>(path.join(dataDir, 'validation-results.json'));
   const phase0a = await readJson<Validation>(path.join(dataDir, 'phase0a-validation-results.json'));
@@ -237,6 +351,9 @@ async function main(): Promise<void> {
     'cheat-sheet-blocks.json',
     'cheat-sheet-presets.json',
     'cheat-sheet-layout-policy.json',
+    'study-modules.json',
+    'task-slot-learning-map.json',
+    'learning-resource-graph.json',
   ];
   const inputHashes = await Promise.all(
     inputNames.map((name) => sha256File(path.join(dataDir, name))),
@@ -734,6 +851,55 @@ async function main(): Promise<void> {
     frequencyPolicy: blueprint.frequencyPolicy,
     tasks: standardTasks,
   };
+  const safeExamLibrary = {
+    schemaVersion,
+    contentVersion,
+    publicationPolicy:
+      'Es werden nur Metadaten, Paraphrasen, Quellen-IDs und Seitenbezüge veröffentlicht; keine Original-PDFs, keine lokalen Pfade und keine vollständigen historischen Aufgabentexte.',
+    exams: exams.exams.map((exam) => ({
+      id: exam.id,
+      kind: exam.kind,
+      year: exam.year,
+      date: 'date' in exam ? exam.date : null,
+      semester: 'semester' in exam ? exam.semester : null,
+      taskCount: exam.task_count,
+      totalPoints: exam.total_points,
+      durationMinutes: exam.duration_minutes,
+      confidence: exam.confidence,
+      historicalFrequencyEligible:
+        'historicalFrequencyEligible' in exam ? exam.historicalFrequencyEligible : false,
+      sourceRefs: exam.question_source_id ? [{ sourceId: exam.question_source_id, page: 1 }] : [],
+      tasks: exam.tasks.map((task) => ({
+        questionId: `${exam.id}-aufgabe-${task.number}`,
+        number: task.number,
+        points: task.points,
+        topic: task.topic,
+        format: task.format,
+        requestedDeliverables: task.requested_deliverables,
+      })),
+    })),
+    questions: rawQuestions.questions.map((question) => ({
+      id: question.id,
+      examId: question.corpusEventId,
+      taskNumber: question.task_number,
+      subtask: question.subtask,
+      paraphrasedTitle: question.title,
+      topicTags: question.topic_tags,
+      difficulty: question.difficulty,
+      expectedSolutionMethod: question.expected_solution_method,
+      expectedRuntime: question.expected_runtime,
+      expectedProofType: question.expected_proof_type,
+      officialSolutionAvailable: question.official_solution_available,
+      sourceAuthorityLevel: question.source_authority_level,
+      duplicateGroupId: question.duplicate_group_id,
+      examRelevance: question.exam_relevance,
+      verificationStatus: question.verification_status,
+      evidenceType: question.evidenceType,
+      historicalFrequencyEligible: question.historicalFrequencyEligible,
+      sourceRefs: [{ sourceId: question.source_id, page: question.page }],
+      solutionSourceIds: question.solution_source_ids,
+    })),
+  };
   const outputs: Record<string, unknown> = {
     'sources.json': sources,
     'exam-profiles.json': profiles,
@@ -787,6 +953,10 @@ async function main(): Promise<void> {
     'cheat-sheet-blocks.json': cheatSheetBlocks,
     'cheat-sheet-presets.json': cheatSheetPresets,
     'cheat-sheet-layout-policy.json': cheatSheetLayoutPolicy,
+    'study-modules.json': { ...phase17StudyModules, contentVersion },
+    'task-slot-learning-map.json': { ...phase17TaskMap, contentVersion },
+    'learning-resource-graph.json': { ...phase17LearningGraph, contentVersion },
+    'exam-library.json': safeExamLibrary,
   };
   for (const [name, value] of Object.entries(outputs))
     await writeJson(path.join(generatedDir, name), value);

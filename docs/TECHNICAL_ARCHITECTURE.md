@@ -89,3 +89,6 @@ Der A4-Spickzettel ist als eigene Domänenschicht implementiert:
 - Persistenz: `cheatSheets` in IndexedDB-Version 10
 
 Auswahl und Packing sind deterministisch. Der Spickzettel wird lazy geladen und nicht in den allgemeinen Content-Loader aufgenommen.
+# Phase 17 Architekturergänzung
+
+`scripts/build-content.ts` validiert die neuen Lernressourcen und erzeugt die sichere Klausurenbibliothek. Die UI konsumiert diese Daten über `src/content/loaders/study-content.ts`. Die Klausurenfamilie ist route-lazy implementiert, damit die initiale AppShell nicht die gesamte Fragenbibliothek rendern muss.

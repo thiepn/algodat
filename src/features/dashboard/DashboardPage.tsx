@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { usePreferences } from '../../app/providers/PreferencesProvider';
 import { coreContent as content } from '../../content/loaders/core';
+import { taskSlotLearningMap } from '../../content/loaders/study-content';
 import { studySessionRepository } from '../../persistence/repositories';
 import { StatusBadge } from '../../ui/components/StatusBadge';
 
@@ -23,11 +24,11 @@ export function DashboardPage() {
     <div className="page-flow">
       <section className="hero hero--dashboard">
         <div>
-          <p className="eyebrow">Vertikaler Lernpfad verfügbar</p>
+          <p className="eyebrow">Lernsystem 1.0.0-rc.3</p>
           <h1>Dein ruhiger Ausgangspunkt für AlgoDat</h1>
           <p>
-            Ein vollständig verifizierter Rucksack-DP-Trainer erfasst jetzt aktive Bearbeitungen,
-            Fehler und nachvollziehbare Beherrschung lokal auf diesem Gerät.
+            Aufgaben 1–9, Themen, Klausurenbibliothek, Diagnose, Lernplan und alle elf Trainer sind
+            miteinander verbunden. Die Screenreader-Freigabe bleibt bewusst offen.
           </p>
         </div>
         <label className="profile-select">
@@ -92,13 +93,35 @@ export function DashboardPage() {
         </section>
         <section className="panel panel--accent" aria-labelledby="next-action">
           <p className="eyebrow">Nächster sinnvoller Schritt</p>
-          <h2 id="next-action">Rucksack-DP aktiv tracen</h2>
-          <p>Bearbeite die Opt-Tabelle im Übungs-, Prüfungs- oder Wiederholungsmodus.</p>
-          <Link className="button-link" to="/trainer">
-            Trainer öffnen
+          <h2 id="next-action">Aufgaben-Hubs öffnen</h2>
+          <p>
+            {taskSlotLearningMap.tasks.length} Hubs verbinden jetzt Profile, Themen, Trainer und
+            alte Fragenmetadaten.
+          </p>
+          <Link className="button-link" to="/aufgaben">
+            Aufgaben 1–9 öffnen
           </Link>
         </section>
       </div>
+
+      <section className="panel">
+        <h2>Schnellzugriff</h2>
+        <div className="button-row">
+          <Link className="button-link" to="/klausuren">
+            Klausurenbibliothek
+          </Link>
+          <Link className="button-link" to="/diagnose">
+            Kompetenzcheck starten
+          </Link>
+          <Link className="button-link" to="/trainer">
+            Trainer
+          </Link>
+          <Link className="button-link" to="/lernplan">
+            Lernplan
+          </Link>
+        </div>
+      </section>
+
       <p className="quiet">
         Quellenbelege und Qualitätsstatus sind im <Link to="/quellen">Quellenbrowser</Link>{' '}
         nachvollziehbar.

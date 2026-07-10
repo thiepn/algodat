@@ -22,3 +22,11 @@ Alle Daten bleiben auf deinem Gerät. Es gibt keine Cloud-Sicherung.
 ## Grenzen
 
 Die App ist keine offizielle Notensimulation und bewertet keine beliebigen freien Lösungen.
+# Phase 17 Nutzung
+
+Empfohlener Einstieg:
+
+1. `/aufgaben` öffnen und den passenden Aufgabenhub wählen.
+2. Ein Lernmodul lesen oder direkt einen Trainer starten.
+3. Über `/klausuren/fragen?aufgabe=N` historische Metadaten vergleichen.
+4. Mit `/diagnose` Lücken prüfen und den Lernplan aktualisieren.

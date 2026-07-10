@@ -2,7 +2,7 @@
   {
     "id": "trainer-greedy-entwurf-fitnesspunkte-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-fd92529318c0",
+    "contentVersion": "phase16-8dc6433c95c7",
     "topicIds": [
       "topic-3e0e72f97f6e"
     ],
@@ -67,7 +67,7 @@
     "problem": {
       "id": "problem-greedy-fitnesspunkte-v1",
       "schemaVersion": "1.0.0",
-      "contentVersion": "phase16-fd92529318c0",
+      "contentVersion": "phase16-8dc6433c95c7",
       "topicIds": [
         "topic-3e0e72f97f6e"
       ],
@@ -149,7 +149,7 @@
       "variants": [
         {
           "id": "variant-greedy-fitnesspunkte-guided",
-          "contentVersion": "phase16-fd92529318c0",
+          "contentVersion": "phase16-8dc6433c95c7",
           "sourceRefs": [
             {
               "sourceId": "src-8a588d5ddc35",
@@ -217,7 +217,7 @@
         },
         {
           "id": "variant-greedy-fitnesspunkte-practice",
-          "contentVersion": "phase16-fd92529318c0",
+          "contentVersion": "phase16-8dc6433c95c7",
           "sourceRefs": [
             {
               "sourceId": "src-8a588d5ddc35",
@@ -288,7 +288,7 @@
         },
         {
           "id": "variant-greedy-fitnesspunkte-exam",
-          "contentVersion": "phase16-fd92529318c0",
+          "contentVersion": "phase16-8dc6433c95c7",
           "sourceRefs": [
             {
               "sourceId": "src-97414623dd81",
@@ -362,7 +362,7 @@
         },
         {
           "id": "variant-greedy-fitnesspunkte-review",
-          "contentVersion": "phase16-fd92529318c0",
+          "contentVersion": "phase16-8dc6433c95c7",
           "sourceRefs": [
             {
               "sourceId": "src-8a588d5ddc35",

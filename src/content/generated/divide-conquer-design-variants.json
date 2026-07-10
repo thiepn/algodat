@@ -1,7 +1,7 @@
 [
   {
     "id": "variant-dc-maxwertdifferenz-guided",
-    "contentVersion": "phase16-fd92529318c0",
+    "contentVersion": "phase16-8dc6433c95c7",
     "sourceRefs": [
       {
         "sourceId": "src-88179ac88dc5",
@@ -27,7 +27,7 @@
   },
   {
     "id": "variant-dc-maxwertdifferenz-practice",
-    "contentVersion": "phase16-fd92529318c0",
+    "contentVersion": "phase16-8dc6433c95c7",
     "sourceRefs": [
       {
         "sourceId": "src-88179ac88dc5",
@@ -54,7 +54,7 @@
   },
   {
     "id": "variant-dc-maxwertdifferenz-exam",
-    "contentVersion": "phase16-fd92529318c0",
+    "contentVersion": "phase16-8dc6433c95c7",
     "sourceRefs": [
       {
         "sourceId": "src-88179ac88dc5",
@@ -82,7 +82,7 @@
   },
   {
     "id": "variant-dc-maxwertdifferenz-review",
-    "contentVersion": "phase16-fd92529318c0",
+    "contentVersion": "phase16-8dc6433c95c7",
     "sourceRefs": [
       {
         "sourceId": "src-88179ac88dc5",

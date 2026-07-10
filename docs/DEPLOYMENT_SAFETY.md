@@ -23,3 +23,6 @@ Neue Service-Worker-Versionen werden angeboten, aber erst nach Bestätigung akti
 ## Veröffentlichungstor
 
 Eine Veröffentlichung ist nur zulässig, wenn `npm run verify` erfolgreich ist. Die Prüfung schützt das erzeugte Artefakt; eine zusätzliche Kontrolle der Hosting-Konfiguration bleibt vor der ersten Veröffentlichung erforderlich.
+# Phase 17 Deployment Safety
+
+Zusätzlich gilt: Produktionsartefakte dürfen `pdfs/`, lokale Benutzerpfade, Original-PDF-Links und vollständige historische Aufgabentexte nicht enthalten. `tests/unit/phase17-learning-resources.test.ts` prüft die neue Klausurenbibliothek auf diese Veröffentlichungskante.

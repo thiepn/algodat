@@ -42,3 +42,6 @@ Die Inhaltsversion ist aus dem normalisierten Build-Eingang abgeleitet. Dadurch 
 # Phase 16 Nachtrag
 
 Der Build liest zusätzlich `cheat-sheet-blocks.json`, `cheat-sheet-presets.json` und `cheat-sheet-layout-policy.json`. Die erzeugten Dateien werden in `content-manifest.json` gehasht und durch `validate-content` gegen Quellen-, Topic- und Public-Safe-Regeln geprüft.
+# Phase 17 Content Pipeline
+
+Die Pipeline erweitert den Build um Lernmodule, Task-Slot-Lernkarte, Ressourcen-Graph und eine bereinigte Klausurenbibliothek. Der Build bricht ab, wenn ein Aufgabenhub ohne Aktion, ein Modul ohne Quellenbezug oder eine gebrochene Graphkante entsteht.

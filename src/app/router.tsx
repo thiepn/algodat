@@ -3,7 +3,6 @@ import { AppLayout } from './layouts/AppLayout';
 import { DashboardPage } from '../features/dashboard/DashboardPage';
 import { DiagnosticsPage } from '../features/diagnostics/DiagnosticsPage';
 import { ExamProfilesPage } from '../features/exam-profiles/ExamProfilesPage';
-import { TaskDetailPage, TasksPage } from '../features/tasks/TasksPage';
 import { PlannedState } from '../ui/feedback/PlannedState';
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/u, '');
@@ -16,8 +15,52 @@ export const router = createBrowserRouter(
       children: [
         { index: true, element: <DashboardPage /> },
         { path: 'klausurprofile', element: <ExamProfilesPage /> },
-        { path: 'aufgaben', element: <TasksPage /> },
-        { path: 'aufgaben/:taskNumber', element: <TaskDetailPage /> },
+        {
+          path: 'klausuren',
+          lazy: async () => ({
+            Component: (await import('../features/exam-library/ExamLibraryPages'))
+              .ExamLibraryIndexPage,
+          }),
+        },
+        {
+          path: 'klausuren/fragen',
+          lazy: async () => ({
+            Component: (await import('../features/exam-library/ExamLibraryPages'))
+              .ExamQuestionListPage,
+          }),
+        },
+        {
+          path: 'klausuren/vergleich',
+          lazy: async () => ({
+            Component: (await import('../features/exam-library/ExamLibraryPages'))
+              .ExamComparisonPage,
+          }),
+        },
+        {
+          path: 'klausuren/:examId',
+          lazy: async () => ({
+            Component: (await import('../features/exam-library/ExamLibraryPages')).ExamDetailPage,
+          }),
+        },
+        {
+          path: 'klausuren/:examId/aufgabe/:questionId',
+          lazy: async () => ({
+            Component: (await import('../features/exam-library/ExamLibraryPages'))
+              .ExamQuestionDetailPage,
+          }),
+        },
+        {
+          path: 'aufgaben',
+          lazy: async () => ({
+            Component: (await import('../features/tasks/TasksPage')).TasksPage,
+          }),
+        },
+        {
+          path: 'aufgaben/:taskNumber',
+          lazy: async () => ({
+            Component: (await import('../features/tasks/TasksPage')).TaskDetailPage,
+          }),
+        },
         {
           path: 'themen',
           lazy: async () => ({

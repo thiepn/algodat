@@ -126,3 +126,12 @@ Neuer Navigationspfad:
 - `/spickzettel/:sheetId/drucken`
 
 Der Bereich ist route-lazy und enthält keine privaten Quellen oder PDF-Links.
+# Phase 17 Informationsarchitektur
+
+Die Hauptnavigation ist gruppiert:
+
+- Lernen: Übersicht, Aufgaben 1–9, Themen, Trainer
+- Prüfen: Klausuren, Klausurprofile, Simulator
+- Planen: Diagnose, Lernplan, Spickzettel, Quellen
+
+Neue Routen: `/klausuren`, `/klausuren/fragen`, `/klausuren/:examId`, `/klausuren/:examId/aufgabe/:questionId`, `/klausuren/vergleich`.

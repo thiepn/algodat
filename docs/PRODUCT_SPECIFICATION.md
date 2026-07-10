@@ -85,3 +85,6 @@ Phase 15 erzeugt keine neuen fachlichen Aufgaben. Der Aktivitätskatalog verweis
 Der Produktumfang umfasst jetzt den lokalen A4-Spickzettel-Builder unter `/spickzettel`. Er erzeugt keine neuen fachlichen Wahrheiten, sondern stellt verifizierte Kurzblöcke mit Quellenreferenzen zusammen. Unterstützt werden Standard-, Schwächen-, Slot-, manuelle und Minimalmodi.
 
 Der Release-Stand ist `1.0.0-rc.2`. `1.0.0` bleibt gesperrt, bis echte Screenreader-Prüfung und finales Verify erfüllt sind.
+# Phase 17 Ergänzung
+
+`1.0.0-rc.3` erweitert das Produkt von einer technischen Lernplattform zu einem verbundenen Lernsystem. Kernnutzen: Studierende können von Aufgabe 1–9 zu Themen, Trainern, Diagnose, Lernmodulen und alten Klausurmetadaten springen, ohne in Metadaten-Sackgassen zu landen. Die Klausurenbibliothek ist ein Orientierungsprodukt, kein PDF-Viewer.

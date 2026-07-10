@@ -63,3 +63,6 @@ Phase 14 registriert keinen zwölften Trainer. Die Diagnose empfiehlt vorhandene
 # Phase 16 Ergänzung
 
 Phase 16 registriert keinen neuen Trainer. Der Spickzettel-Builder verweist auf bestehende Trainer- und Diagnosekompetenzen, bewertet aber keine neuen Aufgaben.
+# Phase 17 Trainer-Mapping
+
+Alle elf produktiven Trainer sind in `data/task-slot-learning-map.json` einem oder mehreren Aufgabenhubs zugeordnet. Die Registry bleibt Quelle für Pfade, Renderer-Typen und technische Trainer-Metadaten; die Task-Slot-Karte ist die pädagogische Zuordnung.

@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { topics } from '../../content/loaders/topics';
+import { getStudyModulesForTopic, taskSlotLearningMap } from '../../content/loaders/study-content';
 import { selectDuplicateSafeFrequency } from '../../content/selectors/frequency';
 import { StatusBadge } from '../../ui/components/StatusBadge';
+import { NextLearningActions } from '../study-content/NextLearningActions';
+import { trainerPath } from '../study-content/resource-links';
+import { trainerRegistry } from '../trainer/trainer-service';
 
 export function TopicsPage() {
   const [search, setSearch] = useState('');
@@ -34,7 +38,10 @@ export function TopicsPage() {
       <header className="page-header">
         <p className="eyebrow">76 belegte Themen</p>
         <h1>Themenindex</h1>
-        <p>Reale Klausuren, Probeklausuren und Übungen werden getrennt ausgewiesen.</p>
+        <p>
+          Themen führen zu Aufgaben, Lernmodulen, Trainern und Klausurmetadaten. Reale Klausuren,
+          Probeklausuren und Übungen werden getrennt ausgewiesen.
+        </p>
       </header>
       <section className="filters" aria-label="Themen filtern">
         <label>
@@ -121,6 +128,20 @@ export function TopicDetailPage() {
       </section>
     );
   const frequency = selectDuplicateSafeFrequency(topic);
+  const modules = getStudyModulesForTopic(topic.id);
+  const taskEntries = taskSlotLearningMap.tasks.filter((task) => task.topicIds.includes(topic.id));
+  const trainers = trainerRegistry.filter((trainer) => trainer.topicIds.includes(topic.id));
+  const actions = [
+    ...trainers.slice(0, 3).map((trainer) => ({
+      resourceId: `trainer:${trainer.trainerId}`,
+      reason: 'Dieser Trainer ist direkt mit dem Thema verbunden.',
+    })),
+    ...taskEntries.slice(0, 2).map((task) => ({
+      resourceId: `klausuren:fragen?aufgabe=${task.taskNumber}`,
+      reason: `Historische Metadaten für Aufgabe ${task.taskNumber} ansehen.`,
+    })),
+  ];
+
   return (
     <div className="page-flow">
       <Link className="back-link" to="/themen">
@@ -130,10 +151,11 @@ export function TopicDetailPage() {
         <p className="eyebrow">{topic.category}</p>
         <h1>{topic.name}</h1>
         <p>
-          Diese Phase zeigt ausschließlich Metadaten und Evidenz – noch keine erzeugte
-          Lernzusammenfassung.
+          Diese Seite verbindet belegte Evidenz mit konkreten Lernaktionen. Wenn kein Modul
+          existiert, bleibt die Seite bewusst bei Evidenz und Navigation.
         </p>
       </header>
+
       <div className="metric-grid">
         <article>
           <strong>{frequency.realExam}</strong>
@@ -152,11 +174,55 @@ export function TopicDetailPage() {
           <span>Übungsquellen</span>
         </article>
       </div>
-      {topic.id === 'topic-f5b57f47447c' && (
-        <Link className="button-link" to="/trainer/tracing/trainer-rucksack-dp-v1">
-          Rucksack-DP aktiv trainieren
-        </Link>
+
+      <NextLearningActions actions={actions} />
+
+      {modules.length > 0 && (
+        <section className="panel">
+          <h2>Lernmodule zu diesem Thema</h2>
+          <div className="card-grid">
+            {modules.map((module) => (
+              <article className="card" key={module.moduleId}>
+                <h3>{module.title}</h3>
+                <p>{module.summary}</p>
+                <ul>
+                  {module.coreIdeas.map((idea) => (
+                    <li key={idea}>{idea}</li>
+                  ))}
+                </ul>
+                <p className="quiet">
+                  Quellen:{' '}
+                  {module.sourceRefs.map((ref) => `${ref.sourceId} S. ${ref.page}`).join(', ')}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
       )}
+
+      <section className="panel">
+        <h2>Verknüpfte Aufgaben und Trainer</h2>
+        <div className="card-grid">
+          {taskEntries.map((task) => (
+            <article className="card" key={task.taskNumber}>
+              <h3>{task.title}</h3>
+              <p>Abdeckung: {task.coverageLevel}</p>
+              <Link className="button-link" to={`/aufgaben/${task.taskNumber}`}>
+                Aufgabe {task.taskNumber} öffnen
+              </Link>
+            </article>
+          ))}
+          {trainers.map((trainer) => (
+            <article className="card" key={trainer.trainerId}>
+              <p className="eyebrow">{trainer.algorithmFamily}</p>
+              <h3>{trainer.title}</h3>
+              <Link className="button-link" to={trainerPath(trainer.trainerId)}>
+                Trainer öffnen
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

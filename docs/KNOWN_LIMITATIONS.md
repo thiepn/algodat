@@ -10,3 +10,9 @@
 - Der Accessibility-Fallback-Audit für `1.0.0-rc.2` ersetzt keine reale Screenreader-Prüfung.
 - Screenreader-Aussprache, Browse-/Forms-Mode, Elementlisten, Tabellenmodus und reale KaTeX-Wahrnehmung bleiben ungeprüft.
 - Ein sichtbarer öffentlicher Export-/Importdialog wurde im Routeninventar nicht als zentrale Route gefunden; die technische Persistenzübertragung ist getestet.
+# Phase 17 bekannte Grenzen
+
+- Die App bleibt `1.0.0-rc.3`; der reale Screenreader-Gate ist offen.
+- Lernmodule sind quellengebundene Referenzen, keine neue kanonische Wahrheit.
+- Nicht jedes Thema besitzt ein vollständiges Lernmodul.
+- Die Klausurenbibliothek zeigt keine vollständigen Originalaufgaben und ersetzt nicht die privaten Ausgangs-PDFs.

@@ -2,7 +2,7 @@
   {
     "id": "trainer-rot-schwarz-einfuegen-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-fd92529318c0",
+    "contentVersion": "phase16-8dc6433c95c7",
     "topicIds": [
       "topic-7ae0552985f1",
       "topic-c3a4ee956f66"
@@ -79,7 +79,7 @@
     "problem": {
       "id": "problem-rb-insertion-10-20-30-15-v1",
       "schemaVersion": "1.0.0",
-      "contentVersion": "phase16-fd92529318c0",
+      "contentVersion": "phase16-8dc6433c95c7",
       "topicIds": [
         "topic-7ae0552985f1",
         "topic-c3a4ee956f66"
@@ -189,7 +189,7 @@
       "variants": [
         {
           "id": "rb-insertion-learn-v1",
-          "contentVersion": "phase16-fd92529318c0",
+          "contentVersion": "phase16-8dc6433c95c7",
           "sourceRefs": [
             {
               "sourceId": "src-5c9eadb17ccc",

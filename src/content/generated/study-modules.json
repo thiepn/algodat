@@ -1,0 +1,778 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "phase16-8dc6433c95c7",
+  "modules": [
+    {
+      "moduleId": "module-rucksack-dp",
+      "title": "Rucksack-DP aktiv beherrschen",
+      "summary": "Quellengebundenes Lernmodul zum 0/1-Rucksack-Tracing mit Zustandsdefinition, Tabellenaufbau und aktivem Traineranschluss.",
+      "topicIds": [
+        "topic-f5b57f47447c",
+        "topic-c0af8532bb72"
+      ],
+      "taskNumbers": [
+        1,
+        2,
+        8
+      ],
+      "prerequisiteModuleIds": [
+        "module-entwurfsparadigmen"
+      ],
+      "learningObjectives": [
+        "Zustand und Tabellenachsen vor dem Rechnen benennen.",
+        "Jede Tabellenzelle aus der vorherigen Zeile begründen.",
+        "Das Optimum aus der letzten Tabellenzelle ablesen."
+      ],
+      "coreIdeas": [
+        "Aktives Tabellenfüllen ist wichtiger als passives Lesen der Musterlösung.",
+        "Der Trainer nutzt nur öffentlich freigegebene, quellenreferenzierte Instanzen."
+      ],
+      "workedExamples": [
+        {
+          "title": "Mini-Tabelle vor dem Prüfungsmodus",
+          "steps": [
+            "Kapazität und Gegenstände notieren.",
+            "Nullzeile vollständig setzen.",
+            "Für jede Zelle zwischen Übernehmen und Einpacken entscheiden."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-25d6340b518c",
+              "page": 33,
+              "label": "Vorlesungs-/Aufgabenbezug Rucksack-DP"
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "Aktuelle statt vorheriger Zeile verwendet.",
+        "Indexierung der Gegenstände verschoben.",
+        "Optimum genannt, aber Tabellenweg nicht belegt."
+      ],
+      "examTips": [
+        "Erst Rekurrenz und Achsen klären, dann rechnen.",
+        "Bei Zeitdruck die letzte Zeile und alle Konfliktzellen besonders sauber halten."
+      ],
+      "trainerIds": [
+        "trainer-rucksack-dp-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-25d6340b518c",
+          "page": 33
+        },
+        {
+          "sourceId": "src-baa07f0a207a",
+          "page": 390
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    },
+    {
+      "moduleId": "module-union-find-listen",
+      "title": "Union-Find mit Listen sicher tracen",
+      "summary": "Aktives Modul zu Vertreterzeigern, Listenverkettung und gewichteter Union.",
+      "topicIds": [
+        "topic-0ba342914656",
+        "topic-595ab7b2682c"
+      ],
+      "taskNumbers": [
+        2,
+        4,
+        9
+      ],
+      "prerequisiteModuleIds": [
+        "module-datenstrukturen"
+      ],
+      "learningObjectives": [
+        "MakeSet-, Find- und Union-Schritte sauber unterscheiden.",
+        "Repräsentanten und Listengrößen nach jedem Checkpoint prüfen.",
+        "Gewichtete Union ohne stille Tie-Break-Änderung anwenden."
+      ],
+      "coreIdeas": [
+        "Der sichtbare Zustand ist eine Folge von Mengen, Repräsentanten und Nachfolgerbeziehungen.",
+        "Jeder Merge-Schritt muss die gewählte kleinere Liste nachvollziehbar machen."
+      ],
+      "workedExamples": [
+        {
+          "title": "Checkpoint-Kontrolle nach Union",
+          "steps": [
+            "Die beiden Vertreter vor Union bestimmen.",
+            "Die kleinere Liste an die größere anhängen.",
+            "Alle betroffenen Repräsentantenzeiger aktualisieren."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-8f16b2505bbd",
+              "page": 6
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "Nur den Kopf der Liste aktualisiert.",
+        "Find auf ein Element statt auf dessen Repräsentanten bezogen.",
+        "Tie-Break-Regel während der Aufgabe gewechselt."
+      ],
+      "examTips": [
+        "Nach jeder Union eine kurze Mengenliste schreiben.",
+        "Find-Ergebnisse nicht aus alten Zwischenschritten übernehmen."
+      ],
+      "trainerIds": [
+        "trainer-union-find-listen-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-data-structures"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 6
+        },
+        {
+          "sourceId": "src-baa07f0a207a",
+          "page": 943
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    },
+    {
+      "moduleId": "module-schleifeninvariante",
+      "title": "Schleifeninvariante beweisbar formulieren",
+      "summary": "Lernmodul für Initialisierung, Erhaltung und Abschluss einer Schleifeninvariante.",
+      "topicIds": [
+        "topic-e05ae3743b24"
+      ],
+      "taskNumbers": [
+        5,
+        9
+      ],
+      "prerequisiteModuleIds": [
+        "module-beweismethoden"
+      ],
+      "learningObjectives": [
+        "Eine prüfbare Invariante statt einer bloßen Ergebnisbehauptung formulieren.",
+        "Initialisierung, Erhaltung und Terminierung getrennt bearbeiten.",
+        "Aus der Invariante die Korrektheitsaussage ableiten."
+      ],
+      "coreIdeas": [
+        "Die Invariante beschreibt den Zustand vor oder nach einer Iteration eindeutig.",
+        "Der Abschluss ist kein neuer Beweis, sondern die Nutzung der Invariante am Schleifenende."
+      ],
+      "workedExamples": [
+        {
+          "title": "Dreiteiliger Beweisrahmen",
+          "steps": [
+            "Invariante mit Indexbereich notieren.",
+            "Basis vor der ersten Iteration prüfen.",
+            "Erhaltung mit einer allgemeinen Iteration zeigen."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-25d6340b518c",
+              "page": 11
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "Invariante beschreibt nur das Endergebnis.",
+        "Erhaltung wird an einem Beispiel statt allgemein gezeigt.",
+        "Terminierung fehlt."
+      ],
+      "examTips": [
+        "Überschriften Initialisierung, Erhaltung, Abschluss explizit setzen.",
+        "Indexgrenzen nicht im Fließtext verstecken."
+      ],
+      "trainerIds": [
+        "trainer-schleifeninvariante-summe-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-proofs"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-25d6340b518c",
+          "page": 11
+        },
+        {
+          "sourceId": "src-baa07f0a207a",
+          "page": 132
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    },
+    {
+      "moduleId": "module-rekurrenz-master",
+      "title": "Rekurrenzen und Master-Fall 1",
+      "summary": "Aktives Modul zur Rekurrenzdeutung, Master-Theorem-Auswahl und Induktionsstruktur.",
+      "topicIds": [
+        "topic-e48203925235",
+        "topic-99af8a8bfb20",
+        "topic-2b335556483f",
+        "topic-64b84f2856b9"
+      ],
+      "taskNumbers": [
+        1,
+        6,
+        9
+      ],
+      "prerequisiteModuleIds": [
+        "module-asymptotik"
+      ],
+      "learningObjectives": [
+        "Parameter einer Rekurrenz aus dem Algorithmuskontext lesen.",
+        "Master-Fall und Nebenbedingungen ausdrücklich begründen.",
+        "Die Laufzeitaussage mit einer passenden Beweisstruktur absichern."
+      ],
+      "coreIdeas": [
+        "Eine Rekurrenzlösung ohne Zuordnung der Parameter bleibt prüfungsriskant.",
+        "Der Trainer bewertet nicht nur das Ergebnis, sondern auch den Begründungsweg."
+      ],
+      "workedExamples": [
+        {
+          "title": "Parametercheck vor der Fallentscheidung",
+          "steps": [
+            "a, b und f(n) markieren.",
+            "Vergleichsgröße bestimmen.",
+            "Fallwahl mit Bedingung formulieren."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-25d6340b518c",
+              "page": 17
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "Fallnummer geraten.",
+        "Logarithmusfaktor übersehen.",
+        "Induktionsvoraussetzung nicht sauber eingesetzt."
+      ],
+      "examTips": [
+        "Fallentscheidung immer vor der Endformel zeigen.",
+        "Bei Beweisen die Konstante sichtbar wählen."
+      ],
+      "trainerIds": [
+        "trainer-rekurrenz-master-fall1-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-recurrences",
+        "foundation-asymptotics",
+        "foundation-proofs"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-25d6340b518c",
+          "page": 17
+        },
+        {
+          "sourceId": "src-baa07f0a207a",
+          "page": 194
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    },
+    {
+      "moduleId": "module-dp-entwurf-mine",
+      "title": "DP-Entwurf: Mine",
+      "summary": "Klausurnahes Entwurfsmodul für Zustand, Rekurrenz, Korrektheit und Komplexität einer DP-Aufgabe.",
+      "topicIds": [
+        "topic-c0af8532bb72",
+        "topic-2b335556483f"
+      ],
+      "taskNumbers": [
+        8,
+        9
+      ],
+      "prerequisiteModuleIds": [
+        "module-entwurfsparadigmen",
+        "module-schleifeninvariante"
+      ],
+      "learningObjectives": [
+        "Zustände aus Teilproblemen ableiten.",
+        "Rekurrenz mit Randfällen formulieren.",
+        "Korrektheit und Aufwand getrennt begründen."
+      ],
+      "coreIdeas": [
+        "DP-Entwurf beginnt nicht mit Code, sondern mit Zustandswahl.",
+        "Randfälle sind Teil der Lösung, nicht optionaler Schmuck."
+      ],
+      "workedExamples": [
+        {
+          "title": "Entwurfsschablone",
+          "steps": [
+            "Teilproblem benennen.",
+            "Übergang und Entscheidung beschreiben.",
+            "Auswertungsreihenfolge festlegen."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-8f16b2505bbd",
+              "page": 10
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "Zustand speichert zu wenig Information.",
+        "Randfall fehlt.",
+        "Korrektheit wird mit Laufzeit vermischt."
+      ],
+      "examTips": [
+        "Erst mathematische Rekurrenz, dann Pseudocode.",
+        "Komplexität aus Anzahl Zustände mal Übergangskosten ableiten."
+      ],
+      "trainerIds": [
+        "trainer-dp-entwurf-mine-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 10
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 11
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    },
+    {
+      "moduleId": "module-greedy-entwurf",
+      "title": "Greedy-Entwurf: Fitnesspunkte",
+      "summary": "Aktives Modul für Greedy-Regel, Austauschargument und Grenzen der Greedy-Wahl.",
+      "topicIds": [
+        "topic-3e0e72f97f6e"
+      ],
+      "taskNumbers": [
+        7,
+        9
+      ],
+      "prerequisiteModuleIds": [
+        "module-entwurfsparadigmen",
+        "module-beweismethoden"
+      ],
+      "learningObjectives": [
+        "Eine Greedy-Regel präzise formulieren.",
+        "Auswahl und Korrektheitsargument verbinden.",
+        "Gegenbeispiele von Beweisen unterscheiden."
+      ],
+      "coreIdeas": [
+        "Greedy ist nur dann belastbar, wenn die lokale Wahl global begründet wird.",
+        "Der Trainer erzwingt eine nachvollziehbare Beweisidee."
+      ],
+      "workedExamples": [
+        {
+          "title": "Regel vor Beweis",
+          "steps": [
+            "Sortier- oder Auswahlkriterium nennen.",
+            "Warum diese Wahl sicher ist formulieren.",
+            "Komplexität aus Sortierung und Scan ableiten."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-97414623dd81",
+              "page": 8
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "Greedy-Regel nur intuitiv beschrieben.",
+        "Korrektheit durch Beispiel ersetzt.",
+        "Sortierkosten vergessen."
+      ],
+      "examTips": [
+        "Greedy-Regel in einem Satz isolieren.",
+        "Austauschargument nicht erst im letzten Absatz beginnen."
+      ],
+      "trainerIds": [
+        "trainer-greedy-entwurf-fitnesspunkte-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 8
+        },
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 8
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    },
+    {
+      "moduleId": "module-rot-schwarz",
+      "title": "Rot-Schwarz-Einfügen",
+      "summary": "Tracing-Modul zu Einfügen, Rot-Fällen und Reparaturrotationen in Rot-Schwarz-Bäumen.",
+      "topicIds": [
+        "topic-7ae0552985f1",
+        "topic-c3a4ee956f66"
+      ],
+      "taskNumbers": [
+        2,
+        4,
+        9
+      ],
+      "prerequisiteModuleIds": [
+        "module-datenstrukturen"
+      ],
+      "learningObjectives": [
+        "Rot-Schwarz-Eigenschaften vor dem Schritt prüfen.",
+        "Reparaturfälle nach Onkel-/Elternkonstellation auswählen.",
+        "Rotationen und Umfärbungen nachvollziehbar dokumentieren."
+      ],
+      "coreIdeas": [
+        "Das Einfügen ist erst fertig, wenn alle Rot-Schwarz-Eigenschaften wieder gelten.",
+        "Fallunterscheidungen verhindern blindes Rotieren."
+      ],
+      "workedExamples": [
+        {
+          "title": "Fallprüfung nach Einfügen",
+          "steps": [
+            "Neuen Knoten rot einfügen.",
+            "Eltern- und Onkelfarbe prüfen.",
+            "Umfärben oder Rotation anwenden."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-97414623dd81",
+              "page": 4
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "Wurzel nicht schwarz gesetzt.",
+        "Innen- und Außenfall verwechselt.",
+        "Umfärbung nach Rotation vergessen."
+      ],
+      "examTips": [
+        "Vor jeder Reparatur die betroffenen Farben notieren.",
+        "Endzustand gegen alle Eigenschaften prüfen."
+      ],
+      "trainerIds": [
+        "trainer-rot-schwarz-einfuegen-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-data-structures"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 4
+        },
+        {
+          "sourceId": "src-5c9eadb17ccc",
+          "page": 15
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    },
+    {
+      "moduleId": "module-floyd-warshall",
+      "title": "Floyd-Warshall-Matrixfolge",
+      "summary": "Graph-Tracing-Modul zur Matrixfolge und zur Zwischenknoten-Interpretation von Floyd-Warshall.",
+      "topicIds": [
+        "topic-1fa208a0ed89",
+        "topic-f5f6e171c082"
+      ],
+      "taskNumbers": [
+        3,
+        9
+      ],
+      "prerequisiteModuleIds": [
+        "module-graphen"
+      ],
+      "learningObjectives": [
+        "Matrixindex und zugelassene Zwischenknoten auseinanderhalten.",
+        "Aktualisierungen aus zwei Teilwegen begründen.",
+        "Nicht erreichbare Knoten konsistent behandeln."
+      ],
+      "coreIdeas": [
+        "Jede Matrixstufe erweitert die erlaubte Menge von Zwischenknoten.",
+        "Ein Update ist nur dann korrekt, wenn beide Teilwege definiert sind."
+      ],
+      "workedExamples": [
+        {
+          "title": "Eine Matrixstufe prüfen",
+          "steps": [
+            "Aktuellen Zwischenknoten k festlegen.",
+            "Für jede Zelle direkten Wert und Weg über k vergleichen.",
+            "Nur echte Verbesserungen übernehmen."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-8f16b2505bbd",
+              "page": 4
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "k als Zielknoten interpretiert.",
+        "∞ wie eine Zahl addiert.",
+        "Vorgängermatrix und Distanzmatrix vermischt."
+      ],
+      "examTips": [
+        "Stufe k sichtbar beschriften.",
+        "Verbesserte Zellen markieren, damit Folgefehler auffallen."
+      ],
+      "trainerIds": [
+        "trainer-graph-floyd-warshall-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 4
+        },
+        {
+          "sourceId": "src-c4dde22523d3",
+          "page": 4
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    },
+    {
+      "moduleId": "module-dijkstra",
+      "title": "Dijkstra mit Distanzen und Vorgängern",
+      "summary": "Aktives Graphmodul zum Extrahieren des nächsten Knotens, Relaxieren von Kanten und Pflegen von Vorgängern.",
+      "topicIds": [
+        "topic-e8b80c23286d",
+        "topic-f5f6e171c082"
+      ],
+      "taskNumbers": [
+        3,
+        9
+      ],
+      "prerequisiteModuleIds": [
+        "module-graphen"
+      ],
+      "learningObjectives": [
+        "Die Menge abgeschlossener Knoten korrekt führen.",
+        "Relaxierung und Vorgängerupdate koppeln.",
+        "Tie-Breaks transparent anwenden."
+      ],
+      "coreIdeas": [
+        "Dijkstra lebt von der Invariante abgeschlossener kürzester Distanzen.",
+        "Vorgänger sind Teil der Antwort, nicht nachträgliche Dekoration."
+      ],
+      "workedExamples": [
+        {
+          "title": "Relaxierungsschritt",
+          "steps": [
+            "Knoten mit kleinster temporärer Distanz wählen.",
+            "Ausgehende Kanten prüfen.",
+            "Distanz und Vorgänger nur bei Verbesserung aktualisieren."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-baa07f0a207a",
+              "page": 846
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "Bereits abgeschlossene Knoten erneut geändert.",
+        "Vorgänger bei Distanzupdate nicht gesetzt.",
+        "Nichtnegative Kantengewichte nicht beachtet."
+      ],
+      "examTips": [
+        "Tabelle mit Status, Distanz und Vorgänger führen.",
+        "Bei Gleichstand die im Trainer angegebene Regel verwenden."
+      ],
+      "trainerIds": [
+        "trainer-graph-dijkstra-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-baa07f0a207a",
+          "page": 846
+        },
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 4
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    },
+    {
+      "moduleId": "module-prim-mst",
+      "title": "Prim für minimale Spannbäume",
+      "summary": "Graph-Tracing-Modul für sichere Kanten, Schlüsselwerte und MST-Aufbau nach Prim.",
+      "topicIds": [
+        "topic-6a47a10f37e0",
+        "topic-c4a698fc939e"
+      ],
+      "taskNumbers": [
+        3,
+        4,
+        9
+      ],
+      "prerequisiteModuleIds": [
+        "module-graphen"
+      ],
+      "learningObjectives": [
+        "Schlüsselwerte und Elternkanten pro Knoten führen.",
+        "Die nächste sichere Kante begründen.",
+        "MST-Zustand nach jedem Schritt prüfen."
+      ],
+      "coreIdeas": [
+        "Prim wächst einen Baum; Kandidatenkanten werden über Schlüsselwerte gesteuert.",
+        "Eine falsche Elternkante bleibt oft bis zum Endbaum sichtbar."
+      ],
+      "workedExamples": [
+        {
+          "title": "Knotenaufnahme in den MST",
+          "steps": [
+            "Knoten mit minimalem Schlüssel wählen.",
+            "Elternkante in den Baum aufnehmen.",
+            "Nachbarn über die neue Kante aktualisieren."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-baa07f0a207a",
+              "page": 955
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "Kruskal- und Prim-Zustände gemischt.",
+        "Elternkante bei Schlüsselverbesserung nicht aktualisiert.",
+        "Nicht zusammenhängenden Graphen stillschweigend als MST behandelt."
+      ],
+      "examTips": [
+        "MST-Menge und Kandidatentabelle getrennt halten.",
+        "Tie-Breaks dokumentieren."
+      ],
+      "trainerIds": [
+        "trainer-graph-prim-mst-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 3
+        },
+        {
+          "sourceId": "src-baa07f0a207a",
+          "page": 955
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    },
+    {
+      "moduleId": "module-dc-maxwertdifferenz",
+      "title": "Divide-and-Conquer: maximale Wertdifferenz",
+      "summary": "Entwurfsmodul für Zerlegung, Combine-Schritt und Korrektheitsidee einer Divide-and-Conquer-Aufgabe.",
+      "topicIds": [
+        "topic-00cf6dec50ed"
+      ],
+      "taskNumbers": [
+        7,
+        9
+      ],
+      "prerequisiteModuleIds": [
+        "module-entwurfsparadigmen",
+        "module-rekurrenz-master"
+      ],
+      "learningObjectives": [
+        "Teilprobleme so wählen, dass der Combine-Fall vollständig ist.",
+        "Grenzübergreifende Kandidaten explizit behandeln.",
+        "Rekurrenz und Laufzeit aus der Zerlegung ableiten."
+      ],
+      "coreIdeas": [
+        "Der Combine-Schritt ist bei D&C oft die eigentliche Prüfung.",
+        "Korrektheit folgt aus vollständiger Fallabdeckung, nicht aus Beispielrechnen."
+      ],
+      "workedExamples": [
+        {
+          "title": "Combine-Fall strukturieren",
+          "steps": [
+            "Linkes und rechtes Optimum übernehmen.",
+            "Grenzübergreifenden Kandidaten berechnen.",
+            "Maximum der vollständigen Fallmenge zurückgeben."
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "src-88179ac88dc5",
+              "page": 7
+            }
+          ]
+        }
+      ],
+      "commonMistakes": [
+        "Grenzfall vergessen.",
+        "Rekurrenz ohne Combine-Kosten genannt.",
+        "Basisfall zu spät definiert."
+      ],
+      "examTips": [
+        "Fallliste vor Pseudocode notieren.",
+        "Laufzeit aus Rekursion plus Combine begründen."
+      ],
+      "trainerIds": [
+        "trainer-dc-entwurf-maxwertdifferenz-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-recurrences",
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "historicalQuestionIds": [],
+      "sourceRefs": [
+        {
+          "sourceId": "src-88179ac88dc5",
+          "page": 7
+        }
+      ],
+      "verificationStatus": "verified_against_official_source",
+      "publicDistributionStatus": "public_safe"
+    }
+  ]
+}

@@ -106,3 +106,13 @@ Neue Content-Artefakte:
 - `cheat-sheet-layout-policy.json`
 
 Persistente Spickzettel verwenden IndexedDB-Version 10 mit `cheatSheets`. Ein Dokument speichert Auswahl, Varianten, Platzierungen, Druckeinstellungen und Quellenzusammenfassung. Export und Import validieren den Store gegen `CheatSheetDocumentSchema`.
+# Phase 17 Datenmodell
+
+Neue öffentliche Datenartefakte:
+
+- `data/study-modules.json`
+- `data/task-slot-learning-map.json`
+- `data/learning-resource-graph.json`
+- `src/content/generated/exam-library.json`
+
+Alle fachlichen UI-Aussagen müssen weiter Quellen-ID und Seite tragen. Die Klausurenbibliothek enthält keine Original-PDFs, lokalen Pfade oder vollständigen historischen Aufgabentexte.

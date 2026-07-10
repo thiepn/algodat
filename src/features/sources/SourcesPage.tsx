@@ -25,9 +25,12 @@ export function SourcesPage() {
   return (
     <div className="page-flow">
       <header className="page-header">
-        <p className="eyebrow">Nur Metadaten</p>
+        <p className="eyebrow">Private Dateien bleiben lokal</p>
         <h1>Quellenbrowser</h1>
-        <p>Lokale Dateien werden nicht geöffnet, verlinkt oder in das PWA-Paket kopiert.</p>
+        <p>
+          Lokale Dateien werden nicht geöffnet, verlinkt oder in das PWA-Paket kopiert. Sichtbar
+          sind nur Anzeigename, Quellen-ID, Autoritätsstufe und Seitenbezüge.
+        </p>
       </header>
       <section className="filters" aria-label="Quellen filtern">
         <label>
@@ -87,8 +90,8 @@ export function SourcesPage() {
               <span>
                 <strong>{source.displayName}</strong>
                 <small>
-                  {source.category} · {source.year ?? 'Jahr unbekannt'} · {source.pageCount ?? '–'}{' '}
-                  Seiten
+                  Quellen-ID {source.id} · {source.category} · {source.year ?? 'Jahr unbekannt'} ·{' '}
+                  {source.pageCount ?? '–'} Seiten
                 </small>
               </span>
               <StatusBadge tone={source.authorityLevel === 1 ? 'success' : 'neutral'}>

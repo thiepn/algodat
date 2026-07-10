@@ -197,3 +197,7 @@ Zusätzliche Dokumente:
 - [Cheat Sheet Content Policy](docs/CHEAT_SHEET_CONTENT_POLICY.md)
 - [Final Topic Coverage Report](docs/FINAL_TOPIC_COVERAGE_REPORT.md)
 - [Phase-16-Abschlussbericht](docs/PHASE_16_COMPLETION_REPORT.md)
+
+# Phase 17 / 1.0.0-rc.3
+
+Das System verbindet Aufgaben 1–9, Themen, Klausurenbibliothek, Diagnose, Lernplan und alle elf produktiven Trainer zu klickbaren Lernhubs. Die neue Klausurenbibliothek veröffentlicht nur sichere Metadaten und paraphrasierte Titel; private PDFs und lokale Pfade bleiben ausgeschlossen. Die Version bleibt ein Release Candidate, weil der reale Screenreader-Gate weiterhin offen ist.

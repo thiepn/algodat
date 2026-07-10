@@ -2,7 +2,7 @@
   {
     "id": "rubric-trainer-rucksack-dp-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-fd92529318c0",
+    "contentVersion": "phase16-8dc6433c95c7",
     "topicIds": [
       "topic-f5b57f47447c",
       "topic-c0af8532bb72"
@@ -65,7 +65,7 @@
   {
     "id": "rubric-trainer-union-find-listen-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-fd92529318c0",
+    "contentVersion": "phase16-8dc6433c95c7",
     "topicIds": [
       "topic-0ba342914656",
       "topic-595ab7b2682c"
