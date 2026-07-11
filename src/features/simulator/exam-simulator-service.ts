@@ -20,6 +20,7 @@ import {
   type ExamResultReport,
   type ExamSession,
 } from '../../domain/exam-simulator';
+import { completionForExamAnswer } from './ExamTaskRenderer';
 import {
   examResultRepository,
   examSessionRepository,
@@ -29,9 +30,9 @@ import {
 
 export function getCoreExamPackage(): ExamPackage {
   const examPackage = content.examPackages.find(
-    (candidate) => candidate.id === 'exam-package-kernkompetenz-v4',
+    (candidate) => candidate.id === 'exam-package-aktuelle-probeklausur-v5',
   );
-  if (!examPackage) throw new Error('Kernkompetenz-Probeklausur fehlt.');
+  if (!examPackage) throw new Error('Aktuelle Probeklausur fehlt.');
   return examPackage;
 }
 
@@ -112,7 +113,15 @@ export async function restoreSimulatorSession(sessionId: string) {
 }
 
 export async function getSimulatorSession(sessionId: string) {
-  return (await examSessionRepository.get(sessionId)) as ExamSession | undefined;
+  const [stored, recovered] = await Promise.all([
+    examSessionRepository.get(sessionId),
+    restoreSimulatorSession(sessionId),
+  ]);
+  // Der Snapshot wird nach jeder Session-Schreiboperation erstellt. Er schützt
+  // gegen einen abgebrochenen IndexedDB-Commit, ohne abgeschlossene Ergebnisse zu verwerfen.
+  if (recovered && (!stored || recovered.createdAt === (stored as ExamSession).createdAt))
+    return recovered;
+  return stored as ExamSession | undefined;
 }
 
 export async function listSimulatorSessions() {
@@ -122,25 +131,21 @@ export async function listSimulatorSessions() {
 export async function saveTaskAnswer({
   session,
   taskSlotId,
-  answerText,
+  answer,
 }: {
   session: ExamSession;
   taskSlotId: string;
-  answerText: string;
+  answer: unknown;
 }) {
-  const answer = answerText.trim()
-    ? {
-        kind: 'student_text_answer',
-        text: answerText.trim(),
-        invalidJson: answerText.trim(),
-      }
-    : null;
-  const completionStatus = answerText.trim() ? 'answered' : 'unanswered';
+  const examPackage = packageForSession(session);
+  const task = examPackage.taskSlots.find((slot) => slot.taskSlotId === taskSlotId);
+  if (!task) throw new Error('Aufgabe der Klausursitzung fehlt.');
+  const completion = completionForExamAnswer(task, answer);
   const updated = updateTaskCompletionState(
     session,
     taskSlotId,
     answer,
-    completionStatus,
+    completion.status,
     new Date().toISOString(),
   );
   await examSessionRepository.put(meta(updated, packageForSession(updated)));

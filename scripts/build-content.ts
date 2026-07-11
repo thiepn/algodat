@@ -579,6 +579,7 @@ async function main(): Promise<void> {
     readJson(path.join(dataDir, 'exam-packages', 'kernkompetenz-probeklausur-v2.json')),
     readJson(path.join(dataDir, 'exam-packages', 'kernkompetenz-probeklausur-v3.json')),
     readJson(path.join(dataDir, 'exam-packages', 'kernkompetenz-probeklausur-v4.json')),
+    readJson(path.join(dataDir, 'exam-packages', 'aktuelle-probeklausur-v5.json')),
   ]);
   const rawPhase14CompetencyInventory = await readJson(
     path.join(dataDir, 'phase14-competency-inventory.json'),

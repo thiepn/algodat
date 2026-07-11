@@ -2,7 +2,7 @@
 
 ## Phase 20.1
 
-- Die App bleibt `1.0.0-rc.7`; der reale Screenreader-Gate ist weiterhin offen.
+- Die App bleibt `1.0.0-rc.8`; der reale Screenreader-Gate ist weiterhin offen.
 - Die lokale Dokumentbibliothek und alle lokalen PDF-/Crop-/Originalseitenansichten wurden
   entfernt. Alte `/dokumente`-URLs leiten auf `/quellen` um.
 - Es gibt initial keine genehmigten eingebetteten Originalmaterialien. Künftige Materialien
@@ -11,7 +11,7 @@
 - Die archivierten Phase-19/20-Coverage-Reports ersetzen keine fachliche Sichtprüfung der
   privaten PDFs und sind kein aktives Produktfeature mehr.
 - Bellman-Ford und Kruskal werden erst als vollständige Module freigegeben, wenn die Quellenlage im Produktmodell belastbar bestätigt ist.
-- Der Simulator nutzt keine JSON-Eingabe mehr, aber die vollständige direkte Einbettung aller spezialisierten Trainer-Renderer in Exam-Mode bleibt Folgearbeit.
+- Der Simulator verwendet strukturierte, aufgabenspezifische Eingaben; ein echter Narrator-/NVDA-Durchgang aller Renderer bleibt erforderlich.
 - Ergebnisberichte enthalten Lernhinweise und Rubrikpunkte; vollständig ausgearbeitete Modellantworten sind noch nicht für jeden Adapter gleich tief.
 
 - Historische Originalklausuren werden nicht als öffentliche Pakete gebündelt.

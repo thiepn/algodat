@@ -54,8 +54,9 @@ export function updateMasteryFromExam(
     Number(aggregate.totalScore.numerator * aggregate.maximumScore.denominator) /
     Number(aggregate.totalScore.denominator * aggregate.maximumScore.numerator);
   const completion =
-    timing.perTask.filter((task) => task.completionStatus === 'answered').length /
-    Math.max(1, timing.perTask.length);
+    timing.perTask.filter(
+      (task) => task.completionStatus === 'complete' || task.completionStatus === 'answered',
+    ).length / Math.max(1, timing.perTask.length);
   return {
     exam_readiness: Math.min(0.9, ratio * 0.9),
     exam_time_management: timing.expired ? 0.35 : 0.7,

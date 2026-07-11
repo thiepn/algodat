@@ -701,5 +701,212 @@
       "numerator": 8,
       "denominator": 1
     }
+  },
+  {
+    "id": "instance-slot-1-rucksack-dp",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-8dc6433c95c7",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 33
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "publicDistributionStatus": "public_safe",
+    "engineVersion": "exam-simulator-v5",
+    "examPackageId": "exam-package-aktuelle-probeklausur-v5",
+    "taskSlotId": "slot-1-rucksack-dp",
+    "trainerId": "trainer-rucksack-dp-v1",
+    "adapterId": "adapter-knapsack-v1",
+    "examPoints": {
+      "numerator": 4,
+      "denominator": 1
+    }
+  },
+  {
+    "id": "instance-slot-2-union-find",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-8dc6433c95c7",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 6
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "publicDistributionStatus": "public_safe",
+    "engineVersion": "exam-simulator-v5",
+    "examPackageId": "exam-package-aktuelle-probeklausur-v5",
+    "taskSlotId": "slot-2-union-find",
+    "trainerId": "trainer-union-find-listen-v1",
+    "adapterId": "adapter-union-find-v1",
+    "examPoints": {
+      "numerator": 4,
+      "denominator": 1
+    }
+  },
+  {
+    "id": "instance-slot-3-rot-schwarz",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-8dc6433c95c7",
+    "sourceRefs": [
+      {
+        "sourceId": "src-5c9eadb17ccc",
+        "page": 20
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "publicDistributionStatus": "public_safe",
+    "engineVersion": "exam-simulator-v5",
+    "examPackageId": "exam-package-aktuelle-probeklausur-v5",
+    "taskSlotId": "slot-3-rot-schwarz",
+    "trainerId": "trainer-rot-schwarz-einfuegen-v1",
+    "adapterId": "adapter-rb-insertion-v1",
+    "examPoints": {
+      "numerator": 4,
+      "denominator": 1
+    }
+  },
+  {
+    "id": "instance-slot-4-dijkstra",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-8dc6433c95c7",
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 846
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "publicDistributionStatus": "public_safe",
+    "engineVersion": "exam-simulator-v5",
+    "examPackageId": "exam-package-aktuelle-probeklausur-v5",
+    "taskSlotId": "slot-4-dijkstra",
+    "trainerId": "trainer-graph-dijkstra-v1",
+    "adapterId": "adapter-dijkstra-v1",
+    "examPoints": {
+      "numerator": 4,
+      "denominator": 1
+    }
+  },
+  {
+    "id": "instance-slot-5-schleifeninvariante",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-8dc6433c95c7",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 11
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "publicDistributionStatus": "public_safe",
+    "engineVersion": "exam-simulator-v5",
+    "examPackageId": "exam-package-aktuelle-probeklausur-v5",
+    "taskSlotId": "slot-5-schleifeninvariante",
+    "trainerId": "trainer-schleifeninvariante-summe-v1",
+    "adapterId": "adapter-loop-invariant-v1",
+    "examPoints": {
+      "numerator": 5,
+      "denominator": 1
+    }
+  },
+  {
+    "id": "instance-slot-6-rekurrenz",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-8dc6433c95c7",
+    "sourceRefs": [
+      {
+        "sourceId": "src-25d6340b518c",
+        "page": 17
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "publicDistributionStatus": "public_safe",
+    "engineVersion": "exam-simulator-v5",
+    "examPackageId": "exam-package-aktuelle-probeklausur-v5",
+    "taskSlotId": "slot-6-rekurrenz",
+    "trainerId": "trainer-rekurrenz-master-fall1-v1",
+    "adapterId": "adapter-recurrence-v1",
+    "examPoints": {
+      "numerator": 5,
+      "denominator": 1
+    }
+  },
+  {
+    "id": "instance-slot-7-divide-conquer",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-8dc6433c95c7",
+    "sourceRefs": [
+      {
+        "sourceId": "src-88179ac88dc5",
+        "page": 7
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "publicDistributionStatus": "public_safe",
+    "engineVersion": "exam-simulator-v5",
+    "examPackageId": "exam-package-aktuelle-probeklausur-v5",
+    "taskSlotId": "slot-7-divide-conquer",
+    "trainerId": "trainer-dc-entwurf-maxwertdifferenz-v1",
+    "adapterId": "adapter-divide-conquer-design-v1",
+    "examPoints": {
+      "numerator": 8,
+      "denominator": 1
+    }
+  },
+  {
+    "id": "instance-slot-8-dp-entwurf",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-8dc6433c95c7",
+    "sourceRefs": [
+      {
+        "sourceId": "src-8f16b2505bbd",
+        "page": 10
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "publicDistributionStatus": "public_safe",
+    "engineVersion": "exam-simulator-v5",
+    "examPackageId": "exam-package-aktuelle-probeklausur-v5",
+    "taskSlotId": "slot-8-dp-entwurf",
+    "trainerId": "trainer-dp-entwurf-mine-v1",
+    "adapterId": "adapter-dp-design-v1",
+    "examPoints": {
+      "numerator": 8,
+      "denominator": 1
+    }
+  },
+  {
+    "id": "instance-slot-9-prim",
+    "schemaVersion": "1.0.0",
+    "contentVersion": "phase16-8dc6433c95c7",
+    "sourceRefs": [
+      {
+        "sourceId": "src-baa07f0a207a",
+        "page": 958
+      }
+    ],
+    "verificationStatus": "verified_against_official_source",
+    "lastReviewed": "2026-07-06T10:54:12.806583+00:00",
+    "publicDistributionStatus": "public_safe",
+    "engineVersion": "exam-simulator-v5",
+    "examPackageId": "exam-package-aktuelle-probeklausur-v5",
+    "taskSlotId": "slot-9-prim",
+    "trainerId": "trainer-graph-prim-mst-v1",
+    "adapterId": "adapter-prim-v1",
+    "examPoints": {
+      "numerator": 8,
+      "denominator": 1
+    }
   }
 ]

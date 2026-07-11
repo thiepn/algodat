@@ -1,12 +1,12 @@
 # AlgoDat Study System
 
-Phase 20.1 setzt den Stand auf `1.0.0-rc.7`: die lokale private PDF-Bibliothek,
+Phase 21 setzt den Stand auf `1.0.0-rc.8`: die lokale private PDF-Bibliothek,
 Originalseitenansichten, Crop-/Indexierungswerkzeuge und `/dokumente`-Routen wurden entfernt.
 Quellen erscheinen weiter als sichere Metadaten unter `/quellen`; Originalmaterialien dürfen erst
 über ein genehmigtes Hosted-Material-Manifest veröffentlicht oder extern verlinkt werden.
 
 Phase 18 bis 20 hatten lokale Dokumentfunktionen eingeführt. Diese Berichte bleiben historisch,
-sind aber seit `1.0.0-rc.7` archiviert. Das echte Screenreader-Gate bleibt offen; `1.0.0` ist
+sind seit `1.0.0-rc.7` archiviert. Die aktuelle Probeklausur umfasst neun aufgabenspezifische, autospeichernde Renderer mit deterministischer Rubrikauswertung. Das echte Screenreader-Gate bleibt offen; `1.0.0` ist
 weiterhin gesperrt.
 
 Deutschsprachige, lokale und quellenbasierte Lernanwendung für Algorithmen und Datenstrukturen. Phase 0/0A inventarisierte und prüfte den Quellenbestand, Phase 1 stellte das React-/TypeScript-/PWA-Fundament bereit, Phase 2 bis 13 bauten elf aktive Lernpfade und den Klausursimulator auf, Phase 14 ergänzte die Grundlagen-Diagnose, Phase 15 ergänzt einen adaptiven Lernorchestrator und Phase 16 führt den Stand als `1.0.0-rc.2` mit lokalem A4-Spickzettel-Builder und Accessibility-Fallback-Audit in die Release-Härtung.

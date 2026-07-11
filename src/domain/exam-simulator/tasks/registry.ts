@@ -1,10 +1,12 @@
 import type { PracticeAttempt } from '../../../content/schemas';
 import {
   canonicalDpDesignAnswerForTrainer,
+  defaultDpDesignAnswer,
   scoreStoredDpDesignAttempt,
 } from '../../../features/trainer/dp-design-service';
 import {
   canonicalDivideConquerDesignAnswerForTrainer,
+  defaultDivideConquerDesignAnswer,
   scoreStoredDivideConquerDesignAttempt,
 } from '../../../features/trainer/divide-conquer-design-service';
 import {
@@ -13,22 +15,28 @@ import {
 } from '../../../features/trainer/greedy-design-service';
 import {
   canonicalGraphTracingAnswerForTrainer,
+  defaultGraphTracingAnswer,
   scoreStoredGraphTracingAttempt,
 } from '../../../features/trainer/graph-tracing-service';
 import {
   canonicalRbInsertionAnswerForTrainer,
+  defaultRbInsertionAnswer,
   scoreStoredRbInsertionAttempt,
 } from '../../../features/trainer/rb-insertion-service';
 import {
   canonicalProofAnswerForTrainer,
+  defaultProofAnswer,
   scoreStoredProofAttempt,
 } from '../../../features/trainer/proof-service';
 import {
   canonicalRecurrenceAnswerForTrainer,
+  defaultRecurrenceAnswer,
   scoreStoredRecurrenceAttempt,
 } from '../../../features/trainer/recurrence-service';
 import {
   canonicalAnswerForTrainer,
+  defaultKnapsackRows,
+  defaultUnionFindCheckpoints,
   getDivideConquerDesignTrainerById,
   getDpDesignTrainerById,
   getGreedyDesignTrainerById,
@@ -149,7 +157,17 @@ function normalizeResult(
     examMaximum: exactFromContent(task.examPoints),
     rubricResults: result.rubricResults,
     errors: result.errors,
-    completionStatus: result.points > 0 ? 'answered' : 'partial',
+    completionStatus: result.points > 0 ? 'complete' : 'incomplete',
+    submittedAnswerSummary: `Strukturierte Antwort mit ${result.rubricResults.length} Rubrikkriterien.`,
+    modelAnswer: createCanonicalExamAnswer(task.trainerId),
+    explanation: result.errors.length
+      ? result.errors.map((error) => error.explanation).join(' ')
+      : 'Alle automatisch bewertbaren Rubrikkriterien wurden erreicht.',
+    remediationActions: result.errors.map((error) => ({
+      label: error.recommendedReview,
+      trainerId: task.trainerId,
+      errorCode: error.errorCode,
+    })),
   };
 }
 
@@ -180,7 +198,25 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
   baseAdapter(
     'trainer-rucksack-dp-v1',
     'knapsack',
-    () => ({ kind: 'knapsack_exam_empty' }),
+    () => {
+      const trainer = getTrainerById('trainer-rucksack-dp-v1');
+      return trainer
+        ? {
+            kind: 'knapsack',
+            rows: defaultKnapsackRows(trainer as Parameters<typeof defaultKnapsackRows>[0]),
+            preflight: {
+              algorithm: 'knapsack_01',
+              negativeWeights: false,
+              indexingStartsAtZero: true,
+              usesPreviousRow: true,
+              eachItemAtMostOnce: true,
+              output: 'complete_table_and_optimum',
+              runtime: 'O(n · W)',
+            },
+            finalValue: null,
+          }
+        : null;
+    },
     (answer, task) => {
       const trainer = getTrainerById(task.trainerId);
       if (!trainer) return zeroScore(task, 'exam_task_missing_trainer');
@@ -193,7 +229,26 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
   baseAdapter(
     'trainer-union-find-listen-v1',
     'union_find',
-    () => ({ kind: 'union_find_exam_empty' }),
+    () => {
+      const trainer = getTrainerById('trainer-union-find-listen-v1');
+      return trainer
+        ? {
+            kind: 'union_find',
+            checkpoints: defaultUnionFindCheckpoints(trainer),
+            preflight: {
+              algorithm: 'union_find_linked_lists',
+              representation: 'linked_lists_with_representative_pointer',
+              startsEmpty: true,
+              weightedUnion: true,
+              tieBreaker: 'lexicographically_smaller_representative_is_smaller_set',
+              output: 'checkpoint_sets_representatives_next_size',
+              nextDirection: 'head_to_tail',
+              runtime: 'O(m + n log n)',
+            },
+            finalValue: null,
+          }
+        : null;
+    },
     (answer, task) => {
       const trainer = getTrainerById(task.trainerId);
       if (!trainer) return zeroScore(task, 'exam_task_missing_trainer');
@@ -206,7 +261,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
   baseAdapter(
     'trainer-schleifeninvariante-summe-v1',
     'proof_loop_invariant',
-    () => ({ kind: 'proof_exam_empty' }),
+    defaultProofAnswer,
     (answer, task) => {
       if (!getProofTrainerById(task.trainerId)) return zeroScore(task, 'exam_task_missing_trainer');
       if (isStudentTextFallback(answer)) return zeroScore(task, 'exam_task_text_answer_unscored');
@@ -218,7 +273,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
   baseAdapter(
     'trainer-rekurrenz-master-fall1-v1',
     'recurrence_runtime_proof',
-    () => ({ kind: 'recurrence_exam_empty' }),
+    defaultRecurrenceAnswer,
     (answer, task) => {
       if (!getRecurrenceTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
@@ -234,7 +289,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
   baseAdapter(
     'trainer-dp-entwurf-mine-v1',
     'dp_design_mine',
-    () => ({ kind: 'dp_design_exam_empty' }),
+    defaultDpDesignAnswer,
     (answer, task) => {
       if (!getDpDesignTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
@@ -266,7 +321,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
   baseAdapter(
     'trainer-dc-entwurf-maxwertdifferenz-v1',
     'divide_conquer_max_difference',
-    () => ({ kind: 'divide_conquer_exam_empty' }),
+    defaultDivideConquerDesignAnswer,
     (answer, task) => {
       if (!getDivideConquerDesignTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
@@ -282,7 +337,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
   baseAdapter(
     'trainer-rot-schwarz-einfuegen-v1',
     'red_black_tree_insertion',
-    () => ({ kind: 'rb_insertion_exam_empty' }),
+    defaultRbInsertionAnswer,
     (answer, task) => {
       if (!getRbInsertionTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
@@ -298,7 +353,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
   baseAdapter(
     'trainer-graph-floyd-warshall-v1',
     'floyd_warshall_matrix',
-    () => ({ kind: 'floyd_warshall_exam_empty' }),
+    () => defaultGraphTracingAnswer('trainer-graph-floyd-warshall-v1'),
     (answer, task) => {
       if (!getGraphTracingTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
@@ -314,7 +369,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
   baseAdapter(
     'trainer-graph-dijkstra-v1',
     'dijkstra_trace',
-    () => ({ kind: 'dijkstra_exam_empty' }),
+    () => defaultGraphTracingAnswer('trainer-graph-dijkstra-v1'),
     (answer, task) => {
       if (!getGraphTracingTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');
@@ -330,7 +385,7 @@ export const examTaskAdapters: ExamTaskAdapter[] = [
   baseAdapter(
     'trainer-graph-prim-mst-v1',
     'prim_mst_trace',
-    () => ({ kind: 'prim_mst_exam_empty' }),
+    () => defaultGraphTracingAnswer('trainer-graph-prim-mst-v1'),
     (answer, task) => {
       if (!getGraphTracingTrainerById(task.trainerId))
         return zeroScore(task, 'exam_task_missing_trainer');

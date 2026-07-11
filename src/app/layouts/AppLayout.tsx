@@ -77,7 +77,7 @@ export function AppLayout() {
             <small>Study System</small>
           </span>
         </NavLink>
-        <span className="topbar__phase">1.0.0-rc.7 · 11 Trainer · Screenreader-Gate offen</span>
+        <span className="topbar__phase">1.0.0-rc.8 · 11 Trainer · Screenreader-Gate offen</span>
       </header>
       <nav className="primary-nav" aria-label="Hauptnavigation">
         {navigationGroups.map((group) => (

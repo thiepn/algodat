@@ -29,7 +29,7 @@ export function updateTaskCompletionState(
   session: ExamSession,
   taskSlotId: string,
   answer: unknown,
-  completionStatus: 'unanswered' | 'partial' | 'answered',
+  completionStatus: ExamSession['taskStates'][string]['completionStatus'],
   at: string,
 ): ExamSession {
   const state = session.taskStates[taskSlotId];

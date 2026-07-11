@@ -1,6 +1,6 @@
 # Release Checklist
 
-## Phase 20.1 / 1.0.0-rc.7
+## Archiv: Phase 20.1 / 1.0.0-rc.7
 
 - [x] Version bleibt `1.0.0-rc.7`, nicht `1.0.0`.
 - [x] Lokale Dokumentbibliothek, lokale PDF-Verknüpfungen, Originalseitenrouten und Crop-Werkzeuge

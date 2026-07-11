@@ -20,8 +20,8 @@ describe('Content Loader und Referenzen', () => {
     expect(content.greedyDesignTrainers).toHaveLength(1);
     expect(content.rbInsertionTrainers).toHaveLength(1);
     expect(content.graphTracingTrainers).toHaveLength(3);
-    expect(content.examPackages).toHaveLength(4);
-    expect(content.examTaskInstances).toHaveLength(25);
+    expect(content.examPackages).toHaveLength(5);
+    expect(content.examTaskInstances).toHaveLength(34);
     expect(diagnosticContent.foundationCompetencies).toHaveLength(8);
     expect(diagnosticContent.diagnosticItems).toHaveLength(64);
     expect(diagnosticContent.diagnosticSessionTemplates).toHaveLength(3);

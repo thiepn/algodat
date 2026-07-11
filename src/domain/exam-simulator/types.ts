@@ -23,7 +23,7 @@ export interface ExamTaskSessionState {
   trainerId: string;
   adapterId: string;
   answer: unknown;
-  completionStatus: 'unanswered' | 'partial' | 'answered';
+  completionStatus: 'unanswered' | 'started' | 'incomplete' | 'complete' | 'partial' | 'answered';
   firstOpenedAt: string | null;
   lastEditedAt: string | null;
   activeTimeMs: number;
@@ -77,6 +77,10 @@ export interface ExamTaskScore {
     recommendedReview: string;
   }>;
   completionStatus: ExamTaskSessionState['completionStatus'];
+  submittedAnswerSummary?: string;
+  modelAnswer?: unknown;
+  explanation?: string;
+  remediationActions?: Array<{ label: string; trainerId: string; errorCode?: string }>;
 }
 
 export interface ExamScoreAggregate {

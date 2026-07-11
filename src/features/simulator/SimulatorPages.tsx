@@ -16,6 +16,7 @@ import {
   submitSimulatorSession,
 } from './exam-simulator-service';
 import { trainerRegistry } from '../trainer/trainer-service';
+import { completionForExamAnswer, ExamTaskRenderer } from './ExamTaskRenderer';
 
 const sessionStatusLabels: Record<ExamSession['status'], string> = {
   created: 'angelegt',
@@ -35,8 +36,11 @@ const completionStatusLabels: Record<
   string
 > = {
   unanswered: 'unbeantwortet',
-  partial: 'teilweise beantwortet',
-  answered: 'beantwortet',
+  started: 'begonnen',
+  incomplete: 'unvollständig',
+  complete: 'vollständig',
+  partial: 'unvollständig (ältere Sitzung)',
+  answered: 'vollständig (ältere Sitzung)',
 };
 
 const rendererLabels: Record<string, string> = {
@@ -78,7 +82,7 @@ export function SimulatorDashboard() {
       <section className="trainer-grid">
         <article className="trainer-card">
           <span className="status-badge status-badge--success">startbar</span>
-          <h2>{examPackage.title}</h2>
+          <h2>Startbereite Klausur</h2>
           <p>{examPackage.description}</p>
           <p className="notice">
             Diese Probeklausur wurde aus verifizierten Aufgabenfamilien zusammengestellt. Sie ist
@@ -218,22 +222,24 @@ export function ExamSessionPage() {
   const { sessionId, taskSlotId } = useParams();
   const navigate = useNavigate();
   const [session, setSession] = useState<ExamSession | undefined>();
-  const [answerText, setAnswerText] = useState('');
+  const [answer, setAnswer] = useState<unknown>(null);
   const [saveStatus, setSaveStatus] = useState('');
   const [saving, setSaving] = useState(false);
   const pendingReviewSave = useRef<Promise<ExamSession> | null>(null);
+  const pendingAutosave = useRef<ReturnType<typeof setTimeout> | null>(null);
   const now = useSyncExternalStore(subscribeClock, getClockSnapshot, () => 0);
+  useEffect(
+    () => () => {
+      if (pendingAutosave.current) clearTimeout(pendingAutosave.current);
+    },
+    [],
+  );
   useEffect(() => {
     if (!sessionId) return;
     void getSimulatorSession(sessionId).then((loaded) => {
       setSession(loaded);
       const currentSlot = taskSlotId ?? loaded?.currentTaskSlotId;
-      const answer = currentSlot ? loaded?.taskStates[currentSlot]?.answer : null;
-      setAnswerText(
-        answer && typeof answer === 'object' && 'text' in answer
-          ? String((answer as { text: unknown }).text)
-          : '',
-      );
+      setAnswer(currentSlot ? (loaded?.taskStates[currentSlot]?.answer ?? null) : null);
       setSaveStatus('');
     });
   }, [sessionId, taskSlotId]);
@@ -248,13 +254,17 @@ export function ExamSessionPage() {
     if (pendingReviewSave.current) await pendingReviewSave.current;
     return (await getSimulatorSession(session.id)) ?? session;
   };
-  const save = async () => {
+  const save = async (answerToSave = answer) => {
     setSaving(true);
     setSaveStatus('Autosave läuft.');
     try {
       const latestSession = await sessionAfterPendingReviewSave();
       setSession(
-        await saveTaskAnswer({ session: latestSession, taskSlotId: task.taskSlotId, answerText }),
+        await saveTaskAnswer({
+          session: latestSession,
+          taskSlotId: task.taskSlotId,
+          answer: answerToSave,
+        }),
       );
       setSaveStatus('Antwort lokal gespeichert.');
     } finally {
@@ -266,21 +276,34 @@ export function ExamSessionPage() {
     const saved = await saveTaskAnswer({
       session: latestSession,
       taskSlotId: task.taskSlotId,
-      answerText,
+      answer,
     });
     const next = await navigateSimulatorTask(saved, nextSlotId);
     await navigate(`/simulator/sitzung/${next.id}/aufgabe/${nextSlotId}`);
   };
   const submit = async () => {
+    if (
+      !window.confirm(
+        'Die Prüfung wird endgültig abgegeben. Danach werden Lösungen und Bewertung angezeigt.',
+      )
+    )
+      return;
     const latestSession = await sessionAfterPendingReviewSave();
     const saved = await saveTaskAnswer({
       session: latestSession,
       taskSlotId: task.taskSlotId,
-      answerText,
+      answer,
     });
     const { session: graded } = await submitSimulatorSession(saved);
     await navigate(`/simulator/sitzung/${graded.id}/ergebnis`);
   };
+  const changeAnswer = (nextAnswer: unknown) => {
+    setAnswer(nextAnswer);
+    setSaveStatus('Wird gespeichert …');
+    if (pendingAutosave.current) clearTimeout(pendingAutosave.current);
+    pendingAutosave.current = setTimeout(() => void save(nextAnswer), 500);
+  };
+  const completion = completionForExamAnswer(task, answer);
   return (
     <div className="page-flow trainer-attempt">
       <header className="page-header">
@@ -297,17 +320,13 @@ export function ExamSessionPage() {
         onSelect={(slotId) => void go(slotId)}
       />
       <section className="step-input">
-        <h2>Aufgabe bearbeiten</h2>
-        <ExamTaskPrompt task={task} />
-        <label className="wide-input">
-          Antwort für {task.title}
-          <textarea
-            rows={12}
-            value={answerText}
-            onChange={(event) => setAnswerText(event.target.value)}
-            placeholder="Schreibe hier Tabellenwerte, Zwischenschritte, Begründungen oder Pseudocode in normaler Klausurform."
-          />
-        </label>
+        <ExamTaskRenderer task={task} answer={answer} onChange={changeAnswer} />
+        <p>
+          Bearbeitungsstand: <strong>{completionStatusLabels[completion.status]}</strong>
+          {completion.missing.length
+            ? ` · noch offen: ${completion.missing.slice(0, 3).join(', ')}`
+            : ''}
+        </p>
         <label className="checkbox-row">
           <input
             type="checkbox"
@@ -330,11 +349,11 @@ export function ExamSessionPage() {
         </label>
       </section>
       <p className="sr-status" aria-live="polite">
-        {saveStatus}
+        {saveStatus || 'Gespeichert'}
       </p>
       <div className="button-row">
         <button type="button" disabled={saving} onClick={() => void save()}>
-          {saving ? 'Autosave läuft …' : 'Autosave jetzt ausführen'}
+          {saving ? 'Wird gespeichert …' : 'Jetzt speichern'}
         </button>
         <Link className="button-link" to={`/simulator/sitzung/${session.id}/uebersicht`}>
           Übersicht
@@ -420,7 +439,16 @@ export function ExamResultPage() {
     trainerId: string;
     mappedExamScore: { numerator: number; denominator: number };
     examMaximum: { numerator: number; denominator: number };
-    errors: unknown[];
+    errors: Array<{ errorCode: string; explanation: string; recommendedReview: string }>;
+    rubricResults?: Array<{
+      criterionId: string;
+      label: string;
+      points: number;
+      maxPoints: number;
+    }>;
+    submittedAnswerSummary?: string;
+    modelAnswer?: unknown;
+    explanation?: string;
   }>;
   return (
     <div className="page-flow trainer-result">
@@ -429,7 +457,7 @@ export function ExamResultPage() {
         <h1>
           {total}/{max} Punkte
         </h1>
-        <p>Trainingsinterne Auswertung der aktuellen Probeklausur mit Lernhinweisen.</p>
+        <p>Nicht-offizielle Übungsauswertung der aktuellen Probeklausur mit Lernhinweisen.</p>
       </header>
       <section className="task-table-wrapper">
         <table>
@@ -461,6 +489,60 @@ export function ExamResultPage() {
             })}
           </tbody>
         </table>
+      </section>
+      <section className="card-grid" aria-label="Auswertung je Aufgabe">
+        {taskScores.map((score, index) => {
+          const trainer = trainerRegistry.find((entry) => entry.trainerId === score.trainerId);
+          return (
+            <article className="card" key={`${score.trainerId}-details`}>
+              <h2>
+                Aufgabe {index + 1}: {trainer?.title ?? 'Klausuraufgabe'}
+              </h2>
+              <p>
+                <strong>Abgabe:</strong>{' '}
+                {score.submittedAnswerSummary ?? 'Strukturierte Antwort gespeichert.'}
+              </p>
+              <h3>Rubrik</h3>
+              <ul>
+                {(score.rubricResults ?? []).map((criterion) => (
+                  <li key={criterion.criterionId}>
+                    {criterion.label}: {criterion.points}/{criterion.maxPoints}
+                  </li>
+                ))}
+              </ul>
+              <h3>Modelllösung</h3>
+              <ReadableAnswer value={score.modelAnswer} />
+              {score.explanation ? (
+                <p>
+                  <strong>Einordnung:</strong> {score.explanation}
+                </p>
+              ) : null}
+              {score.errors.length ? (
+                <ul>
+                  {score.errors.map((error) => (
+                    <li key={error.errorCode}>{error.explanation}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>Keine automatisch erkannte Abweichung.</p>
+              )}
+              <div className="button-row">
+                <Link className="button-link" to={trainerRoute(score.trainerId)}>
+                  Trainer öffnen
+                </Link>
+                <Link className="button-link" to="/lernen">
+                  Lernmodul öffnen
+                </Link>
+                <Link className="button-link" to={trainerRoute(score.trainerId)}>
+                  Ähnliche Variante üben
+                </Link>
+                <Link className="button-link" to="/lernplan/heute">
+                  Zum Lernplan hinzufügen
+                </Link>
+              </div>
+            </article>
+          );
+        })}
       </section>
       <section className="panel">
         <h2>Erklärung</h2>
@@ -576,43 +658,51 @@ function ExamTaskNavigation({
   );
 }
 
-function ExamTaskPrompt({
-  task,
-}: {
-  task: ReturnType<typeof getCoreExamPackage>['taskSlots'][number];
-}) {
-  return (
-    <div className="exam-task-prompt">
-      <p className="eyebrow">{rendererLabels[task.rendererType] ?? task.family}</p>
-      <h3>{task.title}</h3>
-      <p>
-        Erzeuge die erwartete Klausurantwort für diesen Aufgabentyp: Zwischenschritte,
-        Tabellenzustände, Beweisstruktur oder Pseudocode. Nutze die Angaben aus dem passenden
-        Trainer als Arbeitsform.
-      </p>
-      <ul>
-        <li>Punkte: {task.examPoints.numerator / task.examPoints.denominator}</li>
-        <li>Renderer: {rendererLabels[task.rendererType] ?? task.rendererType}</li>
-        <li>Trainerfamilie: {task.family}</li>
-      </ul>
-      <details>
-        <summary>Quellenbezug anzeigen</summary>
-        <ul>
-          {task.sourceRefs.map((ref) => (
-            <li key={`${ref.sourceId}-${ref.page}`}>Quelle aus Manifest, Seite {ref.page}</li>
-          ))}
-        </ul>
-      </details>
-    </div>
-  );
-}
-
 function Missing({ title, to }: { title: string; to: string }) {
   return (
     <section className="page-flow">
       <h1>{title}</h1>
       <Link to={to}>Zurück</Link>
     </section>
+  );
+}
+
+function trainerRoute(trainerId: string) {
+  if (trainerId === 'trainer-rucksack-dp-v1' || trainerId === 'trainer-union-find-listen-v1')
+    return `/trainer/tracing/${trainerId}`;
+  if (trainerId === 'trainer-schleifeninvariante-summe-v1') return `/trainer/beweise/${trainerId}`;
+  if (trainerId === 'trainer-rekurrenz-master-fall1-v1') return `/trainer/rekurrenzen/${trainerId}`;
+  if (trainerId === 'trainer-dp-entwurf-mine-v1') return `/trainer/entwurf/dp/${trainerId}`;
+  if (trainerId === 'trainer-dc-entwurf-maxwertdifferenz-v1')
+    return `/trainer/entwurf/divide-and-conquer/${trainerId}`;
+  if (trainerId === 'trainer-rot-schwarz-einfuegen-v1')
+    return `/trainer/baeume/rot-schwarz/${trainerId}`;
+  if (trainerId.includes('dijkstra')) return `/trainer/graphen/dijkstra/${trainerId}`;
+  if (trainerId.includes('prim')) return `/trainer/graphen/prim/${trainerId}`;
+  return '/trainer';
+}
+
+function ReadableAnswer({ value }: { value: unknown }) {
+  if (value === null || value === undefined)
+    return <p>Modelllösung wird aus der kanonischen Trainerantwort aufgebaut.</p>;
+  if (typeof value !== 'object') return <p>{String(value)}</p>;
+  return (
+    <dl className="metadata-list">
+      {Object.entries(value as Record<string, unknown>)
+        .filter(([key]) => !['kind', 'trainerKind', 'problemId', 'preflight'].includes(key))
+        .map(([key, entry]) => (
+          <div key={key}>
+            <dt>{key.replace(/([A-Z])/gu, ' $1')}</dt>
+            <dd>
+              {typeof entry === 'object' && entry !== null ? (
+                <ReadableAnswer value={entry} />
+              ) : (
+                String(entry)
+              )}
+            </dd>
+          </div>
+        ))}
+    </dl>
   );
 }
 

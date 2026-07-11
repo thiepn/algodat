@@ -42,5 +42,16 @@
       "solide",
       "stark"
     ]
+  },
+  {
+    "id": "exam-exact-points-v5",
+    "exactPoints": true,
+    "showOfficialGrade": false,
+    "classificationLabels": [
+      "noch nicht stabil",
+      "knapp",
+      "solide",
+      "stark"
+    ]
   }
 ]

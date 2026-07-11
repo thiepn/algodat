@@ -114,7 +114,7 @@
     },
     {
       "name": "exam-packages.json",
-      "sha256": "22991bf28974479e91a68657ce880ad754673c191e6708ccfcef84387cba8ef4"
+      "sha256": "53a12936a4c5f1df9810bb52342208db6488cf05af58241a5ded82992dcfdabf"
     },
     {
       "name": "exam-profile-coverage.json",
@@ -130,7 +130,7 @@
     },
     {
       "name": "exam-scoring-policies.json",
-      "sha256": "31a28d9bf6cb6b7c4b78159bdf0e4dfa3d73cd91721ae8a0b1137573baf115f3"
+      "sha256": "73fa0aee8bf0b86efa749d0490d9a8c523b7a148f081597d43e9fc4c700d8916"
     },
     {
       "name": "exam-slot-competency-map.json",
@@ -138,7 +138,7 @@
     },
     {
       "name": "exam-task-instances.json",
-      "sha256": "e8bd44a38ae2907220db6920285adbcf56b507422dc8e1cb7f84beb03a923aa7"
+      "sha256": "ba81b58f65c6d4404c76ff04338d624abfdc9060c082c6f83f444e4216a49264"
     },
     {
       "name": "foundation-competencies.json",
