@@ -189,6 +189,10 @@
       "sha256": "ed578b1a868efb0b226bc51dc56158870870bfcd569a890bafc95fc079c50b64"
     },
     {
+      "name": "public-source-validation-report.json",
+      "sha256": "fd443c4c82f1f1311ddd708fbbe0a4ff0005db0aa855c9060983ac75a661de70"
+    },
+    {
       "name": "rb-insertion-problems.json",
       "sha256": "f79b1e36483f3e816780470f42f0edb2ddfc5e551a5724da3adae5fb696e8dce"
     },
@@ -222,7 +226,7 @@
     },
     {
       "name": "sources.json",
-      "sha256": "81e8c30cd341754da3dab64951024eb0f96546034197ad2b0ede9feb8cf480f0"
+      "sha256": "1d311cb6fc4bbc346ba253ee671feb60ee0e04ef651895da08ff8d826b6f6b2e"
     },
     {
       "name": "spaced-review-policy.json",

@@ -131,6 +131,19 @@ export async function inspectDeploymentAssets(
       if (/data:image\/(?:png|jpeg|jpg|webp|gif);base64,/iu.test(contents)) {
         errors.push(`Base64-Bildpayload im Deployment: ${relative}`);
       }
+      const suspiciousPublicTitles = [
+        ...contents.matchAll(/["']title["']\s*:\s*["']([^"'\r\n]{161,})["']/giu),
+      ];
+      if (suspiciousPublicTitles.length) {
+        errors.push(`Verdächtig langer öffentlicher Metadatentitel in ${relative}`);
+      }
+      if (
+        /["']title["']\s*:\s*["'][^"']*(?:Aufgabe[^"']*){2,}(?:Matrikelnummer|Seite)/iu.test(
+          contents,
+        )
+      ) {
+        errors.push(`Möglicher OCR- oder Prüfungsdump im Titelfeld: ${relative}`);
+      }
       if (
         /(?:renderedPage|pageScreenshot|ocrFullText|extractedFullText|["']screenshots?["']\s*:|["']seitenbilder?["']\s*:)/iu.test(
           contents,

@@ -128,36 +128,65 @@ export async function listSimulatorSessions() {
   return (await examSessionRepository.list()) as ExamSession[];
 }
 
+const sessionWriteQueues = new Map<string, Promise<unknown>>();
+
+function updateLatestSession(
+  sessionId: string,
+  mutate: (latest: ExamSession) => ExamSession,
+): Promise<ExamSession> {
+  const previous = sessionWriteQueues.get(sessionId) ?? Promise.resolve();
+  const operation = previous
+    .catch(() => undefined)
+    .then(async () => {
+      const stored = await examSessionRepository.get(sessionId);
+      if (!stored) throw new Error('Die Klausursitzung wurde nicht gefunden.');
+      const updated = mutate(stored as ExamSession);
+      await examSessionRepository.put(meta(updated, packageForSession(updated)));
+      await saveSimulatorSnapshot(updated);
+      return updated;
+    });
+  sessionWriteQueues.set(sessionId, operation);
+  void operation.finally(() => {
+    if (sessionWriteQueues.get(sessionId) === operation) sessionWriteQueues.delete(sessionId);
+  });
+  return operation;
+}
+
 export async function saveTaskAnswer({
-  session,
+  sessionId,
   taskSlotId,
+  answerRevision,
   answer,
 }: {
-  session: ExamSession;
+  sessionId: string;
   taskSlotId: string;
+  answerRevision: number;
   answer: unknown;
 }) {
+  const session = await getSimulatorSession(sessionId);
+  if (!session) throw new Error('Die Klausursitzung wurde nicht gefunden.');
   const examPackage = packageForSession(session);
   const task = examPackage.taskSlots.find((slot) => slot.taskSlotId === taskSlotId);
   if (!task) throw new Error('Aufgabe der Klausursitzung fehlt.');
   const completion = completionForExamAnswer(task, answer);
-  const updated = updateTaskCompletionState(
-    session,
-    taskSlotId,
-    answer,
-    completion.status,
-    new Date().toISOString(),
-  );
-  await examSessionRepository.put(meta(updated, packageForSession(updated)));
-  await saveSimulatorSnapshot(updated);
-  return updated;
+  return updateLatestSession(sessionId, (latest) => {
+    const currentRevision = latest.taskStates[taskSlotId]?.answerRevision ?? 0;
+    if (answerRevision < currentRevision) return latest;
+    return updateTaskCompletionState(
+      latest,
+      taskSlotId,
+      structuredClone(answer),
+      completion.status,
+      new Date().toISOString(),
+      answerRevision,
+    );
+  });
 }
 
 export async function navigateSimulatorTask(session: ExamSession, taskSlotId: string) {
-  const updated = navigateToTask(session, taskSlotId, new Date().toISOString());
-  await examSessionRepository.put(meta(updated, packageForSession(updated)));
-  await saveSimulatorSnapshot(updated);
-  return updated;
+  return updateLatestSession(session.id, (latest) =>
+    navigateToTask(latest, taskSlotId, new Date().toISOString()),
+  );
 }
 
 export async function setSimulatorReviewFlag(
@@ -165,10 +194,7 @@ export async function setSimulatorReviewFlag(
   taskSlotId: string,
   marked: boolean,
 ) {
-  const updated = markTaskForReview(session, taskSlotId, marked);
-  await examSessionRepository.put(meta(updated, packageForSession(updated)));
-  await saveSimulatorSnapshot(updated);
-  return updated;
+  return updateLatestSession(session.id, (latest) => markTaskForReview(latest, taskSlotId, marked));
 }
 
 export async function expireSimulatorSession(session: ExamSession) {

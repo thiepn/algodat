@@ -16,8 +16,9 @@ test('Aktuelle Probeklausur nutzt strukturierte Renderer und speichert lokal', a
   await expect(page.getByRole('navigation', { name: 'Prüfungsaufgaben' })).toBeVisible();
   await expect(page.getByLabel('Opt 0 0')).toBeVisible();
   await page.getByLabel('Opt 0 0').fill('0');
-  await expect(page.locator('.sr-status')).toContainText('gespeichert');
-  await page.getByRole('button', { name: 'Jetzt speichern' }).click({ force: true });
+  await expect(page.locator('.sr-status')).toHaveText('Gespeichert');
+  await page.reload();
+  await expect(page.getByLabel('Opt 0 0')).toHaveValue('0');
 
   await page.getByRole('button', { name: /Aufgabe 2/u }).click();
   await expect(

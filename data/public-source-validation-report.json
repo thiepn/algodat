@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewedAt": "2026-07-11",
+  "inspectedSourceCount": 138,
+  "sanitizedTitleCount": 80,
+  "violationCount": 0,
+  "passed": true,
+  "policy": "Öffentliche Quellenmetadaten verwenden kurze Dateinamen-basierte Anzeigenamen; extrahierter PDF- oder OCR-Text bleibt ausschließlich privater Build-Input."
+}

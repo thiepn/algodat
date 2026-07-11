@@ -93,6 +93,13 @@ describe('Deployment-Sicherheitsprüfung', () => {
     ).toContain('Windows-Absolutpfad in content.json');
   });
 
+  it('lehnt extrahierten Prüfungs- oder OCR-Text in Metadatentiteln ab', async () => {
+    const longTitle = `Aufgabe Matrikelnummer Seite ${'vollständiger Seitentext '.repeat(12)}`;
+    expect(await errorsFor('content.json', JSON.stringify({ title: longTitle }))).toContain(
+      'Verdächtig langer öffentlicher Metadatentitel in content.json',
+    );
+  });
+
   it('lehnt öffentliche PDF-Links im HTML ab', async () => {
     expect(await errorsFor('index.html', '<a href="assets/klausur.pdf">Quelle</a>')).toContain(
       'Öffentlicher PDF-Verweis in index.html',

@@ -227,6 +227,9 @@ export function ExamSessionPage() {
   const [saving, setSaving] = useState(false);
   const pendingReviewSave = useRef<Promise<ExamSession> | null>(null);
   const pendingAutosave = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const answerRef = useRef<unknown>(null);
+  const answerRevision = useRef(0);
+  const pendingAnswerSave = useRef<Promise<ExamSession> | null>(null);
   const now = useSyncExternalStore(subscribeClock, getClockSnapshot, () => 0);
   useEffect(
     () => () => {
@@ -239,8 +242,13 @@ export function ExamSessionPage() {
     void getSimulatorSession(sessionId).then((loaded) => {
       setSession(loaded);
       const currentSlot = taskSlotId ?? loaded?.currentTaskSlotId;
-      setAnswer(currentSlot ? (loaded?.taskStates[currentSlot]?.answer ?? null) : null);
-      setSaveStatus('');
+      const restoredAnswer = currentSlot ? (loaded?.taskStates[currentSlot]?.answer ?? null) : null;
+      answerRef.current = restoredAnswer;
+      answerRevision.current = currentSlot
+        ? (loaded?.taskStates[currentSlot]?.answerRevision ?? 0)
+        : 0;
+      setAnswer(restoredAnswer);
+      setSaveStatus('Gespeichert');
     });
   }, [sessionId, taskSlotId]);
   if (!session) return <Missing title="Sitzung nicht gefunden" to="/simulator" />;
@@ -250,34 +258,37 @@ export function ExamSessionPage() {
   if (!task)
     return <Missing title="Aufgabe nicht gefunden" to={`/simulator/sitzung/${session.id}`} />;
   const remainingMs = computeRemainingTime(session.deadlineAt, now);
-  const sessionAfterPendingReviewSave = async () => {
-    if (pendingReviewSave.current) await pendingReviewSave.current;
-    return (await getSimulatorSession(session.id)) ?? session;
-  };
-  const save = async (answerToSave = answer) => {
+  const save = async (
+    answerToSave = answerRef.current,
+    revisionToSave = answerRevision.current,
+  ) => {
     setSaving(true);
-    setSaveStatus('Autosave läuft.');
+    setSaveStatus('Wird gespeichert …');
     try {
-      const latestSession = await sessionAfterPendingReviewSave();
-      setSession(
-        await saveTaskAnswer({
-          session: latestSession,
-          taskSlotId: task.taskSlotId,
-          answer: answerToSave,
-        }),
-      );
-      setSaveStatus('Antwort lokal gespeichert.');
+      if (pendingReviewSave.current) await pendingReviewSave.current;
+      const persistence = saveTaskAnswer({
+        sessionId: session.id,
+        taskSlotId: task.taskSlotId,
+        answerRevision: revisionToSave,
+        answer: answerToSave,
+      });
+      pendingAnswerSave.current = persistence;
+      const saved = await persistence;
+      setSession(saved);
+      if (revisionToSave === answerRevision.current) setSaveStatus('Gespeichert');
+      return saved;
+    } catch {
+      setSaveStatus('Speicherfehler');
+      throw new Error('Die strukturierte Antwort konnte nicht gespeichert werden.');
     } finally {
+      pendingAnswerSave.current = null;
       setSaving(false);
     }
   };
   const go = async (nextSlotId: string) => {
-    const latestSession = await sessionAfterPendingReviewSave();
-    const saved = await saveTaskAnswer({
-      session: latestSession,
-      taskSlotId: task.taskSlotId,
-      answer,
-    });
+    if (pendingAutosave.current) clearTimeout(pendingAutosave.current);
+    if (pendingAnswerSave.current) await pendingAnswerSave.current;
+    const saved = await save();
     const next = await navigateSimulatorTask(saved, nextSlotId);
     await navigate(`/simulator/sitzung/${next.id}/aufgabe/${nextSlotId}`);
   };
@@ -288,20 +299,20 @@ export function ExamSessionPage() {
       )
     )
       return;
-    const latestSession = await sessionAfterPendingReviewSave();
-    const saved = await saveTaskAnswer({
-      session: latestSession,
-      taskSlotId: task.taskSlotId,
-      answer,
-    });
+    if (pendingAutosave.current) clearTimeout(pendingAutosave.current);
+    if (pendingAnswerSave.current) await pendingAnswerSave.current;
+    const saved = await save();
     const { session: graded } = await submitSimulatorSession(saved);
     await navigate(`/simulator/sitzung/${graded.id}/ergebnis`);
   };
   const changeAnswer = (nextAnswer: unknown) => {
+    answerRef.current = nextAnswer;
+    answerRevision.current += 1;
     setAnswer(nextAnswer);
-    setSaveStatus('Wird gespeichert …');
+    setSaveStatus('Ungespeicherte Änderungen');
     if (pendingAutosave.current) clearTimeout(pendingAutosave.current);
-    pendingAutosave.current = setTimeout(() => void save(nextAnswer), 500);
+    const revision = answerRevision.current;
+    pendingAutosave.current = setTimeout(() => void save(nextAnswer, revision), 500);
   };
   const completion = completionForExamAnswer(task, answer);
   return (

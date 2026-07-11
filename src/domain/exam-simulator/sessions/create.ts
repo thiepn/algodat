@@ -20,6 +20,7 @@ export function createExamSession({
         trainerId: slot.trainerId,
         adapterId: slot.adapterId,
         answer: null,
+        answerRevision: 0,
         completionStatus: 'unanswered',
         firstOpenedAt: null,
         lastEditedAt: null,

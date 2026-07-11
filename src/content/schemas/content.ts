@@ -11,7 +11,7 @@ const Meta = CanonicalMetaShape;
 export const SourceDocumentSchema = z.object({
   ...Meta,
   displayName: z.string().min(1),
-  title: z.string().min(1),
+  title: z.string().min(1).max(160),
   authorityLevel: z.number().int().min(1).max(4),
   category: z.string().min(1),
   evidenceType: EvidenceTypeSchema,

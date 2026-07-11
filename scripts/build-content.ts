@@ -303,6 +303,27 @@ function normalExamQuestionViolation(question: RawQuestions['questions'][number]
   return null;
 }
 
+function safePublicSourceTitle(raw: RawManifest['documents'][number]): string {
+  const filenameTitle = raw.original_name
+    .replace(/\.[^.]+$/u, '')
+    .replace(/[_-]+/gu, ' ')
+    .replace(/\s+/gu, ' ')
+    .trim();
+  const category = raw.document_category ?? 'Quelldokument';
+  const year = raw.document_year ? ` ${raw.document_year}` : '';
+  const candidate = filenameTitle || `${category}${year}`;
+  return candidate.length <= 140 ? candidate : `${category}${year}`;
+}
+
+function publicSourceTitleViolation(title: string): string | null {
+  if (title.length > 160) return 'Titel überschreitet 160 Zeichen.';
+  if (/\r|\n/u.test(title)) return 'Titel enthält mehrzeiligen Text.';
+  const examMarkers = title.match(/\b(Aufgabe|Matrikelnummer|Seite)\b/giu)?.length ?? 0;
+  if (examMarkers >= 3) return 'Titel ähnelt extrahiertem Prüfungs- oder Seitentext.';
+  if (title.split(/\s+/u).length > 24) return 'Titel enthält zu viele Wörter für Metadaten.';
+  return null;
+}
+
 async function main(): Promise<void> {
   await mkdir(generatedDir, { recursive: true });
   const manifest = await readJson<RawManifest>(path.join(dataDir, 'source-manifest.json'));
@@ -391,7 +412,7 @@ async function main(): Promise<void> {
       lastReviewed,
       duplicateGroupId: raw.duplicateGroupId ?? null,
       displayName: raw.original_name,
-      title: raw.document_title?.trim() || raw.original_name,
+      title: safePublicSourceTitle(raw),
       authorityLevel: raw.source_authority_level ?? 2,
       category: raw.document_category ?? 'Sonstiges',
       evidenceType: raw.evidenceType,
@@ -404,6 +425,14 @@ async function main(): Promise<void> {
     }))
     .sort((a, b) => a.displayName.localeCompare(b.displayName, 'de'));
   SafeSourcesFileSchema.parse(sources);
+  const publicSourceViolations = sources.flatMap((source) => {
+    const violation = publicSourceTitleViolation(source.title);
+    return violation ? [{ sourceId: source.id, field: 'title', violation }] : [];
+  });
+  if (publicSourceViolations.length)
+    throw new Error(
+      `Öffentliche Quellenmetadaten enthalten ${publicSourceViolations.length} verdächtige Titel.`,
+    );
 
   const sourceIds = new Set(sources.map((source) => source.id));
   const topics: Topic[] = rawTopics.topics.map((raw) => ({
@@ -950,6 +979,17 @@ async function main(): Promise<void> {
     );
   const outputs: Record<string, unknown> = {
     'sources.json': sources,
+    'public-source-validation-report.json': {
+      schemaVersion,
+      contentVersion,
+      inspectedSourceCount: sources.length,
+      sanitizedTitleCount: manifest.documents.filter(
+        (document) => (document.document_title?.trim().length ?? 0) > 160,
+      ).length,
+      violationCount: publicSourceViolations.length,
+      violations: publicSourceViolations,
+      passed: publicSourceViolations.length === 0,
+    },
     'exam-profiles.json': profiles,
     'exam-blueprint.json': blueprintSafe,
     'topics-index.json': topics,

@@ -213,7 +213,15 @@ export function ExamTaskRenderer({
   answer: unknown;
   onChange: (answer: unknown) => void;
 }) {
-  const effectiveAnswer = answer ?? getExamTaskAdapter(task.trainerId).initializeExamAnswer();
+  const initializedAnswer = getExamTaskAdapter(task.trainerId).initializeExamAnswer();
+  const answerKind =
+    answer && typeof answer === 'object' && 'kind' in answer
+      ? String((answer as { kind: unknown }).kind)
+      : null;
+  const incompatibleTracingAnswer =
+    (task.rendererType === 'knapsack' && answerKind !== 'knapsack') ||
+    (task.rendererType === 'union_find' && answerKind !== 'union_find');
+  const effectiveAnswer = !answer || incompatibleTracingAnswer ? initializedAnswer : answer;
   const registry = getRegistryEntry(task.trainerId);
   const tracing = getTrainerById(task.trainerId);
   const graph = getGraphTracingTrainerById(task.trainerId);

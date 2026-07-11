@@ -23,6 +23,7 @@ export interface ExamTaskSessionState {
   trainerId: string;
   adapterId: string;
   answer: unknown;
+  answerRevision?: number;
   completionStatus: 'unanswered' | 'started' | 'incomplete' | 'complete' | 'partial' | 'answered';
   firstOpenedAt: string | null;
   lastEditedAt: string | null;

@@ -31,6 +31,7 @@ export function updateTaskCompletionState(
   answer: unknown,
   completionStatus: ExamSession['taskStates'][string]['completionStatus'],
   at: string,
+  answerRevision?: number,
 ): ExamSession {
   const state = session.taskStates[taskSlotId];
   if (!state) return { ...session, status: 'invalid' };
@@ -38,7 +39,13 @@ export function updateTaskCompletionState(
     ...session,
     taskStates: {
       ...session.taskStates,
-      [taskSlotId]: { ...state, answer, completionStatus, lastEditedAt: at },
+      [taskSlotId]: {
+        ...state,
+        answer,
+        answerRevision: answerRevision ?? state.answerRevision ?? 0,
+        completionStatus,
+        lastEditedAt: at,
+      },
     },
   };
 }
