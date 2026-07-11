@@ -15,4 +15,21 @@ Dieses Protokoll trennt Evidenz, Identitätskandidatur und kanonische Frage. Ein
 | 11.07.2026 | `mock-2023` | Aufgabe 9 | `mock-2023-task-9` | Aufgabe `q-959a0e7e7bea`, Lösung `q-70b90b34d0dc` | final reviewed | Vertauschte Lese-/Löschlabels der offiziellen Lösung auf Seite 14 dokumentiert. |
 | 11.07.2026 | `mock-2023` | Titelseiten | keine Frage | `q-7d7aa2066664`, `q-c62724c0fc32` | ausgeschlossen | Prüfungs- und Lösungstitelseite sind keine Aufgabenidentitäten. |
 
-Offene Kandidaturen: 75. Sie sind im Zähler des Reconciliation-Reports geführt, aber bewusst nicht als Fragen veröffentlicht oder zu Aufgaben gezählt.
+Offene Kandidaturen nach Abschluss von `mock-2023`: 75. Sie waren im damaligen Zähler des Reconciliation-Reports geführt, aber bewusst nicht als Fragen veröffentlicht oder zu Aufgaben gezählt.
+
+## Reale Klausur `exam-2020-2`
+
+| Datum | Sammlung | Aufgabe | Kanonische ID | Evidenz | Entscheidung | Notiz |
+| --- | --- | ---: | --- | --- | --- | --- |
+| 11.07.2026 | `exam-2020-2` | 1 | `exam-2020-2-task-1` | `q-1c1860fa3f25`, `q-936b70ac620a` | final reviewed | Zwölf Intervalle und Auswahlfolge auf Seite 2 geprüft. |
+| 11.07.2026 | `exam-2020-2` | 2 | `exam-2020-2-task-2` | `q-d95359c32eff`, `q-541014940052` | final reviewed | Gerichtete Kanten und DFS-Zeitstempel auf Seite 3 geprüft. |
+| 11.07.2026 | `exam-2020-2` | 3 | `exam-2020-2-task-3` | `q-fc833b613c79`, `q-d85cb0ec2701` | final reviewed | Ausgangsbaum und fünf Ergebnisbäume auf Seite 4 geprüft. |
+| 11.07.2026 | `exam-2020-2` | 4 | `exam-2020-2-task-4` | `q-e12c9bac6609`, `q-2aae331e7ddb` | final reviewed | Zwölf Kanten, Gewichte und Prim-Folge auf Seite 5 geprüft. |
+| 11.07.2026 | `exam-2020-2` | 5 | `exam-2020-2-task-5` | `q-8bf1bf38eca6`, `q-1968c9102df1` | final reviewed | Pseudocode und Invariantenbeweis auf Seite 6 geprüft. |
+| 11.07.2026 | `exam-2020-2` | 6 | `exam-2020-2-task-6` | `q-608c00a2ba9a`, `q-3fb8e1192173` | final reviewed | Rekurrenz und verstärkte Induktionsbehauptung auf Seite 7 geprüft. |
+| 11.07.2026 | `exam-2020-2` | 7 | `exam-2020-2-task-7` | `q-9c1ee15272e4`, `q-64b364b0585e` | final reviewed | Greedy-Pseudocode, Laufzeit und Austauschbeweis auf Seite 8 geprüft. |
+| 11.07.2026 | `exam-2020-2` | 8 | `exam-2020-2-task-8` | `q-acf24d9221a1`, `q-687f52d71c12` | final reviewed | Seiten 9–10 geprüft; strikte Rekurrenzbedingung als Quellenkonflikt dokumentiert. |
+| 11.07.2026 | `exam-2020-2` | 9 | `exam-2020-2-task-9` | `q-cbeeef570d73`, `q-0b17b47a1209` | final reviewed | Seiten 11–12 als eine Aufgabe mit Lösungsfortsetzung geprüft. |
+| 11.07.2026 | `exam-2020-2` | Titelseiten | keine Frage | `q-c2391c1b18d8`, `q-32867772a3cd` | ausgeschlossen | Klausur- und Lösungstitelseite sind keine Aufgabenidentitäten. |
+
+Aktueller Stand: 18 entschiedene Identitäten und 66 offene Kandidaturen. Für die ausgewählte Sammlung sind alle 20 zugehörigen Evidenzdatensätze entschieden.

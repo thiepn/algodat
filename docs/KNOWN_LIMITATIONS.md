@@ -33,3 +33,5 @@
 # Phase 21R.1: Korpus noch unvollständig
 
 Der kanonische Fragenkorpus enthält derzeit neun manuell geprüfte, public-safe rekonstruierte Fragen aus der vollständigen Probeklausur 2023. 75 Identitätskandidaturen müssen noch visuell mit privaten Originalquellen abgeglichen werden. Sie sind weder im Simulator noch in der öffentlichen Fragenvorschau sichtbar. Ein unabhängiger Zweitreview der neun Fragen steht noch aus.
+
+Aktualisierung 11.07.2026: Zusätzlich ist `exam-2020-2` mit neun realen Klausurfragen abgeschlossen. Der Korpus enthält damit 18 final geprüfte public-safe Rekonstruktionen; 66 Kandidaturen bleiben offen. Ein unabhängiger Zweitreview der 18 Fragen sowie der reale NVDA-/Narrator-Gate stehen weiterhin aus. Aufgabe 8 der realen Sammlung verwendet eine ausdrücklich als authored markierte Korrektur des dokumentierten Rekurrenz-Randfallfehlers. [Lösung: `src-8a588d5ddc35`, S. 9]

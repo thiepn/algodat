@@ -7,6 +7,7 @@
       "collectionType": "mock_exam",
       "state": "complete",
       "expectedTaskCount": 9,
+      "expectedPointTotal": 50,
       "decidedTaskCount": 9,
       "verifiedQuestionIds": [
         "mock-2023-task-1",
@@ -30,6 +31,30 @@
         { "sourceId": "src-35405e721f05", "page": 14, "label": "Letzte Lösungsseite" }
       ],
       "reviewNotes": "Alle elf Aufgabenseiten und alle vierzehn Seiten der offiziellen Beispiellösung wurden visuell geprüft. Die beiden Titelseiten-Evidenzen sind als Nicht-Fragen ausgeschlossen. Aufgabe 9 enthält einen dokumentierten Beschriftungskonflikt in der offiziellen Lösung."
+    },
+    {
+      "collectionId": "exam-2020-2",
+      "collectionType": "real_exam",
+      "state": "complete",
+      "expectedTaskCount": 9,
+      "expectedPointTotal": 50,
+      "decidedTaskCount": 9,
+      "verifiedQuestionIds": [
+        "exam-2020-2-task-1", "exam-2020-2-task-2", "exam-2020-2-task-3",
+        "exam-2020-2-task-4", "exam-2020-2-task-5", "exam-2020-2-task-6",
+        "exam-2020-2-task-7", "exam-2020-2-task-8", "exam-2020-2-task-9"
+      ],
+      "blockedCandidateIds": [],
+      "excludedEvidenceIds": ["q-c2391c1b18d8", "q-32867772a3cd"],
+      "sourceRefs": [
+        { "sourceId": "src-97414623dd81", "page": 1, "label": "Titelseite und Punkteübersicht" },
+        { "sourceId": "src-97414623dd81", "page": 12, "label": "Letzte Lösungsfortsetzung" }
+      ],
+      "solutionSourceRefs": [
+        { "sourceId": "src-8a588d5ddc35", "page": 1, "label": "Titelseite der offiziellen Lösungsskizze" },
+        { "sourceId": "src-8a588d5ddc35", "page": 12, "label": "Letzte Lösungsfortsetzung" }
+      ],
+      "reviewNotes": "Alle zwölf Seiten der Klausur und alle zwölf Seiten der offiziellen Lösungsskizze wurden vollständig visuell geprüft. Die Titelseiten sind als Nicht-Fragen ausgeschlossen. Die Klausurkopie enthält bereits Lösungseinträge; als Lösungsevidenz gilt dennoch die getrennte offizielle Lösungsskizze. Der strikte Randfall der gedruckten DP-Rekurrenz in Aufgabe 8 wird dokumentiert korrigiert."
     }
   ],
   "questions": [
@@ -670,6 +695,222 @@
       "verifiedAt": "2026-07-11",
       "reviewNotes": "Aufgabenoperationen, O(1)-Anforderung, Listenbild und Lösungsoperationen wurden visuell geprüft. Der Bezeichnungsfehler der offiziellen Lösung wird ausdrücklich dokumentiert und nicht übernommen.",
       "duplicateGroupId": null
+    },
+    {
+      "questionId": "exam-2020-2-task-1", "schemaVersion": "1.0.0", "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam", "collectionId": "exam-2020-2", "examId": "exam-2020-2", "sheetId": null,
+      "year": 2020, "semester": "Sommersemester 2020", "taskNumber": 1, "subtaskLabels": [], "title": "Intervallauswahl mit IntervalScheduling",
+      "bodyBlocks": [
+        { "type": "paragraph", "text": "Führen Sie den Algorithmus IntervalScheduling auf den folgenden Intervallen aus. Markieren Sie genau die vom Algorithmus ausgewählten Intervalle." },
+        { "type": "operation_sequence", "label": "Intervalle in der dargestellten Reihenfolge", "operations": ["(1,5)", "(3,7)", "(7,11)", "(10,12)", "(12,13)", "(6,13)", "(13,15)", "(13,16)", "(12,16)", "(17,21)", "(15,22)", "(20,24)"], "textAlternative": "Zwölf Intervalle mit Anfangs- und Endzeit: 1 bis 5, 3 bis 7, 7 bis 11, 10 bis 12, 12 bis 13, 6 bis 13, 13 bis 15, 13 bis 16, 12 bis 16, 17 bis 21, 15 bis 22 und 20 bis 24." }
+      ],
+      "points": 4, "estimatedMinutes": 8, "difficulty": "leicht", "expectedDeliverables": ["Die ausgewählten Intervalle in Auswahlreihenfolge."],
+      "allowedNotation": ["Intervall als geordnetes Paar (Anfang, Ende)"], "conventions": ["Ein Intervall darf beginnen, wenn das vorherige ausgewählte Intervall endet."], "tieBreakingRules": [],
+      "topicIds": ["topic-db113b54985a"], "taskSlotNumbers": [1], "moduleIds": [], "trainerIds": [], "diagnosticCompetencyIds": ["foundation-paradigms"],
+      "solution": { "provenance": "official_solution", "blocks": [
+        { "type": "paragraph", "text": "IntervalScheduling wählt jeweils ein kompatibles Intervall mit kleinstem Endzeitpunkt. Dadurch entsteht die Auswahl (1,5), (7,11), (12,13), (13,15), (17,21)." },
+        { "type": "operation_sequence", "label": "Auswahlfolge", "operations": ["(1,5)", "(7,11)", "(12,13)", "(13,15)", "(17,21)"], "textAlternative": "Die fünf ausgewählten Intervalle lauten 1 bis 5, 7 bis 11, 12 bis 13, 13 bis 15 und 17 bis 21." }
+      ] },
+      "solutionStatus": "complete_verified_solution", "publicationMode": "public_safe_reconstruction", "hostedMaterialApproval": null,
+      "sourceRefs": [{ "sourceId": "src-97414623dd81", "page": 2, "label": "Klausur SS 2020, Aufgabe 1" }], "solutionSourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 2, "label": "Offizielle Lösungsskizze, Aufgabe 1" }],
+      "verificationStatus": "verified", "manuallyVerified": true, "contentReviewStatus": "content_reviewed", "finalReviewStatus": "final_reviewed", "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.", "verifiedBy": "Korpusreview Phase 21R.2", "verifiedAt": "2026-07-11", "reviewNotes": "Alle zwölf Intervallgrenzen und die fünf ausgewählten Intervalle wurden auf Aufgaben- und Lösungsseite visuell abgeglichen.", "duplicateGroupId": null
+    },
+    {
+      "questionId": "exam-2020-2-task-2", "schemaVersion": "1.0.0", "contentVersion": "1.0.0-rc.8", "collectionType": "real_exam", "collectionId": "exam-2020-2", "examId": "exam-2020-2", "sheetId": null,
+      "year": 2020, "semester": "Sommersemester 2020", "taskNumber": 2, "subtaskLabels": [], "title": "Tiefensuche mit Entdeckungs- und Abschlusszeiten",
+      "bodyBlocks": [
+        { "type": "paragraph", "text": "Führen Sie eine Tiefensuche auf dem gerichteten Graphen aus. Startknoten und ausgehende Zielknoten werden jeweils alphabetisch betrachtet. Geben Sie für jeden Knoten v die Werte d[v] und f[v] an." },
+        { "type": "graph", "label": "Gerichteter Graph für die Tiefensuche", "nodes": [
+          { "id": "a", "label": "a", "x": 10, "y": 20 }, { "id": "c", "label": "c", "x": 35, "y": 20 }, { "id": "g", "label": "g", "x": 60, "y": 20 }, { "id": "f", "label": "f", "x": 90, "y": 20 },
+          { "id": "d", "label": "d", "x": 10, "y": 80 }, { "id": "e", "label": "e", "x": 35, "y": 80 }, { "id": "b", "label": "b", "x": 60, "y": 80 }, { "id": "h", "label": "h", "x": 90, "y": 80 }
+        ], "edges": [
+          { "from": "a", "to": "b", "directed": true }, { "from": "a", "to": "d", "directed": true }, { "from": "a", "to": "e", "directed": true },
+          { "from": "b", "to": "e", "directed": true }, { "from": "b", "to": "f", "directed": true }, { "from": "b", "to": "h", "directed": true },
+          { "from": "c", "to": "a", "directed": true }, { "from": "c", "to": "b", "directed": true }, { "from": "c", "to": "g", "directed": true },
+          { "from": "d", "to": "e", "directed": true }, { "from": "g", "to": "b", "directed": true }, { "from": "g", "to": "f", "directed": true }, { "from": "h", "to": "f", "directed": true }
+        ], "textAlternative": "Gerichteter Graph mit Knoten a bis h. Kanten: a nach b, d und e; b nach e, f und h; c nach a, b und g; d nach e; g nach b und f; h nach f." }
+      ],
+      "points": 4, "estimatedMinutes": 10, "difficulty": "mittel", "expectedDeliverables": ["Für jeden Knoten die Entdeckungszeit d und Abschlusszeit f."],
+      "allowedNotation": ["d[v] für Entdeckungszeit", "f[v] für Abschlusszeit"], "conventions": ["Der Zeitstempel beginnt bei 1."], "tieBreakingRules": ["Startknoten alphabetisch.", "Ausgehende Zielknoten alphabetisch."],
+      "topicIds": ["topic-c43206934ba2"], "taskSlotNumbers": [2], "moduleIds": [], "trainerIds": [], "diagnosticCompetencyIds": ["foundation-graph-basics", "foundation-graph-algorithms"],
+      "solution": { "provenance": "official_solution", "blocks": [
+        { "type": "matrix", "label": "DFS-Zeitstempel", "columnHeaders": ["v", "a", "b", "c", "d", "e", "f", "g", "h"], "rows": [["d(v)", "1", "2", "13", "10", "3", "5", "14", "7"], ["f(v)", "12", "9", "16", "11", "4", "6", "15", "8"]], "textAlternative": "Entdeckungszeiten: a 1, b 2, c 13, d 10, e 3, f 5, g 14, h 7. Abschlusszeiten: a 12, b 9, c 16, d 11, e 4, f 6, g 15, h 8." },
+        { "type": "paragraph", "text": "Die erste DFS-Wurzel ist a. Von b werden zuerst e, dann f und h besucht; danach folgt d. Die zweite DFS-Wurzel ist c, deren noch unbesuchter Nachfolger g zuletzt bearbeitet wird." }
+      ] },
+      "solutionStatus": "complete_verified_solution", "publicationMode": "public_safe_reconstruction", "hostedMaterialApproval": null,
+      "sourceRefs": [{ "sourceId": "src-97414623dd81", "page": 3, "label": "Klausur SS 2020, Aufgabe 2" }], "solutionSourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 3, "label": "Offizielle Lösungsskizze, Aufgabe 2" }],
+      "verificationStatus": "verified", "manuallyVerified": true, "contentReviewStatus": "content_reviewed", "finalReviewStatus": "final_reviewed", "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.", "verifiedBy": "Korpusreview Phase 21R.2", "verifiedAt": "2026-07-11", "reviewNotes": "Knotenlage, alle dreizehn Pfeile, Sortierregeln und sechzehn Zeitstempel wurden auf beiden Seiten visuell geprüft.", "duplicateGroupId": null
+    },
+    {
+      "questionId": "exam-2020-2-task-3", "schemaVersion": "1.0.0", "contentVersion": "1.0.0-rc.8", "collectionType": "real_exam", "collectionId": "exam-2020-2", "examId": "exam-2020-2", "sheetId": null,
+      "year": 2020, "semester": "Sommersemester 2020", "taskNumber": 3, "subtaskLabels": [], "title": "Einfügen und Löschen im Rot-Schwarz-Baum",
+      "bodyBlocks": [
+        { "type": "paragraph", "text": "Fügen Sie nacheinander die Schlüssel 2, 7 und 1 in den angegebenen Rot-Schwarz-Baum ein. Löschen Sie anschließend nacheinander die Schlüssel 2 und 4. Zeichnen Sie den Baum nach jeder Operation." },
+        { "type": "tree", "label": "Ausgangsbaum", "representation": "Wurzel 4 (schwarz), linkes Kind 3 (rot), rechtes Kind 6 (rot).", "textAlternative": "Der Ausgangsbaum hat die schwarze Wurzel 4 und die roten Kinder 3 und 6.", "nodes": [
+          { "id": "4", "label": "4", "color": "schwarz", "left": "3", "right": "6" }, { "id": "3", "label": "3", "color": "rot", "left": null, "right": null }, { "id": "6", "label": "6", "color": "rot", "left": null, "right": null }
+        ], "nilConvention": "Alle nicht gezeichneten NIL-Blätter sind schwarz." },
+        { "type": "operation_sequence", "label": "Operationen", "operations": ["Einfügen(2)", "Einfügen(7)", "Einfügen(1)", "Löschen(2)", "Löschen(4)"], "textAlternative": "Zuerst werden 2, 7 und 1 eingefügt, danach 2 und 4 gelöscht." }
+      ],
+      "points": 4, "estimatedMinutes": 12, "difficulty": "schwer", "expectedDeliverables": ["Fünf Rot-Schwarz-Bäume, jeweils direkt nach einer Operation.", "Für jeden inneren Knoten Schlüssel und Farbe."],
+      "allowedNotation": ["B für schwarz", "R für rot", "NIL für schwarze Blätter"], "conventions": ["In der Vorlage werden rote Knoten weiß dargestellt.", "Nicht gezeichnete NIL-Blätter sind schwarz."], "tieBreakingRules": [],
+      "topicIds": ["topic-7ae0552985f1"], "taskSlotNumbers": [3], "moduleIds": ["module-rot-schwarz"], "trainerIds": [], "diagnosticCompetencyIds": ["foundation-data-structures"],
+      "solution": { "provenance": "official_solution", "blocks": [
+        { "type": "tree", "label": "Nach Einfügen(2)", "representation": "4B mit 3B und 6B; 3B hat links 2R.", "textAlternative": "Wurzel 4 schwarz, Kinder 3 und 6 schwarz, 2 rot als linkes Kind von 3.", "nodes": [{ "id": "4", "label": "4", "color": "schwarz", "left": "3", "right": "6" }, { "id": "3", "label": "3", "color": "schwarz", "left": "2", "right": null }, { "id": "2", "label": "2", "color": "rot", "left": null, "right": null }, { "id": "6", "label": "6", "color": "schwarz", "left": null, "right": null }], "nilConvention": "NIL-Blätter sind schwarz." },
+        { "type": "tree", "label": "Nach Einfügen(7)", "representation": "4B mit 3B und 6B; 2R links von 3 und 7R rechts von 6.", "textAlternative": "Zusätzlich ist 7 rot und rechtes Kind von 6.", "nodes": [{ "id": "4", "label": "4", "color": "schwarz", "left": "3", "right": "6" }, { "id": "3", "label": "3", "color": "schwarz", "left": "2", "right": null }, { "id": "2", "label": "2", "color": "rot", "left": null, "right": null }, { "id": "6", "label": "6", "color": "schwarz", "left": null, "right": "7" }, { "id": "7", "label": "7", "color": "rot", "left": null, "right": null }], "nilConvention": "NIL-Blätter sind schwarz." },
+        { "type": "tree", "label": "Nach Einfügen(1)", "representation": "4B; links 2B mit 1R und 3R; rechts 6B mit 7R.", "textAlternative": "Wurzel 4 schwarz. 2 und 6 sind schwarz. 1 und 3 sind rote Kinder von 2; 7 ist rotes rechtes Kind von 6.", "nodes": [{ "id": "4", "label": "4", "color": "schwarz", "left": "2", "right": "6" }, { "id": "2", "label": "2", "color": "schwarz", "left": "1", "right": "3" }, { "id": "1", "label": "1", "color": "rot", "left": null, "right": null }, { "id": "3", "label": "3", "color": "rot", "left": null, "right": null }, { "id": "6", "label": "6", "color": "schwarz", "left": null, "right": "7" }, { "id": "7", "label": "7", "color": "rot", "left": null, "right": null }], "nilConvention": "NIL-Blätter sind schwarz." },
+        { "type": "tree", "label": "Nach Löschen(2)", "representation": "4B; links 3B mit 1R; rechts 6B mit 7R.", "textAlternative": "Wurzel 4 schwarz. Links steht 3 schwarz mit 1 rot; rechts 6 schwarz mit 7 rot.", "nodes": [{ "id": "4", "label": "4", "color": "schwarz", "left": "3", "right": "6" }, { "id": "3", "label": "3", "color": "schwarz", "left": "1", "right": null }, { "id": "1", "label": "1", "color": "rot", "left": null, "right": null }, { "id": "6", "label": "6", "color": "schwarz", "left": null, "right": "7" }, { "id": "7", "label": "7", "color": "rot", "left": null, "right": null }], "nilConvention": "NIL-Blätter sind schwarz." },
+        { "type": "tree", "label": "Nach Löschen(4)", "representation": "6B als Wurzel; links 3B mit 1R; rechts 7B.", "textAlternative": "Die schwarze Wurzel ist 6. Ihr linkes Kind 3 und rechtes Kind 7 sind schwarz; 1 ist rotes linkes Kind von 3.", "nodes": [{ "id": "6", "label": "6", "color": "schwarz", "left": "3", "right": "7" }, { "id": "3", "label": "3", "color": "schwarz", "left": "1", "right": null }, { "id": "1", "label": "1", "color": "rot", "left": null, "right": null }, { "id": "7", "label": "7", "color": "schwarz", "left": null, "right": null }], "nilConvention": "NIL-Blätter sind schwarz." }
+      ] },
+      "solutionStatus": "complete_verified_solution", "publicationMode": "public_safe_reconstruction", "hostedMaterialApproval": null,
+      "sourceRefs": [{ "sourceId": "src-97414623dd81", "page": 4, "label": "Klausur SS 2020, Aufgabe 3" }], "solutionSourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 4, "label": "Offizielle Lösungsskizze, Aufgabe 3" }],
+      "verificationStatus": "verified", "manuallyVerified": true, "contentReviewStatus": "content_reviewed", "finalReviewStatus": "final_reviewed", "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.", "verifiedBy": "Korpusreview Phase 21R.2", "verifiedAt": "2026-07-11", "reviewNotes": "Ausgangsbaum, Operationsfolge und alle fünf handgezeichneten Ergebnisbäume wurden visuell geprüft; Farben werden zusätzlich textuell ausgewiesen.", "duplicateGroupId": null
+    },
+    {
+      "questionId": "exam-2020-2-task-4", "schemaVersion": "1.0.0", "contentVersion": "1.0.0-rc.8", "collectionType": "real_exam", "collectionId": "exam-2020-2", "examId": "exam-2020-2", "sheetId": null,
+      "year": 2020, "semester": "Sommersemester 2020", "taskNumber": 4, "subtaskLabels": [], "title": "Minimaler Spannbaum mit Prim ab Knoten a",
+      "bodyBlocks": [
+        { "type": "paragraph", "text": "Bestimmen Sie mit Prim einen minimalen Spannbaum des ungerichteten gewichteten Graphen. Beginnen Sie bei Knoten a und geben Sie die ausgewählten Kanten in ihrer Auswahlreihenfolge als ungeordnete Paare an." },
+        { "type": "graph", "label": "Ungerichteter gewichteter Graph", "nodes": [
+          { "id": "a", "label": "a", "x": 10, "y": 20 }, { "id": "c", "label": "c", "x": 35, "y": 20 }, { "id": "g", "label": "g", "x": 60, "y": 20 }, { "id": "f", "label": "f", "x": 90, "y": 20 },
+          { "id": "h", "label": "h", "x": 10, "y": 80 }, { "id": "b", "label": "b", "x": 35, "y": 80 }, { "id": "d", "label": "d", "x": 90, "y": 80 }
+        ], "edges": [
+          { "from": "a", "to": "c", "label": "12", "directed": false }, { "from": "c", "to": "g", "label": "14", "directed": false }, { "from": "g", "to": "f", "label": "1", "directed": false },
+          { "from": "a", "to": "h", "label": "10", "directed": false }, { "from": "c", "to": "b", "label": "11", "directed": false }, { "from": "f", "to": "d", "label": "5", "directed": false },
+          { "from": "b", "to": "d", "label": "7", "directed": false }, { "from": "h", "to": "b", "label": "15", "directed": false }, { "from": "a", "to": "b", "label": "17", "directed": false },
+          { "from": "b", "to": "f", "label": "8", "directed": false }, { "from": "g", "to": "d", "label": "6", "directed": false }, { "from": "h", "to": "d", "label": "5", "directed": false }
+        ], "textAlternative": "Kanten mit Gewichten: a-c 12, c-g 14, g-f 1, a-h 10, c-b 11, f-d 5, b-d 7, h-b 15, a-b 17, b-f 8, g-d 6 und h-d 5. Alle Kanten sind ungerichtet." }
+      ],
+      "points": 4, "estimatedMinutes": 10, "difficulty": "mittel", "expectedDeliverables": ["Die sechs Baumkanten.", "Die Auswahlreihenfolge von Prim."],
+      "allowedNotation": ["Kante als ungeordnetes Paar {u,v}"], "conventions": ["Startknoten ist a.", "Der Graph ist ungerichtet."], "tieBreakingRules": [],
+      "topicIds": ["topic-c4a698fc939e"], "taskSlotNumbers": [4], "moduleIds": ["module-prim-mst"], "trainerIds": ["trainer-graph-prim-mst-v1"], "diagnosticCompetencyIds": ["foundation-graph-basics", "foundation-graph-algorithms"],
+      "solution": { "provenance": "official_solution", "blocks": [
+        { "type": "operation_sequence", "label": "Auswahlfolge von Prim", "operations": ["{a,h} mit Gewicht 10", "{h,d} mit Gewicht 5", "{d,f} mit Gewicht 5", "{f,g} mit Gewicht 1", "{d,b} mit Gewicht 7", "{b,c} mit Gewicht 11"], "textAlternative": "Prim wählt von a aus nacheinander a-h, h-d, d-f, f-g, d-b und b-c." },
+        { "type": "paragraph", "text": "Die sechs Kanten verbinden alle sieben Knoten ohne Kreis. Das Gesamtgewicht beträgt 39." }
+      ] },
+      "solutionStatus": "complete_verified_solution", "publicationMode": "public_safe_reconstruction", "hostedMaterialApproval": null,
+      "sourceRefs": [{ "sourceId": "src-97414623dd81", "page": 5, "label": "Klausur SS 2020, Aufgabe 4" }], "solutionSourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 5, "label": "Offizielle Lösungsskizze, Aufgabe 4" }],
+      "verificationStatus": "verified", "manuallyVerified": true, "contentReviewStatus": "content_reviewed", "finalReviewStatus": "final_reviewed", "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.", "verifiedBy": "Korpusreview Phase 21R.2", "verifiedAt": "2026-07-11", "reviewNotes": "Alle zwölf Kanten, Gewichte, sechs farblich markierten Baumkanten und die gedruckte Auswahlfolge wurden visuell abgeglichen.", "duplicateGroupId": null
+    },
+    {
+      "questionId": "exam-2020-2-task-5", "schemaVersion": "1.0.0", "contentVersion": "1.0.0-rc.8", "collectionType": "real_exam", "collectionId": "exam-2020-2", "examId": "exam-2020-2", "sheetId": null,
+      "year": 2020, "semester": "Sommersemester 2020", "taskNumber": 5, "subtaskLabels": ["a", "b", "c"], "title": "Schleifeninvariante für BerechneEtwas",
+      "bodyBlocks": [
+        { "type": "paragraph", "text": "Das Programm BerechneEtwas erhält n ∈ ℕ. Beweisen Sie mit einer Schleifeninvariante, dass es 3·n zurückgibt." },
+        { "type": "pseudocode", "code": "BerechneEtwas(n):\n  m ← n\n  for i ← 1 to n do\n    m ← m + 2\n  return m", "textAlternative": "m wird mit n initialisiert. In n Schleifendurchläufen wird m jeweils um 2 erhöht. Danach wird m zurückgegeben." },
+        { "type": "subtask", "label": "a", "blocks": [{ "type": "paragraph", "text": "Formulieren Sie eine Schleifeninvariante, die vor jedem Durchlauf gilt." }] },
+        { "type": "subtask", "label": "b", "blocks": [{ "type": "paragraph", "text": "Beweisen Sie die Invariante durch Induktion." }] },
+        { "type": "subtask", "label": "c", "blocks": [{ "type": "paragraph", "text": "Leiten Sie aus der Invariante den Rückgabewert 3·n ab." }] }
+      ],
+      "points": 5, "estimatedMinutes": 15, "difficulty": "mittel", "expectedDeliverables": ["Eine Invariante vor Iteration i.", "Induktionsanfang und Induktionsschritt.", "Schlussargument beim Schleifenende."],
+      "allowedNotation": ["S(i) für die Schleifeninvariante"], "conventions": ["Die Schleife endet vor der gedachten Iteration n+1."], "tieBreakingRules": [],
+      "topicIds": ["topic-1e43393edfb4", "topic-e05ae3743b24", "topic-2b335556483f"], "taskSlotNumbers": [5], "moduleIds": ["module-schleifeninvariante"], "trainerIds": ["trainer-schleifeninvariante-summe-v1"], "diagnosticCompetencyIds": ["foundation-proofs"],
+      "solution": { "provenance": "official_solution", "blocks": [
+        { "type": "math", "latex": "S(i):\\quad m=n+2(i-1)", "textAlternative": "Vor Iteration i ist m gleich n plus 2 mal i minus 1." },
+        { "type": "paragraph", "text": "Induktionsanfang i=1: Vor dem ersten Durchlauf ist m=n=n+2·0. Induktionsschritt: Gilt vor Iteration i die Gleichung m=n+2(i−1), so setzt der Schleifenrumpf m auf n+2i; dies ist S(i+1)." },
+        { "type": "paragraph", "text": "Beim Abbruch gilt die Invariante für i=n+1. Damit ist m=n+2n=3n, und genau dieser Wert wird zurückgegeben." }
+      ] },
+      "solutionStatus": "complete_verified_solution", "publicationMode": "public_safe_reconstruction", "hostedMaterialApproval": null,
+      "sourceRefs": [{ "sourceId": "src-97414623dd81", "page": 6, "label": "Klausur SS 2020, Aufgabe 5" }], "solutionSourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 6, "label": "Offizielle Lösungsskizze, Aufgabe 5" }],
+      "verificationStatus": "verified", "manuallyVerified": true, "contentReviewStatus": "content_reviewed", "finalReviewStatus": "final_reviewed", "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.", "verifiedBy": "Korpusreview Phase 21R.2", "verifiedAt": "2026-07-11", "reviewNotes": "Pseudocode, drei Teilaufgaben, Invariante und vollständige Induktion wurden visuell auf beiden Seiten abgeglichen.", "duplicateGroupId": null
+    },
+    {
+      "questionId": "exam-2020-2-task-6", "schemaVersion": "1.0.0", "contentVersion": "1.0.0-rc.8", "collectionType": "real_exam", "collectionId": "exam-2020-2", "examId": "exam-2020-2", "sheetId": null,
+      "year": 2020, "semester": "Sommersemester 2020", "taskNumber": 6, "subtaskLabels": ["a", "b"], "title": "Rekurrenz mit Master-Theorem und Induktion",
+      "bodyBlocks": [
+        { "type": "paragraph", "text": "Für n als Zweierpotenz sei die folgende Rekurrenz gegeben." },
+        { "type": "math", "latex": "T(n)=\\begin{cases}8T(n/2)+n^2,&n>1,\\\\1,&\\text{sonst.}\\end{cases}", "textAlternative": "Für n größer 1 gilt T von n gleich 8 mal T von n halbe plus n Quadrat; sonst gilt T von n gleich 1." },
+        { "type": "subtask", "label": "a", "blocks": [{ "type": "paragraph", "text": "Bestimmen Sie eine möglichst enge obere asymptotische Schranke." }] },
+        { "type": "subtask", "label": "b", "blocks": [{ "type": "paragraph", "text": "Beweisen Sie die Schranke durch Induktion." }] }
+      ],
+      "points": 5, "estimatedMinutes": 15, "difficulty": "mittel", "expectedDeliverables": ["Eine enge O-Schranke.", "Ein vollständiger Induktionsbeweis mit geeigneter verstärkter Behauptung."],
+      "allowedNotation": ["Landau-Notation", "Master-Theorem in der Vorlesungsnotation"], "conventions": ["n ist eine Zweierpotenz."], "tieBreakingRules": [],
+      "topicIds": ["topic-e48203925235", "topic-916a9f1645f2", "topic-2b335556483f"], "taskSlotNumbers": [6], "moduleIds": ["module-rekurrenz-master"], "trainerIds": [], "diagnosticCompetencyIds": ["foundation-recurrences", "foundation-asymptotics", "foundation-proofs"],
+      "solution": { "provenance": "official_solution", "blocks": [
+        { "type": "math", "latex": "T(n)\\in O(n^{\\log_2 8})=O(n^3)", "textAlternative": "T von n liegt in O von n hoch 3." },
+        { "type": "paragraph", "text": "Für den Induktionsbeweis wird die stärkere Behauptung T(n) ≤ 2n³−n² verwendet. Sie gilt bei n=1. Mit der Induktionsannahme folgt T(n) ≤ 8·(2(n/2)³−(n/2)²)+n² = 2n³−n²." }
+      ] },
+      "solutionStatus": "complete_verified_solution", "publicationMode": "public_safe_reconstruction", "hostedMaterialApproval": null,
+      "sourceRefs": [{ "sourceId": "src-97414623dd81", "page": 7, "label": "Klausur SS 2020, Aufgabe 6" }], "solutionSourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 7, "label": "Offizielle Lösungsskizze, Aufgabe 6" }],
+      "verificationStatus": "verified", "manuallyVerified": true, "contentReviewStatus": "content_reviewed", "finalReviewStatus": "final_reviewed", "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.", "verifiedBy": "Korpusreview Phase 21R.2", "verifiedAt": "2026-07-11", "reviewNotes": "Rekurrenz, Zweierpotenzannahme, Master-Theorem-Zuordnung und verstärkte Induktionsbehauptung wurden visuell abgeglichen.", "duplicateGroupId": null
+    },
+    {
+      "questionId": "exam-2020-2-task-7", "schemaVersion": "1.0.0", "contentVersion": "1.0.0-rc.8", "collectionType": "real_exam", "collectionId": "exam-2020-2", "examId": "exam-2020-2", "sheetId": null,
+      "year": 2020, "semester": "Sommersemester 2020", "taskNumber": 7, "subtaskLabels": ["a", "b", "c"], "title": "Greedy-Entwurf für Fitnesspunkte",
+      "bodyBlocks": [
+        { "type": "paragraph", "text": "Es gibt n Übungen für n Tage und an jedem Tag wird genau eine Übung bearbeitet. Übung i hat Schwierigkeit S[i]. Wird sie an Tag j erledigt, entstehen S[i]·(n−j+1) Fitnesspunkte." },
+        { "type": "subtask", "label": "a", "blocks": [{ "type": "paragraph", "text": "Entwerfen Sie einen gierigen Algorithmus, der die maximale Punktzahl berechnet, geben Sie Pseudocode an und halten Sie die Worst-Case-Laufzeit O(n·log n) ein." }] },
+        { "type": "subtask", "label": "b", "blocks": [{ "type": "paragraph", "text": "Analysieren Sie die Laufzeit." }] },
+        { "type": "subtask", "label": "c", "blocks": [{ "type": "paragraph", "text": "Beweisen Sie die Korrektheit." }] }
+      ],
+      "points": 8, "estimatedMinutes": 30, "difficulty": "schwer", "expectedDeliverables": ["Greedy-Regel und Pseudocode.", "Worst-Case-Laufzeitanalyse.", "Optimalitätsbeweis durch Austauschargument."],
+      "allowedNotation": ["S[1..n] für Schwierigkeitsgrade"], "conventions": ["Jede Übung wird genau einmal bearbeitet.", "Pro Tag wird genau eine Übung bearbeitet."], "tieBreakingRules": ["Gleiche Schwierigkeitsgrade dürfen beliebig angeordnet werden."],
+      "topicIds": ["topic-3e0e72f97f6e", "topic-e05ae3743b24"], "taskSlotNumbers": [7], "moduleIds": ["module-greedy-entwurf"], "trainerIds": ["trainer-greedy-entwurf-fitnesspunkte-v1"], "diagnosticCompetencyIds": ["foundation-paradigms", "foundation-proofs"],
+      "solution": { "provenance": "official_solution", "blocks": [
+        { "type": "pseudocode", "code": "Fitness(S, n):\n  sortiere S absteigend mit Mergesort\n  sum ← 0\n  for i ← 1 to n do\n    sum ← sum + S[i] · (n - i + 1)\n  return sum", "textAlternative": "Sortiere die Schwierigkeiten absteigend und multipliziere die i-te Schwierigkeit mit dem absteigenden Tagesgewicht n minus i plus 1." },
+        { "type": "paragraph", "text": "Mergesort benötigt O(n log n), die Summenschleife O(n); insgesamt gilt O(n log n)." },
+        { "type": "paragraph", "text": "Austauschargument: Enthält eine Reihenfolge benachbarte Werte x<y, obwohl x das größere Tagesgewicht erhält, steigert ihr Tausch den Wert um y−x>0. Eine optimale Reihenfolge kann daher keine solche Inversion besitzen und ist nichtzunehmend sortiert." }
+      ] },
+      "solutionStatus": "complete_verified_solution", "publicationMode": "public_safe_reconstruction", "hostedMaterialApproval": null,
+      "sourceRefs": [{ "sourceId": "src-97414623dd81", "page": 8, "label": "Klausur SS 2020, Aufgabe 7" }], "solutionSourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 8, "label": "Offizielle Lösungsskizze, Aufgabe 7" }],
+      "verificationStatus": "verified", "manuallyVerified": true, "contentReviewStatus": "content_reviewed", "finalReviewStatus": "final_reviewed", "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.", "verifiedBy": "Korpusreview Phase 21R.2", "verifiedAt": "2026-07-11", "reviewNotes": "Aufgabenmodell, drei Teilaufgaben, Pseudocode, Laufzeit und Austauschbeweis wurden visuell geprüft.", "duplicateGroupId": null
+    },
+    {
+      "questionId": "exam-2020-2-task-8", "schemaVersion": "1.0.0", "contentVersion": "1.0.0-rc.8", "collectionType": "real_exam", "collectionId": "exam-2020-2", "examId": "exam-2020-2", "sheetId": null,
+      "year": 2020, "semester": "Sommersemester 2020", "taskNumber": 8, "subtaskLabels": ["a", "b", "c", "d"], "title": "Dynamische Programmierung für Rechnerkäufe",
+      "bodyBlocks": [
+        { "type": "paragraph", "text": "Eine Universität verfügt über Budget X. Von Rechnertyp i können beliebig viele Exemplare gekauft werden; ein Exemplar kostet P_i und liefert F_i FLOPS. Maximieren Sie die Gesamtzahl der FLOPS." },
+        { "type": "subtask", "label": "a", "blocks": [{ "type": "paragraph", "text": "Geben Sie eine Rekurrenz für F(j) an, die den maximalen Wert bei Budget j beschreibt. Alternativ dürfen Sie F(i,j) für die ersten i Rechnertypen verwenden." }] },
+        { "type": "subtask", "label": "b", "blocks": [{ "type": "paragraph", "text": "Geben Sie einen dynamischen Bottom-up-Algorithmus an, der F(X) beziehungsweise F(n,X) berechnet." }] },
+        { "type": "subtask", "label": "c", "blocks": [{ "type": "paragraph", "text": "Analysieren Sie die Laufzeit." }] },
+        { "type": "subtask", "label": "d", "blocks": [{ "type": "paragraph", "text": "Beweisen Sie die Rekurrenz aus a durch Induktion." }] }
+      ],
+      "points": 8, "estimatedMinutes": 35, "difficulty": "schwer", "expectedDeliverables": ["Zustandsdefinition und vollständige Rekurrenz mit Randfällen.", "Bottom-up-Pseudocode.", "Laufzeit O(nX).", "Induktionsbeweis."],
+      "allowedNotation": ["F(j) für den Optimalwert bei Budget j", "P_i für Preis", "F_i für FLOPS eines Rechnertyps"], "conventions": ["Jeder Rechnertyp darf beliebig oft gewählt werden.", "Nicht ausgegebenes Restbudget ist zulässig."], "tieBreakingRules": [],
+      "topicIds": ["topic-c0af8532bb72", "topic-f5b57f47447c", "topic-2b335556483f"], "taskSlotNumbers": [8], "moduleIds": ["module-dp-entwurf-mine"], "trainerIds": ["trainer-dp-entwurf-mine-v1"], "diagnosticCompetencyIds": ["foundation-paradigms", "foundation-proofs"],
+      "solution": { "provenance": "authored_from_verified_method", "blocks": [
+        { "type": "math", "latex": "F(0)=0,\\qquad F(j)=\\max\\left(\\{0\\}\\cup\\{F(j-P_i)+F_i\\mid 1\\le i\\le n,\\ P_i\\le j\\}\\right)", "textAlternative": "F von 0 ist 0. Für positives Budget j ist F von j das Maximum aus 0 und F von j minus Preis i plus FLOPS i für alle Typen, deren Preis höchstens j ist." },
+        { "type": "pseudocode", "code": "MaxFLOPS(X, n, P, F):\n  L[0] ← 0\n  for j ← 1 to X do\n    L[j] ← 0\n    for i ← 1 to n do\n      if P[i] ≤ j then\n        L[j] ← max(L[j], L[j-P[i]] + F[i])\n  return L[X]", "textAlternative": "Berechne die Optimalwerte für Budgets 0 bis X. Für jeden Rechnertyp, dessen Preis in das aktuelle Budget passt, wird der Wert mit einem weiteren Exemplar geprüft." },
+        { "type": "paragraph", "text": "Die beiden verschachtelten Schleifen benötigen O(nX) Zeit und das Feld O(X) Speicher. Induktion über j: Für j=0 ist kein Kauf möglich. Für j>0 endet jede nichtleere optimale Auswahl mit einem Typ i mit P_i≤j; nach Entfernen dieses Exemplars bleibt ein optimales Teilproblem mit Budget j−P_i. Das Maximum prüft alle möglichen letzten Typen und zusätzlich die leere Auswahl." },
+        { "type": "callout", "title": "Dokumentierte Korrektur der Lösungsskizze", "text": "Die gedruckte Rekurrenz auf Seite 9 verlangt stellenweise j−P_i>0 und würde damit den zulässigen Randfall j=P_i ausschließen. Der Pseudocode derselben Seite verwendet korrekt j≥P_i. Die hier gezeigte redaktionelle Lösung verwendet deshalb P_i≤j; dieser Randfall ist zusätzlich deterministisch getestet." }
+      ] },
+      "solutionStatus": "authored_solution", "publicationMode": "public_safe_reconstruction", "hostedMaterialApproval": null,
+      "sourceRefs": [{ "sourceId": "src-97414623dd81", "page": 9, "label": "Klausur SS 2020, Aufgabe 8" }, { "sourceId": "src-97414623dd81", "page": 10, "label": "Klausurkopie, Lösungsfortsetzung" }],
+      "solutionSourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 9, "label": "Offizielle Lösungsskizze, Rekurrenz und Algorithmus" }, { "sourceId": "src-8a588d5ddc35", "page": 10, "label": "Offizielle Lösungsskizze, Laufzeit und Beweis" }],
+      "verificationStatus": "verified", "manuallyVerified": true, "contentReviewStatus": "content_reviewed", "finalReviewStatus": "final_reviewed", "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.", "verifiedBy": "Korpusreview Phase 21R.2", "verifiedAt": "2026-07-11", "reviewNotes": "Beide Aufgabenseiten und beide Lösungsseiten wurden visuell geprüft. Die strikte Ungleichung der gedruckten Rekurrenz steht im Konflikt zum korrekten Pseudocode und wird transparent korrigiert.", "duplicateGroupId": null
+    },
+    {
+      "questionId": "exam-2020-2-task-9", "schemaVersion": "1.0.0", "contentVersion": "1.0.0-rc.8", "collectionType": "real_exam", "collectionId": "exam-2020-2", "examId": "exam-2020-2", "sheetId": null,
+      "year": 2020, "semester": "Sommersemester 2020", "taskNumber": 9, "subtaskLabels": [], "title": "Direkt adressierte Multimenge",
+      "bodyBlocks": [
+        { "type": "paragraph", "text": "Für das Universum U={1,…,k} soll eine Datenstruktur für eine Multimenge M entworfen werden. Jedes Element darf beliebig oft vorkommen." },
+        { "type": "definition_list", "entries": [
+          { "term": "Init(k)", "definition": "Initialisiert eine leere Multimenge in O(k)." }, { "term": "Einfügen(M,x)", "definition": "Fügt ein Vorkommen von x in O(1) ein." },
+          { "term": "Lösche(M,x)", "definition": "Entfernt alle Vorkommen von x in O(1)." }, { "term": "Zählen(M,x)", "definition": "Gibt die Vielfachheit von x in O(1) zurück." },
+          { "term": "Vereinen(M,N)", "definition": "Erzeugt R mit R[x]=M[x]+N[x] für alle x in O(k)." }
+        ] },
+        { "type": "paragraph", "text": "Beschreiben Sie Aufbau und Operationen, begründen Sie die Korrektheit und zeigen Sie, dass alle geforderten Laufzeiten eingehalten werden." }
+      ],
+      "points": 8, "estimatedMinutes": 25, "difficulty": "mittel", "expectedDeliverables": ["Eine konkrete Datenrepräsentation.", "Realisierung aller fünf Operationen.", "Korrektheits- und Laufzeitbegründung."],
+      "allowedNotation": ["M[x] als Anzahl der Vorkommen von x"], "conventions": ["Das Universum U={1,…,k} ist bekannt und fest."], "tieBreakingRules": [],
+      "topicIds": ["topic-ca027f32a2fe"], "taskSlotNumbers": [9], "moduleIds": [], "trainerIds": [], "diagnosticCompetencyIds": ["foundation-data-structures"],
+      "solution": { "provenance": "official_solution", "blocks": [
+        { "type": "paragraph", "text": "Verwenden Sie ein direkt adressiertes Feld M[1..k] aus nichtnegativen Ganzzahlen. Die Invariante lautet: M[x] ist zu jedem Zeitpunkt genau die Vielfachheit von x." },
+        { "type": "pseudocode", "code": "Init(k):\n  erzeuge M[1..k]\n  for i ← 1 to k do M[i] ← 0\n  return M\n\nEinfügen(M, x): M[x] ← M[x] + 1\nLösche(M, x): M[x] ← 0\nZählen(M, x): return M[x]\n\nVereinen(M, N):\n  erzeuge R[1..k]\n  for i ← 1 to k do R[i] ← M[i] + N[i]\n  return R", "textAlternative": "Initialisierung setzt k Zähler auf null. Einfügen erhöht genau einen Zähler, Löschen setzt ihn auf null, Zählen liest ihn. Vereinen addiert die beiden Zählerfelder komponentenweise." },
+        { "type": "paragraph", "text": "Einfügen, Löschen und Zählen greifen auf genau einen direkt adressierten Feldeintrag zu und benötigen O(1). Initialisierung und Vereinigung durchlaufen alle k Einträge und benötigen O(k). Jede Zuweisung erhält unmittelbar die Zählerinvariante." }
+      ] },
+      "solutionStatus": "complete_verified_solution", "publicationMode": "public_safe_reconstruction", "hostedMaterialApproval": null,
+      "sourceRefs": [{ "sourceId": "src-97414623dd81", "page": 11, "label": "Klausur SS 2020, Aufgabe 9" }, { "sourceId": "src-97414623dd81", "page": 12, "label": "Klausurkopie, Fortsetzung der Lösung" }],
+      "solutionSourceRefs": [{ "sourceId": "src-8a588d5ddc35", "page": 11, "label": "Offizielle Lösungsskizze, Aufgabe 9" }, { "sourceId": "src-8a588d5ddc35", "page": 12, "label": "Offizielle Lösungsskizze, Vereinigung" }],
+      "verificationStatus": "verified", "manuallyVerified": true, "contentReviewStatus": "content_reviewed", "finalReviewStatus": "final_reviewed", "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.", "verifiedBy": "Korpusreview Phase 21R.2", "verifiedAt": "2026-07-11", "reviewNotes": "Universum, fünf Operationen, geforderte Laufzeiten und beide Lösungsseiten wurden vollständig visuell geprüft.", "duplicateGroupId": null
     }
   ]
 }

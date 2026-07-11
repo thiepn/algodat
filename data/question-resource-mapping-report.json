@@ -2,9 +2,9 @@
   "schemaVersion": "1.0.0",
   "contentVersion": "1.0.0-rc.8",
   "status": "partial_manual_mapping",
-  "mappedCanonicalQuestionCount": 9,
+  "mappedCanonicalQuestionCount": 18,
   "unmappedCanonicalQuestionCount": 0,
-  "pendingCandidateCount": 75,
+  "pendingCandidateCount": 66,
   "mappings": [
     {
       "questionId": "mock-2023-task-1",
@@ -12,48 +12,58 @@
       "taskSlotNumbers": [1],
       "moduleIds": ["module-greedy-entwurf"],
       "trainerIds": ["trainer-greedy-entwurf-fitnesspunkte-v1"],
+      "trainerCoverage": "available",
       "diagnosticCompetencyIds": ["foundation-paradigms"],
       "verification": "Die Zuordnung folgt der tatsächlich sichtbaren GreedyLoadBalancing-Aufgabe; sie wird nicht aus der Aufgabennummer abgeleitet."
     },
     {
       "questionId": "mock-2023-task-2", "topicIds": ["topic-6a47a10f37e0", "topic-c4a698fc939e", "topic-f5f6e171c082"], "taskSlotNumbers": [2],
-      "moduleIds": ["module-prim-mst"], "trainerIds": ["trainer-graph-prim-mst-v1"], "diagnosticCompetencyIds": ["foundation-graph-basics", "foundation-graph-algorithms"],
+      "moduleIds": ["module-prim-mst"], "trainerIds": ["trainer-graph-prim-mst-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-graph-basics", "foundation-graph-algorithms"],
       "verification": "Der sichtbare Inhalt ist Prim auf einem ungerichteten gewichteten Graphen, nicht ein allgemeines Kürzeste-Wege-Problem."
     },
     {
       "questionId": "mock-2023-task-3", "topicIds": ["topic-1fa208a0ed89", "topic-f5f6e171c082"], "taskSlotNumbers": [3],
-      "moduleIds": ["module-floyd-warshall"], "trainerIds": ["trainer-graph-floyd-warshall-v1"], "diagnosticCompetencyIds": ["foundation-graph-basics", "foundation-graph-algorithms"],
+      "moduleIds": ["module-floyd-warshall"], "trainerIds": ["trainer-graph-floyd-warshall-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-graph-basics", "foundation-graph-algorithms"],
       "verification": "Matrixfolge und Zwischenknoteniteration identifizieren Floyd-Warshall eindeutig."
     },
     {
       "questionId": "mock-2023-task-4", "topicIds": ["topic-0ba342914656", "topic-595ab7b2682c"], "taskSlotNumbers": [4],
-      "moduleIds": ["module-union-find-listen"], "trainerIds": ["trainer-union-find-listen-v1"], "diagnosticCompetencyIds": ["foundation-data-structures"],
+      "moduleIds": ["module-union-find-listen"], "trainerIds": ["trainer-union-find-listen-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-data-structures"],
       "verification": "Die Aufgabe verlangt Union-Find-Tracing mit verketteten Listen und gewichteter Vereinigung."
     },
     {
       "questionId": "mock-2023-task-5", "topicIds": ["topic-1e43393edfb4", "topic-e05ae3743b24", "topic-2b335556483f"], "taskSlotNumbers": [5],
-      "moduleIds": ["module-schleifeninvariante"], "trainerIds": ["trainer-schleifeninvariante-summe-v1"], "diagnosticCompetencyIds": ["foundation-proofs"],
+      "moduleIds": ["module-schleifeninvariante"], "trainerIds": ["trainer-schleifeninvariante-summe-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-proofs"],
       "verification": "Die Kompetenz ist ein vollständiger Schleifeninvariantenbeweis für den sichtbaren Multiplikationsalgorithmus."
     },
     {
       "questionId": "mock-2023-task-6", "topicIds": ["topic-e48203925235", "topic-2b335556483f", "topic-916a9f1645f2", "topic-64b84f2856b9"], "taskSlotNumbers": [6],
-      "moduleIds": ["module-rekurrenz-master"], "trainerIds": ["trainer-rekurrenz-master-fall1-v1"], "diagnosticCompetencyIds": ["foundation-recurrences", "foundation-asymptotics", "foundation-proofs"],
+      "moduleIds": ["module-rekurrenz-master"], "trainerIds": ["trainer-rekurrenz-master-fall1-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-recurrences", "foundation-asymptotics", "foundation-proofs"],
       "verification": "Die Aufgabe verbindet Rekurrenzanalyse, asymptotische Schranke und Induktionsbeweis."
     },
     {
       "questionId": "mock-2023-task-7", "topicIds": ["topic-3e0e72f97f6e", "topic-e05ae3743b24"], "taskSlotNumbers": [7],
-      "moduleIds": ["module-greedy-entwurf"], "trainerIds": ["trainer-greedy-entwurf-fitnesspunkte-v1"], "diagnosticCompetencyIds": ["foundation-paradigms", "foundation-proofs"],
+      "moduleIds": ["module-greedy-entwurf"], "trainerIds": ["trainer-greedy-entwurf-fitnesspunkte-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-paradigms", "foundation-proofs"],
       "verification": "Die sichtbare Aufgabe verlangt Greedy-Auswahl, Pseudocode, Laufzeit und Optimalitätsbeweis."
     },
     {
       "questionId": "mock-2023-task-8", "topicIds": ["topic-c0af8532bb72", "topic-2b335556483f"], "taskSlotNumbers": [8],
-      "moduleIds": ["module-dp-entwurf-mine"], "trainerIds": ["trainer-dp-entwurf-mine-v1"], "diagnosticCompetencyIds": ["foundation-paradigms", "foundation-proofs"],
+      "moduleIds": ["module-dp-entwurf-mine"], "trainerIds": ["trainer-dp-entwurf-mine-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-paradigms", "foundation-proofs"],
       "verification": "Die Aufgabe ist DP-Entwurf mit Zustandsdefinition, Randfällen, Beweis und Bottom-up-Algorithmus."
     },
     {
       "questionId": "mock-2023-task-9", "topicIds": ["topic-014799275f99"], "taskSlotNumbers": [9],
-      "moduleIds": [], "trainerIds": [], "diagnosticCompetencyIds": ["foundation-data-structures"],
+      "moduleIds": [], "trainerIds": [], "trainerCoverage": "missing", "diagnosticCompetencyIds": ["foundation-data-structures"],
       "verification": "Die konkrete Lösung ist eine doppelt verkettete Liste. Es existiert derzeit kein fachlich passender produktiver Trainer; deshalb wird keine Ersatzzuordnung erfunden."
-    }
+    },
+    { "questionId": "exam-2020-2-task-1", "topicIds": ["topic-db113b54985a"], "taskSlotNumbers": [1], "moduleIds": [], "trainerIds": [], "trainerCoverage": "missing", "diagnosticCompetencyIds": ["foundation-paradigms"], "verification": "Der sichtbare Inhalt ist IntervalScheduling. Ein produktiver Trainer für dieses Verfahren fehlt; es wird kein Ersatztrainer zugeordnet." },
+    { "questionId": "exam-2020-2-task-2", "topicIds": ["topic-c43206934ba2"], "taskSlotNumbers": [2], "moduleIds": [], "trainerIds": [], "trainerCoverage": "missing", "diagnosticCompetencyIds": ["foundation-graph-basics", "foundation-graph-algorithms"], "verification": "Die Aufgabe verlangt DFS-Zeitstempel. Die produktiven Graphtrainer decken DFS nicht ab." },
+    { "questionId": "exam-2020-2-task-3", "topicIds": ["topic-7ae0552985f1"], "taskSlotNumbers": [3], "moduleIds": ["module-rot-schwarz"], "trainerIds": [], "trainerCoverage": "missing", "diagnosticCompetencyIds": ["foundation-data-structures"], "verification": "Das Modul ist thematisch passend; der vorhandene Trainer deckt nur Einfügen, nicht die geforderten Löschoperationen ab." },
+    { "questionId": "exam-2020-2-task-4", "topicIds": ["topic-c4a698fc939e"], "taskSlotNumbers": [4], "moduleIds": ["module-prim-mst"], "trainerIds": ["trainer-graph-prim-mst-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-graph-basics", "foundation-graph-algorithms"], "verification": "Graphart, Startknotenverfahren und Auswahlfolge entsprechen dem produktiven Prim-Trainer." },
+    { "questionId": "exam-2020-2-task-5", "topicIds": ["topic-1e43393edfb4", "topic-e05ae3743b24", "topic-2b335556483f"], "taskSlotNumbers": [5], "moduleIds": ["module-schleifeninvariante"], "trainerIds": ["trainer-schleifeninvariante-summe-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-proofs"], "verification": "Die verlangte Kompetenz ist ein vollständiger Schleifeninvariantenbeweis und wird vom Produktivtrainer abgedeckt." },
+    { "questionId": "exam-2020-2-task-6", "topicIds": ["topic-e48203925235", "topic-916a9f1645f2", "topic-2b335556483f"], "taskSlotNumbers": [6], "moduleIds": ["module-rekurrenz-master"], "trainerIds": [], "trainerCoverage": "missing", "diagnosticCompetencyIds": ["foundation-recurrences", "foundation-asymptotics", "foundation-proofs"], "verification": "Das Modul ist relevant; der vorhandene Trainer behandelt jedoch einen anderen Master-Fall und wird nicht als vollständige Abdeckung ausgegeben." },
+    { "questionId": "exam-2020-2-task-7", "topicIds": ["topic-3e0e72f97f6e", "topic-e05ae3743b24"], "taskSlotNumbers": [7], "moduleIds": ["module-greedy-entwurf"], "trainerIds": ["trainer-greedy-entwurf-fitnesspunkte-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-paradigms", "foundation-proofs"], "verification": "Aufgabenmodell, Greedy-Regel und Austauschbeweis entsprechen dem produktiven Fitnesspunkte-Trainer." },
+    { "questionId": "exam-2020-2-task-8", "topicIds": ["topic-c0af8532bb72", "topic-f5b57f47447c", "topic-2b335556483f"], "taskSlotNumbers": [8], "moduleIds": ["module-dp-entwurf-mine"], "trainerIds": ["trainer-dp-entwurf-mine-v1"], "trainerCoverage": "available", "diagnosticCompetencyIds": ["foundation-paradigms", "foundation-proofs"], "verification": "Der produktive DP-Entwurfstrainer übt Zustandsdefinition, Rekurrenz, Randfälle und Beweis; die konkrete Rechnerinstanz bleibt klausurspezifisch." },
+    { "questionId": "exam-2020-2-task-9", "topicIds": ["topic-ca027f32a2fe"], "taskSlotNumbers": [9], "moduleIds": [], "trainerIds": [], "trainerCoverage": "missing", "diagnosticCompetencyIds": ["foundation-data-structures"], "verification": "Die Aufgabe ist direkte Adressierung einer Multimenge. Dafür existiert kein produktiver Trainer." }
   ]
 }

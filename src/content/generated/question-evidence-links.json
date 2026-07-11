@@ -228,6 +228,229 @@
       ],
       "relationshipVerified": true,
       "notes": "Datenstruktur und Lösung sind identisch zugeordnet; die vertauschten Lese-/Löschlabels sind dokumentiert."
+    },
+    {
+      "questionId": "exam-2020-2-task-1",
+      "evidenceIds": [
+        "q-1c1860fa3f25"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 2
+        }
+      ],
+      "solutionEvidenceIds": [
+        "q-936b70ac620a"
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 2
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Intervalle und Auswahlfolge wurden visuell abgeglichen."
+    },
+    {
+      "questionId": "exam-2020-2-task-2",
+      "evidenceIds": [
+        "q-d95359c32eff"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 3
+        }
+      ],
+      "solutionEvidenceIds": [
+        "q-541014940052"
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 3
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "DFS-Graph und Zeitstempeltabelle wurden visuell abgeglichen."
+    },
+    {
+      "questionId": "exam-2020-2-task-3",
+      "evidenceIds": [
+        "q-fc833b613c79"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 4
+        }
+      ],
+      "solutionEvidenceIds": [
+        "q-d85cb0ec2701"
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 4
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Rot-Schwarz-Ausgangsbaum und alle fünf Zustände wurden visuell abgeglichen."
+    },
+    {
+      "questionId": "exam-2020-2-task-4",
+      "evidenceIds": [
+        "q-e12c9bac6609"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 5
+        }
+      ],
+      "solutionEvidenceIds": [
+        "q-2aae331e7ddb"
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 5
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Prim-Graph und Auswahlfolge wurden visuell abgeglichen."
+    },
+    {
+      "questionId": "exam-2020-2-task-5",
+      "evidenceIds": [
+        "q-8bf1bf38eca6"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 6
+        }
+      ],
+      "solutionEvidenceIds": [
+        "q-1968c9102df1"
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 6
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Programm und Invariantenbeweis wurden visuell abgeglichen."
+    },
+    {
+      "questionId": "exam-2020-2-task-6",
+      "evidenceIds": [
+        "q-608c00a2ba9a"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 7
+        }
+      ],
+      "solutionEvidenceIds": [
+        "q-3fb8e1192173"
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 7
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Rekurrenz und Induktionsbeweis wurden visuell abgeglichen."
+    },
+    {
+      "questionId": "exam-2020-2-task-7",
+      "evidenceIds": [
+        "q-9c1ee15272e4"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 8
+        }
+      ],
+      "solutionEvidenceIds": [
+        "q-64b364b0585e"
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 8
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Greedy-Aufgabe und vollständige Lösung wurden visuell abgeglichen."
+    },
+    {
+      "questionId": "exam-2020-2-task-8",
+      "evidenceIds": [
+        "q-acf24d9221a1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 9
+        },
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 10
+        }
+      ],
+      "solutionEvidenceIds": [
+        "q-687f52d71c12"
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 9
+        },
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 10
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Zweiseitige DP-Aufgabe, Lösung und dokumentierter Randfallkonflikt wurden visuell abgeglichen."
+    },
+    {
+      "questionId": "exam-2020-2-task-9",
+      "evidenceIds": [
+        "q-cbeeef570d73"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 11
+        },
+        {
+          "sourceId": "src-97414623dd81",
+          "page": 12
+        }
+      ],
+      "solutionEvidenceIds": [
+        "q-0b17b47a1209"
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 11
+        },
+        {
+          "sourceId": "src-8a588d5ddc35",
+          "page": 12
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Zweiseitige Multimengenaufgabe und Feldlösung wurden visuell abgeglichen."
     }
   ]
 }

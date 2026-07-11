@@ -23,13 +23,36 @@ export function validateCanonicalQuestionReviewData(input: {
   );
   const linkIds = new Set(evidenceLinks.links.map((link) => link.questionId));
   const mappingIds = new Set(resourceMappings.mappings.map((mapping) => mapping.questionId));
+  const excludedEvidenceIds = new Set(
+    identityDecisions.excludedEvidence.map((evidence) => evidence.evidenceId),
+  );
 
   for (const questionId of questionIds) {
     if (!finalDecisionIds.has(questionId))
       throw new Error(`${questionId}: finale Identitätsentscheidung fehlt.`);
     if (!linkIds.has(questionId)) throw new Error(`${questionId}: Evidenzverknüpfung fehlt.`);
     if (!mappingIds.has(questionId)) throw new Error(`${questionId}: Ressourcenmapping fehlt.`);
+    const question = input.questions.find((candidate) => candidate.questionId === questionId)!;
+    const mapping = resourceMappings.mappings.find(
+      (candidate) => candidate.questionId === questionId,
+    )!;
+    for (const key of [
+      'topicIds',
+      'taskSlotNumbers',
+      'moduleIds',
+      'trainerIds',
+      'diagnosticCompetencyIds',
+    ] as const)
+      if (JSON.stringify(mapping[key]) !== JSON.stringify(question[key]))
+        throw new Error(`${questionId}: Ressourcenmapping und kanonische Frage weichen ab.`);
+    if (mapping.trainerIds.length > 0 !== (mapping.trainerCoverage === 'available'))
+      throw new Error(`${questionId}: Trainerabdeckung ist nicht konsistent ausgewiesen.`);
   }
+  for (const link of evidenceLinks.links)
+    if (
+      [...link.evidenceIds, ...link.solutionEvidenceIds].some((id) => excludedEvidenceIds.has(id))
+    )
+      throw new Error(`${link.questionId}: ausgeschlossene Evidenz ist als Frage verknüpft.`);
   if (
     identityDecisions.decisions.length + identityDecisions.openCandidateCount !==
     input.originalCandidateCount

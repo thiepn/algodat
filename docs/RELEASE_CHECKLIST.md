@@ -77,3 +77,16 @@
 - [ ] Jede Kandidatur aus dem Reconciliation-Report hat eine manuelle Identitätsentscheidung.
 - [ ] Jede veröffentlichte kanonische Frage besteht die Korpusvalidierung.
 - [ ] Keine offene Kandidatur ist als Übungsaufgabe, Bibliotheksfrage oder Simulatoraufgabe sichtbar.
+
+## Checkpoint `exam-2020-2`
+
+- [x] Genau eine reale Klausursammlung ausgewählt und die Auswahl dokumentiert.
+- [x] Neun Aufgabenidentitäten, 50 Punkte und zwei ausgeschlossene Titelseiten validiert.
+- [x] Alle zwölf Klausur- und zwölf Lösungsseiten visuell geprüft.
+- [x] Graphen, Rot-Schwarz-Bäume, Tabellen und Pseudocode zugänglich rekonstruiert.
+- [x] Alle Aufgaben-/Lösungsevidenzen und Ressourcenmappings verbunden.
+- [x] DP-Randfallkonflikt dokumentiert und als authored correction getestet.
+- [x] Fragenvorschau bleibt feature-geschützt; Review-Route bleibt development-only.
+- [x] Version bleibt `1.0.0-rc.8`.
+- [ ] Reales NVDA-/Narrator-Gate bleibt offen.
+- [ ] Phase 21R.1 bleibt wegen 66 offener Kandidaturen unvollständig.

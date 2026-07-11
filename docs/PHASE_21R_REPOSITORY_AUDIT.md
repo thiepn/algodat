@@ -23,3 +23,9 @@ Phase 21R ist nicht abgeschlossen. Insbesondere fehlen noch der vollständig man
 # Aktualisierung Phase 21R.1
 
 Am 11.07.2026 wurde der kanonische Korpus-Gate eingeführt. Die vollständige Probeklausur 2023 liegt mit neun visuell geprüften public-safe Rekonstruktionen vor; 75 Identitätskandidaturen bleiben offen. Phase 21R und Phase 21R.1 sind daher weiterhin nicht abgeschlossen. Die Vorschau ist feature-geschützt, die Review-Route nur im Entwicklungsbuild vorhanden.
+
+## Aktualisierung `exam-2020-2`
+
+Die reale Klausursammlung `exam-2020-2` ist mit neun weiteren public-safe Rekonstruktionen vollständig. Zwölf Aufgaben- und zwölf Lösungsseiten wurden geprüft; zwei Titelseiten wurden ausgeschlossen. [Quelle: `src-97414623dd81`, S. 1–12; Lösung: `src-8a588d5ddc35`, S. 1–12]
+
+Der Korpus umfasst nun 18 final geprüfte Fragen in zwei vollständigen Sammlungen. 66 Kandidaturen bleiben offen; Phase 21R und Phase 21R.1 bleiben deshalb ausdrücklich unvollständig. Die Review-Route bleibt entwicklungsbeschränkt, die Fragenvorschau feature-geschützt, und keine private PDF wird ausgeliefert.

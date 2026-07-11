@@ -1,5 +1,6 @@
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
+import { useId } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { content } from '../../content/loaders/content';
 import type { CanonicalQuestionBlock } from '../../content/schemas';
@@ -21,6 +22,7 @@ export function isPubliclyVisibleQuestion(
 }
 
 function Block({ block }: { block: CanonicalQuestionBlock }) {
+  const graphMarkerId = useId();
   switch (block.type) {
     case 'paragraph':
       return <p>{block.text}</p>;
@@ -93,11 +95,75 @@ function Block({ block }: { block: CanonicalQuestionBlock }) {
           </table>
         </figure>
       );
-    case 'graph':
+    case 'graph': {
+      const positionedNodes = block.nodes.every(
+        (node) => node.x !== undefined && node.y !== undefined,
+      );
       return (
         <figure>
           <figcaption>{block.label}</figcaption>
-          <p>{block.textAlternative}</p>
+          {positionedNodes ? (
+            <svg
+              viewBox="0 0 100 100"
+              role="img"
+              aria-label={block.textAlternative}
+              className="canonical-graph"
+            >
+              <defs>
+                <marker
+                  id={graphMarkerId}
+                  markerWidth="6"
+                  markerHeight="6"
+                  refX="5"
+                  refY="3"
+                  orient="auto"
+                >
+                  <path d="M0,0 L6,3 L0,6 Z" fill="currentColor" />
+                </marker>
+              </defs>
+              {block.edges.map((edge, index) => {
+                const from = block.nodes.find((node) => node.id === edge.from)!;
+                const to = block.nodes.find((node) => node.id === edge.to)!;
+                return (
+                  <g key={`${edge.from}-${edge.to}-${index}`}>
+                    <line
+                      x1={from.x}
+                      y1={from.y}
+                      x2={to.x}
+                      y2={to.y}
+                      stroke="currentColor"
+                      markerEnd={edge.directed ? `url(#${graphMarkerId})` : undefined}
+                    />
+                    {edge.label ? (
+                      <text
+                        x={(from.x! + to.x!) / 2}
+                        y={(from.y! + to.y!) / 2 - 2}
+                        textAnchor="middle"
+                      >
+                        {edge.label}
+                      </text>
+                    ) : null}
+                  </g>
+                );
+              })}
+              {block.nodes.map((node) => (
+                <g key={node.id}>
+                  <circle
+                    cx={node.x}
+                    cy={node.y}
+                    r="4"
+                    fill="var(--color-surface, white)"
+                    stroke="currentColor"
+                  />
+                  <text x={node.x} y={node.y! + 1.5} textAnchor="middle">
+                    {node.label}
+                  </text>
+                </g>
+              ))}
+            </svg>
+          ) : (
+            <p>{block.textAlternative}</p>
+          )}
           <ul>
             {block.edges.map((edge, index) => (
               <li key={`${edge.from}-${edge.to}-${index}`}>
@@ -108,11 +174,23 @@ function Block({ block }: { block: CanonicalQuestionBlock }) {
           </ul>
         </figure>
       );
+    }
     case 'tree':
       return (
         <figure>
           <figcaption>{block.label}</figcaption>
           <p>{block.representation}</p>
+          {block.nodes ? (
+            <ul aria-label="Strukturierte Knotenliste">
+              {block.nodes.map((node) => (
+                <li key={node.id}>
+                  Knoten {node.label}, Farbe {node.color}, links {node.left ?? 'NIL'}, rechts{' '}
+                  {node.right ?? 'NIL'}
+                </li>
+              ))}
+            </ul>
+          ) : null}
+          {block.nilConvention ? <p>{block.nilConvention}</p> : null}
           <p className="sr-only">{block.textAlternative}</p>
         </figure>
       );
@@ -166,7 +244,11 @@ function QuestionView({
   return (
     <article className="content-section" aria-labelledby="canonical-question-title">
       <p className="eyebrow">
-        {question.collectionType === 'mock_exam' ? 'Probeklausur' : question.collectionType}
+        {question.collectionType === 'mock_exam'
+          ? 'Probeklausur'
+          : question.collectionType === 'real_exam'
+            ? 'Reale Klausur'
+            : 'Übungsblatt'}
       </p>
       <h1 id="canonical-question-title">{question.title}</h1>
       <p>
@@ -200,9 +282,19 @@ function QuestionView({
           </li>
         ))}
       </ul>
+      <h3>Lösungsquellen</h3>
+      <ul>
+        {question.solutionSourceRefs.map((sourceRef) => (
+          <li key={`solution-${sourceRef.sourceId}-${sourceRef.page}`}>
+            {sourceRef.sourceId}, Seite {sourceRef.page}
+            {sourceRef.label ? `: ${sourceRef.label}` : ''}
+          </li>
+        ))}
+      </ul>
       <p>
         Manuell geprüft am {question.verifiedAt} · {question.verifiedBy}
       </p>
+      <p>{question.reviewNotes}</p>
     </article>
   );
 }
@@ -389,6 +481,23 @@ export function CanonicalQuestionReviewPage() {
             {collection.collectionId}: {collection.state} · {collection.decidedTaskCount}/
             {collection.expectedTaskCount ?? '?'} Aufgaben entschieden
           </p>
+          <p>
+            Verifizierte Fragen: {collection.verifiedQuestionIds.length} · Erwartete Punktzahl:{' '}
+            {collection.expectedPointTotal ?? 'nicht festgelegt'}
+          </p>
+          <p>
+            Aufgabenseiten:{' '}
+            {collection.sourceRefs
+              .map((reference) => `${reference.sourceId}, Seite ${reference.page}`)
+              .join('; ')}
+          </p>
+          <p>
+            Lösungsseiten:{' '}
+            {collection.solutionSourceRefs
+              .map((reference) => `${reference.sourceId}, Seite ${reference.page}`)
+              .join('; ')}
+          </p>
+          <p>Ausgeschlossene Evidenz: {collection.excludedEvidenceIds.join(', ') || 'keine'}</p>
           <p>{collection.reviewNotes}</p>
         </aside>
       )}
@@ -403,12 +512,20 @@ export function CanonicalQuestionReviewPage() {
           <li>Publikationsmodus: {question.publicationMode}</li>
           <li>Evidenz: {evidenceLink?.evidenceIds.join(', ') ?? 'fehlt'}</li>
           <li>Lösungsevidenz: {evidenceLink?.solutionEvidenceIds.join(', ') || 'keine'}</li>
+          <li>Evidenzentscheidung: {currentDecision?.notes}</li>
+          <li>Evidenzbeziehung: {evidenceLink?.notes ?? 'fehlt'}</li>
           <li>
             Zuordnungen: Themen {mapping?.topicIds.join(', ') ?? 'fehlt'}, Slots{' '}
             {mapping?.taskSlotNumbers.join(', ') ?? 'fehlt'}, Trainer{' '}
             {mapping?.trainerIds.join(', ') || 'keiner vorhanden'}
           </li>
+          <li>Trainerabdeckung: {mapping?.trainerCoverage ?? 'nicht geprüft'}</li>
+          <li>Vollständiger Aufgabenkörper: {question.bodyBlocks.length > 0 ? 'ja' : 'nein'}</li>
+          <li>
+            Vollständiger Lösungsbezug: {question.solutionSourceRefs.length > 0 ? 'ja' : 'nein'}
+          </li>
         </ul>
+        <p>Review- und Abweichungsnotiz: {question.reviewNotes}</p>
         {currentDecision?.decisionState.startsWith('blocked_') && (
           <p>Blockiergrund: {currentDecision.notes}</p>
         )}

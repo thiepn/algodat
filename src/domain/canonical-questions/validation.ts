@@ -27,6 +27,8 @@ function validateQuestion(question: CanonicalQuestion, issues: string[]): void {
   if (question.bodyBlocks.length === 0) issues.push(`${prefix} Aufgabenkörper fehlt.`);
   if (question.expectedDeliverables.length === 0) issues.push(`${prefix} erwartete Abgabe fehlt.`);
   if (question.sourceRefs.length === 0) issues.push(`${prefix} Quellenbezug fehlt.`);
+  if (question.solutionStatus !== 'no_solution_known' && question.solutionSourceRefs.length === 0)
+    issues.push(`${prefix} Lösungsquellenbezug fehlt.`);
   if (question.topicIds.length === 0) issues.push(`${prefix} Themenzuordnung fehlt.`);
   if (question.taskSlotNumbers.length === 0)
     issues.push(`${prefix} Aufgaben-Slot-Zuordnung fehlt.`);
@@ -37,7 +39,19 @@ function validateQuestion(question: CanonicalQuestion, issues: string[]): void {
   if (question.publicationMode === 'exact_approved' && question.hostedMaterialApproval === null)
     issues.push(`${prefix} exact_approved ohne Rechtefreigabe.`);
 
-  for (const block of flattenBlocks(question.bodyBlocks)) {
+  const bodySubtasks = question.bodyBlocks
+    .filter((block) => block.type === 'subtask')
+    .map((block) => block.label);
+  if (
+    new Set(question.subtaskLabels).size !== question.subtaskLabels.length ||
+    JSON.stringify(bodySubtasks) !== JSON.stringify(question.subtaskLabels)
+  )
+    issues.push(`${prefix} Unteraufgabenlabels stimmen nicht mit den Inhaltsblöcken überein.`);
+
+  for (const block of [
+    ...flattenBlocks(question.bodyBlocks),
+    ...flattenBlocks(question.solution.blocks),
+  ]) {
     if (
       [
         'math',
@@ -52,6 +66,26 @@ function validateQuestion(question: CanonicalQuestion, issues: string[]): void {
       !('textAlternative' in block)
     )
       issues.push(`${prefix} visueller Block ${block.type} ohne Textalternative.`);
+    if (block.type === 'graph') {
+      const nodeIds = new Set(block.nodes.map((node) => node.id));
+      if (block.edges.some((edge) => !nodeIds.has(edge.from) || !nodeIds.has(edge.to)))
+        issues.push(`${prefix} Graphkante verweist auf einen fehlenden Knoten.`);
+      const positioned = block.nodes.filter((node) => node.x !== undefined && node.y !== undefined);
+      if (positioned.length > 0 && positioned.length !== block.nodes.length)
+        issues.push(`${prefix} Graphkoordinaten sind nur teilweise vorhanden.`);
+    }
+    if (block.type === 'tree' && block.nodes) {
+      const nodeIds = new Set(block.nodes.map((node) => node.id));
+      if (
+        block.nodes.some(
+          (node) =>
+            (node.left !== null && !nodeIds.has(node.left)) ||
+            (node.right !== null && !nodeIds.has(node.right)),
+        )
+      )
+        issues.push(`${prefix} Baumkante verweist auf einen fehlenden Knoten.`);
+      if (!block.nilConvention) issues.push(`${prefix} strukturierter Baum ohne NIL-Konvention.`);
+    }
   }
 }
 

@@ -816,6 +816,20 @@ th {
   width: 100%;
   max-width: 520px;
 }
+
+.canonical-graph {
+  display: block;
+  width: min(100%, 48rem);
+  height: auto;
+  min-height: 18rem;
+  margin-block: 1rem;
+  overflow: visible;
+}
+
+.canonical-graph text {
+  fill: currentColor;
+  font-size: 4px;
+}
 .union-visualization rect {
   fill: var(--blue-soft);
   stroke: var(--forest);

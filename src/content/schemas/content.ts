@@ -181,7 +181,16 @@ export const CanonicalQuestionBlockSchema = z.discriminatedUnion('type', [
       type: z.literal('graph'),
       label: SemanticTextSchema,
       nodes: z
-        .array(z.object({ id: z.string().min(1), label: SemanticTextSchema }).strict())
+        .array(
+          z
+            .object({
+              id: z.string().min(1),
+              label: SemanticTextSchema,
+              x: z.number().min(0).max(100).optional(),
+              y: z.number().min(0).max(100).optional(),
+            })
+            .strict(),
+        )
         .min(1),
       edges: z.array(
         z
@@ -202,6 +211,20 @@ export const CanonicalQuestionBlockSchema = z.discriminatedUnion('type', [
       label: SemanticTextSchema,
       representation: SemanticTextSchema,
       textAlternative: SemanticTextSchema,
+      nodes: z
+        .array(
+          z
+            .object({
+              id: z.string().min(1),
+              label: SemanticTextSchema,
+              color: z.enum(['rot', 'schwarz']),
+              left: z.string().min(1).nullable(),
+              right: z.string().min(1).nullable(),
+            })
+            .strict(),
+        )
+        .optional(),
+      nilConvention: SemanticTextSchema.optional(),
     })
     .strict(),
   z
@@ -379,6 +402,7 @@ export const CanonicalQuestionsFileSchema = z
             'blocked',
           ]),
           expectedTaskCount: z.number().int().positive().nullable(),
+          expectedPointTotal: z.number().nonnegative().nullable(),
           decidedTaskCount: z.number().int().nonnegative(),
           verifiedQuestionIds: z.array(z.string().min(1)),
           blockedCandidateIds: z.array(z.string().min(1)),
@@ -407,10 +431,40 @@ export const CanonicalQuestionsFileSchema = z
       const collectionQuestions = file.questions.filter(
         (question) => question.collectionId === collection.collectionId,
       );
+      const taskNumbers = collectionQuestions.map((question) => question.taskNumber);
+      if (new Set(taskNumbers).size !== taskNumbers.length)
+        context.addIssue({
+          code: 'custom',
+          path: ['collections', index],
+          message: 'Eine Sammlung darf jede Aufgabennummer nur einmal enthalten.',
+        });
+      const verifiedIds = new Set(collection.verifiedQuestionIds);
+      if (
+        collectionQuestions.length !== collection.verifiedQuestionIds.length ||
+        verifiedIds.size !== collection.verifiedQuestionIds.length ||
+        collectionQuestions.some((question) => !verifiedIds.has(question.questionId))
+      )
+        context.addIssue({
+          code: 'custom',
+          path: ['collections', index, 'verifiedQuestionIds'],
+          message: 'Die verifizierten Fragen-IDs müssen genau den Sammlungsfragen entsprechen.',
+        });
+      if (
+        collection.expectedPointTotal !== null &&
+        (collectionQuestions.some((question) => question.points === null) ||
+          collectionQuestions.reduce((sum, question) => sum + (question.points ?? 0), 0) !==
+            collection.expectedPointTotal)
+      )
+        context.addIssue({
+          code: 'custom',
+          path: ['collections', index, 'expectedPointTotal'],
+          message: 'Die bekannte Gesamtpunktzahl stimmt nicht mit den Aufgabenpunkten überein.',
+        });
       if (
         collection.state === 'complete' &&
         (collection.expectedTaskCount === null ||
           collection.decidedTaskCount !== collection.expectedTaskCount ||
+          collectionQuestions.length !== collection.expectedTaskCount ||
           collectionQuestions.length !== collection.verifiedQuestionIds.length ||
           collection.blockedCandidateIds.length > 0)
       )
@@ -418,6 +472,20 @@ export const CanonicalQuestionsFileSchema = z
           code: 'custom',
           path: ['collections', index, 'state'],
           message: 'Eine vollständige Sammlung benötigt Entscheidungen für alle Aufgaben.',
+        });
+      if (
+        collection.state === 'complete' &&
+        collection.collectionType !== 'exercise_sheet' &&
+        collection.expectedTaskCount !== null &&
+        [...taskNumbers]
+          .sort((left, right) => left - right)
+          .some((value, taskIndex) => value !== taskIndex + 1)
+      )
+        context.addIssue({
+          code: 'custom',
+          path: ['collections', index],
+          message:
+            'Eine vollständige Klausursammlung benötigt die lückenlose Nummerierung ab Aufgabe 1.',
         });
     }
   });
@@ -514,6 +582,7 @@ export const QuestionResourceMappingReportSchema = z
           taskSlotNumbers: z.array(z.number().int().min(1).max(9)).min(1),
           moduleIds: z.array(z.string().min(1)),
           trainerIds: z.array(z.string().min(1)),
+          trainerCoverage: z.enum(['available', 'missing', 'not_applicable']).default('missing'),
           diagnosticCompetencyIds: z.array(z.string().min(1)),
           verification: SemanticTextSchema,
         })

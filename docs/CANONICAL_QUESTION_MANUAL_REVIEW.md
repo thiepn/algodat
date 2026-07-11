@@ -16,4 +16,8 @@ Alle neun Fragen `mock-2023-task-1` bis `mock-2023-task-9` wurden am 11.07.2026 
 
 Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz ausgeführt. Ein unabhängiger Zweitreview war in diesem Checkpoint nicht verfügbar und ist in jedem Datensatz als Limitation erfasst.
 
-Die übrigen 75 Kandidaturen sind nicht freigegeben.
+Zusätzlich wurden alle neun Fragen `exam-2020-2-task-1` bis `exam-2020-2-task-9` gegen die vollständige Klausur und offizielle Lösungsskizze geprüft. Die Graphen sind als SVG mit Kantenlisten, die Rot-Schwarz-Zustände als strukturierte farbtextuelle Bäume und Tabellen als semantisches HTML rekonstruiert. [Quelle: `src-97414623dd81`, S. 2–12; Lösung: `src-8a588d5ddc35`, S. 2–12]
+
+Aufgabe 8 besitzt wegen des dokumentierten Randfallfehlers der gedruckten Rekurrenz eine korrigierte `authored_solution`; alle übrigen acht Lösungen der realen Sammlung sind als vollständig verifizierte offizielle Lösungen erfasst. [Lösung: `src-8a588d5ddc35`, S. 9]
+
+Die übrigen 66 Kandidaturen sind nicht freigegeben. Ein unabhängiger Zweitreview der insgesamt 18 Fragen steht weiterhin aus.

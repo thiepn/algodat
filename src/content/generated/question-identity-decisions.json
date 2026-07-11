@@ -171,9 +171,192 @@
       "identityConfidence": "hoch",
       "reviewerStatus": "final_reviewed",
       "notes": "Die offizielle Lösung auf Seiten 13 und 14 vertauscht Lese- und Löschbezeichnungen; der Konflikt ist dokumentiert."
+    },
+    {
+      "candidateId": "exam-2020-2-task-1",
+      "canonicalQuestionId": "exam-2020-2-task-1",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-1c1860fa3f25",
+        "q-936b70ac620a"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 1,
+      "subtasks": [],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Zwölf Intervalle und Auswahlfolge wurden auf Seite 2 beider Quellen visuell abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-2",
+      "canonicalQuestionId": "exam-2020-2-task-2",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-d95359c32eff",
+        "q-541014940052"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 2,
+      "subtasks": [],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graph und DFS-Zeitstempel wurden auf Seite 3 beider Quellen visuell abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-3",
+      "canonicalQuestionId": "exam-2020-2-task-3",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-fc833b613c79",
+        "q-d85cb0ec2701"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Ausgangsbaum, fünf Operationen und fünf Ergebnisbäume wurden auf Seite 4 abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-4",
+      "canonicalQuestionId": "exam-2020-2-task-4",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-e12c9bac6609",
+        "q-2aae331e7ddb"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 4,
+      "subtasks": [],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graph, Gewichte und Prim-Auswahlfolge wurden auf Seite 5 abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-5",
+      "canonicalQuestionId": "exam-2020-2-task-5",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-8bf1bf38eca6",
+        "q-1968c9102df1"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Pseudocode und dreiteiliger Invariantenbeweis wurden auf Seite 6 abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-6",
+      "canonicalQuestionId": "exam-2020-2-task-6",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-608c00a2ba9a",
+        "q-3fb8e1192173"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Rekurrenz und Induktionslösung wurden auf Seite 7 abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-7",
+      "canonicalQuestionId": "exam-2020-2-task-7",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-9c1ee15272e4",
+        "q-64b364b0585e"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 7,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Greedy-Modell, Pseudocode, Laufzeit und Austauschbeweis wurden auf Seite 8 abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-8",
+      "canonicalQuestionId": "exam-2020-2-task-8",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-acf24d9221a1",
+        "q-687f52d71c12"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 8,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben zweiseitigen Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Seiten 9 und 10 wurden vollständig geprüft; der Konflikt zwischen Rekurrenz und Pseudocode ist dokumentiert."
+    },
+    {
+      "candidateId": "exam-2020-2-task-9",
+      "canonicalQuestionId": "exam-2020-2-task-9",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-cbeeef570d73",
+        "q-0b17b47a1209"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 9,
+      "subtasks": [],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben zweiseitigen Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe und Feldlösung wurden auf Seiten 11 und 12 vollständig geprüft."
     }
   ],
   "excludedEvidence": [
+    {
+      "evidenceId": "q-c2391c1b18d8",
+      "sourceId": "src-97414623dd81",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Titelseite und Punkteübersicht der realen Klausur; keine Aufgabe."
+    },
+    {
+      "evidenceId": "q-32867772a3cd",
+      "sourceId": "src-8a588d5ddc35",
+      "page": 1,
+      "decision": "solution_cover_page",
+      "notes": "Titelseite der offiziellen Lösungsskizze; keine eigenständige Aufgabenlösung."
+    },
     {
       "evidenceId": "q-7d7aa2066664",
       "sourceId": "src-8f16b2505bbd",
@@ -189,6 +372,6 @@
       "notes": "Titelseite der Beispiellösung; keine Aufgabenlösung."
     }
   ],
-  "openCandidateCount": 75,
+  "openCandidateCount": 66,
   "openCandidatePolicy": "Offene Kandidaturen werden weder kanonisiert noch öffentlich angezeigt. Ihre vollständige visuelle Prüfung ist Voraussetzung für eine Identitätsentscheidung."
 }
