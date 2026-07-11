@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "1.0.0-rc.8",
+  "links": [
+    {
+      "questionId": "mock-2023-task-1",
+      "evidenceIds": ["q-68424bad7007"],
+      "sourceRefs": [{ "sourceId": "src-8f16b2505bbd", "page": 2 }],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [{ "sourceId": "src-35405e721f05", "page": 2 }],
+      "relationshipVerified": true,
+      "notes": "Die Aufgaben- und die zugehörige Musterlösungsseite wurden lokal visuell abgeglichen."
+    }
+  ]
+}

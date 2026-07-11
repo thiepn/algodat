@@ -16,6 +16,7 @@
     "test:e2e": "npm run build && playwright test",
     "validate:phase-data": "tsx scripts/validate-phase-data.ts",
     "validate:content": "tsx scripts/validate-content.ts",
+    "validate:canonical-questions": "tsx scripts/validate-canonical-questions.ts",
     "build:content": "tsx scripts/build-content.ts",
     "check:deployment": "tsx scripts/check-deployment-assets.ts",
     "analyze:bundle": "tsx scripts/analyze-bundle.ts",

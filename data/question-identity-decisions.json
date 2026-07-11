@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "1.0.0-rc.8",
+  "decisionScope": "Nur visuell geprüfte Identitäten werden als kanonisch entschieden. Nicht geprüfte Evidenz bleibt als offene Kandidatur erhalten und wird nicht als Frage gezählt.",
+  "decisions": [
+    {
+      "candidateId": "mock-2023-task-1",
+      "canonicalQuestionId": "mock-2023-task-1",
+      "evidenceIds": ["q-68424bad7007"],
+      "collectionId": "mock-2023",
+      "taskNumber": 1,
+      "subtasks": [],
+      "duplicateRelationship": "keine Dublette festgestellt",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "manuell_verifiziert",
+      "notes": "Die Titelseite ist keine Aufgabe; die Aufgabenidentität beginnt auf Seite 2. Die offizielle Lösung ist als getrennte Quelle auf Seite 2 verbunden."
+    }
+  ],
+  "openCandidateCount": 83,
+  "openCandidatePolicy": "Offene Kandidaturen werden weder kanonisiert noch öffentlich angezeigt. Ihre vollständige visuelle Prüfung ist Voraussetzung für eine Identitätsentscheidung."
+}

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "1.0.0-rc.8",
+  "questions": [
+    {
+      "questionId": "mock-2023-task-1",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "mock_exam",
+      "collectionId": "mock-2023",
+      "examId": "mock-2023",
+      "sheetId": null,
+      "year": 2023,
+      "semester": "Sommersemester 2023",
+      "taskNumber": 1,
+      "subtaskLabels": [],
+      "title": "Greedy-Lastverteilung auf identische Maschinen",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Verteilen Sie die folgenden zehn unabhängigen Aufträge mit GreedyLoadBalancing auf vier identische Maschinen. Der Algorithmus betrachtet die Bearbeitungszeiten in nichtzunehmender Reihenfolge und ordnet jeden Auftrag einer Maschine mit aktuell minimaler Gesamtlast zu."
+        },
+        {
+          "type": "array",
+          "label": "Bearbeitungszeiten der Aufträge",
+          "values": [
+            12,
+            33,
+            6,
+            18,
+            16,
+            23,
+            14,
+            17,
+            15,
+            12
+          ],
+          "textAlternative": "Die zehn Bearbeitungszeiten lauten in Eingabereihenfolge: 12, 33, 6, 18, 16, 23, 14, 17, 15 und 12."
+        },
+        {
+          "type": "callout",
+          "title": "Konvention bei Gleichstand",
+          "text": "Haben mehrere Maschinen dieselbe minimale aktuelle Last, wählen Sie die Maschine mit dem kleinsten Index. Maschinen heißen M1, M2, M3 und M4."
+        }
+      ],
+      "points": 4,
+      "estimatedMinutes": 8,
+      "difficulty": "mittel",
+      "expectedDeliverables": [
+        "Die Reihenfolge der betrachteten Bearbeitungszeiten.",
+        "Für jede Maschine die zugewiesenen Aufträge in Zuweisungsreihenfolge.",
+        "Die Endlast jeder Maschine."
+      ],
+      "allowedNotation": [
+        "Maschinen M1 bis M4",
+        "Last als Summe der zugewiesenen Bearbeitungszeiten"
+      ],
+      "conventions": [
+        "Alle Maschinen sind zu Beginn leer.",
+        "Ein Auftrag wird nicht aufgeteilt."
+      ],
+      "tieBreakingRules": [
+        "Bei gleicher minimaler Last gewinnt der kleinere Maschinenindex."
+      ],
+      "topicIds": [
+        "topic-3e0e72f97f6e"
+      ],
+      "taskSlotNumbers": [
+        1
+      ],
+      "moduleIds": [
+        "module-greedy-entwurf"
+      ],
+      "trainerIds": [
+        "trainer-greedy-entwurf-fitnesspunkte-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Die absteigend sortierte Folge ist 33, 23, 18, 17, 16, 15, 14, 12, 12, 6. Nach jedem Schritt wird eine Maschine mit minimaler aktueller Last gewählt; bei Gleichstand entscheidet ihr Index."
+          },
+          {
+            "type": "operation_sequence",
+            "label": "Zuweisungen mit resultierenden Maschinenlasten",
+            "operations": [
+              "33 nach M1: (33, 0, 0, 0)",
+              "23 nach M2: (33, 23, 0, 0)",
+              "18 nach M3: (33, 23, 18, 0)",
+              "17 nach M4: (33, 23, 18, 17)",
+              "16 nach M4: (33, 23, 18, 33)",
+              "15 nach M3: (33, 23, 33, 33)",
+              "14 nach M2: (33, 37, 33, 33)",
+              "12 nach M1: (45, 37, 33, 33)",
+              "12 nach M3: (45, 37, 45, 33)",
+              "6 nach M4: (45, 37, 45, 39)"
+            ],
+            "textAlternative": "Die Lastvektoren sind nach jeder Zuweisung in der Reihenfolge M1, M2, M3, M4 angegeben."
+          },
+          {
+            "type": "paragraph",
+            "text": "Damit erhält M1 die Aufträge 33 und 12, M2 die Aufträge 23 und 14, M3 die Aufträge 18, 15 und 12 sowie M4 die Aufträge 17, 16 und 6. Die Endlasten sind 45, 37, 45 und 39."
+          }
+        ],
+        "provenance": "official_solution"
+      },
+      "solutionStatus": "complete_verified_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 2,
+          "label": "Probeklausur SS 2023, Aufgabe 1"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 2,
+          "label": "Offizielle Musterlösung zur Probeklausur SS 2023, Aufgabe 1"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "verifiedBy": "Korpusreview Phase 21R.1",
+      "verifiedAt": "2026-07-11",
+      "reviewNotes": "Aufgaben- und Lösungsseite wurden lokal visuell geprüft. Der sichtbare Tabelleninhalt wurde als neu formulierte, semantische Folge von Zuweisungen rekonstruiert; keine PDF-Abbildung oder OCR-Text wird ausgeliefert.",
+      "duplicateGroupId": null
+    }
+  ]
+}

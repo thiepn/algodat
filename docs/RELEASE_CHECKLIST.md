@@ -72,3 +72,8 @@
 - [ ] Build-Artefakte enthalten keine privaten PDFs, lokalen Pfade oder PDF-Links.
 - [ ] Live-Smoke für `/`, `/aufgaben/3`, `/themen`, `/klausuren`, `/klausuren/fragen`, `/klausuren/vergleich`.
 - [ ] Screenreader-Gate bleibt als offen dokumentiert; keine Version `1.0.0`.
+# Zusätzlicher Release-Gate: kanonischer Fragenkorpus
+
+- [ ] Jede Kandidatur aus dem Reconciliation-Report hat eine manuelle Identitätsentscheidung.
+- [ ] Jede veröffentlichte kanonische Frage besteht die Korpusvalidierung.
+- [ ] Keine offene Kandidatur ist als Übungsaufgabe, Bibliotheksfrage oder Simulatoraufgabe sichtbar.

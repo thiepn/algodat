@@ -2,6 +2,7 @@ import { mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import {
   CitationFixturesFileSchema,
+  CanonicalQuestionsFileSchema,
   ContentHealthSchema,
   ContentManifestSchema,
   DpDesignRubricSchema,
@@ -60,6 +61,7 @@ import {
   type Topic,
   type VerificationStatus,
 } from '../src/content/schemas';
+import { validateCanonicalQuestionCorpus } from '../src/domain/canonical-questions/validation';
 import { dataDir, generatedDir, readJson, sha256, sha256File, writeJson } from './content-utils';
 import { buildPhase14DiagnosticContent } from './phase14-diagnostic-content';
 import {
@@ -331,6 +333,9 @@ async function main(): Promise<void> {
   const blueprint = await readJson<RawBlueprint>(path.join(dataDir, 'exam-blueprint.json'));
   const rawTopics = await readJson<RawTopics>(path.join(dataDir, 'topic-map.json'));
   const rawQuestions = await readJson<RawQuestions>(path.join(dataDir, 'question-inventory.json'));
+  const canonicalQuestions = validateCanonicalQuestionCorpus(
+    await readJson<unknown>(path.join(dataDir, 'canonical-questions.json')),
+  );
   const phase17StudyModules = await readJson<Phase17StudyModules>(
     path.join(dataDir, 'study-modules.json'),
   );
@@ -1045,6 +1050,7 @@ async function main(): Promise<void> {
     'task-slot-learning-map.json': { ...phase17TaskMap, contentVersion },
     'learning-resource-graph.json': { ...phase17LearningGraph, contentVersion },
     'exam-library.json': safeExamLibrary,
+    'canonical-questions.json': CanonicalQuestionsFileSchema.parse(canonicalQuestions),
     'exam-question-publication-audit.json': {
       schemaVersion,
       contentVersion,

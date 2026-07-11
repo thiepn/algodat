@@ -34,8 +34,10 @@ import proofTrainersData from '../generated/proof-trainers.json';
 import proofRubricsData from '../generated/proof-rubrics.json';
 import recurrenceTrainersData from '../generated/recurrence-trainers.json';
 import recurrenceRubricsData from '../generated/recurrence-rubrics.json';
+import canonicalQuestionsData from '../generated/canonical-questions.json';
 import {
   CitationFixturesFileSchema,
+  CanonicalQuestionsFileSchema,
   ContentHealthSchema,
   ContentManifestSchema,
   DpDesignRubricsFileSchema,
@@ -117,6 +119,7 @@ export const content = {
   proofRubrics: ProofRubricsFileSchema.parse(proofRubricsData),
   recurrenceTrainers: RecurrenceTrainersFileSchema.parse(recurrenceTrainersData),
   recurrenceRubrics: RecurrenceRubricsFileSchema.parse(recurrenceRubricsData),
+  canonicalQuestions: CanonicalQuestionsFileSchema.parse(canonicalQuestionsData),
 };
 
 export type Content = typeof content;

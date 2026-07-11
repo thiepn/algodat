@@ -130,6 +130,254 @@ export const ExamQuestionSchema = z.object({
   evidenceType: EvidenceTypeSchema,
 });
 
+const CanonicalSourceReferenceSchema = z
+  .object({
+    sourceId: z.string().regex(/^src-[a-z0-9]+$/u),
+    page: z.number().int().positive(),
+    label: z.string().min(1).max(160).optional(),
+  })
+  .strict();
+
+const SemanticTextSchema = z.string().trim().min(1).max(12000);
+export const CanonicalQuestionBlockSchema = z.discriminatedUnion('type', [
+  z.object({ type: z.literal('paragraph'), text: SemanticTextSchema }).strict(),
+  z.object({ type: z.literal('ordered_list'), items: z.array(SemanticTextSchema).min(1) }).strict(),
+  z
+    .object({ type: z.literal('unordered_list'), items: z.array(SemanticTextSchema).min(1) })
+    .strict(),
+  z
+    .object({
+      type: z.literal('math'),
+      latex: SemanticTextSchema,
+      textAlternative: SemanticTextSchema,
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal('pseudocode'),
+      code: SemanticTextSchema,
+      textAlternative: SemanticTextSchema,
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal('array'),
+      label: SemanticTextSchema,
+      values: z.array(z.union([z.string(), z.number(), z.boolean()])).min(1),
+      textAlternative: SemanticTextSchema,
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal('matrix'),
+      label: SemanticTextSchema,
+      columnHeaders: z.array(SemanticTextSchema).min(1),
+      rows: z.array(z.array(SemanticTextSchema).min(1)).min(1),
+      textAlternative: SemanticTextSchema,
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal('graph'),
+      label: SemanticTextSchema,
+      nodes: z
+        .array(z.object({ id: z.string().min(1), label: SemanticTextSchema }).strict())
+        .min(1),
+      edges: z.array(
+        z
+          .object({
+            from: z.string().min(1),
+            to: z.string().min(1),
+            label: z.string().min(1).optional(),
+            directed: z.boolean(),
+          })
+          .strict(),
+      ),
+      textAlternative: SemanticTextSchema,
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal('tree'),
+      label: SemanticTextSchema,
+      representation: SemanticTextSchema,
+      textAlternative: SemanticTextSchema,
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal('dp_table'),
+      label: SemanticTextSchema,
+      columnHeaders: z.array(SemanticTextSchema).min(1),
+      rows: z.array(z.array(SemanticTextSchema).min(1)).min(1),
+      textAlternative: SemanticTextSchema,
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal('operation_sequence'),
+      label: SemanticTextSchema,
+      operations: z.array(SemanticTextSchema).min(1),
+      textAlternative: SemanticTextSchema,
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal('definition_list'),
+      entries: z
+        .array(z.object({ term: SemanticTextSchema, definition: SemanticTextSchema }).strict())
+        .min(1),
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal('subtask'),
+      label: SemanticTextSchema,
+      blocks: z
+        .array(z.object({ type: z.literal('paragraph'), text: SemanticTextSchema }).strict())
+        .min(1),
+    })
+    .strict(),
+  z
+    .object({ type: z.literal('callout'), title: SemanticTextSchema, text: SemanticTextSchema })
+    .strict(),
+]);
+
+export const CanonicalQuestionSolutionStatusSchema = z.enum([
+  'complete_verified_solution',
+  'verified_solution_outline',
+  'unofficial_solution',
+  'authored_solution',
+  'solution_source_known_but_unprocessed',
+  'no_solution_known',
+]);
+export const CanonicalQuestionPublicationModeSchema = z.enum([
+  'exact_approved',
+  'public_safe_reconstruction',
+  'authored_equivalent',
+]);
+export const CanonicalQuestionSchema = z
+  .object({
+    questionId: z
+      .string()
+      .regex(/^(exam|mock|exercise)-[a-z0-9]+(?:-[a-z0-9]+)*-task-[1-9](?:-[a-z])?$/u),
+    schemaVersion: z.string().min(1),
+    contentVersion: z.string().min(1),
+    collectionType: z.enum(['real_exam', 'mock_exam', 'exercise_sheet']),
+    collectionId: z.string().min(1),
+    examId: z.string().min(1).nullable(),
+    sheetId: z.string().min(1).nullable(),
+    year: z.number().int().min(1900).max(2100).nullable(),
+    semester: z.string().min(1).nullable(),
+    taskNumber: z.number().int().min(1).max(9),
+    subtaskLabels: z.array(z.string().min(1)).default([]),
+    title: SemanticTextSchema,
+    bodyBlocks: z.array(CanonicalQuestionBlockSchema).min(1),
+    points: z.number().nonnegative().nullable(),
+    estimatedMinutes: z.number().int().positive().nullable(),
+    difficulty: z.enum(['leicht', 'mittel', 'schwer', 'unbekannt']),
+    expectedDeliverables: z.array(SemanticTextSchema).min(1),
+    allowedNotation: z.array(SemanticTextSchema),
+    conventions: z.array(SemanticTextSchema),
+    tieBreakingRules: z.array(SemanticTextSchema),
+    topicIds: z.array(z.string().min(1)).min(1),
+    taskSlotNumbers: z.array(z.number().int().min(1).max(9)).min(1),
+    moduleIds: z.array(z.string().min(1)),
+    trainerIds: z.array(z.string().min(1)),
+    diagnosticCompetencyIds: z.array(z.string().min(1)),
+    solution: z
+      .object({
+        blocks: z.array(CanonicalQuestionBlockSchema),
+        provenance: z.enum([
+          'official_solution',
+          'unofficial_solution',
+          'authored_from_verified_method',
+          'none',
+        ]),
+      })
+      .strict(),
+    solutionStatus: CanonicalQuestionSolutionStatusSchema,
+    publicationMode: CanonicalQuestionPublicationModeSchema,
+    hostedMaterialApproval: z
+      .object({
+        rightsHolder: SemanticTextSchema,
+        rightsBasis: SemanticTextSchema,
+        permissionOrLicenceNote: SemanticTextSchema,
+        sha256: z.string().regex(/^[a-f0-9]{64}$/u),
+        publicationStatus: z.literal('approved'),
+      })
+      .strict()
+      .nullable(),
+    sourceRefs: z.array(CanonicalSourceReferenceSchema).min(1),
+    solutionSourceRefs: z.array(CanonicalSourceReferenceSchema),
+    verificationStatus: z.enum(['verified', 'blocked']),
+    manuallyVerified: z.literal(true),
+    verifiedBy: SemanticTextSchema,
+    verifiedAt: z.string().date(),
+    reviewNotes: SemanticTextSchema,
+    duplicateGroupId: z.string().min(1).nullable(),
+  })
+  .strict()
+  .superRefine((question, context) => {
+    if (question.collectionType === 'exercise_sheet' && question.sheetId === null)
+      context.addIssue({
+        code: 'custom',
+        path: ['sheetId'],
+        message: 'Übungsfragen benötigen sheetId.',
+      });
+    if (question.collectionType !== 'exercise_sheet' && question.examId === null)
+      context.addIssue({
+        code: 'custom',
+        path: ['examId'],
+        message: 'Klausurfragen benötigen examId.',
+      });
+    if (question.publicationMode === 'exact_approved' && question.hostedMaterialApproval === null)
+      context.addIssue({
+        code: 'custom',
+        path: ['hostedMaterialApproval'],
+        message: 'Exact-approved benötigt eine Freigabe.',
+      });
+    if (question.publicationMode !== 'exact_approved' && question.hostedMaterialApproval !== null)
+      context.addIssue({
+        code: 'custom',
+        path: ['hostedMaterialApproval'],
+        message: 'Eine Materialfreigabe ist nur für exact_approved zulässig.',
+      });
+    if (question.solutionStatus === 'no_solution_known' && question.solution.blocks.length > 0)
+      context.addIssue({
+        code: 'custom',
+        path: ['solution', 'blocks'],
+        message: 'Ohne bekannte Lösung dürfen keine Lösungsblöcke vorliegen.',
+      });
+    if (question.solutionStatus !== 'no_solution_known' && question.solution.blocks.length === 0)
+      context.addIssue({
+        code: 'custom',
+        path: ['solution', 'blocks'],
+        message: 'Der Lösungsstatus benötigt Lösungsblöcke.',
+      });
+  });
+export const CanonicalQuestionsFileSchema = z
+  .object({
+    schemaVersion: z.string().min(1),
+    contentVersion: z.string().min(1),
+    questions: z.array(CanonicalQuestionSchema),
+  })
+  .strict()
+  .superRefine((file, context) => {
+    const ids = new Set<string>();
+    file.questions.forEach((question, index) => {
+      if (ids.has(question.questionId))
+        context.addIssue({
+          code: 'custom',
+          path: ['questions', index, 'questionId'],
+          message: 'Doppelte kanonische Fragen-ID.',
+        });
+      ids.add(question.questionId);
+    });
+  });
+export type CanonicalQuestionBlock = z.infer<typeof CanonicalQuestionBlockSchema>;
+export type CanonicalQuestion = z.infer<typeof CanonicalQuestionSchema>;
+
 export const SolutionSchema = z.object({
   ...Meta,
   questionId: z.string().min(1),

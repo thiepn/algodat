@@ -5,3 +5,6 @@
 - `authored_equivalent`: klar als neu erstellte vergleichbare Übungsaufgabe bezeichnet; niemals als historische Originalaufgabe dargestellt.
 
 Jede Frage benötigt genau einen Modus. Ein bloßer Metadatentitel, eine lokale PDF-Abhängigkeit oder ein generischer Methodenhinweis ist kein veröffentlichungsfähiger Fragenkörper.
+# Durchsetzung im Build
+
+Der kanonische Validator akzeptiert `exact_approved` nur mit Rechteinhaber, Rechtsgrundlage, Lizenz-/Erlaubnisnotiz, SHA-256 und Status `approved`. Alle anderen historischen Fragen müssen als vollständige `public_safe_reconstruction` oder klar markierte `authored_equivalent` vorliegen.

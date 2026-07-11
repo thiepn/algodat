@@ -47,6 +47,32 @@ export const router = createBrowserRouter(
           }),
         },
         {
+          path: 'fragen-vorschau',
+          lazy: async () => ({
+            Component: (await import('../features/canonical-questions/CanonicalQuestionPages'))
+              .CanonicalQuestionPreviewPage,
+          }),
+        },
+        {
+          path: 'fragen-vorschau/:questionId',
+          lazy: async () => ({
+            Component: (await import('../features/canonical-questions/CanonicalQuestionPages'))
+              .CanonicalQuestionPreviewDetailPage,
+          }),
+        },
+        ...(import.meta.env.DEV
+          ? [
+              {
+                path: '__review/questions/:questionId?',
+                lazy: async () => ({
+                  Component: (
+                    await import('../features/canonical-questions/CanonicalQuestionPages')
+                  ).CanonicalQuestionReviewPage,
+                }),
+              },
+            ]
+          : []),
+        {
           path: 'klausuren/fragen',
           lazy: async () => ({
             Component: (await import('../features/exam-library/ExamLibraryPages'))

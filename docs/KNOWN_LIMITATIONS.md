@@ -30,3 +30,6 @@
 - Lernmodule sind quellengebundene Referenzen, keine neue kanonische Wahrheit.
 - Nicht jedes Thema besitzt ein vollständiges Lernmodul.
 - Die Klausurenbibliothek zeigt keine vollständigen Originalaufgaben und ersetzt nicht die privaten Ausgangs-PDFs.
+# Phase 21R.1: Korpus noch unvollständig
+
+Der kanonische Fragenkorpus enthält derzeit nur eine manuell geprüfte, public-safe rekonstruierte Frage. 83 Identitätskandidaturen müssen noch visuell mit privaten Originalquellen abgeglichen werden. Sie sind weder im Simulator noch in der öffentlichen Fragenvorschau sichtbar.

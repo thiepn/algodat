@@ -9,6 +9,10 @@
   "trainerCount": 11,
   "files": [
     {
+      "name": "canonical-questions.json",
+      "sha256": "12a1c42ed60fa7f37c5800b3a461c14af3370fb31d63b4ba217bbecd5ebb384f"
+    },
+    {
       "name": "cheat-sheet-blocks.json",
       "sha256": "514b08c55e47b53e68b712c4fbeba7bea883266a65f04d05217aac99f297534c"
     },

@@ -5,3 +5,6 @@ Der Bestand umfasst 633 Evidenzdatensätze. Davon werden bislang 402 als sichere
 Eine vorläufige Identitätsbildung aus Klausurereignis beziehungsweise Quelldokument, Aufgabennummer und Unteraufgabe ergibt 84 Schlüssel. Diese Zahl ist ausdrücklich noch keine Zahl kanonischer Fragen: Lösungen und Duplikate erzeugen eigene Evidenzzeilen, während OCR mehrere Unteraufgaben zusammenfassen kann.
 
 Aktuell ist noch keine historische Frage als vollständig manuell geprüfte kanonische Webseite freigegeben. Alle 84 vorläufigen Schlüssel bleiben blockiert, bis Aufgabenidentität, vollständiger Körper, Eingabedaten, Abbildungen, Punkte, Publikationsmodus und explizite Lösungsseiten visuell anhand der Original-PDFs geprüft wurden. Metadatensätze werden nicht als sichtbare Fragen gezählt.
+# Aktualisierung Phase 21R.1
+
+Die erste entschiedene Identität ist `mock-2023-task-1`. Die 83 übrigen Kandidaturen bleiben offen und werden getrennt gezählt. Sie sind kein negativer Befund über die Quelle, sondern eine Schutzmaßnahme gegen erfundene oder unvollständige Aufgabenkörper.
