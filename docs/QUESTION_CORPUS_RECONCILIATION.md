@@ -7,4 +7,4 @@ Eine vorläufige Identitätsbildung aus Klausurereignis beziehungsweise Quelldok
 Aktuell ist noch keine historische Frage als vollständig manuell geprüfte kanonische Webseite freigegeben. Alle 84 vorläufigen Schlüssel bleiben blockiert, bis Aufgabenidentität, vollständiger Körper, Eingabedaten, Abbildungen, Punkte, Publikationsmodus und explizite Lösungsseiten visuell anhand der Original-PDFs geprüft wurden. Metadatensätze werden nicht als sichtbare Fragen gezählt.
 # Aktualisierung Phase 21R.1
 
-Die erste entschiedene Identität ist `mock-2023-task-1`. Die 83 übrigen Kandidaturen bleiben offen und werden getrennt gezählt. Sie sind kein negativer Befund über die Quelle, sondern eine Schutzmaßnahme gegen erfundene oder unvollständige Aufgabenkörper.
+Die Sammlung `mock-2023` ist mit neun entschiedenen Identitäten vollständig. Die 75 übrigen Kandidaturen bleiben offen und werden getrennt gezählt. Sie sind kein negativer Befund über die Quelle, sondern eine Schutzmaßnahme gegen erfundene oder unvollständige Aufgabenkörper.

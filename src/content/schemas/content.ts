@@ -312,6 +312,10 @@ export const CanonicalQuestionSchema = z
     solutionSourceRefs: z.array(CanonicalSourceReferenceSchema),
     verificationStatus: z.enum(['verified', 'blocked']),
     manuallyVerified: z.literal(true),
+    contentReviewStatus: z.literal('content_reviewed'),
+    finalReviewStatus: z.literal('final_reviewed'),
+    independentSecondReview: z.boolean(),
+    reviewLimitation: SemanticTextSchema.nullable(),
     verifiedBy: SemanticTextSchema,
     verifiedAt: z.string().date(),
     reviewNotes: SemanticTextSchema,
@@ -360,6 +364,31 @@ export const CanonicalQuestionsFileSchema = z
   .object({
     schemaVersion: z.string().min(1),
     contentVersion: z.string().min(1),
+    collections: z.array(
+      z
+        .object({
+          collectionId: z.string().min(1),
+          collectionType: z.enum(['real_exam', 'mock_exam', 'exercise_sheet']),
+          state: z.enum([
+            'not_started',
+            'identity_review',
+            'body_review',
+            'solution_review',
+            'accessibility_review',
+            'complete',
+            'blocked',
+          ]),
+          expectedTaskCount: z.number().int().positive().nullable(),
+          decidedTaskCount: z.number().int().nonnegative(),
+          verifiedQuestionIds: z.array(z.string().min(1)),
+          blockedCandidateIds: z.array(z.string().min(1)),
+          excludedEvidenceIds: z.array(z.string().min(1)),
+          sourceRefs: z.array(CanonicalSourceReferenceSchema).min(1),
+          solutionSourceRefs: z.array(CanonicalSourceReferenceSchema),
+          reviewNotes: SemanticTextSchema,
+        })
+        .strict(),
+    ),
     questions: z.array(CanonicalQuestionSchema),
   })
   .strict()
@@ -374,9 +403,124 @@ export const CanonicalQuestionsFileSchema = z
         });
       ids.add(question.questionId);
     });
+    for (const [index, collection] of file.collections.entries()) {
+      const collectionQuestions = file.questions.filter(
+        (question) => question.collectionId === collection.collectionId,
+      );
+      if (
+        collection.state === 'complete' &&
+        (collection.expectedTaskCount === null ||
+          collection.decidedTaskCount !== collection.expectedTaskCount ||
+          collectionQuestions.length !== collection.verifiedQuestionIds.length ||
+          collection.blockedCandidateIds.length > 0)
+      )
+        context.addIssue({
+          code: 'custom',
+          path: ['collections', index, 'state'],
+          message: 'Eine vollständige Sammlung benötigt Entscheidungen für alle Aufgaben.',
+        });
+    }
   });
 export type CanonicalQuestionBlock = z.infer<typeof CanonicalQuestionBlockSchema>;
 export type CanonicalQuestion = z.infer<typeof CanonicalQuestionSchema>;
+
+export const QuestionIdentityDecisionStateSchema = z.enum([
+  'verified_canonical_question',
+  'merged_duplicate_evidence',
+  'split_into_multiple_questions',
+  'blocked_missing_source',
+  'blocked_unreadable_source',
+  'blocked_missing_visual_data',
+  'blocked_identity_uncertain',
+  'blocked_publication_uncertain',
+]);
+export const QuestionIdentityDecisionsFileSchema = z
+  .object({
+    schemaVersion: z.string().min(1),
+    contentVersion: z.string().min(1),
+    decisionScope: SemanticTextSchema,
+    decisions: z.array(
+      z
+        .object({
+          candidateId: z.string().min(1),
+          canonicalQuestionId: z.string().min(1).nullable(),
+          resultQuestionIds: z.array(z.string().min(1)).default([]),
+          decisionState: QuestionIdentityDecisionStateSchema,
+          evidenceIds: z.array(z.string().min(1)).min(1),
+          collectionId: z.string().min(1),
+          taskNumber: z.number().int().min(1).max(9).nullable(),
+          subtasks: z.array(z.string().min(1)),
+          duplicateRelationship: SemanticTextSchema,
+          identityConfidence: z.enum(['hoch', 'mittel', 'niedrig']),
+          reviewerStatus: z.enum(['content_reviewed', 'final_reviewed']),
+          notes: SemanticTextSchema,
+        })
+        .strict(),
+    ),
+    excludedEvidence: z.array(
+      z
+        .object({
+          evidenceId: z.string().min(1),
+          sourceId: z.string().min(1),
+          page: z.number().int().positive(),
+          decision: z.enum([
+            'exam_cover_page',
+            'solution_cover_page',
+            'solution_only_evidence',
+            'non_question_material',
+          ]),
+          notes: SemanticTextSchema,
+        })
+        .strict(),
+    ),
+    openCandidateCount: z.number().int().nonnegative(),
+    openCandidatePolicy: SemanticTextSchema,
+  })
+  .strict();
+
+export const QuestionEvidenceLinksFileSchema = z
+  .object({
+    schemaVersion: z.string().min(1),
+    contentVersion: z.string().min(1),
+    links: z.array(
+      z
+        .object({
+          questionId: z.string().min(1),
+          evidenceIds: z.array(z.string().min(1)).min(1),
+          sourceRefs: z.array(CanonicalSourceReferenceSchema).min(1),
+          solutionEvidenceIds: z.array(z.string().min(1)),
+          solutionSourceRefs: z.array(CanonicalSourceReferenceSchema),
+          relationshipVerified: z.literal(true),
+          notes: SemanticTextSchema,
+        })
+        .strict(),
+    ),
+  })
+  .strict();
+
+export const QuestionResourceMappingReportSchema = z
+  .object({
+    schemaVersion: z.string().min(1),
+    contentVersion: z.string().min(1),
+    status: z.enum(['partial_manual_mapping', 'complete_manual_mapping']),
+    mappedCanonicalQuestionCount: z.number().int().nonnegative(),
+    unmappedCanonicalQuestionCount: z.number().int().nonnegative(),
+    pendingCandidateCount: z.number().int().nonnegative(),
+    mappings: z.array(
+      z
+        .object({
+          questionId: z.string().min(1),
+          topicIds: z.array(z.string().min(1)).min(1),
+          taskSlotNumbers: z.array(z.number().int().min(1).max(9)).min(1),
+          moduleIds: z.array(z.string().min(1)),
+          trainerIds: z.array(z.string().min(1)),
+          diagnosticCompetencyIds: z.array(z.string().min(1)),
+          verification: SemanticTextSchema,
+        })
+        .strict(),
+    ),
+  })
+  .strict();
 
 export const SolutionSchema = z.object({
   ...Meta,

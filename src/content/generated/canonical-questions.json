@@ -1,6 +1,56 @@
 {
   "schemaVersion": "1.0.0",
   "contentVersion": "1.0.0-rc.8",
+  "collections": [
+    {
+      "collectionId": "mock-2023",
+      "collectionType": "mock_exam",
+      "state": "complete",
+      "expectedTaskCount": 9,
+      "decidedTaskCount": 9,
+      "verifiedQuestionIds": [
+        "mock-2023-task-1",
+        "mock-2023-task-2",
+        "mock-2023-task-3",
+        "mock-2023-task-4",
+        "mock-2023-task-5",
+        "mock-2023-task-6",
+        "mock-2023-task-7",
+        "mock-2023-task-8",
+        "mock-2023-task-9"
+      ],
+      "blockedCandidateIds": [],
+      "excludedEvidenceIds": [
+        "q-7d7aa2066664",
+        "q-c62724c0fc32"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 1,
+          "label": "Titelseite und Aufgabenübersicht"
+        },
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 11,
+          "label": "Letzte Aufgabenseite"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 2,
+          "label": "Erste Lösungsseite"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 14,
+          "label": "Letzte Lösungsseite"
+        }
+      ],
+      "reviewNotes": "Alle elf Aufgabenseiten und alle vierzehn Seiten der offiziellen Beispiellösung wurden visuell geprüft. Die beiden Titelseiten-Evidenzen sind als Nicht-Fragen ausgeschlossen. Aufgabe 9 enthält einen dokumentierten Beschriftungskonflikt in der offiziellen Lösung."
+    }
+  ],
   "questions": [
     {
       "questionId": "mock-2023-task-1",
@@ -126,9 +176,1516 @@
       ],
       "verificationStatus": "verified",
       "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "In diesem Checkpoint stand nur ein redaktioneller Reviewdurchlauf zur Verfügung; Inhalts- und Finalcheck wurden nacheinander von derselben Reviewinstanz durchgeführt.",
       "verifiedBy": "Korpusreview Phase 21R.1",
       "verifiedAt": "2026-07-11",
       "reviewNotes": "Aufgaben- und Lösungsseite wurden lokal visuell geprüft. Der sichtbare Tabelleninhalt wurde als neu formulierte, semantische Folge von Zuweisungen rekonstruiert; keine PDF-Abbildung oder OCR-Text wird ausgeliefert.",
+      "duplicateGroupId": null
+    },
+    {
+      "questionId": "mock-2023-task-2",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "mock_exam",
+      "collectionId": "mock-2023",
+      "examId": "mock-2023",
+      "sheetId": null,
+      "year": 2023,
+      "semester": "Sommersemester 2023",
+      "taskNumber": 2,
+      "subtaskLabels": [],
+      "title": "Minimaler Spannbaum mit Prim",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Führen Sie Prim auf dem folgenden zusammenhängenden, ungerichteten und gewichteten Graphen aus. Beginnen Sie bei Knoten a. Bestimmen Sie den entstehenden minimalen Spannbaum und protokollieren Sie die Auswahlreihenfolge seiner Kanten."
+        },
+        {
+          "type": "graph",
+          "label": "Ungerichteter Graph für Prim",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "a"
+            },
+            {
+              "id": "b",
+              "label": "b"
+            },
+            {
+              "id": "c",
+              "label": "c"
+            },
+            {
+              "id": "d",
+              "label": "d"
+            },
+            {
+              "id": "e",
+              "label": "e"
+            },
+            {
+              "id": "f",
+              "label": "f"
+            },
+            {
+              "id": "g",
+              "label": "g"
+            },
+            {
+              "id": "h",
+              "label": "h"
+            },
+            {
+              "id": "i",
+              "label": "i"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "6",
+              "directed": false
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "3",
+              "directed": false
+            },
+            {
+              "from": "a",
+              "to": "d",
+              "label": "4",
+              "directed": false
+            },
+            {
+              "from": "d",
+              "to": "g",
+              "label": "12",
+              "directed": false
+            },
+            {
+              "from": "c",
+              "to": "f",
+              "label": "4",
+              "directed": false
+            },
+            {
+              "from": "f",
+              "to": "i",
+              "label": "8",
+              "directed": false
+            },
+            {
+              "from": "d",
+              "to": "e",
+              "label": "2",
+              "directed": false
+            },
+            {
+              "from": "e",
+              "to": "f",
+              "label": "3",
+              "directed": false
+            },
+            {
+              "from": "g",
+              "to": "h",
+              "label": "1",
+              "directed": false
+            },
+            {
+              "from": "e",
+              "to": "h",
+              "label": "5",
+              "directed": false
+            },
+            {
+              "from": "a",
+              "to": "e",
+              "label": "1",
+              "directed": false
+            },
+            {
+              "from": "e",
+              "to": "c",
+              "label": "7",
+              "directed": false
+            },
+            {
+              "from": "h",
+              "to": "f",
+              "label": "6",
+              "directed": false
+            }
+          ],
+          "textAlternative": "Knoten a bis i liegen in einem Drei-mal-drei-Raster. Kanten mit Gewichten: a-b 6, b-c 3, a-d 4, d-g 12, c-f 4, f-i 8, d-e 2, e-f 3, g-h 1, e-h 5, a-e 1, e-c 7 und h-f 6. Alle Kanten sind ungerichtet."
+        }
+      ],
+      "points": 4,
+      "estimatedMinutes": 8,
+      "difficulty": "mittel",
+      "expectedDeliverables": [
+        "Alle acht Kanten des minimalen Spannbaums.",
+        "Die Reihenfolge, in der Prim die Kanten auswählt."
+      ],
+      "allowedNotation": [
+        "Kante als ungeordnetes Knotenpaar mit Gewicht"
+      ],
+      "conventions": [
+        "Startknoten ist a.",
+        "Der Graph ist ungerichtet."
+      ],
+      "tieBreakingRules": [],
+      "topicIds": [
+        "topic-6a47a10f37e0",
+        "topic-c4a698fc939e",
+        "topic-f5f6e171c082"
+      ],
+      "taskSlotNumbers": [
+        2
+      ],
+      "moduleIds": [
+        "module-prim-mst"
+      ],
+      "trainerIds": [
+        "trainer-graph-prim-mst-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Prim hält jeweils die billigste Kante bereit, die den bereits aufgebauten Baum mit einem neuen Knoten verbindet. Vom Startknoten a aus ergibt sich die folgende eindeutige Auswahlfolge."
+          },
+          {
+            "type": "operation_sequence",
+            "label": "Auswahlfolge von Prim",
+            "operations": [
+              "1. a-e mit Gewicht 1",
+              "2. e-d mit Gewicht 2",
+              "3. e-f mit Gewicht 3",
+              "4. f-c mit Gewicht 4",
+              "5. c-b mit Gewicht 3",
+              "6. e-h mit Gewicht 5",
+              "7. h-g mit Gewicht 1",
+              "8. f-i mit Gewicht 8"
+            ],
+            "textAlternative": "Der Spannbaum wächst in dieser Reihenfolge von a über e zu d und f, danach zu c, b, h, g und i."
+          },
+          {
+            "type": "paragraph",
+            "text": "Die acht ausgewählten Kanten verbinden alle neun Knoten ohne Kreis. Ihr Gesamtgewicht beträgt 27."
+          }
+        ],
+        "provenance": "official_solution"
+      },
+      "solutionStatus": "complete_verified_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 3,
+          "label": "Probeklausur SS 2023, Aufgabe 2"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 3,
+          "label": "Offizielle Beispiellösung, Aufgabe 2"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.",
+      "verifiedBy": "Korpusreview Phase 21R.1",
+      "verifiedAt": "2026-07-11",
+      "reviewNotes": "Aufgabengraph, alle dreizehn Kanten, Gewichte und die handschriftlich markierte Prim-Reihenfolge wurden visuell geprüft und semantisch rekonstruiert.",
+      "duplicateGroupId": null
+    },
+    {
+      "questionId": "mock-2023-task-3",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "mock_exam",
+      "collectionId": "mock-2023",
+      "examId": "mock-2023",
+      "sheetId": null,
+      "year": 2023,
+      "semester": "Sommersemester 2023",
+      "taskNumber": 3,
+      "subtaskLabels": [],
+      "title": "Floyd-Warshall-Matrixfolge",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Berechnen Sie für den gerichteten gewichteten Graphen die Distanzmatrizen D(1), D(2), D(3) und D(4) des Floyd-Warshall-Algorithmus. In Iteration k darf Knoten k zusätzlich als Zwischenknoten verwendet werden."
+        },
+        {
+          "type": "graph",
+          "label": "Gerichteter Graph mit vier Knoten",
+          "nodes": [
+            {
+              "id": "1",
+              "label": "1"
+            },
+            {
+              "id": "2",
+              "label": "2"
+            },
+            {
+              "id": "3",
+              "label": "3"
+            },
+            {
+              "id": "4",
+              "label": "4"
+            }
+          ],
+          "edges": [
+            {
+              "from": "1",
+              "to": "2",
+              "label": "4",
+              "directed": true
+            },
+            {
+              "from": "2",
+              "to": "1",
+              "label": "-3",
+              "directed": true
+            },
+            {
+              "from": "1",
+              "to": "4",
+              "label": "2",
+              "directed": true
+            },
+            {
+              "from": "4",
+              "to": "1",
+              "label": "-1",
+              "directed": true
+            },
+            {
+              "from": "1",
+              "to": "3",
+              "label": "4",
+              "directed": true
+            },
+            {
+              "from": "4",
+              "to": "2",
+              "label": "5",
+              "directed": true
+            },
+            {
+              "from": "2",
+              "to": "3",
+              "label": "-3",
+              "directed": true
+            },
+            {
+              "from": "4",
+              "to": "3",
+              "label": "-2",
+              "directed": true
+            }
+          ],
+          "textAlternative": "Gerichtete Kanten: 1 nach 2 mit 4, 2 nach 1 mit minus 3, 1 nach 4 mit 2, 4 nach 1 mit minus 1, 1 nach 3 mit 4, 4 nach 2 mit 5, 2 nach 3 mit minus 3 und 4 nach 3 mit minus 2."
+        },
+        {
+          "type": "matrix",
+          "label": "Initialmatrix D(0)",
+          "columnHeaders": [
+            "nach 1",
+            "nach 2",
+            "nach 3",
+            "nach 4"
+          ],
+          "rows": [
+            [
+              "0",
+              "4",
+              "4",
+              "2"
+            ],
+            [
+              "-3",
+              "0",
+              "-3",
+              "∞"
+            ],
+            [
+              "∞",
+              "∞",
+              "0",
+              "∞"
+            ],
+            [
+              "-1",
+              "5",
+              "-2",
+              "0"
+            ]
+          ],
+          "textAlternative": "Zeilen sind die Startknoten 1 bis 4, Spalten die Zielknoten 1 bis 4. Unendlich bedeutet: zunächst kein Weg bekannt."
+        }
+      ],
+      "points": 4,
+      "estimatedMinutes": 10,
+      "difficulty": "mittel",
+      "expectedDeliverables": [
+        "Die vier vollständigen 4-mal-4-Matrizen D(1) bis D(4)."
+      ],
+      "allowedNotation": [
+        "∞ für nicht erreichbare Paare"
+      ],
+      "conventions": [
+        "Zeilen bezeichnen Startknoten, Spalten Zielknoten.",
+        "Iteration k erlaubt die Zwischenknoten 1 bis k."
+      ],
+      "tieBreakingRules": [],
+      "topicIds": [
+        "topic-1fa208a0ed89",
+        "topic-f5f6e171c082"
+      ],
+      "taskSlotNumbers": [
+        3
+      ],
+      "moduleIds": [
+        "module-floyd-warshall"
+      ],
+      "trainerIds": [
+        "trainer-graph-floyd-warshall-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Für jede Stufe wird D(k)[i,j] als Minimum aus dem bisherigen Wert und dem Weg über k berechnet. Die vollständige Matrixfolge lautet:"
+          },
+          {
+            "type": "matrix",
+            "label": "D(1)",
+            "columnHeaders": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "rows": [
+              [
+                "0",
+                "4",
+                "4",
+                "2"
+              ],
+              [
+                "-3",
+                "0",
+                "-3",
+                "-1"
+              ],
+              [
+                "∞",
+                "∞",
+                "0",
+                "∞"
+              ],
+              [
+                "-1",
+                "3",
+                "-2",
+                "0"
+              ]
+            ],
+            "textAlternative": "Distanzmatrix nach Freigabe von Knoten 1 als Zwischenknoten."
+          },
+          {
+            "type": "matrix",
+            "label": "D(2)",
+            "columnHeaders": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "rows": [
+              [
+                "0",
+                "4",
+                "1",
+                "2"
+              ],
+              [
+                "-3",
+                "0",
+                "-3",
+                "-1"
+              ],
+              [
+                "∞",
+                "∞",
+                "0",
+                "∞"
+              ],
+              [
+                "-1",
+                "3",
+                "-2",
+                "0"
+              ]
+            ],
+            "textAlternative": "Distanzmatrix nach Freigabe der Zwischenknoten 1 und 2."
+          },
+          {
+            "type": "matrix",
+            "label": "D(3)",
+            "columnHeaders": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "rows": [
+              [
+                "0",
+                "4",
+                "1",
+                "2"
+              ],
+              [
+                "-3",
+                "0",
+                "-3",
+                "-1"
+              ],
+              [
+                "∞",
+                "∞",
+                "0",
+                "∞"
+              ],
+              [
+                "-1",
+                "3",
+                "-2",
+                "0"
+              ]
+            ],
+            "textAlternative": "Distanzmatrix nach Freigabe der Zwischenknoten 1 bis 3; gegenüber D(2) ändert sich kein Wert."
+          },
+          {
+            "type": "matrix",
+            "label": "D(4)",
+            "columnHeaders": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "rows": [
+              [
+                "0",
+                "4",
+                "0",
+                "2"
+              ],
+              [
+                "-3",
+                "0",
+                "-3",
+                "-1"
+              ],
+              [
+                "∞",
+                "∞",
+                "0",
+                "∞"
+              ],
+              [
+                "-1",
+                "3",
+                "-2",
+                "0"
+              ]
+            ],
+            "textAlternative": "Endgültige Distanzmatrix nach Freigabe aller vier Zwischenknoten."
+          },
+          {
+            "type": "paragraph",
+            "text": "Die letzte Verbesserung ist D(4)[1,3] = 0 über den Weg 1 nach 4 nach 3 mit Kosten 2 plus minus 2."
+          }
+        ],
+        "provenance": "official_solution"
+      },
+      "solutionStatus": "complete_verified_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 4,
+          "label": "Graph und Auftrag"
+        },
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 5,
+          "label": "Initialmatrix und Antwortfelder"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 4,
+          "label": "Lösungsaufgabe"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 5,
+          "label": "Ausgefüllte Matrixfolge"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.",
+      "verifiedBy": "Korpusreview Phase 21R.1",
+      "verifiedAt": "2026-07-11",
+      "reviewNotes": "Alle Pfeilrichtungen, acht Kantengewichte, Matrixdimensionen, Überschriften und handschriftlichen Lösungswerte wurden visuell geprüft.",
+      "duplicateGroupId": null
+    },
+    {
+      "questionId": "mock-2023-task-4",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "mock_exam",
+      "collectionId": "mock-2023",
+      "examId": "mock-2023",
+      "sheetId": null,
+      "year": 2023,
+      "semester": "Sommersemester 2023",
+      "taskNumber": 4,
+      "subtaskLabels": [],
+      "title": "Union-Find mit gewichteten verketteten Listen",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Eine zunächst leere Union-Find-Struktur wird durch verkettete Listen repräsentiert. Führen Sie die Operationen in der angegebenen Reihenfolge aus. Union hängt die kleinere Liste an die größere an, damit möglichst wenige Repräsentantenzeiger geändert werden müssen."
+        },
+        {
+          "type": "operation_sequence",
+          "label": "Operationen",
+          "operations": [
+            "Make-Set(A)",
+            "Make-Set(B)",
+            "Make-Set(C)",
+            "Make-Set(D)",
+            "Make-Set(E)",
+            "Union(B,C)",
+            "Union(C,E)",
+            "Union(A,D)",
+            "Union(D,C)"
+          ],
+          "textAlternative": "Zuerst werden fünf Einzelmengen A bis E erzeugt, anschließend werden nacheinander B mit C, C mit E, A mit D und D mit C vereinigt."
+        },
+        {
+          "type": "callout",
+          "title": "Tie-Break bei gleich großen Mengen",
+          "text": "Bei gleicher Mengengröße gilt die Menge mit dem lexikographisch kleineren Repräsentanten als kleinere Menge und wird an die andere Liste angehängt."
+        },
+        {
+          "type": "paragraph",
+          "text": "Geben Sie den vollständigen Listen- und Repräsentantenzustand nach den Schritten 5, 6, 7, 8 und 9 an."
+        }
+      ],
+      "points": 4,
+      "estimatedMinutes": 10,
+      "difficulty": "mittel",
+      "expectedDeliverables": [
+        "Listenreihenfolge nach den Schritten 5 bis 9.",
+        "Repräsentant jedes Elements an jedem geforderten Checkpoint.",
+        "NIL-Ende jeder Liste."
+      ],
+      "allowedNotation": [
+        "x → y für den next-Zeiger",
+        "rep(x) für den Repräsentanten von x"
+      ],
+      "conventions": [
+        "Die kleinere Liste wird an die größere Liste angehängt."
+      ],
+      "tieBreakingRules": [
+        "Bei gleicher Größe wird die Menge mit lexikographisch kleinerem Repräsentanten als kleinere Menge behandelt."
+      ],
+      "topicIds": [
+        "topic-0ba342914656",
+        "topic-595ab7b2682c"
+      ],
+      "taskSlotNumbers": [
+        4
+      ],
+      "moduleIds": [
+        "module-union-find-listen"
+      ],
+      "trainerIds": [
+        "trainer-union-find-listen-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-data-structures"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "operation_sequence",
+            "label": "Geforderte Zustände",
+            "operations": [
+              "Nach Schritt 5: A→NIL, B→NIL, C→NIL, D→NIL, E→NIL; jedes Element repräsentiert seine Einzelmenge.",
+              "Nach Schritt 6: C→B→NIL mit Repräsentant C für B und C; A, D und E bleiben Einzelmengen.",
+              "Nach Schritt 7: C→B→E→NIL mit Repräsentant C für B, C und E; A und D bleiben Einzelmengen.",
+              "Nach Schritt 8: C→B→E→NIL mit Repräsentant C sowie D→A→NIL mit Repräsentant D.",
+              "Nach Schritt 9: C→B→E→D→A→NIL; für alle fünf Elemente ist C der Repräsentant."
+            ],
+            "textAlternative": "Die Listen werden nach jedem geforderten Schritt vollständig von ihrem Repräsentanten bis NIL aufgezählt."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bei Schritt 6 wird wegen des Tie-Breaks die Liste von B an C angehängt. Dasselbe Prinzip führt in Schritt 8 zu D→A. In Schritt 9 ist die C-Liste mit drei Elementen größer als die D-Liste mit zwei Elementen; deshalb wird D→A an C→B→E angehängt und nur die Repräsentantenzeiger von D und A müssen auf C gesetzt werden."
+          }
+        ],
+        "provenance": "official_solution"
+      },
+      "solutionStatus": "complete_verified_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 6,
+          "label": "Probeklausur SS 2023, Aufgabe 4"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 6,
+          "label": "Offizielle Beispiellösung, Aufgabe 4"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.",
+      "verifiedBy": "Korpusreview Phase 21R.1",
+      "verifiedAt": "2026-07-11",
+      "reviewNotes": "Operationen, Tie-Break, Checkpoints, Listenverkettungen und Repräsentantenpfeile wurden auf Aufgaben- und Lösungsseite visuell geprüft.",
+      "duplicateGroupId": null
+    },
+    {
+      "questionId": "mock-2023-task-5",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "mock_exam",
+      "collectionId": "mock-2023",
+      "examId": "mock-2023",
+      "sheetId": null,
+      "year": 2023,
+      "semester": "Sommersemester 2023",
+      "taskNumber": 5,
+      "subtaskLabels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "title": "Korrektheit durch eine Schleifeninvariante",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Der folgende Algorithmus erhält eine natürliche Zahl n und multipliziert einen Akkumulator in genau n Schleifendurchläufen jeweils mit n."
+        },
+        {
+          "type": "pseudocode",
+          "code": "BerechneWert(n):\n  m ← 1\n  for i ← 1 to n do\n    m ← m · n\n  return m",
+          "textAlternative": "m startet mit 1. Für i von 1 bis n wird m mit n multipliziert. Danach wird m zurückgegeben."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Formulieren Sie eine Behauptung für den Rückgabewert in Abhängigkeit von n."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Geben Sie eine Invariante für m zu Beginn der Iteration i an und beweisen Sie sie vollständig mit Induktionsanfang, Induktionsannahme und Induktionsschritt."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "c",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Leiten Sie aus der Invariante beim Schleifenaustritt die Behauptung aus Teil a ab."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Konsistente Variable",
+          "text": "Die Rekonstruktion bezeichnet den Akkumulator durchgehend mit m, passend zum Pseudocode."
+        }
+      ],
+      "points": 5,
+      "estimatedMinutes": 15,
+      "difficulty": "mittel",
+      "expectedDeliverables": [
+        "Behauptung über den Rückgabewert.",
+        "Schleifeninvariante mit vollständigem Induktionsbeweis.",
+        "Korrektheitsabschluss beim Schleifenaustritt."
+      ],
+      "allowedNotation": [
+        "S(i) für die Invariantenbehauptung vor Iteration i"
+      ],
+      "conventions": [
+        "Die erste Iteration hat Index i = 1.",
+        "Nach der letzten Iteration wird die Schleife vor i = n + 1 verlassen."
+      ],
+      "tieBreakingRules": [],
+      "topicIds": [
+        "topic-1e43393edfb4",
+        "topic-e05ae3743b24",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        5
+      ],
+      "moduleIds": [
+        "module-schleifeninvariante"
+      ],
+      "trainerIds": [
+        "trainer-schleifeninvariante-summe-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-proofs"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "math",
+            "latex": "BerechneWert(n) = n^n",
+            "textAlternative": "Der Algorithmus gibt n hoch n zurück."
+          },
+          {
+            "type": "math",
+            "latex": "S(i): m = n^{i-1}",
+            "textAlternative": "Vor Iteration i gilt m gleich n hoch i minus 1."
+          },
+          {
+            "type": "ordered_list",
+            "items": [
+              "Induktionsanfang i = 1: Vor der ersten Iteration wurde m auf 1 gesetzt. Damit gilt m = 1 = n hoch 0 und somit S(1).",
+              "Induktionsannahme: Für ein i mit 1 ≤ i ≤ n gelte vor Iteration i die Aussage m = n hoch i minus 1.",
+              "Induktionsschritt: In Iteration i wird m mit n multipliziert. Aus m = n hoch i minus 1 folgt danach m = n hoch i. Genau dieser Wert liegt vor Iteration i + 1 vor, also gilt S(i + 1).",
+              "Abschluss: Die Schleife endet vor Iteration n + 1. Aus S(n + 1) folgt m = n hoch n; dieser Wert wird zurückgegeben."
+            ]
+          }
+        ],
+        "provenance": "official_solution"
+      },
+      "solutionStatus": "complete_verified_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 7,
+          "label": "Probeklausur SS 2023, Aufgabe 5"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 7,
+          "label": "Offizielle Beispiellösung, Aufgabe 5"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.",
+      "verifiedBy": "Korpusreview Phase 21R.1",
+      "verifiedAt": "2026-07-11",
+      "reviewNotes": "Pseudocode, drei Teilaufgaben und vollständige Invariantenlösung wurden visuell geprüft. Die Aufgabenquelle nennt einmal versehentlich x statt m; die Rekonstruktion korrigiert dies transparent anhand von Pseudocode und offizieller Lösung.",
+      "duplicateGroupId": null
+    },
+    {
+      "questionId": "mock-2023-task-6",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "mock_exam",
+      "collectionId": "mock-2023",
+      "examId": "mock-2023",
+      "sheetId": null,
+      "year": 2023,
+      "semester": "Sommersemester 2023",
+      "taskNumber": 6,
+      "subtaskLabels": [
+        "a",
+        "b"
+      ],
+      "title": "Rekurrenzschranke mit Induktionsbeweis",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Gegeben ist eine Rekurrenz für positive Viererpotenzen n."
+        },
+        {
+          "type": "math",
+          "latex": "T(1)=1",
+          "textAlternative": "Der Basiswert T von 1 ist 1."
+        },
+        {
+          "type": "math",
+          "latex": "T(n)=16T(n/4)+n^3\\quad\\text{für }n>1",
+          "textAlternative": "Für n größer als 1 ist T von n gleich sechzehnmal T von n durch 4 plus n hoch 3."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Bestimmen Sie eine möglichst enge Funktion f, sodass T(n) in O(f(n)) liegt."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beweisen Sie die gefundene obere Schranke mit vollständiger Induktion über die zulässigen Werte von n."
+            }
+          ]
+        }
+      ],
+      "points": 5,
+      "estimatedMinutes": 15,
+      "difficulty": "schwer",
+      "expectedDeliverables": [
+        "Eine asymptotisch möglichst enge obere Schranke.",
+        "Ein vollständiger Induktionsbeweis einschließlich Basis, Annahme und Schritt."
+      ],
+      "allowedNotation": [
+        "n ist eine Potenz von 4",
+        "Landau-Notation O"
+      ],
+      "conventions": [
+        "Die Rekurrenz wird nur für n = 4 hoch k ausgewertet."
+      ],
+      "tieBreakingRules": [],
+      "topicIds": [
+        "topic-e48203925235",
+        "topic-2b335556483f",
+        "topic-916a9f1645f2",
+        "topic-64b84f2856b9"
+      ],
+      "taskSlotNumbers": [
+        6
+      ],
+      "moduleIds": [
+        "module-rekurrenz-master"
+      ],
+      "trainerIds": [
+        "trainer-rekurrenz-master-fall1-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-recurrences",
+        "foundation-asymptotics",
+        "foundation-proofs"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Mit a = 16, b = 4 und g(n) = n hoch 3 gilt n hoch log zur Basis 4 von 16 gleich n hoch 2. Der nichtrekursive Term ist polynomial größer; die Regularitätsbedingung 16·(n/4) hoch 3 = n hoch 3 geteilt durch 4 ist erfüllt. Damit folgt T(n) in Θ(n hoch 3). Für den verlangten Induktionsbeweis ist die exakte Form besonders geeignet."
+          },
+          {
+            "type": "math",
+            "latex": "T(n)=\\frac{4}{3}n^3-\\frac{1}{3}n^2",
+            "textAlternative": "T von n ist vier Drittel n hoch 3 minus ein Drittel n hoch 2."
+          },
+          {
+            "type": "ordered_list",
+            "items": [
+              "Basis n = 1: Die geschlossene Form ergibt 4/3 minus 1/3 gleich 1 und stimmt mit T(1) überein.",
+              "Induktionsannahme: Für n/4 gelte T(n/4) = (4/3)(n/4) hoch 3 minus (1/3)(n/4) hoch 2.",
+              "Induktionsschritt: Einsetzen in 16T(n/4) + n hoch 3 ergibt (1/3)n hoch 3 minus (1/3)n hoch 2 plus n hoch 3, also (4/3)n hoch 3 minus (1/3)n hoch 2.",
+              "Aus der exakten Form folgt unmittelbar T(n) ≤ (4/3)n hoch 3 und damit T(n) in O(n hoch 3)."
+            ]
+          }
+        ],
+        "provenance": "official_solution"
+      },
+      "solutionStatus": "complete_verified_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 8,
+          "label": "Probeklausur SS 2023, Aufgabe 6"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 8,
+          "label": "Offizielle Beispiellösung, Aufgabe 6"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.",
+      "verifiedBy": "Korpusreview Phase 21R.1",
+      "verifiedAt": "2026-07-11",
+      "reviewNotes": "Rekurrenz, Basisfall, Potenzannahme und handschriftlicher Induktionsbeweis wurden visuell geprüft; die exakte Formel und die daraus folgende O-Schranke wurden rechnerisch gegengeprüft.",
+      "duplicateGroupId": null
+    },
+    {
+      "questionId": "mock-2023-task-7",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "mock_exam",
+      "collectionId": "mock-2023",
+      "examId": "mock-2023",
+      "sheetId": null,
+      "year": 2023,
+      "semester": "Sommersemester 2023",
+      "taskNumber": 7,
+      "subtaskLabels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "title": "Minimale Lampenzahl durch eine Greedy-Auswahl",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Es stehen n Lampen mit Beleuchtungsradien L[1..n] zur Verfügung. Lampe i deckt eine Straßenlänge von 2·L[i] ab und darf höchstens einmal verwendet werden. Für eine vorgegebene Länge m mit 0 < m ≤ 2·Summe der Radien ist die kleinste Anzahl von Lampen zu bestimmen, deren gesamte Abdeckung mindestens m beträgt."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Entwerfen Sie einen Greedy-Algorithmus, der diese minimale Anzahl berechnet. Beschreiben Sie die Auswahlregel und geben Sie Pseudocode an."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Analysieren Sie die asymptotische Worst-Case-Laufzeit des Algorithmus."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "c",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beweisen Sie, dass die ausgegebene Lampenzahl optimal ist."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Feasibility",
+          "text": "Die Eingabebedingung garantiert, dass alle Lampen zusammen die geforderte Länge abdecken können."
+        }
+      ],
+      "points": 8,
+      "estimatedMinutes": 25,
+      "difficulty": "schwer",
+      "expectedDeliverables": [
+        "Greedy-Idee und vollständiger Pseudocode.",
+        "Worst-Case-Laufzeit.",
+        "Korrektheitsbeweis für die minimale Anzahl."
+      ],
+      "allowedNotation": [
+        "L[i] als Radius der i-ten Lampe",
+        "2·L[i] als abgedeckte Länge"
+      ],
+      "conventions": [
+        "Jede Lampe darf höchstens einmal gewählt werden.",
+        "Es zählt nur die Summe der abgedeckten Längen."
+      ],
+      "tieBreakingRules": [
+        "Bei gleichen Radien ist die Reihenfolge der betreffenden Lampen für die Anzahl unerheblich."
+      ],
+      "topicIds": [
+        "topic-3e0e72f97f6e",
+        "topic-e05ae3743b24"
+      ],
+      "taskSlotNumbers": [
+        7
+      ],
+      "moduleIds": [
+        "module-greedy-entwurf"
+      ],
+      "trainerIds": [
+        "trainer-greedy-entwurf-fitnesspunkte-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sortieren Sie die Radien nichtzunehmend und wählen Sie anschließend die größten Radien, bis die kumulierte Abdeckung mindestens m erreicht. Für eine feste Anzahl k maximiert diese Wahl die erreichbare Abdeckung."
+          },
+          {
+            "type": "pseudocode",
+            "code": "MinLampenzahl(L, m):\n  sortiere L nichtzunehmend mit MergeSort\n  abdeckung ← 0\n  anzahl ← 0\n  for i ← 1 to Länge(L) do\n    if abdeckung < m then\n      abdeckung ← abdeckung + 2 · L[i]\n      anzahl ← anzahl + 1\n  return anzahl",
+            "textAlternative": "Die Radien werden absteigend sortiert. Solange die Zielstrecke noch nicht abgedeckt ist, wird die nächste größte Lampe addiert und der Zähler erhöht."
+          },
+          {
+            "type": "paragraph",
+            "text": "MergeSort benötigt O(n log n); der anschließende lineare Durchlauf O(n). Insgesamt ist die Worst-Case-Laufzeit O(n log n)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Korrektheit: Der Algorithmus wähle a Lampen. Die ersten a minus 1 größten Radien reichen noch nicht aus. Angenommen, eine Lösung B mit höchstens a minus 1 Lampen wäre ausreichend. Sortiert man B absteigend, ist ihr j-ter Radius höchstens so groß wie der j-te Radius der global absteigend sortierten Folge. Daher ist die Abdeckung von B höchstens die Abdeckung der ersten a minus 1 größten Lampen; diese liegt aber unter m. Das widerspricht der Zulässigkeit von B. Somit ist a minimal."
+          }
+        ],
+        "provenance": "official_solution"
+      },
+      "solutionStatus": "complete_verified_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 9,
+          "label": "Probeklausur SS 2023, Aufgabe 7"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 9,
+          "label": "Algorithmus und Pseudocode"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 10,
+          "label": "Laufzeit und Korrektheitsbeweis"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.",
+      "verifiedBy": "Korpusreview Phase 21R.1",
+      "verifiedAt": "2026-07-11",
+      "reviewNotes": "Eingabebedingung, Abdeckungsmodell, drei Teilaufgaben sowie Pseudocode, Laufzeit und Austauschargument wurden auf den sichtbaren Seiten geprüft. Die dekorative Lampengrafik wurde durch die vollständige semantische Beschreibung ersetzt.",
+      "duplicateGroupId": null
+    },
+    {
+      "questionId": "mock-2023-task-8",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "mock_exam",
+      "collectionId": "mock-2023",
+      "examId": "mock-2023",
+      "sheetId": null,
+      "year": 2023,
+      "semester": "Sommersemester 2023",
+      "taskNumber": 8,
+      "subtaskLabels": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "title": "Dynamische Programmierung für einen maximalen Minenpfad",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Eine Mine ist ein k-mal-ℓ-Array A natürlicher Zahlen mit ℓ > 1. Der Wert A[i][j] ist die Erzmenge in Feld (i,j). Ein Weg startet in einem beliebigen Feld der ersten Zeile und endet in der letzten Zeile. Von (i,j) darf man in der nächsten Zeile nach (i+1,j), (i+1,j-1) oder (i+1,j+1) wechseln, sofern das Zielfeld existiert. Gesucht ist die maximal sammelbare Erzmenge."
+        },
+        {
+          "type": "matrix",
+          "label": "Beispielmine A",
+          "columnHeaders": [
+            "Spalte 1",
+            "Spalte 2",
+            "Spalte 3",
+            "Spalte 4",
+            "Spalte 5"
+          ],
+          "rows": [
+            [
+              "5",
+              "6",
+              "12",
+              "9",
+              "43"
+            ],
+            [
+              "44",
+              "16",
+              "55",
+              "8",
+              "1"
+            ],
+            [
+              "101",
+              "12",
+              "106",
+              "18",
+              "2"
+            ],
+            [
+              "17",
+              "19",
+              "22",
+              "41",
+              "6"
+            ]
+          ],
+          "textAlternative": "Vier Zeilen mit je fünf Erzwerten: 5, 6, 12, 9, 43; 44, 16, 55, 8, 1; 101, 12, 106, 18, 2; 17, 19, 22, 41, 6."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Definieren Sie eine Rekurrenz G(i,j), die den größten Erzgewinn eines gültigen Weges von der ersten Zeile bis zum Feld (i,j) angibt. Behandeln Sie erste und letzte Spalte explizit."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beweisen Sie die Korrektheit der Rekurrenz."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "c",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Entwerfen Sie einen Bottom-up-Algorithmus, der aus A den maximalen Gesamtgewinn berechnet."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "d",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Analysieren Sie die asymptotische Worst-Case-Laufzeit."
+            }
+          ]
+        }
+      ],
+      "points": 8,
+      "estimatedMinutes": 30,
+      "difficulty": "schwer",
+      "expectedDeliverables": [
+        "Vollständige Rekurrenz mit Randfällen.",
+        "Korrektheitsbeweis.",
+        "Bottom-up-Pseudocode.",
+        "Worst-Case-Laufzeit."
+      ],
+      "allowedNotation": [
+        "G(i,j) für den besten gültigen Weg, der in (i,j) endet",
+        "k Zeilen und ℓ Spalten"
+      ],
+      "conventions": [
+        "Zeilen- und Spaltenindizes beginnen bei 1.",
+        "Die Mine darf seitlich nicht verlassen werden."
+      ],
+      "tieBreakingRules": [
+        "Bei gleich guten Vorgängern ist nur der Wert gefordert; ein bestimmter Weg muss nicht bevorzugt werden."
+      ],
+      "topicIds": [
+        "topic-c0af8532bb72",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        8
+      ],
+      "moduleIds": [
+        "module-dp-entwurf-mine"
+      ],
+      "trainerIds": [
+        "trainer-dp-entwurf-mine-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "math",
+            "latex": "G(1,j)=a_{1j}",
+            "textAlternative": "In der ersten Zeile ist G von 1 Komma j gleich dem Erz des Startfeldes a 1 j."
+          },
+          {
+            "type": "math",
+            "latex": "G(i,1)=a_{i1}+\\max(G(i-1,1),G(i-1,2))",
+            "textAlternative": "In der ersten Spalte kommt der beste Vorgänger aus Spalte 1 oder 2 der vorigen Zeile."
+          },
+          {
+            "type": "math",
+            "latex": "G(i,\\ell)=a_{i\\ell}+\\max(G(i-1,\\ell),G(i-1,\\ell-1))",
+            "textAlternative": "In der letzten Spalte kommt der beste Vorgänger aus der letzten oder vorletzten Spalte der vorigen Zeile."
+          },
+          {
+            "type": "math",
+            "latex": "G(i,j)=a_{ij}+\\max(G(i-1,j-1),G(i-1,j),G(i-1,j+1))",
+            "textAlternative": "In einer inneren Spalte ist G der Feldwert plus das Maximum der drei erreichbaren Vorgänger."
+          },
+          {
+            "type": "paragraph",
+            "text": "Korrektheit durch Induktion über die Zeile i: In Zeile 1 besteht jeder zulässige Weg nur aus seinem Startfeld. Für den Schritt von i auf i+1 endet jeder zulässige Weg je nach Randlage in genau einem der zwei oder drei aufgeführten Vorgängerfelder. Nach Induktionsannahme enthält G dort jeweils den besten möglichen Teilweg. Die Wahl des Maximums und die Addition des aktuellen Feldwerts liefern daher den besten Weg zum neuen Feld. Die Fälle decken alle Spalten ab."
+          },
+          {
+            "type": "pseudocode",
+            "code": "MaxErz(A, k, ℓ):\n  erzeuge G[k][ℓ]\n  for j ← 1 to ℓ do\n    G[1][j] ← A[1][j]\n  for i ← 2 to k do\n    G[i][1] ← A[i][1] + max(G[i-1][1], G[i-1][2])\n    for j ← 2 to ℓ-1 do\n      G[i][j] ← A[i][j] + max(G[i-1][j-1], G[i-1][j], G[i-1][j+1])\n    G[i][ℓ] ← A[i][ℓ] + max(G[i-1][ℓ-1], G[i-1][ℓ])\n  return max(G[k][1..ℓ])",
+            "textAlternative": "Die erste Tabellenzeile übernimmt die Mine. Danach werden alle weiteren Zeilen von oben nach unten aus den erreichbaren Vorgängern berechnet. Das Maximum der letzten Zeile ist die Antwort."
+          },
+          {
+            "type": "paragraph",
+            "text": "Die Tabelle besitzt k·ℓ Einträge, und jeder Eintrag benötigt nur konstant viele Vergleiche. Zeit und Speicher liegen daher in O(k·ℓ)."
+          }
+        ],
+        "provenance": "official_solution"
+      },
+      "solutionStatus": "complete_verified_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 10,
+          "label": "Probeklausur SS 2023, Aufgabe 8"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 11,
+          "label": "Rekurrenz"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 12,
+          "label": "Beweis, Algorithmus und Laufzeit"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.",
+      "verifiedBy": "Korpusreview Phase 21R.1",
+      "verifiedAt": "2026-07-11",
+      "reviewNotes": "Matrixwerte, erlaubte Bewegungen, Randfälle, vier Teilaufgaben sowie Rekurrenz, Induktionsargument, Pseudocode und Laufzeit wurden visuell geprüft.",
+      "duplicateGroupId": null
+    },
+    {
+      "questionId": "mock-2023-task-9",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "mock_exam",
+      "collectionId": "mock-2023",
+      "examId": "mock-2023",
+      "sheetId": null,
+      "year": 2023,
+      "semester": "Sommersemester 2023",
+      "taskNumber": 9,
+      "subtaskLabels": [],
+      "title": "Datenstruktur für ältestes und neuestes Element",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Entwerfen Sie eine dynamisch wachsende Datenstruktur. Die Anzahl späterer Einfügungen ist nicht im Voraus bekannt. Jede der folgenden Operationen soll im Worst Case O(1) benötigen."
+        },
+        {
+          "type": "definition_list",
+          "entries": [
+            {
+              "term": "Einfügen(x)",
+              "definition": "Fügt x als neuestes Element ein."
+            },
+            {
+              "term": "LöscheNeuestes",
+              "definition": "Entfernt das zuletzt eingefügte Element."
+            },
+            {
+              "term": "LeseNeuestes",
+              "definition": "Gibt das zuletzt eingefügte Element zurück, ohne es zu entfernen."
+            },
+            {
+              "term": "LöscheÄltestes",
+              "definition": "Entfernt das am frühesten eingefügte Element."
+            },
+            {
+              "term": "LeseÄltestes",
+              "definition": "Gibt das am frühesten eingefügte Element zurück, ohne es zu entfernen."
+            },
+            {
+              "term": "Zähle",
+              "definition": "Gibt die aktuelle Elementanzahl zurück."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Beschreiben Sie Aufbau, benötigte Zeiger und die Realisierung jeder Operation. Begründen Sie Korrektheit und Worst-Case-Laufzeiten; Pseudocode ist nicht zwingend erforderlich."
+        }
+      ],
+      "points": 8,
+      "estimatedMinutes": 20,
+      "difficulty": "mittel",
+      "expectedDeliverables": [
+        "Datenstruktur und Knotentyp.",
+        "Realisierung aller sechs Operationen.",
+        "Begründung der Korrektheit und der Worst-Case-Laufzeit O(1)."
+      ],
+      "allowedNotation": [
+        "first und last als Endzeiger",
+        "prev und next als Knotenzeiger",
+        "NIL für einen fehlenden Zeiger"
+      ],
+      "conventions": [
+        "Leseoperationen verändern die Datenstruktur nicht.",
+        "Löschoperationen aktualisieren beide Endzeiger und den Zähler."
+      ],
+      "tieBreakingRules": [],
+      "topicIds": [
+        "topic-014799275f99"
+      ],
+      "taskSlotNumbers": [
+        9
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "diagnosticCompetencyIds": [
+        "foundation-data-structures"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Verwenden Sie eine doppelt verkettete Liste mit den Endzeigern first und last sowie einem Zähler count. Jeder Knoten speichert key, prev und next. Die Invariante lautet: first zeigt auf das älteste, last auf das neueste Element; bei leerer Liste sind beide NIL, und count ist die Knotenzahl."
+          },
+          {
+            "type": "pseudocode",
+            "code": "Initialisiere():\n  first ← NIL; last ← NIL; count ← 0\n\nEinfügen(x):\n  e ← neuer Knoten(key=x, prev=last, next=NIL)\n  if last = NIL then first ← e else last.next ← e\n  last ← e; count ← count + 1\n\nLeseNeuestes():\n  if last = NIL then return NIL else return last.key\n\nLöscheNeuestes():\n  if last = NIL then return NIL\n  e ← last; last ← e.prev\n  if last = NIL then first ← NIL else last.next ← NIL\n  count ← count - 1; return e.key\n\nLeseÄltestes():\n  if first = NIL then return NIL else return first.key\n\nLöscheÄltestes():\n  if first = NIL then return NIL\n  e ← first; first ← e.next\n  if first = NIL then last ← NIL else first.prev ← NIL\n  count ← count - 1; return e.key\n\nZähle(): return count",
+            "textAlternative": "Alle Operationen greifen nur auf first, last, deren unmittelbare Nachbarn oder count zu. Einfügen arbeitet am Listenende; Lesen gibt nur einen Schlüssel zurück; Löschen hängt genau einen Endknoten aus und behandelt den Übergang zur leeren Liste."
+          },
+          {
+            "type": "paragraph",
+            "text": "Die Endzeiger machen ältestes und neuestes Element direkt zugänglich. Doppelte Verkettung erlaubt das Abtrennen an beiden Enden ohne Suche. Jede Operation führt nur konstant viele Zeiger- und Zähleränderungen aus und hat deshalb Worst-Case-Laufzeit O(1). Die Endzeiger- und Zählerinvariante wird auch beim Löschen des letzten verbliebenen Knotens erhalten."
+          },
+          {
+            "type": "callout",
+            "title": "Dokumentierter Quellenkonflikt",
+            "text": "Die offizielle Beispiellösung vertauscht auf Seite 14 die Bezeichnungen Lese und Lösche. Die hier gezeigte authored solution folgt den eindeutig definierten Operationen der Aufgabenstellung und korrigiert die Beschriftungen; der Strukturvorschlag bleibt derselbe."
+          }
+        ],
+        "provenance": "authored_from_verified_method"
+      },
+      "solutionStatus": "authored_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-8f16b2505bbd",
+          "page": 11,
+          "label": "Probeklausur SS 2023, Aufgabe 9"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 13,
+          "label": "Strukturvorschlag"
+        },
+        {
+          "sourceId": "src-35405e721f05",
+          "page": 14,
+          "label": "Operationen mit vertauschten Beschriftungen"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz durchgeführt.",
+      "verifiedBy": "Korpusreview Phase 21R.1",
+      "verifiedAt": "2026-07-11",
+      "reviewNotes": "Aufgabenoperationen, O(1)-Anforderung, Listenbild und Lösungsoperationen wurden visuell geprüft. Der Bezeichnungsfehler der offiziellen Lösung wird ausdrücklich dokumentiert und nicht übernommen.",
       "duplicateGroupId": null
     }
   ]

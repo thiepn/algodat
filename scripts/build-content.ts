@@ -3,6 +3,9 @@ import path from 'node:path';
 import {
   CitationFixturesFileSchema,
   CanonicalQuestionsFileSchema,
+  QuestionEvidenceLinksFileSchema,
+  QuestionIdentityDecisionsFileSchema,
+  QuestionResourceMappingReportSchema,
   ContentHealthSchema,
   ContentManifestSchema,
   DpDesignRubricSchema,
@@ -62,6 +65,7 @@ import {
   type VerificationStatus,
 } from '../src/content/schemas';
 import { validateCanonicalQuestionCorpus } from '../src/domain/canonical-questions/validation';
+import { validateCanonicalQuestionReviewData } from '../src/domain/canonical-questions/reconciliation';
 import { dataDir, generatedDir, readJson, sha256, sha256File, writeJson } from './content-utils';
 import { buildPhase14DiagnosticContent } from './phase14-diagnostic-content';
 import {
@@ -336,6 +340,17 @@ async function main(): Promise<void> {
   const canonicalQuestions = validateCanonicalQuestionCorpus(
     await readJson<unknown>(path.join(dataDir, 'canonical-questions.json')),
   );
+  const canonicalQuestionReview = validateCanonicalQuestionReviewData({
+    questions: canonicalQuestions.questions,
+    identityDecisions: await readJson<unknown>(
+      path.join(dataDir, 'question-identity-decisions.json'),
+    ),
+    evidenceLinks: await readJson<unknown>(path.join(dataDir, 'question-evidence-links.json')),
+    resourceMappings: await readJson<unknown>(
+      path.join(dataDir, 'question-resource-mapping-report.json'),
+    ),
+    originalCandidateCount: 84,
+  });
   const phase17StudyModules = await readJson<Phase17StudyModules>(
     path.join(dataDir, 'study-modules.json'),
   );
@@ -1051,6 +1066,15 @@ async function main(): Promise<void> {
     'learning-resource-graph.json': { ...phase17LearningGraph, contentVersion },
     'exam-library.json': safeExamLibrary,
     'canonical-questions.json': CanonicalQuestionsFileSchema.parse(canonicalQuestions),
+    'question-identity-decisions.json': QuestionIdentityDecisionsFileSchema.parse(
+      canonicalQuestionReview.identityDecisions,
+    ),
+    'question-evidence-links.json': QuestionEvidenceLinksFileSchema.parse(
+      canonicalQuestionReview.evidenceLinks,
+    ),
+    'question-resource-mapping-report.json': QuestionResourceMappingReportSchema.parse(
+      canonicalQuestionReview.resourceMappings,
+    ),
     'exam-question-publication-audit.json': {
       schemaVersion,
       contentVersion,

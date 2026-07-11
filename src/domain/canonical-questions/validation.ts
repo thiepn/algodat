@@ -31,6 +31,9 @@ function validateQuestion(question: CanonicalQuestion, issues: string[]): void {
   if (question.taskSlotNumbers.length === 0)
     issues.push(`${prefix} Aufgaben-Slot-Zuordnung fehlt.`);
   if (!question.manuallyVerified) issues.push(`${prefix} manuelle Prüfung fehlt.`);
+  if (question.contentReviewStatus !== 'content_reviewed')
+    issues.push(`${prefix} Inhaltsreview fehlt.`);
+  if (question.finalReviewStatus !== 'final_reviewed') issues.push(`${prefix} Finalreview fehlt.`);
   if (question.publicationMode === 'exact_approved' && question.hostedMaterialApproval === null)
     issues.push(`${prefix} exact_approved ohne Rechtefreigabe.`);
 

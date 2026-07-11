@@ -6,10 +6,58 @@
       "questionId": "mock-2023-task-1",
       "evidenceIds": ["q-68424bad7007"],
       "sourceRefs": [{ "sourceId": "src-8f16b2505bbd", "page": 2 }],
-      "solutionEvidenceIds": [],
+      "solutionEvidenceIds": ["q-ac287cc3cd91"],
       "solutionSourceRefs": [{ "sourceId": "src-35405e721f05", "page": 2 }],
       "relationshipVerified": true,
       "notes": "Die Aufgaben- und die zugehörige Musterlösungsseite wurden lokal visuell abgeglichen."
+    },
+    {
+      "questionId": "mock-2023-task-2", "evidenceIds": ["q-cb21d65e0849"],
+      "sourceRefs": [{ "sourceId": "src-8f16b2505bbd", "page": 3 }],
+      "solutionEvidenceIds": ["q-9533522ac4b9"], "solutionSourceRefs": [{ "sourceId": "src-35405e721f05", "page": 3 }],
+      "relationshipVerified": true, "notes": "Aufgabe und markierte Prim-Lösung wurden auf Seite 3 visuell abgeglichen."
+    },
+    {
+      "questionId": "mock-2023-task-3", "evidenceIds": ["q-ba117f34bff2"],
+      "sourceRefs": [{ "sourceId": "src-8f16b2505bbd", "page": 4 }, { "sourceId": "src-8f16b2505bbd", "page": 5 }],
+      "solutionEvidenceIds": ["q-1b03b7fde9af"], "solutionSourceRefs": [{ "sourceId": "src-35405e721f05", "page": 4 }, { "sourceId": "src-35405e721f05", "page": 5 }],
+      "relationshipVerified": true, "notes": "Graph und Matrixvorlage sowie die ausgefüllte Matrixfolge bilden eine Aufgabe."
+    },
+    {
+      "questionId": "mock-2023-task-4", "evidenceIds": ["q-a7cbff8c12ce"],
+      "sourceRefs": [{ "sourceId": "src-8f16b2505bbd", "page": 6 }],
+      "solutionEvidenceIds": ["q-cd7fab05ad15"], "solutionSourceRefs": [{ "sourceId": "src-35405e721f05", "page": 6 }],
+      "relationshipVerified": true, "notes": "Operationsfolge und gezeichnete Checkpoints wurden visuell verbunden."
+    },
+    {
+      "questionId": "mock-2023-task-5", "evidenceIds": ["q-d2d9d5f5b9ce"],
+      "sourceRefs": [{ "sourceId": "src-8f16b2505bbd", "page": 7 }],
+      "solutionEvidenceIds": ["q-2689b6539e15"], "solutionSourceRefs": [{ "sourceId": "src-35405e721f05", "page": 7 }],
+      "relationshipVerified": true, "notes": "Pseudocode, drei Teilaufgaben und Invariantenbeweis stimmen in der Identität überein."
+    },
+    {
+      "questionId": "mock-2023-task-6", "evidenceIds": ["q-7d6049cf053a"],
+      "sourceRefs": [{ "sourceId": "src-8f16b2505bbd", "page": 8 }],
+      "solutionEvidenceIds": ["q-703ad179b8aa"], "solutionSourceRefs": [{ "sourceId": "src-35405e721f05", "page": 8 }],
+      "relationshipVerified": true, "notes": "Rekurrenz und Induktionslösung wurden auf derselben Aufgabennummer visuell abgeglichen."
+    },
+    {
+      "questionId": "mock-2023-task-7", "evidenceIds": ["q-b7c16531cc6f"],
+      "sourceRefs": [{ "sourceId": "src-8f16b2505bbd", "page": 9 }],
+      "solutionEvidenceIds": ["q-61d89073f254"], "solutionSourceRefs": [{ "sourceId": "src-35405e721f05", "page": 9 }, { "sourceId": "src-35405e721f05", "page": 10 }],
+      "relationshipVerified": true, "notes": "Aufgabe und zweiseitige Greedy-Lösung wurden visuell verbunden."
+    },
+    {
+      "questionId": "mock-2023-task-8", "evidenceIds": ["q-e22793628da9"],
+      "sourceRefs": [{ "sourceId": "src-8f16b2505bbd", "page": 10 }],
+      "solutionEvidenceIds": ["q-39207c782fea"], "solutionSourceRefs": [{ "sourceId": "src-35405e721f05", "page": 11 }, { "sourceId": "src-35405e721f05", "page": 12 }],
+      "relationshipVerified": true, "notes": "Minenmatrix und vierteilige DP-Lösung wurden visuell verbunden."
+    },
+    {
+      "questionId": "mock-2023-task-9", "evidenceIds": ["q-959a0e7e7bea"],
+      "sourceRefs": [{ "sourceId": "src-8f16b2505bbd", "page": 11 }],
+      "solutionEvidenceIds": ["q-70b90b34d0dc"], "solutionSourceRefs": [{ "sourceId": "src-35405e721f05", "page": 13 }, { "sourceId": "src-35405e721f05", "page": 14 }],
+      "relationshipVerified": true, "notes": "Datenstruktur und Lösung sind identisch zugeordnet; die vertauschten Lese-/Löschlabels sind dokumentiert."
     }
   ]
 }

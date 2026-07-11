@@ -1,6 +1,6 @@
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { content } from '../../content/loaders/content';
 import type { CanonicalQuestionBlock } from '../../content/schemas';
 import { PlannedState } from '../../ui/feedback/PlannedState';
@@ -8,12 +8,14 @@ import { PlannedState } from '../../ui/feedback/PlannedState';
 const enabled =
   import.meta.env.DEV || import.meta.env.VITE_ENABLE_CANONICAL_QUESTION_PREVIEW === 'true';
 
-function isPubliclyVisibleQuestion(
+export function isPubliclyVisibleQuestion(
   question: (typeof content.canonicalQuestions.questions)[number],
 ): boolean {
   return (
     question.verificationStatus === 'verified' &&
     question.manuallyVerified &&
+    question.contentReviewStatus === 'content_reviewed' &&
+    question.finalReviewStatus === 'final_reviewed' &&
     question.bodyBlocks.length > 0
   );
 }
@@ -190,6 +192,14 @@ function QuestionView({
       ))}
       <h2>Quellkontext und Prüfung</h2>
       <p>Sammlung: {question.collectionId}. Die Aufgabenansicht benötigt keine lokale Datei.</p>
+      <ul>
+        {question.sourceRefs.map((sourceRef) => (
+          <li key={`${sourceRef.sourceId}-${sourceRef.page}`}>
+            {sourceRef.sourceId}, Seite {sourceRef.page}
+            {sourceRef.label ? `: ${sourceRef.label}` : ''}
+          </li>
+        ))}
+      </ul>
       <p>
         Manuell geprüft am {question.verifiedAt} · {question.verifiedBy}
       </p>
@@ -269,6 +279,7 @@ export function CanonicalQuestionPreviewDetailPage() {
 
 export function CanonicalQuestionReviewPage() {
   const { questionId } = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   if (!import.meta.env.DEV)
     return (
       <PlannedState
@@ -276,9 +287,23 @@ export function CanonicalQuestionReviewPage() {
         description="Diese Prüfroute ist ausschließlich in der Entwicklung verfügbar."
       />
     );
-  const question = questionId
-    ? content.canonicalQuestions.questions.find((candidate) => candidate.questionId === questionId)
-    : content.canonicalQuestions.questions[0];
+  const collectionFilter = searchParams.get('sammlung') ?? 'alle';
+  const statusFilter = searchParams.get('status') ?? 'alle';
+  const taskFilter = searchParams.get('aufgabe') ?? 'alle';
+  const filteredDecisions = content.questionIdentityDecisions.decisions.filter(
+    (decision) =>
+      (collectionFilter === 'alle' || decision.collectionId === collectionFilter) &&
+      (statusFilter === 'alle' || decision.decisionState === statusFilter) &&
+      (taskFilter === 'alle' || String(decision.taskNumber) === taskFilter),
+  );
+  const currentDecision = questionId
+    ? filteredDecisions.find((decision) => decision.canonicalQuestionId === questionId)
+    : filteredDecisions[0];
+  const question = currentDecision?.canonicalQuestionId
+    ? content.canonicalQuestions.questions.find(
+        (candidate) => candidate.questionId === currentDecision.canonicalQuestionId,
+      )
+    : undefined;
   if (!question)
     return (
       <PlannedState
@@ -286,21 +311,124 @@ export function CanonicalQuestionReviewPage() {
         description="Der kanonische Korpus enthält noch keine Frage."
       />
     );
+  const evidenceLink = content.questionEvidenceLinks.links.find(
+    (link) => link.questionId === question.questionId,
+  );
+  const mapping = content.questionResourceMappingReport.mappings.find(
+    (candidate) => candidate.questionId === question.questionId,
+  );
+  const collection = content.canonicalQuestions.collections.find(
+    (candidate) => candidate.collectionId === question.collectionId,
+  );
+  const currentIndex = filteredDecisions.findIndex(
+    (decision) => decision.canonicalQuestionId === question.questionId,
+  );
+  const updateFilter = (key: string, value: string) => {
+    const next = new URLSearchParams(searchParams);
+    if (value === 'alle') next.delete(key);
+    else next.set(key, value);
+    setSearchParams(next);
+  };
   return (
     <section className="page-stack">
+      <header>
+        <p className="eyebrow">Entwicklungswerkzeug</p>
+        <h1>Korpusreview</h1>
+        <div className="filter-row" aria-label="Korpusfilter">
+          <label>
+            Sammlung
+            <select
+              value={collectionFilter}
+              onChange={(event) => updateFilter('sammlung', event.target.value)}
+            >
+              <option value="alle">Alle</option>
+              {content.canonicalQuestions.collections.map((candidate) => (
+                <option value={candidate.collectionId} key={candidate.collectionId}>
+                  {candidate.collectionId}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Status
+            <select
+              value={statusFilter}
+              onChange={(event) => updateFilter('status', event.target.value)}
+            >
+              <option value="alle">Alle</option>
+              <option value="verified_canonical_question">Kanonisch verifiziert</option>
+              <option value="merged_duplicate_evidence">Dublette zusammengeführt</option>
+              <option value="split_into_multiple_questions">In mehrere Fragen geteilt</option>
+              <option value="blocked_missing_source">Quelle fehlt</option>
+              <option value="blocked_unreadable_source">Quelle unlesbar</option>
+              <option value="blocked_missing_visual_data">Visuelle Daten fehlen</option>
+              <option value="blocked_identity_uncertain">Identität unklar</option>
+              <option value="blocked_publication_uncertain">Publikation unklar</option>
+            </select>
+          </label>
+          <label>
+            Aufgabe
+            <select
+              value={taskFilter}
+              onChange={(event) => updateFilter('aufgabe', event.target.value)}
+            >
+              <option value="alle">Alle</option>
+              {Array.from({ length: 9 }, (_, index) => index + 1).map((taskNumber) => (
+                <option value={taskNumber} key={taskNumber}>
+                  {taskNumber}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+      </header>
+      {collection && (
+        <aside className="notice">
+          <h2>Sammlungsfortschritt</h2>
+          <p>
+            {collection.collectionId}: {collection.state} · {collection.decidedTaskCount}/
+            {collection.expectedTaskCount ?? '?'} Aufgaben entschieden
+          </p>
+          <p>{collection.reviewNotes}</p>
+        </aside>
+      )}
       <QuestionView question={question} />
       <aside className="notice">
         <h2>Prüfcheckliste</h2>
         <ul>
-          <li>Identität: {question.manuallyVerified ? 'geprüft' : 'offen'}</li>
+          <li>Entscheidung: {currentDecision?.decisionState}</li>
+          <li>Inhaltsreview: {question.contentReviewStatus}</li>
+          <li>Finalreview: {question.finalReviewStatus}</li>
+          <li>Unabhängiger Zweitreview: {question.independentSecondReview ? 'ja' : 'nein'}</li>
           <li>Publikationsmodus: {question.publicationMode}</li>
-          <li>Quellen: {question.sourceRefs.length}</li>
+          <li>Evidenz: {evidenceLink?.evidenceIds.join(', ') ?? 'fehlt'}</li>
+          <li>Lösungsevidenz: {evidenceLink?.solutionEvidenceIds.join(', ') || 'keine'}</li>
           <li>
-            Zuordnungen: Themen {question.topicIds.length}, Slots {question.taskSlotNumbers.length},
-            Trainer {question.trainerIds.length}
+            Zuordnungen: Themen {mapping?.topicIds.join(', ') ?? 'fehlt'}, Slots{' '}
+            {mapping?.taskSlotNumbers.join(', ') ?? 'fehlt'}, Trainer{' '}
+            {mapping?.trainerIds.join(', ') || 'keiner vorhanden'}
           </li>
         </ul>
+        {currentDecision?.decisionState.startsWith('blocked_') && (
+          <p>Blockiergrund: {currentDecision.notes}</p>
+        )}
       </aside>
+      <nav aria-label="Kandidatennavigation">
+        {currentIndex > 0 && (
+          <Link
+            to={`/__review/questions/${filteredDecisions[currentIndex - 1]?.canonicalQuestionId}`}
+          >
+            Vorheriger Kandidat
+          </Link>
+        )}
+        {currentIndex < filteredDecisions.length - 1 && (
+          <Link
+            to={`/__review/questions/${filteredDecisions[currentIndex + 1]?.canonicalQuestionId}`}
+          >
+            Nächster Kandidat
+          </Link>
+        )}
+      </nav>
     </section>
   );
 }

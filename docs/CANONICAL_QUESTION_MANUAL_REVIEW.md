@@ -12,6 +12,8 @@ Eine Schema-Validierung ersetzt keine redaktionelle Prüfung. Für jede kanonisc
 
 ## Aktueller Stand
 
-`mock-2023-task-1` wurde am 11.07.2026 gegen Aufgaben- und Lösungsseite manuell geprüft. Die Veröffentlichung ist eine neu formulierte `public_safe_reconstruction`; sie enthält keine Originalabbildung und keinen OCR-Text.
+Alle neun Fragen `mock-2023-task-1` bis `mock-2023-task-9` wurden am 11.07.2026 gegen Aufgaben- und Lösungsseiten manuell geprüft. Die Veröffentlichungen sind neu formulierte `public_safe_reconstruction`-Fassungen; sie enthalten keine Originalabbildung und keinen OCR-Text.
 
-Die übrigen 83 Kandidaturen sind nicht freigegeben.
+Inhalts- und Finalreview wurden nacheinander von derselben Reviewinstanz ausgeführt. Ein unabhängiger Zweitreview war in diesem Checkpoint nicht verfügbar und ist in jedem Datensatz als Limitation erfasst.
+
+Die übrigen 75 Kandidaturen sind nicht freigegeben.

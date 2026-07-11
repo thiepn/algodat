@@ -35,9 +35,15 @@ import proofRubricsData from '../generated/proof-rubrics.json';
 import recurrenceTrainersData from '../generated/recurrence-trainers.json';
 import recurrenceRubricsData from '../generated/recurrence-rubrics.json';
 import canonicalQuestionsData from '../generated/canonical-questions.json';
+import questionEvidenceLinksData from '../generated/question-evidence-links.json';
+import questionIdentityDecisionsData from '../generated/question-identity-decisions.json';
+import questionResourceMappingReportData from '../generated/question-resource-mapping-report.json';
 import {
   CitationFixturesFileSchema,
   CanonicalQuestionsFileSchema,
+  QuestionEvidenceLinksFileSchema,
+  QuestionIdentityDecisionsFileSchema,
+  QuestionResourceMappingReportSchema,
   ContentHealthSchema,
   ContentManifestSchema,
   DpDesignRubricsFileSchema,
@@ -120,6 +126,13 @@ export const content = {
   recurrenceTrainers: RecurrenceTrainersFileSchema.parse(recurrenceTrainersData),
   recurrenceRubrics: RecurrenceRubricsFileSchema.parse(recurrenceRubricsData),
   canonicalQuestions: CanonicalQuestionsFileSchema.parse(canonicalQuestionsData),
+  questionEvidenceLinks: QuestionEvidenceLinksFileSchema.parse(questionEvidenceLinksData),
+  questionIdentityDecisions: QuestionIdentityDecisionsFileSchema.parse(
+    questionIdentityDecisionsData,
+  ),
+  questionResourceMappingReport: QuestionResourceMappingReportSchema.parse(
+    questionResourceMappingReportData,
+  ),
 };
 
 export type Content = typeof content;

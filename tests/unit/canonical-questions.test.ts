@@ -5,7 +5,7 @@ import { validateCanonicalQuestionCorpus } from '../../src/domain/canonical-ques
 describe('kanonischer Fragenkorpus', () => {
   it('enthält nur manuell geprüfte, vollständige öffentliche Fragen', () => {
     const validated = validateCanonicalQuestionCorpus(corpus);
-    expect(validated.questions).toHaveLength(1);
+    expect(validated.questions).toHaveLength(9);
     expect(validated.questions[0]?.questionId).toBe('mock-2023-task-1');
     expect(validated.questions[0]?.bodyBlocks.length).toBeGreaterThan(1);
   });

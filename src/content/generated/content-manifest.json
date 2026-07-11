@@ -10,7 +10,7 @@
   "files": [
     {
       "name": "canonical-questions.json",
-      "sha256": "12a1c42ed60fa7f37c5800b3a461c14af3370fb31d63b4ba217bbecd5ebb384f"
+      "sha256": "260e430591a546bb175a17fadf16fdefa0e3f7718d4b12c93408bfe57ee7d9a2"
     },
     {
       "name": "cheat-sheet-blocks.json",
@@ -195,6 +195,18 @@
     {
       "name": "public-source-validation-report.json",
       "sha256": "fd443c4c82f1f1311ddd708fbbe0a4ff0005db0aa855c9060983ac75a661de70"
+    },
+    {
+      "name": "question-evidence-links.json",
+      "sha256": "a412fff3e0bbd3d07b51cd4b3d5261ee0fb3312dd5a14fd628e33de6abbd80e0"
+    },
+    {
+      "name": "question-identity-decisions.json",
+      "sha256": "1d82c9c9658bb32c861f37d5e557825b3016f36ad489e5e2ee91c04bfd0bfde4"
+    },
+    {
+      "name": "question-resource-mapping-report.json",
+      "sha256": "c4925cd402b2b50f76101b6203ba57a41111c0ae9385c21f9173f8bea3136170"
     },
     {
       "name": "rb-insertion-problems.json",

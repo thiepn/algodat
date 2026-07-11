@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "1.0.0-rc.8",
+  "decisionScope": "Nur visuell geprüfte Identitäten werden als kanonisch entschieden. Nicht geprüfte Evidenz bleibt als offene Kandidatur erhalten und wird nicht als Frage gezählt.",
+  "decisions": [
+    {
+      "candidateId": "mock-2023-task-1",
+      "canonicalQuestionId": "mock-2023-task-1",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-68424bad7007",
+        "q-ac287cc3cd91"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 1,
+      "subtasks": [],
+      "duplicateRelationship": "keine Dublette festgestellt",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Die Titelseite ist keine Aufgabe; die Aufgabenidentität beginnt auf Seite 2. Die offizielle Lösung ist als getrennte Quelle auf Seite 2 verbunden."
+    },
+    {
+      "candidateId": "mock-2023-task-2",
+      "canonicalQuestionId": "mock-2023-task-2",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-cb21d65e0849",
+        "q-9533522ac4b9"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 2,
+      "subtasks": [],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graph und Prim-Markierungen wurden auf Seite 3 beider Quellen visuell geprüft."
+    },
+    {
+      "candidateId": "mock-2023-task-3",
+      "canonicalQuestionId": "mock-2023-task-3",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-ba117f34bff2",
+        "q-1b03b7fde9af"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Der Aufgabenkörper und die Lösung erstrecken sich jeweils über Seiten 4 und 5."
+    },
+    {
+      "candidateId": "mock-2023-task-4",
+      "canonicalQuestionId": "mock-2023-task-4",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-a7cbff8c12ce",
+        "q-cd7fab05ad15"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 4,
+      "subtasks": [],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Operationsfolge, gewichtete Listenregel und fünf Checkpoints wurden auf Seite 6 abgeglichen."
+    },
+    {
+      "candidateId": "mock-2023-task-5",
+      "canonicalQuestionId": "mock-2023-task-5",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-d2d9d5f5b9ce",
+        "q-2689b6539e15"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Die drei Unteraufgaben bilden eine Beweisfrage. Der Fließtext nennt einmal x; Pseudocode und Lösung verwenden konsistent m."
+    },
+    {
+      "candidateId": "mock-2023-task-6",
+      "canonicalQuestionId": "mock-2023-task-6",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-7d6049cf053a",
+        "q-703ad179b8aa"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Rekurrenz, Viererpotenzannahme und beide Teilaufgaben wurden auf Seite 8 geprüft."
+    },
+    {
+      "candidateId": "mock-2023-task-7",
+      "canonicalQuestionId": "mock-2023-task-7",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-b7c16531cc6f",
+        "q-61d89073f254"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 7,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe auf Seite 9; Lösung auf Seiten 9 und 10."
+    },
+    {
+      "candidateId": "mock-2023-task-8",
+      "canonicalQuestionId": "mock-2023-task-8",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-e22793628da9",
+        "q-39207c782fea"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 8,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe auf Seite 10; Lösung auf Seiten 11 und 12."
+    },
+    {
+      "candidateId": "mock-2023-task-9",
+      "canonicalQuestionId": "mock-2023-task-9",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-959a0e7e7bea",
+        "q-70b90b34d0dc"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 9,
+      "subtasks": [],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Die offizielle Lösung auf Seiten 13 und 14 vertauscht Lese- und Löschbezeichnungen; der Konflikt ist dokumentiert."
+    }
+  ],
+  "excludedEvidence": [
+    {
+      "evidenceId": "q-7d7aa2066664",
+      "sourceId": "src-8f16b2505bbd",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Titelseite mit Prüfungsangaben und Punktetabelle; keine Aufgabe."
+    },
+    {
+      "evidenceId": "q-c62724c0fc32",
+      "sourceId": "src-35405e721f05",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Titelseite der Beispiellösung; keine Aufgabenlösung."
+    }
+  ],
+  "openCandidateCount": 75,
+  "openCandidatePolicy": "Offene Kandidaturen werden weder kanonisiert noch öffentlich angezeigt. Ihre vollständige visuelle Prüfung ist Voraussetzung für eine Identitätsentscheidung."
+}
