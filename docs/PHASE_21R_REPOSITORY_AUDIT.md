@@ -1,5 +1,9 @@
 # Phase 21R: Repository-Audit
 
+## Aktualisierung `exam-2022-2`
+
+Der Korpus umfasst nun 36 final geprüfte Fragen in vier vollständigen Sammlungen. 48 Kandidaturen bleiben offen. Acht neue Lösungen sind authored; Aufgabe 9 besitzt eine verifizierte offizielle spätere Lösung. Phase 21R und Phase 21R.1 bleiben unvollständig, ebenso die unabhängigen Fach- und realen Screenreader-Gates. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+
 Stand: 11. Juli 2026 · Basis: `ed0e6d73c6588d1f7eea54acc3fb9c2641709f6f`
 
 | Produktbereich | Einstufung | Befund |

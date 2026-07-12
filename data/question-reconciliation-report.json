@@ -10,9 +10,9 @@
   "exerciseEvidenceRecords": 15,
   "currentlyIndexedExamTaskEntries": 81,
   "preliminaryIdentityKeys": 84,
-  "canonicalQuestionsApproved": 27,
+  "canonicalQuestionsApproved": 36,
   "blockedQuestions": 0,
-  "openManualIdentityCandidates": 57,
-  "reconciledEvidenceRecords": 80,
+  "openManualIdentityCandidates": 48,
+  "reconciledEvidenceRecords": 121,
   "blockReason": "Die vorhandenen Datensätze sind Evidenz und Metadaten. Vollständige Aufgaben, Unteraufgaben, Abbildungen und explizite Lösungsseiten müssen anhand der Originalseiten manuell verifiziert werden."
 }

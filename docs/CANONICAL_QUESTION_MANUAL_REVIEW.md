@@ -1,5 +1,9 @@
 # Manuelle Freigabe kanonischer Fragen
 
+## Aktualisierung `exam-2022-2`
+
+Neun weitere reale Klausurfragen sind final geprüft. Sämtliche 15 Klausurseiten wurden visuell kontrolliert; Aufgaben 1 bis 8 sind authored, Aufgabe 9 verwendet die visuell abgeglichene spätere offizielle Übungslösung. Der Korpus enthält damit 36 final geprüfte Fragen; 48 Kandidaturen sowie der unabhängige Zweitreview bleiben offen. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+
 Eine Schema-Validierung ersetzt keine redaktionelle Prüfung. Für jede kanonische Frage sind vor der Freigabe zu dokumentieren:
 
 - Identität, Sammlung, Aufgabe und Unteraufgaben sind anhand der sichtbaren Quelle geprüft.

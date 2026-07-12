@@ -10,7 +10,7 @@
   "files": [
     {
       "name": "canonical-questions.json",
-      "sha256": "ab4b9e6521ed636088db4483ed9495638def55804b87df71d15efb55a1ce94bc"
+      "sha256": "08afab856f3bf7c7ce16f14c05cdea2b09233b4611b640fb1a19515de5fd70e6"
     },
     {
       "name": "cheat-sheet-blocks.json",
@@ -198,15 +198,15 @@
     },
     {
       "name": "question-evidence-links.json",
-      "sha256": "09676c45ad31d64c3af9c7aa872c1e8a63fda987c144d5575afd6646e80aaad7"
+      "sha256": "c125a181b8e758e3475abd7ae7ee803e8e290aef2e2c3b1ae43e2cfd9973fb4e"
     },
     {
       "name": "question-identity-decisions.json",
-      "sha256": "a118d0838d105b5feb627bea2f8ad5467068116b820e5597dc308656c9c580b0"
+      "sha256": "c885c8049cd2b2bb586ec05a2af61711261f0e1fe6192ee138d2307167ca8a6e"
     },
     {
       "name": "question-resource-mapping-report.json",
-      "sha256": "474d35eb8ec7fe5123a0bebfe778c64bd3472375dc9e29fc709796abb0252224"
+      "sha256": "79c31f060b65ba0484225971acbfa8e3a5b933061691a79ddf46a525ba637783"
     },
     {
       "name": "rb-insertion-problems.json",

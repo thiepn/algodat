@@ -23,8 +23,8 @@ describe('Identitäts- und Sammlungsreview', () => {
       resourceMappings: mappingData,
       originalCandidateCount: 84,
     });
-    expect(review.identityDecisions.decisions).toHaveLength(27);
-    expect(review.identityDecisions.openCandidateCount).toBe(57);
+    expect(review.identityDecisions.decisions).toHaveLength(36);
+    expect(review.identityDecisions.openCandidateCount).toBe(48);
     expect(
       review.identityDecisions.decisions.every(
         (decision) => decision.reviewerStatus === 'final_reviewed',
@@ -83,7 +83,7 @@ describe('Identitäts- und Sammlungsreview', () => {
       decision: 'solution_only_evidence',
       notes: 'Nur eine Lösung, kein eigener Aufgabenkörper.',
     });
-    expect(QuestionIdentityDecisionsFileSchema.parse(fixture).decisions).toHaveLength(29);
+    expect(QuestionIdentityDecisionsFileSchema.parse(fixture).decisions).toHaveLength(38);
   });
 
   it('segregiert blockierte Kandidaturen vom öffentlichen Korpus', () => {
@@ -103,7 +103,7 @@ describe('Identitäts- und Sammlungsreview', () => {
       reviewerStatus: 'final_reviewed',
       notes: 'Graph fehlt; erneute Quellenbeschaffung nötig.',
     });
-    blocked.openCandidateCount = 56;
+    blocked.openCandidateCount = 47;
     const review = validateCanonicalQuestionReviewData({
       questions: corpus.questions,
       identityDecisions: blocked,
@@ -114,7 +114,7 @@ describe('Identitäts- und Sammlungsreview', () => {
     expect(review.identityDecisions.decisions.at(-1)?.decisionState).toBe(
       'blocked_missing_visual_data',
     );
-    expect(corpus.questions).toHaveLength(27);
+    expect(corpus.questions).toHaveLength(36);
   });
 
   it('weist unzugängliche Graph- und Matrixblöcke zurück', () => {

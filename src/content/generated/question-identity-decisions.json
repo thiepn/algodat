@@ -531,6 +531,201 @@
       "identityConfidence": "hoch",
       "reviewerStatus": "final_reviewed",
       "notes": "Graphproblem, lineare Laufzeitanforderung und drei Teilaufgaben wurden auf Seite 15 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-1",
+      "canonicalQuestionId": "exam-2022-2-task-1",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-dbc7e6b9d24a",
+        "q-c17965ed8e19",
+        "q-a8fd47eec80e",
+        "q-c2c213065eb3"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 1,
+      "subtasks": [],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Neun Tupel, Deadline-Regel und geforderte Ausgabe wurden auf Seite 2 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-2",
+      "canonicalQuestionId": "exam-2022-2-task-2",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-8cbfe3cc92e3",
+        "q-865820d4e598",
+        "q-89a2a20e1255",
+        "q-34d53d1c7db6"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 2,
+      "subtasks": [],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Neun Union-Find-Operationen und Gleichstandsregel wurden auf Seite 3 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-3",
+      "canonicalQuestionId": "exam-2022-2-task-3",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-7c452ca0661f",
+        "q-dd17884bec33",
+        "q-403c7048b145",
+        "q-14a940ebb631"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Gerichteter Graph, vierzehn Gewichte, Startknoten und Gleichstand wurden auf Seite 4 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-4",
+      "canonicalQuestionId": "exam-2022-2-task-4",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-49c8cbc49028",
+        "q-d147f1a3c8da",
+        "q-1cb7aa704fc3",
+        "q-57225994c1d9"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 4,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Fünf Objektpaare, Kapazität und Tabellengrenzen wurden auf Seite 5 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-5",
+      "canonicalQuestionId": "exam-2022-2-task-5",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-c93511120c5a",
+        "q-99e3cdaafc80",
+        "q-67b932d9cc82",
+        "q-2a4e6b9dc023"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Pseudocode und drei Beweisteile wurden auf Seite 6 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-6",
+      "canonicalQuestionId": "exam-2022-2-task-6",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-daa6c4494737",
+        "q-cf55ec235139",
+        "q-91d5153c7a15",
+        "q-1bfa1a6ec98e"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Rekurrenz, Basisfall und Zweierpotenzannahme wurden auf Seite 8 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-7",
+      "canonicalQuestionId": "exam-2022-2-task-7",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-05135a1817a5",
+        "q-6177656143ce",
+        "q-62da74a2701c",
+        "q-ba26af6c4c82"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 7,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Fehlermodell, O(log n)-Forderung und drei Teile wurden auf Seite 10 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-8",
+      "canonicalQuestionId": "exam-2022-2-task-8",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-51de6dc1ca3a",
+        "q-6ce5473b4df8",
+        "q-0a2b965d30d0",
+        "q-1adc3cdeb9df"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 8,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Windparkmodell und vier DP-Teile wurden auf Seite 12 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-9",
+      "canonicalQuestionId": "exam-2022-2-task-9",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-f8a6c450c552",
+        "q-34f4e7e6e463",
+        "q-4e4d6154b0e3",
+        "q-edb5f82ff81a",
+        "q-e5608c7c1d2d"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 9,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien und eine spätere offizielle Übungslösung derselben Aufgabenstellung gehören zu einer kanonischen Frage.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Klausurseite 14 und offizielle Übungslösung Seiten 3 bis 4 wurden vollständig abgeglichen."
     }
   ],
   "excludedEvidence": [
@@ -589,8 +784,36 @@
       "page": 1,
       "decision": "non_question_material",
       "notes": "Exakte Dublette der Titelseite von src-c4dde22523d3; keine Frage."
+    },
+    {
+      "evidenceId": "q-5ed6f1fa6e91",
+      "sourceId": "src-011d1ee23245",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Titelseite und Punkteübersicht der kanonischen Zweitklausur 2022; keine Aufgabe."
+    },
+    {
+      "evidenceId": "q-99be7ed653ef",
+      "sourceId": "src-3f29b67eef5c",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Byteidentische Dublette der Titelseite; keine Frage."
+    },
+    {
+      "evidenceId": "q-52fec7986417",
+      "sourceId": "src-2461e8a663fe",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Byteidentische Dublette der Titelseite; keine Frage."
+    },
+    {
+      "evidenceId": "q-b31aaf85c2b9",
+      "sourceId": "src-34f58aed1d9c",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Byteidentische Dublette der Titelseite; keine Frage."
     }
   ],
-  "openCandidateCount": 57,
+  "openCandidateCount": 48,
   "openCandidatePolicy": "Offene Kandidaturen werden weder kanonisiert noch öffentlich angezeigt. Ihre vollständige visuelle Prüfung ist Voraussetzung für eine Identitätsentscheidung."
 }

@@ -1,20 +1,26 @@
 # Phase 21R.1 – Zwischenstand kanonischer Fragenkorpus
 
+## Aktualisierung `exam-2022-2` (12.07.2026)
+
+Die Zweitklausur ist mit neun Aufgaben und 50 Punkten vollständig kanonisiert. Alle 15 Seiten einschließlich fünf leerer Rückseiten wurden visuell geprüft; vier byteidentische Dateien zählen als ein Klausurereignis. Aufgaben 1 bis 8 besitzen transparent authored Lösungen, Aufgabe 9 eine visuell abgeglichene spätere offizielle Übungslösung. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+
+Der aktuelle Korpus umfasst 36 veröffentlichungsfähige Fragen in vier vollständigen Sammlungen, davon 17 mit vollständiger verifizierter offizieller Lösung und 19 mit authored Lösung. 48 Kandidaturen bleiben offen. Phase 21R.1 ist weiterhin nicht abgeschlossen; unabhängiger Fach-Zweitreview und realer Screenreader-Gate bleiben ebenfalls offen.
+
 Phase 21R.1 ist **nicht abgeschlossen**. Der Korpus-Gate ist eingeführt, die vollständige manuelle Versöhnung der Evidenz steht noch aus.
 
 | Kennzahl | Stand |
 | --- | ---: |
 | Evidenzdatensätze | 633 |
 | Vorläufige Identitäten | 84 |
-| Manuell entschiedene Identitäten | 27 |
-| Veröffentlichungsfähige kanonische Fragen | 27 |
-| Offene Kandidaturen | 57 |
+| Manuell entschiedene Identitäten | 36 |
+| Veröffentlichungsfähige kanonische Fragen | 36 |
+| Offene Kandidaturen | 48 |
 | Öffentlich freigegebene Originalkopien | 0 |
-| Public-safe Rekonstruktionen | 27 |
-| Vollständige geprüfte offizielle Lösungen | 16 |
-| Vollständige authored solutions | 11 |
-| Abgeschlossene Sammlungen | 3 |
-| Automatisierte Tests | 248 grün |
+| Public-safe Rekonstruktionen | 36 |
+| Vollständige geprüfte offizielle Lösungen | 17 |
+| Vollständige authored solutions | 19 |
+| Abgeschlossene Sammlungen | 4 |
+| Automatisierte Tests | 253 grün |
 | Deployment-Sicherheitsprüfung | 128 Artefakte, keine privaten Quellen oder lokalen Pfade |
 
 Die Probeklausur SS 2023 ist als erste Sammlung vollständig abgeschlossen. Alle elf Seiten der Aufgabenquelle und alle vierzehn Seiten der Beispiellösung wurden lokal visuell geprüft. Die neun Aufgaben besitzen eigenständig lösbare Körper, explizite Lösungen, Seitenbezüge, Ressourcenmappings und barrierefreie Alternativen für Graphen, Matrizen und Ablaufdarstellungen.

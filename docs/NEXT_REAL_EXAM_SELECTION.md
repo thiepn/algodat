@@ -1,5 +1,11 @@
 # Auswahl der nächsten realen Klausursammlung
 
+## Abschluss `exam-2022-2`
+
+Die zuvor zurückgestellte Zweitklausur 2022 wurde nach vollständigem Seitenreview als vierte Sammlung kanonisiert. Deckblatt, neun Aufgabenseiten und fünf leere Rückseiten sind eindeutig; vier byteidentische Dateien werden als ein Ereignis dedupliziert. Aufgaben 1 bis 8 sind transparent authored. Für Aufgabe 9 wurde eine wortgleiche spätere offizielle Übungslösung gefunden und verifiziert. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+
+Die nächste Auswahlentscheidung betrifft damit nur noch die 48 offenen Kandidaturen; `exam-2022-2` ist kein offener Auswahlkandidat mehr.
+
 Stand: 12. Juli 2026
 
 ## Folgeentscheidung nach Abschluss von `exam-2020-2`

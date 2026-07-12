@@ -1,5 +1,9 @@
 # Abgleich des Fragenkorpus
 
+## Aktueller Stand nach `exam-2022-2`
+
+`exam-2022-2` ist mit neun weiteren Identitäten vollständig versöhnt. 36 Aufgabenevidenzen aus vier byteidentischen Dateien wurden neun Fragen zugeordnet und vier Titelseitenevidenzen ausgeschlossen. Die offizielle spätere Lösungsevidenz `q-e5608c7c1d2d` gehört zu Aufgabe 9 und erzeugt keine weitere Frage. Damit sind 36 Identitäten entschieden und 48 Kandidaturen offen. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+
 Der Bestand umfasst 633 Evidenzdatensätze. Davon werden bislang 402 als sichere Fragenmetadaten erzeugt. Für den ersten Abgleich liegen 122 reale Klausur-, 19 Probeklausur- und 15 Übungsevidenzen vor; die Klausurenansicht enthält 81 Aufgabenmetadaten.
 
 Eine vorläufige Identitätsbildung aus Klausurereignis beziehungsweise Quelldokument, Aufgabennummer und Unteraufgabe ergibt 84 Schlüssel. Diese Zahl ist ausdrücklich noch keine Zahl kanonischer Fragen: Lösungen und Duplikate erzeugen eigene Evidenzzeilen, während OCR mehrere Unteraufgaben zusammenfassen kann.

@@ -671,6 +671,228 @@
       ],
       "relationshipVerified": true,
       "notes": "Graphproblem, Teilaufgaben und drei exakte Dubletten versöhnt; Lösung redaktionell hergeleitet."
+    },
+    {
+      "questionId": "exam-2022-2-task-1",
+      "evidenceIds": [
+        "q-dbc7e6b9d24a",
+        "q-c17965ed8e19",
+        "q-a8fd47eec80e",
+        "q-c2c213065eb3"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 2
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 2
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Aufgabe und drei exakte Dubletten versöhnt; Lösung redaktionell aus der geprüften Instanz hergeleitet."
+    },
+    {
+      "questionId": "exam-2022-2-task-2",
+      "evidenceIds": [
+        "q-8cbfe3cc92e3",
+        "q-865820d4e598",
+        "q-89a2a20e1255",
+        "q-34d53d1c7db6"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 3
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 3
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Operationsfolge, Gleichstandsregel und drei exakte Dubletten versöhnt; Zustände redaktionell hergeleitet."
+    },
+    {
+      "questionId": "exam-2022-2-task-3",
+      "evidenceIds": [
+        "q-7c452ca0661f",
+        "q-dd17884bec33",
+        "q-403c7048b145",
+        "q-14a940ebb631"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 4
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 4
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Gerichteter Graph und drei exakte Dubletten versöhnt; Dijkstra-Tabelle redaktionell hergeleitet."
+    },
+    {
+      "questionId": "exam-2022-2-task-4",
+      "evidenceIds": [
+        "q-49c8cbc49028",
+        "q-d147f1a3c8da",
+        "q-1cb7aa704fc3",
+        "q-57225994c1d9"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 5
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 5
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Rucksackinstanz und drei exakte Dubletten versöhnt; Tabelle redaktionell hergeleitet."
+    },
+    {
+      "questionId": "exam-2022-2-task-5",
+      "evidenceIds": [
+        "q-c93511120c5a",
+        "q-99e3cdaafc80",
+        "q-67b932d9cc82",
+        "q-2a4e6b9dc023"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 6
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 6
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Programm, Beweisauftrag und drei exakte Dubletten versöhnt; Beweis redaktionell hergeleitet."
+    },
+    {
+      "questionId": "exam-2022-2-task-6",
+      "evidenceIds": [
+        "q-daa6c4494737",
+        "q-cf55ec235139",
+        "q-91d5153c7a15",
+        "q-1bfa1a6ec98e"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 8
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 8
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Rekurrenz und drei exakte Dubletten versöhnt; geschlossene Formel redaktionell hergeleitet."
+    },
+    {
+      "questionId": "exam-2022-2-task-7",
+      "evidenceIds": [
+        "q-05135a1817a5",
+        "q-6177656143ce",
+        "q-62da74a2701c",
+        "q-ba26af6c4c82"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 10
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 10
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Fehlermodell und drei exakte Dubletten versöhnt; logarithmischer Algorithmus redaktionell hergeleitet und exhaustiv getestet."
+    },
+    {
+      "questionId": "exam-2022-2-task-8",
+      "evidenceIds": [
+        "q-51de6dc1ca3a",
+        "q-6ce5473b4df8",
+        "q-0a2b965d30d0",
+        "q-1adc3cdeb9df"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 12
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 12
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Windparkmodell und drei exakte Dubletten versöhnt; DP-Lösung redaktionell hergeleitet."
+    },
+    {
+      "questionId": "exam-2022-2-task-9",
+      "evidenceIds": [
+        "q-f8a6c450c552",
+        "q-34f4e7e6e463",
+        "q-4e4d6154b0e3",
+        "q-edb5f82ff81a"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-011d1ee23245",
+          "page": 14
+        }
+      ],
+      "solutionEvidenceIds": [
+        "q-e5608c7c1d2d"
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-02be45f603ba",
+          "page": 3
+        },
+        {
+          "sourceId": "src-02be45f603ba",
+          "page": 4
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Vier exakte Klausurdubletten und die wortgleiche spätere offizielle Übungslösung wurden visuell abgeglichen."
     }
   ]
 }

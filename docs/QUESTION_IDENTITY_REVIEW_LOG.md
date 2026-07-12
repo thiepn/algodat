@@ -2,6 +2,10 @@
 
 Dieses Protokoll trennt Evidenz, Identitätskandidatur und kanonische Frage. Eine Zeile gilt erst als entschieden, wenn die private Originalseite lokal visuell geprüft wurde. Lokale PDFs, Renderbilder und OCR-Ausgaben sind keine Produktionsartefakte.
 
+## Abschluss `exam-2022-2` am 12.07.2026
+
+Die Aufgaben auf S. 2, 3, 4, 5, 6, 8, 10, 12 und 14 wurden final geprüft. Je vier byteidentische Aufgabenevidenzen bilden eine kanonische Identität; vier Titelseitenevidenzen sind ausgeschlossen. Aufgabe 9 ist zusätzlich mit der späteren offiziellen Lösungsevidenz `q-e5608c7c1d2d` verbunden. Aktueller Stand: 36 entschiedene Identitäten, 48 offene Kandidaturen. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+
 | Datum | Sammlung | Kandidatur | Entscheidung | Evidenz | Prüfung | Notiz |
 | --- | --- | --- | --- | --- | --- | --- |
 | 11.07.2026 | `mock-2023` | Aufgabe 1 | `mock-2023-task-1` | Aufgabe `q-68424bad7007`, Lösung `q-ac287cc3cd91` | final reviewed | Seite 1 ist ein Titelblatt; die Aufgabe befindet sich auf Seite 2. |

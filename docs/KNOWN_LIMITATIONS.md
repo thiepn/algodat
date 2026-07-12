@@ -1,5 +1,9 @@
 # Known Limitations
 
+## Aktualisierung `exam-2022-2`
+
+Der Korpus enthält nun 36 public-safe Rekonstruktionen; 48 Kandidaturen bleiben offen. Aufgaben 1 bis 8 der neuen Sammlung besitzen authored Lösungen, Aufgabe 9 eine verifizierte spätere offizielle Übungslösung. Unabhängiger fachlicher Zweitreview und realer NVDA-/Narrator-Gate bleiben offen. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+
 ## Phase 20.1
 
 - Die App bleibt `1.0.0-rc.8`; der reale Screenreader-Gate ist weiterhin offen.
