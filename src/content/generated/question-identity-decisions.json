@@ -340,6 +340,197 @@
       "identityConfidence": "hoch",
       "reviewerStatus": "final_reviewed",
       "notes": "Aufgabe und Feldlösung wurden auf Seiten 11 und 12 vollständig geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-1",
+      "canonicalQuestionId": "exam-2022-1-task-1",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-f1ffa14d40d9",
+        "q-aaf14a291061",
+        "q-8021cf73c732",
+        "q-00c836e5ff9a"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 1,
+      "subtasks": [],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Auftragsfeld und Gleichstandsregel wurden auf Seite 2 visuell geprüft; keine offizielle Lösung vorhanden."
+    },
+    {
+      "candidateId": "exam-2022-1-task-2",
+      "canonicalQuestionId": "exam-2022-1-task-2",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-5518fe932f1e",
+        "q-6680878ae30e",
+        "q-fbe8ff4ce24c",
+        "q-d87c1c2398c9"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 2,
+      "subtasks": [],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Ausgangsbaum und vier Operationen wurden auf Seite 3 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-3",
+      "canonicalQuestionId": "exam-2022-1-task-3",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-2b1b54fe8758",
+        "q-09e8c93d5171",
+        "q-3843957dd12c",
+        "q-75386856fa8c"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graph auf Seite 4 und Matrixvorlage auf Seite 5 bilden gemeinsam Aufgabe 3."
+    },
+    {
+      "candidateId": "exam-2022-1-task-4",
+      "canonicalQuestionId": "exam-2022-1-task-4",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-834ceeb40be0",
+        "q-cfcd43f5f475",
+        "q-bc530b27c35f",
+        "q-9fade0f02cea"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 4,
+      "subtasks": [],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Prim-Graph und Startknoten wurden auf Seite 6 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-5",
+      "canonicalQuestionId": "exam-2022-1-task-5",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-bc70e450f3e2",
+        "q-ac518b5f9f58",
+        "q-0ac57be90831",
+        "q-6dda813e0623"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Pseudocode und drei Beweisteile wurden auf Seite 7 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-6",
+      "canonicalQuestionId": "exam-2022-1-task-6",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-0b1cf4b8a0a4",
+        "q-6689590c43e9",
+        "q-a450cc3e7076",
+        "q-63d52a4ebc8f"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Rekurrenz, Fünferpotenzannahme und beide Teilaufgaben wurden auf Seite 9 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-7",
+      "canonicalQuestionId": "exam-2022-1-task-7",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-c5df1252c54c",
+        "q-bd6b5459c5c1",
+        "q-8a64299fe130",
+        "q-94894e0b4e8d"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 7,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Workout-Modell und drei Greedy-Teilaufgaben wurden auf Seite 11 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-8",
+      "canonicalQuestionId": "exam-2022-1-task-8",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-e32562e71549",
+        "q-9f92a5812443",
+        "q-cbaab62e843b",
+        "q-fbb504eda545"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 8,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Traversierungsdefinition und vier DP-Teilaufgaben wurden auf Seite 13 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-9",
+      "canonicalQuestionId": "exam-2022-1-task-9",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-f0f8e80ad9ad",
+        "q-21cf7cf20b57",
+        "q-0ec645f2f936",
+        "q-01b2b44b860d"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 9,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graphproblem, lineare Laufzeitanforderung und drei Teilaufgaben wurden auf Seite 15 visuell geprüft."
     }
   ],
   "excludedEvidence": [
@@ -370,8 +561,36 @@
       "page": 1,
       "decision": "exam_cover_page",
       "notes": "Titelseite der Beispiellösung; keine Aufgabenlösung."
+    },
+    {
+      "evidenceId": "q-778107a70766",
+      "sourceId": "src-c4dde22523d3",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Titelseite und Punkteübersicht der kanonischen Erstklausur 2022; keine Aufgabe."
+    },
+    {
+      "evidenceId": "q-49fd7a5970cb",
+      "sourceId": "src-00ae505a8756",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Exakte Dublette der Titelseite von src-c4dde22523d3; keine Frage."
+    },
+    {
+      "evidenceId": "q-a9d059eee74c",
+      "sourceId": "src-fa63eaca933b",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Exakte Dublette der Titelseite von src-c4dde22523d3; keine Frage."
+    },
+    {
+      "evidenceId": "q-ae7c49724101",
+      "sourceId": "src-5bb7aaf4268b",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Exakte Dublette der Titelseite von src-c4dde22523d3; keine Frage."
     }
   ],
-  "openCandidateCount": 66,
+  "openCandidateCount": 57,
   "openCandidatePolicy": "Offene Kandidaturen werden weder kanonisiert noch öffentlich angezeigt. Ihre vollständige visuelle Prüfung ist Voraussetzung für eine Identitätsentscheidung."
 }

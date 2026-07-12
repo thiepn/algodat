@@ -1,6 +1,16 @@
 # Auswahl der nächsten realen Klausursammlung
 
-Stand: 11. Juli 2026
+Stand: 12. Juli 2026
+
+## Folgeentscheidung nach Abschluss von `exam-2020-2`
+
+Die zunächst priorisierte Sammlung `exam-2021-1` wurde vollständig visuell geprüft, aber nicht kanonisiert: Die sechs Aufgaben der Klausur auf den Seiten 2 bis 7 stimmen fachlich nicht mit der als Lösung inventarisierten 16-seitigen Quelle überein. Die vermeintliche Lösung enthält andere Aufgabenvarianten und darf deshalb nicht als Lösungsevidenz verbunden werden. Der Konflikt ist in `data/source-conflicts.json` dokumentiert. [Klausur: `src-28fe81380661`, S. 2–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
+
+Als nächste Sammlung wurde deshalb `exam-2022-1` gewählt und abgeschlossen. Die digitale Klausur ist auf allen 16 Seiten lesbar, enthält neun Aufgaben mit insgesamt 50 Punkten und fünf ausdrücklich leere Rückseiten. Eine offizielle Musterlösung derselben Ereignisidentität ist nicht vorhanden. Die neun Lösungen werden daher transparent als `authored_from_verified_method` beziehungsweise `authored_solution` geführt und beziehen sich jeweils auf die Aufgabenquelle, nicht auf eine behauptete Lösungsquelle. [Quelle: `src-c4dde22523d3`, S. 1–16]
+
+Die Auswahl ist gegenüber `exam-2022-2` und `exam-2024-1` belastbarer: `exam-2022-1` besitzt vollständige Deckblattdaten, eine durchgehende digitale Fassung und ein bestätigtes Neun-Aufgaben-/50-Punkte-Profil. Das Fehlen einer offiziellen Lösung wird nicht verdeckt, sondern durch deterministische Rechen- und Invariantentests sowie die authored Kennzeichnung kontrolliert. [Quelle: `src-c4dde22523d3`, S. 1–15]
+
+## Frühere Entscheidung für den ersten realen Abschluss
 
 ## Entscheidung
 

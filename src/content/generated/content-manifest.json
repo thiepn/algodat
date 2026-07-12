@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "contentVersion": "phase16-8dc6433c95c7",
+  "contentVersion": "phase16-cd9dcaabf06f",
   "builtAt": "2026-07-06T10:54:12.806583+00:00",
   "sourceCount": 138,
   "topicCount": 76,
@@ -10,11 +10,11 @@
   "files": [
     {
       "name": "canonical-questions.json",
-      "sha256": "a18635856f20b48e670ffa42e678065934605718e97ea1fd60d43e391606546f"
+      "sha256": "ab4b9e6521ed636088db4483ed9495638def55804b87df71d15efb55a1ce94bc"
     },
     {
       "name": "cheat-sheet-blocks.json",
-      "sha256": "514b08c55e47b53e68b712c4fbeba7bea883266a65f04d05217aac99f297534c"
+      "sha256": "d5be792ee91231a0a1d464afd3a6d494761e24749eb7dd1a5dd9713c855e6389"
     },
     {
       "name": "cheat-sheet-layout-policy.json",
@@ -26,39 +26,39 @@
     },
     {
       "name": "citation-fixtures.json",
-      "sha256": "3cf973b33a3f3ffd8585d36ba4dc0c069297d9923ee2bdf760d932fc6697069f"
+      "sha256": "8998ab0b3a98095c47e393257d3dce0a9a91ecacbbdd2d8f3f66971870f8baad"
     },
     {
       "name": "content-health.json",
-      "sha256": "b63fe7ea708aed9cfff9b6dd34dff0373c580da4644d1fa179cbdab681db9b6e"
+      "sha256": "5e75011ea33180174c295938ee56341d28d0aecd468b2cd7242017109c214759"
     },
     {
       "name": "diagnostic-items-asymptotics.json",
-      "sha256": "3eef1d9f5c2c7efe8ee2dd8ea0a78f951ebeda213f5d732bd59a3c4b1c685942"
+      "sha256": "5635497c2a2b9d42f66fc419cd8bada1c8ea86fe37f58c899e5083c4c7bda48b"
     },
     {
       "name": "diagnostic-items-data-structures.json",
-      "sha256": "e7a73953566ec1e44afd8688c4a53d505b55aacd9a9d62a16a8146622cab2f1a"
+      "sha256": "077231f315be669446d3ab06f37f5bd9097003b231befbbdf4d4b255a3fd2dcc"
     },
     {
       "name": "diagnostic-items-graphs.json",
-      "sha256": "32482fec97e7e59d1040d3c5600f313ac44a345500d6fb5714041038b3cbee16"
+      "sha256": "b14d9062d7c2bb5f671691969128476dda14f35e15599f6a66bf0aeee8173342"
     },
     {
       "name": "diagnostic-items-paradigms.json",
-      "sha256": "915800cb78bbe544f2d7a311121811b37cd4e28396282f3bb152398346e87b77"
+      "sha256": "41e4ac67746509fd98ad1c5bbe4176c559cf8c63fa6b11e7d384d717cb945d06"
     },
     {
       "name": "diagnostic-items-proofs.json",
-      "sha256": "6f90400328c501328a74113e43e5577b7d38c33e8522e435d8f5beaccd363785"
+      "sha256": "2c54e37ab44180d29d63531e2cec9b9c4cb8f946f9a12eb3eba32fba214254fa"
     },
     {
       "name": "diagnostic-items-recurrences.json",
-      "sha256": "523baf91663fb96372e5deb41a60957c4c88dce312cdc3f4bff06c7d0b4f72fe"
+      "sha256": "3521f2cb69a0c84842d9797809cfebf504d56495363dea872947f161c183af9e"
     },
     {
       "name": "diagnostic-items-sorting-search.json",
-      "sha256": "b034e2946ed7df1b4667db0f5a15ae31d728cdd47a2cfd51189a865ffb863d4d"
+      "sha256": "8cc171fa76790b4e5011d5fe5d137f6a536bb4aefa8fdcfd7dea49aa957feddd"
     },
     {
       "name": "diagnostic-misconceptions.json",
@@ -74,39 +74,39 @@
     },
     {
       "name": "divide-conquer-design-problems.json",
-      "sha256": "48821fb269de0b6d199e443f91a9e9abb3979978db8cbace149d8cb9f821c00c"
+      "sha256": "ba5c35477913ba0a7eb61461366a4ff3905296e74e93479747c48c1cdee1e160"
     },
     {
       "name": "divide-conquer-design-rubrics.json",
-      "sha256": "5abf5a2cd481e8a72533f185a635ffece5e955163cba355f8d6e889bb094d1d8"
+      "sha256": "eb01643ae53022de4243afa82e9b62c18c591cd1dd959e647c5c8a4f2ea9453c"
     },
     {
       "name": "divide-conquer-design-trainers.json",
-      "sha256": "a8a7ed13a55e806ff55b9a719eef75992cd848d18dd4fd320bfa0fc3c44c141d"
+      "sha256": "156617ee9ee272a704b4ffc7c928c260e81a38ff8959222ca2558dd9412c056b"
     },
     {
       "name": "divide-conquer-design-variants.json",
-      "sha256": "5009f7dca92ca05d074a55561a06ae06e1d05ed2418c69a27955f9547ec8b8cc"
+      "sha256": "54098cd2112cc76b8085ea61899bdb767a85355c72dfd0a0dc79dce01f1fcc3f"
     },
     {
       "name": "dp-design-problems.json",
-      "sha256": "bcdb4dc5d62ab5e1e0632d6b871055986f062f519165bf3450bc6b7a1bb43322"
+      "sha256": "4354730627c44e47bacccdba96a8b6bb0959f503d8c57296dd6554adb7ad05c2"
     },
     {
       "name": "dp-design-rubrics.json",
-      "sha256": "7bb1a5be9359bad7eb9747291d13e56591ea4094402190cf83180bb3564fc1af"
+      "sha256": "66a82b7c7567489219bbedf41e0b9b1a945a50fd6389ecf5fd6c60a515793c8e"
     },
     {
       "name": "dp-design-trainers.json",
-      "sha256": "b745e364a48dd487a0dbaa289d39ff87f6b65e531227adfc2b06d605697cdd02"
+      "sha256": "1ea403b5c29b398eba27924f412ea9f79bb3b82cd7a51a02049bdec64d345b8f"
     },
     {
       "name": "dp-design-variants.json",
-      "sha256": "1fcfffafd9af3a19d2c209b047085ec4b88aaf63b15c55b82502df68ec809e8b"
+      "sha256": "4f7f87327123edd2cf38ebfffd91f2c4564f0acae8d5c79ad9b1c1e3a3915655"
     },
     {
       "name": "exam-blueprint.json",
-      "sha256": "66bb502e89ab8c9d491133924a3407cede8de7d9e8a11c531ddbe3502b248879"
+      "sha256": "9807b243a05c2bf334709ba4607ffb04196a15480784ce304cb10929ed35c6f3"
     },
     {
       "name": "exam-date-phase-policy.json",
@@ -114,11 +114,11 @@
     },
     {
       "name": "exam-library.json",
-      "sha256": "594a7f869adc136d3d6e8ac18dc496618865cb006ee95076e26ae045a942838e"
+      "sha256": "b15bc5287be8d175a3f027c48b4d33523bdbf08938564b00a2e53aa7b456f09e"
     },
     {
       "name": "exam-packages.json",
-      "sha256": "53a12936a4c5f1df9810bb52342208db6488cf05af58241a5ded82992dcfdabf"
+      "sha256": "000dafb73e1ea6e7849f1aecef5b518b9c68d08318a2d51e7967fd3c6f34a757"
     },
     {
       "name": "exam-profile-coverage.json",
@@ -126,11 +126,11 @@
     },
     {
       "name": "exam-profiles.json",
-      "sha256": "23919e92a59958f52c15d2149c40b1c614565cf37917429a4cf1de51e76ffe24"
+      "sha256": "6ac23f40f2b2b6e87a77f69cc7f9ecaf7e33980d12cc733d9c799972554ddb34"
     },
     {
       "name": "exam-question-publication-audit.json",
-      "sha256": "d97bb06bea89b45eeab3f4f10ce10345da0ee3fbbef4e701a13cd1c257a3c1de"
+      "sha256": "bc1db444db59799d3815b956ed58d71b5f7b818805bf34d1b1e7c86dc2f317d6"
     },
     {
       "name": "exam-scoring-policies.json",
@@ -142,7 +142,7 @@
     },
     {
       "name": "exam-task-instances.json",
-      "sha256": "ba81b58f65c6d4404c76ff04338d624abfdc9060c082c6f83f444e4216a49264"
+      "sha256": "b92aa1d6c94d563217d7a07480d34af37151cf6ae2b7661f474d4b37c550ef0f"
     },
     {
       "name": "foundation-competencies.json",
@@ -150,79 +150,79 @@
     },
     {
       "name": "graph-tracing-problems.json",
-      "sha256": "20e720d7eedbc526115d3be73b1a37f72afc078e1040efe8889cf88192b910e7"
+      "sha256": "aee85c7ad518fbadc83b1317c05a2d4194e39364ce6041c48e451382dbe42ec9"
     },
     {
       "name": "graph-tracing-rubrics.json",
-      "sha256": "81b50a7fe264bf35866c9263241d0173b6a0dd4ae782ff9e0c1ce244f728d7c9"
+      "sha256": "df852dff3889b9591a71d439c0ba15061a18b23e7d6541ffe1679137a83e8796"
     },
     {
       "name": "graph-tracing-trainers.json",
-      "sha256": "a646b298febdb1ec2bc200c000550e13f416978ca37bf08938718f9705f7b5eb"
+      "sha256": "875680fa73f5c9e77d570b2c1ab3523d8deb42314b956d318f0dcdaade740c76"
     },
     {
       "name": "graph-tracing-variants.json",
-      "sha256": "5780abaff94428155c35bee84553266e0e0a4eabc96af53eb0f2df7ef6a7b827"
+      "sha256": "b81f0a7b60c5862609517e40cbc577c8c2b67af2c06e92087a5314c74b121a1d"
     },
     {
       "name": "greedy-design-problems.json",
-      "sha256": "60da05d680fb51acc29c4318f7e0de81d71f0850aceab86ad14e83adf2529b90"
+      "sha256": "88dad6023807f749258f808d8950f135dab197e5cadeeaf742b5068a865973b9"
     },
     {
       "name": "greedy-design-rubrics.json",
-      "sha256": "c84ee9741ffd8688cd3b920090f4e5a4d6b60361da544d6a84a7fd7be7813b5c"
+      "sha256": "1749a14e07ca4f62380ecbfb1ef9ba10b5bf25174d31c48da5f267bee6fc037a"
     },
     {
       "name": "greedy-design-trainers.json",
-      "sha256": "9a37beb81378e745c3341ca5d9c516528aa030e95ac6b5e706c64e425ee50863"
+      "sha256": "7577aa58cc3576beafcb2575ae516c7dd5b7060bd3742b160a2a40b21d88240f"
     },
     {
       "name": "greedy-design-variants.json",
-      "sha256": "6ca8bf0d177dae0221a2baf76ae5a53adf95093e7b77bd450ce10806edd2e605"
+      "sha256": "78a80a703bc861e6be16e1c3b44f248d8f184954004de5ad8be5f07c899d5c6a"
     },
     {
       "name": "learning-resource-graph.json",
-      "sha256": "00ae1f4007102e42a032667cdde7022d378046043fcb40aeee8dd1bb684bf241"
+      "sha256": "70f4eb6ee6612e518311ed4f6fd616354f2545a7933c732243541b72d97c1bba"
     },
     {
       "name": "proof-rubrics.json",
-      "sha256": "5820a48237226bdf6a69ca51cba8c17cf63685d6f7f3269caaa616f7c1d20566"
+      "sha256": "6958931a4d4132d679005beac93c47600ca3867f1b09d6e0c97825a12ca4009b"
     },
     {
       "name": "proof-trainers.json",
-      "sha256": "ed578b1a868efb0b226bc51dc56158870870bfcd569a890bafc95fc079c50b64"
+      "sha256": "5f57e7d201f4743ca1427a4856aa31184aef7af5fafd5e2377768564a866ab78"
     },
     {
       "name": "public-source-validation-report.json",
-      "sha256": "fd443c4c82f1f1311ddd708fbbe0a4ff0005db0aa855c9060983ac75a661de70"
+      "sha256": "5b3c9341435873a00a4c4a23b52d21e57b42efa32a5e2064319e1c878e902527"
     },
     {
       "name": "question-evidence-links.json",
-      "sha256": "426f0ae2e5e6d8a75b61765290a0190c8f583a99a38fb030fb3b7c8bb0ab8cc2"
+      "sha256": "09676c45ad31d64c3af9c7aa872c1e8a63fda987c144d5575afd6646e80aaad7"
     },
     {
       "name": "question-identity-decisions.json",
-      "sha256": "f86f1ea1f6b19c7a437ed1da00ba0a7058f9f3c4581800957ddc3eddec32d090"
+      "sha256": "a118d0838d105b5feb627bea2f8ad5467068116b820e5597dc308656c9c580b0"
     },
     {
       "name": "question-resource-mapping-report.json",
-      "sha256": "a90e4f17c96bf45b4753e6feb9f00d1f31b8c5676429ceb430a342c04286637e"
+      "sha256": "474d35eb8ec7fe5123a0bebfe778c64bd3472375dc9e29fc709796abb0252224"
     },
     {
       "name": "rb-insertion-problems.json",
-      "sha256": "f79b1e36483f3e816780470f42f0edb2ddfc5e551a5724da3adae5fb696e8dce"
+      "sha256": "639ebdc4f25bf1a52516d206f0473b524be788e7bb38aeea465dd02263b79a82"
     },
     {
       "name": "rb-insertion-rubrics.json",
-      "sha256": "a105de4d8fca57728581919661be0360e4759d668a73a0c423780049b73bad28"
+      "sha256": "70e580c2f33bd7dab4feb12a76e8fdf3ebd96667405f1ee96c843d3ce735c502"
     },
     {
       "name": "rb-insertion-trainers.json",
-      "sha256": "5c190f1c0368b886718a5600d371a117f4336c8ef4a726631b5a0ba731796662"
+      "sha256": "97b0ef183042389a12e4eea53f64f10f0f4ee1130d5f4019cbd64dd85a73dad2"
     },
     {
       "name": "rb-insertion-variants.json",
-      "sha256": "68073c6788006ab66a871eb6f3d68a5e2978a20efa083c5f85adb55600522201"
+      "sha256": "03e6009490ed45ca5d1f489e92d0e0a5de90ae7289d8b1b93c48510fb866e8b4"
     },
     {
       "name": "readiness-policy.json",
@@ -230,11 +230,11 @@
     },
     {
       "name": "recurrence-rubrics.json",
-      "sha256": "b04666fddcf87197d0cc8528b667bc25dcf891d22a5e12f1cfe4c534ed5d2199"
+      "sha256": "2a69a0a349ff7d7b018442230d483db590dada861ade926b1b013e389b7cb737"
     },
     {
       "name": "recurrence-trainers.json",
-      "sha256": "56ae510f63027aa67a2fe47b7fc852c5a0213f70aec5fb9b760ea95ef3d35fdc"
+      "sha256": "4bba62bbf35d35ff66edd7d9a7b86bf26ca9b20b6694432d7a5d23762a3a4ff5"
     },
     {
       "name": "recurrence-variants.json",
@@ -242,7 +242,7 @@
     },
     {
       "name": "sources.json",
-      "sha256": "1d311cb6fc4bbc346ba253ee671feb60ee0e04ef651895da08ff8d826b6f6b2e"
+      "sha256": "f7983f9fd77b11d3e35821391de0860a7637db2f89e64b109f0ad5132782fad9"
     },
     {
       "name": "spaced-review-policy.json",
@@ -254,7 +254,7 @@
     },
     {
       "name": "study-modules.json",
-      "sha256": "bc20ec4ef34a48695bbbdfc02934a036a933554f0ccb5a7e8a0cef60d9f4be7e"
+      "sha256": "5a7c9702a73e0c510dc030ec6c92b7d17ecf081cfa356bd3dda33930bb42c669"
     },
     {
       "name": "study-plan-default-settings.json",
@@ -266,19 +266,19 @@
     },
     {
       "name": "task-slot-learning-map.json",
-      "sha256": "4f1ffb784c4d5550291be55907a20af8f343759f2162010b6bd3ea27002fdea4"
+      "sha256": "f66c381053945e47e0104ef6c177f0f05c3d5609d00a9d65b4f4d3f796252e2a"
     },
     {
       "name": "topics-index.json",
-      "sha256": "26905874b24e1069bf32e09ffdcb2624b4f75b20d9a76dc44e87b1d9bf4f7a8b"
+      "sha256": "0016fcbfce7d690042f3b68ac83d351c3b92fa5c793336ac6ef094e3eb744366"
     },
     {
       "name": "tracing-rubrics.json",
-      "sha256": "f0bde18807438c2210a9ad2d350e1832ae521655fd5579f47e3ffd896cb7876e"
+      "sha256": "e081c168a8c9a9418f9d1a8f8683059b1769514289749338e784d3c3d3dd6a01"
     },
     {
       "name": "tracing-trainers.json",
-      "sha256": "9c450065e1c825044fdbf5cf0144ad8e6c2cb5e0b47a6681793d8aff731fc5d7"
+      "sha256": "4bed02dab5eec13dafa02447c8c0b7eb31513aa645bd2d4a15d138ed1c803132"
     }
   ]
 }

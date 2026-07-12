@@ -28,4 +28,4 @@ Am 11.07.2026 wurde der kanonische Korpus-Gate eingeführt. Die vollständige Pr
 
 Die reale Klausursammlung `exam-2020-2` ist mit neun weiteren public-safe Rekonstruktionen vollständig. Zwölf Aufgaben- und zwölf Lösungsseiten wurden geprüft; zwei Titelseiten wurden ausgeschlossen. [Quelle: `src-97414623dd81`, S. 1–12; Lösung: `src-8a588d5ddc35`, S. 1–12]
 
-Der Korpus umfasst nun 18 final geprüfte Fragen in zwei vollständigen Sammlungen. 66 Kandidaturen bleiben offen; Phase 21R und Phase 21R.1 bleiben deshalb ausdrücklich unvollständig. Die Review-Route bleibt entwicklungsbeschränkt, die Fragenvorschau feature-geschützt, und keine private PDF wird ausgeliefert.
+Der Korpus umfasst nun 27 final geprüfte Fragen in drei vollständigen Sammlungen. 57 Kandidaturen bleiben offen; Phase 21R und Phase 21R.1 bleiben deshalb ausdrücklich unvollständig. Die Review-Route bleibt entwicklungsbeschränkt, die Fragenvorschau feature-geschützt, und keine private Quelle wird ausgeliefert. Die neun neuen Lösungen zu `exam-2022-1` sind mangels offizieller Musterlösung transparent als authored markiert. [Quelle: `src-c4dde22523d3`, S. 1–16]

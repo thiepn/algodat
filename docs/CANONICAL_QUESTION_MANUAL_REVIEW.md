@@ -20,4 +20,6 @@ Zusätzlich wurden alle neun Fragen `exam-2020-2-task-1` bis `exam-2020-2-task-9
 
 Aufgabe 8 besitzt wegen des dokumentierten Randfallfehlers der gedruckten Rekurrenz eine korrigierte `authored_solution`; alle übrigen acht Lösungen der realen Sammlung sind als vollständig verifizierte offizielle Lösungen erfasst. [Lösung: `src-8a588d5ddc35`, S. 9]
 
-Die übrigen 66 Kandidaturen sind nicht freigegeben. Ein unabhängiger Zweitreview der insgesamt 18 Fragen steht weiterhin aus.
+Zusätzlich ist `exam-2022-1` mit neun realen Klausurfragen final geprüft. Die Aufgabenseiten S. 2–7, 9, 11, 13 und 15 sowie alle Leerseiten wurden visuell kontrolliert. Mangels offizieller Musterlösung sind die neun Lösungen als authored gekennzeichnet; ihr Aufgabenbezug ist jeweils `src-c4dde22523d3`. [Quelle: `src-c4dde22523d3`, S. 1–16]
+
+Die übrigen 57 Kandidaturen sind nicht freigegeben. Ein unabhängiger Zweitreview der insgesamt 27 Fragen steht weiterhin aus.

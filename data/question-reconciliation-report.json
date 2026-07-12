@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "reviewedAt": "2026-07-11",
+  "reviewedAt": "2026-07-12",
   "status": "incomplete_manual_reconciliation_required",
   "evidenceRecordsInspected": 633,
   "currentlyPublishedEvidenceRecords": 402,
@@ -10,9 +10,9 @@
   "exerciseEvidenceRecords": 15,
   "currentlyIndexedExamTaskEntries": 81,
   "preliminaryIdentityKeys": 84,
-  "canonicalQuestionsApproved": 18,
+  "canonicalQuestionsApproved": 27,
   "blockedQuestions": 0,
-  "openManualIdentityCandidates": 66,
-  "reconciledEvidenceRecords": 40,
+  "openManualIdentityCandidates": 57,
+  "reconciledEvidenceRecords": 80,
   "blockReason": "Die vorhandenen Datensätze sind Evidenz und Metadaten. Vollständige Aufgaben, Unteraufgaben, Abbildungen und explizite Lösungsseiten müssen anhand der Originalseiten manuell verifiziert werden."
 }

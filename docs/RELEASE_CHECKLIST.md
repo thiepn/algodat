@@ -89,4 +89,6 @@
 - [x] Fragenvorschau bleibt feature-geschützt; Review-Route bleibt development-only.
 - [x] Version bleibt `1.0.0-rc.8`.
 - [ ] Reales NVDA-/Narrator-Gate bleibt offen.
-- [ ] Phase 21R.1 bleibt wegen 66 offener Kandidaturen unvollständig.
+- [ ] Phase 21R.1 bleibt wegen 57 offener Kandidaturen unvollständig.
+- [x] `exam-2022-1` ist mit neun Aufgaben, 50 Punkten und transparent authored Lösungen vollständig kanonisiert. [Quelle: `src-c4dde22523d3`, S. 1–16]
+- [ ] Die 27 kanonischen Fragen benötigen weiterhin einen unabhängigen fachlichen Zweitreview.

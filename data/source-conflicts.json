@@ -48,6 +48,16 @@
       "lower_authority_sources": [],
       "resolution": "Aufgabenstellung und Lösungsteil erhalten getrennte Verifikationsstatus; Handschrift bleibt unofficial_solution_only.",
       "status": "conflict_detected"
+    },
+    {
+      "id": "conflict-exam-2021-solution-mapping",
+      "topic": "Lösungszuordnung zur Erstklausur 2021",
+      "higher_authority_claim": "Die Klausur enthält sechs Aufgaben zu Rekurrenz, LatenessScheduling, Bellman-Ford, Schleifeninvariante, Minen-DP und Artikulationsknoten.",
+      "higher_authority_source": { "source_id": "src-28fe81380661", "page": 2 },
+      "lower_authority_claim": "Die als Lösung inventarisierte Quelle behandelt stattdessen zwei Varianten mit Rot-Schwarz-Bäumen, Dijkstra, einer anderen Invariante, Talent-Show-DP sowie einem Laternen-/Strauchproblem.",
+      "lower_authority_sources": [{ "source_id": "src-39eb3d94f40a", "page": 1 }, { "source_id": "src-39eb3d94f40a", "page": 16 }],
+      "resolution": "Die Quellen werden nicht als Aufgaben-/Lösungspaar verbunden. exam-2021-1 bleibt bis zur Identifikation einer passenden Lösung oder einer gesonderten authored Bearbeitung zurückgestellt.",
+      "status": "conflict_detected"
     }
   ]
 }

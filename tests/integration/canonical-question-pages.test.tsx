@@ -8,14 +8,15 @@ import {
 } from '../../src/features/canonical-questions/CanonicalQuestionPages';
 
 describe('kanonische Fragenoberflächen', () => {
-  it('zeigt in der Vorschau genau die final geprüften Fragen beider vollständiger Sammlungen', () => {
+  it('zeigt in der Vorschau genau die final geprüften Fragen aller vollständigen Sammlungen', () => {
     render(
       <MemoryRouter initialEntries={['/fragen-vorschau']}>
         <CanonicalQuestionPreviewPage />
       </MemoryRouter>,
     );
-    expect(screen.getAllByRole('link', { name: 'Frage öffnen' })).toHaveLength(18);
+    expect(screen.getAllByRole('link', { name: 'Frage öffnen' })).toHaveLength(27);
     expect(screen.getByText('exam-2020-2 · Aufgabe 1')).toBeInTheDocument();
+    expect(screen.getByText('exam-2022-1 · Aufgabe 9')).toBeInTheDocument();
     expect(screen.queryByText(/q-1c1860fa3f25/u)).not.toBeInTheDocument();
   });
 

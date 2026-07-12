@@ -2,7 +2,7 @@
   {
     "id": "trainer-dc-entwurf-maxwertdifferenz-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-8dc6433c95c7",
+    "contentVersion": "phase16-cd9dcaabf06f",
     "topicIds": [
       "topic-00cf6dec50ed"
     ],
@@ -66,7 +66,7 @@
     "problem": {
       "id": "problem-dc-maxwertdifferenz-v1",
       "schemaVersion": "1.0.0",
-      "contentVersion": "phase16-8dc6433c95c7",
+      "contentVersion": "phase16-cd9dcaabf06f",
       "topicIds": [
         "topic-00cf6dec50ed"
       ],
@@ -148,7 +148,7 @@
       "variants": [
         {
           "id": "variant-dc-maxwertdifferenz-guided",
-          "contentVersion": "phase16-8dc6433c95c7",
+          "contentVersion": "phase16-cd9dcaabf06f",
           "sourceRefs": [
             {
               "sourceId": "src-88179ac88dc5",
@@ -174,7 +174,7 @@
         },
         {
           "id": "variant-dc-maxwertdifferenz-practice",
-          "contentVersion": "phase16-8dc6433c95c7",
+          "contentVersion": "phase16-cd9dcaabf06f",
           "sourceRefs": [
             {
               "sourceId": "src-88179ac88dc5",
@@ -201,7 +201,7 @@
         },
         {
           "id": "variant-dc-maxwertdifferenz-exam",
-          "contentVersion": "phase16-8dc6433c95c7",
+          "contentVersion": "phase16-cd9dcaabf06f",
           "sourceRefs": [
             {
               "sourceId": "src-88179ac88dc5",
@@ -229,7 +229,7 @@
         },
         {
           "id": "variant-dc-maxwertdifferenz-review",
-          "contentVersion": "phase16-8dc6433c95c7",
+          "contentVersion": "phase16-cd9dcaabf06f",
           "sourceRefs": [
             {
               "sourceId": "src-88179ac88dc5",

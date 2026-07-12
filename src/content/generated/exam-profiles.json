@@ -2,7 +2,7 @@
   {
     "id": "standard-praesenz",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-8dc6433c95c7",
+    "contentVersion": "phase16-cd9dcaabf06f",
     "sourceRefs": [
       {
         "sourceId": "src-97414623dd81",
@@ -182,7 +182,7 @@
   {
     "id": "klausur-2021",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-8dc6433c95c7",
+    "contentVersion": "phase16-cd9dcaabf06f",
     "sourceRefs": [
       {
         "sourceId": "src-28fe81380661",

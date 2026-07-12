@@ -32,4 +32,21 @@ Offene Kandidaturen nach Abschluss von `mock-2023`: 75. Sie waren im damaligen Z
 | 11.07.2026 | `exam-2020-2` | 9 | `exam-2020-2-task-9` | `q-cbeeef570d73`, `q-0b17b47a1209` | final reviewed | Seiten 11–12 als eine Aufgabe mit Lösungsfortsetzung geprüft. |
 | 11.07.2026 | `exam-2020-2` | Titelseiten | keine Frage | `q-c2391c1b18d8`, `q-32867772a3cd` | ausgeschlossen | Klausur- und Lösungstitelseite sind keine Aufgabenidentitäten. |
 
-Aktueller Stand: 18 entschiedene Identitäten und 66 offene Kandidaturen. Für die ausgewählte Sammlung sind alle 20 zugehörigen Evidenzdatensätze entschieden.
+Zwischenstand nach `exam-2020-2`: 18 entschiedene Identitäten und 66 offene Kandidaturen. Für diese Sammlung sind alle 20 zugehörigen Evidenzdatensätze entschieden.
+
+## Reale Klausur `exam-2022-1`
+
+| Datum | Aufgabe | Kanonische ID | Evidenz | Entscheidung | Notiz |
+| --- | ---: | --- | --- | --- | --- |
+| 12.07.2026 | 1 | `exam-2022-1-task-1` | `q-f1ffa14d40d9` | final reviewed | Auftragslängen und Gleichstandsregel auf S. 2 geprüft. |
+| 12.07.2026 | 2 | `exam-2022-1-task-2` | `q-5518fe932f1e` | final reviewed | Ausgangsbaum und vier Operationen auf S. 3 geprüft. |
+| 12.07.2026 | 3 | `exam-2022-1-task-3` | `q-2b1b54fe8758` | final reviewed | Graph S. 4 und Matrixvorlage S. 5 gemeinsam geprüft. |
+| 12.07.2026 | 4 | `exam-2022-1-task-4` | `q-834ceeb40be0` | final reviewed | Dreizehn Kanten und Gewichte auf S. 6 geprüft. |
+| 12.07.2026 | 5 | `exam-2022-1-task-5` | `q-bc70e450f3e2` | final reviewed | Pseudocode und drei Beweisteile auf S. 7 geprüft. |
+| 12.07.2026 | 6 | `exam-2022-1-task-6` | `q-0b1cf4b8a0a4` | final reviewed | Rekurrenz und beide Teilaufgaben auf S. 9 geprüft. |
+| 12.07.2026 | 7 | `exam-2022-1-task-7` | `q-c5df1252c54c` | final reviewed | Workout-Modell und drei Greedy-Teile auf S. 11 geprüft. |
+| 12.07.2026 | 8 | `exam-2022-1-task-8` | `q-e32562e71549` | final reviewed | Traversierungsdefinition und vier DP-Teile auf S. 13 geprüft. |
+| 12.07.2026 | 9 | `exam-2022-1-task-9` | `q-f0f8e80ad9ad` | final reviewed | Graphproblem und drei Teile auf S. 15 geprüft. |
+| 12.07.2026 | Titelseite | keine Frage | `q-778107a70766` | ausgeschlossen | Titel- und Punkteübersicht auf S. 1; keine Aufgabe. |
+
+Die fünf leeren Rückseiten S. 8, 10, 12, 14 und 16 erzeugen keine Evidenzidentitäten. Die 36 Aufgabenevidenzen aus vier exakt identischen Dateien sind den neun Identitäten zugeordnet; alle vier Titelseitenevidenzen sind ausgeschlossen. Für die Sammlung existiert keine offizielle Lösungsevidenz; alle neun Lösungen sind redaktionell hergeleitet und entsprechend gekennzeichnet. Aktueller Stand: 27 entschiedene Identitäten und 57 offene Kandidaturen.

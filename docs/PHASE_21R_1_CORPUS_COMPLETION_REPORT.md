@@ -6,15 +6,15 @@ Phase 21R.1 ist **nicht abgeschlossen**. Der Korpus-Gate ist eingeführt, die vo
 | --- | ---: |
 | Evidenzdatensätze | 633 |
 | Vorläufige Identitäten | 84 |
-| Manuell entschiedene Identitäten | 18 |
-| Veröffentlichungsfähige kanonische Fragen | 18 |
-| Offene Kandidaturen | 66 |
+| Manuell entschiedene Identitäten | 27 |
+| Veröffentlichungsfähige kanonische Fragen | 27 |
+| Offene Kandidaturen | 57 |
 | Öffentlich freigegebene Originalkopien | 0 |
-| Public-safe Rekonstruktionen | 18 |
+| Public-safe Rekonstruktionen | 27 |
 | Vollständige geprüfte offizielle Lösungen | 16 |
-| Vollständige authored solutions | 2 |
-| Abgeschlossene Sammlungen | 2 |
-| Automatisierte Tests | 239 grün |
+| Vollständige authored solutions | 11 |
+| Abgeschlossene Sammlungen | 3 |
+| Automatisierte Tests | 248 grün |
 | Deployment-Sicherheitsprüfung | 128 Artefakte, keine privaten Quellen oder lokalen Pfade |
 
 Die Probeklausur SS 2023 ist als erste Sammlung vollständig abgeschlossen. Alle elf Seiten der Aufgabenquelle und alle vierzehn Seiten der Beispiellösung wurden lokal visuell geprüft. Die neun Aufgaben besitzen eigenständig lösbare Körper, explizite Lösungen, Seitenbezüge, Ressourcenmappings und barrierefreie Alternativen für Graphen, Matrizen und Ablaufdarstellungen.
@@ -25,4 +25,8 @@ Als zweite Sammlung ist `exam-2020-2` vollständig abgeschlossen. Die neun reale
 
 Die gedruckte DP-Rekurrenz von Aufgabe 8 schließt mit `j-P_i>0` den Randfall `j=P_i` aus, während der Pseudocode ihn zulässt. Die kanonische Fassung dokumentiert den Konflikt und führt eine unabhängig getestete `authored_solution` mit `P_i≤j`. [Lösung: `src-8a588d5ddc35`, S. 9]
 
-Die nächste Arbeitseinheit muss die verbleibenden 66 Kandidaturen sammlungsweise in der festgelegten Priorität visuell prüfen. Bis dahin dürfen offene Evidenzkandidaturen weder als abgeschlossene Übungsaufgaben noch als Fragen im Simulator erscheinen.
+Als dritte Sammlung ist `exam-2022-1` vollständig abgeschlossen. Die neun Aufgaben ergeben 50 Punkte; alle 16 Seiten einschließlich der fünf leeren Rückseiten wurden visuell geprüft. Da keine offizielle Musterlösung derselben Ereignisidentität vorliegt, sind alle neun Lösungen transparent als authored markiert und durch deterministische Tests für Lastverteilung, Rot-Schwarz-Invarianten, Floyd-Warshall, Prim, Rekurrenz und DP abgesichert. [Quelle: `src-c4dde22523d3`, S. 1–16]
+
+Die zuvor geprüfte Sammlung `exam-2021-1` blieb zurückgestellt, weil die inventarisierte Lösungsdatei andere Aufgaben behandelt. Sie wurde nicht stillschweigend verbunden. [Klausur: `src-28fe81380661`, S. 2–7; abweichende Lösung: `src-39eb3d94f40a`, S. 1–16]
+
+Die nächste Arbeitseinheit muss die verbleibenden 57 Kandidaturen sammlungsweise in der festgelegten Priorität visuell prüfen. Bis dahin dürfen offene Evidenzkandidaturen weder als abgeschlossene Übungsaufgaben noch als Fragen im Simulator erscheinen.

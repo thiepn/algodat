@@ -2,9 +2,9 @@
   "schemaVersion": "1.0.0",
   "contentVersion": "1.0.0-rc.8",
   "status": "partial_manual_mapping",
-  "mappedCanonicalQuestionCount": 18,
+  "mappedCanonicalQuestionCount": 27,
   "unmappedCanonicalQuestionCount": 0,
-  "pendingCandidateCount": 66,
+  "pendingCandidateCount": 57,
   "mappings": [
     {
       "questionId": "mock-2023-task-1",
@@ -375,6 +375,193 @@
         "foundation-data-structures"
       ],
       "verification": "Die Aufgabe ist direkte Adressierung einer Multimenge. Dafür existiert kein produktiver Trainer."
+    },
+    {
+      "questionId": "exam-2022-1-task-1",
+      "topicIds": [
+        "topic-3e0e72f97f6e"
+      ],
+      "taskSlotNumbers": [
+        1
+      ],
+      "moduleIds": [
+        "module-greedy-entwurf"
+      ],
+      "trainerIds": [
+        "trainer-greedy-entwurf-fitnesspunkte-v1"
+      ],
+      "trainerCoverage": "available",
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms"
+      ],
+      "verification": "Die Aufgabe verlangt deterministisches GreedyLoadBalancing; der Greedy-Trainer deckt Auswahlregel und schrittweises Tracing ab."
+    },
+    {
+      "questionId": "exam-2022-1-task-2",
+      "topicIds": [
+        "topic-7ae0552985f1"
+      ],
+      "taskSlotNumbers": [
+        2
+      ],
+      "moduleIds": [
+        "module-rot-schwarz"
+      ],
+      "trainerIds": [],
+      "trainerCoverage": "missing",
+      "diagnosticCompetencyIds": [
+        "foundation-data-structures"
+      ],
+      "verification": "Das Modul passt, der vorhandene Trainer deckt jedoch keine Rot-Schwarz-Löschung ab."
+    },
+    {
+      "questionId": "exam-2022-1-task-3",
+      "topicIds": [
+        "topic-1fa208a0ed89",
+        "topic-f5f6e171c082"
+      ],
+      "taskSlotNumbers": [
+        3
+      ],
+      "moduleIds": [
+        "module-floyd-warshall"
+      ],
+      "trainerIds": [
+        "trainer-graph-floyd-warshall-v1"
+      ],
+      "trainerCoverage": "available",
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms"
+      ],
+      "verification": "Matrixfolge und Zwischenknoteniteration entsprechen dem produktiven Floyd-Warshall-Trainer."
+    },
+    {
+      "questionId": "exam-2022-1-task-4",
+      "topicIds": [
+        "topic-c4a698fc939e"
+      ],
+      "taskSlotNumbers": [
+        4
+      ],
+      "moduleIds": [
+        "module-prim-mst"
+      ],
+      "trainerIds": [
+        "trainer-graph-prim-mst-v1"
+      ],
+      "trainerCoverage": "available",
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms"
+      ],
+      "verification": "Graphart, Startknoten und Auswahlfolge entsprechen dem produktiven Prim-Trainer."
+    },
+    {
+      "questionId": "exam-2022-1-task-5",
+      "topicIds": [
+        "topic-1e43393edfb4",
+        "topic-e05ae3743b24",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        5
+      ],
+      "moduleIds": [
+        "module-schleifeninvariante"
+      ],
+      "trainerIds": [
+        "trainer-schleifeninvariante-summe-v1"
+      ],
+      "trainerCoverage": "available",
+      "diagnosticCompetencyIds": [
+        "foundation-proofs"
+      ],
+      "verification": "Die Aufgabe verlangt Behauptung, Invariante, Induktion und Schlussargument und wird vom Invariantentrainer methodisch abgedeckt."
+    },
+    {
+      "questionId": "exam-2022-1-task-6",
+      "topicIds": [
+        "topic-e48203925235",
+        "topic-916a9f1645f2",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        6
+      ],
+      "moduleIds": [
+        "module-rekurrenz-master"
+      ],
+      "trainerIds": [],
+      "trainerCoverage": "missing",
+      "diagnosticCompetencyIds": [
+        "foundation-recurrences",
+        "foundation-asymptotics",
+        "foundation-proofs"
+      ],
+      "verification": "Das Modul passt; der vorhandene Trainer behandelt einen anderen Master-Fall und wird nicht als vollständige Abdeckung ausgegeben."
+    },
+    {
+      "questionId": "exam-2022-1-task-7",
+      "topicIds": [
+        "topic-3e0e72f97f6e",
+        "topic-e05ae3743b24"
+      ],
+      "taskSlotNumbers": [
+        7
+      ],
+      "moduleIds": [
+        "module-greedy-entwurf"
+      ],
+      "trainerIds": [
+        "trainer-greedy-entwurf-fitnesspunkte-v1"
+      ],
+      "trainerCoverage": "available",
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "verification": "Greedy-Regel, Laufzeit und Austauschbeweis entsprechen den Kompetenzen des produktiven Greedy-Trainers."
+    },
+    {
+      "questionId": "exam-2022-1-task-8",
+      "topicIds": [
+        "topic-c0af8532bb72",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        8
+      ],
+      "moduleIds": [
+        "module-dp-entwurf-mine"
+      ],
+      "trainerIds": [
+        "trainer-dp-entwurf-mine-v1"
+      ],
+      "trainerCoverage": "available",
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "verification": "Der DP-Trainer deckt Zustandsdefinition, Randfälle, Rekurrenz, Beweis und Bottom-up-Auswertung methodisch ab."
+    },
+    {
+      "questionId": "exam-2022-1-task-9",
+      "topicIds": [
+        "topic-c43206934ba2"
+      ],
+      "taskSlotNumbers": [
+        9
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "trainerCoverage": "missing",
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms",
+        "foundation-proofs"
+      ],
+      "verification": "Die Aufgabe verlangt Zusammenhangskomponenten und einen linearen Korrektheitsbeweis; dafür existiert kein passender produktiver Trainer."
     }
   ]
 }
