@@ -1,9 +1,14 @@
 import { expect, test } from '@playwright/test';
+import { openPrimaryNavigationWhenCompact } from './helpers/navigation';
 
 test('Lernplan erzeugt Tagesplan, Einstellungen und Prüfungsreife lokal', async ({ page }) => {
   await page.goto('./lernplan');
   await expect(page.getByRole('heading', { name: 'Was heute sinnvoll ist' })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Lernplan' })).toBeVisible();
+  await openPrimaryNavigationWhenCompact(page);
+  await expect(page.getByRole('link', { name: 'Lernplan' })).toHaveAttribute(
+    'aria-current',
+    'page',
+  );
 
   await page.getByRole('link', { name: 'Tagesplan öffnen' }).click();
   await expect(page).toHaveURL(/\/lernplan\/heute/u);

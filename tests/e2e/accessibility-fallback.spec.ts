@@ -1,5 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
+import { openPrimaryNavigationWhenCompact } from './helpers/navigation';
 
 const centralRoutes = [
   { path: './', heading: /ruhiger Ausgangspunkt/u },
@@ -115,6 +116,7 @@ test('Erststart, Skip-Link und Routenfokus sind per Tastatur bedienbar', async (
   await page.keyboard.press('Enter');
   await expect(page.locator('#hauptinhalt')).toBeFocused();
 
+  await openPrimaryNavigationWhenCompact(page);
   await page.getByRole('link', { name: 'Diagnose' }).focus();
   await page.keyboard.press('Enter');
   await waitForHeading(page, 'Kurze Klausurkompetenzen diagnostizieren');
@@ -128,7 +130,7 @@ test('zentrale Routen besitzen Namen, Landmark-Struktur, gültige ARIA-Referenze
     await test.step(route.path, async () => {
       await page.goto(route.path);
       await waitForHeading(page, route.heading);
-      await expect(page.getByRole('navigation', { name: 'Hauptnavigation' })).toBeVisible();
+      await openPrimaryNavigationWhenCompact(page);
       await expect(page.locator('main#hauptinhalt')).toBeVisible();
       await expectNamedInteractiveControls(page);
       await expectNoBrokenAriaReferences(page);
@@ -193,14 +195,9 @@ test('Zoom, 320px-Reflow, Forced Colors und Reduced Motion halten zentrale Flows
   await expectNoPageOverflow(page);
   await expect(page.getByRole('button', { name: 'Versuch beginnen' })).toBeVisible();
 
-  await page.setViewportSize({ width: 1280, height: 900 });
-  await page.evaluate(() => {
-    document.documentElement.style.zoom = '2';
-  });
+  await page.setViewportSize({ width: 640, height: 450 });
+  await expect(page.getByRole('button', { name: 'Menü öffnen' })).toBeVisible();
   await expectNoPageOverflow(page);
-  await page.evaluate(() => {
-    document.documentElement.style.zoom = '1';
-  });
 
   await page.emulateMedia({ forcedColors: 'active' });
   await expectNoAxeViolations(page);
@@ -234,6 +231,7 @@ test('Simulator V4 kommuniziert Timer, Aufgabenwechsel, Recovery und Abgabe ohne
   await page.reload();
   await expect(page.getByRole('navigation', { name: 'Prüfungsaufgaben' })).toBeVisible();
 
+  page.once('dialog', (dialog) => void dialog.accept());
   await page.getByRole('button', { name: 'Endgültig abgeben' }).focus();
   await page.keyboard.press('Enter');
   await expect(page.getByRole('heading', { name: /\d+\/\d+ Punkte/u })).toBeVisible();

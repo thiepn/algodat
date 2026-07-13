@@ -20,7 +20,8 @@ test('Aktuelle Probeklausur nutzt strukturierte Renderer und speichert lokal', a
   await page.reload();
   await expect(page.getByLabel('Opt 0 0')).toHaveValue('0');
 
-  await page.getByRole('button', { name: /Aufgabe 2/u }).click();
+  await page.getByRole('button', { name: /Aufgabe 2/u }).focus();
+  await page.keyboard.press('Enter');
   await expect(
     page.getByRole('heading', { level: 1, name: 'Union-Find mit verketteten Listen' }),
   ).toBeVisible();

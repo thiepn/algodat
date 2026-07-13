@@ -1,10 +1,12 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
+import { openPrimaryNavigationWhenCompact } from './helpers/navigation';
 
 test('deutsche App-Shell, Kernrouten und GitHub-Pages-Basispfad', async ({ page }) => {
   await page.goto('./');
   await expect(page.getByRole('heading', { name: /ruhiger Ausgangspunkt/u })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Klausurprofile' })).toHaveCount(0);
+  await openPrimaryNavigationWhenCompact(page);
   await page.getByRole('link', { name: 'Übungen' }).click();
   await expect(page.getByRole('heading', { name: 'Übungen und Übungsblätter' })).toBeVisible();
   await page.reload();

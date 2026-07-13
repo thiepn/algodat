@@ -205,13 +205,11 @@ test('vollständiger Rekurrenz-Laufzeitbeweispfad mit Bewertung', async ({ page 
 test('Prüfungsmodus sperrt Hinweise und bleibt bei 200 Prozent ohne Seitenüberlauf', async ({
   page,
 }) => {
+  await page.setViewportSize({ width: 640, height: 450 });
   await page.goto('./trainer/tracing/trainer-rucksack-dp-v1');
   await page.getByRole('radio', { name: /Prüfungsmodus/u }).check();
   await page.getByRole('button', { name: 'Versuch beginnen' }).click();
   await expect(page.getByRole('heading', { name: 'Hinweise' })).toHaveCount(0);
-  await page.evaluate(() => {
-    document.documentElement.style.zoom = '2';
-  });
   const viewport = await page.evaluate(() => ({
     clientWidth: document.documentElement.clientWidth,
     scrollWidth: document.documentElement.scrollWidth,

@@ -38,8 +38,7 @@ export function AppLayout() {
   const location = useLocation();
   const initialRouteHandled = useRef(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
-  const [openMenuPath, setOpenMenuPath] = useState<string | null>(null);
-  const menuOpen = openMenuPath === location.pathname;
+  const [menuOpen, setMenuOpen] = useState(false);
   const [showRemovalNotice, setShowRemovalNotice] = useState(
     () => window.localStorage.getItem('algodat-local-source-removal-notice-v13') !== 'seen',
   );
@@ -48,12 +47,18 @@ export function AppLayout() {
     if (!menuOpen) return;
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key !== 'Escape') return;
-      setOpenMenuPath(null);
+      setMenuOpen(false);
       menuButtonRef.current?.focus();
     };
     window.addEventListener('keydown', closeOnEscape);
     return () => window.removeEventListener('keydown', closeOnEscape);
   }, [menuOpen]);
+
+  useEffect(() => {
+    const closeOnHistoryNavigation = () => setMenuOpen(false);
+    window.addEventListener('popstate', closeOnHistoryNavigation);
+    return () => window.removeEventListener('popstate', closeOnHistoryNavigation);
+  }, []);
 
   useEffect(() => {
     if (!initialRouteHandled.current) {
@@ -83,7 +88,12 @@ export function AppLayout() {
     <div className="app-shell">
       <header className="site-header">
         <div className="topbar">
-          <NavLink to="/" className="brand" aria-label="AlgoDat Study System – Startseite">
+          <NavLink
+            to="/"
+            className="brand"
+            aria-label="AlgoDat Study System – Startseite"
+            onClick={() => setMenuOpen(false)}
+          >
             <span className="brand__mark" aria-hidden="true">
               A
             </span>
@@ -99,7 +109,7 @@ export function AppLayout() {
             className="nav-menu-button"
             aria-expanded={menuOpen}
             aria-controls="hauptnavigation"
-            onClick={() => setOpenMenuPath(menuOpen ? null : location.pathname)}
+            onClick={() => setMenuOpen((current) => !current)}
           >
             <span aria-hidden="true">☰</span>
             <span>{menuOpen ? 'Menü schließen' : 'Menü öffnen'}</span>
@@ -119,6 +129,7 @@ export function AppLayout() {
                   to={to}
                   end={false}
                   className={({ isActive }) => (isActive ? 'active' : undefined)}
+                  onClick={() => setMenuOpen(false)}
                 >
                   {label}
                 </NavLink>

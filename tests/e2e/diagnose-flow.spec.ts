@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
+import { openPrimaryNavigationWhenCompact } from './helpers/navigation';
 
 async function answerCurrentDiagnosticItem(page: Page) {
   const main = page.locator('main');
@@ -37,7 +38,11 @@ test('Grundlagen-Diagnose startet, speichert Antworten und zeigt eine Auswertung
   await expect(
     page.getByRole('heading', { name: 'Kurze Klausurkompetenzen diagnostizieren' }),
   ).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Diagnose' })).toBeVisible();
+  await openPrimaryNavigationWhenCompact(page);
+  await expect(page.getByRole('link', { name: 'Diagnose' })).toHaveAttribute(
+    'aria-current',
+    'page',
+  );
 
   await page.getByRole('button', { name: 'Schnellcheck starten' }).click();
   await expect(page).toHaveURL(/\/diagnose\/session\/diagnostic-/u);
