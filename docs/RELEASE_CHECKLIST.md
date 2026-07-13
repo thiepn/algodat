@@ -78,6 +78,19 @@
 - [ ] Jede veröffentlichte kanonische Frage besteht die Korpusvalidierung.
 - [ ] Keine offene Kandidatur ist als Übungsaufgabe, Bibliotheksfrage oder Simulatoraufgabe sichtbar.
 
+## Checkpoint `exam-2021-1`
+
+- [x] Sechs historische Aufgaben, 60 Punkte und 120 Minuten visuell verifiziert. [Quelle: `src-28fe81380661`, S. 1–7]
+- [x] Klausurdublette versöhnt; Deckblätter und alle abweichenden Lösungsevidenzen explizit ausgeschlossen.
+- [x] `src-39eb3d94f40a` bleibt nach vollständigem Seitenvergleich von allen sechs Lösungen getrennt. [Abweichende Quelle: S. 1–16]
+- [x] Sechs vollständige public-safe Rekonstruktionen mit authored Lösungen, Quellenbezügen und Ressourcenmappings validiert.
+- [x] Deterministische Tests für Rekurrenz, LatenessScheduling, Bellman-Ford, Minimum, Minen-DP und Artikulationsknoten bestanden.
+- [x] 42 kanonische Fragen in fünf Sammlungen; 42 Kandidaturen bleiben offen.
+- [x] Version bleibt `1.0.0-rc.8`; kein Merge und kein Deployment.
+- [ ] Unabhängiger fachlicher Zweitreview bleibt offen.
+- [ ] Realer NVDA-/Narrator-Gate bleibt offen.
+- [ ] Phase 21R.1 bleibt wegen 42 offener Kandidaturen unvollständig.
+
 ## Checkpoint `exam-2020-2`
 
 - [x] Genau eine reale Klausursammlung ausgewählt und die Auswahl dokumentiert.
@@ -89,7 +102,7 @@
 - [x] Fragenvorschau bleibt feature-geschützt; Review-Route bleibt development-only.
 - [x] Version bleibt `1.0.0-rc.8`.
 - [ ] Reales NVDA-/Narrator-Gate bleibt offen.
-- [ ] Phase 21R.1 bleibt wegen 48 offener Kandidaturen unvollständig.
+- [ ] Der damalige Stand von 48 offenen Kandidaturen ist überholt; Phase 21R.1 bleibt wegen aktuell 42 offenen Kandidaturen unvollständig.
 - [x] `exam-2022-1` ist mit neun Aufgaben, 50 Punkten und transparent authored Lösungen vollständig kanonisiert. [Quelle: `src-c4dde22523d3`, S. 1–16]
 - [x] `exam-2022-2` ist mit neun Aufgaben, 50 Punkten, acht authored Lösungen und einer verifizierten offiziellen späteren Lösung vollständig kanonisiert. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
-- [ ] Die 36 kanonischen Fragen benötigen weiterhin einen unabhängigen fachlichen Zweitreview.
+- [ ] Die 42 kanonischen Fragen benötigen weiterhin einen unabhängigen fachlichen Zweitreview.

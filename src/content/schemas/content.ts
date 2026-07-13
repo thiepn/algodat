@@ -535,6 +535,7 @@ export const QuestionIdentityDecisionsFileSchema = z
             'exam_cover_page',
             'solution_cover_page',
             'solution_only_evidence',
+            'mismatched_solution_evidence',
             'non_question_material',
           ]),
           notes: SemanticTextSchema,
@@ -582,7 +583,9 @@ export const QuestionResourceMappingReportSchema = z
           taskSlotNumbers: z.array(z.number().int().min(1).max(9)).min(1),
           moduleIds: z.array(z.string().min(1)),
           trainerIds: z.array(z.string().min(1)),
-          trainerCoverage: z.enum(['available', 'missing', 'not_applicable']).default('missing'),
+          trainerCoverage: z
+            .enum(['available', 'full', 'partial', 'missing', 'not_applicable'])
+            .default('missing'),
           diagnosticCompetencyIds: z.array(z.string().min(1)),
           verification: SemanticTextSchema,
         })

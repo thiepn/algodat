@@ -726,6 +726,124 @@
       "identityConfidence": "hoch",
       "reviewerStatus": "final_reviewed",
       "notes": "Klausurseite 14 und offizielle Übungslösung Seiten 3 bis 4 wurden vollständig abgeglichen."
+    },
+    {
+      "candidateId": "exam-2021-1-task-1",
+      "canonicalQuestionId": "exam-2021-1-task-1",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-0508ae79d06c",
+        "q-eb058faaa3b3"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 1,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Pseudocode, Rekurrenzauftrag und Master-Theorem-Frage wurden auf Seite 2 geprüft."
+    },
+    {
+      "candidateId": "exam-2021-1-task-2",
+      "canonicalQuestionId": "exam-2021-1-task-2",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-546983ce44a1",
+        "q-ad764d729637"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 2,
+      "subtasks": [],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Alle neun Tupel und die LatenessScheduling-Anforderungen wurden auf Seite 3 geprüft."
+    },
+    {
+      "candidateId": "exam-2021-1-task-3",
+      "canonicalQuestionId": "exam-2021-1-task-3",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-1ade26a5e8f3",
+        "q-2e41f1d32d31"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Acht gerichtete Kanten, Gewichte, Startknoten und Rundenkonvention wurden auf Seite 4 geprüft."
+    },
+    {
+      "candidateId": "exam-2021-1-task-4",
+      "canonicalQuestionId": "exam-2021-1-task-4",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-cd065b285cd1",
+        "q-f60c6675da5e"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 4,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe fehlerhafte Aufgabenfassung.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Punktkonflikt und Zugriff B[n+1] wurden auf Deckblatt und Seite 5 geprüft und nicht stillschweigend korrigiert."
+    },
+    {
+      "candidateId": "exam-2021-1-task-5",
+      "canonicalQuestionId": "exam-2021-1-task-5",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-0b5d29afa87d",
+        "q-bbed7955d794"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Beispielmatrix, Bewegungsregeln und vier DP-Teile wurden auf Seite 6 geprüft."
+    },
+    {
+      "candidateId": "exam-2021-1-task-6",
+      "canonicalQuestionId": "exam-2021-1-task-6",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-1e1e7714c44c",
+        "q-551d33d915a3"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graphdefinition, Laufzeitziel und drei Entwurfsteile wurden auf Seite 7 geprüft."
     }
   ],
   "excludedEvidence": [
@@ -812,8 +930,190 @@
       "page": 1,
       "decision": "non_question_material",
       "notes": "Byteidentische Dublette der Titelseite; keine Frage."
+    },
+    {
+      "evidenceId": "q-34e4c77f6292",
+      "sourceId": "src-28fe81380661",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Deckblatt, Hinweise und Punktetabelle; keine Aufgabe."
+    },
+    {
+      "evidenceId": "q-426f5c618c6e",
+      "sourceId": "src-0457af7a63f0",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Byteidentische Dublette des Deckblatts; keine Frage."
+    },
+    {
+      "evidenceId": "q-a872822904a2",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 1,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Abweichende Rekurrenzvariante A; keine Lösung zu exam-2021-1 Aufgabe 1."
+    },
+    {
+      "evidenceId": "q-acc75c7d7595",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 2,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Abweichende Rekurrenzvariante B; keine Lösung zu exam-2021-1 Aufgabe 1."
+    },
+    {
+      "evidenceId": "q-962792361523",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 3,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Rot-Schwarz-Baum Variante A; exam-2021-1 Aufgabe 2 verlangt LatenessScheduling."
+    },
+    {
+      "evidenceId": "q-7866a78ca82c",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 4,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Rot-Schwarz-Baum Variante B; exam-2021-1 Aufgabe 2 verlangt LatenessScheduling."
+    },
+    {
+      "evidenceId": "q-bb58498bcc6b",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 5,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Dijkstra Variante A; exam-2021-1 Aufgabe 3 verlangt Bellman-Ford auf einem anderen Graphen."
+    },
+    {
+      "evidenceId": "q-da2f0725f356",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 6,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Dijkstra Variante B; exam-2021-1 Aufgabe 3 verlangt Bellman-Ford auf einem anderen Graphen."
+    },
+    {
+      "evidenceId": "q-4cf04b8c3fdb",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 7,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Additive Invariantenvariante; keine Lösung zum Minimumprogramm der Klausur."
+    },
+    {
+      "evidenceId": "q-421237b4adcf",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 8,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Multiplikative Invariantenvariante; keine Lösung zum Minimumprogramm der Klausur."
+    },
+    {
+      "evidenceId": "q-96494ddf4b26",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 9,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Talent-Show-DP Variante A; keine Lösung zum Minenproblem."
+    },
+    {
+      "evidenceId": "q-1501a4677b2e",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 11,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Talent-Show-DP Variante B; keine Lösung zum Minenproblem."
+    },
+    {
+      "evidenceId": "q-4368d2853dd9",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 13,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Laternen-Greedy-Aufgabe; keine Lösung zum Schnittknotenproblem."
+    },
+    {
+      "evidenceId": "q-b9c348bc2251",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 15,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Strauch-Greedy-Aufgabe; keine Lösung zum Schnittknotenproblem."
+    },
+    {
+      "evidenceId": "q-989345e966d5",
+      "sourceId": "src-720584558efd",
+      "page": 1,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Rekurrenzvariante A."
+    },
+    {
+      "evidenceId": "q-19d049d856d5",
+      "sourceId": "src-720584558efd",
+      "page": 2,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Rekurrenzvariante B."
+    },
+    {
+      "evidenceId": "q-825737172aee",
+      "sourceId": "src-720584558efd",
+      "page": 3,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Rot-Schwarz-Aufgabe A."
+    },
+    {
+      "evidenceId": "q-66e94cc862fa",
+      "sourceId": "src-720584558efd",
+      "page": 4,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Rot-Schwarz-Aufgabe B."
+    },
+    {
+      "evidenceId": "q-cf80d03ac627",
+      "sourceId": "src-720584558efd",
+      "page": 5,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Dijkstra-Aufgabe A."
+    },
+    {
+      "evidenceId": "q-d5e219429fbd",
+      "sourceId": "src-720584558efd",
+      "page": 6,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Dijkstra-Aufgabe B."
+    },
+    {
+      "evidenceId": "q-b0f4b9fbf667",
+      "sourceId": "src-720584558efd",
+      "page": 7,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Invariantenaufgabe A."
+    },
+    {
+      "evidenceId": "q-82213cddd964",
+      "sourceId": "src-720584558efd",
+      "page": 8,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Invariantenaufgabe B."
+    },
+    {
+      "evidenceId": "q-2e735eb0a412",
+      "sourceId": "src-720584558efd",
+      "page": 9,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Talent-Show-Aufgabe A."
+    },
+    {
+      "evidenceId": "q-f8913c6c1a5c",
+      "sourceId": "src-720584558efd",
+      "page": 11,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Talent-Show-Aufgabe B."
+    },
+    {
+      "evidenceId": "q-317ddd20feba",
+      "sourceId": "src-720584558efd",
+      "page": 13,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Laternenaufgabe."
+    },
+    {
+      "evidenceId": "q-10631a7c7af1",
+      "sourceId": "src-720584558efd",
+      "page": 15,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Strauchaufgabe."
     }
   ],
-  "openCandidateCount": 48,
+  "openCandidateCount": 42,
   "openCandidatePolicy": "Offene Kandidaturen werden weder kanonisiert noch öffentlich angezeigt. Ihre vollständige visuelle Prüfung ist Voraussetzung für eine Identitätsentscheidung."
 }

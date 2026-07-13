@@ -56,7 +56,17 @@
       "higher_authority_source": { "source_id": "src-28fe81380661", "page": 2 },
       "lower_authority_claim": "Die als Lösung inventarisierte Quelle behandelt stattdessen zwei Varianten mit Rot-Schwarz-Bäumen, Dijkstra, einer anderen Invariante, Talent-Show-DP sowie einem Laternen-/Strauchproblem.",
       "lower_authority_sources": [{ "source_id": "src-39eb3d94f40a", "page": 1 }, { "source_id": "src-39eb3d94f40a", "page": 16 }],
-      "resolution": "Die Quellen werden nicht als Aufgaben-/Lösungspaar verbunden. exam-2021-1 bleibt bis zur Identifikation einer passenden Lösung oder einer gesonderten authored Bearbeitung zurückgestellt.",
+      "resolution": "Die Quellen werden nicht als Aufgaben-/Lösungspaar verbunden. Alle sechs Klausuraufgaben wurden separat mit ausdrücklich redaktionell hergeleiteten Lösungen kanonisiert; der Quellenkonflikt bleibt bestehen. Der Seitenvergleich ergibt: S. 1–2 Rekurrenzvarianten, S. 3–4 Rot-Schwarz-Bäume, S. 5–6 Dijkstra, S. 7–8 andere Invarianten, S. 9–12 Talent-Show-DP und S. 13–16 Laternen-/Strauchprobleme statt der sechs Klausuraufgaben.",
+      "status": "conflict_detected"
+    },
+    {
+      "id": "conflict-exam-2021-task-4",
+      "topic": "Punktzahl und Feldgrenze in Aufgabe 4 der Erstklausur 2021",
+      "higher_authority_claim": "Das Deckblatt weist für Aufgabe 4 zehn Punkte und insgesamt 60 Punkte aus.",
+      "higher_authority_source": { "source_id": "src-28fe81380661", "page": 1 },
+      "lower_authority_claim": "Die Aufgabenüberschrift nennt sechs Punkte; außerdem liest die Schleife bei i = n den nicht definierten Eintrag B[n+1] des als B[1..n] beschriebenen Feldes.",
+      "lower_authority_sources": [{ "source_id": "src-28fe81380661", "page": 5 }],
+      "resolution": "Die kanonische Punktzahl folgt dem Deckblatt, damit die ausgewiesene Gesamtsumme 60 erhalten bleibt. Der Originalcode wird nicht als korrekt beweisbar ausgegeben; nur für die ausdrücklich korrigierte Schleifengrenze i = 1 bis n-1 wird die Minimumseigenschaft bewiesen.",
       "status": "conflict_detected"
     }
   ]

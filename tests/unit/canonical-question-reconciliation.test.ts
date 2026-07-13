@@ -15,7 +15,7 @@ import { isPubliclyVisibleQuestion } from '../../src/features/canonical-question
 const corpus = validateCanonicalQuestionCorpus(corpusData);
 
 describe('Identitäts- und Sammlungsreview', () => {
-  it('entscheidet 27 Kandidaturen und führt den Rest explizit offen', () => {
+  it('entscheidet 42 Kandidaturen und führt den Rest explizit offen', () => {
     const review = validateCanonicalQuestionReviewData({
       questions: corpus.questions,
       identityDecisions: identityData,
@@ -23,8 +23,8 @@ describe('Identitäts- und Sammlungsreview', () => {
       resourceMappings: mappingData,
       originalCandidateCount: 84,
     });
-    expect(review.identityDecisions.decisions).toHaveLength(36);
-    expect(review.identityDecisions.openCandidateCount).toBe(48);
+    expect(review.identityDecisions.decisions).toHaveLength(42);
+    expect(review.identityDecisions.openCandidateCount).toBe(42);
     expect(
       review.identityDecisions.decisions.every(
         (decision) => decision.reviewerStatus === 'final_reviewed',
@@ -83,7 +83,7 @@ describe('Identitäts- und Sammlungsreview', () => {
       decision: 'solution_only_evidence',
       notes: 'Nur eine Lösung, kein eigener Aufgabenkörper.',
     });
-    expect(QuestionIdentityDecisionsFileSchema.parse(fixture).decisions).toHaveLength(38);
+    expect(QuestionIdentityDecisionsFileSchema.parse(fixture).decisions).toHaveLength(44);
   });
 
   it('segregiert blockierte Kandidaturen vom öffentlichen Korpus', () => {
@@ -103,7 +103,7 @@ describe('Identitäts- und Sammlungsreview', () => {
       reviewerStatus: 'final_reviewed',
       notes: 'Graph fehlt; erneute Quellenbeschaffung nötig.',
     });
-    blocked.openCandidateCount = 47;
+    blocked.openCandidateCount = 41;
     const review = validateCanonicalQuestionReviewData({
       questions: corpus.questions,
       identityDecisions: blocked,
@@ -114,7 +114,7 @@ describe('Identitäts- und Sammlungsreview', () => {
     expect(review.identityDecisions.decisions.at(-1)?.decisionState).toBe(
       'blocked_missing_visual_data',
     );
-    expect(corpus.questions).toHaveLength(36);
+    expect(corpus.questions).toHaveLength(42);
   });
 
   it('weist unzugängliche Graph- und Matrixblöcke zurück', () => {

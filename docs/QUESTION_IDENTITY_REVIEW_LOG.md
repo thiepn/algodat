@@ -2,9 +2,22 @@
 
 Dieses Protokoll trennt Evidenz, Identitätskandidatur und kanonische Frage. Eine Zeile gilt erst als entschieden, wenn die private Originalseite lokal visuell geprüft wurde. Lokale PDFs, Renderbilder und OCR-Ausgaben sind keine Produktionsartefakte.
 
+## Abschluss `exam-2021-1` am 13.07.2026
+
+Die Aufgaben auf S. 2 bis 7 wurden final geprüft und jeweils mit ihrer exakten Quelldublette versöhnt. Zwei Titelseitenevidenzen wurden ausgeschlossen. Die 24 Evidenzen der vermeintlichen Lösungsdatei und ihrer exakten Dublette wurden nach vollständigem Seitenvergleich als `mismatched_solution_evidence` ausgeschlossen. Aktueller Stand: 42 entschiedene Identitäten, 42 offene Kandidaturen. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
+
+| Datum | Aufgabe | Kanonische ID | Evidenz | Entscheidung |
+| --- | ---: | --- | --- | --- |
+| 13.07.2026 | 1 | `exam-2021-1-task-1` | `q-0508ae79d06c`, `q-eb058faaa3b3` | final reviewed |
+| 13.07.2026 | 2 | `exam-2021-1-task-2` | `q-546983ce44a1`, `q-ad764d729637` | final reviewed |
+| 13.07.2026 | 3 | `exam-2021-1-task-3` | `q-1ade26a5e8f3`, `q-2e41f1d32d31` | final reviewed |
+| 13.07.2026 | 4 | `exam-2021-1-task-4` | `q-cd065b285cd1`, `q-f60c6675da5e` | final reviewed mit Quellenkonflikt |
+| 13.07.2026 | 5 | `exam-2021-1-task-5` | `q-0b5d29afa87d`, `q-bbed7955d794` | final reviewed |
+| 13.07.2026 | 6 | `exam-2021-1-task-6` | `q-1e1e7714c44c`, `q-551d33d915a3` | final reviewed |
+
 ## Abschluss `exam-2022-2` am 12.07.2026
 
-Die Aufgaben auf S. 2, 3, 4, 5, 6, 8, 10, 12 und 14 wurden final geprüft. Je vier byteidentische Aufgabenevidenzen bilden eine kanonische Identität; vier Titelseitenevidenzen sind ausgeschlossen. Aufgabe 9 ist zusätzlich mit der späteren offiziellen Lösungsevidenz `q-e5608c7c1d2d` verbunden. Aktueller Stand: 36 entschiedene Identitäten, 48 offene Kandidaturen. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+Die Aufgaben auf S. 2, 3, 4, 5, 6, 8, 10, 12 und 14 wurden final geprüft. Je vier byteidentische Aufgabenevidenzen bilden eine kanonische Identität; vier Titelseitenevidenzen sind ausgeschlossen. Aufgabe 9 ist zusätzlich mit der späteren offiziellen Lösungsevidenz `q-e5608c7c1d2d` verbunden. Der damalige Stand von 36 entschiedenen Identitäten und 48 offenen Kandidaturen ist durch `exam-2021-1` überholt. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
 
 | Datum | Sammlung | Kandidatur | Entscheidung | Evidenz | Prüfung | Notiz |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -53,4 +66,4 @@ Zwischenstand nach `exam-2020-2`: 18 entschiedene Identitäten und 66 offene Kan
 | 12.07.2026 | 9 | `exam-2022-1-task-9` | `q-f0f8e80ad9ad` | final reviewed | Graphproblem und drei Teile auf S. 15 geprüft. |
 | 12.07.2026 | Titelseite | keine Frage | `q-778107a70766` | ausgeschlossen | Titel- und Punkteübersicht auf S. 1; keine Aufgabe. |
 
-Die fünf leeren Rückseiten S. 8, 10, 12, 14 und 16 erzeugen keine Evidenzidentitäten. Die 36 Aufgabenevidenzen aus vier exakt identischen Dateien sind den neun Identitäten zugeordnet; alle vier Titelseitenevidenzen sind ausgeschlossen. Für die Sammlung existiert keine offizielle Lösungsevidenz; alle neun Lösungen sind redaktionell hergeleitet und entsprechend gekennzeichnet. Aktueller Stand: 27 entschiedene Identitäten und 57 offene Kandidaturen.
+Die fünf leeren Rückseiten S. 8, 10, 12, 14 und 16 erzeugen keine Evidenzidentitäten. Die 36 Aufgabenevidenzen aus vier exakt identischen Dateien sind den neun Identitäten zugeordnet; alle vier Titelseitenevidenzen sind ausgeschlossen. Für die Sammlung existiert keine offizielle Lösungsevidenz; alle neun Lösungen sind redaktionell hergeleitet und entsprechend gekennzeichnet. Die Angabe von 27 entschiedenen Identitäten und 57 offenen Kandidaturen ist der historische Stand nach dieser Sammlung und inzwischen überholt.

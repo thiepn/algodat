@@ -513,6 +513,9 @@ export function CanonicalQuestionReviewPage() {
           <li>Evidenz: {evidenceLink?.evidenceIds.join(', ') ?? 'fehlt'}</li>
           <li>Lösungsevidenz: {evidenceLink?.solutionEvidenceIds.join(', ') || 'keine'}</li>
           <li>Evidenzentscheidung: {currentDecision?.notes}</li>
+          <li>
+            Dublettenbeziehung: {currentDecision?.duplicateRelationship || 'keine dokumentiert'}
+          </li>
           <li>Evidenzbeziehung: {evidenceLink?.notes ?? 'fehlt'}</li>
           <li>
             Zuordnungen: Themen {mapping?.topicIds.join(', ') ?? 'fehlt'}, Slots{' '}
@@ -520,6 +523,7 @@ export function CanonicalQuestionReviewPage() {
             {mapping?.trainerIds.join(', ') || 'keiner vorhanden'}
           </li>
           <li>Trainerabdeckung: {mapping?.trainerCoverage ?? 'nicht geprüft'}</li>
+          <li>Deterministischer Verifikationsstatus: {question.verificationStatus}</li>
           <li>Vollständiger Aufgabenkörper: {question.bodyBlocks.length > 0 ? 'ja' : 'nein'}</li>
           <li>
             Vollständiger Lösungsbezug: {question.solutionSourceRefs.length > 0 ? 'ja' : 'nein'}

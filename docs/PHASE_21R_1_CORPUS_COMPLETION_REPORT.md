@@ -1,10 +1,16 @@
 # Phase 21R.1 – Zwischenstand kanonischer Fragenkorpus
 
+## Aktualisierung `exam-2021-1` (13.07.2026)
+
+Die historische Erstklausur ist mit sechs Aufgaben und 60 Punkten vollständig kanonisiert. Alle sieben Klausurseiten und alle 16 Seiten der nachweislich unpassenden Lösungsdatei wurden visuell geprüft. Die unpassende Datei bleibt als Konfliktevidenz getrennt; alle sechs Lösungen sind transparent authored. Aufgabe 4 bewahrt den Punkte- und Indexkonflikt ausdrücklich. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
+
+Der aktuelle Korpus umfasst 42 veröffentlichungsfähige Fragen in fünf vollständigen Sammlungen, davon 17 mit vollständig verifizierter offizieller Lösung und 25 mit authored Lösung. 42 Kandidaturen bleiben offen. Phase 21R.1 bleibt wegen dieser offenen Kandidaturen sowie des unabhängigen Fach-Zweitreviews unvollständig; der reale NVDA-/Narrator-Gate bleibt ebenfalls offen.
+
 ## Aktualisierung `exam-2022-2` (12.07.2026)
 
 Die Zweitklausur ist mit neun Aufgaben und 50 Punkten vollständig kanonisiert. Alle 15 Seiten einschließlich fünf leerer Rückseiten wurden visuell geprüft; vier byteidentische Dateien zählen als ein Klausurereignis. Aufgaben 1 bis 8 besitzen transparent authored Lösungen, Aufgabe 9 eine visuell abgeglichene spätere offizielle Übungslösung. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
 
-Der aktuelle Korpus umfasst 36 veröffentlichungsfähige Fragen in vier vollständigen Sammlungen, davon 17 mit vollständiger verifizierter offizieller Lösung und 19 mit authored Lösung. 48 Kandidaturen bleiben offen. Phase 21R.1 ist weiterhin nicht abgeschlossen; unabhängiger Fach-Zweitreview und realer Screenreader-Gate bleiben ebenfalls offen.
+Der damalige Korpus umfasste 36 veröffentlichungsfähige Fragen in vier vollständigen Sammlungen, davon 17 mit vollständiger verifizierter offizieller Lösung und 19 mit authored Lösung; 48 Kandidaturen waren offen. Dieser Zwischenstand ist durch `exam-2021-1` überholt. Phase 21R.1, unabhängiger Fach-Zweitreview und realer Screenreader-Gate bleiben offen.
 
 Phase 21R.1 ist **nicht abgeschlossen**. Der Korpus-Gate ist eingeführt, die vollständige manuelle Versöhnung der Evidenz steht noch aus.
 
@@ -12,15 +18,15 @@ Phase 21R.1 ist **nicht abgeschlossen**. Der Korpus-Gate ist eingeführt, die vo
 | --- | ---: |
 | Evidenzdatensätze | 633 |
 | Vorläufige Identitäten | 84 |
-| Manuell entschiedene Identitäten | 36 |
-| Veröffentlichungsfähige kanonische Fragen | 36 |
-| Offene Kandidaturen | 48 |
+| Manuell entschiedene Identitäten | 42 |
+| Veröffentlichungsfähige kanonische Fragen | 42 |
+| Offene Kandidaturen | 42 |
 | Öffentlich freigegebene Originalkopien | 0 |
-| Public-safe Rekonstruktionen | 36 |
+| Public-safe Rekonstruktionen | 42 |
 | Vollständige geprüfte offizielle Lösungen | 17 |
-| Vollständige authored solutions | 19 |
-| Abgeschlossene Sammlungen | 4 |
-| Automatisierte Tests | 253 grün |
+| Vollständige authored solutions | 25 |
+| Abgeschlossene Sammlungen | 5 |
+| Automatisierte Tests | 264 grün |
 | Deployment-Sicherheitsprüfung | 128 Artefakte, keine privaten Quellen oder lokalen Pfade |
 
 Die Probeklausur SS 2023 ist als erste Sammlung vollständig abgeschlossen. Alle elf Seiten der Aufgabenquelle und alle vierzehn Seiten der Beispiellösung wurden lokal visuell geprüft. Die neun Aufgaben besitzen eigenständig lösbare Körper, explizite Lösungen, Seitenbezüge, Ressourcenmappings und barrierefreie Alternativen für Graphen, Matrizen und Ablaufdarstellungen.
@@ -33,6 +39,6 @@ Die gedruckte DP-Rekurrenz von Aufgabe 8 schließt mit `j-P_i>0` den Randfall `j
 
 Als dritte Sammlung ist `exam-2022-1` vollständig abgeschlossen. Die neun Aufgaben ergeben 50 Punkte; alle 16 Seiten einschließlich der fünf leeren Rückseiten wurden visuell geprüft. Da keine offizielle Musterlösung derselben Ereignisidentität vorliegt, sind alle neun Lösungen transparent als authored markiert und durch deterministische Tests für Lastverteilung, Rot-Schwarz-Invarianten, Floyd-Warshall, Prim, Rekurrenz und DP abgesichert. [Quelle: `src-c4dde22523d3`, S. 1–16]
 
-Die zuvor geprüfte Sammlung `exam-2021-1` blieb zurückgestellt, weil die inventarisierte Lösungsdatei andere Aufgaben behandelt. Sie wurde nicht stillschweigend verbunden. [Klausur: `src-28fe81380661`, S. 2–7; abweichende Lösung: `src-39eb3d94f40a`, S. 1–16]
+Der damalige Zwischenstand stellte `exam-2021-1` wegen der falschen Lösungszuordnung zurück. Dieser historische Befund ist durch die getrennte authored Kanonisierung vom 13.07.2026 überholt; die falsche Datei wurde weiterhin nicht verbunden. [Klausur: `src-28fe81380661`, S. 2–7; abweichende Lösung: `src-39eb3d94f40a`, S. 1–16]
 
-Die nächste Arbeitseinheit muss die verbleibenden 57 Kandidaturen sammlungsweise in der festgelegten Priorität visuell prüfen. Bis dahin dürfen offene Evidenzkandidaturen weder als abgeschlossene Übungsaufgaben noch als Fragen im Simulator erscheinen.
+Die Angabe von 57 offenen Kandidaturen war der historische Stand nach `exam-2022-1` und ist überholt. Nach `exam-2022-2` und `exam-2021-1` bleiben 42 Kandidaturen, die sammlungsweise visuell zu prüfen sind. Bis dahin dürfen offene Evidenzkandidaturen weder als abgeschlossene Übungsaufgaben noch als Fragen im Simulator erscheinen.

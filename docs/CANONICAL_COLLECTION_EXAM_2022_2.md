@@ -24,4 +24,4 @@ Für Aufgaben 1 bis 8 wurde im lokalen Inventar keine passende offizielle Lösun
 
 ## Offene Gates
 
-Die Sammlung ist vollständig kanonisiert. Phase 21R.1 bleibt wegen 48 weiterer offener Identitätskandidaturen unvollständig. Ein unabhängiger fachlicher Zweitreview aller 36 kanonischen Fragen sowie der reale NVDA-/Narrator-Test bleiben offen.
+Die Sammlung ist vollständig kanonisiert. Historischer Stand nach diesem Abschluss: 48 offene Identitätskandidaturen und 36 kanonische Fragen. Diese Zahlen sind durch `exam-2021-1` überholt; Phase 21R.1, der unabhängige fachliche Zweitreview und der reale NVDA-/Narrator-Test bleiben offen.

@@ -2,9 +2,9 @@
   "schemaVersion": "1.0.0",
   "contentVersion": "1.0.0-rc.8",
   "status": "partial_manual_mapping",
-  "mappedCanonicalQuestionCount": 36,
+  "mappedCanonicalQuestionCount": 42,
   "unmappedCanonicalQuestionCount": 0,
-  "pendingCandidateCount": 48,
+  "pendingCandidateCount": 42,
   "mappings": [
     {
       "questionId": "mock-2023-task-1",
@@ -745,6 +745,123 @@
         "foundation-proofs"
       ],
       "verification": "Die Aufgabe kombiniert MST, Modernisierungswahl und Optimalitätsbeweis; kein Trainer deckt die Kombination vollständig ab."
+    },
+    {
+      "questionId": "exam-2021-1-task-1",
+      "topicIds": [
+        "topic-e48203925235",
+        "topic-916a9f1645f2"
+      ],
+      "taskSlotNumbers": [
+        6
+      ],
+      "moduleIds": [
+        "module-rekurrenz-master"
+      ],
+      "trainerIds": [
+        "trainer-rekurrenz-master-fall1-v1"
+      ],
+      "trainerCoverage": "partial",
+      "diagnosticCompetencyIds": [
+        "foundation-recurrences",
+        "foundation-asymptotics"
+      ],
+      "verification": "Das Rekurrenzmodul und der Master-Trainer sind methodisch relevant; der produktive Trainer behandelt jedoch nicht genau den quadratischen Zusatzterm dieser historischen Aufgabe."
+    },
+    {
+      "questionId": "exam-2021-1-task-2",
+      "topicIds": [
+        "topic-cd43140f32cc"
+      ],
+      "taskSlotNumbers": [
+        1
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "trainerCoverage": "missing",
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms"
+      ],
+      "verification": "Die historische Aufgabe verlangt LatenessScheduling; ein fachlich passender produktiver Trainer fehlt."
+    },
+    {
+      "questionId": "exam-2021-1-task-3",
+      "topicIds": [
+        "topic-646279964c76"
+      ],
+      "taskSlotNumbers": [
+        3
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "trainerCoverage": "missing",
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms"
+      ],
+      "verification": "Die historische Aufgabe verlangt Improved Bellman-Ford; ein fachlich passender produktiver Trainer fehlt."
+    },
+    {
+      "questionId": "exam-2021-1-task-4",
+      "topicIds": [
+        "topic-e05ae3743b24",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        5
+      ],
+      "moduleIds": [
+        "module-schleifeninvariante"
+      ],
+      "trainerIds": [
+        "trainer-schleifeninvariante-summe-v1"
+      ],
+      "trainerCoverage": "partial",
+      "diagnosticCompetencyIds": [
+        "foundation-proofs"
+      ],
+      "verification": "Der Invariantentrainer deckt die Beweismethode ab; die historische Aufgabe enthält zusätzlich einen dokumentierten Indexfehler und ist deshalb nur teilweise abgedeckt."
+    },
+    {
+      "questionId": "exam-2021-1-task-5",
+      "topicIds": [
+        "topic-c0af8532bb72",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        8
+      ],
+      "moduleIds": [
+        "module-dp-entwurf-mine"
+      ],
+      "trainerIds": [
+        "trainer-dp-entwurf-mine-v1"
+      ],
+      "trainerCoverage": "full",
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "verification": "Minenmodell, Zustand, Rekurrenz, Korrektheitsargument und Bottom-up-Auswertung entsprechen dem produktiven DP-Entwurfstrainer vollständig."
+    },
+    {
+      "questionId": "exam-2021-1-task-6",
+      "topicIds": [
+        "topic-62d0e3f58250",
+        "topic-e05ae3743b24"
+      ],
+      "taskSlotNumbers": [
+        9
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "trainerCoverage": "missing",
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms",
+        "foundation-proofs"
+      ],
+      "verification": "Die historische Aufgabe verlangt Artikulationsknotenerkennung mit wiederholter Suche und Beweis; ein fachlich passender produktiver Trainer fehlt."
     }
   ]
 }

@@ -893,6 +893,138 @@
       ],
       "relationshipVerified": true,
       "notes": "Vier exakte Klausurdubletten und die wortgleiche spätere offizielle Übungslösung wurden visuell abgeglichen."
+    },
+    {
+      "questionId": "exam-2021-1-task-1",
+      "evidenceIds": [
+        "q-0508ae79d06c",
+        "q-eb058faaa3b3"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 2
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 2
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Aufgabe und exakte Quelldublette versöhnt; keine passende offizielle Lösung gefunden, daher redaktionell hergeleitet."
+    },
+    {
+      "questionId": "exam-2021-1-task-2",
+      "evidenceIds": [
+        "q-546983ce44a1",
+        "q-ad764d729637"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 3
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 3
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Aufgabe und exakte Quelldublette versöhnt; keine passende offizielle Lösung gefunden, daher redaktionell hergeleitet."
+    },
+    {
+      "questionId": "exam-2021-1-task-3",
+      "evidenceIds": [
+        "q-1ade26a5e8f3",
+        "q-2e41f1d32d31"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 4
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 4
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Graph und exakte Quelldublette versöhnt; Bellman-Ford-Tabelle redaktionell hergeleitet und deterministisch geprüft."
+    },
+    {
+      "questionId": "exam-2021-1-task-4",
+      "evidenceIds": [
+        "q-cd065b285cd1",
+        "q-f60c6675da5e"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 5
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 5
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Aufgabe und exakte Quelldublette versöhnt; Widerspruch zwischen Deckblatt, Aufgabenüberschrift und Feldzugriff bleibt ausdrücklich dokumentiert."
+    },
+    {
+      "questionId": "exam-2021-1-task-5",
+      "evidenceIds": [
+        "q-0b5d29afa87d",
+        "q-bbed7955d794"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 6
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 6
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Matrix und exakte Quelldublette versöhnt; DP-Lösung redaktionell hergeleitet und deterministisch geprüft."
+    },
+    {
+      "questionId": "exam-2021-1-task-6",
+      "evidenceIds": [
+        "q-1e1e7714c44c",
+        "q-551d33d915a3"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 7
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 7
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Graphproblem und exakte Quelldublette versöhnt; Algorithmus redaktionell hergeleitet und exhaustiv auf kleinen Graphen geprüft."
     }
   ]
 }

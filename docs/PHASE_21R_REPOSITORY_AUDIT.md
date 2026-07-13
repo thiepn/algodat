@@ -1,8 +1,12 @@
 # Phase 21R: Repository-Audit
 
+## Aktualisierung `exam-2021-1`
+
+Der Korpus umfasst nun 42 final geprüfte Fragen in fünf vollständigen Sammlungen; 42 Kandidaturen bleiben offen. Die sechs historischen Aufgaben besitzen authored Lösungen. Die nachweislich unpassende Lösungsquelle bleibt vollständig getrennt und als Konflikt dokumentiert. Phase 21R und Phase 21R.1 bleiben wegen des offenen Restkorpus sowie der unabhängigen Fach- und realen Screenreader-Gates unvollständig. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
+
 ## Aktualisierung `exam-2022-2`
 
-Der Korpus umfasst nun 36 final geprüfte Fragen in vier vollständigen Sammlungen. 48 Kandidaturen bleiben offen. Acht neue Lösungen sind authored; Aufgabe 9 besitzt eine verifizierte offizielle spätere Lösung. Phase 21R und Phase 21R.1 bleiben unvollständig, ebenso die unabhängigen Fach- und realen Screenreader-Gates. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+Der damalige Korpus umfasste 36 final geprüfte Fragen in vier vollständigen Sammlungen; 48 Kandidaturen waren offen. Dieser Zwischenstand ist durch `exam-2021-1` überholt. Acht Lösungen der Zweitklausur sind authored; Aufgabe 9 besitzt eine verifizierte offizielle spätere Lösung. Phase 21R und Phase 21R.1 bleiben unvollständig, ebenso die unabhängigen Fach- und realen Screenreader-Gates. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
 
 Stand: 11. Juli 2026 · Basis: `ed0e6d73c6588d1f7eea54acc3fb9c2641709f6f`
 
@@ -32,4 +36,4 @@ Am 11.07.2026 wurde der kanonische Korpus-Gate eingeführt. Die vollständige Pr
 
 Die reale Klausursammlung `exam-2020-2` ist mit neun weiteren public-safe Rekonstruktionen vollständig. Zwölf Aufgaben- und zwölf Lösungsseiten wurden geprüft; zwei Titelseiten wurden ausgeschlossen. [Quelle: `src-97414623dd81`, S. 1–12; Lösung: `src-8a588d5ddc35`, S. 1–12]
 
-Der Korpus umfasst nun 27 final geprüfte Fragen in drei vollständigen Sammlungen. 57 Kandidaturen bleiben offen; Phase 21R und Phase 21R.1 bleiben deshalb ausdrücklich unvollständig. Die Review-Route bleibt entwicklungsbeschränkt, die Fragenvorschau feature-geschützt, und keine private Quelle wird ausgeliefert. Die neun neuen Lösungen zu `exam-2022-1` sind mangels offizieller Musterlösung transparent als authored markiert. [Quelle: `src-c4dde22523d3`, S. 1–16]
+Der damalige Stand nach `exam-2022-1` umfasste 27 Fragen und 57 offene Kandidaturen. Diese Angabe ist historisch und durch die späteren Abschlüsse von `exam-2022-2` und `exam-2021-1` überholt; aktuell sind es 42 Fragen und 42 offene Kandidaturen. Die Review-Route bleibt entwicklungsbeschränkt, die Fragenvorschau feature-geschützt, und keine private Quelle wird ausgeliefert. [Quelle: `src-c4dde22523d3`, S. 1–16]

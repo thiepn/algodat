@@ -2,7 +2,7 @@
   {
     "id": "rubric-trainer-graph-floyd-warshall-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "topicIds": [
       "topic-1fa208a0ed89",
       "topic-f5f6e171c082"
@@ -77,7 +77,7 @@
   {
     "id": "rubric-trainer-graph-dijkstra-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "topicIds": [
       "topic-e8b80c23286d",
       "topic-f5f6e171c082"
@@ -142,7 +142,7 @@
   {
     "id": "rubric-trainer-graph-prim-mst-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "topicIds": [
       "topic-6a47a10f37e0",
       "topic-c4a698fc939e"

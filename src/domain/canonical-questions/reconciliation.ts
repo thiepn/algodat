@@ -45,7 +45,11 @@ export function validateCanonicalQuestionReviewData(input: {
     ] as const)
       if (JSON.stringify(mapping[key]) !== JSON.stringify(question[key]))
         throw new Error(`${questionId}: Ressourcenmapping und kanonische Frage weichen ab.`);
-    if (mapping.trainerIds.length > 0 !== (mapping.trainerCoverage === 'available'))
+    const trainerIsLinked = mapping.trainerIds.length > 0;
+    const coverageRequiresTrainer = ['available', 'full', 'partial'].includes(
+      mapping.trainerCoverage,
+    );
+    if (trainerIsLinked !== coverageRequiresTrainer)
       throw new Error(`${questionId}: Trainerabdeckung ist nicht konsistent ausgewiesen.`);
   }
   for (const link of evidenceLinks.links)

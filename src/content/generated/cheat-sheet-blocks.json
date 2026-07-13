@@ -21,7 +21,7 @@
         "page": 11
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Landau-Notation beschreibt asymptotische Schranken.",
       "Konstante Faktoren ändern die asymptotische Klasse nicht.",
@@ -58,7 +58,7 @@
         "page": 25
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Rekurrenzform zuerst auf Parameter und Nebenterm prüfen.",
       "Vergleichsterm aus Teilproblemstruktur und Nebenkosten ableiten.",
@@ -98,7 +98,7 @@
         "page": 230
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Induktionsziel vor der Einsetzung festlegen.",
       "Basisfall, Induktionsvoraussetzung und Einsetzung getrennt schreiben.",
@@ -138,7 +138,7 @@
         "page": 132
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "IA: Invariante vor der ersten Iteration zeigen.",
       "IV/IS: Gültigkeit vor einer Iteration annehmen und nach dem Schleifenkörper zeigen.",
@@ -177,7 +177,7 @@
         "page": 8
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Greedy-Regel präzise formulieren.",
       "Austauschidee: eine optimale Lösung schrittweise mit der Greedy-Wahl kompatibel machen.",
@@ -212,7 +212,7 @@
         "page": 7
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Teilprobleme, Kombinationsfall und Randfall getrennt angeben.",
       "Rekurrenz aus Anzahl der Teilprobleme, Teilproblemgröße und Kombinationskosten ableiten.",
@@ -250,7 +250,7 @@
         "page": 11
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Zustand mit Bedeutung und Indexbereich definieren.",
       "Randfälle vor der allgemeinen Rekurrenz angeben.",
@@ -290,7 +290,7 @@
         "page": 9
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Voraussetzung: sortierte Suchmenge.",
       "Intervallgrenzen nach jedem Vergleich konsistent aktualisieren.",
@@ -324,7 +324,7 @@
         "page": 1
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Divide-and-Conquer: teilen, rekursiv sortieren, zusammenführen.",
       "Laufzeit über Rekurrenz der Teilung und Merge-Kosten begründen.",
@@ -362,7 +362,7 @@
         "page": 943
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Operationen: Make-Set, Find, Union.",
       "Listenvariante: Repräsentant, next-Zeiger und Listengröße konsistent führen.",
@@ -399,7 +399,7 @@
         "page": 6
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Suchbaumordnung ist keine Heap-Ordnung.",
       "Links/rechts-Beziehung immer relativ zum aktuellen Knoten prüfen.",
@@ -441,7 +441,7 @@
         "page": 20
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "BST-Einfügen zuerst, Reparatur danach.",
       "Invarianten: Wurzel schwarz, rote Knoten haben schwarze Kinder, gleiche Schwarzhöhe.",
@@ -482,7 +482,7 @@
         "page": 6
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Startdistanz setzen, übrige Distanzen initial als unendlich führen.",
       "Extract-Min wählt den nächsten fest markierten Knoten.",
@@ -523,7 +523,7 @@
         "page": 5
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Matrixverfahren für paarweise kürzeste Wege.",
       "Zwischenknotenmenge wächst schrittweise über die Iterationen.",
@@ -563,7 +563,7 @@
         "page": 955
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "MST-Problem ist vom kürzeste-Wege-Problem getrennt.",
       "Prim wächst von einem Startknoten über sichere Kanten.",
@@ -602,7 +602,7 @@
         "page": 390
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Zeilen und Kapazitäten gemäß Aufgabenkonvention indexieren.",
       "Eintrag vergleicht Ausschließen und Einschließen, falls das Item passt.",
@@ -645,7 +645,7 @@
         "page": 17
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Laufzeit immer in Bezug auf definierte Eingabegrößen angeben.",
       "Sortierung, Initialisierung und Kombinationsschritte mitzählen.",
@@ -684,7 +684,7 @@
         "page": 3
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Gerichtet/ungerichtet und gewichtet/ungewichtet zuerst lesen.",
       "Spannbaum, kürzester Weg und Erreichbarkeit sind verschiedene Ziele.",
@@ -729,7 +729,7 @@
         "page": 846
       }
     ],
-    "contentVersion": "phase16-cd9dcaabf06f",
+    "contentVersion": "phase16-97cc0129b092",
     "compactContent": [
       "Nicht aus Ergebnis oder Laufzeit auf Korrektheit schließen.",
       "Bei Entwurfsaufgaben Idee, Algorithmus, Laufzeit und Beweis trennen.",

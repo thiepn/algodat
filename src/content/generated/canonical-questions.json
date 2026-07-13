@@ -206,6 +206,52 @@
         }
       ],
       "reviewNotes": "Alle fünfzehn Seiten der kanonischen Klausur wurden visuell geprüft; die Seiten 7, 9, 11, 13 und 15 sind Leerseiten. Vier byteidentische Klausurdateien wurden dedupliziert. Für Aufgaben 1 bis 8 liegt keine passende Lösung vor; ihre Lösungen sind redaktionell hergeleitet. Die Aufgabenstellung von Aufgabe 9 stimmt vollständig mit einer offiziellen Übungslösung auf deren Seiten 3 und 4 überein."
+    },
+    {
+      "collectionId": "exam-2021-1",
+      "collectionType": "real_exam",
+      "state": "complete",
+      "expectedTaskCount": 6,
+      "expectedPointTotal": 60,
+      "decidedTaskCount": 6,
+      "verifiedQuestionIds": [
+        "exam-2021-1-task-1",
+        "exam-2021-1-task-2",
+        "exam-2021-1-task-3",
+        "exam-2021-1-task-4",
+        "exam-2021-1-task-5",
+        "exam-2021-1-task-6"
+      ],
+      "blockedCandidateIds": [],
+      "excludedEvidenceIds": [
+        "q-34e4c77f6292",
+        "q-426f5c618c6e"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 1,
+          "label": "Deckblatt, Prüfungsdaten und verbindliche Punktetabelle"
+        },
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 7,
+          "label": "Letzte Aufgabenseite"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 2,
+          "label": "Erste Aufgabenquelle für redaktionell hergeleitete Lösungen"
+        },
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 7,
+          "label": "Letzte Aufgabenquelle für redaktionell hergeleitete Lösungen"
+        }
+      ],
+      "reviewNotes": "Alle sieben Seiten sowie alle sechzehn Seiten der fälschlich zugeordneten Lösung wurden visuell geprüft. Zwei byteidentische Klausurdateien bilden ein Ereignis. Die angebliche Lösung src-39eb3d94f40a behandelt andere Aufgaben und bleibt getrennt. Die Deckblattsumme 60 wird beibehalten; der abweichende 6-Punkte-Aufdruck und der ungültige Schleifenrand in Aufgabe 4 sind als Quellenkonflikte dokumentiert."
     }
   ],
   "questions": [
@@ -6543,6 +6589,1108 @@
       "verifiedAt": "2026-07-12",
       "reviewNotes": "Die Klausuraufgabe und die offizielle Übungsaufgabe wurden vollständig textuell und visuell abgeglichen. Algorithmus, Grenzfall k<|V|−1 und Optimalität wurden zusätzlich unabhängig über Kruskal-Wälder verifiziert.",
       "duplicateGroupId": "qdup-e64a92177c2a"
+    },
+    {
+      "questionId": "exam-2021-1-task-1",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2021-1",
+      "examId": "exam-2021-1",
+      "sheetId": null,
+      "year": 2021,
+      "semester": "Sommersemester 2021",
+      "taskNumber": 1,
+      "subtaskLabels": [
+        "a",
+        "b"
+      ],
+      "title": "Rekurrenz und Master-Theorem für dreifache Rekursion",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Für n als Dreierpotenz, ein Feld A[1..n] reeller Zahlen und 1≤l≤r≤n ist der folgende rekursive Algorithmus gegeben. Beim ersten Aufruf gilt l=1 und r=n."
+        },
+        {
+          "type": "pseudocode",
+          "code": "BerechneEtwas(A,l,r):\n  falls r=l dann return A[l]+1\n  m1 ← (r−l+1)/3+l−1\n  m2 ← 2·(r−l+1)/3+l−1\n  a ← BerechneEtwas(A,l,m1)\n  b ← BerechneEtwas(A,m1+1,m2)\n  c ← BerechneEtwas(A,m2+1,r)\n  d ← 0\n  für i ← l bis r do\n    für j ← l bis r do\n      falls i=j dann d ← d+A[i]·A[j]\n  return a+b+c+d",
+          "textAlternative": "Ein Intervall der Länge eins liefert seinen Feldeintrag plus eins. Ein größeres Intervall wird in drei gleich große Teile zerlegt und rekursiv ausgewertet. Danach durchlaufen zwei geschachtelte Schleifen alle Indexpaarungen; bei gleichen Indizes wird das Quadrat des Feldeintrags addiert."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Geben Sie eine Rekurrenz für die Worst-Case-Laufzeit T(n) an."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Bestimmen Sie mit dem Master-Theorem eine möglichst langsam wachsende Funktion f mit T(n)∈O(f(n))."
+            }
+          ]
+        }
+      ],
+      "points": 6,
+      "estimatedMinutes": 12,
+      "difficulty": "mittel",
+      "expectedDeliverables": [
+        "Rekurrenz mit Basisfall und nichtrekursivem Aufwand.",
+        "Master-Theorem-Vergleich und asymptotische Schranke."
+      ],
+      "allowedNotation": [
+        "T(n) für die Worst-Case-Laufzeit eines Intervalls der Länge n"
+      ],
+      "conventions": [
+        "n ist eine positive Dreierpotenz.",
+        "Jeder Schleifendurchlauf und jede arithmetische Operation hat konstanten Aufwand."
+      ],
+      "tieBreakingRules": [],
+      "topicIds": [
+        "topic-e48203925235",
+        "topic-916a9f1645f2"
+      ],
+      "taskSlotNumbers": [
+        6
+      ],
+      "moduleIds": [
+        "module-rekurrenz-master"
+      ],
+      "trainerIds": [
+        "trainer-rekurrenz-master-fall1-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-recurrences",
+        "foundation-asymptotics"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "math",
+            "latex": "T(1)=\\Theta(1),\\qquad T(n)=3T(n/3)+\\Theta(n^2)\\quad(n>1)",
+            "textAlternative": "Der Basisfall benötigt konstanten Aufwand. Für n größer eins entstehen drei Teilprobleme der Größe n Drittel und quadratischer Aufwand durch die beiden Schleifen."
+          },
+          {
+            "type": "paragraph",
+            "text": "Es gilt a=3, b=3 und n^(log_b a)=n. Der Zusatzaufwand n² ist polynomial größer; außerdem ist 3·(n/3)²=n²/3. Der dominierende Master-Fall liefert T(n)∈Θ(n²), insbesondere T(n)∈O(n²)."
+          }
+        ],
+        "provenance": "authored_from_verified_method"
+      },
+      "solutionStatus": "authored_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 2,
+          "label": "Klausur vom 29.09.2021, Aufgabe 1"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 2,
+          "label": "Aufgabenquelle; Laufzeitanalyse redaktionell hergeleitet"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Keine passende offizielle Lösung gefunden; der vorhandene Rekurrenztrainer deckt einen anderen Master-Fall ab und ist nur teilweise passend.",
+      "verifiedBy": "Korpusreview Phase 21R.5",
+      "verifiedAt": "2026-07-13",
+      "reviewNotes": "Pseudocode und Schleifenbounds wurden visuell geprüft; Rekurrenz und Schranke wurden durch Auswertung auf Dreierpotenzen kontrolliert.",
+      "duplicateGroupId": "qdup-exam-2021-1-task-1"
+    },
+    {
+      "questionId": "exam-2021-1-task-2",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2021-1",
+      "examId": "exam-2021-1",
+      "sheetId": null,
+      "year": 2021,
+      "semester": "Sommersemester 2021",
+      "taskNumber": 2,
+      "subtaskLabels": [],
+      "title": "LatenessScheduling mit neun Aufgaben",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Ordnen Sie die neun Aufgaben so, dass LatenessScheduling anwendbar ist, führen Sie den Algorithmus in dieser Reihenfolge aus und nennen Sie seine Ausgabe sowie alle Aufgaben, die nach ihrer Deadline enden."
+        },
+        {
+          "type": "matrix",
+          "label": "Aufgaben mit Bearbeitungsdauer und Deadline",
+          "columnHeaders": [
+            "Aufgabe",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "rows": [
+            [
+              "Bearbeitungsdauer",
+              "3",
+              "2",
+              "2",
+              "2",
+              "4",
+              "1",
+              "3",
+              "6",
+              "7"
+            ],
+            [
+              "Deadline",
+              "15",
+              "25",
+              "4",
+              "30",
+              "16",
+              "1",
+              "26",
+              "12",
+              "21"
+            ]
+          ],
+          "textAlternative": "Die Tupel Bearbeitungsdauer, Deadline lauten: Aufgabe 1 (3,15), Aufgabe 2 (2,25), Aufgabe 3 (2,4), Aufgabe 4 (2,30), Aufgabe 5 (4,16), Aufgabe 6 (1,1), Aufgabe 7 (3,26), Aufgabe 8 (6,12) und Aufgabe 9 (7,21)."
+        }
+      ],
+      "points": 6,
+      "estimatedMinutes": 12,
+      "difficulty": "mittel",
+      "expectedDeliverables": [
+        "Reihenfolge nach nichtabsteigenden Deadlines.",
+        "Start- und Endzeit jeder Aufgabe.",
+        "Ausgabe und Menge der verspäteten Aufgaben."
+      ],
+      "allowedNotation": [
+        "(Bearbeitungsdauer, Deadline)",
+        "L_i=max(0,C_i−d_i)"
+      ],
+      "conventions": [
+        "Die Bearbeitung beginnt bei Zeit 0.",
+        "Aufgaben werden ohne Unterbrechung nacheinander ausgeführt."
+      ],
+      "tieBreakingRules": [
+        "Bei gleichen Deadlines gewinnt die kleinere Aufgabennummer."
+      ],
+      "topicIds": [
+        "topic-cd43140f32cc"
+      ],
+      "taskSlotNumbers": [
+        1
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "matrix",
+            "label": "Ablauf nach Deadline-Reihenfolge",
+            "columnHeaders": [
+              "Position",
+              "Aufgabe",
+              "Start",
+              "Ende",
+              "Deadline",
+              "Verspätung"
+            ],
+            "rows": [
+              [
+                "1",
+                "6",
+                "0",
+                "1",
+                "1",
+                "0"
+              ],
+              [
+                "2",
+                "3",
+                "1",
+                "3",
+                "4",
+                "0"
+              ],
+              [
+                "3",
+                "8",
+                "3",
+                "9",
+                "12",
+                "0"
+              ],
+              [
+                "4",
+                "1",
+                "9",
+                "12",
+                "15",
+                "0"
+              ],
+              [
+                "5",
+                "5",
+                "12",
+                "16",
+                "16",
+                "0"
+              ],
+              [
+                "6",
+                "9",
+                "16",
+                "23",
+                "21",
+                "2"
+              ],
+              [
+                "7",
+                "2",
+                "23",
+                "25",
+                "25",
+                "0"
+              ],
+              [
+                "8",
+                "7",
+                "25",
+                "28",
+                "26",
+                "2"
+              ],
+              [
+                "9",
+                "4",
+                "28",
+                "30",
+                "30",
+                "0"
+              ]
+            ],
+            "textAlternative": "Die Reihenfolge ist 6, 3, 8, 1, 5, 9, 2, 7, 4. Nur Aufgaben 9 und 7 enden nach ihrer Deadline; beide sind um zwei Zeiteinheiten verspätet."
+          },
+          {
+            "type": "paragraph",
+            "text": "Die Ausgabe ist der dargestellte Ablauf mit maximaler Verspätung 2. Verspätet sind genau Aufgabe 9 mit Endzeit 23 statt Deadline 21 und Aufgabe 7 mit Endzeit 28 statt Deadline 26."
+          }
+        ],
+        "provenance": "authored_from_verified_method"
+      },
+      "solutionStatus": "authored_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 3,
+          "label": "Klausur vom 29.09.2021, Aufgabe 2"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 3,
+          "label": "Aufgabeninstanz; Ablauf redaktionell hergeleitet"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Keine passende offizielle Lösung und kein produktiver LatenessScheduling-Trainer vorhanden.",
+      "verifiedBy": "Korpusreview Phase 21R.5",
+      "verifiedAt": "2026-07-13",
+      "reviewNotes": "Alle neun Tupel wurden visuell geprüft; Sortierung, Abschlusszeiten und Verspätungen wurden deterministisch simuliert.",
+      "duplicateGroupId": "qdup-exam-2021-1-task-2"
+    },
+    {
+      "questionId": "exam-2021-1-task-3",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2021-1",
+      "examId": "exam-2021-1",
+      "sheetId": null,
+      "year": 2021,
+      "semester": "Sommersemester 2021",
+      "taskNumber": 3,
+      "subtaskLabels": [],
+      "title": "Verbesserter Bellman-Ford mit Rundentabelle",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Führen Sie die verbesserte Bellman-Ford-Version mit Startknoten 1 aus. Tragen Sie nach jeder äußeren Runde die Distanzwerte ein; die Knoten werden innerhalb einer Runde in aufsteigender Reihenfolge betrachtet."
+        },
+        {
+          "type": "graph",
+          "label": "Gerichteter gewichteter Graph",
+          "nodes": [
+            {
+              "id": "1",
+              "label": "1",
+              "x": 8,
+              "y": 40
+            },
+            {
+              "id": "2",
+              "label": "2",
+              "x": 35,
+              "y": 18
+            },
+            {
+              "id": "3",
+              "label": "3",
+              "x": 35,
+              "y": 62
+            },
+            {
+              "id": "4",
+              "label": "4",
+              "x": 62,
+              "y": 18
+            },
+            {
+              "id": "5",
+              "label": "5",
+              "x": 88,
+              "y": 40
+            },
+            {
+              "id": "6",
+              "label": "6",
+              "x": 62,
+              "y": 62
+            }
+          ],
+          "edges": [
+            {
+              "from": "1",
+              "to": "5",
+              "label": "2",
+              "directed": true
+            },
+            {
+              "from": "1",
+              "to": "3",
+              "label": "8",
+              "directed": true
+            },
+            {
+              "from": "2",
+              "to": "3",
+              "label": "2",
+              "directed": true
+            },
+            {
+              "from": "3",
+              "to": "2",
+              "label": "3",
+              "directed": true
+            },
+            {
+              "from": "4",
+              "to": "3",
+              "label": "1",
+              "directed": true
+            },
+            {
+              "from": "5",
+              "to": "4",
+              "label": "2",
+              "directed": true
+            },
+            {
+              "from": "6",
+              "to": "3",
+              "label": "6",
+              "directed": true
+            },
+            {
+              "from": "6",
+              "to": "5",
+              "label": "4",
+              "directed": true
+            }
+          ],
+          "textAlternative": "Knoten 1 bis 6. Gerichtete Kanten mit Gewichten: 1 nach 5 Gewicht 2, 1 nach 3 Gewicht 8, 2 nach 3 Gewicht 2, 3 nach 2 Gewicht 3, 4 nach 3 Gewicht 1, 5 nach 4 Gewicht 2, 6 nach 3 Gewicht 6 und 6 nach 5 Gewicht 4."
+        }
+      ],
+      "points": 6,
+      "estimatedMinutes": 14,
+      "difficulty": "mittel",
+      "expectedDeliverables": [
+        "Distanzvektor für Runde 0 bis 5.",
+        "Erkennbarer Abbruch nach einer Runde ohne Änderung."
+      ],
+      "allowedNotation": [
+        "∞ für nicht erreichbare Knoten"
+      ],
+      "conventions": [
+        "Eine Runde verwendet die Distanzwerte der vorherigen Runde.",
+        "Die verbesserte Variante beendet sich bei einer Runde ohne Änderung."
+      ],
+      "tieBreakingRules": [
+        "Knoten werden aufsteigend betrachtet."
+      ],
+      "topicIds": [
+        "topic-646279964c76"
+      ],
+      "taskSlotNumbers": [
+        3
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "matrix",
+            "label": "Bellman-Ford-Rundentabelle",
+            "columnHeaders": [
+              "i",
+              "d[1]",
+              "d[2]",
+              "d[3]",
+              "d[4]",
+              "d[5]",
+              "d[6]"
+            ],
+            "rows": [
+              [
+                "0",
+                "0",
+                "∞",
+                "∞",
+                "∞",
+                "∞",
+                "∞"
+              ],
+              [
+                "1",
+                "0",
+                "∞",
+                "8",
+                "∞",
+                "2",
+                "∞"
+              ],
+              [
+                "2",
+                "0",
+                "11",
+                "8",
+                "4",
+                "2",
+                "∞"
+              ],
+              [
+                "3",
+                "0",
+                "11",
+                "5",
+                "4",
+                "2",
+                "∞"
+              ],
+              [
+                "4",
+                "0",
+                "8",
+                "5",
+                "4",
+                "2",
+                "∞"
+              ],
+              [
+                "5",
+                "0",
+                "8",
+                "5",
+                "4",
+                "2",
+                "∞"
+              ]
+            ],
+            "textAlternative": "Die Distanzvektoren für Knoten 1 bis 6 sind: Runde 0: 0, unendlich, unendlich, unendlich, unendlich, unendlich. Runde 1: 0, unendlich, 8, unendlich, 2, unendlich. Runde 2: 0, 11, 8, 4, 2, unendlich. Runde 3: 0, 11, 5, 4, 2, unendlich. Runde 4 und 5: 0, 8, 5, 4, 2, unendlich."
+          },
+          {
+            "type": "paragraph",
+            "text": "Die Verbesserungen folgen nacheinander dem Weg 1→5→4→3→2. Knoten 6 ist vom Start aus nicht erreichbar. Runde 5 ändert keinen Wert; die verbesserte Variante kann dort beenden."
+          }
+        ],
+        "provenance": "authored_from_verified_method"
+      },
+      "solutionStatus": "authored_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 4,
+          "label": "Klausur vom 29.09.2021, Aufgabe 3"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 4,
+          "label": "Graphinstanz; Rundentabelle redaktionell hergeleitet"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Keine passende offizielle Lösung und kein produktiver Bellman-Ford-Trainer vorhanden.",
+      "verifiedBy": "Korpusreview Phase 21R.5",
+      "verifiedAt": "2026-07-13",
+      "reviewNotes": "Alle Pfeilrichtungen und Gewichte wurden hochauflösend geprüft; jede Runde wurde mit einer synchronen Relaxationsimplementierung reproduziert.",
+      "duplicateGroupId": "qdup-exam-2021-1-task-3"
+    },
+    {
+      "questionId": "exam-2021-1-task-4",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2021-1",
+      "examId": "exam-2021-1",
+      "sheetId": null,
+      "year": 2021,
+      "semester": "Sommersemester 2021",
+      "taskNumber": 4,
+      "subtaskLabels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "title": "Schleifeninvariante mit dokumentiertem Indexfehler",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Das folgende gedruckte Programm erhält ein Feld B[1..n] reeller Zahlen. Untersuchen Sie die Behauptung, es berechne das Minimum, und bearbeiten Sie die verlangten Beweisschritte unter ausdrücklicher Berücksichtigung des Schleifenrandes."
+        },
+        {
+          "type": "pseudocode",
+          "code": "BerechneEtwas(B,n):\n  m ← B[1]\n  für i ← 1 bis n do\n    falls m > B[i+1] dann\n      m ← B[i+1]\n  return m",
+          "textAlternative": "m startet mit B eins. Für i von eins bis n wird B i plus eins mit m verglichen und gegebenenfalls als neues m gespeichert. Danach wird m ausgegeben. Bei i gleich n wird B n plus eins gelesen, obwohl das Feld nur bis n definiert ist."
+        },
+        {
+          "type": "callout",
+          "title": "Quellenkonflikt",
+          "text": "Der Originalcode liest in der letzten Iteration B[n+1] und ist für B[1..n] nicht definiert. Zusätzlich nennt die Aufgabenseite 6 Punkte, während die Deckblatttabelle dieser Aufgabe 10 Punkte und insgesamt 60 Punkte zuweist."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Formulieren Sie eine geeignete Schleifeninvariante für die beabsichtigte, indexgültige Variante mit i=1 bis n−1."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beweisen Sie diese Invariante durch Induktion."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "c",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Leiten Sie den Rückgabewert der korrigierten Variante ab und erklären Sie, warum dies den gedruckten Code nicht nachträglich korrekt macht."
+            }
+          ]
+        }
+      ],
+      "points": 10,
+      "estimatedMinutes": 18,
+      "difficulty": "mittel",
+      "expectedDeliverables": [
+        "Benennung des ungültigen Zugriffs B[n+1].",
+        "Invariante für die indexgültige Variante.",
+        "Induktionsbeweis und Schlussargument."
+      ],
+      "allowedNotation": [
+        "min über Feldpräfixe"
+      ],
+      "conventions": [
+        "Die kanonische Punktzahl 10 folgt der Deckblatttabelle mit Gesamtsumme 60.",
+        "Der gedruckte Code wird nicht stillschweigend verändert."
+      ],
+      "tieBreakingRules": [],
+      "topicIds": [
+        "topic-e05ae3743b24",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        5
+      ],
+      "moduleIds": [
+        "module-schleifeninvariante"
+      ],
+      "trainerIds": [
+        "trainer-schleifeninvariante-summe-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-proofs"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Für den gedruckten Code ist die verlangte Behauptung nicht beweisbar: In der Iteration i=n wird auf B[n+1] außerhalb des definierten Feldes zugegriffen. Je nach Laufzeitmodell entsteht ein Fehler oder ein nicht spezifizierter Wert."
+          },
+          {
+            "type": "math",
+            "latex": "I(i):\\quad m=\\min\\{B[1],\\ldots,B[i]\\}\\qquad(1\\le i\\le n)",
+            "textAlternative": "Für die korrigierte Schleife von i gleich eins bis n minus eins gilt vor Iteration i: m ist das Minimum der Einträge B eins bis B i."
+          },
+          {
+            "type": "paragraph",
+            "text": "Korrigierte Variante: Die Schleife endet bei n−1. Vor Iteration 1 gilt m=B[1]. Gilt vor Iteration i die Invariante, vergleicht die Iteration m mit B[i+1] und setzt danach m auf das Minimum von B[1..i+1]; damit gilt die Invariante vor der nächsten Iteration. Nach Iteration n−1 ist m=min B[1..n]. Dies beweist ausschließlich die korrigierte Variante und dokumentiert den Fehler des Originals."
+          }
+        ],
+        "provenance": "authored_from_verified_method"
+      },
+      "solutionStatus": "authored_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 1,
+          "label": "Deckblatt mit verbindlicher 10-Punkte-Zuweisung"
+        },
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 5,
+          "label": "Aufgabe 4 mit abweichender Punktzahl und gedrucktem Schleifenrand"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 5,
+          "label": "Fehlerhafte Aufgabenfassung; Korrekturanalyse redaktionell hergeleitet"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Der Originalcode ist wegen B[n+1] nicht wohldefiniert. Die Lösung beweist transparent nur die minimal korrigierte Variante; keine passende offizielle Lösung wurde gefunden.",
+      "verifiedBy": "Korpusreview Phase 21R.5",
+      "verifiedAt": "2026-07-13",
+      "reviewNotes": "Indexbereich und Punktkonflikt wurden visuell auf Deckblatt und Aufgabenseite geprüft; Original- und Korrekturvariante wurden getrennt simuliert.",
+      "duplicateGroupId": "qdup-exam-2021-1-task-4"
+    },
+    {
+      "questionId": "exam-2021-1-task-5",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2021-1",
+      "examId": "exam-2021-1",
+      "sheetId": null,
+      "year": 2021,
+      "semester": "Sommersemester 2021",
+      "taskNumber": 5,
+      "subtaskLabels": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "title": "Dynamische Programmierung für einen Weg durch eine Mine",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Eine Mine ist eine k×ℓ-Matrix A natürlicher Erzwerte mit ℓ>1. Der Weg startet in einer beliebigen Spalte der ersten Zeile und geht pro Schritt eine Zeile tiefer: in derselben Spalte oder diagonal in eine benachbarte Spalte, sofern diese existiert. Gesucht ist die maximale Erzsumme eines Weges bis zur letzten Zeile."
+        },
+        {
+          "type": "matrix",
+          "label": "Beispielmine",
+          "columnHeaders": [
+            "Zeile",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "rows": [
+            [
+              "1",
+              "5",
+              "6",
+              "12",
+              "9",
+              "43"
+            ],
+            [
+              "2",
+              "44",
+              "16",
+              "55",
+              "8",
+              "1"
+            ],
+            [
+              "3",
+              "101",
+              "12",
+              "106",
+              "18",
+              "2"
+            ],
+            [
+              "4",
+              "17",
+              "19",
+              "22",
+              "41",
+              "6"
+            ]
+          ],
+          "textAlternative": "Die vier Matrixzeilen lauten 5, 6, 12, 9, 43; 44, 16, 55, 8, 1; 101, 12, 106, 18, 2; 17, 19, 22, 41, 6."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Definieren Sie G(i,j) als besten Wegwert, der in A[i,j] endet, und geben Sie alle Basis-, Rand- und Innenfälle an."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beweisen Sie die Rekurrenz."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "c",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Geben Sie einen dynamischen Bottom-up-Algorithmus und die Ergebnisextraktion an."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "d",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Analysieren Sie die asymptotische Worst-Case-Laufzeit."
+            }
+          ]
+        }
+      ],
+      "points": 16,
+      "estimatedMinutes": 28,
+      "difficulty": "schwer",
+      "expectedDeliverables": [
+        "DP-Zustand, Basis- und Randfälle.",
+        "Korrektheitsbeweis.",
+        "Bottom-up-Pseudocode und Ergebnisextraktion.",
+        "Worst-Case-Laufzeit."
+      ],
+      "allowedNotation": [
+        "G(i,j) für den besten in A[i,j] endenden Weg"
+      ],
+      "conventions": [
+        "Indizes außerhalb 1..ℓ sind unzulässig und werden nicht gelesen."
+      ],
+      "tieBreakingRules": [],
+      "topicIds": [
+        "topic-c0af8532bb72",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        8
+      ],
+      "moduleIds": [
+        "module-dp-entwurf-mine"
+      ],
+      "trainerIds": [
+        "trainer-dp-entwurf-mine-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "math",
+            "latex": "G(1,j)=A[1,j],\\quad G(i,j)=A[i,j]+\\max_{p\\in\\{j-1,j,j+1\\}\\cap\\{1,\\ldots,\\ell\\}}G(i-1,p)",
+            "textAlternative": "In der ersten Zeile ist G gleich dem jeweiligen Erzwert. Danach addiert man A i j zum Maximum der existierenden Vorgänger links oben, oben und rechts oben."
+          },
+          {
+            "type": "paragraph",
+            "text": "Induktion über die Zeilen: Für Zeile 1 besteht jeder Weg nur aus seinem Startfeld. Jeder Weg nach A[i,j] muss zuletzt von genau einem der zulässigen Vorgänger in Zeile i−1 kommen. Nach Induktionsannahme enthält G dort die jeweils beste Summe; das Maximum wählt daher genau den besten Weg nach A[i,j]. Das Gesamtergebnis ist max_j G(k,j)."
+          },
+          {
+            "type": "pseudocode",
+            "code": "für j ← 1 bis ℓ do G[1,j] ← A[1,j]\nfür i ← 2 bis k do\n  für j ← 1 bis ℓ do\n    G[i,j] ← A[i,j] + Maximum der existierenden Werte G[i−1,j−1], G[i−1,j], G[i−1,j+1]\nreturn max_{1≤j≤ℓ} G[k,j]",
+            "textAlternative": "Initialisiere die erste Tabellenzeile mit der ersten Minenzeile. Fülle jede weitere Zeile aus den bis zu drei Vorgängern und gib das Maximum der letzten Zeile aus."
+          },
+          {
+            "type": "dp_table",
+            "label": "DP-Tabelle der Beispielmine",
+            "columnHeaders": [
+              "Zeile",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "rows": [
+              [
+                "1",
+                "5",
+                "6",
+                "12",
+                "9",
+                "43"
+              ],
+              [
+                "2",
+                "50",
+                "28",
+                "67",
+                "51",
+                "44"
+              ],
+              [
+                "3",
+                "151",
+                "79",
+                "173",
+                "85",
+                "53"
+              ],
+              [
+                "4",
+                "168",
+                "192",
+                "195",
+                "214",
+                "91"
+              ]
+            ],
+            "textAlternative": "Die DP-Zeilen sind 5, 6, 12, 9, 43; 50, 28, 67, 51, 44; 151, 79, 173, 85, 53; 168, 192, 195, 214, 91. Der Optimalwert ist 214."
+          },
+          {
+            "type": "paragraph",
+            "text": "Es gibt k·ℓ Zustände und höchstens drei Vorgänger pro Zustand. Die Laufzeit ist Θ(k·ℓ), der dargestellte Speicher Θ(k·ℓ) und mit zwei Zeilen auf Θ(ℓ) reduzierbar."
+          }
+        ],
+        "provenance": "authored_from_verified_method"
+      },
+      "solutionStatus": "authored_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 6,
+          "label": "Klausur vom 29.09.2021, Aufgabe 5"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 6,
+          "label": "Minenproblem; DP-Lösung redaktionell hergeleitet"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Keine passende offizielle Lösung gefunden; der produktive Minen-DP-Trainer deckt die Aufgabenfamilie und dieselbe Beispielmatrix vollständig ab.",
+      "verifiedBy": "Korpusreview Phase 21R.5",
+      "verifiedAt": "2026-07-13",
+      "reviewNotes": "Matrix, Bewegungsregeln und vier Teilaufgaben wurden visuell geprüft; DP-Tabelle und Optimalwert wurden gegen vollständige Wegsuche verifiziert.",
+      "duplicateGroupId": "qdup-exam-2021-1-task-5"
+    },
+    {
+      "questionId": "exam-2021-1-task-6",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2021-1",
+      "examId": "exam-2021-1",
+      "sheetId": null,
+      "year": 2021,
+      "semester": "Sommersemester 2021",
+      "taskNumber": 6,
+      "subtaskLabels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "title": "Schnittknoten durch wiederholte Zusammenhangsprüfung",
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Gegeben ist ein ungerichteter, ungewichteter und zusammenhängender Graph G=(V,E). Für v∈V entsteht G′_v, indem v und alle inzidenten Kanten entfernt werden. Entscheiden Sie, ob es ein v gibt, für das G′_v nicht zusammenhängend ist."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beschreiben Sie die Idee und geben Sie Pseudocode an. Für volle Punktzahl wird O(|V|·(|V|+|E|)) erwartet."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Begründen Sie die Worst-Case-Laufzeit."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "c",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beweisen Sie die Korrektheit."
+            }
+          ]
+        }
+      ],
+      "points": 16,
+      "estimatedMinutes": 27,
+      "difficulty": "schwer",
+      "expectedDeliverables": [
+        "Algorithmus mit wiederholter BFS oder DFS.",
+        "Laufzeitbegründung.",
+        "Korrektheitsbeweis in beide Richtungen."
+      ],
+      "allowedNotation": [
+        "G−v für den Graphen ohne v und seine inzidenten Kanten"
+      ],
+      "conventions": [
+        "Ein Graph mit höchstens einem Knoten gilt als zusammenhängend.",
+        "BFS oder DFS ignoriert den entfernten Knoten v."
+      ],
+      "tieBreakingRules": [],
+      "topicIds": [
+        "topic-62d0e3f58250",
+        "topic-e05ae3743b24"
+      ],
+      "taskSlotNumbers": [
+        9
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms",
+        "foundation-proofs"
+      ],
+      "solution": {
+        "blocks": [
+          {
+            "type": "pseudocode",
+            "code": "HatSchnittknoten(G=(V,E)):\n  falls |V|≤2 dann return false\n  für jeden Knoten v∈V do\n    wähle einen Startknoten s∈V\\{v}\n    R ← BFS oder DFS ab s, wobei v und inzidente Kanten ignoriert werden\n    falls |R| < |V|−1 dann return true\n  return false",
+            "textAlternative": "Für jeden möglichen entfernten Knoten wird von einem verbleibenden Knoten aus eine Graphsuche ohne diesen Knoten durchgeführt. Erreicht sie nicht alle übrigen Knoten, wird wahr ausgegeben; sonst nach allen Kandidaten falsch."
+          },
+          {
+            "type": "paragraph",
+            "text": "Eine Graphsuche benötigt O(|V|+|E|). Sie wird für höchstens |V| Knoten ausgeführt; Auswahl und Größenvergleich sind darin enthalten. Insgesamt ergibt sich O(|V|·(|V|+|E|))."
+          },
+          {
+            "type": "paragraph",
+            "text": "Korrektheit: Gibt der Algorithmus für v wahr aus, erreicht die Suche in G−v nicht alle verbleibenden Knoten. Da eine vollständige BFS oder DFS genau die Zusammenhangskomponente des Startknotens besucht, ist G−v nicht zusammenhängend. Existiert umgekehrt ein v mit nicht zusammenhängendem G−v, liegt der gewählte Start in nur einer seiner Komponenten; die Suche kann keine andere Komponente erreichen und besucht weniger als |V|−1 Knoten. Der Algorithmus gibt bei diesem v wahr aus. Gibt er falsch aus, ist deshalb G−v für jedes v zusammenhängend."
+          }
+        ],
+        "provenance": "authored_from_verified_method"
+      },
+      "solutionStatus": "authored_solution",
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 7,
+          "label": "Klausur vom 29.09.2021, Aufgabe 6"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-28fe81380661",
+          "page": 7,
+          "label": "Graphproblem; Algorithmus und Beweis redaktionell hergeleitet"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Keine passende offizielle Lösung und kein produktiver Schnittknoten-Trainer vorhanden; der Korrektheitsbeweis wurde strukturiert manuell geprüft.",
+      "verifiedBy": "Korpusreview Phase 21R.5",
+      "verifiedAt": "2026-07-13",
+      "reviewNotes": "Graphdefinition, Laufzeitziel und drei Teilaufgaben wurden visuell geprüft; die Ausgabe wurde auf allen kleinen ungerichteten Graphen gegen eine Brute-Force-Komponentenzählung verglichen.",
+      "duplicateGroupId": "qdup-exam-2021-1-task-6"
     }
   ]
 }

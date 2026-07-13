@@ -1,8 +1,12 @@
 # Known Limitations
 
+## Aktualisierung `exam-2021-1`
+
+Der Korpus enthält nun 42 public-safe Rekonstruktionen; 42 Kandidaturen bleiben offen. Die sechs Lösungen der historischen Erstklausur sind authored, weil die vollständig geprüfte vermeintliche Lösungsdatei andere Aufgaben behandelt und getrennt bleibt. Ein unabhängiger fachlicher Zweitreview und der reale NVDA-/Narrator-Gate bleiben offen. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
+
 ## Aktualisierung `exam-2022-2`
 
-Der Korpus enthält nun 36 public-safe Rekonstruktionen; 48 Kandidaturen bleiben offen. Aufgaben 1 bis 8 der neuen Sammlung besitzen authored Lösungen, Aufgabe 9 eine verifizierte spätere offizielle Übungslösung. Unabhängiger fachlicher Zweitreview und realer NVDA-/Narrator-Gate bleiben offen. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+Der historische Stand nach dieser Sammlung betrug 36 public-safe Rekonstruktionen und 48 offene Kandidaturen; beide Zahlen sind durch `exam-2021-1` überholt. Aufgaben 1 bis 8 der Sammlung besitzen authored Lösungen, Aufgabe 9 eine verifizierte spätere offizielle Übungslösung. Unabhängiger fachlicher Zweitreview und realer NVDA-/Narrator-Gate bleiben offen. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
 
 ## Phase 20.1
 
@@ -40,4 +44,4 @@ Der kanonische Fragenkorpus enthält derzeit neun manuell geprüfte, public-safe
 
 Aktualisierung 11.07.2026: Zusätzlich ist `exam-2020-2` mit neun realen Klausurfragen abgeschlossen. Der Korpus enthält damit 18 final geprüfte public-safe Rekonstruktionen; 66 Kandidaturen bleiben offen. Ein unabhängiger Zweitreview der 18 Fragen sowie der reale NVDA-/Narrator-Gate stehen weiterhin aus. Aufgabe 8 der realen Sammlung verwendet eine ausdrücklich als authored markierte Korrektur des dokumentierten Rekurrenz-Randfallfehlers. [Lösung: `src-8a588d5ddc35`, S. 9]
 
-Aktualisierung 12.07.2026: `exam-2022-1` ergänzt neun vollständig geprüfte reale Klausurfragen. Der Korpus enthält nun 27 public-safe Rekonstruktionen; 57 Kandidaturen bleiben offen. Für die neue Sammlung existiert keine offizielle Musterlösung im Korpus, daher sind alle neun Lösungen authored und benötigen weiterhin einen unabhängigen fachlichen Zweitreview. `exam-2021-1` bleibt wegen einer nachgewiesenen falschen Lösungszuordnung zurückgestellt. Der reale NVDA-/Narrator-Gate bleibt ebenfalls offen. [Quelle 2022: `src-c4dde22523d3`, S. 1–16; Quelle 2021: `src-28fe81380661`, S. 2–7; abweichende Lösung: `src-39eb3d94f40a`, S. 1–16]
+Historischer Zwischenstand 12.07.2026: `exam-2022-1` ergänzte neun vollständig geprüfte reale Klausurfragen; damals lagen 27 Rekonstruktionen und 57 offene Kandidaturen vor. Dieser Stand ist durch die späteren Abschlüsse von `exam-2022-2` und `exam-2021-1` überholt. Für `exam-2022-1` existiert keine offizielle Musterlösung; seine neun Lösungen bleiben authored. [Quelle 2022: `src-c4dde22523d3`, S. 1–16; Quelle 2021: `src-28fe81380661`, S. 2–7; abweichende Lösung: `src-39eb3d94f40a`, S. 1–16]

@@ -1,8 +1,12 @@
 # Manuelle Freigabe kanonischer Fragen
 
+## Aktualisierung `exam-2021-1`
+
+Sechs weitere reale Klausurfragen sind final geprüft. Die sieben Klausurseiten und die 16 Seiten der falsch zugeordneten Lösungsdatei wurden vollständig visuell kontrolliert. Keine Seite der falschen Datei ist als Lösung verknüpft; alle sechs Lösungen sind authored. Der Korpus enthält damit 42 final geprüfte Fragen, während 42 Kandidaturen und der unabhängige Zweitreview offen bleiben. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
+
 ## Aktualisierung `exam-2022-2`
 
-Neun weitere reale Klausurfragen sind final geprüft. Sämtliche 15 Klausurseiten wurden visuell kontrolliert; Aufgaben 1 bis 8 sind authored, Aufgabe 9 verwendet die visuell abgeglichene spätere offizielle Übungslösung. Der Korpus enthält damit 36 final geprüfte Fragen; 48 Kandidaturen sowie der unabhängige Zweitreview bleiben offen. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
+Neun weitere reale Klausurfragen sind final geprüft. Sämtliche 15 Klausurseiten wurden visuell kontrolliert; Aufgaben 1 bis 8 sind authored, Aufgabe 9 verwendet die visuell abgeglichene spätere offizielle Übungslösung. Der damalige Stand von 36 final geprüften Fragen und 48 offenen Kandidaturen ist durch `exam-2021-1` überholt; der unabhängige Zweitreview bleibt offen. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
 
 Eine Schema-Validierung ersetzt keine redaktionelle Prüfung. Für jede kanonische Frage sind vor der Freigabe zu dokumentieren:
 
@@ -26,4 +30,4 @@ Aufgabe 8 besitzt wegen des dokumentierten Randfallfehlers der gedruckten Rekurr
 
 Zusätzlich ist `exam-2022-1` mit neun realen Klausurfragen final geprüft. Die Aufgabenseiten S. 2–7, 9, 11, 13 und 15 sowie alle Leerseiten wurden visuell kontrolliert. Mangels offizieller Musterlösung sind die neun Lösungen als authored gekennzeichnet; ihr Aufgabenbezug ist jeweils `src-c4dde22523d3`. [Quelle: `src-c4dde22523d3`, S. 1–16]
 
-Die übrigen 57 Kandidaturen sind nicht freigegeben. Ein unabhängiger Zweitreview der insgesamt 27 Fragen steht weiterhin aus.
+Die Angabe von 57 Kandidaturen und 27 Fragen ist ein überholter Zwischenstand nach `exam-2022-1`. Aktuell sind 42 Kandidaturen nicht freigegeben; ein unabhängiger Zweitreview der insgesamt 42 kanonischen Fragen steht weiterhin aus.
