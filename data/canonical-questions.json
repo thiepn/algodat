@@ -88,6 +88,65 @@
       "sourceRefs": [{ "sourceId": "src-28fe81380661", "page": 1, "label": "Deckblatt, Prüfungsdaten und verbindliche Punktetabelle" }, { "sourceId": "src-28fe81380661", "page": 7, "label": "Letzte Aufgabenseite" }],
       "solutionSourceRefs": [{ "sourceId": "src-28fe81380661", "page": 2, "label": "Erste Aufgabenquelle für redaktionell hergeleitete Lösungen" }, { "sourceId": "src-28fe81380661", "page": 7, "label": "Letzte Aufgabenquelle für redaktionell hergeleitete Lösungen" }],
       "reviewNotes": "Alle sieben Seiten sowie alle sechzehn Seiten der fälschlich zugeordneten Lösung wurden visuell geprüft. Zwei byteidentische Klausurdateien bilden ein Ereignis. Die angebliche Lösung src-39eb3d94f40a behandelt andere Aufgaben und bleibt getrennt. Die Deckblattsumme 60 wird beibehalten; der abweichende 6-Punkte-Aufdruck und der ungültige Schleifenrand in Aufgabe 4 sind als Quellenkonflikte dokumentiert."
+    },
+    {
+      "collectionId": "exam-2024-1",
+      "collectionType": "real_exam",
+      "state": "complete",
+      "expectedTaskCount": 9,
+      "expectedPointTotal": 50,
+      "decidedTaskCount": 9,
+      "verifiedQuestionIds": [
+        "exam-2024-1-task-1",
+        "exam-2024-1-task-2",
+        "exam-2024-1-task-3",
+        "exam-2024-1-task-4",
+        "exam-2024-1-task-5",
+        "exam-2024-1-task-6",
+        "exam-2024-1-task-7",
+        "exam-2024-1-task-8",
+        "exam-2024-1-task-9"
+      ],
+      "blockedCandidateIds": [],
+      "excludedEvidenceIds": [],
+      "eventMetadata": {
+        "semester": null,
+        "date": null,
+        "durationMinutes": null,
+        "allowedAids": "unbekannt",
+        "examiner": null,
+        "officialDesignation": null
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 1,
+          "label": "Erste der neun visuell geprüften Aufgabenseiten"
+        },
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 9,
+          "label": "Letzte der neun visuell geprüften Aufgabenseiten"
+        }
+      ],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-10a4e5432d36",
+          "page": 7,
+          "label": "Offizielle Lösung zur identischen Rekurrenz aus Aufgabe 6"
+        },
+        {
+          "sourceId": "src-618e7da9bab3",
+          "page": 2,
+          "label": "Offizielle Lösung zur identischen Messreihenaufgabe 8"
+        },
+        {
+          "sourceId": "src-618e7da9bab3",
+          "page": 3,
+          "label": "Fortsetzung der offiziellen Messreihenlösung"
+        }
+      ],
+      "reviewNotes": "Beide Klausur-PDFs sind byteidentisch und bilden ein Ereignis. Alle neun Seiten und 50 Punkte wurden visuell geprüft. Ereignismetadaten bleiben trotz question-content-vollständiger Sammlung unbekannt. Eine private, exakt zugeordnete Vergleichsaufnahme diente nur zur crop-vollständigen Rekonstruktion des Ausgangsbaums in Aufgabe 3; sie wird weder referenziert noch ausgeliefert. Aufgaben 6 und 8 besitzen passende offizielle Übungslösungen, die übrigen Lösungen sind redaktionell hergeleitet."
     }
   ],
   "questions": [
@@ -1275,6 +1334,1645 @@
       "topicIds": ["topic-62d0e3f58250", "topic-e05ae3743b24"], "taskSlotNumbers": [9], "moduleIds": [], "trainerIds": [], "diagnosticCompetencyIds": ["foundation-graph-basics", "foundation-graph-algorithms", "foundation-proofs"],
       "solution": { "provenance": "authored_from_verified_method", "blocks": [{ "type": "pseudocode", "code": "HatSchnittknoten(G=(V,E)):\n  falls |V|≤2 dann return false\n  für jeden Knoten v∈V do\n    wähle einen Startknoten s∈V\\{v}\n    R ← BFS oder DFS ab s, wobei v und inzidente Kanten ignoriert werden\n    falls |R| < |V|−1 dann return true\n  return false", "textAlternative": "Für jeden möglichen entfernten Knoten wird von einem verbleibenden Knoten aus eine Graphsuche ohne diesen Knoten durchgeführt. Erreicht sie nicht alle übrigen Knoten, wird wahr ausgegeben; sonst nach allen Kandidaten falsch." }, { "type": "paragraph", "text": "Eine Graphsuche benötigt O(|V|+|E|). Sie wird für höchstens |V| Knoten ausgeführt; Auswahl und Größenvergleich sind darin enthalten. Insgesamt ergibt sich O(|V|·(|V|+|E|))." }, { "type": "paragraph", "text": "Korrektheit: Gibt der Algorithmus für v wahr aus, erreicht die Suche in G−v nicht alle verbleibenden Knoten. Da eine vollständige BFS oder DFS genau die Zusammenhangskomponente des Startknotens besucht, ist G−v nicht zusammenhängend. Existiert umgekehrt ein v mit nicht zusammenhängendem G−v, liegt der gewählte Start in nur einer seiner Komponenten; die Suche kann keine andere Komponente erreichen und besucht weniger als |V|−1 Knoten. Der Algorithmus gibt bei diesem v wahr aus. Gibt er falsch aus, ist deshalb G−v für jedes v zusammenhängend." }] },
       "solutionStatus": "authored_solution", "publicationMode": "public_safe_reconstruction", "hostedMaterialApproval": null, "sourceRefs": [{ "sourceId": "src-28fe81380661", "page": 7, "label": "Klausur vom 29.09.2021, Aufgabe 6" }], "solutionSourceRefs": [{ "sourceId": "src-28fe81380661", "page": 7, "label": "Graphproblem; Algorithmus und Beweis redaktionell hergeleitet" }], "verificationStatus": "verified", "manuallyVerified": true, "contentReviewStatus": "content_reviewed", "finalReviewStatus": "final_reviewed", "independentSecondReview": false, "reviewLimitation": "Keine passende offizielle Lösung und kein produktiver Schnittknoten-Trainer vorhanden; der Korrektheitsbeweis wurde strukturiert manuell geprüft.", "verifiedBy": "Korpusreview Phase 21R.5", "verifiedAt": "2026-07-13", "reviewNotes": "Graphdefinition, Laufzeitziel und drei Teilaufgaben wurden visuell geprüft; die Ausgabe wurde auf allen kleinen ungerichteten Graphen gegen eine Brute-Force-Komponentenzählung verglichen.", "duplicateGroupId": "qdup-exam-2021-1-task-6"
+    },
+    {
+      "questionId": "exam-2024-1-task-1",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2024-1",
+      "examId": "exam-2024-1",
+      "sheetId": null,
+      "year": 2024,
+      "semester": null,
+      "taskNumber": 1,
+      "title": "Tiefensuche mit alphabetischer Reihenfolge",
+      "points": 4,
+      "estimatedMinutes": 10,
+      "difficulty": "mittel",
+      "topicIds": [
+        "topic-c43206934ba2"
+      ],
+      "taskSlotNumbers": [
+        1
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms"
+      ],
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 1,
+          "label": "Klausur 2024, Aufgabe 1"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview erfolgten nacheinander durch dieselbe Reviewinstanz; ein unabhängiger fachlicher Zweitreview bleibt offen.",
+      "verifiedBy": "Korpusreview Phase 21R.6",
+      "verifiedAt": "2026-07-13",
+      "duplicateGroupId": "qdup-exam-2024-1-task-1",
+      "subtaskLabels": [],
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Führen Sie auf dem folgenden gerichteten Graphen G die Tiefensuche aus. Die Startknoten werden in alphabetischer Reihenfolge betrachtet. Auch die ausgehenden Kanten eines Knotens werden in alphabetischer Reihenfolge ihrer Zielknoten abgearbeitet. Geben Sie für jeden Knoten v die Entdeckungszeit d[v] und die Abschlusszeit f[v] an."
+        },
+        {
+          "type": "graph",
+          "label": "Gerichteter Graph für die Tiefensuche",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "a",
+              "x": 8,
+              "y": 20
+            },
+            {
+              "id": "b",
+              "label": "b",
+              "x": 32,
+              "y": 20
+            },
+            {
+              "id": "c",
+              "label": "c",
+              "x": 56,
+              "y": 20
+            },
+            {
+              "id": "d",
+              "label": "d",
+              "x": 82,
+              "y": 8
+            },
+            {
+              "id": "e",
+              "label": "e",
+              "x": 8,
+              "y": 76
+            },
+            {
+              "id": "f",
+              "label": "f",
+              "x": 32,
+              "y": 76
+            },
+            {
+              "id": "g",
+              "label": "g",
+              "x": 56,
+              "y": 76
+            },
+            {
+              "id": "h",
+              "label": "h",
+              "x": 86,
+              "y": 76
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "directed": true
+            },
+            {
+              "from": "a",
+              "to": "f",
+              "directed": true
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "directed": true
+            },
+            {
+              "from": "b",
+              "to": "h",
+              "directed": true
+            },
+            {
+              "from": "c",
+              "to": "e",
+              "directed": true
+            },
+            {
+              "from": "c",
+              "to": "f",
+              "directed": true
+            },
+            {
+              "from": "c",
+              "to": "h",
+              "directed": true
+            },
+            {
+              "from": "f",
+              "to": "e",
+              "directed": true
+            },
+            {
+              "from": "f",
+              "to": "g",
+              "directed": true
+            },
+            {
+              "from": "g",
+              "to": "d",
+              "directed": true
+            },
+            {
+              "from": "h",
+              "to": "g",
+              "directed": true
+            }
+          ],
+          "textAlternative": "Knoten a bis h. Gerichtete Kanten: a nach b, a nach f, b nach c, b nach h, c nach e, c nach f, c nach h, f nach e, f nach g, g nach d und h nach g."
+        }
+      ],
+      "expectedDeliverables": [
+        "Für jeden Knoten a bis h die Werte d[v] und f[v]."
+      ],
+      "allowedNotation": [
+        "d[v] für die Entdeckungszeit",
+        "f[v] für die Abschlusszeit"
+      ],
+      "conventions": [
+        "Der Zeitstempel beginnt bei 1 und wird beim Entdecken sowie beim Abschließen erhöht."
+      ],
+      "tieBreakingRules": [
+        "Startknoten und Zielknoten ausgehender Kanten werden alphabetisch betrachtet."
+      ],
+      "solution": {
+        "provenance": "authored_from_verified_method",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Die Suche startet bei a und erreicht wegen der alphabetischen Nachbarschaftsreihenfolge alle Knoten. Die DFS-Waldreihenfolge ist a, b, c, e, f, g, d, h."
+          },
+          {
+            "type": "matrix",
+            "label": "DFS-Zeitstempel",
+            "columnHeaders": [
+              "Knoten",
+              "a",
+              "b",
+              "c",
+              "d",
+              "e",
+              "f",
+              "g",
+              "h"
+            ],
+            "rows": [
+              [
+                "d[v]",
+                "1",
+                "2",
+                "3",
+                "8",
+                "4",
+                "6",
+                "7",
+                "12"
+              ],
+              [
+                "f[v]",
+                "16",
+                "15",
+                "14",
+                "9",
+                "5",
+                "11",
+                "10",
+                "13"
+              ]
+            ],
+            "textAlternative": "Entdeckungszeiten: a 1, b 2, c 3, d 8, e 4, f 6, g 7, h 12. Abschlusszeiten: a 16, b 15, c 14, d 9, e 5, f 11, g 10, h 13."
+          },
+          {
+            "type": "operation_sequence",
+            "label": "Ereignisfolge",
+            "operations": [
+              "a entdecken (1)",
+              "b entdecken (2)",
+              "c entdecken (3)",
+              "e entdecken (4), e abschließen (5)",
+              "f entdecken (6)",
+              "g entdecken (7)",
+              "d entdecken (8), d abschließen (9)",
+              "g abschließen (10)",
+              "f abschließen (11)",
+              "h entdecken (12), h abschließen (13)",
+              "c abschließen (14)",
+              "b abschließen (15)",
+              "a abschließen (16)"
+            ],
+            "textAlternative": "Vollständige DFS-Ereignisfolge mit den Zeitstempeln 1 bis 16."
+          }
+        ]
+      },
+      "solutionStatus": "authored_solution",
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 1,
+          "label": "Aufgabenquelle und Graph für die redaktionell verifizierte DFS-Lösung"
+        }
+      ],
+      "reviewNotes": "Alle elf Kanten, ihre Richtungen und beide alphabetischen Ordnungsregeln wurden visuell geprüft. Die Zeitstempel wurden mit einer deterministischen DFS erneut berechnet; handschriftliche Einträge wurden nicht als Lösungsevidenz verwendet."
+    },
+    {
+      "questionId": "exam-2024-1-task-2",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2024-1",
+      "examId": "exam-2024-1",
+      "sheetId": null,
+      "year": 2024,
+      "semester": null,
+      "taskNumber": 2,
+      "title": "0/1-Rucksack-DP mit Kapazität neun",
+      "points": 4,
+      "estimatedMinutes": 10,
+      "difficulty": "mittel",
+      "topicIds": [
+        "topic-c0af8532bb72",
+        "topic-f5b57f47447c"
+      ],
+      "taskSlotNumbers": [
+        2
+      ],
+      "moduleIds": [
+        "module-rucksack-dp"
+      ],
+      "trainerIds": [
+        "trainer-rucksack-dp-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms"
+      ],
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 2,
+          "label": "Klausur 2024, Aufgabe 2"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview erfolgten nacheinander durch dieselbe Reviewinstanz; ein unabhängiger fachlicher Zweitreview bleibt offen.",
+      "verifiedBy": "Korpusreview Phase 21R.6",
+      "verifiedAt": "2026-07-13",
+      "duplicateGroupId": "qdup-exam-2024-1-task-2",
+      "subtaskLabels": [
+        "a",
+        "b"
+      ],
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Wenden Sie den Vorlesungsalgorithmus Rucksack(n,g,v,W) auf fünf Objekte und einen Rucksack mit Gesamtgewicht W=9 an. Kein Objekt darf mehrfach gewählt werden."
+        },
+        {
+          "type": "matrix",
+          "label": "Objekte mit Größe und Wert",
+          "columnHeaders": [
+            "Objekt i",
+            "g[i]",
+            "v[i]"
+          ],
+          "rows": [
+            [
+              "1",
+              "4",
+              "3"
+            ],
+            [
+              "2",
+              "2",
+              "3"
+            ],
+            [
+              "3",
+              "5",
+              "13"
+            ],
+            [
+              "4",
+              "4",
+              "11"
+            ],
+            [
+              "5",
+              "3",
+              "19"
+            ]
+          ],
+          "textAlternative": "Objekt 1 hat Größe 4 und Wert 3; Objekt 2 Größe 2 und Wert 3; Objekt 3 Größe 5 und Wert 13; Objekt 4 Größe 4 und Wert 11; Objekt 5 Größe 3 und Wert 19."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Füllen Sie die DP-Tabelle für die Objekte 0 bis 5 und die Kapazitäten 0 bis 9 vollständig aus."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Markieren Sie das Tabellenfeld, dessen Inhalt der Algorithmus am Ende ausgibt."
+            }
+          ]
+        }
+      ],
+      "expectedDeliverables": [
+        "Die vollständige 6-mal-10-DP-Tabelle.",
+        "Das Ausgabefeld R[5,9] und sein Wert."
+      ],
+      "allowedNotation": [
+        "R[i,w] als bestmöglicher Wert mit den ersten i Objekten und Kapazität w"
+      ],
+      "conventions": [
+        "0/1-Rucksack: Jedes Objekt wird höchstens einmal gewählt."
+      ],
+      "tieBreakingRules": [],
+      "solution": {
+        "provenance": "authored_from_verified_method",
+        "blocks": [
+          {
+            "type": "math",
+            "latex": "R[i,w]=\\begin{cases}R[i-1,w],&g[i]>w,\\\\\\max\\{R[i-1,w],v[i]+R[i-1,w-g[i]]\\},&g[i]\\le w.\\end{cases}",
+            "textAlternative": "Ist Objekt i zu groß, wird der Wert der vorherigen Zeile übernommen; sonst ist das Maximum aus Nichtnehmen und Nehmen des Objekts einzutragen."
+          },
+          {
+            "type": "dp_table",
+            "label": "Vollständige Rucksacktabelle",
+            "columnHeaders": [
+              "i \\ w",
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9"
+            ],
+            "rows": [
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3"
+              ],
+              [
+                "2",
+                "0",
+                "0",
+                "3",
+                "3",
+                "3",
+                "3",
+                "6",
+                "6",
+                "6",
+                "6"
+              ],
+              [
+                "3",
+                "0",
+                "0",
+                "3",
+                "3",
+                "3",
+                "13",
+                "13",
+                "16",
+                "16",
+                "16"
+              ],
+              [
+                "4",
+                "0",
+                "0",
+                "3",
+                "3",
+                "11",
+                "13",
+                "14",
+                "16",
+                "16",
+                "24"
+              ],
+              [
+                "5",
+                "0",
+                "0",
+                "3",
+                "19",
+                "19",
+                "22",
+                "22",
+                "30",
+                "32",
+                "33"
+              ]
+            ],
+            "textAlternative": "Die sechs Zeilen für i gleich 0 bis 5 enthalten für die Kapazitäten 0 bis 9 die Werte: Zeile 0 nur Nullen; Zeile 1: 0,0,0,0,3,3,3,3,3,3; Zeile 2: 0,0,3,3,3,3,6,6,6,6; Zeile 3: 0,0,3,3,3,13,13,16,16,16; Zeile 4: 0,0,3,3,11,13,14,16,16,24; Zeile 5: 0,0,3,19,19,22,22,30,32,33."
+          },
+          {
+            "type": "paragraph",
+            "text": "Ausgegeben wird R[5,9]=33. Diesen Wert erreichen die Objekte 2, 4 und 5 mit Gesamtgröße 2+4+3=9 und Gesamtwert 3+11+19=33."
+          }
+        ]
+      },
+      "solutionStatus": "authored_solution",
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 2,
+          "label": "Aufgabenquelle und Eingabedaten für die redaktionell verifizierte DP-Lösung"
+        }
+      ],
+      "reviewNotes": "Eingabetabelle und Ausgabefeld wurden visuell geprüft. Alle Tabellenzellen wurden deterministisch durch die 0/1-Rucksackrekurrenz berechnet; eine handschriftliche 32 im Quellmaterial wurde nicht übernommen."
+    },
+    {
+      "questionId": "exam-2024-1-task-3",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2024-1",
+      "examId": "exam-2024-1",
+      "sheetId": null,
+      "year": 2024,
+      "semester": null,
+      "taskNumber": 3,
+      "title": "Einfügen und Löschen im Rot-Schwarz-Baum",
+      "points": 4,
+      "estimatedMinutes": 10,
+      "difficulty": "mittel",
+      "topicIds": [
+        "topic-7ae0552985f1"
+      ],
+      "taskSlotNumbers": [
+        3
+      ],
+      "moduleIds": [
+        "module-rot-schwarz"
+      ],
+      "trainerIds": [],
+      "diagnosticCompetencyIds": [
+        "foundation-data-structures"
+      ],
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 3,
+          "label": "Klausur 2024, Aufgabe 3"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview erfolgten nacheinander durch dieselbe Reviewinstanz; ein unabhängiger fachlicher Zweitreview bleibt offen.",
+      "verifiedBy": "Korpusreview Phase 21R.6",
+      "verifiedAt": "2026-07-13",
+      "duplicateGroupId": "qdup-exam-2024-1-task-3",
+      "subtaskLabels": [],
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Fügen Sie nacheinander die Schlüssel 70 und 68 in den folgenden Rot-Schwarz-Baum ein. Löschen Sie anschließend nacheinander die Schlüssel 66 und 24. Zeichnen Sie nach jeder der vier Operationen den Rot-Schwarz-Baum. Rote Knoten waren in der fotografierten Vorlage weiß dargestellt; hier wird die Farbe immer zusätzlich als Text angegeben."
+        },
+        {
+          "type": "tree",
+          "label": "Ausgangsbaum",
+          "representation": "24 schwarz ist die Wurzel. 14 rot ist linkes Kind und 66 rot rechtes Kind. Alle übrigen Kinder sind schwarze NIL-Blätter.",
+          "nodes": [
+            {
+              "id": "24",
+              "label": "24",
+              "color": "schwarz",
+              "left": "14",
+              "right": "66"
+            },
+            {
+              "id": "14",
+              "label": "14",
+              "color": "rot",
+              "left": null,
+              "right": null
+            },
+            {
+              "id": "66",
+              "label": "66",
+              "color": "rot",
+              "left": null,
+              "right": null
+            }
+          ],
+          "nilConvention": "Jedes fehlende Kind ist ein gemeinsames schwarzes NIL-Blatt; die Wurzel ist schwarz.",
+          "textAlternative": "24 schwarz ist die Wurzel. 14 rot ist linkes Kind und 66 rot rechtes Kind. Alle übrigen Kinder sind schwarze NIL-Blätter."
+        },
+        {
+          "type": "operation_sequence",
+          "label": "Auszuführende Operationen",
+          "operations": [
+            "70 einfügen",
+            "68 einfügen",
+            "66 löschen",
+            "24 löschen"
+          ],
+          "textAlternative": "Zuerst 70 und 68 einfügen, danach 66 und 24 löschen."
+        }
+      ],
+      "expectedDeliverables": [
+        "Nach jeder Operation der vollständige Baum mit Schlüssel, Farbe und Kindbeziehungen."
+      ],
+      "allowedNotation": [
+        "B oder schwarz",
+        "R oder rot"
+      ],
+      "conventions": [
+        "Standardoperationen für Rot-Schwarz-Bäume mit schwarzen NIL-Blättern."
+      ],
+      "tieBreakingRules": [],
+      "solution": {
+        "provenance": "authored_from_verified_method",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beim Einfügen von 70 sind Elternknoten 66 und Onkel 14 rot. Beide werden schwarz, 24 bleibt als Wurzel schwarz und 70 bleibt rot."
+          },
+          {
+            "type": "tree",
+            "label": "Nach Einfügen von 70",
+            "representation": "24 schwarz ist die Wurzel. 14 schwarz ist links. 66 schwarz ist rechts und besitzt das rechte rote Kind 70.",
+            "nodes": [
+              {
+                "id": "24",
+                "label": "24",
+                "color": "schwarz",
+                "left": "14",
+                "right": "66"
+              },
+              {
+                "id": "14",
+                "label": "14",
+                "color": "schwarz",
+                "left": null,
+                "right": null
+              },
+              {
+                "id": "66",
+                "label": "66",
+                "color": "schwarz",
+                "left": null,
+                "right": "70"
+              },
+              {
+                "id": "70",
+                "label": "70",
+                "color": "rot",
+                "left": null,
+                "right": null
+              }
+            ],
+            "nilConvention": "Jedes fehlende Kind ist ein gemeinsames schwarzes NIL-Blatt; die Wurzel ist schwarz.",
+            "textAlternative": "24 schwarz ist die Wurzel. 14 schwarz ist links. 66 schwarz ist rechts und besitzt das rechte rote Kind 70."
+          },
+          {
+            "type": "paragraph",
+            "text": "68 wird linkes Kind von 70. Der Rechts-links-Fall wird durch Rechtsrotation um 70, Umfärben und Linksrotation um 66 behoben."
+          },
+          {
+            "type": "tree",
+            "label": "Nach Einfügen von 68",
+            "representation": "24 schwarz ist die Wurzel. Links steht 14 schwarz. Rechts steht 68 schwarz mit 66 rot links und 70 rot rechts.",
+            "nodes": [
+              {
+                "id": "24",
+                "label": "24",
+                "color": "schwarz",
+                "left": "14",
+                "right": "68"
+              },
+              {
+                "id": "14",
+                "label": "14",
+                "color": "schwarz",
+                "left": null,
+                "right": null
+              },
+              {
+                "id": "68",
+                "label": "68",
+                "color": "schwarz",
+                "left": "66",
+                "right": "70"
+              },
+              {
+                "id": "66",
+                "label": "66",
+                "color": "rot",
+                "left": null,
+                "right": null
+              },
+              {
+                "id": "70",
+                "label": "70",
+                "color": "rot",
+                "left": null,
+                "right": null
+              }
+            ],
+            "nilConvention": "Jedes fehlende Kind ist ein gemeinsames schwarzes NIL-Blatt; die Wurzel ist schwarz.",
+            "textAlternative": "24 schwarz ist die Wurzel. Links steht 14 schwarz. Rechts steht 68 schwarz mit 66 rot links und 70 rot rechts."
+          },
+          {
+            "type": "paragraph",
+            "text": "66 ist ein rotes Blatt und kann ohne Delete-Fixup entfernt werden."
+          },
+          {
+            "type": "tree",
+            "label": "Nach Löschen von 66",
+            "representation": "24 schwarz ist die Wurzel. 14 schwarz ist links. 68 schwarz ist rechts und hat 70 rot als rechtes Kind.",
+            "nodes": [
+              {
+                "id": "24",
+                "label": "24",
+                "color": "schwarz",
+                "left": "14",
+                "right": "68"
+              },
+              {
+                "id": "14",
+                "label": "14",
+                "color": "schwarz",
+                "left": null,
+                "right": null
+              },
+              {
+                "id": "68",
+                "label": "68",
+                "color": "schwarz",
+                "left": null,
+                "right": "70"
+              },
+              {
+                "id": "70",
+                "label": "70",
+                "color": "rot",
+                "left": null,
+                "right": null
+              }
+            ],
+            "nilConvention": "Jedes fehlende Kind ist ein gemeinsames schwarzes NIL-Blatt; die Wurzel ist schwarz.",
+            "textAlternative": "24 schwarz ist die Wurzel. 14 schwarz ist links. 68 schwarz ist rechts und hat 70 rot als rechtes Kind."
+          },
+          {
+            "type": "paragraph",
+            "text": "Beim Löschen von 24 übernimmt sein Nachfolger 68 die Wurzelposition. Das rote Kind 70 ersetzt 68 an dessen alter Position und wird im Delete-Fixup schwarz."
+          },
+          {
+            "type": "tree",
+            "label": "Nach Löschen von 24",
+            "representation": "68 schwarz ist die Wurzel. 14 schwarz steht links und 70 schwarz rechts. Alle fehlenden Kinder sind schwarze NIL-Blätter.",
+            "nodes": [
+              {
+                "id": "68",
+                "label": "68",
+                "color": "schwarz",
+                "left": "14",
+                "right": "70"
+              },
+              {
+                "id": "14",
+                "label": "14",
+                "color": "schwarz",
+                "left": null,
+                "right": null
+              },
+              {
+                "id": "70",
+                "label": "70",
+                "color": "schwarz",
+                "left": null,
+                "right": null
+              }
+            ],
+            "nilConvention": "Jedes fehlende Kind ist ein gemeinsames schwarzes NIL-Blatt; die Wurzel ist schwarz.",
+            "textAlternative": "68 schwarz ist die Wurzel. 14 schwarz steht links und 70 schwarz rechts. Alle fehlenden Kinder sind schwarze NIL-Blätter."
+          }
+        ]
+      },
+      "solutionStatus": "authored_solution",
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 3,
+          "label": "Aufgabenquelle; Lösung unabhängig mit Standard-Rot-Schwarz-Operationen geprüft"
+        }
+      ],
+      "reviewNotes": "Die private, nicht veröffentlichte Vergleichsaufnahme stimmt in Aufgabennummer, Punktzahl, Wortlaut, Seitenlayout und sichtbarem Baumausschnitt überein. Sie diente ausschließlich zur Wiederherstellung der im PDF abgeschnittenen Ausgangsstruktur 24B mit 14R und 66R. Alle vier Zustände wurden anschließend unabhängig verifiziert."
+    },
+    {
+      "questionId": "exam-2024-1-task-4",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2024-1",
+      "examId": "exam-2024-1",
+      "sheetId": null,
+      "year": 2024,
+      "semester": null,
+      "taskNumber": 4,
+      "title": "MergeSort mit Rekursionsebenen und Teilarraygrenzen",
+      "points": 4,
+      "estimatedMinutes": 10,
+      "difficulty": "mittel",
+      "topicIds": [
+        "topic-aa4a4148523b"
+      ],
+      "taskSlotNumbers": [
+        4
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms"
+      ],
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 4,
+          "label": "Klausur 2024, Aufgabe 4"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview erfolgten nacheinander durch dieselbe Reviewinstanz; ein unabhängiger fachlicher Zweitreview bleibt offen.",
+      "verifiedBy": "Korpusreview Phase 21R.6",
+      "verifiedAt": "2026-07-13",
+      "duplicateGroupId": "qdup-exam-2024-1-task-4",
+      "subtaskLabels": [],
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Sortieren Sie das Array A[1..7] mit MergeSort aufsteigend. Geben Sie den Inhalt der Teilarrays nach Abarbeitung jeder Rekursionsebene sowie die Grenzen der betrachteten Teilarrays an. Der Mittelpunkt eines Bereichs [l..r] ist ⌊(l+r)/2⌋."
+        },
+        {
+          "type": "array",
+          "label": "Eingabearray A[1..7]",
+          "values": [
+            74,
+            19,
+            12,
+            34,
+            30,
+            65,
+            56
+          ],
+          "textAlternative": "Das Array lautet 74, 19, 12, 34, 30, 65, 56."
+        }
+      ],
+      "expectedDeliverables": [
+        "Alle rekursiven Teilbereiche mit Indexgrenzen.",
+        "Die sortierten Teilarrays nach den Merge-Schritten.",
+        "Das vollständig sortierte Array."
+      ],
+      "allowedNotation": [
+        "[l..r] für einen Teilbereich"
+      ],
+      "conventions": [
+        "Aufteilung bei ⌊(l+r)/2⌋, linke Rekursion vor rechter Rekursion."
+      ],
+      "tieBreakingRules": [],
+      "solution": {
+        "provenance": "authored_from_verified_method",
+        "blocks": [
+          {
+            "type": "operation_sequence",
+            "label": "Rekursive Aufteilung",
+            "operations": [
+              "[1..7]: 74, 19, 12, 34, 30, 65, 56",
+              "[1..4]: 74, 19, 12, 34 | [5..7]: 30, 65, 56",
+              "[1..2]: 74, 19 | [3..4]: 12, 34 | [5..6]: 30, 65 | [7..7]: 56",
+              "[1..1]: 74 | [2..2]: 19 | [3..3]: 12 | [4..4]: 34 | [5..5]: 30 | [6..6]: 65 | [7..7]: 56"
+            ],
+            "textAlternative": "Die Grenzen entstehen von 1 bis 7 über 1 bis 4 und 5 bis 7, danach über Zweierbereiche und einzelne Elemente."
+          },
+          {
+            "type": "operation_sequence",
+            "label": "Merge-Ebenen",
+            "operations": [
+              "[1..2]: 19, 74 | [3..4]: 12, 34 | [5..6]: 30, 65 | [7..7]: 56",
+              "[1..4]: 12, 19, 34, 74 | [5..7]: 30, 56, 65",
+              "[1..7]: 12, 19, 30, 34, 56, 65, 74"
+            ],
+            "textAlternative": "Nach den Merges lauten die Zweierbereiche 19,74; 12,34; 30,65 und 56. Danach entstehen 12,19,34,74 sowie 30,56,65 und schließlich 12,19,30,34,56,65,74."
+          }
+        ]
+      },
+      "solutionStatus": "authored_solution",
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 4,
+          "label": "Aufgabenquelle und Array für die redaktionell verifizierte MergeSort-Lösung"
+        }
+      ],
+      "reviewNotes": "Array, Indexbereich und verlangte Rekursionsebenen wurden visuell geprüft. Aufteilung und Merge-Folge wurden deterministisch rekonstruiert."
+    },
+    {
+      "questionId": "exam-2024-1-task-5",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2024-1",
+      "examId": "exam-2024-1",
+      "sheetId": null,
+      "year": 2024,
+      "semester": null,
+      "taskNumber": 5,
+      "title": "Schleifeninvariante für die Summe gerader Zahlen",
+      "points": 5,
+      "estimatedMinutes": 15,
+      "difficulty": "mittel",
+      "topicIds": [
+        "topic-1e43393edfb4",
+        "topic-e05ae3743b24",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        5
+      ],
+      "moduleIds": [
+        "module-schleifeninvariante"
+      ],
+      "trainerIds": [
+        "trainer-schleifeninvariante-summe-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-proofs"
+      ],
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 5,
+          "label": "Klausur 2024, Aufgabe 5"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview erfolgten nacheinander durch dieselbe Reviewinstanz; ein unabhängiger fachlicher Zweitreview bleibt offen.",
+      "verifiedBy": "Korpusreview Phase 21R.6",
+      "verifiedAt": "2026-07-13",
+      "duplicateGroupId": "qdup-exam-2024-1-task-5",
+      "subtaskLabels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Der Algorithmus erhält ein Feld A[1..n] natürlicher Zahlen."
+        },
+        {
+          "type": "pseudocode",
+          "code": "BerechneWert(A, n):\n1  a ← 0\n2  for i ← 1 to n do\n3      a ← a + A[i]\n4      if A[i] mod 2 ≠ 0 then\n5          a ← a − A[i]\n6  return a",
+          "textAlternative": "a startet mit null. Für jedes Element wird A i addiert. Ist A i ungerade, wird es unmittelbar wieder subtrahiert. Danach wird a ausgegeben."
+        },
+        {
+          "type": "callout",
+          "title": "Modulo",
+          "text": "x mod 2 ist der Rest der ganzzahligen Division von x durch 2."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Stellen Sie eine Behauptung auf, welchen Wert der Algorithmus in Abhängigkeit vom Eingabefeld A ausgibt."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Formulieren Sie eine Schleifeninvariante, die zu Beginn jeder Iteration der for-Schleife gilt, und beweisen Sie sie mittels vollständiger Induktion."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "c",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Verwenden Sie die Schleifeninvariante, um die Behauptung aus Teil a zu beweisen."
+            }
+          ]
+        }
+      ],
+      "expectedDeliverables": [
+        "Ausgabebehauptung.",
+        "Invariante mit Initialisierung und Erhaltung.",
+        "Terminierungsargument und Korrektheitsschluss."
+      ],
+      "allowedNotation": [
+        "Σ für Summen",
+        "A[j] mod 2 = 0 für gerade Einträge"
+      ],
+      "conventions": [
+        "Feldindizes beginnen bei 1."
+      ],
+      "tieBreakingRules": [],
+      "solution": {
+        "provenance": "authored_from_verified_method",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Behauptung: Der Algorithmus gibt die Summe aller geraden Einträge von A aus."
+          },
+          {
+            "type": "math",
+            "latex": "I(i):\\quad a=\\sum_{\\substack{1\\le j<i\\\\A[j]\\bmod 2=0}} A[j]",
+            "textAlternative": "Vor Iteration i ist a gleich der Summe aller geraden Einträge A j mit 1 kleiner gleich j kleiner i."
+          },
+          {
+            "type": "ordered_list",
+            "items": [
+              "Initialisierung: Vor Iteration 1 ist die Indexmenge leer und a=0, also gilt I(1).",
+              "Erhaltung: In Iteration i wird A[i] zunächst addiert. Ist A[i] ungerade, wird genau dieser Wert wieder subtrahiert; ist A[i] gerade, bleibt er in a. Damit gilt vor Iteration i+1 genau I(i+1).",
+              "Terminierung: Nach Iteration n gilt I(n+1). Darin stehen genau alle geraden Einträge A[1] bis A[n]. Zeile 6 gibt diese Summe aus."
+            ]
+          }
+        ]
+      },
+      "solutionStatus": "authored_solution",
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 5,
+          "label": "Aufgabenquelle und Pseudocode für den strukturiert geprüften Invariantenbeweis"
+        }
+      ],
+      "reviewNotes": "Alle sechs Codezeilen, Schleifengrenzen und drei Beweisteile wurden visuell geprüft. Behauptung und Invariante wurden auf endlichen Testfeldern deterministisch bestätigt; der Beweis wurde strukturiert manuell geprüft."
+    },
+    {
+      "questionId": "exam-2024-1-task-6",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2024-1",
+      "examId": "exam-2024-1",
+      "sheetId": null,
+      "year": 2024,
+      "semester": null,
+      "taskNumber": 6,
+      "title": "Rekurrenz T(n)=2T(n/4)+n",
+      "points": 5,
+      "estimatedMinutes": 15,
+      "difficulty": "mittel",
+      "topicIds": [
+        "topic-e48203925235",
+        "topic-916a9f1645f2",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        6
+      ],
+      "moduleIds": [
+        "module-rekurrenz-master"
+      ],
+      "trainerIds": [
+        "trainer-rekurrenz-master-fall1-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-recurrences",
+        "foundation-asymptotics",
+        "foundation-proofs"
+      ],
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 6,
+          "label": "Klausur 2024, Aufgabe 6"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview erfolgten nacheinander durch dieselbe Reviewinstanz; ein unabhängiger fachlicher Zweitreview bleibt offen.",
+      "verifiedBy": "Korpusreview Phase 21R.6",
+      "verifiedAt": "2026-07-13",
+      "duplicateGroupId": "qdup-exam-2024-1-task-6",
+      "subtaskLabels": [
+        "a",
+        "b"
+      ],
+      "bodyBlocks": [
+        {
+          "type": "math",
+          "latex": "T(n)=\\begin{cases}1,&n=1,\\\\2T(n/4)+n,&n>1.\\end{cases}",
+          "textAlternative": "T von 1 ist 1. Für n größer 1 ist T von n gleich zweimal T von n durch 4 plus n."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sie dürfen annehmen, dass n eine Viererpotenz ist."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Bestimmen Sie eine möglichst gute Schranke f(n), für die T(n)∈O(f(n)) gilt."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Zeigen Sie für die in Teil a angegebene Funktion f mittels Induktion, dass T(n)∈O(f(n)) gilt."
+            }
+          ]
+        }
+      ],
+      "expectedDeliverables": [
+        "Eine möglichst enge asymptotische Schranke.",
+        "Ein Induktionsbeweis auf Viererpotenzen."
+      ],
+      "allowedNotation": [
+        "n=4^k",
+        "Landau-Notation"
+      ],
+      "conventions": [
+        "Nur Viererpotenzen werden betrachtet."
+      ],
+      "tieBreakingRules": [],
+      "solution": {
+        "provenance": "official_solution",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Mit a=2 und b=4 ist n^{log₄2}=√n. Der Zusatzterm n ist polynomial größer und erfüllt 2·(n/4)=n/2. Nach dem dritten Master-Fall gilt T(n)∈Θ(n); damit ist f(n)=n eine möglichst gute O-Schranke."
+          },
+          {
+            "type": "math",
+            "latex": "T(n)=2n-\\sqrt n\\quad\\text{für }n=4^k",
+            "textAlternative": "Für jede Viererpotenz n gilt exakt T von n gleich 2 n minus Wurzel n."
+          },
+          {
+            "type": "ordered_list",
+            "items": [
+              "Induktionsanfang n=1: T(1)=1=2·1−√1.",
+              "Induktionsannahme: Für die kleinere Viererpotenz n/4 gilt T(n/4)=2(n/4)−√(n/4).",
+              "Induktionsschritt: T(n)=2T(n/4)+n=2(2n/4−√(n/4))+n=2n−√n.",
+              "Damit ist T(n)≤2n und folglich T(n)∈O(n). Wegen T(n)≥n gilt zusätzlich T(n)∈Ω(n), also T(n)∈Θ(n)."
+            ]
+          }
+        ]
+      },
+      "solutionStatus": "complete_verified_solution",
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-10a4e5432d36",
+          "page": 3,
+          "label": "Offizielles Übungsblatt mit identischer Rekurrenz als Teilaufgabe 2c"
+        },
+        {
+          "sourceId": "src-10a4e5432d36",
+          "page": 7,
+          "label": "Offizielle Lösungsskizze zur identischen Rekurrenz und Induktion"
+        }
+      ],
+      "reviewNotes": "Die Rekurrenz ist identisch mit Teilaufgabe 2c eines offiziellen Übungsblatts. Dessen Lösung T(n)=2n−√n wurde visuell abgeglichen und zusätzlich für mehrere Viererpotenzen deterministisch ausgewertet."
+    },
+    {
+      "questionId": "exam-2024-1-task-7",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2024-1",
+      "examId": "exam-2024-1",
+      "sheetId": null,
+      "year": 2024,
+      "semester": null,
+      "taskNumber": 7,
+      "title": "Greedy-Entwurf für Entsorgungsstationen",
+      "points": 8,
+      "estimatedMinutes": 25,
+      "difficulty": "schwer",
+      "topicIds": [
+        "topic-3e0e72f97f6e",
+        "topic-e05ae3743b24"
+      ],
+      "taskSlotNumbers": [
+        7
+      ],
+      "moduleIds": [
+        "module-greedy-entwurf"
+      ],
+      "trainerIds": [
+        "trainer-greedy-entwurf-fitnesspunkte-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 7,
+          "label": "Klausur 2024, Aufgabe 7"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview erfolgten nacheinander durch dieselbe Reviewinstanz; ein unabhängiger fachlicher Zweitreview bleibt offen.",
+      "verifiedBy": "Korpusreview Phase 21R.6",
+      "verifiedAt": "2026-07-13",
+      "duplicateGroupId": "qdup-exam-2024-1-task-7",
+      "subtaskLabels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Leo möchte auf einer langen Fahrt m∈ℕ Kilogramm Sondermüll entsorgen. Entlang der Strecke liegen n∈ℕ Entsorgungsstationen. Das Array E[1..n] gibt an, wie viel die jeweilige Station höchstens annehmen kann. Eine Station darf auch weniger als E[i] annehmen."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Entwickeln Sie einen gierigen Algorithmus, der bei Eingabe von E, n und m die minimale Anzahl von Stopps zur vollständigen Entsorgung berechnet. Für die volle Punktzahl wird O(n·log n) erwartet."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Analysieren Sie die asymptotische Worst-Case-Laufzeit."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "c",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beweisen Sie, dass der Algorithmus eine optimale Lösung berechnet."
+            }
+          ]
+        }
+      ],
+      "expectedDeliverables": [
+        "Greedy-Idee und vollständiger Pseudocode.",
+        "Worst-Case-Laufzeitanalyse.",
+        "Optimalitätsbeweis einschließlich des nicht lösbaren Falls."
+      ],
+      "allowedNotation": [
+        "E↓ für nichtzunehmend sortierte Kapazitäten"
+      ],
+      "conventions": [
+        "Bei Gesamtkapazität kleiner m existiert keine Lösung.",
+        "Beim letzten Stopp darf nur die noch fehlende Menge abgegeben werden."
+      ],
+      "tieBreakingRules": [
+        "Gleiche Kapazitäten dürfen in beliebiger Reihenfolge stehen."
+      ],
+      "solution": {
+        "provenance": "authored_from_verified_method",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sortiere die Kapazitäten nichtzunehmend und verwende die größten Stationen, bis ihre Summe mindestens m ist. Reicht die Gesamtsumme nicht, melde „nicht möglich“."
+          },
+          {
+            "type": "pseudocode",
+            "code": "MinStopps(E, n, m):\n1  sortiere E nichtzunehmend mit MergeSort\n2  summe ← 0\n3  for i ← 1 to n do\n4      summe ← summe + E[i]\n5      if summe ≥ m then return i\n6  return nicht_möglich",
+            "textAlternative": "Die Kapazitäten werden absteigend sortiert und aufsummiert. Der erste Index mit Summe mindestens m ist die minimale Stoppzahl; sonst ist die Entsorgung unmöglich."
+          },
+          {
+            "type": "paragraph",
+            "text": "MergeSort benötigt O(n·log n), die Schleife O(n); insgesamt gilt O(n·log n)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Korrektheit: Für jedes k ist die Summe der k größten Kapazitäten mindestens so groß wie die Summe beliebiger anderer k Stationen. Ist die Präfixsumme der ersten k−1 Werte kleiner als m, kann daher keine Lösung mit k−1 Stopps existieren. Sobald die Präfixsumme der ersten k Werte mindestens m erreicht, genügen genau diese k Stationen, weil die letzte nur die Restmenge annehmen muss. Der zuerst gefundene Wert k ist somit optimal. Wird nach n Werten m nicht erreicht, ist selbst die Summe aller Kapazitäten zu klein."
+          }
+        ]
+      },
+      "solutionStatus": "authored_solution",
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 7,
+          "label": "Aufgabenquelle für den redaktionell hergeleiteten Greedy-Algorithmus"
+        }
+      ],
+      "reviewNotes": "Eingabemodell, Teilannahme einer Station, drei Unteraufgaben und O(n log n)-Ziel wurden visuell geprüft. Die Greedy-Lösung wurde für kleine Kapazitätsfelder exhaustiv gegen alle Teilmengen verglichen. Der vorhandene Greedy-Trainer deckt die Methode, nicht das konkrete Entsorgungsmodell, nur teilweise ab."
+    },
+    {
+      "questionId": "exam-2024-1-task-8",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2024-1",
+      "examId": "exam-2024-1",
+      "sheetId": null,
+      "year": 2024,
+      "semester": null,
+      "taskNumber": 8,
+      "title": "Dynamische Programmierung für Messreihenähnlichkeit",
+      "points": 8,
+      "estimatedMinutes": 25,
+      "difficulty": "schwer",
+      "topicIds": [
+        "topic-c0af8532bb72",
+        "topic-2b335556483f"
+      ],
+      "taskSlotNumbers": [
+        8
+      ],
+      "moduleIds": [
+        "module-dp-entwurf-mine"
+      ],
+      "trainerIds": [
+        "trainer-dp-entwurf-mine-v1"
+      ],
+      "diagnosticCompetencyIds": [
+        "foundation-paradigms",
+        "foundation-proofs"
+      ],
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 8,
+          "label": "Klausur 2024, Aufgabe 8"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview erfolgten nacheinander durch dieselbe Reviewinstanz; ein unabhängiger fachlicher Zweitreview bleibt offen.",
+      "verifiedBy": "Korpusreview Phase 21R.6",
+      "verifiedAt": "2026-07-13",
+      "duplicateGroupId": "qdup-exam-2024-1-task-8",
+      "subtaskLabels": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Gegeben sind zwei chronologisch geordnete Messreihen A[1..n] und B[1..m] mit n≥m. Eine zulässige Verbindung ist eine surjektive Funktion f:{1,…,n}→{1,…,m} mit f(1)=1, f(n)=m und f(i)−f(i−1)∈{0,1} für 1<i≤n. Ihr Ähnlichkeitswert ist max_{1≤i≤n}|A[i]−B[f(i)]| und soll minimiert werden."
+        },
+        {
+          "type": "array",
+          "label": "Beispielreihe A",
+          "values": [
+            1,
+            3,
+            4,
+            8,
+            4,
+            1
+          ],
+          "textAlternative": "A lautet 1, 3, 4, 8, 4, 1."
+        },
+        {
+          "type": "array",
+          "label": "Beispielreihe B",
+          "values": [
+            2,
+            9,
+            4
+          ],
+          "textAlternative": "B lautet 2, 9, 4. Eine optimale Verbindung hat Ähnlichkeitswert 3."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Geben Sie eine Rekursionsgleichung R(i,j) für die optimale Ähnlichkeit der Präfixe A[1..i] und B[1..j] an."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beweisen Sie die Korrektheit der Rekursionsgleichung mittels Induktion."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "c",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Entwerfen Sie auf Grundlage der Rekursion einen Algorithmus mit dynamischer Programmierung."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "d",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Analysieren Sie die asymptotische Worst-Case-Laufzeit."
+            }
+          ]
+        }
+      ],
+      "expectedDeliverables": [
+        "Zustandsdefinition, Randfälle und Rekurrenz.",
+        "Induktiver Korrektheitsbeweis.",
+        "Bottom-up-Pseudocode und Ergebnisauslese.",
+        "Worst-Case-Laufzeit."
+      ],
+      "allowedNotation": [
+        "∞ für einen unzulässigen Zustand"
+      ],
+      "conventions": [
+        "R(i,j) endet mit der Verbindung von A[i] zu B[j]."
+      ],
+      "tieBreakingRules": [
+        "Bei gleichen Vorgängerwerten darf jeder optimale Vorgänger gewählt werden."
+      ],
+      "solution": {
+        "provenance": "official_solution",
+        "blocks": [
+          {
+            "type": "math",
+            "latex": "R(i,j)=\\begin{cases}|A[1]-B[1]|,&i=j=1,\\\\\\infty,&j\\le0\\text{ oder }j>i,\\\\\\max\\!\\left(|A[i]-B[j]|,\\min\\{R(i-1,j),R(i-1,j-1)\\}\\right),&i>1,1\\le j\\le i.\\end{cases}",
+            "textAlternative": "R 1 1 ist der Abstand der ersten Werte. Zustände mit j kleiner gleich null oder j größer i sind unzulässig. Sonst ist R i j das Maximum aus dem neuen Abstand A i zu B j und dem kleineren der beiden zulässigen Vorgänger R i minus 1 j sowie R i minus 1 j minus 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Induktion über i: Für i=1 ist nur die Verbindung 1 zu 1 zulässig. Für i>1 muss der Vorgänger von A[i] wegen der Schrittbedingung entweder bei B[j] oder bei B[j−1] enden. Nach Induktionsannahme liefern die beiden R-Werte die optimalen Präfixkosten. Das Minimum wählt den besseren Vorgänger; das Maximum berücksichtigt den neuen Paarabstand. Andere Vorgänger sind unzulässig. Damit ist R(i,j) optimal."
+          },
+          {
+            "type": "pseudocode",
+            "code": "Messreihen(A, n, B, m):\n1  R ← Feld [1..n][0..m], überall ∞\n2  R[1,1] ← |A[1] − B[1]|\n3  for i ← 2 to n do\n4      for j ← 1 to min(i,m) do\n5          R[i,j] ← max(|A[i] − B[j]|,\n6                       min(R[i−1,j], R[i−1,j−1]))\n7  return R[n,m]",
+            "textAlternative": "Eine n mal m Tabelle wird zeilenweise gefüllt. Jeder gültige Zustand verwendet den kleineren der Vorgänger in derselben oder vorherigen B-Spalte und nimmt das Maximum mit dem aktuellen Abstand. Ausgegeben wird R n m."
+          },
+          {
+            "type": "paragraph",
+            "text": "Es werden O(nm) Zustände in konstanter Zeit berechnet. Die Laufzeit ist O(nm), der Speicherbedarf O(nm); mit zwei Zeilen wäre O(m) Speicher möglich."
+          },
+          {
+            "type": "paragraph",
+            "text": "Im Beispiel erreicht f=(1,1,1,2,3,3) den Wert 3. Wegen der zwingenden letzten Verbindung |A[6]−B[3]|=|1−4|=3 kann kein kleinerer Wert möglich sein."
+          }
+        ]
+      },
+      "solutionStatus": "complete_verified_solution",
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-618e7da9bab3",
+          "page": 2,
+          "label": "Offizielle Übungslösung zur identischen Messreihenaufgabe: Rekurrenz und Beweis"
+        },
+        {
+          "sourceId": "src-618e7da9bab3",
+          "page": 3,
+          "label": "Offizielle Übungslösung: Bottom-up-Algorithmus und Laufzeit"
+        }
+      ],
+      "reviewNotes": "Die spätere offizielle Übungsaufgabe stimmt in Definition, Beispiel und Teilaufgaben a bis d überein. In deren Formel und Pseudocode steht zweimal B[i] statt des durch Zustand und Aufgabentext zwingenden B[j]; die öffentliche Lösung korrigiert diesen dokumentierten Indexfehler. Rekurrenz und Beispiel wurden zusätzlich exhaustiv gegen alle zulässigen Verbindungen kleiner Instanzen geprüft."
+    },
+    {
+      "questionId": "exam-2024-1-task-9",
+      "schemaVersion": "1.0.0",
+      "contentVersion": "1.0.0-rc.8",
+      "collectionType": "real_exam",
+      "collectionId": "exam-2024-1",
+      "examId": "exam-2024-1",
+      "sheetId": null,
+      "year": 2024,
+      "semester": null,
+      "taskNumber": 9,
+      "title": "Ausgabe eines negativen Kreises",
+      "points": 8,
+      "estimatedMinutes": 25,
+      "difficulty": "schwer",
+      "topicIds": [
+        "topic-646279964c76",
+        "topic-e05ae3743b24"
+      ],
+      "taskSlotNumbers": [
+        9
+      ],
+      "moduleIds": [],
+      "trainerIds": [],
+      "diagnosticCompetencyIds": [
+        "foundation-graph-basics",
+        "foundation-graph-algorithms",
+        "foundation-proofs"
+      ],
+      "publicationMode": "public_safe_reconstruction",
+      "hostedMaterialApproval": null,
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 9,
+          "label": "Klausur 2024, Aufgabe 9"
+        }
+      ],
+      "verificationStatus": "verified",
+      "manuallyVerified": true,
+      "contentReviewStatus": "content_reviewed",
+      "finalReviewStatus": "final_reviewed",
+      "independentSecondReview": false,
+      "reviewLimitation": "Inhalts- und Finalreview erfolgten nacheinander durch dieselbe Reviewinstanz; ein unabhängiger fachlicher Zweitreview bleibt offen.",
+      "verifiedBy": "Korpusreview Phase 21R.6",
+      "verifiedAt": "2026-07-13",
+      "duplicateGroupId": "qdup-exam-2024-1-task-9",
+      "subtaskLabels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "bodyBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Gegeben ist ein gerichteter, gewichteter und zusammenhängender Graph G=(V,E) mit Gewichtsfunktion w:E→ℝ. Der Graph darf Kanten mit negativem Gewicht enthalten. Falls ein negativer gerichteter Kreis existiert, sollen alle Kanten eines beliebigen solchen Kreises ausgegeben werden."
+        },
+        {
+          "type": "subtask",
+          "label": "a",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Entwerfen Sie den Algorithmus, beschreiben Sie zunächst die Idee und geben Sie vollständigen Pseudocode an. Für die volle Punktzahl wird eine Laufzeit in O(|V|³+|V|²|E|) erwartet."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "b",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Analysieren Sie die asymptotische Worst-Case-Laufzeit."
+            }
+          ]
+        },
+        {
+          "type": "subtask",
+          "label": "c",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beweisen Sie die Korrektheit."
+            }
+          ]
+        }
+      ],
+      "expectedDeliverables": [
+        "Algorithmusidee und Pseudocode.",
+        "Eine geordnete Kantenliste eines negativen Kreises oder die Meldung, dass keiner existiert.",
+        "Laufzeitanalyse und Korrektheitsbeweis."
+      ],
+      "allowedNotation": [
+        "pred[v] für den Vorgänger einer letzten Relaxierung"
+      ],
+      "conventions": [
+        "Alle Distanzen dürfen mit 0 initialisiert werden; dies entspricht einer neuen Quelle mit Nullkanten zu allen Knoten."
+      ],
+      "tieBreakingRules": [
+        "Bei mehreren relaxierbaren Kanten darf eine beliebige gewählt werden."
+      ],
+      "solution": {
+        "provenance": "authored_from_verified_method",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Ein virtueller Startknoten mit Nullkanten zu allen Knoten macht jeden Kreis erreichbar. Statt ihn einzufügen, initialisieren wir alle d[v] mit 0. Eine Änderung im |V|-ten Bellman-Ford-Durchlauf belegt einen negativen Kreis. Über |V| Vorgängerschritte gelangt man sicher in diesen Kreis."
+          },
+          {
+            "type": "pseudocode",
+            "code": "NegativerKreis(G=(V,E), w):\n1  for each v ∈ V do d[v] ← 0; pred[v] ← NIL\n2  x ← NIL\n3  for i ← 1 to |V| do\n4      x ← NIL\n5      for each (u,v) ∈ E do\n6          if d[u] + w(u,v) < d[v] then\n7              d[v] ← d[u] + w(u,v)\n8              pred[v] ← u\n9              x ← v\n10     if x = NIL then return kein_negativer_Kreis\n11 y ← x\n12 for i ← 1 to |V| do y ← pred[y]\n13 C ← leere Liste; v ← y\n14 repeat\n15     u ← pred[v]\n16     hänge Kante (u,v) an C an\n17     v ← u\n18 until v = y\n19 kehre C um und return C",
+            "textAlternative": "Bellman-Ford startet mit Distanz null für jeden Knoten und speichert Vorgänger. Ohne Änderung endet der Algorithmus ohne negativen Kreis. Nach einer Änderung im letzten Durchlauf wird der Vorgänger |V| mal verfolgt; danach werden Vorgängerkanten bis zur Rückkehr gesammelt und in Kreisrichtung umgekehrt."
+          },
+          {
+            "type": "paragraph",
+            "text": "Laufzeit: Die |V| Durchläufe über alle Kanten benötigen O(|V|·|E|). Vorgängerverfolgung und Kreisausgabe benötigen O(|V|). Damit ist der Algorithmus sogar O(|V|·|E|) und liegt insbesondere in der verlangten Schranke O(|V|³+|V|²|E|)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Korrektheit: Durch die Nullinitialisierung ist jeder Knoten wie von einer virtuellen Quelle erreichbar. Gibt es keinen negativen Kreis, sind nach spätestens |V|−1 Kantenrelaxationsrunden alle kürzesten einfachen Wege berücksichtigt; im |V|-ten Durchlauf ändert sich nichts und die Meldung ist korrekt. Erfolgt dort eine Relaxierung, enthält die zugehörige Vorgängerkette einen erreichbaren Kreis mit negativem Gesamtgewicht. Nach |V| Vorgängerschritten liegt y auf einem Kreis. Die anschließend gesammelten Kanten sind jeweils pred[v]→v, schließen bei y und bilden nach dem Umkehren genau diesen gerichteten negativen Kreis."
+          }
+        ]
+      },
+      "solutionStatus": "authored_solution",
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 9,
+          "label": "Aufgabenquelle für den unabhängig verifizierten Bellman-Ford-Entwurf"
+        }
+      ],
+      "reviewNotes": "Graphart, reelle Gewichte, negative Kanten, drei Teilaufgaben und Zielschranke wurden visuell geprüft. Die Superquellenvariante wurde auf allen kleinen gerichteten Graphen der Tests gegen eine Floyd-Warshall-Negativdiagonale verglichen; ausgegebene Kanten werden auf Geschlossenheit und negative Gewichtssumme geprüft."
     }
   ]
 }

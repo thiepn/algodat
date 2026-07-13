@@ -1,8 +1,12 @@
 # Abgleich des Fragenkorpus
 
-## Aktueller Stand nach `exam-2021-1`
+## Aktueller Stand nach `exam-2024-1`
 
-`exam-2021-1` ist mit sechs Identitäten vollständig versöhnt. Zwölf Aufgabenevidenzen aus zwei byteidentischen Klausurdateien wurden sechs Fragen zugeordnet; zwei Titelseitenevidenzen sind ausgeschlossen. Die 24 Evidenzen der unpassenden Lösungsdatei und ihrer Dublette sind als `mismatched_solution_evidence` ausgeschlossen. Damit sind 42 Identitäten entschieden und 42 Kandidaturen offen. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
+`exam-2024-1` ist mit neun Identitäten vollständig versöhnt. Achtzehn Aufgabenevidenzen aus zwei byteidentischen Klausurdateien wurden neun Fragen zugeordnet. Achtzehn Evidenzen aus zwei byteidentischen, aber fachlich unpassenden Lösungsdateien wurden als `mismatched_solution_evidence` ausgeschlossen. Zwei spätere offizielle Übungslösungen sind ausschließlich den wortgleichen Aufgaben 6 und 8 zugeordnet. Damit sind 51 Identitäten entschieden und 33 Kandidaturen offen. [Klausur: `src-6df30a9ff1ae`, S. 1–9; Dublette: `src-ce97639c1821`, S. 1–9; Lösungen: `src-10a4e5432d36`, S. 3 und 7; `src-618e7da9bab3`, S. 1–3]
+
+## Historischer Stand nach `exam-2021-1`
+
+`exam-2021-1` ist mit sechs Identitäten vollständig versöhnt. Zwölf Aufgabenevidenzen aus zwei byteidentischen Klausurdateien wurden sechs Fragen zugeordnet; zwei Titelseitenevidenzen sind ausgeschlossen. Die 24 Evidenzen der unpassenden Lösungsdatei und ihrer Dublette sind als `mismatched_solution_evidence` ausgeschlossen. Damals waren 42 Identitäten entschieden und 42 Kandidaturen offen; beide Werte sind durch `exam-2024-1` überholt. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
 
 ## Aktueller Stand nach `exam-2022-2`
 

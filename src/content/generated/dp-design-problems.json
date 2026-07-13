@@ -2,7 +2,7 @@
   {
     "id": "problem-dp-entwurf-mine-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "topicIds": [
       "topic-c0af8532bb72",
       "topic-2b335556483f"
@@ -225,7 +225,7 @@
     "variants": [
       {
         "id": "variant-mine-guided-entry",
-        "contentVersion": "phase16-97cc0129b092",
+        "contentVersion": "phase16-97c9e182c53e",
         "sourceRefs": [
           {
             "sourceId": "src-8f16b2505bbd",
@@ -302,7 +302,7 @@
       },
       {
         "id": "variant-mine-standard-practice",
-        "contentVersion": "phase16-97cc0129b092",
+        "contentVersion": "phase16-97c9e182c53e",
         "sourceRefs": [
           {
             "sourceId": "src-8f16b2505bbd",
@@ -405,7 +405,7 @@
       },
       {
         "id": "variant-mine-exam",
-        "contentVersion": "phase16-97cc0129b092",
+        "contentVersion": "phase16-97c9e182c53e",
         "sourceRefs": [
           {
             "sourceId": "src-35405e721f05",
@@ -500,7 +500,7 @@
       },
       {
         "id": "variant-mine-review-state",
-        "contentVersion": "phase16-97cc0129b092",
+        "contentVersion": "phase16-97c9e182c53e",
         "sourceRefs": [
           {
             "sourceId": "src-35405e721f05",
@@ -563,7 +563,7 @@
       },
       {
         "id": "variant-mine-review-recurrence",
-        "contentVersion": "phase16-97cc0129b092",
+        "contentVersion": "phase16-97c9e182c53e",
         "sourceRefs": [
           {
             "sourceId": "src-35405e721f05",
@@ -640,7 +640,7 @@
       },
       {
         "id": "variant-mine-state-part",
-        "contentVersion": "phase16-97cc0129b092",
+        "contentVersion": "phase16-97c9e182c53e",
         "sourceRefs": [
           {
             "sourceId": "src-35405e721f05",
@@ -703,7 +703,7 @@
       },
       {
         "id": "variant-mine-recurrence-part",
-        "contentVersion": "phase16-97cc0129b092",
+        "contentVersion": "phase16-97c9e182c53e",
         "sourceRefs": [
           {
             "sourceId": "src-35405e721f05",
@@ -770,7 +770,7 @@
       },
       {
         "id": "variant-mine-order-part",
-        "contentVersion": "phase16-97cc0129b092",
+        "contentVersion": "phase16-97c9e182c53e",
         "sourceRefs": [
           {
             "sourceId": "src-35405e721f05",
@@ -841,7 +841,7 @@
       },
       {
         "id": "variant-mine-error-correction",
-        "contentVersion": "phase16-97cc0129b092",
+        "contentVersion": "phase16-97c9e182c53e",
         "sourceRefs": [
           {
             "sourceId": "src-35405e721f05",

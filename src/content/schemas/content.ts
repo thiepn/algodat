@@ -407,6 +407,17 @@ export const CanonicalQuestionsFileSchema = z
           verifiedQuestionIds: z.array(z.string().min(1)),
           blockedCandidateIds: z.array(z.string().min(1)),
           excludedEvidenceIds: z.array(z.string().min(1)),
+          eventMetadata: z
+            .object({
+              semester: SemanticTextSchema.nullable(),
+              date: z.string().date().nullable(),
+              durationMinutes: z.number().int().positive().nullable(),
+              allowedAids: SemanticTextSchema,
+              examiner: SemanticTextSchema.nullable(),
+              officialDesignation: SemanticTextSchema.nullable(),
+            })
+            .strict()
+            .optional(),
           sourceRefs: z.array(CanonicalSourceReferenceSchema).min(1),
           solutionSourceRefs: z.array(CanonicalSourceReferenceSchema),
           reviewNotes: SemanticTextSchema,

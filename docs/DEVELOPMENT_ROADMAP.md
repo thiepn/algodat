@@ -14,7 +14,7 @@
 Gate je Phase: Datenvalidierung grün, Quellenabdeckung dokumentiert, Scoringtests grün, keine ungeprüften Lösungen im Release-Paket, keine privaten Quellen im Build.
 # Phase 8 Nachtrag
 
-Phase 8 ist abgeschlossen: Kandidatenaudit, Greedy-Trainer Fitnesspunkte, Simulator V2, Mastery V7, Tests und Abschlussberichte sind implementiert. Zurückgestellt bleiben Workout und Entsorgungsstationen, bis belastbare Lösungsevidenz vorliegt. Produktiver Beleg: `src-97414623dd81`, Seite 8; `src-8a588d5ddc35`, Seite 8.
+Phase 8 ist abgeschlossen: Kandidatenaudit, Greedy-Trainer Fitnesspunkte, Simulator V2, Mastery V7, Tests und Abschlussberichte sind implementiert. Workout bleibt für einen produktiven Trainer zurückgestellt. Die Entsorgungsstationen-Aufgabe ist inzwischen als einzelne kanonische authored Lösung fachlich und deterministisch geprüft; dies autorisiert noch keinen generativen Trainer. Produktiver Beleg für den bestehenden Trainer: `src-97414623dd81`, Seite 8; Entsorgungsstationen: `src-6df30a9ff1ae`, Seite 7.
 ## Phase 12 abgeschlossen
 
 Phase 12 ergänzt Prim-MST-Tracing als zehnten Lernpfad. Für Phase 13 wird empfohlen, entweder ein kuratiertes neues Simulatorpaket zu prüfen oder Kruskal erst nach belastbarer offizieller Aufgaben-/Lösungsverknüpfung produktiv umzusetzen.

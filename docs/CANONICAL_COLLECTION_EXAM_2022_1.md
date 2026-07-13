@@ -24,4 +24,4 @@ Im lokalen Korpus ist keine offizielle Musterlösung derselben Klausuridentität
 
 ## Reviewgrenze
 
-Aufgaben- und Lösungsreview wurden nacheinander durch dieselbe Reviewinstanz durchgeführt; ein unabhängiger fachlicher Zweitreview bleibt offen. Die Sammlung selbst ist vollständig kanonisiert. Die damalige Angabe von 57 offenen Identitätskandidaturen ist durch die späteren Abschlüsse von `exam-2022-2` und `exam-2021-1` überholt; aktuell bleiben 42 offen.
+Aufgaben- und Lösungsreview wurden nacheinander durch dieselbe Reviewinstanz durchgeführt; ein unabhängiger fachlicher Zweitreview bleibt offen. Die Sammlung selbst ist vollständig kanonisiert. Die damaligen Angaben von 57 und später 42 offenen Identitätskandidaturen sind durch die späteren Abschlüsse weiterer Sammlungen überholt; nach `exam-2024-1` bleiben 33 offen.

@@ -1,8 +1,12 @@
 # Manuelle Freigabe kanonischer Fragen
 
+## Aktualisierung `exam-2024-1`
+
+Neun weitere reale Klausurfragen sind final geprüft. Alle neun Seiten beider byteidentischer Klausurdateien wurden visuell kontrolliert. Aufgaben 6 und 8 verwenden wortgleiche, visuell abgeglichene spätere offizielle Übungslösungen; die übrigen sieben Lösungen sind authored. Graphen, Rot-Schwarz-Bäume, Tabellen, Folgen und Pseudocode besitzen strukturierte semantische Alternativen. Der Korpus enthält damit 51 final geprüfte Fragen, während 33 Kandidaturen und der unabhängige Zweitreview offen bleiben. [Klausur: `src-6df30a9ff1ae`, S. 1–9; Dublette: `src-ce97639c1821`, S. 1–9; Lösungen: `src-10a4e5432d36`, S. 3 und 7; `src-618e7da9bab3`, S. 1–3]
+
 ## Aktualisierung `exam-2021-1`
 
-Sechs weitere reale Klausurfragen sind final geprüft. Die sieben Klausurseiten und die 16 Seiten der falsch zugeordneten Lösungsdatei wurden vollständig visuell kontrolliert. Keine Seite der falschen Datei ist als Lösung verknüpft; alle sechs Lösungen sind authored. Der Korpus enthält damit 42 final geprüfte Fragen, während 42 Kandidaturen und der unabhängige Zweitreview offen bleiben. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
+Sechs weitere reale Klausurfragen wurden final geprüft. Die sieben Klausurseiten und die 16 Seiten der falsch zugeordneten Lösungsdatei wurden vollständig visuell kontrolliert. Keine Seite der falschen Datei ist als Lösung verknüpft; alle sechs Lösungen sind authored. Der damalige Stand von 42 final geprüften Fragen und 42 offenen Kandidaturen ist durch `exam-2024-1` überholt. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
 
 ## Aktualisierung `exam-2022-2`
 
@@ -30,4 +34,4 @@ Aufgabe 8 besitzt wegen des dokumentierten Randfallfehlers der gedruckten Rekurr
 
 Zusätzlich ist `exam-2022-1` mit neun realen Klausurfragen final geprüft. Die Aufgabenseiten S. 2–7, 9, 11, 13 und 15 sowie alle Leerseiten wurden visuell kontrolliert. Mangels offizieller Musterlösung sind die neun Lösungen als authored gekennzeichnet; ihr Aufgabenbezug ist jeweils `src-c4dde22523d3`. [Quelle: `src-c4dde22523d3`, S. 1–16]
 
-Die Angabe von 57 Kandidaturen und 27 Fragen ist ein überholter Zwischenstand nach `exam-2022-1`. Aktuell sind 42 Kandidaturen nicht freigegeben; ein unabhängiger Zweitreview der insgesamt 42 kanonischen Fragen steht weiterhin aus.
+Die Angaben von 57 Kandidaturen und 27 Fragen sowie später 42 Kandidaturen und 42 Fragen sind überholte Zwischenstände. Aktuell sind 33 Kandidaturen nicht freigegeben; ein unabhängiger Zweitreview der insgesamt 51 kanonischen Fragen steht weiterhin aus.

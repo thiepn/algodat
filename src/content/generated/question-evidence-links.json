@@ -1025,6 +1025,232 @@
       ],
       "relationshipVerified": true,
       "notes": "Graphproblem und exakte Quelldublette versöhnt; Algorithmus redaktionell hergeleitet und exhaustiv auf kleinen Graphen geprüft."
+    },
+    {
+      "questionId": "exam-2024-1-task-1",
+      "evidenceIds": [
+        "q-325bc000d3da",
+        "q-4d917e62693e"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 1,
+          "label": "Klausur 2024, Aufgabe 1"
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 1,
+          "label": "Aufgabenquelle und Graph für die redaktionell verifizierte DFS-Lösung"
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Kanonische und byteidentische Dublettenevidenz wurden gemeinsam visuell abgeglichen; die Lösung wurde unabhängig aus der belegten Aufgabenmethode hergeleitet."
+    },
+    {
+      "questionId": "exam-2024-1-task-2",
+      "evidenceIds": [
+        "q-113716b2961d",
+        "q-a5dd9d54cca1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 2,
+          "label": "Klausur 2024, Aufgabe 2"
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 2,
+          "label": "Aufgabenquelle und Eingabedaten für die redaktionell verifizierte DP-Lösung"
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Kanonische und byteidentische Dublettenevidenz wurden gemeinsam visuell abgeglichen; die Lösung wurde unabhängig aus der belegten Aufgabenmethode hergeleitet."
+    },
+    {
+      "questionId": "exam-2024-1-task-3",
+      "evidenceIds": [
+        "q-2d4c434cc9f4",
+        "q-5fe684bd51d9"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 3,
+          "label": "Klausur 2024, Aufgabe 3"
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 3,
+          "label": "Aufgabenquelle; Lösung unabhängig mit Standard-Rot-Schwarz-Operationen geprüft"
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Kanonische und byteidentische Dublettenevidenz wurden gemeinsam visuell abgeglichen; die Lösung wurde unabhängig aus der belegten Aufgabenmethode hergeleitet."
+    },
+    {
+      "questionId": "exam-2024-1-task-4",
+      "evidenceIds": [
+        "q-3737ba8fb64c",
+        "q-072a26ef41f8"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 4,
+          "label": "Klausur 2024, Aufgabe 4"
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 4,
+          "label": "Aufgabenquelle und Array für die redaktionell verifizierte MergeSort-Lösung"
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Kanonische und byteidentische Dublettenevidenz wurden gemeinsam visuell abgeglichen; die Lösung wurde unabhängig aus der belegten Aufgabenmethode hergeleitet."
+    },
+    {
+      "questionId": "exam-2024-1-task-5",
+      "evidenceIds": [
+        "q-87db01b3a470",
+        "q-df451fc16336"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 5,
+          "label": "Klausur 2024, Aufgabe 5"
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 5,
+          "label": "Aufgabenquelle und Pseudocode für den strukturiert geprüften Invariantenbeweis"
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Kanonische und byteidentische Dublettenevidenz wurden gemeinsam visuell abgeglichen; die Lösung wurde unabhängig aus der belegten Aufgabenmethode hergeleitet."
+    },
+    {
+      "questionId": "exam-2024-1-task-6",
+      "evidenceIds": [
+        "q-58dbe7725f08",
+        "q-4c091557a91e"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 6,
+          "label": "Klausur 2024, Aufgabe 6"
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-10a4e5432d36",
+          "page": 3,
+          "label": "Offizielles Übungsblatt mit identischer Rekurrenz als Teilaufgabe 2c"
+        },
+        {
+          "sourceId": "src-10a4e5432d36",
+          "page": 7,
+          "label": "Offizielle Lösungsskizze zur identischen Rekurrenz und Induktion"
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Beide PDF-Evidenzen bilden dieselbe Klausuraufgabe; die identische Rekurrenz besitzt eine visuell geprüfte offizielle Übungslösung."
+    },
+    {
+      "questionId": "exam-2024-1-task-7",
+      "evidenceIds": [
+        "q-6549208674b4",
+        "q-6cce958a303e"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 7,
+          "label": "Klausur 2024, Aufgabe 7"
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 7,
+          "label": "Aufgabenquelle für den redaktionell hergeleiteten Greedy-Algorithmus"
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Kanonische und byteidentische Dublettenevidenz wurden gemeinsam visuell abgeglichen; die Lösung wurde unabhängig aus der belegten Aufgabenmethode hergeleitet."
+    },
+    {
+      "questionId": "exam-2024-1-task-8",
+      "evidenceIds": [
+        "q-68147d5b33e4",
+        "q-c05c88eacd0b"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 8,
+          "label": "Klausur 2024, Aufgabe 8"
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-618e7da9bab3",
+          "page": 2,
+          "label": "Offizielle Übungslösung zur identischen Messreihenaufgabe: Rekurrenz und Beweis"
+        },
+        {
+          "sourceId": "src-618e7da9bab3",
+          "page": 3,
+          "label": "Offizielle Übungslösung: Bottom-up-Algorithmus und Laufzeit"
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Beide PDF-Evidenzen bilden dieselbe Klausuraufgabe; die identische spätere Übungslösung ist verbunden und ihr Indexkonflikt dokumentiert."
+    },
+    {
+      "questionId": "exam-2024-1-task-9",
+      "evidenceIds": [
+        "q-00019e2ecf83",
+        "q-dc9e3ceff622"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 9,
+          "label": "Klausur 2024, Aufgabe 9"
+        }
+      ],
+      "solutionEvidenceIds": [],
+      "solutionSourceRefs": [
+        {
+          "sourceId": "src-6df30a9ff1ae",
+          "page": 9,
+          "label": "Aufgabenquelle für den unabhängig verifizierten Bellman-Ford-Entwurf"
+        }
+      ],
+      "relationshipVerified": true,
+      "notes": "Kanonische und byteidentische Dublettenevidenz wurden gemeinsam visuell abgeglichen; die Lösung wurde unabhängig aus der belegten Aufgabenmethode hergeleitet."
     }
   ]
 }

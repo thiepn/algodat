@@ -485,6 +485,18 @@ export function CanonicalQuestionReviewPage() {
             Verifizierte Fragen: {collection.verifiedQuestionIds.length} · Erwartete Punktzahl:{' '}
             {collection.expectedPointTotal ?? 'nicht festgelegt'}
           </p>
+          {collection.eventMetadata ? (
+            <p>
+              Ereignismetadaten: Semester {collection.eventMetadata.semester ?? 'unbekannt'} · Datum{' '}
+              {collection.eventMetadata.date ?? 'unbekannt'} · Dauer{' '}
+              {collection.eventMetadata.durationMinutes === null
+                ? 'unbekannt'
+                : `${collection.eventMetadata.durationMinutes} Minuten`}{' '}
+              · Hilfsmittel {collection.eventMetadata.allowedAids} · Prüfer{' '}
+              {collection.eventMetadata.examiner ?? 'unbekannt'} · offizielle Bezeichnung{' '}
+              {collection.eventMetadata.officialDesignation ?? 'unbekannt'}
+            </p>
+          ) : null}
           <p>
             Aufgabenseiten:{' '}
             {collection.sourceRefs

@@ -78,6 +78,18 @@
 - [ ] Jede veröffentlichte kanonische Frage besteht die Korpusvalidierung.
 - [ ] Keine offene Kandidatur ist als Übungsaufgabe, Bibliotheksfrage oder Simulatoraufgabe sichtbar.
 
+## Checkpoint `exam-2024-1`
+
+- [x] Neun Aufgaben, 50 Punkte und zwei byteidentische Klausurdateien auf allen Seiten visuell verifiziert. [Klausur: `src-6df30a9ff1ae`, S. 1–9; Dublette: `src-ce97639c1821`, S. 1–9]
+- [x] Alle neun Aufgabenidentitäten mit je zwei Evidenzen versöhnt; 18 Evidenzen unpassender Lösungsdateien explizit ausgeschlossen.
+- [x] Zwei wortgleiche spätere offizielle Übungslösungen für Aufgaben 6 und 8 verifiziert; sieben Lösungen transparent authored. [Lösungen: `src-10a4e5432d36`, S. 3 und 7; `src-618e7da9bab3`, S. 1–3]
+- [x] 51 kanonische Fragen in sechs Sammlungen; 33 Kandidaturen bleiben offen.
+- [x] Strukturierte, public-safe und zugängliche Rekonstruktionen sowie deterministische Tests validiert.
+- [x] Version bleibt `1.0.0-rc.8`; kein Merge und kein Deployment.
+- [ ] Unabhängiger fachlicher Zweitreview der 51 Fragen bleibt offen.
+- [ ] Realer NVDA-/Narrator-Gate bleibt offen.
+- [ ] Phase 21R.1 bleibt wegen 33 offener Kandidaturen unvollständig.
+
 ## Checkpoint `exam-2021-1`
 
 - [x] Sechs historische Aufgaben, 60 Punkte und 120 Minuten visuell verifiziert. [Quelle: `src-28fe81380661`, S. 1–7]
@@ -85,11 +97,11 @@
 - [x] `src-39eb3d94f40a` bleibt nach vollständigem Seitenvergleich von allen sechs Lösungen getrennt. [Abweichende Quelle: S. 1–16]
 - [x] Sechs vollständige public-safe Rekonstruktionen mit authored Lösungen, Quellenbezügen und Ressourcenmappings validiert.
 - [x] Deterministische Tests für Rekurrenz, LatenessScheduling, Bellman-Ford, Minimum, Minen-DP und Artikulationsknoten bestanden.
-- [x] 42 kanonische Fragen in fünf Sammlungen; 42 Kandidaturen bleiben offen.
+- [x] Historischer Checkpoint: 42 kanonische Fragen in fünf Sammlungen; damals blieben 42 Kandidaturen offen.
 - [x] Version bleibt `1.0.0-rc.8`; kein Merge und kein Deployment.
 - [ ] Unabhängiger fachlicher Zweitreview bleibt offen.
 - [ ] Realer NVDA-/Narrator-Gate bleibt offen.
-- [ ] Phase 21R.1 bleibt wegen 42 offener Kandidaturen unvollständig.
+- [ ] Phase 21R.1 bleibt nach dem späteren Checkpoint `exam-2024-1` wegen 33 offener Kandidaturen unvollständig.
 
 ## Checkpoint `exam-2020-2`
 
@@ -102,7 +114,7 @@
 - [x] Fragenvorschau bleibt feature-geschützt; Review-Route bleibt development-only.
 - [x] Version bleibt `1.0.0-rc.8`.
 - [ ] Reales NVDA-/Narrator-Gate bleibt offen.
-- [ ] Der damalige Stand von 48 offenen Kandidaturen ist überholt; Phase 21R.1 bleibt wegen aktuell 42 offenen Kandidaturen unvollständig.
+- [ ] Die damaligen Stände von 48 und 42 offenen Kandidaturen sind überholt; Phase 21R.1 bleibt wegen aktuell 33 offenen Kandidaturen unvollständig.
 - [x] `exam-2022-1` ist mit neun Aufgaben, 50 Punkten und transparent authored Lösungen vollständig kanonisiert. [Quelle: `src-c4dde22523d3`, S. 1–16]
 - [x] `exam-2022-2` ist mit neun Aufgaben, 50 Punkten, acht authored Lösungen und einer verifizierten offiziellen späteren Lösung vollständig kanonisiert. [Quelle: `src-011d1ee23245`, S. 1–15; Lösung: `src-02be45f603ba`, S. 3–4]
-- [ ] Die 42 kanonischen Fragen benötigen weiterhin einen unabhängigen fachlichen Zweitreview.
+- [ ] Die inzwischen 51 kanonischen Fragen benötigen weiterhin einen unabhängigen fachlichen Zweitreview.

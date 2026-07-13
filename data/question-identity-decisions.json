@@ -7,7 +7,10 @@
       "candidateId": "mock-2023-task-1",
       "canonicalQuestionId": "mock-2023-task-1",
       "decisionState": "verified_canonical_question",
-      "evidenceIds": ["q-68424bad7007", "q-ac287cc3cd91"],
+      "evidenceIds": [
+        "q-68424bad7007",
+        "q-ac287cc3cd91"
+      ],
       "collectionId": "mock-2023",
       "taskNumber": 1,
       "subtasks": [],
@@ -17,129 +20,1360 @@
       "notes": "Die Titelseite ist keine Aufgabe; die Aufgabenidentität beginnt auf Seite 2. Die offizielle Lösung ist als getrennte Quelle auf Seite 2 verbunden."
     },
     {
-      "candidateId": "mock-2023-task-2", "canonicalQuestionId": "mock-2023-task-2", "decisionState": "verified_canonical_question",
-      "evidenceIds": ["q-cb21d65e0849", "q-9533522ac4b9"], "collectionId": "mock-2023", "taskNumber": 2, "subtasks": [],
-      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed",
+      "candidateId": "mock-2023-task-2",
+      "canonicalQuestionId": "mock-2023-task-2",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-cb21d65e0849",
+        "q-9533522ac4b9"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 2,
+      "subtasks": [],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
       "notes": "Graph und Prim-Markierungen wurden auf Seite 3 beider Quellen visuell geprüft."
     },
     {
-      "candidateId": "mock-2023-task-3", "canonicalQuestionId": "mock-2023-task-3", "decisionState": "verified_canonical_question",
-      "evidenceIds": ["q-ba117f34bff2", "q-1b03b7fde9af"], "collectionId": "mock-2023", "taskNumber": 3, "subtasks": [],
-      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed",
+      "candidateId": "mock-2023-task-3",
+      "canonicalQuestionId": "mock-2023-task-3",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-ba117f34bff2",
+        "q-1b03b7fde9af"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
       "notes": "Der Aufgabenkörper und die Lösung erstrecken sich jeweils über Seiten 4 und 5."
     },
     {
-      "candidateId": "mock-2023-task-4", "canonicalQuestionId": "mock-2023-task-4", "decisionState": "verified_canonical_question",
-      "evidenceIds": ["q-a7cbff8c12ce", "q-cd7fab05ad15"], "collectionId": "mock-2023", "taskNumber": 4, "subtasks": [],
-      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed",
+      "candidateId": "mock-2023-task-4",
+      "canonicalQuestionId": "mock-2023-task-4",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-a7cbff8c12ce",
+        "q-cd7fab05ad15"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 4,
+      "subtasks": [],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
       "notes": "Operationsfolge, gewichtete Listenregel und fünf Checkpoints wurden auf Seite 6 abgeglichen."
     },
     {
-      "candidateId": "mock-2023-task-5", "canonicalQuestionId": "mock-2023-task-5", "decisionState": "verified_canonical_question",
-      "evidenceIds": ["q-d2d9d5f5b9ce", "q-2689b6539e15"], "collectionId": "mock-2023", "taskNumber": 5, "subtasks": ["a", "b", "c"],
-      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed",
+      "candidateId": "mock-2023-task-5",
+      "canonicalQuestionId": "mock-2023-task-5",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-d2d9d5f5b9ce",
+        "q-2689b6539e15"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
       "notes": "Die drei Unteraufgaben bilden eine Beweisfrage. Der Fließtext nennt einmal x; Pseudocode und Lösung verwenden konsistent m."
     },
     {
-      "candidateId": "mock-2023-task-6", "canonicalQuestionId": "mock-2023-task-6", "decisionState": "verified_canonical_question",
-      "evidenceIds": ["q-7d6049cf053a", "q-703ad179b8aa"], "collectionId": "mock-2023", "taskNumber": 6, "subtasks": ["a", "b"],
-      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed",
+      "candidateId": "mock-2023-task-6",
+      "canonicalQuestionId": "mock-2023-task-6",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-7d6049cf053a",
+        "q-703ad179b8aa"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
       "notes": "Rekurrenz, Viererpotenzannahme und beide Teilaufgaben wurden auf Seite 8 geprüft."
     },
     {
-      "candidateId": "mock-2023-task-7", "canonicalQuestionId": "mock-2023-task-7", "decisionState": "verified_canonical_question",
-      "evidenceIds": ["q-b7c16531cc6f", "q-61d89073f254"], "collectionId": "mock-2023", "taskNumber": 7, "subtasks": ["a", "b", "c"],
-      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed",
+      "candidateId": "mock-2023-task-7",
+      "canonicalQuestionId": "mock-2023-task-7",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-b7c16531cc6f",
+        "q-61d89073f254"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 7,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
       "notes": "Aufgabe auf Seite 9; Lösung auf Seiten 9 und 10."
     },
     {
-      "candidateId": "mock-2023-task-8", "canonicalQuestionId": "mock-2023-task-8", "decisionState": "verified_canonical_question",
-      "evidenceIds": ["q-e22793628da9", "q-39207c782fea"], "collectionId": "mock-2023", "taskNumber": 8, "subtasks": ["a", "b", "c", "d"],
-      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed",
+      "candidateId": "mock-2023-task-8",
+      "canonicalQuestionId": "mock-2023-task-8",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-e22793628da9",
+        "q-39207c782fea"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 8,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
       "notes": "Aufgabe auf Seite 10; Lösung auf Seiten 11 und 12."
     },
     {
-      "candidateId": "mock-2023-task-9", "canonicalQuestionId": "mock-2023-task-9", "decisionState": "verified_canonical_question",
-      "evidenceIds": ["q-959a0e7e7bea", "q-70b90b34d0dc"], "collectionId": "mock-2023", "taskNumber": 9, "subtasks": [],
-      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed",
+      "candidateId": "mock-2023-task-9",
+      "canonicalQuestionId": "mock-2023-task-9",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-959a0e7e7bea",
+        "q-70b90b34d0dc"
+      ],
+      "collectionId": "mock-2023",
+      "taskNumber": 9,
+      "subtasks": [],
+      "duplicateRelationship": "Aufgabe und offizielle Lösung sind getrennte Evidenzen derselben Identität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
       "notes": "Die offizielle Lösung auf Seiten 13 und 14 vertauscht Lese- und Löschbezeichnungen; der Konflikt ist dokumentiert."
     },
-    { "candidateId": "exam-2020-2-task-1", "canonicalQuestionId": "exam-2020-2-task-1", "decisionState": "verified_canonical_question", "evidenceIds": ["q-1c1860fa3f25", "q-936b70ac620a"], "collectionId": "exam-2020-2", "taskNumber": 1, "subtasks": [], "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Zwölf Intervalle und Auswahlfolge wurden auf Seite 2 beider Quellen visuell abgeglichen." },
-    { "candidateId": "exam-2020-2-task-2", "canonicalQuestionId": "exam-2020-2-task-2", "decisionState": "verified_canonical_question", "evidenceIds": ["q-d95359c32eff", "q-541014940052"], "collectionId": "exam-2020-2", "taskNumber": 2, "subtasks": [], "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Graph und DFS-Zeitstempel wurden auf Seite 3 beider Quellen visuell abgeglichen." },
-    { "candidateId": "exam-2020-2-task-3", "canonicalQuestionId": "exam-2020-2-task-3", "decisionState": "verified_canonical_question", "evidenceIds": ["q-fc833b613c79", "q-d85cb0ec2701"], "collectionId": "exam-2020-2", "taskNumber": 3, "subtasks": [], "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Ausgangsbaum, fünf Operationen und fünf Ergebnisbäume wurden auf Seite 4 abgeglichen." },
-    { "candidateId": "exam-2020-2-task-4", "canonicalQuestionId": "exam-2020-2-task-4", "decisionState": "verified_canonical_question", "evidenceIds": ["q-e12c9bac6609", "q-2aae331e7ddb"], "collectionId": "exam-2020-2", "taskNumber": 4, "subtasks": [], "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Graph, Gewichte und Prim-Auswahlfolge wurden auf Seite 5 abgeglichen." },
-    { "candidateId": "exam-2020-2-task-5", "canonicalQuestionId": "exam-2020-2-task-5", "decisionState": "verified_canonical_question", "evidenceIds": ["q-8bf1bf38eca6", "q-1968c9102df1"], "collectionId": "exam-2020-2", "taskNumber": 5, "subtasks": ["a", "b", "c"], "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Pseudocode und dreiteiliger Invariantenbeweis wurden auf Seite 6 abgeglichen." },
-    { "candidateId": "exam-2020-2-task-6", "canonicalQuestionId": "exam-2020-2-task-6", "decisionState": "verified_canonical_question", "evidenceIds": ["q-608c00a2ba9a", "q-3fb8e1192173"], "collectionId": "exam-2020-2", "taskNumber": 6, "subtasks": ["a", "b"], "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Rekurrenz und Induktionslösung wurden auf Seite 7 abgeglichen." },
-    { "candidateId": "exam-2020-2-task-7", "canonicalQuestionId": "exam-2020-2-task-7", "decisionState": "verified_canonical_question", "evidenceIds": ["q-9c1ee15272e4", "q-64b364b0585e"], "collectionId": "exam-2020-2", "taskNumber": 7, "subtasks": ["a", "b", "c"], "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Greedy-Modell, Pseudocode, Laufzeit und Austauschbeweis wurden auf Seite 8 abgeglichen." },
-    { "candidateId": "exam-2020-2-task-8", "canonicalQuestionId": "exam-2020-2-task-8", "decisionState": "verified_canonical_question", "evidenceIds": ["q-acf24d9221a1", "q-687f52d71c12"], "collectionId": "exam-2020-2", "taskNumber": 8, "subtasks": ["a", "b", "c", "d"], "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben zweiseitigen Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Seiten 9 und 10 wurden vollständig geprüft; der Konflikt zwischen Rekurrenz und Pseudocode ist dokumentiert." },
-    { "candidateId": "exam-2020-2-task-9", "canonicalQuestionId": "exam-2020-2-task-9", "decisionState": "verified_canonical_question", "evidenceIds": ["q-cbeeef570d73", "q-0b17b47a1209"], "collectionId": "exam-2020-2", "taskNumber": 9, "subtasks": [], "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben zweiseitigen Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Aufgabe und Feldlösung wurden auf Seiten 11 und 12 vollständig geprüft." },
-    { "candidateId": "exam-2022-1-task-1", "canonicalQuestionId": "exam-2022-1-task-1", "decisionState": "verified_canonical_question", "evidenceIds": ["q-f1ffa14d40d9", "q-aaf14a291061", "q-8021cf73c732", "q-00c836e5ff9a"], "collectionId": "exam-2022-1", "taskNumber": 1, "subtasks": [], "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Auftragsfeld und Gleichstandsregel wurden auf Seite 2 visuell geprüft; keine offizielle Lösung vorhanden." },
-    { "candidateId": "exam-2022-1-task-2", "canonicalQuestionId": "exam-2022-1-task-2", "decisionState": "verified_canonical_question", "evidenceIds": ["q-5518fe932f1e", "q-6680878ae30e", "q-fbe8ff4ce24c", "q-d87c1c2398c9"], "collectionId": "exam-2022-1", "taskNumber": 2, "subtasks": [], "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Ausgangsbaum und vier Operationen wurden auf Seite 3 visuell geprüft." },
-    { "candidateId": "exam-2022-1-task-3", "canonicalQuestionId": "exam-2022-1-task-3", "decisionState": "verified_canonical_question", "evidenceIds": ["q-2b1b54fe8758", "q-09e8c93d5171", "q-3843957dd12c", "q-75386856fa8c"], "collectionId": "exam-2022-1", "taskNumber": 3, "subtasks": [], "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Graph auf Seite 4 und Matrixvorlage auf Seite 5 bilden gemeinsam Aufgabe 3." },
-    { "candidateId": "exam-2022-1-task-4", "canonicalQuestionId": "exam-2022-1-task-4", "decisionState": "verified_canonical_question", "evidenceIds": ["q-834ceeb40be0", "q-cfcd43f5f475", "q-bc530b27c35f", "q-9fade0f02cea"], "collectionId": "exam-2022-1", "taskNumber": 4, "subtasks": [], "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Prim-Graph und Startknoten wurden auf Seite 6 visuell geprüft." },
-    { "candidateId": "exam-2022-1-task-5", "canonicalQuestionId": "exam-2022-1-task-5", "decisionState": "verified_canonical_question", "evidenceIds": ["q-bc70e450f3e2", "q-ac518b5f9f58", "q-0ac57be90831", "q-6dda813e0623"], "collectionId": "exam-2022-1", "taskNumber": 5, "subtasks": ["a", "b", "c"], "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Pseudocode und drei Beweisteile wurden auf Seite 7 visuell geprüft." },
-    { "candidateId": "exam-2022-1-task-6", "canonicalQuestionId": "exam-2022-1-task-6", "decisionState": "verified_canonical_question", "evidenceIds": ["q-0b1cf4b8a0a4", "q-6689590c43e9", "q-a450cc3e7076", "q-63d52a4ebc8f"], "collectionId": "exam-2022-1", "taskNumber": 6, "subtasks": ["a", "b"], "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Rekurrenz, Fünferpotenzannahme und beide Teilaufgaben wurden auf Seite 9 visuell geprüft." },
-    { "candidateId": "exam-2022-1-task-7", "canonicalQuestionId": "exam-2022-1-task-7", "decisionState": "verified_canonical_question", "evidenceIds": ["q-c5df1252c54c", "q-bd6b5459c5c1", "q-8a64299fe130", "q-94894e0b4e8d"], "collectionId": "exam-2022-1", "taskNumber": 7, "subtasks": ["a", "b", "c"], "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Workout-Modell und drei Greedy-Teilaufgaben wurden auf Seite 11 visuell geprüft." },
-    { "candidateId": "exam-2022-1-task-8", "canonicalQuestionId": "exam-2022-1-task-8", "decisionState": "verified_canonical_question", "evidenceIds": ["q-e32562e71549", "q-9f92a5812443", "q-cbaab62e843b", "q-fbb504eda545"], "collectionId": "exam-2022-1", "taskNumber": 8, "subtasks": ["a", "b", "c", "d"], "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Traversierungsdefinition und vier DP-Teilaufgaben wurden auf Seite 13 visuell geprüft." },
-    { "candidateId": "exam-2022-1-task-9", "canonicalQuestionId": "exam-2022-1-task-9", "decisionState": "verified_canonical_question", "evidenceIds": ["q-f0f8e80ad9ad", "q-21cf7cf20b57", "q-0ec645f2f936", "q-01b2b44b860d"], "collectionId": "exam-2022-1", "taskNumber": 9, "subtasks": ["a", "b", "c"], "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Graphproblem, lineare Laufzeitanforderung und drei Teilaufgaben wurden auf Seite 15 visuell geprüft." },
-    { "candidateId": "exam-2022-2-task-1", "canonicalQuestionId": "exam-2022-2-task-1", "decisionState": "verified_canonical_question", "evidenceIds": ["q-dbc7e6b9d24a", "q-c17965ed8e19", "q-a8fd47eec80e", "q-c2c213065eb3"], "collectionId": "exam-2022-2", "taskNumber": 1, "subtasks": [], "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Neun Tupel, Deadline-Regel und geforderte Ausgabe wurden auf Seite 2 geprüft." },
-    { "candidateId": "exam-2022-2-task-2", "canonicalQuestionId": "exam-2022-2-task-2", "decisionState": "verified_canonical_question", "evidenceIds": ["q-8cbfe3cc92e3", "q-865820d4e598", "q-89a2a20e1255", "q-34d53d1c7db6"], "collectionId": "exam-2022-2", "taskNumber": 2, "subtasks": [], "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Neun Union-Find-Operationen und Gleichstandsregel wurden auf Seite 3 geprüft." },
-    { "candidateId": "exam-2022-2-task-3", "canonicalQuestionId": "exam-2022-2-task-3", "decisionState": "verified_canonical_question", "evidenceIds": ["q-7c452ca0661f", "q-dd17884bec33", "q-403c7048b145", "q-14a940ebb631"], "collectionId": "exam-2022-2", "taskNumber": 3, "subtasks": [], "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Gerichteter Graph, vierzehn Gewichte, Startknoten und Gleichstand wurden auf Seite 4 geprüft." },
-    { "candidateId": "exam-2022-2-task-4", "canonicalQuestionId": "exam-2022-2-task-4", "decisionState": "verified_canonical_question", "evidenceIds": ["q-49c8cbc49028", "q-d147f1a3c8da", "q-1cb7aa704fc3", "q-57225994c1d9"], "collectionId": "exam-2022-2", "taskNumber": 4, "subtasks": ["a", "b"], "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Fünf Objektpaare, Kapazität und Tabellengrenzen wurden auf Seite 5 geprüft." },
-    { "candidateId": "exam-2022-2-task-5", "canonicalQuestionId": "exam-2022-2-task-5", "decisionState": "verified_canonical_question", "evidenceIds": ["q-c93511120c5a", "q-99e3cdaafc80", "q-67b932d9cc82", "q-2a4e6b9dc023"], "collectionId": "exam-2022-2", "taskNumber": 5, "subtasks": ["a", "b", "c"], "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Pseudocode und drei Beweisteile wurden auf Seite 6 geprüft." },
-    { "candidateId": "exam-2022-2-task-6", "canonicalQuestionId": "exam-2022-2-task-6", "decisionState": "verified_canonical_question", "evidenceIds": ["q-daa6c4494737", "q-cf55ec235139", "q-91d5153c7a15", "q-1bfa1a6ec98e"], "collectionId": "exam-2022-2", "taskNumber": 6, "subtasks": ["a", "b"], "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Rekurrenz, Basisfall und Zweierpotenzannahme wurden auf Seite 8 geprüft." },
-    { "candidateId": "exam-2022-2-task-7", "canonicalQuestionId": "exam-2022-2-task-7", "decisionState": "verified_canonical_question", "evidenceIds": ["q-05135a1817a5", "q-6177656143ce", "q-62da74a2701c", "q-ba26af6c4c82"], "collectionId": "exam-2022-2", "taskNumber": 7, "subtasks": ["a", "b", "c"], "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Fehlermodell, O(log n)-Forderung und drei Teile wurden auf Seite 10 geprüft." },
-    { "candidateId": "exam-2022-2-task-8", "canonicalQuestionId": "exam-2022-2-task-8", "decisionState": "verified_canonical_question", "evidenceIds": ["q-51de6dc1ca3a", "q-6ce5473b4df8", "q-0a2b965d30d0", "q-1adc3cdeb9df"], "collectionId": "exam-2022-2", "taskNumber": 8, "subtasks": ["a", "b", "c", "d"], "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Windparkmodell und vier DP-Teile wurden auf Seite 12 geprüft." },
-    { "candidateId": "exam-2022-2-task-9", "canonicalQuestionId": "exam-2022-2-task-9", "decisionState": "verified_canonical_question", "evidenceIds": ["q-f8a6c450c552", "q-34f4e7e6e463", "q-4e4d6154b0e3", "q-edb5f82ff81a", "q-e5608c7c1d2d"], "collectionId": "exam-2022-2", "taskNumber": 9, "subtasks": ["a", "b", "c"], "duplicateRelationship": "Vier byteidentische Klausurdateien und eine spätere offizielle Übungslösung derselben Aufgabenstellung gehören zu einer kanonischen Frage.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Klausurseite 14 und offizielle Übungslösung Seiten 3 bis 4 wurden vollständig abgeglichen." }
-    ,
-    { "candidateId": "exam-2021-1-task-1", "canonicalQuestionId": "exam-2021-1-task-1", "decisionState": "verified_canonical_question", "evidenceIds": ["q-0508ae79d06c", "q-eb058faaa3b3"], "collectionId": "exam-2021-1", "taskNumber": 1, "subtasks": ["a", "b"], "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Pseudocode, Rekurrenzauftrag und Master-Theorem-Frage wurden auf Seite 2 geprüft." },
-    { "candidateId": "exam-2021-1-task-2", "canonicalQuestionId": "exam-2021-1-task-2", "decisionState": "verified_canonical_question", "evidenceIds": ["q-546983ce44a1", "q-ad764d729637"], "collectionId": "exam-2021-1", "taskNumber": 2, "subtasks": [], "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Alle neun Tupel und die LatenessScheduling-Anforderungen wurden auf Seite 3 geprüft." },
-    { "candidateId": "exam-2021-1-task-3", "canonicalQuestionId": "exam-2021-1-task-3", "decisionState": "verified_canonical_question", "evidenceIds": ["q-1ade26a5e8f3", "q-2e41f1d32d31"], "collectionId": "exam-2021-1", "taskNumber": 3, "subtasks": [], "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Acht gerichtete Kanten, Gewichte, Startknoten und Rundenkonvention wurden auf Seite 4 geprüft." },
-    { "candidateId": "exam-2021-1-task-4", "canonicalQuestionId": "exam-2021-1-task-4", "decisionState": "verified_canonical_question", "evidenceIds": ["q-cd065b285cd1", "q-f60c6675da5e"], "collectionId": "exam-2021-1", "taskNumber": 4, "subtasks": ["a", "b", "c"], "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe fehlerhafte Aufgabenfassung.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Punktkonflikt und Zugriff B[n+1] wurden auf Deckblatt und Seite 5 geprüft und nicht stillschweigend korrigiert." },
-    { "candidateId": "exam-2021-1-task-5", "canonicalQuestionId": "exam-2021-1-task-5", "decisionState": "verified_canonical_question", "evidenceIds": ["q-0b5d29afa87d", "q-bbed7955d794"], "collectionId": "exam-2021-1", "taskNumber": 5, "subtasks": ["a", "b", "c", "d"], "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Beispielmatrix, Bewegungsregeln und vier DP-Teile wurden auf Seite 6 geprüft." },
-    { "candidateId": "exam-2021-1-task-6", "canonicalQuestionId": "exam-2021-1-task-6", "decisionState": "verified_canonical_question", "evidenceIds": ["q-1e1e7714c44c", "q-551d33d915a3"], "collectionId": "exam-2021-1", "taskNumber": 6, "subtasks": ["a", "b", "c"], "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.", "identityConfidence": "hoch", "reviewerStatus": "final_reviewed", "notes": "Graphdefinition, Laufzeitziel und drei Entwurfsteile wurden auf Seite 7 geprüft." }
+    {
+      "candidateId": "exam-2020-2-task-1",
+      "canonicalQuestionId": "exam-2020-2-task-1",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-1c1860fa3f25",
+        "q-936b70ac620a"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 1,
+      "subtasks": [],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Zwölf Intervalle und Auswahlfolge wurden auf Seite 2 beider Quellen visuell abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-2",
+      "canonicalQuestionId": "exam-2020-2-task-2",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-d95359c32eff",
+        "q-541014940052"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 2,
+      "subtasks": [],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graph und DFS-Zeitstempel wurden auf Seite 3 beider Quellen visuell abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-3",
+      "canonicalQuestionId": "exam-2020-2-task-3",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-fc833b613c79",
+        "q-d85cb0ec2701"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Ausgangsbaum, fünf Operationen und fünf Ergebnisbäume wurden auf Seite 4 abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-4",
+      "canonicalQuestionId": "exam-2020-2-task-4",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-e12c9bac6609",
+        "q-2aae331e7ddb"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 4,
+      "subtasks": [],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graph, Gewichte und Prim-Auswahlfolge wurden auf Seite 5 abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-5",
+      "canonicalQuestionId": "exam-2020-2-task-5",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-8bf1bf38eca6",
+        "q-1968c9102df1"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Pseudocode und dreiteiliger Invariantenbeweis wurden auf Seite 6 abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-6",
+      "canonicalQuestionId": "exam-2020-2-task-6",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-608c00a2ba9a",
+        "q-3fb8e1192173"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Rekurrenz und Induktionslösung wurden auf Seite 7 abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-7",
+      "canonicalQuestionId": "exam-2020-2-task-7",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-9c1ee15272e4",
+        "q-64b364b0585e"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 7,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Greedy-Modell, Pseudocode, Laufzeit und Austauschbeweis wurden auf Seite 8 abgeglichen."
+    },
+    {
+      "candidateId": "exam-2020-2-task-8",
+      "canonicalQuestionId": "exam-2020-2-task-8",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-acf24d9221a1",
+        "q-687f52d71c12"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 8,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben zweiseitigen Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Seiten 9 und 10 wurden vollständig geprüft; der Konflikt zwischen Rekurrenz und Pseudocode ist dokumentiert."
+    },
+    {
+      "candidateId": "exam-2020-2-task-9",
+      "canonicalQuestionId": "exam-2020-2-task-9",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-cbeeef570d73",
+        "q-0b17b47a1209"
+      ],
+      "collectionId": "exam-2020-2",
+      "taskNumber": 9,
+      "subtasks": [],
+      "duplicateRelationship": "Klausur- und Lösungsevidenz gehören zu derselben zweiseitigen Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe und Feldlösung wurden auf Seiten 11 und 12 vollständig geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-1",
+      "canonicalQuestionId": "exam-2022-1-task-1",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-f1ffa14d40d9",
+        "q-aaf14a291061",
+        "q-8021cf73c732",
+        "q-00c836e5ff9a"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 1,
+      "subtasks": [],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Auftragsfeld und Gleichstandsregel wurden auf Seite 2 visuell geprüft; keine offizielle Lösung vorhanden."
+    },
+    {
+      "candidateId": "exam-2022-1-task-2",
+      "canonicalQuestionId": "exam-2022-1-task-2",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-5518fe932f1e",
+        "q-6680878ae30e",
+        "q-fbe8ff4ce24c",
+        "q-d87c1c2398c9"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 2,
+      "subtasks": [],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Ausgangsbaum und vier Operationen wurden auf Seite 3 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-3",
+      "canonicalQuestionId": "exam-2022-1-task-3",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-2b1b54fe8758",
+        "q-09e8c93d5171",
+        "q-3843957dd12c",
+        "q-75386856fa8c"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graph auf Seite 4 und Matrixvorlage auf Seite 5 bilden gemeinsam Aufgabe 3."
+    },
+    {
+      "candidateId": "exam-2022-1-task-4",
+      "canonicalQuestionId": "exam-2022-1-task-4",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-834ceeb40be0",
+        "q-cfcd43f5f475",
+        "q-bc530b27c35f",
+        "q-9fade0f02cea"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 4,
+      "subtasks": [],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Prim-Graph und Startknoten wurden auf Seite 6 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-5",
+      "canonicalQuestionId": "exam-2022-1-task-5",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-bc70e450f3e2",
+        "q-ac518b5f9f58",
+        "q-0ac57be90831",
+        "q-6dda813e0623"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Pseudocode und drei Beweisteile wurden auf Seite 7 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-6",
+      "canonicalQuestionId": "exam-2022-1-task-6",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-0b1cf4b8a0a4",
+        "q-6689590c43e9",
+        "q-a450cc3e7076",
+        "q-63d52a4ebc8f"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Rekurrenz, Fünferpotenzannahme und beide Teilaufgaben wurden auf Seite 9 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-7",
+      "canonicalQuestionId": "exam-2022-1-task-7",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-c5df1252c54c",
+        "q-bd6b5459c5c1",
+        "q-8a64299fe130",
+        "q-94894e0b4e8d"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 7,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Workout-Modell und drei Greedy-Teilaufgaben wurden auf Seite 11 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-8",
+      "canonicalQuestionId": "exam-2022-1-task-8",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-e32562e71549",
+        "q-9f92a5812443",
+        "q-cbaab62e843b",
+        "q-fbb504eda545"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 8,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Traversierungsdefinition und vier DP-Teilaufgaben wurden auf Seite 13 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-1-task-9",
+      "canonicalQuestionId": "exam-2022-1-task-9",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-f0f8e80ad9ad",
+        "q-21cf7cf20b57",
+        "q-0ec645f2f936",
+        "q-01b2b44b860d"
+      ],
+      "collectionId": "exam-2022-1",
+      "taskNumber": 9,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Die vier identischen Klausurdateien gehören zur selben deduplizierten Aufgabenidentität.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graphproblem, lineare Laufzeitanforderung und drei Teilaufgaben wurden auf Seite 15 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-1",
+      "canonicalQuestionId": "exam-2022-2-task-1",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-dbc7e6b9d24a",
+        "q-c17965ed8e19",
+        "q-a8fd47eec80e",
+        "q-c2c213065eb3"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 1,
+      "subtasks": [],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Neun Tupel, Deadline-Regel und geforderte Ausgabe wurden auf Seite 2 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-2",
+      "canonicalQuestionId": "exam-2022-2-task-2",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-8cbfe3cc92e3",
+        "q-865820d4e598",
+        "q-89a2a20e1255",
+        "q-34d53d1c7db6"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 2,
+      "subtasks": [],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Neun Union-Find-Operationen und Gleichstandsregel wurden auf Seite 3 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-3",
+      "canonicalQuestionId": "exam-2022-2-task-3",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-7c452ca0661f",
+        "q-dd17884bec33",
+        "q-403c7048b145",
+        "q-14a940ebb631"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Gerichteter Graph, vierzehn Gewichte, Startknoten und Gleichstand wurden auf Seite 4 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-4",
+      "canonicalQuestionId": "exam-2022-2-task-4",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-49c8cbc49028",
+        "q-d147f1a3c8da",
+        "q-1cb7aa704fc3",
+        "q-57225994c1d9"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 4,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Fünf Objektpaare, Kapazität und Tabellengrenzen wurden auf Seite 5 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-5",
+      "canonicalQuestionId": "exam-2022-2-task-5",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-c93511120c5a",
+        "q-99e3cdaafc80",
+        "q-67b932d9cc82",
+        "q-2a4e6b9dc023"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Pseudocode und drei Beweisteile wurden auf Seite 6 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-6",
+      "canonicalQuestionId": "exam-2022-2-task-6",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-daa6c4494737",
+        "q-cf55ec235139",
+        "q-91d5153c7a15",
+        "q-1bfa1a6ec98e"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Rekurrenz, Basisfall und Zweierpotenzannahme wurden auf Seite 8 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-7",
+      "canonicalQuestionId": "exam-2022-2-task-7",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-05135a1817a5",
+        "q-6177656143ce",
+        "q-62da74a2701c",
+        "q-ba26af6c4c82"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 7,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Fehlermodell, O(log n)-Forderung und drei Teile wurden auf Seite 10 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-8",
+      "canonicalQuestionId": "exam-2022-2-task-8",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-51de6dc1ca3a",
+        "q-6ce5473b4df8",
+        "q-0a2b965d30d0",
+        "q-1adc3cdeb9df"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 8,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Windparkmodell und vier DP-Teile wurden auf Seite 12 geprüft."
+    },
+    {
+      "candidateId": "exam-2022-2-task-9",
+      "canonicalQuestionId": "exam-2022-2-task-9",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-f8a6c450c552",
+        "q-34f4e7e6e463",
+        "q-4e4d6154b0e3",
+        "q-edb5f82ff81a",
+        "q-e5608c7c1d2d"
+      ],
+      "collectionId": "exam-2022-2",
+      "taskNumber": 9,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Vier byteidentische Klausurdateien und eine spätere offizielle Übungslösung derselben Aufgabenstellung gehören zu einer kanonischen Frage.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Klausurseite 14 und offizielle Übungslösung Seiten 3 bis 4 wurden vollständig abgeglichen."
+    },
+    {
+      "candidateId": "exam-2021-1-task-1",
+      "canonicalQuestionId": "exam-2021-1-task-1",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-0508ae79d06c",
+        "q-eb058faaa3b3"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 1,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Pseudocode, Rekurrenzauftrag und Master-Theorem-Frage wurden auf Seite 2 geprüft."
+    },
+    {
+      "candidateId": "exam-2021-1-task-2",
+      "canonicalQuestionId": "exam-2021-1-task-2",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-546983ce44a1",
+        "q-ad764d729637"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 2,
+      "subtasks": [],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Alle neun Tupel und die LatenessScheduling-Anforderungen wurden auf Seite 3 geprüft."
+    },
+    {
+      "candidateId": "exam-2021-1-task-3",
+      "canonicalQuestionId": "exam-2021-1-task-3",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-1ade26a5e8f3",
+        "q-2e41f1d32d31"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Acht gerichtete Kanten, Gewichte, Startknoten und Rundenkonvention wurden auf Seite 4 geprüft."
+    },
+    {
+      "candidateId": "exam-2021-1-task-4",
+      "canonicalQuestionId": "exam-2021-1-task-4",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-cd065b285cd1",
+        "q-f60c6675da5e"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 4,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe fehlerhafte Aufgabenfassung.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Punktkonflikt und Zugriff B[n+1] wurden auf Deckblatt und Seite 5 geprüft und nicht stillschweigend korrigiert."
+    },
+    {
+      "candidateId": "exam-2021-1-task-5",
+      "canonicalQuestionId": "exam-2021-1-task-5",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-0b5d29afa87d",
+        "q-bbed7955d794"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Beispielmatrix, Bewegungsregeln und vier DP-Teile wurden auf Seite 6 geprüft."
+    },
+    {
+      "candidateId": "exam-2021-1-task-6",
+      "canonicalQuestionId": "exam-2021-1-task-6",
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-1e1e7714c44c",
+        "q-551d33d915a3"
+      ],
+      "collectionId": "exam-2021-1",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Zwei byteidentische Klausurdateien zeigen dieselbe Aufgabe.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Graphdefinition, Laufzeitziel und drei Entwurfsteile wurden auf Seite 7 geprüft."
+    },
+    {
+      "candidateId": "exam-2024-1-task-1",
+      "canonicalQuestionId": "exam-2024-1-task-1",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-325bc000d3da",
+        "q-4d917e62693e"
+      ],
+      "collectionId": "exam-2024-1",
+      "taskNumber": 1,
+      "subtasks": [],
+      "duplicateRelationship": "Die beiden Evidenzen stammen aus byteidentischen PDF-Dateien; die erste ist kanonisch, die zweite ausschließlich Dublettenevidenz.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe 1, Punktzahl, Struktur und vollständiger Inhalt wurden auf Seite 1 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2024-1-task-2",
+      "canonicalQuestionId": "exam-2024-1-task-2",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-113716b2961d",
+        "q-a5dd9d54cca1"
+      ],
+      "collectionId": "exam-2024-1",
+      "taskNumber": 2,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Die beiden Evidenzen stammen aus byteidentischen PDF-Dateien; die erste ist kanonisch, die zweite ausschließlich Dublettenevidenz.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe 2, Punktzahl, Struktur und vollständiger Inhalt wurden auf Seite 2 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2024-1-task-3",
+      "canonicalQuestionId": "exam-2024-1-task-3",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-2d4c434cc9f4",
+        "q-5fe684bd51d9"
+      ],
+      "collectionId": "exam-2024-1",
+      "taskNumber": 3,
+      "subtasks": [],
+      "duplicateRelationship": "Die beiden Evidenzen stammen aus byteidentischen PDF-Dateien; die erste ist kanonisch, die zweite ausschließlich Dublettenevidenz.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabentext, Nummer, Punktzahl, Seitenlayout und sichtbarer Baumausschnitt wurden zusätzlich mit privater visueller Unterstützung abgeglichen; diese Unterstützung ist weder kanonische Frage noch öffentliches Material."
+    },
+    {
+      "candidateId": "exam-2024-1-task-4",
+      "canonicalQuestionId": "exam-2024-1-task-4",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-3737ba8fb64c",
+        "q-072a26ef41f8"
+      ],
+      "collectionId": "exam-2024-1",
+      "taskNumber": 4,
+      "subtasks": [],
+      "duplicateRelationship": "Die beiden Evidenzen stammen aus byteidentischen PDF-Dateien; die erste ist kanonisch, die zweite ausschließlich Dublettenevidenz.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe 4, Punktzahl, Struktur und vollständiger Inhalt wurden auf Seite 4 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2024-1-task-5",
+      "canonicalQuestionId": "exam-2024-1-task-5",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-87db01b3a470",
+        "q-df451fc16336"
+      ],
+      "collectionId": "exam-2024-1",
+      "taskNumber": 5,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Die beiden Evidenzen stammen aus byteidentischen PDF-Dateien; die erste ist kanonisch, die zweite ausschließlich Dublettenevidenz.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe 5, Punktzahl, Struktur und vollständiger Inhalt wurden auf Seite 5 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2024-1-task-6",
+      "canonicalQuestionId": "exam-2024-1-task-6",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-58dbe7725f08",
+        "q-4c091557a91e"
+      ],
+      "collectionId": "exam-2024-1",
+      "taskNumber": 6,
+      "subtasks": [
+        "a",
+        "b"
+      ],
+      "duplicateRelationship": "Die beiden Evidenzen stammen aus byteidentischen PDF-Dateien; die erste ist kanonisch, die zweite ausschließlich Dublettenevidenz.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe 6, Punktzahl, Struktur und vollständiger Inhalt wurden auf Seite 6 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2024-1-task-7",
+      "canonicalQuestionId": "exam-2024-1-task-7",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-6549208674b4",
+        "q-6cce958a303e"
+      ],
+      "collectionId": "exam-2024-1",
+      "taskNumber": 7,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Die beiden Evidenzen stammen aus byteidentischen PDF-Dateien; die erste ist kanonisch, die zweite ausschließlich Dublettenevidenz.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe 7, Punktzahl, Struktur und vollständiger Inhalt wurden auf Seite 7 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2024-1-task-8",
+      "canonicalQuestionId": "exam-2024-1-task-8",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-68147d5b33e4",
+        "q-c05c88eacd0b"
+      ],
+      "collectionId": "exam-2024-1",
+      "taskNumber": 8,
+      "subtasks": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "duplicateRelationship": "Die beiden Evidenzen stammen aus byteidentischen PDF-Dateien; die erste ist kanonisch, die zweite ausschließlich Dublettenevidenz.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe 8, Punktzahl, Struktur und vollständiger Inhalt wurden auf Seite 8 visuell geprüft."
+    },
+    {
+      "candidateId": "exam-2024-1-task-9",
+      "canonicalQuestionId": "exam-2024-1-task-9",
+      "resultQuestionIds": [],
+      "decisionState": "verified_canonical_question",
+      "evidenceIds": [
+        "q-00019e2ecf83",
+        "q-dc9e3ceff622"
+      ],
+      "collectionId": "exam-2024-1",
+      "taskNumber": 9,
+      "subtasks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "duplicateRelationship": "Die beiden Evidenzen stammen aus byteidentischen PDF-Dateien; die erste ist kanonisch, die zweite ausschließlich Dublettenevidenz.",
+      "identityConfidence": "hoch",
+      "reviewerStatus": "final_reviewed",
+      "notes": "Aufgabe 9, Punktzahl, Struktur und vollständiger Inhalt wurden auf Seite 9 visuell geprüft."
+    }
   ],
   "excludedEvidence": [
-    { "evidenceId": "q-c2391c1b18d8", "sourceId": "src-97414623dd81", "page": 1, "decision": "exam_cover_page", "notes": "Titelseite und Punkteübersicht der realen Klausur; keine Aufgabe." },
-    { "evidenceId": "q-32867772a3cd", "sourceId": "src-8a588d5ddc35", "page": 1, "decision": "solution_cover_page", "notes": "Titelseite der offiziellen Lösungsskizze; keine eigenständige Aufgabenlösung." },
-    { "evidenceId": "q-7d7aa2066664", "sourceId": "src-8f16b2505bbd", "page": 1, "decision": "exam_cover_page", "notes": "Titelseite mit Prüfungsangaben und Punktetabelle; keine Aufgabe." },
-    { "evidenceId": "q-c62724c0fc32", "sourceId": "src-35405e721f05", "page": 1, "decision": "exam_cover_page", "notes": "Titelseite der Beispiellösung; keine Aufgabenlösung." },
-    { "evidenceId": "q-778107a70766", "sourceId": "src-c4dde22523d3", "page": 1, "decision": "exam_cover_page", "notes": "Titelseite und Punkteübersicht der kanonischen Erstklausur 2022; keine Aufgabe." },
-    { "evidenceId": "q-49fd7a5970cb", "sourceId": "src-00ae505a8756", "page": 1, "decision": "non_question_material", "notes": "Exakte Dublette der Titelseite von src-c4dde22523d3; keine Frage." },
-    { "evidenceId": "q-a9d059eee74c", "sourceId": "src-fa63eaca933b", "page": 1, "decision": "non_question_material", "notes": "Exakte Dublette der Titelseite von src-c4dde22523d3; keine Frage." },
-    { "evidenceId": "q-ae7c49724101", "sourceId": "src-5bb7aaf4268b", "page": 1, "decision": "non_question_material", "notes": "Exakte Dublette der Titelseite von src-c4dde22523d3; keine Frage." },
-    { "evidenceId": "q-5ed6f1fa6e91", "sourceId": "src-011d1ee23245", "page": 1, "decision": "exam_cover_page", "notes": "Titelseite und Punkteübersicht der kanonischen Zweitklausur 2022; keine Aufgabe." },
-    { "evidenceId": "q-99be7ed653ef", "sourceId": "src-3f29b67eef5c", "page": 1, "decision": "non_question_material", "notes": "Byteidentische Dublette der Titelseite; keine Frage." },
-    { "evidenceId": "q-52fec7986417", "sourceId": "src-2461e8a663fe", "page": 1, "decision": "non_question_material", "notes": "Byteidentische Dublette der Titelseite; keine Frage." },
-    { "evidenceId": "q-b31aaf85c2b9", "sourceId": "src-34f58aed1d9c", "page": 1, "decision": "non_question_material", "notes": "Byteidentische Dublette der Titelseite; keine Frage." }
-    ,
-    { "evidenceId": "q-34e4c77f6292", "sourceId": "src-28fe81380661", "page": 1, "decision": "exam_cover_page", "notes": "Deckblatt, Hinweise und Punktetabelle; keine Aufgabe." },
-    { "evidenceId": "q-426f5c618c6e", "sourceId": "src-0457af7a63f0", "page": 1, "decision": "non_question_material", "notes": "Byteidentische Dublette des Deckblatts; keine Frage." },
-    { "evidenceId": "q-a872822904a2", "sourceId": "src-39eb3d94f40a", "page": 1, "decision": "mismatched_solution_evidence", "notes": "Abweichende Rekurrenzvariante A; keine Lösung zu exam-2021-1 Aufgabe 1." },
-    { "evidenceId": "q-acc75c7d7595", "sourceId": "src-39eb3d94f40a", "page": 2, "decision": "mismatched_solution_evidence", "notes": "Abweichende Rekurrenzvariante B; keine Lösung zu exam-2021-1 Aufgabe 1." },
-    { "evidenceId": "q-962792361523", "sourceId": "src-39eb3d94f40a", "page": 3, "decision": "mismatched_solution_evidence", "notes": "Rot-Schwarz-Baum Variante A; exam-2021-1 Aufgabe 2 verlangt LatenessScheduling." },
-    { "evidenceId": "q-7866a78ca82c", "sourceId": "src-39eb3d94f40a", "page": 4, "decision": "mismatched_solution_evidence", "notes": "Rot-Schwarz-Baum Variante B; exam-2021-1 Aufgabe 2 verlangt LatenessScheduling." },
-    { "evidenceId": "q-bb58498bcc6b", "sourceId": "src-39eb3d94f40a", "page": 5, "decision": "mismatched_solution_evidence", "notes": "Dijkstra Variante A; exam-2021-1 Aufgabe 3 verlangt Bellman-Ford auf einem anderen Graphen." },
-    { "evidenceId": "q-da2f0725f356", "sourceId": "src-39eb3d94f40a", "page": 6, "decision": "mismatched_solution_evidence", "notes": "Dijkstra Variante B; exam-2021-1 Aufgabe 3 verlangt Bellman-Ford auf einem anderen Graphen." },
-    { "evidenceId": "q-4cf04b8c3fdb", "sourceId": "src-39eb3d94f40a", "page": 7, "decision": "mismatched_solution_evidence", "notes": "Additive Invariantenvariante; keine Lösung zum Minimumprogramm der Klausur." },
-    { "evidenceId": "q-421237b4adcf", "sourceId": "src-39eb3d94f40a", "page": 8, "decision": "mismatched_solution_evidence", "notes": "Multiplikative Invariantenvariante; keine Lösung zum Minimumprogramm der Klausur." },
-    { "evidenceId": "q-96494ddf4b26", "sourceId": "src-39eb3d94f40a", "page": 9, "decision": "mismatched_solution_evidence", "notes": "Talent-Show-DP Variante A; keine Lösung zum Minenproblem." },
-    { "evidenceId": "q-1501a4677b2e", "sourceId": "src-39eb3d94f40a", "page": 11, "decision": "mismatched_solution_evidence", "notes": "Talent-Show-DP Variante B; keine Lösung zum Minenproblem." },
-    { "evidenceId": "q-4368d2853dd9", "sourceId": "src-39eb3d94f40a", "page": 13, "decision": "mismatched_solution_evidence", "notes": "Laternen-Greedy-Aufgabe; keine Lösung zum Schnittknotenproblem." },
-    { "evidenceId": "q-b9c348bc2251", "sourceId": "src-39eb3d94f40a", "page": 15, "decision": "mismatched_solution_evidence", "notes": "Strauch-Greedy-Aufgabe; keine Lösung zum Schnittknotenproblem." },
-    { "evidenceId": "q-989345e966d5", "sourceId": "src-720584558efd", "page": 1, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Rekurrenzvariante A." },
-    { "evidenceId": "q-19d049d856d5", "sourceId": "src-720584558efd", "page": 2, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Rekurrenzvariante B." },
-    { "evidenceId": "q-825737172aee", "sourceId": "src-720584558efd", "page": 3, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Rot-Schwarz-Aufgabe A." },
-    { "evidenceId": "q-66e94cc862fa", "sourceId": "src-720584558efd", "page": 4, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Rot-Schwarz-Aufgabe B." },
-    { "evidenceId": "q-cf80d03ac627", "sourceId": "src-720584558efd", "page": 5, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Dijkstra-Aufgabe A." },
-    { "evidenceId": "q-d5e219429fbd", "sourceId": "src-720584558efd", "page": 6, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Dijkstra-Aufgabe B." },
-    { "evidenceId": "q-b0f4b9fbf667", "sourceId": "src-720584558efd", "page": 7, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Invariantenaufgabe A." },
-    { "evidenceId": "q-82213cddd964", "sourceId": "src-720584558efd", "page": 8, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Invariantenaufgabe B." },
-    { "evidenceId": "q-2e735eb0a412", "sourceId": "src-720584558efd", "page": 9, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Talent-Show-Aufgabe A." },
-    { "evidenceId": "q-f8913c6c1a5c", "sourceId": "src-720584558efd", "page": 11, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Talent-Show-Aufgabe B." },
-    { "evidenceId": "q-317ddd20feba", "sourceId": "src-720584558efd", "page": 13, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Laternenaufgabe." },
-    { "evidenceId": "q-10631a7c7af1", "sourceId": "src-720584558efd", "page": 15, "decision": "mismatched_solution_evidence", "notes": "Byteidentische Dublette der abweichenden Strauchaufgabe." }
+    {
+      "evidenceId": "q-c2391c1b18d8",
+      "sourceId": "src-97414623dd81",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Titelseite und Punkteübersicht der realen Klausur; keine Aufgabe."
+    },
+    {
+      "evidenceId": "q-32867772a3cd",
+      "sourceId": "src-8a588d5ddc35",
+      "page": 1,
+      "decision": "solution_cover_page",
+      "notes": "Titelseite der offiziellen Lösungsskizze; keine eigenständige Aufgabenlösung."
+    },
+    {
+      "evidenceId": "q-7d7aa2066664",
+      "sourceId": "src-8f16b2505bbd",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Titelseite mit Prüfungsangaben und Punktetabelle; keine Aufgabe."
+    },
+    {
+      "evidenceId": "q-c62724c0fc32",
+      "sourceId": "src-35405e721f05",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Titelseite der Beispiellösung; keine Aufgabenlösung."
+    },
+    {
+      "evidenceId": "q-778107a70766",
+      "sourceId": "src-c4dde22523d3",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Titelseite und Punkteübersicht der kanonischen Erstklausur 2022; keine Aufgabe."
+    },
+    {
+      "evidenceId": "q-49fd7a5970cb",
+      "sourceId": "src-00ae505a8756",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Exakte Dublette der Titelseite von src-c4dde22523d3; keine Frage."
+    },
+    {
+      "evidenceId": "q-a9d059eee74c",
+      "sourceId": "src-fa63eaca933b",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Exakte Dublette der Titelseite von src-c4dde22523d3; keine Frage."
+    },
+    {
+      "evidenceId": "q-ae7c49724101",
+      "sourceId": "src-5bb7aaf4268b",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Exakte Dublette der Titelseite von src-c4dde22523d3; keine Frage."
+    },
+    {
+      "evidenceId": "q-5ed6f1fa6e91",
+      "sourceId": "src-011d1ee23245",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Titelseite und Punkteübersicht der kanonischen Zweitklausur 2022; keine Aufgabe."
+    },
+    {
+      "evidenceId": "q-99be7ed653ef",
+      "sourceId": "src-3f29b67eef5c",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Byteidentische Dublette der Titelseite; keine Frage."
+    },
+    {
+      "evidenceId": "q-52fec7986417",
+      "sourceId": "src-2461e8a663fe",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Byteidentische Dublette der Titelseite; keine Frage."
+    },
+    {
+      "evidenceId": "q-b31aaf85c2b9",
+      "sourceId": "src-34f58aed1d9c",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Byteidentische Dublette der Titelseite; keine Frage."
+    },
+    {
+      "evidenceId": "q-34e4c77f6292",
+      "sourceId": "src-28fe81380661",
+      "page": 1,
+      "decision": "exam_cover_page",
+      "notes": "Deckblatt, Hinweise und Punktetabelle; keine Aufgabe."
+    },
+    {
+      "evidenceId": "q-426f5c618c6e",
+      "sourceId": "src-0457af7a63f0",
+      "page": 1,
+      "decision": "non_question_material",
+      "notes": "Byteidentische Dublette des Deckblatts; keine Frage."
+    },
+    {
+      "evidenceId": "q-a872822904a2",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 1,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Abweichende Rekurrenzvariante A; keine Lösung zu exam-2021-1 Aufgabe 1."
+    },
+    {
+      "evidenceId": "q-acc75c7d7595",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 2,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Abweichende Rekurrenzvariante B; keine Lösung zu exam-2021-1 Aufgabe 1."
+    },
+    {
+      "evidenceId": "q-962792361523",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 3,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Rot-Schwarz-Baum Variante A; exam-2021-1 Aufgabe 2 verlangt LatenessScheduling."
+    },
+    {
+      "evidenceId": "q-7866a78ca82c",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 4,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Rot-Schwarz-Baum Variante B; exam-2021-1 Aufgabe 2 verlangt LatenessScheduling."
+    },
+    {
+      "evidenceId": "q-bb58498bcc6b",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 5,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Dijkstra Variante A; exam-2021-1 Aufgabe 3 verlangt Bellman-Ford auf einem anderen Graphen."
+    },
+    {
+      "evidenceId": "q-da2f0725f356",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 6,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Dijkstra Variante B; exam-2021-1 Aufgabe 3 verlangt Bellman-Ford auf einem anderen Graphen."
+    },
+    {
+      "evidenceId": "q-4cf04b8c3fdb",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 7,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Additive Invariantenvariante; keine Lösung zum Minimumprogramm der Klausur."
+    },
+    {
+      "evidenceId": "q-421237b4adcf",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 8,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Multiplikative Invariantenvariante; keine Lösung zum Minimumprogramm der Klausur."
+    },
+    {
+      "evidenceId": "q-96494ddf4b26",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 9,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Talent-Show-DP Variante A; keine Lösung zum Minenproblem."
+    },
+    {
+      "evidenceId": "q-1501a4677b2e",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 11,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Talent-Show-DP Variante B; keine Lösung zum Minenproblem."
+    },
+    {
+      "evidenceId": "q-4368d2853dd9",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 13,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Laternen-Greedy-Aufgabe; keine Lösung zum Schnittknotenproblem."
+    },
+    {
+      "evidenceId": "q-b9c348bc2251",
+      "sourceId": "src-39eb3d94f40a",
+      "page": 15,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Strauch-Greedy-Aufgabe; keine Lösung zum Schnittknotenproblem."
+    },
+    {
+      "evidenceId": "q-989345e966d5",
+      "sourceId": "src-720584558efd",
+      "page": 1,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Rekurrenzvariante A."
+    },
+    {
+      "evidenceId": "q-19d049d856d5",
+      "sourceId": "src-720584558efd",
+      "page": 2,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Rekurrenzvariante B."
+    },
+    {
+      "evidenceId": "q-825737172aee",
+      "sourceId": "src-720584558efd",
+      "page": 3,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Rot-Schwarz-Aufgabe A."
+    },
+    {
+      "evidenceId": "q-66e94cc862fa",
+      "sourceId": "src-720584558efd",
+      "page": 4,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Rot-Schwarz-Aufgabe B."
+    },
+    {
+      "evidenceId": "q-cf80d03ac627",
+      "sourceId": "src-720584558efd",
+      "page": 5,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Dijkstra-Aufgabe A."
+    },
+    {
+      "evidenceId": "q-d5e219429fbd",
+      "sourceId": "src-720584558efd",
+      "page": 6,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Dijkstra-Aufgabe B."
+    },
+    {
+      "evidenceId": "q-b0f4b9fbf667",
+      "sourceId": "src-720584558efd",
+      "page": 7,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Invariantenaufgabe A."
+    },
+    {
+      "evidenceId": "q-82213cddd964",
+      "sourceId": "src-720584558efd",
+      "page": 8,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Invariantenaufgabe B."
+    },
+    {
+      "evidenceId": "q-2e735eb0a412",
+      "sourceId": "src-720584558efd",
+      "page": 9,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Talent-Show-Aufgabe A."
+    },
+    {
+      "evidenceId": "q-f8913c6c1a5c",
+      "sourceId": "src-720584558efd",
+      "page": 11,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Talent-Show-Aufgabe B."
+    },
+    {
+      "evidenceId": "q-317ddd20feba",
+      "sourceId": "src-720584558efd",
+      "page": 13,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Laternenaufgabe."
+    },
+    {
+      "evidenceId": "q-10631a7c7af1",
+      "sourceId": "src-720584558efd",
+      "page": 15,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Byteidentische Dublette der abweichenden Strauchaufgabe."
+    },
+    {
+      "evidenceId": "q-138063378eea",
+      "sourceId": "src-02c9bed0177d",
+      "page": 1,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 1: Grundlagen und Pseudocode, MergeSort aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 1, überein."
+    },
+    {
+      "evidenceId": "q-1edd5d5b1ad5",
+      "sourceId": "src-02c9bed0177d",
+      "page": 2,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 2: Listen, Stapel und Warteschlangen, Hashing aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 2, überein."
+    },
+    {
+      "evidenceId": "q-af4d2c01eb90",
+      "sourceId": "src-02c9bed0177d",
+      "page": 3,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 3: Grundlagen und Pseudocode, Bellman-Ford aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 3, überein."
+    },
+    {
+      "evidenceId": "q-75e9dc9ba617",
+      "sourceId": "src-02c9bed0177d",
+      "page": 4,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 4: Listen, Stapel und Warteschlangen, Union-Find aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 4, überein."
+    },
+    {
+      "evidenceId": "q-64fe33a28e3c",
+      "sourceId": "src-02c9bed0177d",
+      "page": 5,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 5: Induktion und Korrektheit aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 5, überein."
+    },
+    {
+      "evidenceId": "q-46ae2ccce08a",
+      "sourceId": "src-02c9bed0177d",
+      "page": 6,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 6: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Master-Theorem und Rekurrenzen aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 6, überein."
+    },
+    {
+      "evidenceId": "q-959e7be597cd",
+      "sourceId": "src-02c9bed0177d",
+      "page": 7,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 7, überein."
+    },
+    {
+      "evidenceId": "q-c2580dbc7e95",
+      "sourceId": "src-02c9bed0177d",
+      "page": 9,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 8, überein."
+    },
+    {
+      "evidenceId": "q-051ba33918f8",
+      "sourceId": "src-02c9bed0177d",
+      "page": 11,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 9, überein."
+    },
+    {
+      "evidenceId": "q-c1a64447176b",
+      "sourceId": "src-5a4d89dac601",
+      "page": 1,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 1: Grundlagen und Pseudocode, MergeSort aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 1, überein."
+    },
+    {
+      "evidenceId": "q-43c4c151f732",
+      "sourceId": "src-5a4d89dac601",
+      "page": 2,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 2: Listen, Stapel und Warteschlangen, Hashing aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 2, überein."
+    },
+    {
+      "evidenceId": "q-760ced384e87",
+      "sourceId": "src-5a4d89dac601",
+      "page": 3,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 3: Grundlagen und Pseudocode, Bellman-Ford aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 3, überein."
+    },
+    {
+      "evidenceId": "q-a04d82ca56a9",
+      "sourceId": "src-5a4d89dac601",
+      "page": 4,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 4: Listen, Stapel und Warteschlangen, Union-Find aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 4, überein."
+    },
+    {
+      "evidenceId": "q-9150bd6a05c1",
+      "sourceId": "src-5a4d89dac601",
+      "page": 5,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 5: Induktion und Korrektheit aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 5, überein."
+    },
+    {
+      "evidenceId": "q-b941ae0ab8e2",
+      "sourceId": "src-5a4d89dac601",
+      "page": 6,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 6: Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit, Master-Theorem und Rekurrenzen aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 6, überein."
+    },
+    {
+      "evidenceId": "q-34dc889a9151",
+      "sourceId": "src-5a4d89dac601",
+      "page": 7,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 7: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 7, überein."
+    },
+    {
+      "evidenceId": "q-a2e54e273e4e",
+      "sourceId": "src-5a4d89dac601",
+      "page": 9,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 8: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 8, überein."
+    },
+    {
+      "evidenceId": "q-8c170b74a0e2",
+      "sourceId": "src-5a4d89dac601",
+      "page": 11,
+      "decision": "mismatched_solution_evidence",
+      "notes": "Die Seite behandelt Aufgabe 9: Grundlagen und Pseudocode, Laufzeitanalyse und Landau-Notation, Induktion und Korrektheit aus einer anderen Klausur und stimmt nicht mit exam-2024-1, Aufgabe 9, überein."
+    }
   ],
-  "openCandidateCount": 42,
+  "openCandidateCount": 33,
   "openCandidatePolicy": "Offene Kandidaturen werden weder kanonisiert noch öffentlich angezeigt. Ihre vollständige visuelle Prüfung ist Voraussetzung für eine Identitätsentscheidung."
 }

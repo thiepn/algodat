@@ -2,7 +2,7 @@
   {
     "id": "fd-data-structures-single-choice",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "competencyIds": [
       "foundation-data-structures"
     ],
@@ -127,7 +127,7 @@
   {
     "id": "fd-data-structures-multiple-choice",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "competencyIds": [
       "foundation-data-structures"
     ],
@@ -268,7 +268,7 @@
   {
     "id": "fd-data-structures-true-false-reason",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "competencyIds": [
       "foundation-data-structures"
     ],
@@ -409,7 +409,7 @@
   {
     "id": "fd-data-structures-matching",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "competencyIds": [
       "foundation-data-structures"
     ],
@@ -540,7 +540,7 @@
   {
     "id": "fd-data-structures-ordering",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "competencyIds": [
       "foundation-data-structures"
     ],
@@ -673,7 +673,7 @@
   {
     "id": "fd-data-structures-numeric",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "competencyIds": [
       "foundation-data-structures"
     ],
@@ -741,7 +741,7 @@
   {
     "id": "fd-data-structures-algorithm-selection",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "competencyIds": [
       "foundation-data-structures"
     ],
@@ -864,7 +864,7 @@
   {
     "id": "fd-data-structures-complexity-classification",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "competencyIds": [
       "foundation-data-structures"
     ],

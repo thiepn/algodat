@@ -1,8 +1,12 @@
 # Known Limitations
 
+## Aktualisierung `exam-2024-1`
+
+Der Korpus enthält nun 51 public-safe Rekonstruktionen; 33 Kandidaturen bleiben offen. Sieben Lösungen der neuen Sammlung sind authored, Aufgaben 6 und 8 besitzen verifizierte spätere offizielle Übungslösungen. Unbekannte Prüfungsmetadaten bleiben `null` beziehungsweise als unbekannt sichtbar. Ein unabhängiger fachlicher Zweitreview und der reale NVDA-/Narrator-Gate bleiben offen. [Klausur: `src-6df30a9ff1ae`, S. 1–9; Dublette: `src-ce97639c1821`, S. 1–9; Lösungen: `src-10a4e5432d36`, S. 3 und 7; `src-618e7da9bab3`, S. 1–3]
+
 ## Aktualisierung `exam-2021-1`
 
-Der Korpus enthält nun 42 public-safe Rekonstruktionen; 42 Kandidaturen bleiben offen. Die sechs Lösungen der historischen Erstklausur sind authored, weil die vollständig geprüfte vermeintliche Lösungsdatei andere Aufgaben behandelt und getrennt bleibt. Ein unabhängiger fachlicher Zweitreview und der reale NVDA-/Narrator-Gate bleiben offen. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
+Der damalige Korpus enthielt 42 public-safe Rekonstruktionen; 42 Kandidaturen waren offen. Die sechs Lösungen der historischen Erstklausur sind authored, weil die vollständig geprüfte vermeintliche Lösungsdatei andere Aufgaben behandelt und getrennt bleibt. Dieser Zahlenstand ist durch `exam-2024-1` überholt. Ein unabhängiger fachlicher Zweitreview und der reale NVDA-/Narrator-Gate bleiben offen. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
 
 ## Aktualisierung `exam-2022-2`
 
@@ -45,3 +49,5 @@ Der kanonische Fragenkorpus enthält derzeit neun manuell geprüfte, public-safe
 Aktualisierung 11.07.2026: Zusätzlich ist `exam-2020-2` mit neun realen Klausurfragen abgeschlossen. Der Korpus enthält damit 18 final geprüfte public-safe Rekonstruktionen; 66 Kandidaturen bleiben offen. Ein unabhängiger Zweitreview der 18 Fragen sowie der reale NVDA-/Narrator-Gate stehen weiterhin aus. Aufgabe 8 der realen Sammlung verwendet eine ausdrücklich als authored markierte Korrektur des dokumentierten Rekurrenz-Randfallfehlers. [Lösung: `src-8a588d5ddc35`, S. 9]
 
 Historischer Zwischenstand 12.07.2026: `exam-2022-1` ergänzte neun vollständig geprüfte reale Klausurfragen; damals lagen 27 Rekonstruktionen und 57 offene Kandidaturen vor. Dieser Stand ist durch die späteren Abschlüsse von `exam-2022-2` und `exam-2021-1` überholt. Für `exam-2022-1` existiert keine offizielle Musterlösung; seine neun Lösungen bleiben authored. [Quelle 2022: `src-c4dde22523d3`, S. 1–16; Quelle 2021: `src-28fe81380661`, S. 2–7; abweichende Lösung: `src-39eb3d94f40a`, S. 1–16]
+
+Aktueller Zwischenstand 13.07.2026: Nach Abschluss von `exam-2024-1` liegen 51 Rekonstruktionen vor; 33 Kandidaturen, der unabhängige fachliche Zweitreview aller 51 Fragen und der reale NVDA-/Narrator-Gate bleiben offen. [Quelle: `src-6df30a9ff1ae`, S. 1–9]

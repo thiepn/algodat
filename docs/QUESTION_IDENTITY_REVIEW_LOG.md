@@ -2,9 +2,25 @@
 
 Dieses Protokoll trennt Evidenz, Identitätskandidatur und kanonische Frage. Eine Zeile gilt erst als entschieden, wenn die private Originalseite lokal visuell geprüft wurde. Lokale PDFs, Renderbilder und OCR-Ausgaben sind keine Produktionsartefakte.
 
+## Abschluss `exam-2024-1` am 13.07.2026
+
+Die Aufgaben auf S. 1 bis 9 wurden final geprüft und jeweils mit ihrer byteidentischen Quelldublette versöhnt. Achtzehn Evidenzen aus zwei älteren, ebenfalls byteidentischen Lösungsdateien wurden nach vollständigem Vergleich als `mismatched_solution_evidence` ausgeschlossen. Aktueller Stand: 51 entschiedene Identitäten und 33 offene Kandidaturen. [Klausur: `src-6df30a9ff1ae`, S. 1–9; Dublette: `src-ce97639c1821`, S. 1–9]
+
+| Datum | Aufgabe | Kanonische ID | Evidenz | Entscheidung |
+| --- | ---: | --- | --- | --- |
+| 13.07.2026 | 1 | `exam-2024-1-task-1` | `q-325bc000d3da`, `q-4d917e62693e` | final reviewed |
+| 13.07.2026 | 2 | `exam-2024-1-task-2` | `q-113716b2961d`, `q-a5dd9d54cca1` | final reviewed |
+| 13.07.2026 | 3 | `exam-2024-1-task-3` | `q-2d4c434cc9f4`, `q-5fe684bd51d9` | final reviewed |
+| 13.07.2026 | 4 | `exam-2024-1-task-4` | `q-3737ba8fb64c`, `q-072a26ef41f8` | final reviewed |
+| 13.07.2026 | 5 | `exam-2024-1-task-5` | `q-87db01b3a470`, `q-df451fc16336` | final reviewed |
+| 13.07.2026 | 6 | `exam-2024-1-task-6` | `q-58dbe7725f08`, `q-4c091557a91e` | final reviewed mit offizieller späterer Lösung |
+| 13.07.2026 | 7 | `exam-2024-1-task-7` | `q-6549208674b4`, `q-6cce958a303e` | final reviewed |
+| 13.07.2026 | 8 | `exam-2024-1-task-8` | `q-68147d5b33e4`, `q-c05c88eacd0b` | final reviewed mit dokumentiertem Indexkonflikt |
+| 13.07.2026 | 9 | `exam-2024-1-task-9` | `q-00019e2ecf83`, `q-dc9e3ceff622` | final reviewed |
+
 ## Abschluss `exam-2021-1` am 13.07.2026
 
-Die Aufgaben auf S. 2 bis 7 wurden final geprüft und jeweils mit ihrer exakten Quelldublette versöhnt. Zwei Titelseitenevidenzen wurden ausgeschlossen. Die 24 Evidenzen der vermeintlichen Lösungsdatei und ihrer exakten Dublette wurden nach vollständigem Seitenvergleich als `mismatched_solution_evidence` ausgeschlossen. Aktueller Stand: 42 entschiedene Identitäten, 42 offene Kandidaturen. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
+Die Aufgaben auf S. 2 bis 7 wurden final geprüft und jeweils mit ihrer exakten Quelldublette versöhnt. Zwei Titelseitenevidenzen wurden ausgeschlossen. Die 24 Evidenzen der vermeintlichen Lösungsdatei und ihrer exakten Dublette wurden nach vollständigem Seitenvergleich als `mismatched_solution_evidence` ausgeschlossen. Damaliger Stand: 42 entschiedene Identitäten und 42 offene Kandidaturen; beide Werte sind durch `exam-2024-1` überholt. [Klausur: `src-28fe81380661`, S. 1–7; abweichende Quelle: `src-39eb3d94f40a`, S. 1–16]
 
 | Datum | Aufgabe | Kanonische ID | Evidenz | Entscheidung |
 | --- | ---: | --- | --- | --- |

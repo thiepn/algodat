@@ -2,7 +2,7 @@
   {
     "id": "trainer-schleifeninvariante-summe-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "topicIds": [
       "topic-e05ae3743b24"
     ],
@@ -83,7 +83,7 @@
     "problem": {
       "id": "problem-schleifeninvariante-gewichtete-summe-v1",
       "schemaVersion": "1.0.0",
-      "contentVersion": "phase16-97cc0129b092",
+      "contentVersion": "phase16-97c9e182c53e",
       "topicIds": [
         "topic-e05ae3743b24"
       ],

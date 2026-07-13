@@ -16,7 +16,7 @@ describe('kanonische Fragenoberflächen', () => {
         <CanonicalQuestionPreviewPage />
       </MemoryRouter>,
     );
-    expect(screen.getAllByRole('link', { name: 'Frage öffnen' })).toHaveLength(42);
+    expect(screen.getAllByRole('link', { name: 'Frage öffnen' })).toHaveLength(51);
     expect(screen.getByText('exam-2020-2 · Aufgabe 1')).toBeInTheDocument();
     expect(screen.getByText('exam-2022-1 · Aufgabe 9')).toBeInTheDocument();
     expect(screen.getByText('exam-2021-1 · Aufgabe 6')).toBeInTheDocument();

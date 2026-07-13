@@ -2,7 +2,7 @@
   {
     "id": "exam-package-kernkompetenz-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "sourceRefs": [
       {
         "sourceId": "src-25d6340b518c",
@@ -223,7 +223,7 @@
   {
     "id": "exam-package-kernkompetenz-v2",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "sourceRefs": [
       {
         "sourceId": "src-25d6340b518c",
@@ -478,7 +478,7 @@
   {
     "id": "exam-package-kernkompetenz-v3",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "sourceRefs": [
       {
         "sourceId": "src-25d6340b518c",
@@ -785,7 +785,7 @@
   {
     "id": "exam-package-kernkompetenz-v4",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "sourceRefs": [
       {
         "sourceId": "src-25d6340b518c",
@@ -1083,7 +1083,7 @@
   {
     "id": "exam-package-aktuelle-probeklausur-v5",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "sourceRefs": [
       {
         "sourceId": "src-25d6340b518c",

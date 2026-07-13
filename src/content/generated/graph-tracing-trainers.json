@@ -2,7 +2,7 @@
   {
     "id": "trainer-graph-floyd-warshall-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "topicIds": [
       "topic-1fa208a0ed89",
       "topic-f5f6e171c082"
@@ -72,7 +72,7 @@
     "problem": {
       "id": "problem-graph-floyd-warshall-v1",
       "schemaVersion": "1.0.0",
-      "contentVersion": "phase16-97cc0129b092",
+      "contentVersion": "phase16-97c9e182c53e",
       "topicIds": [
         "topic-1fa208a0ed89",
         "topic-f5f6e171c082"
@@ -324,7 +324,7 @@
       "variants": [
         {
           "id": "variant-floyd-warshall-v1-practice",
-          "contentVersion": "phase16-97cc0129b092",
+          "contentVersion": "phase16-97c9e182c53e",
           "sourceRefs": [
             {
               "sourceId": "src-35405e721f05",
@@ -574,7 +574,7 @@
   {
     "id": "trainer-graph-dijkstra-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "topicIds": [
       "topic-e8b80c23286d",
       "topic-f5f6e171c082"
@@ -649,7 +649,7 @@
     "problem": {
       "id": "problem-graph-dijkstra-v1",
       "schemaVersion": "1.0.0",
-      "contentVersion": "phase16-97cc0129b092",
+      "contentVersion": "phase16-97c9e182c53e",
       "topicIds": [
         "topic-e8b80c23286d",
         "topic-f5f6e171c082"
@@ -915,7 +915,7 @@
       "variants": [
         {
           "id": "variant-dijkstra-v1-practice",
-          "contentVersion": "phase16-97cc0129b092",
+          "contentVersion": "phase16-97c9e182c53e",
           "sourceRefs": [
             {
               "sourceId": "src-1ea0642ec775",
@@ -1045,7 +1045,7 @@
   {
     "id": "trainer-graph-prim-mst-v1",
     "schemaVersion": "1.0.0",
-    "contentVersion": "phase16-97cc0129b092",
+    "contentVersion": "phase16-97c9e182c53e",
     "topicIds": [
       "topic-6a47a10f37e0",
       "topic-c4a698fc939e"
@@ -1126,7 +1126,7 @@
     "problem": {
       "id": "problem-graph-prim-mst-v1",
       "schemaVersion": "1.0.0",
-      "contentVersion": "phase16-97cc0129b092",
+      "contentVersion": "phase16-97c9e182c53e",
       "topicIds": [
         "topic-6a47a10f37e0",
         "topic-c4a698fc939e"
@@ -1478,7 +1478,7 @@
       "variants": [
         {
           "id": "variant-prim-mst-v1-practice",
-          "contentVersion": "phase16-97cc0129b092",
+          "contentVersion": "phase16-97c9e182c53e",
           "sourceRefs": [
             {
               "sourceId": "src-baa07f0a207a",

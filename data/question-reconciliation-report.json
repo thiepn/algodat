@@ -10,9 +10,110 @@
   "exerciseEvidenceRecords": 15,
   "currentlyIndexedExamTaskEntries": 81,
   "preliminaryIdentityKeys": 84,
-  "canonicalQuestionsApproved": 42,
+  "canonicalQuestionsApproved": 51,
   "blockedQuestions": 0,
-  "openManualIdentityCandidates": 42,
-  "reconciledEvidenceRecords": 159,
-  "blockReason": "Die vorhandenen Datensätze sind Evidenz und Metadaten. Vollständige Aufgaben, Unteraufgaben, Abbildungen und explizite Lösungsseiten müssen anhand der Originalseiten manuell verifiziert werden."
+  "openManualIdentityCandidates": 33,
+  "reconciledEvidenceRecords": 177,
+  "blockReason": "Nach Abschluss von exam-2024-1 bleiben 33 Identitätskandidaturen sammlungsweise visuell zu prüfen; Phase 21R.1 bleibt deshalb unvollständig.",
+  "exam2024EvidenceStates": [
+    {
+      "evidenceId": "q-325bc000d3da",
+      "taskNumber": 1,
+      "state": "canonical_question_evidence"
+    },
+    {
+      "evidenceId": "q-4d917e62693e",
+      "taskNumber": 1,
+      "state": "duplicate_evidence"
+    },
+    {
+      "evidenceId": "q-113716b2961d",
+      "taskNumber": 2,
+      "state": "canonical_question_evidence"
+    },
+    {
+      "evidenceId": "q-a5dd9d54cca1",
+      "taskNumber": 2,
+      "state": "duplicate_evidence"
+    },
+    {
+      "evidenceId": "q-2d4c434cc9f4",
+      "taskNumber": 3,
+      "state": "canonical_question_evidence"
+    },
+    {
+      "evidenceId": "q-5fe684bd51d9",
+      "taskNumber": 3,
+      "state": "duplicate_evidence"
+    },
+    {
+      "evidenceId": "q-3737ba8fb64c",
+      "taskNumber": 4,
+      "state": "canonical_question_evidence"
+    },
+    {
+      "evidenceId": "q-072a26ef41f8",
+      "taskNumber": 4,
+      "state": "duplicate_evidence"
+    },
+    {
+      "evidenceId": "q-87db01b3a470",
+      "taskNumber": 5,
+      "state": "canonical_question_evidence"
+    },
+    {
+      "evidenceId": "q-df451fc16336",
+      "taskNumber": 5,
+      "state": "duplicate_evidence"
+    },
+    {
+      "evidenceId": "q-58dbe7725f08",
+      "taskNumber": 6,
+      "state": "canonical_question_evidence"
+    },
+    {
+      "evidenceId": "q-4c091557a91e",
+      "taskNumber": 6,
+      "state": "duplicate_evidence"
+    },
+    {
+      "evidenceId": "q-6549208674b4",
+      "taskNumber": 7,
+      "state": "canonical_question_evidence"
+    },
+    {
+      "evidenceId": "q-6cce958a303e",
+      "taskNumber": 7,
+      "state": "duplicate_evidence"
+    },
+    {
+      "evidenceId": "q-68147d5b33e4",
+      "taskNumber": 8,
+      "state": "canonical_question_evidence"
+    },
+    {
+      "evidenceId": "q-c05c88eacd0b",
+      "taskNumber": 8,
+      "state": "duplicate_evidence"
+    },
+    {
+      "evidenceId": "q-00019e2ecf83",
+      "taskNumber": 9,
+      "state": "canonical_question_evidence"
+    },
+    {
+      "evidenceId": "q-dc9e3ceff622",
+      "taskNumber": 9,
+      "state": "duplicate_evidence"
+    }
+  ],
+  "exam2024PrivateSupportState": "private_visual_support_evidence",
+  "exam2024HandwritingState": "handwritten_attempt_evidence",
+  "exam2024SolutionSearch": {
+    "matchingOfficialSolutions": [
+      "Aufgabe 6: identische offizielle Übungslösung",
+      "Aufgabe 8: identische offizielle Übungslösung mit dokumentiertem Indexfehler"
+    ],
+    "mismatchedSolutionEvidenceCount": 18
+  }
 }

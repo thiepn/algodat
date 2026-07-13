@@ -77,7 +77,7 @@ describe('kanonische Erstklausur 2021', () => {
       resourceMappings: mappingData,
       originalCandidateCount: 84,
     });
-    expect(review.identityDecisions.openCandidateCount).toBe(42);
+    expect(review.identityDecisions.openCandidateCount).toBe(33);
     const mappings = review.resourceMappings.mappings.filter((mapping) =>
       mapping.questionId.startsWith('exam-2021-1-'),
     );
